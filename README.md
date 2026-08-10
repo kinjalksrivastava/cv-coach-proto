@@ -1,0 +1,150 @@
+# HSG CV Coach — prototype
+
+Built from `cv_coach_requirements.docx`, `tech_requirements.docx` (10 user stories +
+edge cases), and `HSG_Top_Job_Categories.docx`. Chat UI in Streamlit, GPT-4.1 as the
+model, streamed responses, guardrails enforced in code where code can enforce them.
+
+See `PROJECT_SPEC.md` for the full rule-by-rule spec (what each CV section's
+guardrails are and where they came from) — this file is about the code.
+
+## Before you show this to partners — read this
+
+Good for validating the **conversation logic and guardrails**. **Not** the compliant
+system described in the requirements doc:
+
+- **Hosting is not Swiss, no DPA with OpenAI.** Use dummy/synthetic CVs, not real
+  student documents, until both are in place.
+- **PII stripping is regex/heuristic, not certified** — name detection especially
+  (a "first line before a section header" guess).
+- **Date-gap/overlap detection is regex-based and approximate** — see `guardrails/dates.py`
+  docstring. It's a flag for the bot to ask about, never a verdict, by design — but the
+  underlying date parsing itself can miss unusual formats or misread an ambiguous one.
+- **No malware scanning, no OCR fallback, no layout-aware extraction.** A scanned CV
+  correctly hits the confidence gate and asks for re-upload rather than failing silently.
+- **Session storage is in-process memory** (Streamlit's `session_state`), not Redis —
+  functionally ephemeral, not the same infrastructure as the target architecture.
+- **"Never rewrite" has two layers now, still not a hard block.** The system prompt
+  states it as a hard rule, and `guardrails/global_rules.py` regex-checks every
+  response for rewritten-bullet-shaped phrasing and forces one regeneration if it
+  fires. Both are heuristics — a well-worded jailbreak can still slip past a regex.
+  Flagged in the original requirements doc as the rule most likely to be tested by a
+  persistent student; still the top candidate for a harder mechanism later.
+- **"Never score" is fully code-enforced** — regex-checked on every response, forces
+  a regeneration if it fires.
+- **The 6-second latency budget is a target, not a guarantee.** A third-party model's
+  total generation time isn't something a client can hard-cap without risking a
+  truncated answer. What's actually built: streaming (so the student sees output
+  almost immediately), a request timeout with a graceful fallback message, and a
+  response length cap that keeps both actual and perceived latency down. See
+  `latency.py`'s docstring for the honest version of this.
+- **Target-role capture from free chat is a simple keyword match**
+  (`sections/jd_alignment.py`, built from HSG's own job-category list), not NLU. Safe
+  on both failure modes: a miss just means the bot asks again or falls into
+  structure-only mode; a false positive is easy for the student to correct.
+- **"When has a section been covered enough to move on" is left to the model.** Section
+  *detection* (what exists in this CV) is code; the pacing judgment isn't — a rigid
+  turn-counter would transition at the wrong moments as often as the right ones. Worth
+  watching in testing: does it move on too fast, or loop on one section too long.
+
+## What's implemented
+
+- CV + job description intake, **either upload (PDF/DOCX) or paste text**, JD fully
+  optional — the CV can stand alone (`app.py` intake step)
+- Session language chosen upfront (English/Deutsch), but re-detected per message and
+  overridden if the student actually writes in the other language
+  (`guardrails/language.py`)
+- Regex PII stripping: name (heuristic), email, phone, DOB, nationality, marital
+  status; photo excluded by construction (only text is ever extracted) (`pii.py`)
+- Date range extraction with overlap/gap flags fed to the model as things to ask
+  about, never as conclusions (`guardrails/dates.py`)
+- Confidentiality/handover detection, pre-model (`guardrails/confidentiality.py`)
+- Output guardrails: never-score (reliable, code-checked) and never-rewrite
+  (heuristic, code-checked) — both force one regeneration if triggered
+  (`guardrails/global_rules.py`)
+- Target-role-first gate, with a structure-only fallback after one follow-up if no
+  JD/role arrives, and best-effort mid-chat capture of a stated target industry
+  (`sections/jd_alignment.py`)
+- Per-CV-section rules as separate, individually readable modules — Education,
+  Experience, Extracurricular & Interests, Skills & Languages, JD Alignment
+  (`sections/*.py`), assembled into one system prompt by `prompts.py`
+- **Proactive section coverage** — detects which sections exist in this specific CV
+  and has the bot work through all of them over the conversation, naming the section
+  it's moving to each time, rather than only reacting to what's asked
+  (`guardrails/section_coverage.py`)
+- **End-of-conversation summary** — once every detected section is covered, the bot
+  offers a copy of the conversation (strengths + what was discussed per section,
+  never inventing or drafting text) as a downloadable `.txt` to bring to Career
+  Services. Also available any time via a sidebar button, independent of the bot's
+  own offer (`prompts.py` summary functions, wired in `app.py`)
+- Streamed responses with a request timeout and response-length cap aimed at the
+  <6s-per-turn target (`latency.py`)
+
+## Configure the shared API key
+
+The app is built so you set the key once and everyone with the link just uses it —
+no one else has to paste anything. Set it in `.streamlit/secrets.toml`, not in
+`app.py` — that file is gitignored, so the real key never ends up in git history
+(a "private" GitHub repo isn't a strong enough guarantee once collaborators, forks,
+or a visibility change enter the picture, and GitHub's own secret scanning will
+flag a key committed in plain source anyway).
+
+```bash
+cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+# then edit .streamlit/secrets.toml and replace the placeholder with the real key
+```
+
+That's it locally — `app.py` reads it automatically via `st.secrets`. The sidebar
+still has an optional field for someone to type in a *different* key (e.g. to test
+against their own quota), but it's not required.
+
+## Run it locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Try it on your own CV before pushing anywhere.
+
+## Deploy — Streamlit Community Cloud
+
+1. Push this folder to a GitHub repo (`.streamlit/secrets.toml` won't be included —
+   it's gitignored; `.streamlit/secrets.toml.example` will be, which is fine, it has
+   no real key in it).
+2. Go to [share.streamlit.io](https://share.streamlit.io), sign in, "New app".
+3. Point it at the repo, branch, and `app.py`.
+4. In the app's **Settings → Secrets**, paste the same line:
+   ```toml
+   OPENAI_API_KEY = "sk-..."
+   ```
+   This is the actual "hardcode it on my end" step — once it's set here, anyone who
+   opens the app's link uses it with zero setup on their side.
+5. Deploy — shareable `*.streamlit.app` URL in about 2 minutes.
+
+## Files
+
+```
+app.py                          # Streamlit UI + turn orchestration only, no rule text
+prompts.py                       # assembles guardrails/sections into the system prompt
+latency.py                       # streaming + timeout + response-length cap
+extraction.py                    # PDF/DOCX -> text, confidence gate
+pii.py                            # regex PII stripping
+guardrails/
+  confidentiality.py             # NDA/compensation/offer trigger detection
+  global_rules.py                # never-score, never-rewrite (heuristic), rewrite-pressure detection
+  language.py                    # upfront choice + per-message re-detection
+  dates.py                       # date range extraction, overlap/gap flags
+  section_coverage.py            # detects which CV sections exist, for proactive coverage
+sections/
+  education.py                   # grades, thesis, exchange semester, date flags
+  experience.py                  # What/How/Why/Result, quantification, year-of-study, return offers
+  extracurricular.py             # single-word interests, soft-skill evidence
+  skills_languages.py            # CEFR/plain-label suggestion, tool-use evidence
+  jd_alignment.py                # JD-optional flow, structure-only fallback, HSG job categories
+requirements.txt
+PROJECT_SPEC.md                  # full rule-by-rule spec with story references
+.streamlit/
+  secrets.toml.example           # template - copy to secrets.toml and add the real key
+  secrets.toml                   # your real key goes here - gitignored, never committed
+.gitignore                       # excludes secrets.toml and Python cache from git
+```
