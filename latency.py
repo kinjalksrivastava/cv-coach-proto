@@ -21,6 +21,7 @@ README). What IS controllable from here:
     sharing the chat one.
 """
 
+import json
 from collections.abc import Callable
 
 REQUEST_TIMEOUT_SECONDS = 12          # hard safety net for a stalled/slow chat turn
@@ -71,3 +72,41 @@ def stream_response(
         return FALLBACK_MESSAGE
 
     return collected or FALLBACK_MESSAGE
+
+
+# --- Non-streaming JSON calls (document analysis at intake) -------------------
+#
+# PII detection and CV-section parsing are one-off calls made while the student
+# waits on the upload screen, not chat turns - so they don't share the <6s
+# per-turn budget, and they want a parsed object rather than streamed prose.
+# They run concurrently in app.py, so the wall-clock cost of both is one call.
+
+ANALYSIS_TIMEOUT_SECONDS = 30
+ANALYSIS_MAX_TOKENS = 2000
+
+
+def json_call(
+    client,
+    model: str,
+    messages: list[dict],
+    max_tokens: int = ANALYSIS_MAX_TOKENS,
+    timeout: int = ANALYSIS_TIMEOUT_SECONDS,
+) -> dict | None:
+    """
+    One non-streaming call constrained to a JSON object response. Returns the
+    parsed dict, or None on any failure (timeout, API error, malformed JSON) -
+    every caller must have a working non-LLM fallback for that None, since a
+    document analysis failing should degrade the app, never break it.
+    """
+    try:
+        completion = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_tokens=max_tokens,
+            timeout=timeout,
+            temperature=0,
+            response_format={"type": "json_object"},
+        )
+        return json.loads(completion.choices[0].message.content)
+    except Exception:
+        return None

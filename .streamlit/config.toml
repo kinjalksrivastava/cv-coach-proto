@@ -1,0 +1,16 @@
+# Deterministic light theme in HSG's corporate colours, so the app looks the
+# same for every student regardless of their own Streamlit/OS theme setting.
+# Brand green #00802F is taken from unisg.ch's own stylesheet.
+
+[theme]
+base = "light"
+primaryColor = "#00802F"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F8F6"
+textColor = "#15181A"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+maxUploadSize = 10

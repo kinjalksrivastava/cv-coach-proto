@@ -59,6 +59,13 @@ def extract_ranges(text: str) -> list[dict]:
 
     ranges = []
     for m in RANGE_RE.finditer(text):
+        # The month groups match any 3-9 letter word, so "Club 2023 - present"
+        # would otherwise be reported to the student as "Club 2023 - present".
+        # An unrecognised word isn't a month: trim it out of the quoted range.
+        raw = m.group(0).strip()
+        if m.group("smonth") and m.group("smonth").strip(".").lower() not in MONTHS:
+            raw = raw[raw.index(m.group("syear")):]
+
         syear = int(m.group("syear"))
         smonth = _month_num(m.group("smonth"))
         start_idx = _month_idx(syear, smonth)
@@ -73,7 +80,7 @@ def extract_ranges(text: str) -> list[dict]:
         if end_idx < start_idx:
             continue  # malformed match, skip rather than guess
 
-        ranges.append({"raw": m.group(0).strip(), "start_idx": start_idx, "end_idx": end_idx})
+        ranges.append({"raw": raw, "start_idx": start_idx, "end_idx": end_idx})
 
     ranges.sort(key=lambda r: r["start_idx"])
     return ranges

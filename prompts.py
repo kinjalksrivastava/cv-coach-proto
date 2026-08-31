@@ -1,6 +1,9 @@
 import re
 
-from sections import education, experience, extracurricular, skills_languages, jd_alignment
+from guardrails import section_coverage
+from sections import (
+    education, experience, extracurricular, skills_languages, other_sections, jd_alignment,
+)
 
 GLOBAL_HEADER = """You are the HSG Career Services CV Coach, a document-feedback assistant \
 that helps HSG students improve their CV before an advising appointment.
@@ -37,17 +40,24 @@ next question, and keep responses short - a focused question or two, not an essa
 Description Alignment rules for the optional-JD / structure-only fallback.
 - Respond in the language indicated in the context data below for this turn."""
 
-PROACTIVE_COVERAGE = """PROACTIVE SECTION COVERAGE: the context data below lists which CV sections were \
-detected in THIS student's CV. Don't only answer what's explicitly asked - once the \
-current topic has been sufficiently addressed, proactively transition to the next \
-detected section that the conversation hasn't covered yet (check the message history \
-for what's already been discussed), so that every detected section gets addressed \
-over the course of the conversation rather than only the one the student happened to \
-ask about first. Name the section you're moving to when you do (e.g. "Let's look at \
-your Skills section next").
+PROACTIVE_COVERAGE = """PROACTIVE SECTION COVERAGE: the context data below lists the section headings that \
+were actually parsed out of THIS student's CV, each with the category of coaching rules \
+that applies to it. That list is the checklist for this conversation.
 
-Once every detected section has been addressed in the conversation, ask this exact \
-question, verbatim, one time: "{summary_offer}" Do not ask it before every detected \
+- Work through every listed section over the course of the conversation - don't only \
+answer what the student explicitly asked about. Once the current topic has been \
+sufficiently addressed, transition to the next listed section the conversation hasn't \
+covered yet (check the message history for what's already been discussed).
+- Refer to each section by the heading the student's own CV uses, verbatim, not by the \
+category name (e.g. say "let's look at your Berufserfahrung section", not "your \
+Experience section", if that's how their CV is headed).
+- Apply the rules for that section's category. For a category without its own rule \
+block above, use the OTHER CV SECTIONS rules.
+- Never invent a section the CV does not have, and never treat a section as missing \
+because it isn't on the list - ask first.
+
+Once every listed section has been addressed in the conversation, ask this exact \
+question, verbatim, one time: "{summary_offer}" Do not ask it before every listed \
 section has been covered, and do not ask it again afterward unless the student \
 explicitly requests a summary later."""
 
@@ -72,7 +82,9 @@ SUMMARY_OFFER_TEXT = (
 # still matches if the model paraphrases slightly despite the verbatim instruction.
 SUMMARY_OFFER_MARKER = "copy of this conversation"
 
-SECTION_MODULES = [education, experience, extracurricular, skills_languages, jd_alignment]
+SECTION_MODULES = [
+    education, experience, extracurricular, skills_languages, other_sections, jd_alignment,
+]
 
 SYSTEM_PROMPT = "\n\n".join(
     [GLOBAL_HEADER, PROACTIVE_COVERAGE.format(summary_offer=SUMMARY_OFFER_TEXT)]
@@ -103,7 +115,8 @@ def build_context_block(
     parts.append(f"Target role/industry established: {target_role_known}")
     parts.append(f"Structure-only mode (no JD/role after one follow-up): {structure_only_mode}")
     parts.append(f"Respond in: {language_name} ({language_code})")
-    parts.append(f"Sections detected in this CV: {', '.join(sections_detected) or 'none detected'}")
+    parts.append("Sections parsed from this CV (heading as written, category of rules to apply):\n"
+                 + section_coverage.describe(sections_detected))
     if date_findings:
         lines = "\n".join(f"- {f}" for f in date_findings)
         parts.append("Automatically detected date flags (ask, don't assume they're errors):\n" + lines)
@@ -168,7 +181,7 @@ def build_summary_messages(chat_messages, sections_detected, language_code, lang
     transcript_lines = [f"{m['role'].upper()}: {m['content']}" for m in chat_messages]
     transcript = "\n\n".join(transcript_lines)
     context = (
-        f"Sections detected in this CV: {', '.join(sections_detected) or 'none detected'}\n"
+        f"Sections parsed from this CV: {section_coverage.describe(sections_detected)}\n"
         f"Respond in: {language_name} ({language_code})\n\n"
         f"--- CONVERSATION TRANSCRIPT ---\n{transcript}\n--- END TRANSCRIPT ---"
     )

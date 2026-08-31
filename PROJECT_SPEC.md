@@ -85,6 +85,14 @@ to strengthen their own CV — it never scores it and never writes text for them
 | Tools/software: ask how it was actually used (coursework, project, employment; which libraries/tasks; how recently) instead of accepting a proficiency label at face value | Story 6 |
 | Never suggest graphical/percentage skill bars or label the student "expert"/"beginner" | Story 6 |
 
+### Any other section the CV actually has
+| Rule | Source |
+|---|---|
+| Section headings are parsed from the document itself, verbatim and in order, not matched against a fixed list — so Publications & Research, Projects, Certifications & Training, Awards & Scholarships, Volunteering, Profile/Summary, References, Military Service and anything else get coached too | 2026-08-31 change, built (`guardrails/section_coverage.py`) |
+| Refer to each section by the heading the student's own CV uses, not by our category name | 2026-08-31 change, built (`prompts.PROACTIVE_COVERAGE`) |
+| Publications: ask for the student's own contribution; never infer it from author order or title, never comment on journal prestige or citation counts | 2026-08-31 change, built (`sections/other_sections.py`) |
+| Projects / certifications / awards / volunteering: ask what was actually done and what the selection basis was; never rank them against each other | 2026-08-31 change, built (`sections/other_sections.py`) |
+
 ### Job description alignment (cross-cutting, not a CV section but a mode)
 | Rule | Source |
 |---|---|
@@ -93,27 +101,31 @@ to strengthen their own CV — it never scores it and never writes text for them
 | Skill/requirement mismatch: state it factually, ask about unlisted relevant experience — never tell the student to hide or remove the mismatched skill | edge case |
 | Structure-only fallback when no JD/role after one follow-up | edge case, built (`sections/jd_alignment.py` + `app.py` follow-up counter) |
 
-## 5. Current codebase (this repo) — updated after the 2026-08-10 build session
+## 5. Current codebase (this repo) — updated after the 2026-08-31 session
 
 The modular structure this section used to propose is now built. Layout:
 
 ```
 cv_coach/
-  app.py                          # orchestration only — no rule text lives here
+  app.py                          # orchestration only — no rule text, no styling
+  ui.py                            # stylesheet, HSG masthead, cards/chips
+  assets/                          # University of St.Gallen logo (EN/DE) + favicon
   prompts.py                       # assembles guardrails/sections into the system prompt
   latency.py                       # streaming + timeout + response-length cap
   extraction.py                    # PDF/DOCX -> text, confidence gate
-  pii.py                            # regex PII stripping
+  pii.py                            # deterministic + model-span personal-data stripping
   guardrails/
     confidentiality.py             # NDA/compensation/offer trigger detection
     global_rules.py                # never-score (reliable) + never-rewrite (heuristic) output checks
     language.py                    # upfront EN/DE choice + per-message re-detection
     dates.py                       # date range extraction, overlap/gap flags
+    section_coverage.py            # parses the CV's real headings + categories
   sections/
     education.py
     experience.py
     extracurricular.py
     skills_languages.py            # includes the CEFR-or-plain-label suggestion rule
+    other_sections.py              # publications, projects, certifications, awards, volunteering, ...
     jd_alignment.py                # JD-optional flow, structure-only fallback, HSG job categories
 ```
 
@@ -137,15 +149,16 @@ Two more pieces added after the table below was first written:
 | Area | Status | Honest caveat |
 |---|---|---|
 | Never score | Built, reliable | Regex-checked every response, forces regeneration |
+| Layout & branding | Built | Single-column HSG-branded page, no sidebar, no per-user API key field, document panel visible on arrival rather than behind an expander. All CSS in `ui.py`. |
 | Never rewrite | Built, heuristic | Prompt rule + regex output check on rewritten-bullet-shaped phrasing; not a hard block, still the top candidate for a stronger mechanism |
-| PII stripping | Built, best-effort | Name detection is a heuristic; see `pii.py` |
+| PII stripping | Built, hybrid | Deterministic patterns + a model pass that returns verbatim spans to delete (never text to insert). Catches name, address, profile links, referees. Sends the raw document to OpenAI to do it — see README. Degrades to patterns-only with no client, and says so in the UI. |
 | Date gap/overlap flags | Built, approximate | Regex date parsing; feeds the model a flag to ask about, never a verdict — see `guardrails/dates.py` |
 | Language: upfront + adaptive | Built | `langdetect`-based, ignores short/ambiguous messages (<15 chars) so a bare "ja"/"ok" doesn't flip the session |
 | Latency: streaming + timeout + length cap | Built | The 6s figure is a target the design optimizes for, not something enforceable against a third-party API — see `latency.py` |
 | CEFR-or-plain-label suggestion | Built | Prompt-level: the bot is instructed to offer both scales, never assert one |
 | JD optional + structure-only fallback | Built | Fallback triggers after one turn without a role; mid-chat role capture is simple keyword matching against HSG's own job categories, not NLU |
 | Skill-mismatch handling | Built | Prompt-level only, in `sections/jd_alignment.py` |
-| Proactive section coverage | Built, prompt-driven | "Has this section been sufficiently discussed" is a judgment call left to the model, on purpose — a rigid turn-counter would transition sections at the wrong moments. Section *detection* (what exists in the CV) is code; *when to move on* is the model's call. |
+| Proactive section coverage | Built, over the CV's real headings | Headings are parsed out of the document itself (verbatim, in order, each mapped to a coaching category) rather than matched against a fixed keyword list, so Publications, Projects, Certifications, Awards, Volunteering, Military Service etc. are now reachable. Parsed headings are validated against the document, so an invented one is dropped. "Has this section been discussed enough" stays the model's judgment on purpose — a turn-counter would transition at the wrong moments. |
 | End-of-conversation summary | Built, hybrid | The offer timing is prompt-driven; detecting the offer and generating/downloading the summary is code-driven, same pattern as the confidentiality handover flow |
 
 ## 6. What's still open
@@ -155,11 +168,15 @@ Two more pieces added after the table below was first written:
    still slip past a regex. The original requirements doc flags this as the rule
    most likely to be tested by a persistent student — worth a second pass once
    there's real usage data on what actually gets through.
-2. **Test the heuristics against real CVs**, not just synthetic ones — in particular
-   the date parser (unusual date formats, non-English month names beyond EN/DE), the
-   target-role keyword matcher, and whether the model actually paces section
-   transitions sensibly rather than rushing or looping.
-3. **Everything in the "Before you show this to partners" list in README.md** —
+2. **Test against real CVs**, not just synthetic ones — in particular the date parser
+   (unusual formats, month names beyond EN/DE), the target-role keyword matcher,
+   whether the personal-data pass over- or under-redacts on unusual layouts, and
+   whether the model paces section transitions sensibly rather than rushing or looping.
+3. **A local-only option for the personal-data pass.** The model layer is what makes
+   name/address detection actually work, but it means the raw document reaches OpenAI.
+   If Swiss hosting or a DPA lands first, a local NER detector could be dropped in
+   behind the same `detect_pii_spans()` interface without touching anything else.
+4. **Everything in the "Before you show this to partners" list in README.md** —
    Swiss hosting, a DPA with OpenAI, malware scanning, OCR fallback — is
    infrastructure/legal work, not a code change, and still applies.
 
