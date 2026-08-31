@@ -11,7 +11,9 @@ from openai import OpenAI
 
 import latency
 import prompts
+import report
 import ui
+import format_check
 from extraction import extract_text, MIN_CHARS
 from guardrails import confidentiality, dates, global_rules, language, section_coverage
 from pii import strip_pii
@@ -36,11 +38,6 @@ COPY = {
             "Career Services appointment. It asks questions — it never scores your "
             "CV and never writes it for you."
         ),
-        "opener": (
-            "Your CV is ready. I'll work through it with you section by section, asking "
-            "questions so you can strengthen it yourself — I won't score it and I won't "
-            "write any wording for you.\n\nWhat would you like to start with?"
-        ),
         "chat_placeholder": "Ask about your CV…",
     },
     "de": {
@@ -50,11 +47,6 @@ COPY = {
             "Ein geführtes Gespräch, das dir hilft, deinen Lebenslauf vor dem Termin "
             "beim Career Services selbst zu verbessern. Es stellt Fragen — es bewertet "
             "deinen Lebenslauf nicht und schreibt ihn nicht für dich."
-        ),
-        "opener": (
-            "Dein Lebenslauf ist bereit. Wir gehen ihn Abschnitt für Abschnitt durch: Ich "
-            "stelle Fragen, damit du ihn selbst stärker machst — ich bewerte ihn nicht und "
-            "formuliere nichts für dich.\n\nWomit möchtest du beginnen?"
         ),
         "chat_placeholder": "Frag mich etwas zu deinem Lebenslauf…",
     },
@@ -86,6 +78,7 @@ def init_state():
         "cv_text": None,
         "cv_redactions": [],
         "pii_degraded": False,
+        "format_rows": [],
         "jd_text": None,
         "jd_redactions": [],
         "target_role_hint": "",
@@ -236,7 +229,7 @@ if st.session_state["cv_text"] is None:
             if not cv_result.ok:
                 st.error(cv_result.error, icon="📄")
                 st.stop()
-            cv_raw = cv_result.text
+            cv_raw, cv_meta = cv_result.text, cv_result.meta
         else:
             if len(cv_pasted.strip()) < MIN_CHARS:
                 st.error(
@@ -245,6 +238,10 @@ if st.session_state["cv_text"] is None:
                 )
                 st.stop()
             cv_raw = cv_pasted
+            # Pasted text carries no file to measure, so the format check will
+            # report what it can and say what it can't.
+            cv_meta = {"source": "pasted", "page_count": None, "fonts": [],
+                       "image_count": 0, "table_count": 0, "char_count": len(cv_raw.strip())}
 
         jd_raw = ""
         if jd_file is not None:
@@ -256,32 +253,51 @@ if st.session_state["cv_text"] is None:
         elif jd_pasted.strip():
             jd_raw = jd_pasted
 
-        # Personal-data stripping and section parsing are independent model calls,
-        # so they run concurrently - the student waits for the slower one, not for
-        # the sum. Neither touches st.*, which is what makes threading them safe.
-        with st.spinner("Reading your CV and removing personal details…"):
-            with ThreadPoolExecutor(max_workers=3) as pool:
-                cv_job = pool.submit(strip_pii, cv_raw, client, MODEL)
-                sections_job = pool.submit(section_coverage.detect_sections, cv_raw, client, MODEL)
-                jd_job = pool.submit(strip_pii, jd_raw, client, MODEL) if jd_raw else None
+        target_role = target_hint.strip()
 
-                cv_clean = cv_job.result()
-                st.session_state["sections_detected"] = sections_job.result()
-                jd_clean = jd_job.result() if jd_job else None
+        # --- personal data comes off FIRST, locally, before anything leaves this
+        # machine. Nothing below this point ever sees the original document. ---
+        cv_language = language.detect_message_language(cv_raw) or st.session_state["language_pref"]
+        with st.spinner("Removing personal details…"):
+            cv_clean = strip_pii(cv_raw, cv_language)
+            jd_clean = strip_pii(jd_raw, cv_language) if jd_raw.strip() else None
 
-        st.session_state["cv_text"] = cv_clean["text"]
+        cv_text = cv_clean["text"]
+        st.session_state["cv_text"] = cv_text
         st.session_state["cv_redactions"] = cv_clean["redactions"]
         st.session_state["pii_degraded"] = cv_clean["degraded"]
-        st.session_state["date_findings"] = dates.find_findings(cv_raw)
-
+        st.session_state["date_findings"] = dates.find_findings(cv_text)
+        st.session_state["format_rows"] = format_check.run(cv_text, cv_meta)
         if jd_clean:
             st.session_state["jd_text"] = jd_clean["text"]
             st.session_state["jd_redactions"] = jd_clean["redactions"]
+        st.session_state["target_role_hint"] = target_role
 
-        st.session_state["target_role_hint"] = target_hint.strip()
-        st.session_state["messages"].append(
-            {"role": "assistant", "content": COPY[st.session_state["language_pref"]]["opener"]}
-        )
+        # --- only now, on the redacted text, do the two model calls: the section
+        # parse and the opening report. They're independent, so they run at once. ---
+        lang_code = st.session_state["language_pref"]
+        with st.spinner("Reading your CV and writing your feedback report…"):
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                sections_job = pool.submit(
+                    section_coverage.detect_sections, cv_text, client, MODEL
+                )
+                report_job = pool.submit(
+                    report.generate, client, MODEL, cv_text,
+                    st.session_state["jd_text"], target_role,
+                    st.session_state["format_rows"], language.SUPPORTED[lang_code],
+                )
+                st.session_state["sections_detected"] = sections_job.result()
+                report_data = report_job.result()
+
+        if report_data:
+            strings = dict(report.STRINGS[lang_code])
+            strings["criteria_note"] = format_check.CRITERIA_NOTE
+            report_text = report.render_markdown(
+                report_data, st.session_state["format_rows"], strings
+            )
+        else:
+            report_text = report.FAILURE_TEXT[lang_code]
+        st.session_state["messages"].append({"role": "assistant", "content": report_text})
         st.rerun()
 
     st.stop()

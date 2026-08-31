@@ -14,18 +14,14 @@ system described in the requirements doc:
 
 - **Hosting is not Swiss, no DPA with OpenAI.** Use dummy/synthetic CVs, not real
   student documents, until both are in place.
-- **Personal-data stripping is now hybrid, and still not certified.** A deterministic
-  layer (email, phone, profile links, IBAN, ID numbers, date of birth, nationality,
-  civil status, postal address) plus a model layer that returns verbatim spans to
-  remove — which is what finally makes names, free-form addresses and referee details
-  work, since a regex cannot tell "Anna Meier" from "Nestlé S.A.". The model only ever
-  names spans; `pii.py` does the replacement itself with string operations, so no
-  generated text can enter the document.
-- **The model layer sends the RAW document to OpenAI in order to find the PII in it.**
-  Previously only regex-redacted text left the machine. Under the standing posture
-  below (dummy CVs, no DPA, no Swiss hosting) this isn't a new class of exposure — the
-  document was already being sent for coaching — but it is a real change. `strip_pii()`
-  still works with no client, so a fully local deployment stays possible.
+- **Personal-data stripping runs entirely locally, and is still not certified.** The
+  document is never sent anywhere to work out what the personal data in it is —
+  `strip_pii()` takes no API client and makes no network call, which makes that
+  structural rather than a convention. Three layers: the contact block is removed
+  whole, names come from a local spaCy NER model (via Presidio), and everything with a
+  reliable shape (email, phone, links, IBAN, ID numbers, DOB, nationality, civil
+  status, addresses) comes from tuned patterns. Only the redacted text is ever sent to
+  OpenAI. It is best-effort, not a certified anonymiser — see `pii.py`'s docstring.
 - **Date-gap/overlap detection is regex-based and approximate** — see `guardrails/dates.py`
   docstring. It's a flag for the bot to ask about, never a verdict, by design — but the
   underlying date parsing itself can miss unusual formats or misread an ambiguous one.
@@ -33,6 +29,13 @@ system described in the requirements doc:
   correctly hits the confidence gate and asks for re-upload rather than failing silently.
 - **Session storage is in-process memory** (Streamlit's `session_state`), not Redis —
   functionally ephemeral, not the same infrastructure as the target architecture.
+- **The report uses evaluative marks, at Career Services' request.** Strong / Needs
+  attention / Missing are labels, which the original "never score" rule ruled out.
+  They are the only evaluative device in the whole product: no number, percentage,
+  grade or ranking appears anywhere, and the conversation after the report still never
+  scores. The report also shows a fixed table of generic weak-vs-strong bullet
+  examples — Career Services' own text, copied verbatim, never generated and never
+  applied to the student's own wording.
 - **"Never rewrite" has two layers now, still not a hard block.** The system prompt
   states it as a hard rule, and `guardrails/global_rules.py` regex-checks every
   response for rewritten-bullet-shaped phrasing and forces one regeneration if it
@@ -64,11 +67,19 @@ system described in the requirements doc:
 - Session language chosen upfront (English/Deutsch), but re-detected per message and
   overridden if the student actually writes in the other language
   (`guardrails/language.py`)
-- Personal-data stripping in two layers — deterministic patterns plus model-driven
-  verbatim span detection — covering name, email, phone, postal address, LinkedIn /
+- **An opening feedback report**, generated once at intake and posted as the bot's
+  first message — overall impression, format check, what works well, key areas to
+  improve, and section-by-section feedback with Strong / Needs attention / Missing
+  marks. It's text, not a file, so every line of it can be questioned in the same
+  conversation (`report.py`, structure from Career Services' own sample)
+- **Format check built from the file, not guessed** — page count, embedded fonts,
+  table-based layout and images come from the document itself; heading conventionality
+  and bullet characters from the text (`format_check.py`, `extraction.py`'s `meta`)
+- Fully local personal-data stripping in three layers — contact-block removal, local
+  spaCy NER for names, and tuned patterns for email, phone, postal address, LinkedIn /
   GitHub / personal links, date and place of birth, nationality, civil status,
-  ID/matriculation numbers, bank details and referee details; photo excluded by
-  construction, since only text is ever extracted (`pii.py`)
+  ID/matriculation numbers and bank details; photo excluded by construction, since
+  only text is ever extracted (`pii.py`, `pii_local.py`)
 - Date range extraction with overlap/gap flags fed to the model as things to ask
   about, never as conclusions (`guardrails/dates.py`)
 - Confidentiality/handover detection, pre-model (`guardrails/confidentiality.py`)
@@ -120,6 +131,12 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+`requirements.txt` pulls two spaCy models (English and German, ~30 MB total) for the
+local name detection. The first CV of a session costs a few extra seconds while those
+load; after that they stay in memory. If they're missing the app still runs — personal
+data is then stripped by patterns and contact-block removal alone, and the interface
+says so rather than quietly claiming more than it did.
+
 Try it on your own CV before pushing anywhere.
 
 ## Deploy — Streamlit Community Cloud
@@ -142,11 +159,14 @@ Try it on your own CV before pushing anywhere.
 ```
 app.py                          # Streamlit UI + turn orchestration only, no rule text
 ui.py                            # stylesheet, HSG masthead, cards/chips - all styling
+report.py                        # the opening feedback report: prompt, generation, rendering
+format_check.py                  # length / density / ATS rows, measured from the file
 assets/                          # University of St.Gallen logo (EN/DE) + favicon
 prompts.py                       # assembles guardrails/sections into the system prompt
 latency.py                       # streaming + timeout + response-length cap
 extraction.py                    # PDF/DOCX -> text, confidence gate
-pii.py                            # regex PII stripping
+pii.py                            # local personal-data stripping (no network)
+pii_local.py                     # local spaCy/Presidio name detection, guarded
 guardrails/
   confidentiality.py             # NDA/compensation/offer trigger detection
   global_rules.py                # never-score, never-rewrite (heuristic), rewrite-pressure detection

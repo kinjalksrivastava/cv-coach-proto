@@ -36,6 +36,17 @@ to strengthen their own CV — it never scores it and never writes text for them
   justified exception), and set an explicit request timeout with a graceful fallback
   message rather than a silent hang.
 
+### 2b. Two deliberate exceptions, agreed with Career Services (2026-09-01)
+
+The feedback report Career Services asked for needs two things the hard rules below
+originally forbade. Both are scoped as narrowly as possible; everything else still holds.
+
+| Exception | Scope |
+|---|---|
+| **Evaluative marks in the report** | Strong / Needs attention / Missing, and a high/medium mark on each improvement area. These are the only evaluative device anywhere in the product. No number, percentage, grade, letter or ranking appears in the report or in the conversation, and the conversation itself still never labels anything. |
+| **Generic example bullets in the report** | A fixed table of weak-vs-strong bullet examples, reproduced verbatim from Career Services' own sample document, shown only when the CV has responsibility-shaped bullets. It is never generated, never adapted to the student's content, and never applied to a line they wrote. "Never rewrite" is unchanged for everything touching the student's own wording. |
+| **Format observations** | Length, text density and ATS compatibility, and only from facts measured from the file (page count, fonts, tables, images, heading wording, bullet characters). The "content not layout" rule still forbids any judgement of visual design, and the report says outright that whitespace isn't observable. |
+
 ## 3. Hard global rules (apply to every turn, every section)
 
 | Rule | Detail |
@@ -109,11 +120,14 @@ The modular structure this section used to propose is now built. Layout:
 cv_coach/
   app.py                          # orchestration only — no rule text, no styling
   ui.py                            # stylesheet, HSG masthead, cards/chips
+  report.py                        # the opening feedback report
+  format_check.py                  # length / density / ATS rows, measured from the file
   assets/                          # University of St.Gallen logo (EN/DE) + favicon
   prompts.py                       # assembles guardrails/sections into the system prompt
   latency.py                       # streaming + timeout + response-length cap
   extraction.py                    # PDF/DOCX -> text, confidence gate
-  pii.py                            # deterministic + model-span personal-data stripping
+  pii.py                            # local personal-data stripping - no network call
+  pii_local.py                     # local spaCy/Presidio name detection, guarded
   guardrails/
     confidentiality.py             # NDA/compensation/offer trigger detection
     global_rules.py                # never-score (reliable) + never-rewrite (heuristic) output checks
@@ -151,7 +165,9 @@ Two more pieces added after the table below was first written:
 | Never score | Built, reliable | Regex-checked every response, forces regeneration |
 | Layout & branding | Built | Single-column HSG-branded page, no sidebar, no per-user API key field, document panel visible on arrival rather than behind an expander. All CSS in `ui.py`. |
 | Never rewrite | Built, heuristic | Prompt rule + regex output check on rewritten-bullet-shaped phrasing; not a hard block, still the top candidate for a stronger mechanism |
-| PII stripping | Built, hybrid | Deterministic patterns + a model pass that returns verbatim spans to delete (never text to insert). Catches name, address, profile links, referees. Sends the raw document to OpenAI to do it — see README. Degrades to patterns-only with no client, and says so in the UI. |
+| PII stripping | Built, fully local | Contact-block removal + local spaCy NER for names + tuned patterns for everything with a reliable shape. `strip_pii()` takes no API client, so the document structurally cannot be sent anywhere before redaction. Person hits are vetoed against the model's own LOCATION/ORGANIZATION reads, and body hits need corroboration, which is what stops "St. Gallen" being treated as a name. Degrades to patterns-only if the models are missing, and says so in the UI. |
+| Opening feedback report | Built | Generated once at intake from the redacted text and posted as the bot's first message, in text so it stays questionable. Structure from Career Services' sample: overall impression, format check, what works well, key areas to improve, section-by-section. Held to the same per-section rules as the conversation, assembled from the same modules. |
+| CV format check | Built, from the file | Page count, fonts, tables and images come from the document; heading conventionality and bullet glyphs from the text. The "layout" row measures text density and says outright that real whitespace isn't observable. |
 | Date gap/overlap flags | Built, approximate | Regex date parsing; feeds the model a flag to ask about, never a verdict — see `guardrails/dates.py` |
 | Language: upfront + adaptive | Built | `langdetect`-based, ignores short/ambiguous messages (<15 chars) so a bare "ja"/"ok" doesn't flip the session |
 | Latency: streaming + timeout + length cap | Built | The 6s figure is a target the design optimizes for, not something enforceable against a third-party API — see `latency.py` |
@@ -172,11 +188,14 @@ Two more pieces added after the table below was first written:
    (unusual formats, month names beyond EN/DE), the target-role keyword matcher,
    whether the personal-data pass over- or under-redacts on unusual layouts, and
    whether the model paces section transitions sensibly rather than rushing or looping.
-3. **A local-only option for the personal-data pass.** The model layer is what makes
-   name/address detection actually work, but it means the raw document reaches OpenAI.
-   If Swiss hosting or a DPA lands first, a local NER detector could be dropped in
-   behind the same `detect_pii_spans()` interface without touching anything else.
-4. **Everything in the "Before you show this to partners" list in README.md** —
+3. **HSG-specific activity prompting** (Career Services' second request, 2026-09-01):
+   have the bot ask about, and point students toward, HSG's own programmes, clubs,
+   certificates and competitions, with the CV section each belongs in. Not built yet —
+   the open design question is link durability, since the source list is URL-based.
+4. **Stronger name recall.** The small spaCy models miss a name sitting alone on a
+   header line often enough that a first-line heuristic backs them up. A larger model
+   would improve recall at a real memory cost on Streamlit Community Cloud.
+5. **Everything in the "Before you show this to partners" list in README.md** —
    Swiss hosting, a DPA with OpenAI, malware scanning, OCR fallback — is
    infrastructure/legal work, not a code change, and still applies.
 

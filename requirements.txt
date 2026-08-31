@@ -3,3 +3,10 @@ openai>=1.30
 pdfplumber>=0.11
 python-docx>=1.1
 langdetect>=1.0.9
+
+# Local personal-data detection. Runs in-process - the CV is never sent anywhere
+# to work out what the personal data in it is. See pii.py / pii_local.py.
+presidio-analyzer>=2.2.354
+spacy>=3.8,<3.9
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+de_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl

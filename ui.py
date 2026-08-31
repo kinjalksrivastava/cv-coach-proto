@@ -221,7 +221,27 @@ button[kind="secondary"]:hover, [data-testid="stBaseButton-secondary"]:hover {{
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 14px; padding: 0.9rem 1.1rem; margin-bottom: 0.7rem;
 }}
-[data-testid="stChatMessage"] p {{ font-size: 0.94rem; line-height: 1.62; }}
+[data-testid="stChatMessage"] p, [data-testid="stChatMessage"] li {{
+  font-size: 0.94rem; line-height: 1.62;
+}}
+/* The opening feedback report is a document inside a chat bubble: scale its
+   headings down so it reads as one, and drop Streamlit's heading anchor links. */
+[data-testid="stChatMessage"] h2 {{
+  font-size: 1.28rem; font-weight: 660; padding: 0 0 0.2rem 0; letter-spacing: -0.01em;
+}}
+[data-testid="stChatMessage"] h3 {{
+  font-size: 1.02rem; font-weight: 640; padding: 1.1rem 0 0.1rem 0;
+  color: var(--hsg-green-dark);
+}}
+[data-testid="stChatMessage"] [data-testid="stHeaderActionElements"] {{ display: none; }}
+[data-testid="stChatMessage"] table {{ font-size: 0.86rem; }}
+[data-testid="stChatMessage"] th {{
+  background: #F6F8F7; font-weight: 620; text-align: left;
+}}
+[data-testid="stChatMessage"] td, [data-testid="stChatMessage"] th {{
+  border-color: var(--border) !important; padding: 7px 10px !important;
+}}
+[data-testid="stChatMessage"] hr {{ margin: 1.4rem 0 1rem 0; }}
 [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {{
   background: var(--hsg-green-tint); border-color: #DCEBE1;
 }}
