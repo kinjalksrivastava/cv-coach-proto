@@ -105,6 +105,16 @@ def reset_session():
 
 init_state()
 
+# The language radio lives further down the intake screen, but the masthead and
+# the title above it have to be rendered in the chosen language on the SAME run.
+# Reading the widget's own key here does that; rendering first and assigning
+# after the radio left the page one rerun behind, showing the previous choice.
+if st.session_state["cv_text"] is None and "lang_choice" in st.session_state:
+    st.session_state["language_pref"] = (
+        "en" if st.session_state["lang_choice"] == "English" else "de"
+    )
+    st.session_state["effective_language"] = st.session_state["language_pref"]
+
 lang = st.session_state["effective_language"]
 copy = COPY[lang]
 
@@ -167,11 +177,10 @@ if st.session_state["cv_text"] is None:
             "Language of this conversation",
             "You can switch at any time — just write in the other language and I'll follow.",
         )
-        lang_choice = st.radio(
-            "Language", ["English", "Deutsch"], horizontal=True, label_visibility="collapsed"
+        st.radio(
+            "Language", ["English", "Deutsch"], horizontal=True,
+            label_visibility="collapsed", key="lang_choice",
         )
-        st.session_state["language_pref"] = "en" if lang_choice == "English" else "de"
-        st.session_state["effective_language"] = st.session_state["language_pref"]
 
     left, right = st.columns(2, gap="medium")
 

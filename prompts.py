@@ -1,5 +1,6 @@
 import re
 
+import hsg_activities
 from guardrails import section_coverage
 from sections import (
     education, experience, extracurricular, skills_languages, other_sections, jd_alignment,
@@ -106,7 +107,7 @@ SYSTEM_PROMPT = "\n\n".join(
     [GLOBAL_HEADER, OPENING_REPORT_CONTEXT,
      PROACTIVE_COVERAGE.format(summary_offer=SUMMARY_OFFER_TEXT)]
     + [m.RULES for m in SECTION_MODULES]
-    + [HANDOVER_RULES]
+    + [hsg_activities.RULES, HANDOVER_RULES]
 )
 
 

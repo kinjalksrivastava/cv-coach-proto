@@ -30,6 +30,7 @@ which reads the file itself. The model is handed those rows as facts.
 
 import json
 
+import hsg_activities
 import latency
 import prompts
 
@@ -138,6 +139,8 @@ verdict. The full rules follow:
 
 {section_rules}
 
+{hsg_rules}
+
 Write everything in {language_name}. Return only the JSON object:
 {"overall_impression": "...", "what_works_well": ["..."], "areas_to_improve": \
 [{"title": "...", "severity": "...", "detail": "..."}], "show_bullet_examples": true, \
@@ -177,6 +180,7 @@ def build_messages(cv_text, jd_text, target_role, format_rows, language_name):
             SYSTEM_PROMPT
             .replace("{standard_sections}", "; ".join(STANDARD_SECTIONS))
             .replace("{section_rules}", SECTION_RULES)
+            .replace("{hsg_rules}", hsg_activities.REPORT_RULES)
             .replace("{language_name}", language_name)
         )},
         {"role": "system", "content": "\n\n".join(context)},
