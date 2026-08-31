@@ -162,9 +162,15 @@ def document_panel():
             context_bits.append("Target role: not set yet")
         ui.chips("Session", context_bits, kind="")
         if st.session_state["pii_degraded"]:
-            st.caption(
-                "⚠️ The automatic personal-data check ran in reduced mode for this "
-                "document — pattern matching only. Check the list above before you rely on it."
+            # Loud rather than quiet on purpose: without the local name model, the
+            # contact block and the patterns still run but a name in the body of
+            # the CV can survive. Anyone demonstrating this needs to know.
+            st.warning(
+                "**Reduced personal-data removal.** The local name-detection model "
+                "isn't available on this deployment, so only the contact block and "
+                "pattern matching ran — a name elsewhere in the document may remain. "
+                "Check the list above before using this with a real CV.",
+                icon="⚠️",
             )
 
 
