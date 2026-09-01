@@ -317,12 +317,27 @@ def _is_heading(line: str) -> bool:
 
 
 def split_contact_block(text: str) -> tuple[list[str], list[str]]:
-    """Returns (header_lines, body_lines), split at the CV's first section heading."""
+    """
+    Returns (header_lines, body_lines), split at the CV's first section heading.
+
+    When no heading is recognised - a typo'd "Educatiqn", an unusual wording, a
+    messy scan - falling back to a fixed number of lines is destructive: it hands
+    the cleaner a dozen lines of real content to delete. So the fallback instead
+    stops at the first line that is neither blank, nor contact-shaped, nor a
+    plausible name line, which on a CV without a contact block means stopping
+    immediately and removing nothing.
+    """
     lines = text.splitlines()
     for index, line in enumerate(lines[:MAX_CONTACT_BLOCK_LINES]):
         if _is_heading(line):
             return lines[:index], lines[index:]
-    return lines[:MAX_CONTACT_BLOCK_LINES], lines[MAX_CONTACT_BLOCK_LINES:]
+
+    cut = 0
+    for index, line in enumerate(lines[:MAX_CONTACT_BLOCK_LINES]):
+        if line.strip() and not CONTACT_LINE_RE.search(line) and not _looks_like_a_name_line(line):
+            break
+        cut = index + 1
+    return lines[:cut], lines[cut:]
 
 
 def _clean_contact_block(header_lines: list[str], person_names: list[str]) -> tuple[list[str], bool]:
@@ -440,9 +455,31 @@ def _body_name_is_corroborated(name: str, lines: list[str]) -> bool:
     return False
 
 
-def _filter_names(names: list[str], veto: set) -> list[str]:
+INSTITUTION_WORDS = re.compile(
+    r"\b(universit(y|ä|a)t?\w*|hochschule|school|schule|institute?|institut|"
+    r"gymnasium|college|akademie|academy|faculty|fakultät)\b",
+    re.IGNORECASE,
+)
+
+
+def _only_ever_next_to_an_institution(name: str, text: str) -> bool:
+    """
+    "St. Gallen" reads as a person to a small NER model, and blanking it would
+    take a word out of every university on the CV. If every line the candidate
+    name appears on also names an institution, it is part of that institution's
+    name, not a person.
+    """
+    lines = [line for line in text.splitlines() if name in line]
+    return bool(lines) and all(INSTITUTION_WORDS.search(line) for line in lines)
+
+
+def _filter_names(names: list[str], veto: set, text: str = "") -> list[str]:
     """Drops anything the model also reads as a place or an institution."""
-    return [n for n in names if n.strip(" ,.;:|·—-").lower() not in veto]
+    return [
+        n for n in names
+        if n.strip(" ,.;:|·—-").lower() not in veto
+        and not (text and _only_ever_next_to_an_institution(n, text))
+    ]
 
 
 def _redact_names(text: str, names: list[str]) -> tuple[str, bool]:
@@ -489,18 +526,18 @@ def strip_pii(text: str, language: str = "en") -> dict:
         veto = pii_local.place_and_org_strings(text, language)
         # The header name is the candidate's own: trusted, and removed everywhere
         # in the document, which is how it gets caught in a footer or a citation.
-        names = _filter_names(pii_local.detect_persons(header_text, language), veto)
+        names = _filter_names(pii_local.detect_persons(header_text, language), veto, text)
         if not names:
             # Try the other supported language before giving up: the pipelines
             # disagree on bare name lines often enough to be worth one more pass.
             other = "de" if language != "de" else "en"
-            names = _filter_names(pii_local.detect_persons(header_text, other), veto)
+            names = _filter_names(pii_local.detect_persons(header_text, other), veto, text)
         if not names:
             fallback = _name_line_fallback(header_lines)
             if fallback:
                 names = [fallback]
         # A body hit needs corroboration before it is trusted - see above.
-        for candidate in _filter_names(pii_local.detect_persons("\n".join(body_lines), language), veto):
+        for candidate in _filter_names(pii_local.detect_persons("\n".join(body_lines), language), veto, text):
             if candidate not in names and _body_name_is_corroborated(candidate, body_lines):
                 names.append(candidate)
 

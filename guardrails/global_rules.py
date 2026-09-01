@@ -16,7 +16,10 @@ conversation is about. Two directions:
 import re
 
 SCORE_RE = re.compile(
-    r"(\b\d{1,3}\s*/\s*(10|100)\b|"
+    # The lookbehind keeps a real grade out of this: "CGPA 9.34/10.00" is the
+    # student's own number quoted back, not the bot scoring the CV, and firing
+    # on it forces a pointless regeneration mid-conversation.
+    r"((?<![\d.])\d{1,3}\s*/\s*(10|100)\b|"
     r"\bout of (10|100)\b|"
     r"\bscore of\b|\brating of\b|\bi'?d rate\b|\brate it\b|"
     r"\b\d{1,3}\s?%\s?(complete|strong|ready)\b|"

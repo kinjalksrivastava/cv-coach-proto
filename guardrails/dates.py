@@ -31,10 +31,13 @@ MONTHS = {
 
 PRESENT_WORDS = "present|current|now|heute|aktuell|ongoing|laufend|today"
 
+# The optional comma matters more than it looks: LaTeX CV templates routinely
+# render dates as "Feb,2022-Nov,2022", and without it every range on such a CV
+# is invisible to the gap/overlap check.
 RANGE_RE = re.compile(
-    r"(?P<smonth>[A-Za-zäöüÄÖÜ]{3,9})?\.?\s*(?P<syear>(?:19|20)\d{2})"
+    r"(?P<smonth>[A-Za-zäöüÄÖÜ]{3,9})?\.?,?\s*(?P<syear>(?:19|20)\d{2})"
     r"\s*[-–—]\s*"
-    r"(?:(?P<emonth>[A-Za-zäöüÄÖÜ]{3,9})\.?\s*(?P<eyear>(?:19|20)\d{2})"
+    r"(?:(?P<emonth>[A-Za-zäöüÄÖÜ]{3,9})\.?,?\s*(?P<eyear>(?:19|20)\d{2})"
     rf"|(?P<epresent>{PRESENT_WORDS}))",
     re.IGNORECASE,
 )
