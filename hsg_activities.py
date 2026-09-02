@@ -191,6 +191,67 @@ USEFUL_LINKS = [
 ]
 
 
+# A condensed version of the catalogue for the interface, shown to a student
+# whose CV has little or no involvement to talk about. Deliberately a GIST:
+# category, a handful of recognisable names, and the CV section it belongs in -
+# not the full 37 entries, which would read as a wall rather than a starting
+# point. Every line is drawn from the same Career Services source as the rest of
+# this file, so the panel and the conversation can never disagree.
+GIST = [
+    ("Mentoring",
+     "HSG Mentoring Programme, Assessment Guide (SHSG)",
+     "Education — as a bullet under your degree"),
+    ("Student clubs",
+     "~150 accredited clubs via SHSG — Consulting Club HSG, Helvetian Investment "
+     "Club, oikos St. Gallen, Entretech, Law Clinic, LawDays",
+     "Membership: a bullet under Education. An active role: Extracurricular"),
+    ("Certificates alongside your degree",
+     "Data Science Fundamentals (DSF), Integrative Sustainability Management "
+     "(SuM-HSG), Managing Climate Solutions (MaCS), Bloomberg Market Concepts",
+     "Education as a specialisation, or Courses & Certificates"),
+    ("Student-run events",
+     "START Summit, St. Gallen Symposium, Talents Conference, NextGen Impact Forum",
+     "Organising role: Extracurricular. Paid role: Work Experience. "
+     "Volunteering on the day: Volunteering"),
+    ("Entrepreneurship",
+     "Startup@HSG, Entrepreneurial Talents Programme (ETP), HSG Innovation Trophy",
+     "Extracurricular"),
+    ("Sports, diversity and inclusion",
+     "HSG University Sports (70+ sports), UNIVERSA, UniGay / UniQueer, "
+     "Pride Month @HSG, D&I Week",
+     "Extracurricular — or Work Experience if you teach a class under contract"),
+    ("Academic and company projects",
+     "Bachelor's / Master's thesis, Capstone Project, company-linked practical "
+     "projects (AWP, Student Impact)",
+     "Education"),
+    ("Case competitions",
+     "GMA Challenge, Mavara, FinanceLab, 180 Degrees Consulting, Undergrad Case "
+     "Competition World Cup",
+     "Extracurricular — or Awards if you reached the finals"),
+]
+
+# Section categories that count as "involvement" when deciding whether a CV has
+# enough of it to skip the panel. From guardrails/section_coverage.CATEGORIES.
+INVOLVEMENT_CATEGORIES = {
+    "Extracurricular & Interests",
+    "Volunteering & Community",
+    "Projects",
+    "Awards & Scholarships",
+    "Certifications & Training",
+}
+
+MIN_INVOLVEMENT_SECTIONS = 2
+
+
+def looks_thin(section_categories) -> bool:
+    """
+    True when this CV has little to show under involvement, and the gist is
+    worth surfacing. A CV already carrying two or more of these sections
+    doesn't need to be told what exists - it needs help describing what's there.
+    """
+    return len(INVOLVEMENT_CATEGORIES & set(section_categories)) < MIN_INVOLVEMENT_SECTIONS
+
+
 def _catalogue() -> str:
     lines = []
     for title, entries in GROUPS:

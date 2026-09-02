@@ -10,6 +10,7 @@ import streamlit as st
 from openai import OpenAI
 
 import latency
+import hsg_activities
 import prompts
 import report
 import ui
@@ -79,6 +80,7 @@ def init_state():
         "cv_redactions": [],
         "pii_degraded": False,
         "format_rows": [],
+        "report_text": None,
         "jd_text": None,
         "jd_redactions": [],
         "target_role_hint": "",
@@ -310,6 +312,7 @@ if st.session_state["cv_text"] is None:
             report_text = report.render_markdown(
                 report_data, st.session_state["format_rows"], strings
             )
+            st.session_state["report_text"] = report_text
         else:
             report_text = report.FAILURE_TEXT[lang_code]
         st.session_state["messages"].append({"role": "assistant", "content": report_text})
@@ -323,15 +326,27 @@ document_panel()
 
 target_role_known = bool(st.session_state["jd_text"] or st.session_state["target_role_hint"])
 
-actions_left, actions_right = st.columns([3, 1], gap="small")
-with actions_left:
+col_summary, col_report, col_reset = st.columns([3, 2, 2], gap="small")
+with col_summary:
     summary_clicked = st.button(
         "Prepare a summary for Career Services",
         disabled=len(st.session_state["messages"]) < 3,
         help="Available at any time — you don't have to wait for the bot to offer one.",
         use_container_width=True,
     )
-with actions_right:
+with col_report:
+    if st.session_state["report_text"]:
+        st.download_button(
+            "Download the report",
+            data=st.session_state["report_text"],
+            file_name="cv_feedback_report.md",
+            mime="text/markdown",
+            help="The feedback report from the start of this conversation. Markdown, "
+                 "so the tables keep their shape.",
+            use_container_width=True,
+            key="report_download",
+        )
+with col_reset:
     if st.button("Start over", use_container_width=True):
         reset_session()
         st.rerun()
@@ -353,6 +368,21 @@ if summary_clicked:
             data=manual_summary_text, file_name="cv_coach_summary.txt", mime="text/plain",
             key="manual_summary_download",
         )
+
+# A CV with nothing under involvement gets shown what HSG actually offers.
+# Static content from hsg_activities.GIST - the same source the conversation
+# uses, so the panel and the bot can never contradict each other.
+if hsg_activities.looks_thin(
+    section_coverage.categories(st.session_state["sections_detected"])
+):
+    with ui.card("hsg"):
+        ui.card_head(
+            "Where HSG students build this kind of experience",
+            "Things HSG offers that students often forget to put on a CV, and which "
+            "section each one belongs in. Ask me about any of them — or about anything "
+            "you've already done that isn't listed here.",
+        )
+        ui.gist_rows(hsg_activities.GIST)
 
 for msg in st.session_state["messages"]:
     with st.chat_message(msg["role"]):

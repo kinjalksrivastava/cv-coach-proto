@@ -127,6 +127,23 @@ footer {{ display: none; }}
   font-weight: 650; color: var(--ink-faint); margin: 0 0 6px 0;
 }}
 .hsg-panel-row {{ margin-top: 1.05rem; }}
+/* --- HSG opportunities gist ------------------------------------------- */
+.hsg-gist {{ margin-top: 0.35rem; }}
+.hsg-gist-row {{
+  padding: 0.6rem 0; border-top: 1px solid var(--border);
+}}
+.hsg-gist-row:first-child {{ border-top: none; padding-top: 0.2rem; }}
+.hsg-gist-cat {{
+  margin: 0 0 2px 0; font-size: 0.87rem; font-weight: 640; color: var(--ink);
+}}
+.hsg-gist-ex {{
+  margin: 0; font-size: 0.85rem; line-height: 1.5; color: var(--ink-soft);
+}}
+.hsg-gist-where {{
+  margin: 3px 0 0 0; font-size: 0.79rem; line-height: 1.45;
+  color: var(--hsg-green-dark); font-weight: 550;
+}}
+
 .hsg-note {{
   font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; margin: 3px 0 0 0;
 }}
@@ -333,6 +350,17 @@ def chips(label: str, items: list[str], kind: str = "on", empty_text: str = "non
         f'<div class="hsg-chips">{body}</div></div>',
         unsafe_allow_html=True,
     )
+
+
+def gist_rows(rows: list[tuple[str, str, str]]) -> None:
+    """Category / examples / where-it-goes, for the HSG opportunities panel."""
+    html = "".join(
+        f'<div class="hsg-gist-row"><p class="hsg-gist-cat">{category}</p>'
+        f'<p class="hsg-gist-ex">{examples}</p>'
+        f'<p class="hsg-gist-where">&rarr; {where}</p></div>'
+        for category, examples, where in rows
+    )
+    st.markdown(f'<div class="hsg-gist">{html}</div>', unsafe_allow_html=True)
 
 
 def notes(label: str, lines: list[str]) -> None:
