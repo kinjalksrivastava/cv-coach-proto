@@ -315,14 +315,15 @@ if st.session_state["cv_text"] is None:
         if report_data:
             strings = dict(report.STRINGS[lang_code])
             strings["criteria_note"] = format_check.CRITERIA_NOTE
+            notes = report.deterministic_notes(facts)
             report_text = report.render_markdown(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"],
+                facts["date_findings"], notes,
             )
             st.session_state["report_text"] = report_text
             st.session_state["report_pdf"] = report.to_pdf(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"],
+                facts["date_findings"], notes,
             )
             st.session_state["show_bullet_examples"] = bool(
                 report_data.get("show_bullet_examples")

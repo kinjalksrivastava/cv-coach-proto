@@ -79,7 +79,8 @@ def assess(facts: dict, target_role: str = "") -> dict:
                 section=section["heading"],
                 guidance="Add a few bullets under each one covering what was done, how, and "
                          f"what changed as a result — focused on the transferable skills "
-                         f"that matter{for_role}.",
+                         f"that matter{for_role}. Tell the student that worked examples of "
+                         "weak-versus-strong bullets can be opened underneath this report.",
             ))
         if section["entries_without_title"]:
             issues.append(_issue(
@@ -115,7 +116,26 @@ def assess(facts: dict, target_role: str = "") -> dict:
             f'{len(facts["weak_opener_bullets"])} bullets open with a duty phrase, e.g. '
             f'"{facts["weak_opener_bullets"][0][:90]}"',
             guidance="Rework these around what you personally did and what changed because "
-                     f"of it, rather than what you were responsible for{for_role}.",
+                     f"of it, rather than what you were responsible for{for_role}. Tell the "
+                     "student that worked examples of weak-versus-strong bullets can be "
+                     "opened underneath this report.",
+        ))
+
+    # Substance, not just structure. Every other tier-2 check looks at how a
+    # bullet OPENS; this one looks at whether it ever arrives at a result. Without
+    # it a tidy but hollow CV - bullets present, sections complete, no typos -
+    # comes back with almost nothing to fix, which is the wrong answer at scale.
+    total_exp = facts.get("experience_bullets", 0)
+    with_outcome = facts.get("experience_bullets_with_outcome", 0)
+    if total_exp >= 4 and with_outcome / total_exp < 0.4:
+        example = (facts.get("bullets_without_outcome") or [""])[0][:90]
+        issues.append(_issue(
+            2, "no_outcomes", "Most bullets describe the task but not the result",
+            f"{total_exp - with_outcome} of {total_exp} experience bullets contain no "
+            f'outcome, figure or change, e.g. "{example}"',
+            guidance="For each one, add what changed because you did it — faster, cheaper, "
+                     "clearer, larger, or a decision that followed. Use a number only where "
+                     "you genuinely have one; an invented figure is worse than none.",
         ))
 
     # --- Tier 3: structure and consistency -----------------------------------
@@ -200,7 +220,47 @@ def assess(facts: dict, target_role: str = "") -> dict:
     if facts["grade_consistency"]:
         issues.append(_issue(
             5, "grade_consistency", "Grades are shown for some degrees but not others",
-            facts["grade_consistency"], section=education_section, guidance="",
+            facts["grade_consistency"], section=education_section,
+            # The reason is the part that persuades a student to act. Left in the
+            # evidence text it gets summarised away into "can raise questions";
+            # as guidance it is something the model has to render.
+            guidance="Give the reason, not just the rule: a recruiter assumes a grade "
+                     "that has been left out was the bad one. So show grades for every "
+                     "education entry, or for none of them.",
+        ))
+    # The language ladder Career Services asked for. It has to be an issue rather
+    # than a style note, otherwise it can neither be raised nor change the
+    # section's status - which is why a section reading "English: Proficient"
+    # kept coming back Strong with no nudge at all.
+    languages = facts.get("language_levels") or {}
+    if languages.get("missing"):
+        issues.append(_issue(
+            5, "language_no_level", "Languages are listed without a level",
+            "No level given for: " + ", ".join(languages["missing"][:4]),
+            section=languages.get("section"),
+            guidance="Put a plain label against each one first (Basic, Intermediate, "
+                     "Advanced, Fluent) so a reader can act on it — then consider CEFR "
+                     "(A1-C2), which is the precise form recruiters read the same way "
+                     "everywhere.",
+        ))
+    elif languages.get("plain_only"):
+        issues.append(_issue(
+            5, "language_plain_only", "Language levels could be more precise",
+            "Plain labels used, no CEFR: " + ", ".join(languages["plain_only"][:4]),
+            section=languages.get("section"),
+            guidance="Consider upgrading these to CEFR (A1-C2). A recruiter reads \"B2\" "
+                     "the same way in every country; \"Proficient\" means different things "
+                     "to different readers. State the level you are genuinely at now, not "
+                     "the last certificate you sat.",
+        ))
+
+    if facts.get("single_word_interests"):
+        issues.append(_issue(
+            5, "bare_interests", "Interests are listed without any detail",
+            "Listed as bare words: " + ", ".join(facts["single_word_interests"][:5]),
+            section=facts.get("single_word_interests_section"),
+            guidance="Say what kind, how often, and to what level. \"Chess\" says nothing; "
+                     "a club, a rating or a regular commitment says something.",
         ))
     if facts["buzzwords"]:
         issues.append(_issue(
@@ -253,6 +313,14 @@ def describe_for_prompt(result: dict) -> str:
                    "by the cap - but DO cover each one in the relevant section's detail):")
         for issue in result["dropped_from_key_areas"]:
             out.append(f'  - [tier {issue["tier"]}] {issue["title"]}: {issue["evidence"]}')
+            # The guidance has to travel with a dropped issue too. Without it the
+            # model saw only the bare fact and wrote the rule without its reason -
+            # "leaving some out can raise questions" instead of "a recruiter
+            # assumes the grade you left out was the bad one".
+            if issue["guidance"]:
+                out.append(f'      what the student should do: {issue["guidance"]}')
+            if issue["section"]:
+                out.append(f'      belongs to section: "{issue["section"]}"')
 
     out.append("\nSECTION STATUS (decided from the issues above - use exactly these, they "
                "cannot disagree with the key areas):")

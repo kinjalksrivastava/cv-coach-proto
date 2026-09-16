@@ -167,22 +167,37 @@ def describe(grades: list[dict]) -> list[str]:
         where = f'on the line "{g["line"][:70]}"'
         if not g["plausible"]:
             if g["suggestion"] is not None:
-                scale = SCALES.get(g["country"], {}).get("name", "the local scale")
-                notes.append(
-                    f'The grade "{g["raw"]}" {where} is not a possible value on {scale}. '
-                    f'It may be {g["suggestion"]} with the decimal point lost. Ask the '
-                    f"student to confirm, and to write it with its maximum."
-                )
+                info = SCALES.get(g["country"], {})
+                scale = info.get("name", "the local scale")
+                top = info.get("hi")
+                # Knowing the country means knowing the maximum, so state it
+                # rather than asking the student what it is.
+                if top:
+                    notes.append(
+                        f'The grade "{g["raw"]}" {where} is not a possible value on '
+                        f'{scale}. It is almost certainly {g["suggestion"]} with the '
+                        f'decimal point lost. Confirm this with the student and tell them '
+                        f'to write it as {g["suggestion"]} / {top:.2f} - the maximum must '
+                        f'be on the CV so a reader in another country can read it.'
+                    )
+                else:
+                    notes.append(
+                        f'The grade "{g["raw"]}" {where} is not a possible value on '
+                        f'{scale}. It may be {g["suggestion"]}. Ask the student to confirm '
+                        f'and to write it with its maximum.'
+                    )
             else:
                 notes.append(
                     f'The grade "{g["raw"]}" {where} does not match any grading scale '
                     f"this tool recognises. Ask the student which scale it is on."
                 )
         elif g["missing_maximum"]:
+            top = SCALES.get(g["country"], {}).get("hi")
+            target = f'{g["value"]:g} / {top:.2f}' if top else "a value out of its maximum"
             notes.append(
                 f'The grade "{g["raw"]}" {where} is given without its maximum. '
-                f"A recruiter in another country cannot read it - it should be written "
-                f"as a value out of its maximum."
+                f'A recruiter in another country cannot read it - it should be written '
+                f'as {target}.'
             )
     return notes
 
@@ -196,8 +211,7 @@ def consistency_note(education_entry_count: int, entries_with_grades: int) -> st
     if education_entry_count >= 2 and 0 < entries_with_grades < education_entry_count:
         return (
             f"{entries_with_grades} of {education_entry_count} education entries show a "
-            "grade. Career Services' guidance is to show grades for all of them or none: "
-            "a reader tends to assume an omitted grade was the weaker one. Grades are "
-            "optional throughout."
+            "grade, the rest do not. Grades are optional throughout, but showing some and "
+            "hiding others is the one option that works against the student."
         )
     return None

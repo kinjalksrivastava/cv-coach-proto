@@ -246,16 +246,18 @@ def _writing_row(facts: dict) -> dict:
         problems.extend(facts["heading_typos"])
     if facts.get("month_typos"):
         problems.extend(facts["month_typos"])
-    if facts.get("mixed_spelling"):
-        problems.append(
-            "British and American spellings are both used ("
-            + ", ".join(facts["mixed_spelling"]) + ") — pick one and keep it consistent"
-        )
-    if not problems:
-        return {"check": "Spelling and consistency", "status": GOOD,
-                "comment": "No obvious typos in headings or dates, and spelling is consistent."}
-    return {"check": "Spelling and consistency", "status": ATTENTION,
-            "comment": "; ".join(problems) + "."}
+    # Both halves are always reported, even the clean one. Listing only the
+    # failures meant a CV with typos never learned its British/American spelling
+    # had been checked at all.
+    spelling_note = ("British and American spellings are both used ("
+                     + ", ".join(facts["mixed_spelling"]) + ") - pick one and keep it "
+                     "consistent") if facts.get("mixed_spelling") else \
+                    "British/American spelling is used consistently"
+    typo_note = "; ".join(problems) if problems else \
+                "no obvious typos in headings or dates"
+    status = ATTENTION if (problems or facts.get("mixed_spelling")) else GOOD
+    return {"check": "Spelling and consistency", "status": status,
+            "comment": f"Typos: {typo_note}. Spelling: {spelling_note}."}
 
 
 def run(text: str, meta: dict, facts: dict | None = None) -> list[dict]:

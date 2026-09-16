@@ -240,6 +240,67 @@ def _has_role_title(entry: dict) -> bool:
     return len(parts) >= 2 and all(len(p) > 2 for p in parts[:2])
 
 
+CEFR_TOKEN = re.compile(r"\b[ABC][12]\b")
+PLAIN_LEVEL = re.compile(
+    r"\b(native|fluent|advanced|intermediate|basic|proficient|beginner|conversational|"
+    r"mother ?tongue|muttersprache|fliessend|verhandlungssicher|grundkenntnisse)\b",
+    re.IGNORECASE,
+)
+NATIVE_LEVEL = re.compile(r"\b(native|mother ?tongue|muttersprache)\b", re.IGNORECASE)
+LANGUAGE_LINE = re.compile(r"^\s*([A-Za-zÄÖÜäöü]{3,20})\s*[:\-–]\s*(\S.*)$")
+
+
+def _language_levels(sliced: list[dict]) -> dict:
+    """
+    Where each language sits on the ladder Career Services asked for: no level at
+    all, a plain self-assessed label, or CEFR. A native language is left out of
+    both lists - it is never an area for improvement.
+    """
+    section, missing, plain_only = None, [], []
+    for block in sliced:
+        heading = block["heading"].lower()
+        if block["category"] != "Skills & Languages" and "language" not in heading \
+                and "sprach" not in heading:
+            continue
+        for line in block["lines"]:
+            match = LANGUAGE_LINE.match(line.strip())
+            if not match:
+                continue
+            name, value = match.group(1), match.group(2)
+            if NATIVE_LEVEL.search(value):
+                continue
+            section = section or block["heading"]
+            if CEFR_TOKEN.search(value):
+                continue
+            if PLAIN_LEVEL.search(value):
+                plain_only.append(f"{name}: {value.strip()}")
+            else:
+                missing.append(f"{name}: {value.strip()}")
+    return {"section": section, "missing": missing, "plain_only": plain_only}
+
+
+def _single_word_interests(sliced: list[dict]) -> tuple[str | None, list[str]]:
+    """
+    "Chess", "Shogi" on their own tell a reader nothing. Career Services' rule is
+    that a bare interest needs detail - what kind, how often, to what level.
+    Only entries of one or two words count, so a described interest is left alone.
+    """
+    for section in sliced:
+        if section["category"] != "Extracurricular & Interests":
+            continue
+        bare = []
+        for line in section["lines"]:
+            item = line.strip().strip("•-–—*· ").strip()
+            if not item or any(ch.isdigit() for ch in item):
+                continue
+            words = item.replace(",", " ").split()
+            if 1 <= len(words) <= 2 and len(item) <= 28:
+                bare.append(item)
+        if bare:
+            return section["heading"], bare
+    return None, []
+
+
 def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
@@ -337,6 +398,16 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
             grading.GRADE_KEYWORDS.search(b) for b in e["bullets"])
     )
 
+    # Outcome density, measured only over sections where describing the work is
+    # the point. A skills list is bullets too, and counting those would produce a
+    # finding about "bullets with no outcome" on a CV whose only bullets are tools.
+    detail_bullets = [
+        _bullet_text(line)
+        for block in sliced if block["category"] in DETAIL_CATEGORIES
+        for line in block["lines"] if _is_bullet(line)
+    ]
+    with_outcome = [b for b in detail_bullets if IMPACT_MARKER.search(b)]
+
     weak = [b for b in all_bullets
             if b.lower().startswith(WEAK_OPENERS) and not IMPACT_MARKER.search(b)]
     lowered = text.lower()
@@ -376,6 +447,9 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
         "too_short": bool(page_count == 1 and char_count < 1200),
         "sections": section_facts,
         "total_bullets": len(all_bullets),
+        "experience_bullets": len(detail_bullets),
+        "experience_bullets_with_outcome": len(with_outcome),
+        "bullets_without_outcome": [b for b in detail_bullets if b not in with_outcome][:5],
         "has_no_bullets_anywhere": len(all_bullets) == 0,
         "weak_opener_bullets": weak[:6],
         "buzzwords": buzz,
@@ -387,6 +461,9 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
         ],
         "month_typos": _month_typos(text),
         "date_findings": date_findings,
+        "single_word_interests": _single_word_interests(sliced)[1],
+        "single_word_interests_section": _single_word_interests(sliced)[0],
+        "language_levels": _language_levels(sliced),
         "grades": grades,
         "grade_notes": grading.describe(grades),
         "grade_consistency": grading.consistency_note(len(education_entries), entries_with_grade),

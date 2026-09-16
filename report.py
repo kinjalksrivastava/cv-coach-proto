@@ -128,16 +128,36 @@ wasted space.
 - Do NOT write inventory bullets. "Lists chess, shogi and learning new languages" tells \
 the student nothing they do not know. Cut it.
 - If a section is strong, say so in ONE line and say why. Do not pad it to three or four \
-bullets describing what it contains.
+bullets describing what it contains, and do NOT slip a change request into it - "this \
+could be expanded with more detail" inside a section marked Strong contradicts the mark. \
+If it needs changing, it is not strong, and the status you were given will say so.
+- Never count the existence of something as a strength. "You have included a range of \
+interests" and "you have listed your languages" are not strengths - they are the minimum. \
+A strength is something done WELL and visible in the text. If you cannot find three real \
+ones, give two, or one.
+- HSG options: when you name one, you MUST include its link exactly as given in the \
+HSG OPTIONS block, in brackets after the name. If an option has no link listed, name it \
+without one - never invent a URL. Never name an HSG option that is not in that block.
+- Where an issue supplies a "what the student should do" line, carry its substance \
+through - INCLUDING any reason it gives. A reason is the part that persuades someone to \
+act, and it is the first thing lost when advice is compressed. If the guidance says a \
+recruiter assumes an omitted grade was the bad one, say that; do not soften it to \
+"this can raise questions".
 - Do not state universal claims about what "recruiters want". Where advice depends on \
 the target role, name that role. Where no role is known, say the feedback covers \
 structure and completeness and that role-specific feedback needs a target.
 - A native language is not an area for improvement. Do not list one.
-- On language levels: a self-assessed plain label (Native, Fluent, Advanced, \
-Intermediate, Basic) is perfectly acceptable. CEFR is an option you may offer, never a \
-requirement, and you never assign a level yourself. If a level is missing entirely, the \
-point is that a reader cannot act on a blank - not that CEFR is mandatory. Tell students \
-they may state the level they are genuinely at now, not the last certificate they sat.
+- On language levels, work up this ladder and say where the student currently sits:
+  (a) No level shown at all - the first thing to fix is that a reader cannot act on a \
+blank. Ask them to put a plain label against each language (Basic, Intermediate, \
+Advanced, Fluent, Native), and then mention that CEFR (A1-C2) is the more precise form \
+if they want to be exact.
+  (b) A plain label already shown - push towards CEFR. A recruiter reads "B2" the same \
+way everywhere; "Proficient" means different things to different readers. Frame it as an \
+upgrade, not a correction.
+  (c) Native - leave it alone. A native language is never an area for improvement.
+  Never assign a level yourself, and tell students to state the level they are genuinely \
+at now rather than the last certificate they sat.
 - Soft or personal traits belong in the experience bullets as something demonstrably \
 done, not in a list of adjectives. Say that where it applies.
 
@@ -252,8 +272,30 @@ def _clean(value) -> str:
     return str(value).replace("|", "/").replace("\n", " ").strip()
 
 
+def deterministic_notes(facts: dict) -> list[str]:
+    """
+    Sentences that must reach the student word for word.
+
+    Anything routed through the model gets compressed eventually. The grade
+    reason was softened to "this can raise questions" on three separate attempts,
+    even once the guidance was attached to the issue - and the reason is the part
+    that actually persuades a student to act. So where the exact wording carries
+    the weight, it is rendered here instead of asked for.
+    """
+    notes = []
+    if facts.get("grade_consistency"):
+        notes.append(
+            "**On grades:** a recruiter assumes a grade that has been left out was the "
+            "bad one. Show a grade for every education entry, or for none of them — "
+            "grades are optional, but showing some and hiding others is the one option "
+            "that works against you."
+        )
+    return notes
+
+
 def render_markdown(data: dict, format_rows: list[dict], strings: dict,
-                    date_findings: list[dict] | None = None) -> str:
+                    date_findings: list[dict] | None = None,
+                    notes: list[str] | None = None) -> str:
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip()]
 
@@ -283,6 +325,12 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     else:
         parts.append(strings["nothing_to_improve"])
 
+    # Rendered in code rather than asked of the model. The instruction to mention
+    # the examples was being compressed away along with the rest of the detail,
+    # and a pointer that appears only sometimes is worse than none.
+    if data.get("show_bullet_examples"):
+        parts += ["", f"_{strings['bullet_pointer']}_"]
+
     sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
     if sections:
         # The overview table carries no Comment column: the detail follows
@@ -297,6 +345,9 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
             parts += ["", f"**{str(section.get('name', '')).strip()}** "
                           f"{_status(section.get('status'))}", ""]
             parts += [f"- {point}" for point in points]
+
+    if notes:
+        parts += [""] + [f"> {note}" for note in notes]
 
     # Timeline notes sit at the END, and only when there is something to say.
     if date_findings:
@@ -340,6 +391,10 @@ STRINGS = {
             "Nothing came up that needs attention. That is a genuine result, not a gap in "
             "the check — the CV holds together."
         ),
+        "bullet_pointer": (
+            "Worked examples of weaker and stronger bullet points — Career Services' own, "
+            "not rewrites of your CV — can be opened underneath this report."
+        ),
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
         "timeline": "Dates worth a look",
@@ -372,6 +427,11 @@ STRINGS = {
         "nothing_to_improve": (
             "Es ist nichts aufgefallen, das Aufmerksamkeit braucht. Das ist ein echtes "
             "Ergebnis, keine Lücke in der Prüfung."
+        ),
+        "bullet_pointer": (
+            "Beispiele für schwächere und stärkere Bullet Points — vom Career Services, "
+            "keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses "
+            "Reports öffnen."
         ),
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
@@ -406,7 +466,8 @@ FAILURE_TEXT = {
 # --- PDF export ---------------------------------------------------------------
 
 def to_pdf(data: dict, format_rows: list[dict], strings: dict,
-           date_findings: list[dict] | None = None) -> bytes | None:
+           date_findings: list[dict] | None = None,
+           notes: list[str] | None = None) -> bytes | None:
     """
     The report as a PDF. Built from the same dict the markdown comes from rather
     than by converting the markdown, so the tables survive. Returns None if
@@ -480,10 +541,17 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         for item in improvements:
             if not isinstance(item, dict):
                 continue
-            story.append(Paragraph(f'<b>{plain(item.get("title", ""))}</b>', h3))
+            sev = {"high": "High priority", "medium": "Worth fixing",
+                   "low": "Minor"}.get(str(item.get("severity", "medium")).lower(),
+                                       "Worth fixing")
+            story.append(Paragraph(
+                f'<b>{plain(item.get("title", ""))}</b>'
+                f'<font size="7.5" color="#55605A">  — {sev}</font>', h3))
             story.append(Paragraph(plain(item.get("detail", "")), body))
     else:
         story.append(Paragraph(plain(strings["nothing_to_improve"]), body))
+    if data.get("show_bullet_examples"):
+        story.append(Paragraph(plain(strings["bullet_pointer"]), small))
 
     sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
     if sections:
@@ -510,6 +578,9 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
                 f'{plain(section.get("name", ""))} — {plain(marker(section.get("status")))}', h3))
             for point in points:
                 story.append(Paragraph("• " + plain(point), body))
+
+    for note in (notes or []):
+        story.append(Paragraph(plain(note.replace("**", "")), body))
 
     if date_findings:
         story.append(Paragraph(f'6. {plain(strings["timeline"])}', h2))

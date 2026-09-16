@@ -82,7 +82,8 @@ CERTIFICATES = [
      "Education as a specialisation, or Courses and Certificates", ""),
     ("Bloomberg Market Concepts (BMC)",
      "a 12-hour e-learning introduction to the financial markets, via the HSG library",
-     "Technical Skills, or Courses and Certificates", ""),
+     "Technical Skills, or Courses and Certificates",
+     "https://portal.bloombergforeducation.com/"),
 ]
 
 ENTREPRENEURSHIP = [
