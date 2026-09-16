@@ -14,7 +14,9 @@ import hsg_activities
 import prompts
 import report
 import ui
+import cv_facts
 import format_check
+import severity
 from extraction import extract_text, MIN_CHARS
 from guardrails import confidentiality, dates, global_rules, language, section_coverage
 from pii import strip_pii
@@ -81,6 +83,8 @@ def init_state():
         "pii_degraded": False,
         "format_rows": [],
         "report_text": None,
+        "report_pdf": None,
+        "show_bullet_examples": False,
         "jd_text": None,
         "jd_redactions": [],
         "target_role_hint": "",
@@ -153,8 +157,9 @@ def document_panel():
             kind="",
             empty_text="none detected",
         )
-        if st.session_state["date_findings"]:
-            ui.notes("Dates worth talking about", st.session_state["date_findings"])
+        # Timeline notes used to sit here, at the top of the screen, in wording
+        # written for the model rather than the student. They now close the
+        # report instead, where a reader meets them after the substance.
         context_bits = [f"Language: {language.SUPPORTED[lang]}"]
         if st.session_state["jd_text"]:
             context_bits.append("Job description: provided")
@@ -283,36 +288,45 @@ if st.session_state["cv_text"] is None:
         st.session_state["cv_text"] = cv_text
         st.session_state["cv_redactions"] = cv_clean["redactions"]
         st.session_state["pii_degraded"] = cv_clean["degraded"]
-        st.session_state["date_findings"] = dates.find_findings(cv_text)
-        st.session_state["format_rows"] = format_check.run(cv_text, cv_meta)
         if jd_clean:
             st.session_state["jd_text"] = jd_clean["text"]
             st.session_state["jd_redactions"] = jd_clean["redactions"]
         st.session_state["target_role_hint"] = target_role
 
-        # --- only now, on the redacted text, do the two model calls: the section
-        # parse and the opening report. They're independent, so they run at once. ---
+        # --- only now, on the redacted text, the model calls. The section parse
+        # has to finish first: the measured facts are computed against the parsed
+        # sections, and the ranked issues are computed from those facts. The model
+        # writes the report from that, rather than deciding for itself what is
+        # wrong with the CV. ---
         lang_code = st.session_state["language_pref"]
         with st.spinner("Reading your CV and writing your feedback report…"):
-            with ThreadPoolExecutor(max_workers=2) as pool:
-                sections_job = pool.submit(
-                    section_coverage.detect_sections, cv_text, client, MODEL
-                )
-                report_job = pool.submit(
-                    report.generate, client, MODEL, cv_text,
-                    st.session_state["jd_text"], target_role,
-                    st.session_state["format_rows"], language.SUPPORTED[lang_code],
-                )
-                st.session_state["sections_detected"] = sections_job.result()
-                report_data = report_job.result()
+            sections = section_coverage.detect_sections(cv_text, client, MODEL)
+            st.session_state["sections_detected"] = sections
+            facts = cv_facts.analyse(cv_text, cv_meta, sections)
+            st.session_state["date_findings"] = facts["date_findings"]
+            st.session_state["format_rows"] = format_check.run(cv_text, cv_meta, facts)
+            ranked = severity.assess(facts, target_role)
+            report_data = report.generate(
+                client, MODEL, cv_text, st.session_state["jd_text"], target_role,
+                st.session_state["format_rows"], facts, ranked,
+                language.SUPPORTED[lang_code],
+            )
 
         if report_data:
             strings = dict(report.STRINGS[lang_code])
             strings["criteria_note"] = format_check.CRITERIA_NOTE
             report_text = report.render_markdown(
-                report_data, st.session_state["format_rows"], strings
+                report_data, st.session_state["format_rows"], strings,
+                facts["date_findings"],
             )
             st.session_state["report_text"] = report_text
+            st.session_state["report_pdf"] = report.to_pdf(
+                report_data, st.session_state["format_rows"], strings,
+                facts["date_findings"],
+            )
+            st.session_state["show_bullet_examples"] = bool(
+                report_data.get("show_bullet_examples")
+            )
         else:
             report_text = report.FAILURE_TEXT[lang_code]
         st.session_state["messages"].append({"role": "assistant", "content": report_text})
@@ -335,14 +349,24 @@ with col_summary:
         use_container_width=True,
     )
 with col_report:
-    if st.session_state["report_text"]:
+    # PDF by default - a reviewer could not open the markdown version at all.
+    # The text download stays as the fallback if reportlab isn't installed.
+    if st.session_state["report_pdf"]:
+        st.download_button(
+            "Download the report (PDF)",
+            data=st.session_state["report_pdf"],
+            file_name="cv_feedback_report.pdf",
+            mime="application/pdf",
+            help="The feedback report from the start of this conversation.",
+            use_container_width=True,
+            key="report_download_pdf",
+        )
+    elif st.session_state["report_text"]:
         st.download_button(
             "Download the report",
             data=st.session_state["report_text"],
             file_name="cv_feedback_report.md",
             mime="text/markdown",
-            help="The feedback report from the start of this conversation. Markdown, "
-                 "so the tables keep their shape.",
             use_container_width=True,
             key="report_download",
         )
@@ -369,24 +393,18 @@ if summary_clicked:
             key="manual_summary_download",
         )
 
-# A CV with nothing under involvement gets shown what HSG actually offers.
-# Static content from hsg_activities.GIST - the same source the conversation
-# uses, so the panel and the bot can never contradict each other.
-if hsg_activities.looks_thin(
-    section_coverage.categories(st.session_state["sections_detected"])
-):
-    with ui.card("hsg"):
-        ui.card_head(
-            "Where HSG students build this kind of experience",
-            "Things HSG offers that students often forget to put on a CV, and which "
-            "section each one belongs in. Ask me about any of them — or about anything "
-            "you've already done that isn't listed here.",
-        )
-        ui.gist_rows(hsg_activities.GIST)
-
 for msg in st.session_state["messages"]:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
+
+# The weak-vs-strong bullet table, on demand rather than inline at the top of the
+# report. Career Services found it confusing where it was - it arrived before the
+# student had been told anything about their bullets - and wanted it behind a
+# click, at the point bullets are actually raised.
+if st.session_state["show_bullet_examples"]:
+    with st.expander("See what a stronger bullet point looks like"):
+        strings = dict(report.STRINGS[st.session_state["effective_language"]])
+        st.markdown(report.bullet_examples_markdown(strings))
 
 if st.session_state["handed_over"]:
     st.info("This session has been flagged for a human advisor. Coaching is paused here.")
@@ -487,7 +505,7 @@ if user_input:
         st.session_state["structure_only_mode"],
         lang_code,
         lang_name,
-        st.session_state["date_findings"],
+        [f["text"] for f in st.session_state["date_findings"]],
         st.session_state["sections_detected"],
     )
     api_messages = [{"role": "system", "content": prompts.SYSTEM_PROMPT}]

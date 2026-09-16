@@ -42,7 +42,10 @@ RANGE_RE = re.compile(
     re.IGNORECASE,
 )
 
-GAP_THRESHOLD_MONTHS = 4  # flag gaps longer than this
+# A gap shorter than a semester is not worth raising with a student - it is the
+# shape of an ordinary academic year. Career Services asked for a semester as the
+# floor; the prioritisation list says anything over six months unexplained.
+GAP_THRESHOLD_MONTHS = 6
 
 
 def _month_num(name: str | None) -> int:
@@ -89,26 +92,49 @@ def extract_ranges(text: str) -> list[dict]:
     return ranges
 
 
-def find_findings(text: str) -> list[str]:
+def find_findings(text: str, labels: dict | None = None) -> list[dict]:
     """
-    Human-readable flags for possible overlaps/gaps, meant to be handed
-    to the model as things to ASK about - never as conclusions.
+    Overlaps and gaps, written for the student to read.
+
+    The old wording ("ask rather than assume", "ask before treating it as a
+    weakness") was instruction addressed to the model, and it was being printed
+    to students verbatim - both reviewers flagged it independently. Those are
+    prompt concerns and do not belong in text a student sees.
+
+    `labels` optionally maps a raw date range to the entry it belongs to, so the
+    finding can name the experiences rather than just the dates.
+
+    Returns [{kind, first, second, months, text}].
     """
+    labels = labels or {}
     ranges = extract_ranges(text)
     findings = []
+
+    def name(raw: str) -> str:
+        entry = labels.get(raw)
+        return f'{entry} ({raw})' if entry else f'"{raw}"'
 
     for i in range(len(ranges) - 1):
         a, b = ranges[i], ranges[i + 1]
         if a["end_idx"] > b["start_idx"]:
-            findings.append(
-                f"Possible overlap between \u201c{a['raw']}\u201d and \u201c{b['raw']}\u201d "
-                "- could be genuine (e.g. a part-time role during studies), ask rather than assume."
-            )
+            findings.append({
+                "kind": "overlap", "first": a["raw"], "second": b["raw"], "months": None,
+                "text": (
+                    f"{name(a['raw'])} and {name(b['raw'])} run at the same time. "
+                    "If one was part-time or alongside your studies, say so on the CV so "
+                    "a reader isn't left working it out."
+                ),
+            })
         gap = b["start_idx"] - a["end_idx"]
         if gap > GAP_THRESHOLD_MONTHS:
-            findings.append(
-                f"Possible gap of about {gap} months between \u201c{a['raw']}\u201d and "
-                f"\u201c{b['raw']}\u201d - ask before treating it as a weakness."
-            )
+            findings.append({
+                "kind": "gap", "first": a["raw"], "second": b["raw"], "months": gap,
+                "text": (
+                    f"There's a gap of about {gap} months between {name(a['raw'])} and "
+                    f"{name(b['raw'])}. You don't need to over-explain it \u2014 a short line "
+                    "about what you were doing is usually enough, and it's a good thing to "
+                    "talk through with your coach."
+                ),
+            })
 
     return findings

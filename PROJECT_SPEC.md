@@ -121,7 +121,10 @@ cv_coach/
   app.py                          # orchestration only — no rule text, no styling
   ui.py                            # stylesheet, HSG masthead, cards/chips
   report.py                        # the opening feedback report
-  format_check.py                  # length / density / ATS rows, measured from the file
+  format_check.py                  # length / ATS / spelling rows, measured from the file
+  cv_facts.py                      # measured facts about the CV, computed in code
+  severity.py                      # facts ranked into the five tiers, capped at five
+  grading.py                       # grading scales by country, plausibility checks
   assets/                          # University of St.Gallen logo (EN/DE) + favicon
   prompts.py                       # assembles guardrails/sections into the system prompt
   latency.py                       # streaming + timeout + response-length cap
@@ -166,6 +169,8 @@ Two more pieces added after the table below was first written:
 | Layout & branding | Built | Single-column HSG-branded page, no sidebar, no per-user API key field, document panel visible on arrival rather than behind an expander. All CSS in `ui.py`. |
 | Never rewrite | Built, heuristic | Prompt rule + regex output check on rewritten-bullet-shaped phrasing; not a hard block, still the top candidate for a stronger mechanism |
 | PII stripping | Built, fully local | Contact-block removal + local spaCy NER for names + tuned patterns for everything with a reliable shape. `strip_pii()` takes no API client, so the document structurally cannot be sent anywhere before redaction. Person hits are vetoed against the model's own LOCATION/ORGANIZATION reads, and body hits need corroboration, which is what stops "St. Gallen" being treated as a name. Degrades to patterns-only if the models are missing, and says so in the UI. |
+| Facts before opinions | Built | `cv_facts.py` computes what is true about the document and `severity.py` decides what matters; the model only writes the prose. Introduced after review found the report asserting things the CV did not say (a grade attributed to the wrong degree, "bullets lack detail" for a section with no bullets) and producing exactly four improvement areas for every CV regardless of quality. |
+| Ranked key areas | Built | Career Services' five-tier ranking, capped at five, most damaging first. Count is whatever the facts support - zero is a valid answer. Section statuses derive from the same issue list, so a key area can no longer contradict a section marked Strong. |
 | Opening feedback report | Built | Generated once at intake from the redacted text and posted as the bot's first message, in text so it stays questionable. Structure from Career Services' sample: overall impression, format check, what works well, key areas to improve, section-by-section. Held to the same per-section rules as the conversation, assembled from the same modules. |
 | CV format check | Built, from the file | Page count, fonts, tables and images come from the document; heading conventionality and bullet glyphs from the text. The "layout" row measures text density and says outright that real whitespace isn't observable. |
 | Date gap/overlap flags | Built, approximate | Regex date parsing; feeds the model a flag to ask about, never a verdict — see `guardrails/dates.py` |

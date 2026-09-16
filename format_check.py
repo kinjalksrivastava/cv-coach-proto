@@ -21,12 +21,18 @@ GOOD, ATTENTION, UNKNOWN = "good", "attention", "unknown"
 # Fonts that PDF/ATS parsers handle without complaint. Compared case- and
 # space-insensitively against whatever the file actually embeds.
 STANDARD_FONTS = {
-    "arial", "helvetica", "helveticaneue", "times", "timesnewroman", "timesnewromanps",
-    "calibri", "cambria", "georgia", "garamond", "verdana", "tahoma", "trebuchet",
-    "trebuchetms", "bookantiqua", "palatino", "palatinolinotype", "segoeui",
-    "liberationsans", "liberationserif", "nimbusroman", "nimbussans", "dejavusans",
-    "couriernew", "lato", "opensans", "roboto", "sourcesanspro",
+    "arial", "helvetica", "helveticaneue", "times", "timesnewroman",
+    "calibri", "cambria", "georgia", "garamond", "ebgaramond", "verdana", "tahoma",
+    "trebuchet", "trebuchetms", "bookantiqua", "palatino", "palatinolinotype",
+    "segoeui", "liberationsans", "liberationserif", "nimbusroman", "nimbussans",
+    "dejavusans", "couriernew", "courierprime", "lato", "opensans", "roboto",
+    "sourcesanspro", "sourcecodepro", "montserrat", "opensauce", "inter",
 }
+
+# PostScript names carry suffixes that have nothing to do with the typeface:
+# "TimesNewRomanPSMT" and "ArialMT" are Times New Roman and Arial. Not stripping
+# these is why a perfectly ordinary CV was told its fonts were non-standard.
+FONT_SUFFIXES = ("psmt", "ps", "mt", "std", "pro", "lt")
 
 # Headings an ATS parser is likely to recognise, EN + DE.
 CONVENTIONAL_HEADINGS = {
@@ -48,6 +54,11 @@ CONVENTIONAL_HEADINGS = {
     "volunteering", "ehrenamt", "freiwilligenarbeit",
     "it", "tools", "training", "military service", "militärdienst", "zivildienst",
     "personal details", "contact", "kontakt",
+    # Career Services confirmed these read as normal CV headings and should not
+    # be reported as parsing risks.
+    "additional information", "community experience", "core competences",
+    "core competencies", "hobbies and interests", "interests and hobbies",
+    "languages and it skills", "work history", "voluntary work",
 }
 
 # Bullet marks that are safe. Anything else at the start of a list line - an
@@ -60,9 +71,6 @@ BULLET_LINE_RE = re.compile(r"^\s*([^\s\w])\s+\S")
 # unavailable (DOCX, pasted text), and labelled as an estimate wherever shown.
 CHARS_PER_PAGE_ESTIMATE = 2800
 
-DENSE_CHARS_PER_PAGE = 4200
-SPARSE_CHARS_PER_PAGE = 900
-
 
 def _heading_candidates(text: str) -> list[str]:
     """Short standalone lines that read as headings — all-caps or title case."""
@@ -70,6 +78,14 @@ def _heading_candidates(text: str) -> list[str]:
     for line in text.splitlines():
         stripped = line.strip().strip(":").strip()
         if not (2 < len(stripped) <= 45):
+            continue
+        # A bullet is never a heading. Without this, "• Website Development" was
+        # reported to the student as an unrecognisable section header.
+        if stripped[0] in "-–—•·*▪◦‣":
+            continue
+        # "German: Native" is a data line, not a section heading. Reporting it as
+        # an unrecognisable header was another manufactured finding.
+        if re.match(r"^[^:]{2,30}:\s*\S", stripped):
             continue
         letters = [c for c in stripped if c.isalpha()]
         if len(letters) < 3:
@@ -123,10 +139,22 @@ def unusual_bullets(text: str) -> list[str]:
     return sorted(marks)
 
 
+def _normalise_font(name: str) -> str:
+    value = re.sub(r"[^a-z]", "", name.lower())
+    changed = True
+    while changed:
+        changed = False
+        for suffix in FONT_SUFFIXES:
+            if value.endswith(suffix) and len(value) > len(suffix) + 3:
+                value, changed = value[: -len(suffix)], True
+                break
+    return value
+
+
 def nonstandard_fonts(meta: dict) -> list[str]:
     return [
         font for font in meta.get("fonts", [])
-        if font.lower().replace(" ", "").replace("_", "") not in STANDARD_FONTS
+        if _normalise_font(font) not in STANDARD_FONTS
     ]
 
 
@@ -148,33 +176,21 @@ def _page_row(meta: dict, char_count: int) -> dict:
                        "from this file type)."}
 
 
-def _density_row(meta: dict, char_count: int) -> dict:
-    pages = meta.get("page_count")
-    if not pages:
-        return {"check": "Text density", "status": UNKNOWN,
-                "comment": "Not assessable — only the extracted text is available for "
-                           "this file type, not the page layout."}
-    per_page = char_count / pages
-    if per_page > DENSE_CHARS_PER_PAGE:
-        status, comment = ATTENTION, (
-            f"About {per_page:,.0f} characters per page — dense. That usually means "
-            "little breathing room between entries."
-        )
-    elif per_page < SPARSE_CHARS_PER_PAGE:
-        status, comment = ATTENTION, (
-            f"About {per_page:,.0f} characters per page — sparse. There may be room to "
-            "say more about what you did."
-        )
+# The text-density row was removed after review: it flagged a perfectly
+# well-spaced CV as "dense" on a character count, and since only extracted text
+# is available, real whitespace was never observable. A measurement that cannot
+# see the thing it claims to judge does not belong in the report.
+
+
+def _ats_row(meta: dict, text: str, facts: dict | None = None) -> dict:
+    # Use the headings the parser actually identified rather than guessing them
+    # out of the text. The heuristic version kept nominating content lines -
+    # "• Website Development", "German: Native", "Chess" - as section headers a
+    # parser might not recognise, which is nonsense the student has to wade past.
+    if facts and facts.get("sections"):
+        heading_source = [s["heading"] for s in facts["sections"]]
     else:
-        status, comment = GOOD, (
-            f"About {per_page:,.0f} characters per page — a readable amount of text per page."
-        )
-    return {"check": "Text density", "status": status,
-            "comment": comment + " (Measured from the text; actual whitespace and "
-                                 "spacing aren't visible to this tool.)"}
-
-
-def _ats_row(meta: dict, text: str) -> dict:
+        heading_source = _heading_candidates(text)
     problems, notes = [], []
 
     fonts = nonstandard_fonts(meta)
@@ -184,7 +200,7 @@ def _ats_row(meta: dict, text: str) -> dict:
     elif meta.get("fonts"):
         notes.append("standard fonts")
 
-    headings = unconventional_headings(text)
+    headings = [h for h in heading_source if not _is_conventional(h)]
     if headings:
         problems.append(
             "section headers some parsers may not recognise "
@@ -202,8 +218,11 @@ def _ats_row(meta: dict, text: str) -> dict:
         problems.append(f"{meta['table_count']} table(s) — tables used for layout are a "
                         "common cause of scrambled ATS parsing")
 
-    if meta.get("image_count"):
-        problems.append(f"{meta['image_count']} embedded image(s) — text inside an image "
+    # One image on a CV in this market is almost always the portrait photo, which
+    # is conventional here and carries no text. Only a cluster of images suggests
+    # content has been baked into graphics where a parser cannot reach it.
+    if meta.get("image_count", 0) > 1:
+        problems.append(f"{meta['image_count']} embedded images — any text inside them "
                         "is invisible to a parser")
 
     if not problems:
@@ -216,13 +235,41 @@ def _ats_row(meta: dict, text: str) -> dict:
             "comment": lead + "; ".join(problems) + "."}
 
 
-def run(text: str, meta: dict) -> list[dict]:
+def _writing_row(facts: dict) -> dict:
+    """
+    Typos, mis-scanned dates and mixed British/American spelling. Career Services
+    asked for this in the format check after a CV went through with "Educatiqn"
+    as a heading and "Gun 2026" as a date, neither of which was mentioned.
+    """
+    problems = []
+    if facts.get("heading_typos"):
+        problems.extend(facts["heading_typos"])
+    if facts.get("month_typos"):
+        problems.extend(facts["month_typos"])
+    if facts.get("mixed_spelling"):
+        problems.append(
+            "British and American spellings are both used ("
+            + ", ".join(facts["mixed_spelling"]) + ") — pick one and keep it consistent"
+        )
+    if not problems:
+        return {"check": "Spelling and consistency", "status": GOOD,
+                "comment": "No obvious typos in headings or dates, and spelling is consistent."}
+    return {"check": "Spelling and consistency", "status": ATTENTION,
+            "comment": "; ".join(problems) + "."}
+
+
+def run(text: str, meta: dict, facts: dict | None = None) -> list[dict]:
     """Returns the format-check rows: [{check, status, comment}]."""
     char_count = meta.get("char_count") or len(text.strip())
-    return [_page_row(meta, char_count), _density_row(meta, char_count), _ats_row(meta, text)]
+    rows = [_page_row(meta, char_count), _ats_row(meta, text, facts)]
+    if facts:
+        rows.append(_writing_row(facts))
+    return rows
 
 
 CRITERIA_NOTE = (
+    "An Applicant Tracking System (ATS) is software employers use to collect, scan and "
+    "process applications digitally — many CVs are read by one before a person sees them. "
     "ATS compatibility is estimated from four things this tool can actually observe: "
     "standard fonts, conventional section headings, ordinary bullet characters, and no "
     "table- or image-based layout. It is an indication, not a guarantee — every "

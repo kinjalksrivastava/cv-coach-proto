@@ -10,3 +10,7 @@ presidio-analyzer>=2.2.354
 spacy>=3.8,<3.9
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
 de_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-3.8.0/de_core_news_sm-3.8.0-py3-none-any.whl
+
+# PDF export of the feedback report. Reviewers could not open the markdown
+# version; the PDF is generated from the same data, not converted from text.
+reportlab>=4.0

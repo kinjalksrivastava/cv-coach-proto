@@ -67,6 +67,12 @@ system described in the requirements doc:
 - Session language chosen upfront (English/Deutsch), but re-detected per message and
   overridden if the student actually writes in the other language
   (`guardrails/language.py`)
+- **Facts before opinions.** `cv_facts.py` measures what is true about the document
+  (bullets per section, entries without a description or a role title, grades and
+  which entry they sit under, typos, spelling consistency, timeline gaps).
+  `severity.py` ranks those into Career Services' five tiers and caps the list at
+  five. The model writes the wording; it does not decide what is wrong, which is
+  what stopped the report inventing issues and misreporting the document.
 - **An opening feedback report**, generated once at intake and posted as the bot's
   first message — overall impression, format check, what works well, key areas to
   improve, and section-by-section feedback with Strong / Needs attention / Missing
@@ -160,7 +166,10 @@ Try it on your own CV before pushing anywhere.
 app.py                          # Streamlit UI + turn orchestration only, no rule text
 ui.py                            # stylesheet, HSG masthead, cards/chips - all styling
 report.py                        # the opening feedback report: prompt, generation, rendering
-format_check.py                  # length / density / ATS rows, measured from the file
+format_check.py                  # length / ATS / spelling rows, measured from the file
+cv_facts.py                      # what is measurably true about the CV, computed in code
+severity.py                      # which of those facts matter, ranked into the five tiers
+grading.py                       # grading scales by country, plausibility, missing maximum
 assets/                          # University of St.Gallen logo (EN/DE) + favicon
 prompts.py                       # assembles guardrails/sections into the system prompt
 latency.py                       # streaming + timeout + response-length cap

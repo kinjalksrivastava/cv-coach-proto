@@ -252,6 +252,53 @@ def looks_thin(section_categories) -> bool:
     return len(INVOLVEMENT_CATEGORIES & set(section_categories)) < MIN_INVOLVEMENT_SECTIONS
 
 
+# Which HSG opportunities belong in which CV section. Career Services asked for
+# these to appear inside the relevant part of the section-by-section feedback -
+# mentoring under Education, clubs under Extracurricular - rather than as one
+# undifferentiated list at the top of the report. Links are included because
+# they asked for them; the trade-off is that this file is now the one place a
+# changed URL has to be fixed, since the bot cannot check a link itself.
+SECTION_SUGGESTIONS = {
+    "Education": MENTORING + CERTIFICATES + ACADEMIC_PROJECTS,
+    "Experience": [e for e in ENTREPRENEURSHIP + FLAGSHIP_EVENTS
+                   if "Work Experience" in e[2]],
+    "Extracurricular & Interests": CLUBS + ENTREPRENEURSHIP + COMPETITIONS + SPORT_AND_DIVERSITY,
+    "Volunteering & Community": FLAGSHIP_EVENTS + SPORT_AND_DIVERSITY,
+    "Projects": ACADEMIC_PROJECTS + COMPETITIONS,
+    "Awards & Scholarships": COMPETITIONS,
+    "Certifications & Training": CERTIFICATES,
+    "Skills & Languages": [e for e in CERTIFICATES if "Technical Skills" in e[2]],
+}
+
+
+def suggestions_for(category: str, limit: int = 4) -> list[tuple]:
+    """The HSG options worth naming in this CV section, as (name, what, where, url)."""
+    return SECTION_SUGGESTIONS.get(category, [])[:limit]
+
+
+def suggestions_block(categories: list[str]) -> str:
+    """
+    The per-section suggestion list for the report prompt. Only sections this CV
+    actually has (plus any standard one it is missing) get options, so the bot
+    never recommends into a vacuum.
+    """
+    lines = []
+    for category in categories:
+        options = suggestions_for(category)
+        if not options:
+            continue
+        lines.append(f"  {category}:")
+        for name, what, where, url in options:
+            link = f" [{url}]" if url else ""
+            lines.append(f"    - {name} — {what}. Belongs in: {where}.{link}")
+    if not lines:
+        return ""
+    return ("HSG OPTIONS RELEVANT TO THIS CV'S SECTIONS. Name one or two inside the "
+            "relevant section's feedback, phrased as an invitation and only where the "
+            "section is thin or missing. Say they should only add what is genuinely "
+            "relevant. Include the link when you name one.\n" + "\n".join(lines))
+
+
 def _catalogue() -> str:
     lines = []
     for title, entries in GROUPS:
