@@ -164,11 +164,13 @@ done, not in a list of adjectives. Say that where it applies.
 WHAT TO PRODUCE (JSON, exact shape at the end):
 - "overall_impression": 3-5 sentences to the student, second person, from a recruiter's \
 perspective. If the issue list is short, say plainly that the CV is in good shape. No score.
-- "what_works_well": up to 3 strengths, each tied to something concretely in this CV. \
-Two is plenty on a weak CV and you may return fewer. Never praise the mere presence of a \
-section ("you have listed your interests" is not a strength), and never praise something \
-you criticise elsewhere in the report - if the skills section lacks evidence, it is not \
-also a strength that skills are listed.
+- "what_works_well": drawn ONLY from the MEASURED STRENGTHS list you are given. You may \
+reword each one for a student and you may use fewer, but you may not add one that is not \
+on that list, and if the list is empty you MUST return an empty array. Never praise the \
+mere presence of a section ("you have listed your interests" is not a strength). Above \
+all, never make a claim about how valuable, well regarded or sought-after something is - \
+"the St. Gallen Symposium, which is well regarded" and "tools valued in business \
+environments" are inventions: they are nowhere in the CV and nothing measured them.
 - "areas_to_improve": exactly one entry per KEY AREA you were given, in the same order. \
 {"title": the given title or a clearer rewording of it, "severity": "high" for tier 1-2, \
 "medium" for tier 3-4, "low" for tier 5, "detail": 1-2 sentences saying what is wrong and \
@@ -309,9 +311,14 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     parts += ["", f"_{strings['criteria_note']}_"]
 
     strengths = data.get("what_works_well") or []
+    parts += ["", f"### 3. {strings['works_well']}", ""]
     if strengths:
-        parts += ["", f"### 3. {strings['works_well']}", ""]
         parts += [f"- {str(item).strip()}" for item in strengths]
+    else:
+        # The heading stays even with nothing under it. Quietly dropping the
+        # section would read as an oversight; saying why is honest, and it is
+        # better than inventing praise to fill it.
+        parts.append(strings["no_strengths_yet"])
 
     improvements = data.get("areas_to_improve") or []
     parts += ["", f"### 4. {strings['to_improve']}", ""]
@@ -386,6 +393,11 @@ STRINGS = {
         "check": "Check", "status": "Status", "comment": "Comment",
         "criteria_note": "",  # filled from format_check.CRITERIA_NOTE
         "works_well": "What works well",
+        "no_strengths_yet": (
+            "There isn't enough on the page yet for a reader to see what you can do. "
+            "That is not a judgement about you — it changes as soon as you add the detail "
+            "described below, and we can work through it together."
+        ),
         "to_improve": "Key areas to improve",
         "nothing_to_improve": (
             "Nothing came up that needs attention. That is a genuine result, not a gap in "
@@ -423,6 +435,11 @@ STRINGS = {
         "check": "Kriterium", "status": "Status", "comment": "Kommentar",
         "criteria_note": "",
         "works_well": "Das funktioniert gut",
+        "no_strengths_yet": (
+            "Auf der Seite steht noch zu wenig, als dass ein Lesender erkennen könnte, "
+            "was du kannst. Das ist kein Urteil über dich — es ändert sich, sobald du die "
+            "unten beschriebenen Details ergänzt, und wir gehen das gemeinsam durch."
+        ),
         "to_improve": "Wichtigste Verbesserungsfelder",
         "nothing_to_improve": (
             "Es ist nichts aufgefallen, das Aufmerksamkeit braucht. Das ist ein echtes "
@@ -530,10 +547,12 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story += [table, Spacer(1, 3), Paragraph(plain(strings["criteria_note"]), small)]
 
     strengths = data.get("what_works_well") or []
+    story.append(Paragraph(f'3. {plain(strings["works_well"])}', h2))
     if strengths:
-        story.append(Paragraph(f'3. {plain(strings["works_well"])}', h2))
         for item in strengths:
             story.append(Paragraph("• " + plain(item), body))
+    else:
+        story.append(Paragraph(plain(strings["no_strengths_yet"]), body))
 
     story.append(Paragraph(f'4. {plain(strings["to_improve"])}', h2))
     improvements = data.get("areas_to_improve") or []

@@ -35,6 +35,55 @@ def _issue(tier, key, title, evidence, section=None, guidance=""):
             "section": section, "guidance": guidance}
 
 
+def strengths(facts: dict) -> list[str]:
+    """
+    Strengths, measured the same way problems are.
+
+    Left to write these freely the model produced "the St. Gallen Symposium,
+    which is well regarded" and "tools that are valued in business environments"
+    - praise for the mere presence of a section, propped up by claims about what
+    the market values that appear nowhere in the CV and were never measured.
+    That is inventing, which is the one rule that cannot bend.
+
+    So a strength here must be either a measured positive or a measured absence
+    of a problem. Nothing about how impressive or valuable anything is.
+    """
+    found = []
+    total = facts.get("experience_bullets", 0)
+    with_outcome = facts.get("experience_bullets_with_outcome", 0)
+    if total >= 4 and with_outcome / total >= 0.5:
+        found.append(f"{with_outcome} of {total} experience bullets state a concrete "
+                     f"result or figure rather than stopping at the task")
+
+    for section in facts.get("sections", []):
+        if (section["category"] in {"Experience", "Volunteering & Community", "Projects"}
+                and section["entry_count"] >= 2
+                and not section["entries_without_detail"]
+                and not section["entries_without_title"]):
+            found.append(f'every entry in "{section["heading"]}" carries both a role '
+                         f"title and a description")
+
+    if not (facts.get("heading_typos") or facts.get("month_typos")
+            or facts.get("mixed_spelling")):
+        found.append("headings, dates and spelling are consistent throughout")
+
+    if facts.get("fits_one_page") and not facts.get("too_short"):
+        found.append("it fits on one page without reading as thin")
+
+    if not facts.get("date_findings"):
+        found.append("the timeline runs without unexplained gaps or overlapping entries")
+
+    grades = facts.get("grades") or []
+    if grades and all(g["plausible"] and not g["missing_maximum"] for g in grades):
+        found.append("grades are given with their maximum, so a reader in another "
+                     "country can interpret them")
+
+    if not facts.get("buzzwords"):
+        found.append("skills are stated without unevidenced trait words")
+
+    return found
+
+
 def assess(facts: dict, target_role: str = "") -> dict:
     """
     Returns {"key_areas": [...at most five...], "all_issues": [...],
@@ -79,8 +128,7 @@ def assess(facts: dict, target_role: str = "") -> dict:
                 section=section["heading"],
                 guidance="Add a few bullets under each one covering what was done, how, and "
                          f"what changed as a result — focused on the transferable skills "
-                         f"that matter{for_role}. Tell the student that worked examples of "
-                         "weak-versus-strong bullets can be opened underneath this report.",
+                         f"that matter{for_role}.",
             ))
         if section["entries_without_title"]:
             issues.append(_issue(
@@ -116,9 +164,7 @@ def assess(facts: dict, target_role: str = "") -> dict:
             f'{len(facts["weak_opener_bullets"])} bullets open with a duty phrase, e.g. '
             f'"{facts["weak_opener_bullets"][0][:90]}"',
             guidance="Rework these around what you personally did and what changed because "
-                     f"of it, rather than what you were responsible for{for_role}. Tell the "
-                     "student that worked examples of weak-versus-strong bullets can be "
-                     "opened underneath this report.",
+                     f"of it, rather than what you were responsible for{for_role}.",
         ))
 
     # Substance, not just structure. Every other tier-2 check looks at how a
@@ -224,9 +270,9 @@ def assess(facts: dict, target_role: str = "") -> dict:
             # The reason is the part that persuades a student to act. Left in the
             # evidence text it gets summarised away into "can raise questions";
             # as guidance it is something the model has to render.
-            guidance="Give the reason, not just the rule: a recruiter assumes a grade "
-                     "that has been left out was the bad one. So show grades for every "
-                     "education entry, or for none of them.",
+            # The reason is carried by report.deterministic_notes so it survives
+            # verbatim; repeating it here produced it twice in one report.
+            guidance="Show a grade for every education entry, or for none of them.",
         ))
     # The language ladder Career Services asked for. It has to be an issue rather
     # than a style note, otherwise it can neither be raised nor change the
@@ -287,6 +333,7 @@ def assess(facts: dict, target_role: str = "") -> dict:
         "all_issues": issues,
         "section_status": status,
         "dropped_from_key_areas": issues[MAX_KEY_AREAS:],
+        "strengths": strengths(facts),
     }
 
 
@@ -321,6 +368,16 @@ def describe_for_prompt(result: dict) -> str:
                 out.append(f'      what the student should do: {issue["guidance"]}')
             if issue["section"]:
                 out.append(f'      belongs to section: "{issue["section"]}"')
+
+    if result.get("strengths"):
+        out.append("\nMEASURED STRENGTHS. Write 'what works well' from these and ONLY these. "
+                   "You may reword them for a student; you may not add one, and you may not "
+                   "claim anything about how valuable or well regarded something is:")
+        for item in result["strengths"]:
+            out.append(f"  - {item}")
+    else:
+        out.append("\nMEASURED STRENGTHS: none. Return an empty 'what_works_well' array. "
+                   "Do not invent praise to fill the section.")
 
     out.append("\nSECTION STATUS (decided from the issues above - use exactly these, they "
                "cannot disagree with the key areas):")
