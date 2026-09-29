@@ -50,6 +50,16 @@ WEAK_OPENERS = (
     "involved in", "was involved", "participated in", "took part in",
     "worked on", "worked with", "supported the", "in charge of",
     "zuständig für", "verantwortlich für", "mitgewirkt", "unterstützte",
+    # German CVs describe duties as nouns, not verbs: "Unterstützung des Teams
+    # bei...", "Durchführung von...". Only the verb forms were listed here, so a
+    # German CV written entirely in this style passed every bullet check and came
+    # back Strong. Serena's own example of a weak opener was "Unterstützung", the
+    # noun, and this list did not contain it.
+    "unterstützung", "aufbereitung", "durchführung", "betreuung", "mitarbeit",
+    "mitwirkung", "erstellung", "bearbeitung", "abwicklung", "verwaltung",
+    "koordination", "organisation von", "organisation der", "pflege der",
+    "pflege von", "assistenz", "zuarbeit", "begleitung", "beteiligung",
+    "teilnahme an", "hilfe bei", "übernahme von", "einsatz im", "tätigkeiten",
 )
 
 # Claims that assert a trait with nothing behind it. Career Services' tier 5.
@@ -85,34 +95,44 @@ SPELLING_PAIRS = [
 # sections missing that were plainly on the page. Serena flagged it twice:
 # "This person does actually have the skills and languages in this section",
 # "Again - the CV actually includes this information."
-REPORT_SECTIONS: list[tuple[str, set, set, tuple]] = [
-    ("Profile (optional)", {"Profile / Summary"}, {"Profile"}, ()),
-    ("Education", {"Education"}, {"Education"},
-     ("education", "ausbildung", "studium")),
-    ("Work / Professional Experience", {"Experience"}, {"Work Experience"},
+REPORT_SECTIONS: list[tuple[str, str, set, set, tuple]] = [
+    ("Profile (optional)", "Kurzprofil (optional)",
+     {"Profile / Summary"}, {"Profile"}, ()),
+    ("Education", "Ausbildung",
+     {"Education"}, {"Education"}, ("education", "ausbildung", "studium")),
+    ("Work / Professional Experience", "Berufserfahrung",
+     {"Experience"}, {"Work Experience"},
      ("work experience", "professional experience", "berufserfahrung", "praktika")),
-    ("Extracurricular Experience", {"Volunteering & Community"},
-     {"Extracurricular Experience", "Volunteering"}, ()),
-    ("Languages and IT Skills", {"Skills & Languages"}, {"Skills & Languages"},
+    ("Extracurricular Experience", "Ausserschulisches Engagement",
+     {"Volunteering & Community"}, {"Extracurricular Experience", "Volunteering"}, ()),
+    ("Languages and IT Skills", "Sprachen und IT-Kenntnisse",
+     {"Skills & Languages"}, {"Skills & Languages"},
      ("languages", "sprachen", "skills", "kenntnisse", "fähigkeiten")),
-    ("Courses and Certificates (optional)", {"Certifications & Training"},
-     {"Certificates & Training"}, ()),
-    ("Interests / Hobbies (optional)", set(), {"Interests"},
-     ("interests", "hobbies", "interessen", "freizeit")),
+    ("Courses and Certificates (optional)", "Kurse und Zertifikate (optional)",
+     {"Certifications & Training"}, {"Certificates & Training"}, ()),
+    ("Interests / Hobbies (optional)", "Interessen / Hobbys (optional)",
+     set(), {"Interests"}, ("interests", "hobbies", "interessen", "freizeit")),
 ]
 
 
-def _missing_report_sections(sliced: list[dict], lowered: str) -> list[str]:
-    """Which of the seven are genuinely absent. Measured, never guessed."""
+def _missing_report_sections(sliced: list[dict], lowered: str,
+                             lang: str = "en") -> list[str]:
+    """
+    Which of the seven are genuinely absent. Measured, never guessed.
+
+    Returned in the report language: these names are printed straight into the
+    section table, and in English they were the last thing putting "Courses and
+    Certificates (optional)" into an otherwise German report.
+    """
     present_categories = {s["category"] for s in sliced}
     present_displays = {s.get("display") for s in sliced}
     missing = []
-    for name, categories, displays, keywords in REPORT_SECTIONS:
+    for name_en, name_de, categories, displays, keywords in REPORT_SECTIONS:
         if present_categories & categories or present_displays & displays:
             continue
         if any(re.search(r"\b" + re.escape(k) + r"\b", lowered) for k in keywords):
             continue
-        missing.append(name)
+        missing.append(name_de if lang == "de" else name_en)
     return missing
 
 
@@ -712,7 +732,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         "grade_notes": grading.describe(grades),
         "grade_consistency": grading.consistency_note(len(education_entries), entries_with_grade),
         "missing_standard_sections": missing_standard,
-        "missing_report_sections": _missing_report_sections(sliced, lowered),
+        "missing_report_sections": _missing_report_sections(sliced, lowered, lang),
         "unlabelled_intro": _unlabelled_intro(text, sliced),
         "table_count": meta.get("table_count", 0),
         "image_count": meta.get("image_count", 0),
