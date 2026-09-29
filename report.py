@@ -42,7 +42,6 @@ STATUS_LABELS = {
 }
 
 SEVERITY_MARK = {"high": "🔴", "medium": "🟠", "low": "🟡"}
-TIER_MARK = {1: "🔴", 2: "🔴", 3: "🟠", 4: "🟠", 5: "🟡"}
 
 # Career Services' own reference table, reproduced verbatim. Never generated and
 # never adapted to the student's CV - a general illustration of what outcome
@@ -163,7 +162,14 @@ done, not in a list of adjectives. Say that where it applies.
 
 WHAT TO PRODUCE (JSON, exact shape at the end):
 - "overall_impression": 3-5 sentences to the student, second person, from a recruiter's \
-perspective. If the issue list is short, say plainly that the CV is in good shape. No score.
+perspective. If the issue list is short, say plainly that the CV is in good shape. No score. \
+Two things must appear here whenever the context data flags them, and nowhere else is \
+enough: (i) if AI IS NOT MENTIONED is flagged, one sentence noting that nothing on the CV \
+shows AI experience - in coursework or projects, in a job, in an extracurricular bullet, or \
+under skills - and inviting them to add it if they have it, without implying they should \
+have it; (ii) if TAILORING is flagged, one sentence saying the CV does not yet speak to the \
+advert they uploaded. Do not name the specific missing terms here - they belong in the key \
+area.
 - "what_works_well": drawn ONLY from the MEASURED STRENGTHS list you are given. You may \
 reword each one for a student and you may use fewer, but you may not add one that is not \
 on that list, and if the list is empty you MUST return an empty array. Never praise the \
@@ -185,7 +191,11 @@ saying why it works, written as a plain sentence with no "Strong section:" prefi
 containing no request to change anything - if it needed changing it would not be strong. \
 A "needs_attention" section gets points that each say what to do, and must cover every \
 lower-priority issue assigned to it. A "missing" section gets points saying what it would \
-add and what they could include if they have it.
+add and what they could include if they have it. If TAILORING is flagged, every section \
+that carries content the advert asks about must also get one point naming what that section \
+could show for the target role - Career Services asked that a tailoring gap be visible at \
+section level, not only in the summary. That point says where their existing material \
+already fits the advert; it never invents experience, and it never supplies the wording.
 
 Write everything in {language_name}. Return only the JSON object:
 {{"overall_impression": "...", "what_works_well": ["..."], "areas_to_improve": \
@@ -225,6 +235,19 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
         )
     context.append(facts_block)
     context.append(issues_block)
+    # Stated as flags rather than left for the model to work out from the CV text.
+    # Both are measured in cv_facts; asking the model to notice them again would
+    # produce a different answer on each run.
+    if not facts.get("mentions_ai"):
+        context.append("AI IS NOT MENTIONED: nothing anywhere in this CV refers to AI, "
+                       "machine learning, or an AI tool.")
+    overlap = facts.get("jd_overlap")
+    if overlap is not None and overlap < 0.4:
+        context.append(
+            "TAILORING: this CV picks up only "
+            f"{int(overlap * 100)}% of what the advert keeps returning to. Missing: "
+            + ", ".join(facts.get("jd_terms_missing") or [])
+        )
     context.append("Format checks already computed (repeat these as given; you cannot "
                    "see the document yourself):\n" + checks)
     if hsg_block:
@@ -297,7 +320,8 @@ def deterministic_notes(facts: dict) -> list[str]:
 
 def render_markdown(data: dict, format_rows: list[dict], strings: dict,
                     date_findings: list[dict] | None = None,
-                    notes: list[str] | None = None) -> str:
+                    notes: list[str] | None = None,
+                    hsg_picks: list[tuple] | None = None) -> str:
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip()]
 
@@ -356,10 +380,23 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     if notes:
         parts += [""] + [f"> {note}" for note in notes]
 
-    # Timeline notes sit at the END, and only when there is something to say.
+    # The last two sections are both conditional, so they are numbered as they
+    # are emitted rather than with a fixed 6 and 7.
+    number = 6
     if date_findings:
-        parts += ["", f"### 6. {strings['timeline']}", "", strings["timeline_intro"], ""]
+        parts += ["", f"### {number}. {strings['timeline']}", "",
+                  strings["timeline_intro"], ""]
         parts += [f"- {f['text']}" for f in date_findings]
+        number += 1
+
+    # Career Services asked for the report to close on what the student could do
+    # next, not on what is wrong with the page.
+    if hsg_picks:
+        parts += ["", f"### {number}. {strings['hsg_heading']}", "",
+                  strings["hsg_intro"], ""]
+        for name, what, url in hsg_picks:
+            label = f"[{name}]({url})" if url else name
+            parts.append(f"- **{label}** — {what}")
 
     parts += ["", "---", "", strings["closing"]]
     return "\n".join(parts)
@@ -409,6 +446,12 @@ STRINGS = {
         ),
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
+        "hsg_heading": "HSG activities and certificates you may be interested in",
+        "hsg_intro": (
+            "Picked for the role you're aiming at, and left out where your CV already "
+            "shows them. Nothing here is expected of you — take a look at whatever fits, "
+            "and ignore the rest."
+        ),
         "timeline": "Dates worth a look",
         "timeline_intro": (
             "A couple of things in the timeline that a reader might pause on. Neither is "
@@ -418,7 +461,7 @@ STRINGS = {
         "closing": (
             "This is a starting point, not a verdict — nothing here is a score. Ask me "
             "about any line of it and we'll work through it together, one section at a "
-            "time. You'll be doing the writing; I'll be asking the questions."
+            "time."
         ),
     },
     "de": {
@@ -452,6 +495,12 @@ STRINGS = {
         ),
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
+        "hsg_heading": "HSG-Angebote und Zertifikate, die dich interessieren könnten",
+        "hsg_intro": (
+            "Ausgewählt für die Rolle, auf die du hinarbeitest, und weggelassen, wo dein "
+            "Lebenslauf sie schon zeigt. Nichts davon wird von dir erwartet — schau dir "
+            "an, was passt, und lass den Rest."
+        ),
         "timeline": "Daten, die auffallen könnten",
         "timeline_intro": (
             "Ein paar Stellen im zeitlichen Ablauf, bei denen ein Lesender stutzen könnte. "
@@ -461,7 +510,7 @@ STRINGS = {
         "closing": (
             "Das ist ein Ausgangspunkt, kein Urteil — nichts davon ist eine Bewertung. "
             "Frag mich zu jeder einzelnen Zeile, und wir gehen sie gemeinsam durch, "
-            "Abschnitt für Abschnitt. Du schreibst, ich stelle die Fragen."
+            "Abschnitt für Abschnitt."
         ),
     },
 }
@@ -484,7 +533,8 @@ FAILURE_TEXT = {
 
 def to_pdf(data: dict, format_rows: list[dict], strings: dict,
            date_findings: list[dict] | None = None,
-           notes: list[str] | None = None) -> bytes | None:
+           notes: list[str] | None = None,
+           hsg_picks: list[tuple] | None = None) -> bytes | None:
     """
     The report as a PDF. Built from the same dict the markdown comes from rather
     than by converting the markdown, so the tables survive. Returns None if
@@ -601,11 +651,22 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     for note in (notes or []):
         story.append(Paragraph(plain(note.replace("**", "")), body))
 
+    number = 6
     if date_findings:
-        story.append(Paragraph(f'6. {plain(strings["timeline"])}', h2))
+        story.append(Paragraph(f'{number}. {plain(strings["timeline"])}', h2))
         story.append(Paragraph(plain(strings["timeline_intro"]), body))
         for finding in date_findings:
             story.append(Paragraph("• " + plain(finding["text"]), body))
+        number += 1
+
+    if hsg_picks:
+        story.append(Paragraph(f'{number}. {plain(strings["hsg_heading"])}', h2))
+        story.append(Paragraph(plain(strings["hsg_intro"]), body))
+        for name, what, url in hsg_picks:
+            # The URL is printed rather than linked: this PDF gets emailed on and
+            # printed, and a link that only works on screen strands the reader.
+            tail = f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>' if url else ""
+            story.append(Paragraph(f"• <b>{plain(name)}</b> — {plain(what)}{tail}", body))
 
     story += [Spacer(1, 8), Paragraph(plain(strings["closing"]), small)]
 

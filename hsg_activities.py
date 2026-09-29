@@ -1,3 +1,4 @@
+import re
 """
 HSG's own programmes, clubs, certificates and competitions - the thing this bot
 can do that a general-purpose LLM cannot.
@@ -192,67 +193,6 @@ USEFUL_LINKS = [
 ]
 
 
-# A condensed version of the catalogue for the interface, shown to a student
-# whose CV has little or no involvement to talk about. Deliberately a GIST:
-# category, a handful of recognisable names, and the CV section it belongs in -
-# not the full 37 entries, which would read as a wall rather than a starting
-# point. Every line is drawn from the same Career Services source as the rest of
-# this file, so the panel and the conversation can never disagree.
-GIST = [
-    ("Mentoring",
-     "HSG Mentoring Programme, Assessment Guide (SHSG)",
-     "Education — as a bullet under your degree"),
-    ("Student clubs",
-     "~150 accredited clubs via SHSG — Consulting Club HSG, Helvetian Investment "
-     "Club, oikos St. Gallen, Entretech, Law Clinic, LawDays",
-     "Membership: a bullet under Education. An active role: Extracurricular"),
-    ("Certificates alongside your degree",
-     "Data Science Fundamentals (DSF), Integrative Sustainability Management "
-     "(SuM-HSG), Managing Climate Solutions (MaCS), Bloomberg Market Concepts",
-     "Education as a specialisation, or Courses & Certificates"),
-    ("Student-run events",
-     "START Summit, St. Gallen Symposium, Talents Conference, NextGen Impact Forum",
-     "Organising role: Extracurricular. Paid role: Work Experience. "
-     "Volunteering on the day: Volunteering"),
-    ("Entrepreneurship",
-     "Startup@HSG, Entrepreneurial Talents Programme (ETP), HSG Innovation Trophy",
-     "Extracurricular"),
-    ("Sports, diversity and inclusion",
-     "HSG University Sports (70+ sports), UNIVERSA, UniGay / UniQueer, "
-     "Pride Month @HSG, D&I Week",
-     "Extracurricular — or Work Experience if you teach a class under contract"),
-    ("Academic and company projects",
-     "Bachelor's / Master's thesis, Capstone Project, company-linked practical "
-     "projects (AWP, Student Impact)",
-     "Education"),
-    ("Case competitions",
-     "GMA Challenge, Mavara, FinanceLab, 180 Degrees Consulting, Undergrad Case "
-     "Competition World Cup",
-     "Extracurricular — or Awards if you reached the finals"),
-]
-
-# Section categories that count as "involvement" when deciding whether a CV has
-# enough of it to skip the panel. From guardrails/section_coverage.CATEGORIES.
-INVOLVEMENT_CATEGORIES = {
-    "Extracurricular & Interests",
-    "Volunteering & Community",
-    "Projects",
-    "Awards & Scholarships",
-    "Certifications & Training",
-}
-
-MIN_INVOLVEMENT_SECTIONS = 2
-
-
-def looks_thin(section_categories) -> bool:
-    """
-    True when this CV has little to show under involvement, and the gist is
-    worth surfacing. A CV already carrying two or more of these sections
-    doesn't need to be told what exists - it needs help describing what's there.
-    """
-    return len(INVOLVEMENT_CATEGORIES & set(section_categories)) < MIN_INVOLVEMENT_SECTIONS
-
-
 # Which HSG opportunities belong in which CV section. Career Services asked for
 # these to appear inside the relevant part of the section-by-section feedback -
 # mentoring under Education, clubs under Extracurricular - rather than as one
@@ -340,15 +280,107 @@ half-remember may be out of date.
 CATALOGUE (Career Services' own list and their own CV-section mapping):
 {CATALOGUE}"""
 
-# Shorter form for the opening report, where there's no back-and-forth: the report
-# may name an HSG example next to a thin or missing section, phrased as an
-# invitation, exactly as Career Services' own sample report does with Bloomberg
-# Market Concepts.
-REPORT_RULES = f"""HSG-SPECIFIC EXAMPLES. For a section that is thin or missing, you may name \
-one or two HSG activities from the catalogue below that would belong there, phrased \
-strictly as an invitation - "if you have done X, it belongs here" - never as an \
-assumption that they did, never as advice to go and do it, and never with entry \
-requirements or deadlines attached. At most two sections in the whole report should \
-carry such an example. Only name things from this catalogue.
 
-{CATALOGUE}"""
+# --- Closing report section: what this student might want to look into next ---
+#
+# Career Services asked (email of 21 September) for the report to end with "HSG
+# activities and certificates you may be interested in", chosen for the role the
+# student uploaded. That is the RECOMMENDING half of their original request,
+# which this file had deliberately held back pending confirmation - the email is
+# that confirmation, so USEFUL_LINKS is now wired in below.
+#
+# Two things keep this from becoming noise. It is filtered by the target role, so
+# a law student is not sent to the M&A competitions; and anything the CV already
+# mentions is dropped, which is what stops the Mentoring Programme being proposed
+# to every single student - the complaint both reviewers raised.
+
+ROLE_AFFINITY = [
+    (("consult", "strategy", "strateg", "berater", "beratung", "advisory"),
+     ["Consulting Club HSG", "Global M&A Challenge (GMA)", "Capstone Project (BWL)",
+      "180 Degrees Consulting - Global Case Competition", "HSG Innovation Trophy",
+      "Undergrad Case Competition World Cup"]),
+    (("financ", "bank", "invest", "m&a", "mergers", "equity", "asset", "trading",
+      "audit", "controlling", "accounting"),
+     ["Helvetian Investment Club (HIC)", "Bloomberg Market Concepts (BMC)",
+      "Global M&A Challenge (GMA)", "Mavara M&A Case Competition",
+      "FinanceLab M&A Competition"]),
+    (("data", "analyt", "tech", "software", "engineer", "digital", "quant",
+      "machine learning", "artificial intelligence", "informatik"),
+     ["Certificate in Data Science Fundamentals (DSF)",
+      "Other Additional Qualification Programmes", "Bloomberg Market Concepts (BMC)",
+      "Startup@HSG / HSG Entrepreneurship"]),
+    (("sustainab", "esg", "impact", "climate", "nachhaltig", "energy", "ngo"),
+     ["Certificate in Integrative Sustainability Management (SuM-HSG)",
+      "Master's Certificate in Managing Climate Solutions (MaCS)", "oikos St. Gallen",
+      "NextGen Impact Forum / SHSG Next Gen Impact Award",
+      "180 Degrees Consulting - Global Case Competition"]),
+    (("law", "legal", "recht", "jurist", "compliance", "regulat"),
+     ["Law Clinic", "LawDays", "Other Additional Qualification Programmes"]),
+    (("marketing", "communicat", "brand", "media", "journalis", "pr ", "kommunikation"),
+     ["Other Additional Qualification Programmes", "START Summit",
+      "Talents Conference (Career Services)", "HSG student clubs (~150 accredited, SHSG directory)"]),
+    (("entrepreneur", "startup", "start-up", "founder", "venture", "innovation", "product"),
+     ["Startup@HSG / HSG Entrepreneurship", "Entrepreneurial Talents Programme (ETP)",
+      "START Summit", "HSG Innovation Trophy"]),
+    (("hr", "human resources", "people", "talent", "recruit", "personal"),
+     ["Talents Conference (Career Services)", "HSG Mentoring Programme",
+      "UNIVERSA - The Women's Business Network",
+      "Certificate in Wirtschaftspädagogik"]),
+]
+
+# Shown when the role matches nothing, or when no role was given at all. Broad on
+# purpose: these suit any student regardless of what they are aiming at.
+GENERAL_PICKS = [
+    "HSG Mentoring Programme",
+    "HSG student clubs (~150 accredited, SHSG directory)",
+    "Certificate in Data Science Fundamentals (DSF)",
+    "Bachelor's / Master's thesis",
+    "HSG University Sports",
+]
+
+_BY_NAME = {name: (name, what, where, url)
+            for _title, entries in GROUPS
+            for name, what, where, url in entries}
+
+
+def closing_suggestions(target_role: str = "", cv_text: str = "",
+                        limit: int = 5) -> list[tuple]:
+    """
+    The HSG options to name at the end of the report, as (name, what, url).
+
+    Role-matched first, general picks after, and anything the CV already shows is
+    dropped - there is no point inviting a student to something they have done.
+    """
+    role = (target_role or "").lower()
+    haystack = (cv_text or "").lower()
+
+    matched = [names for keywords, names in ROLE_AFFINITY
+               if any(keyword in role for keyword in keywords)]
+
+    # Round-robin rather than one group then the next, so "sustainability
+    # consultant" gets sustainability options too instead of five consulting ones.
+    ordered, seen = [], set()
+    for rank in range(max((len(n) for n in matched), default=0)):
+        for names in matched:
+            if rank < len(names) and names[rank] not in seen:
+                seen.add(names[rank])
+                ordered.append(names[rank])
+    for name in GENERAL_PICKS:
+        if name not in seen:
+            seen.add(name)
+            ordered.append(name)
+
+    picks = []
+    for name in ordered:
+        entry = _BY_NAME.get(name)
+        if not entry:
+            continue
+        # The name as written here is long; match on its distinctive head so
+        # "Law Clinic" is still recognised in a CV that writes "HSG Law Clinic".
+        stem = re.split(r"[(/\-–]", entry[0])[0].strip().lower()
+        if len(stem) > 4 and stem in haystack:
+            continue
+        picks.append((entry[0], entry[1], entry[3]))
+        if len(picks) >= limit:
+            break
+    return picks

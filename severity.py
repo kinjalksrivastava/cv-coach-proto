@@ -21,14 +21,6 @@ guidance prose for it.
 
 MAX_KEY_AREAS = 5
 
-TIER_NAMES = {
-    1: "No bullets or sparse content",
-    2: "Weak bullet content",
-    3: "Structure and consistency",
-    4: "Missing sections or length",
-    5: "Detail-level gaps",
-}
-
 
 def _issue(tier, key, title, evidence, section=None, guidance=""):
     return {"tier": tier, "key": key, "title": title, "evidence": evidence,
@@ -163,8 +155,10 @@ def assess(facts: dict, target_role: str = "") -> dict:
             2, "duty_bullets", "Bullets describe duties rather than contribution",
             f'{len(facts["weak_opener_bullets"])} bullets open with a duty phrase, e.g. '
             f'"{facts["weak_opener_bullets"][0][:90]}"',
-            guidance="Rework these around what you personally did and what changed because "
-                     f"of it, rather than what you were responsible for{for_role}.",
+            section=facts.get("weak_opener_section"),
+            guidance="Rework these around WHAT you did, HOW you did it, and WHY it mattered "
+                     f"— and above all which transferable skill it shows{for_role}. A result "
+                     "helps where you genuinely have one, but the skill is the point.",
         ))
 
     # Substance, not just structure. Every other tier-2 check looks at how a
@@ -176,12 +170,35 @@ def assess(facts: dict, target_role: str = "") -> dict:
     if total_exp >= 4 and with_outcome / total_exp < 0.4:
         example = (facts.get("bullets_without_outcome") or [""])[0][:90]
         issues.append(_issue(
-            2, "no_outcomes", "Most bullets describe the task but not the result",
+            2, "no_outcomes", "Most bullets describe the task, not the skill behind it",
             f"{total_exp - with_outcome} of {total_exp} experience bullets contain no "
             f'outcome, figure or change, e.g. "{example}"',
-            guidance="For each one, add what changed because you did it — faster, cheaper, "
-                     "clearer, larger, or a decision that followed. Use a number only where "
-                     "you genuinely have one; an invented figure is worse than none.",
+            section=facts.get("no_outcome_section"),
+            # Career Services pushed back on framing this purely as "add a result":
+            # not every student has one, inventing figures is worse than none, and
+            # at a traditional Swiss employer it can read as bragging.
+            guidance="Take each one through WHAT you did, HOW you did it, and WHY it "
+                     "mattered, and ask what transferable skill it is meant to show. Where "
+                     "you genuinely have a result, add it — but only if that is appropriate "
+                     "and you can back it up. Never invent a figure to fill the gap.",
+        ))
+
+    # Career Services asked for lack of tailoring to show up in the overall
+    # summary, the key areas AND the per-section feedback - it was the single most
+    # common thing they correct in appointments, and the report was silent on it.
+    # This issue carries the measurement; the report prompt carries the rest.
+    overlap = facts.get("jd_overlap")
+    if overlap is not None and overlap < 0.4:
+        missing = facts.get("jd_terms_missing") or []
+        issues.append(_issue(
+            2, "not_tailored", "The CV doesn't speak to the job you uploaded",
+            f"Of the {facts['jd_terms_checked']} things the advert keeps coming back to, "
+            f"{len(missing)} appear nowhere in your CV"
+            + (f": {', '.join(missing[:6])}" if missing else ""),
+            guidance="Go through the advert and, for each thing it asks for, find where "
+                     "your CV already shows it — then make that visible in the wording you "
+                     "chose. Where you genuinely have none of it, that is worth knowing "
+                     "too. Don't paste the advert's words in over experience you don't have.",
         ))
 
     # --- Tier 3: structure and consistency -----------------------------------
@@ -319,8 +336,11 @@ def assess(facts: dict, target_role: str = "") -> dict:
 
     issues.sort(key=lambda i: i["tier"])
 
-    # A section carrying any issue cannot be reported as strong. This is what
-    # stops the report contradicting itself between section 4 and section 5.
+    # Career Services' rule, from their email of 21 September: a section is only
+    # "Strong" once everything in tiers 1-3 of the prioritisation list has been
+    # checked and cleared for it. Anything still outstanding on that section -
+    # at any tier - means it is not Strong, which is also what stops the report
+    # contradicting itself between section 4 and section 5.
     status = {}
     flagged = {i["section"] for i in issues if i["section"]}
     for section in facts["sections"]:

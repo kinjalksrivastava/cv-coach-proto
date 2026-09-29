@@ -126,10 +126,6 @@ def _is_conventional(heading: str) -> bool:
     return len(parts) > 1 and all(p in CONVENTIONAL_HEADINGS for p in parts)
 
 
-def unconventional_headings(text: str) -> list[str]:
-    return [h for h in _heading_candidates(text) if not _is_conventional(h)]
-
-
 def unusual_bullets(text: str) -> list[str]:
     marks = set()
     for line in text.splitlines():

@@ -70,11 +70,7 @@ GRADE_NUMBER = re.compile(
 )
 
 # Date ranges are stripped before grades are looked for, for the same reason.
-DATE_RANGE_IN_LINE = re.compile(
-    r"((?:[A-Za-zäöü]{3,9}\.?,?\s*)?(?:19|20)\d{2})\s*[-–—]\s*"
-    r"((?:[A-Za-zäöü]{3,9}\.?,?\s*)?(?:19|20)\d{2}|present|current|heute|now)",
-    re.IGNORECASE,
-)
+from guardrails.dates import RANGE_RE as DATE_RANGE_IN_LINE
 BARE_YEAR = re.compile(r"\b(19|20)\d{2}\b")
 
 

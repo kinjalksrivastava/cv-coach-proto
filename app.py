@@ -4,21 +4,20 @@ prompts.py / guardrails/ / sections/, and all styling is in ui.py.
 """
 
 import os
-from concurrent.futures import ThreadPoolExecutor
 
 import streamlit as st
 from openai import OpenAI
 
 import latency
-import hsg_activities
 import prompts
 import report
 import ui
 import cv_facts
 import format_check
 import severity
+import hsg_activities
 from extraction import extract_text, MIN_CHARS
-from guardrails import confidentiality, dates, global_rules, language, section_coverage
+from guardrails import confidentiality, global_rules, language, section_coverage
 from pii import strip_pii
 from sections import jd_alignment
 
@@ -302,7 +301,8 @@ if st.session_state["cv_text"] is None:
         with st.spinner("Reading your CV and writing your feedback report…"):
             sections = section_coverage.detect_sections(cv_text, client, MODEL)
             st.session_state["sections_detected"] = sections
-            facts = cv_facts.analyse(cv_text, cv_meta, sections)
+            facts = cv_facts.analyse(cv_text, cv_meta, sections,
+                                     st.session_state["jd_text"])
             st.session_state["date_findings"] = facts["date_findings"]
             st.session_state["format_rows"] = format_check.run(cv_text, cv_meta, facts)
             ranked = severity.assess(facts, target_role)
@@ -316,14 +316,18 @@ if st.session_state["cv_text"] is None:
             strings = dict(report.STRINGS[lang_code])
             strings["criteria_note"] = format_check.CRITERIA_NOTE
             notes = report.deterministic_notes(facts)
+            # Chosen in code, not by the model: the links have to be the real ones
+            # from hsg_activities, and a model asked for a URL will invent a
+            # plausible-looking dead one.
+            hsg_picks = hsg_activities.closing_suggestions(target_role, cv_text)
             report_text = report.render_markdown(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"], notes,
+                facts["date_findings"], notes, hsg_picks,
             )
             st.session_state["report_text"] = report_text
             st.session_state["report_pdf"] = report.to_pdf(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"], notes,
+                facts["date_findings"], notes, hsg_picks,
             )
             st.session_state["show_bullet_examples"] = bool(
                 report_data.get("show_bullet_examples")

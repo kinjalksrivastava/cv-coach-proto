@@ -14,10 +14,3 @@ raise it again once the student has answered.
 below, you may ask about them (e.g. "I noticed two entries with overlapping \
 dates - were those concurrent?"). These flags are not conclusions - a flagged \
 overlap or gap can be entirely legitimate, so always ask rather than assert."""
-
-
-def format_date_findings(findings: list[str]) -> str:
-    if not findings:
-        return ""
-    lines = "\n".join(f"- {f}" for f in findings)
-    return f"\nAutomatically detected date flags for Education/Experience (ask, don't assume):\n{lines}"

@@ -1,5 +1,3 @@
-import re
-
 NAME = "Job Description Alignment"
 
 RULES = """JOB DESCRIPTION ALIGNMENT (applies whenever a target role or JD is known):

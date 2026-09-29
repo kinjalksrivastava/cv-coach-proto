@@ -31,14 +31,10 @@ BULLET_LINE = re.compile(rf"^\s*[{re.escape(BULLET_CHARS)}]\s+\S")
 INLINE_BULLET_CHARS = "•·▪◦‣"
 INLINE_BULLET = re.compile(rf"\s[{re.escape(INLINE_BULLET_CHARS)}]\s+\S")
 
-# The month token allows digits so a scanning error ("3un 2025", "Gun 2026")
-# still parses as a date. A CV with OCR damage is exactly when entry detection
-# matters most, so failing closed here would be the wrong trade.
-DATE_RANGE = re.compile(
-    r"((?:[A-Za-z0-9äöü]{3,9}\.?,?\s*)?(?:19|20)\d{2})\s*[-–—]\s*"
-    r"((?:[A-Za-z0-9äöü]{3,9}\.?,?\s*)?(?:19|20)\d{2}|present|current|heute|now|ongoing)",
-    re.IGNORECASE,
-)
+# One date parser for the whole project - see guardrails/dates.py. Keeping a
+# second copy here is how "2019 - 2021" ended up invisible to the gap check
+# while cv_facts still saw it.
+from guardrails.dates import RANGE_RE as DATE_RANGE
 
 MONTHS = ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec",
           "januar", "februar", "märz", "april", "mai", "juni", "juli", "august",
@@ -301,15 +297,92 @@ def _single_word_interests(sliced: list[dict]) -> tuple[str | None, list[str]]:
     return None, []
 
 
-def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
+# --- AI skills, and tailoring to the target role ---
+#
+# Career Services asked for both in their email of 21 September. Both are
+# measured here rather than left to the model: "does this CV mention AI anywhere"
+# and "how much of the job ad does this CV actually echo" are countable, and a
+# model asked to judge them produces a different answer on every run.
+
+AI_TERMS = re.compile(
+    r"\b("
+    r"a\.?i\.?|artificial intelligence|künstliche intelligenz|"
+    r"machine learning|maschinelles lernen|deep learning|neural net\w*|"
+    r"generative ai|gen ?ai|llm|large language model|sprachmodell|"
+    r"chatgpt|gpt-?\d?|copilot|claude|gemini|midjourney|stable diffusion|"
+    r"prompt engineering|nlp|natural language processing|computer vision|"
+    r"tensorflow|pytorch|scikit-?learn|hugging ?face|langchain"
+    r")\b",
+    re.IGNORECASE,
+)
+
+# Words a job ad and a CV share regardless of the role, so matching on them would
+# make every CV look tailored.
+JD_NOISE = {
+    "about", "above", "after", "also", "and", "any", "are", "around", "band", "been",
+    "being", "both", "business", "candidate", "company", "count", "degree", "during",
+    "each", "experience", "field", "first", "from", "full", "further", "good", "group",
+    "have", "high", "into", "join", "knowledge", "level", "like", "look",
+    "looking", "make", "more", "most", "must", "need", "offer", "only", "opportunity",
+    "other", "our", "out", "over", "part", "please", "position", "profile", "role",
+    "same", "skills", "some", "strong", "successful", "such", "support", "take", "team",
+    "that", "their", "them", "there", "these", "they", "this", "through", "time",
+    "under", "very", "well", "what", "when", "where", "which", "while", "will",
+    "with", "within", "work", "working", "years", "your", "you",
+    "und", "der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", "einer",
+    "für", "mit", "von", "vom", "sind", "sich", "auch", "aber", "oder", "wir", "uns",
+    "unser", "unsere", "dich", "deine", "deinem", "bei", "als", "auf", "aus", "nach",
+    "nicht", "haben", "werden", "wird", "kannst", "sowie", "zum", "zur", "über",
+    "erfahrung", "kenntnisse", "aufgaben", "stelle", "bereich", "team", "arbeiten",
+}
+_WORD = re.compile(r"[A-Za-zÄÖÜäöüß][\w&+#.-]{3,}")
+
+
+def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
+    """
+    How much of the job ad's own vocabulary the CV actually uses.
+
+    Deliberately crude: it counts terms the ad repeats, then checks whether each
+    appears anywhere in the CV. It cannot tell good tailoring from keyword
+    stuffing - it only tells the model whether there is a tailoring gap worth
+    raising, and names the terms so the feedback can be specific.
+    """
+    if not jd_text.strip():
+        return {"jd_provided": False, "jd_terms_checked": 0,
+                "jd_terms_missing": [], "jd_overlap": None}
+
+    counts = {}
+    for match in _WORD.finditer(jd_text.lower()):
+        word = match.group(0).strip(".-")
+        if len(word) < 4 or word in JD_NOISE or word.isdigit():
+            continue
+        counts[word] = counts.get(word, 0) + 1
+
+    # Repeated terms are the ones the ad is actually about. If nothing repeats the
+    # ad is too short to judge, and the check stays silent rather than guessing.
+    repeated = sorted((w for w, n in counts.items() if n >= 2),
+                      key=lambda w: -counts[w])[:25]
+    if len(repeated) < 5:
+        return {"jd_provided": True, "jd_terms_checked": 0,
+                "jd_terms_missing": [], "jd_overlap": None}
+
+    cv_lower = cv_text.lower()
+    missing = [w for w in repeated if w[:5] not in cv_lower]
+    return {
+        "jd_provided": True,
+        "jd_terms_checked": len(repeated),
+        "jd_terms_missing": missing[:10],
+        "jd_overlap": round((len(repeated) - len(missing)) / len(repeated), 2),
+    }
+
+
+def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "") -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
     """
     import grading
     from guardrails import dates as date_check
-
-    lines = text.splitlines()
     sliced = _split_sections(text, sections)
 
     # Every dated range in the document, used to tell a real gap from a period
@@ -401,15 +474,28 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
     # Outcome density, measured only over sections where describing the work is
     # the point. A skills list is bullets too, and counting those would produce a
     # finding about "bullets with no outcome" on a CV whose only bullets are tools.
-    detail_bullets = [
-        _bullet_text(line)
+    # Tracked per section, not just as a flat list. Without the section a bullet
+    # came from, the "weak bullets" issue carried no section, so the section it
+    # described kept its Strong mark - which is the contradiction both reviewers
+    # reported: key areas said the experience bullets were weak while section 5
+    # called that same section Strong.
+    detail_pairs = [
+        (block["heading"], _bullet_text(line))
         for block in sliced if block["category"] in DETAIL_CATEGORIES
         for line in block["lines"] if _is_bullet(line)
     ]
+    detail_bullets = [b for _, b in detail_pairs]
     with_outcome = [b for b in detail_bullets if IMPACT_MARKER.search(b)]
+    no_outcome_pairs = [(h, b) for h, b in detail_pairs if not IMPACT_MARKER.search(b)]
+    weak_pairs = [(h, b) for h, b in detail_pairs
+                  if b.lower().startswith(WEAK_OPENERS) and not IMPACT_MARKER.search(b)]
+    weak = [b for _, b in weak_pairs]
 
-    weak = [b for b in all_bullets
-            if b.lower().startswith(WEAK_OPENERS) and not IMPACT_MARKER.search(b)]
+    def _dominant(pairs):
+        counts = {}
+        for heading, _ in pairs:
+            counts[heading] = counts.get(heading, 0) + 1
+        return max(counts, key=counts.get) if counts else None
     lowered = text.lower()
     # A trait word only counts where a trait is being CLAIMED as a skill. The
     # same word in an interests line ("passionate about soccer") is ordinary
@@ -449,7 +535,9 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
         "total_bullets": len(all_bullets),
         "experience_bullets": len(detail_bullets),
         "experience_bullets_with_outcome": len(with_outcome),
-        "bullets_without_outcome": [b for b in detail_bullets if b not in with_outcome][:5],
+        "bullets_without_outcome": [b for _, b in no_outcome_pairs][:5],
+        "no_outcome_section": _dominant(no_outcome_pairs),
+        "weak_opener_section": _dominant(weak_pairs),
         "has_no_bullets_anywhere": len(all_bullets) == 0,
         "weak_opener_bullets": weak[:6],
         "buzzwords": buzz,
@@ -461,6 +549,12 @@ def analyse(text: str, meta: dict, sections: list[dict]) -> dict:
         ],
         "month_typos": _month_typos(text),
         "date_findings": date_findings,
+        # Career Services asked that a CV mentioning no AI skills anywhere - not in
+        # coursework, not in a job, not under skills - be told so in the overall
+        # impression. Measured across the whole document, since students put it in
+        # whichever of those four places suits them.
+        "mentions_ai": bool(AI_TERMS.search(text)),
+        **_jd_tailoring(text, jd_text),
         "single_word_interests": _single_word_interests(sliced)[1],
         "single_word_interests_section": _single_word_interests(sliced)[0],
         "language_levels": _language_levels(sliced),
