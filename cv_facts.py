@@ -95,24 +95,40 @@ SPELLING_PAIRS = [
 # sections missing that were plainly on the page. Serena flagged it twice:
 # "This person does actually have the skills and languages in this section",
 # "Again - the CV actually includes this information."
-REPORT_SECTIONS: list[tuple[str, str, set, set, tuple]] = [
+REPORT_SECTIONS: list[tuple[str, str, set, set, set, tuple]] = [
+    # (English name, German name, strict categories, canonical displays,
+    #  loose categories, content keywords)
+    #
+    # "loose" is what a section counts for when the heading lookup did not
+    # recognise it and the model found it instead. A Brazilian CV headed
+    # "ATIVIDADES EXTRACURRICULARES" is categorised correctly but has no
+    # canonical display, and matching on display alone reported the section
+    # missing while it sat on the page. Loose matching is deliberately generous:
+    # a missed suggestion is a small loss, and telling a student a section is
+    # missing when it is right there is the complaint Career Services made twice.
     ("Profile (optional)", "Kurzprofil (optional)",
-     {"Profile / Summary"}, {"Profile"}, ()),
+     {"Profile / Summary"}, {"Profile"}, {"Profile / Summary"}, ()),
     ("Education", "Ausbildung",
-     {"Education"}, {"Education"}, ("education", "ausbildung", "studium")),
+     {"Education"}, {"Education"}, {"Education"},
+     ("education", "ausbildung", "studium")),
     ("Work / Professional Experience", "Berufserfahrung",
-     {"Experience"}, {"Work Experience"},
+     {"Experience"}, {"Work Experience"}, {"Experience"},
      ("work experience", "professional experience", "berufserfahrung", "praktika")),
     ("Extracurricular Experience", "Ausserschulisches Engagement",
-     {"Volunteering & Community"}, {"Extracurricular Experience", "Volunteering"}, ()),
+     {"Volunteering & Community"}, {"Extracurricular Experience", "Volunteering"},
+     {"Volunteering & Community", "Extracurricular & Interests"}, ()),
     ("Languages and IT Skills", "Sprachen und IT-Kenntnisse",
-     {"Skills & Languages"}, {"Skills & Languages"},
+     {"Skills & Languages"}, {"Skills & Languages"}, {"Skills & Languages"},
      ("languages", "sprachen", "skills", "kenntnisse", "fähigkeiten")),
     ("Courses and Certificates (optional)", "Kurse und Zertifikate (optional)",
-     {"Certifications & Training"}, {"Certificates & Training"}, ()),
+     {"Certifications & Training"}, {"Certificates & Training"},
+     {"Certifications & Training"}, ()),
     ("Interests / Hobbies (optional)", "Interessen / Hobbys (optional)",
-     set(), {"Interests"}, ("interests", "hobbies", "interessen", "freizeit")),
+     set(), {"Interests"}, {"Extracurricular & Interests"},
+     ("interests", "hobbies", "interessen", "freizeit")),
 ]
+
+CANONICAL_DISPLAYS = {display for display, _category, _variants in heading_lookup.VOCAB}
 
 
 def _missing_report_sections(sliced: list[dict], lowered: str,
@@ -125,10 +141,14 @@ def _missing_report_sections(sliced: list[dict], lowered: str,
     Certificates (optional)" into an otherwise German report.
     """
     present_categories = {s["category"] for s in sliced}
-    present_displays = {s.get("display") for s in sliced}
+    # A display only means something when the heading lookup produced it. For a
+    # heading the model found, the display is just the student's own wording.
+    precise = {s.get("display") for s in sliced if s.get("display") in CANONICAL_DISPLAYS}
+    loose = {s["category"] for s in sliced if s.get("display") not in CANONICAL_DISPLAYS}
+
     missing = []
-    for name_en, name_de, categories, displays, keywords in REPORT_SECTIONS:
-        if present_categories & categories or present_displays & displays:
+    for name_en, name_de, categories, displays, loose_categories, keywords in REPORT_SECTIONS:
+        if present_categories & categories or precise & displays or loose & loose_categories:
             continue
         if any(re.search(r"\b" + re.escape(k) + r"\b", lowered) for k in keywords):
             continue
@@ -345,7 +365,25 @@ def _has_role_title(entry: dict) -> bool:
     calling a real job title missing would be exactly the kind of factual error
     this module exists to prevent.
     """
-    combined = f'{entry.get("title_line", "")} {entry["line"]}'
+    # Three lines, not two. Many CVs put the employer and the dates on one line
+    # and the role underneath:
+    #
+    #     Empresa Junior FEA-USP                    mar/2023 - dez/2023
+    #     Consultor de projetos
+    #
+    # Reading only the line and the one above it, the role is invisible and the
+    # entry is reported as having no role title while the role is plainly there.
+    # That is the false finding Career Services sent back as "This is wrong -
+    # they do state the role title".
+    first_detail = (entry.get("description") or [""])[0]
+    # Joined with the same separator the splitter below looks for. A plain space
+    # would merge "Empresa Junior FEA-USP" and "Consultor de projetos" into one
+    # string with nothing to split on, and the entry would still read as having
+    # no role - which is the bug this was meant to fix.
+    combined = " | ".join(
+        part for part in (entry.get("title_line", ""), entry["line"], first_detail)
+        if part and part.strip()
+    )
     without_dates = DATE_RANGE.sub("", combined).strip(" ,-–—|")
     parts = [p.strip() for p in re.split(r"[|,–—]|\s-\s", without_dates) if p.strip()]
     return len(parts) >= 2 and all(len(p) > 2 for p in parts[:2])

@@ -299,9 +299,17 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
             items=", ".join(f'"{d.strip()}"' for d in damaged[:3])))
 
     headings = [h for h in heading_source if not _is_conventional(h)]
-    if headings:
+    # If the lookup recognised none of this CV's headings, the CV is very likely
+    # in a language the vocabulary does not cover, and we have no basis at all
+    # for saying an ATS would struggle with "FORMAÇÃO ACADÊMICA". Asserting it
+    # anyway is exactly the kind of invented finding Career Services objected
+    # to. Silence is the honest answer; with even one heading recognised we are
+    # on familiar ground and the rest can be judged.
+    recognised = len(heading_source) - len(headings)
+    out_of_depth = recognised == 0 and len(heading_source) >= 3
+    if headings and not out_of_depth:
         problems.append(t["headings"].format(items=", ".join(headings[:3])))
-    else:
+    elif not headings:
         notes.append(t["std_headings"])
 
     bullets = unusual_bullets(text)

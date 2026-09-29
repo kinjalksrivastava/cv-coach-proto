@@ -31,9 +31,15 @@ ICON = ""
 CASES: list[dict] = []
 
 
-def case(name, text, meta=None, **checks):
+def case(name, text, meta=None, sections=None, **checks):
+    """
+    `sections` supplies what section detection would return, for a CV in a
+    language the offline heading lookup does not cover. The suite runs without a
+    model, so a Portuguese CV would otherwise parse as having no sections at all
+    and test nothing downstream.
+    """
     CASES.append({"name": name, "text": text, "meta": meta or {"page_count": 1},
-                  "checks": checks})
+                  "sections": sections, "checks": checks})
 
 
 # --------------------------------------------------------------------------
@@ -257,6 +263,63 @@ Climbing (multi-pitch routes, Piz Bernina), classical guitar (10 years)
 )
 
 
+# --------------------------------------------------------------------------
+# 10. A CV in a language the heading vocabulary does not cover. The model finds
+#     the headings and everything downstream has to cope with them - which it
+#     did not: the dates were unparseable (so no entry was detected at all), a
+#     section sitting on the page was reported missing, and the format check
+#     asserted that an ATS would struggle with "FORMAÇÃO ACADÊMICA", which it
+#     has no way of knowing.
+# --------------------------------------------------------------------------
+case(
+    "portuguese_cv_via_model",
+    """OBJETIVO PROFISSIONAL
+Estudante de Administração em busca de estágio na área de finanças corporativas.
+
+FORMAÇÃO ACADÊMICA
+Universidade de São Paulo (USP)                          fev/2022 - dez/2025
+Bacharelado em Administração de Empresas
+
+EXPERIÊNCIA PROFISSIONAL
+Itaú Unibanco, São Paulo                                 jan/2024 - ago/2024
+Estagiário de Controladoria
+- Responsável pelo fechamento mensal das contas
+- Auxiliou na elaboração de relatórios gerenciais
+
+ATIVIDADES EXTRACURRICULARES
+Empresa Júnior FEA-USP                                   mar/2023 - dez/2023
+Consultor de projetos
+- Atuou em três projetos de consultoria para pequenas empresas
+
+IDIOMAS
+Português: nativo
+Inglês: avançado
+""",
+    sections=[
+        {"heading": "OBJETIVO PROFISSIONAL", "category": "Profile / Summary",
+         "index": 0, "damage": None, "raw": "OBJETIVO PROFISSIONAL",
+         "display": "OBJETIVO PROFISSIONAL"},
+        {"heading": "FORMAÇÃO ACADÊMICA", "category": "Education",
+         "index": 3, "damage": None, "raw": "FORMAÇÃO ACADÊMICA",
+         "display": "FORMAÇÃO ACADÊMICA"},
+        {"heading": "EXPERIÊNCIA PROFISSIONAL", "category": "Experience",
+         "index": 7, "damage": None, "raw": "EXPERIÊNCIA PROFISSIONAL",
+         "display": "EXPERIÊNCIA PROFISSIONAL"},
+        {"heading": "ATIVIDADES EXTRACURRICULARES", "category": "Extracurricular & Interests",
+         "index": 13, "damage": None, "raw": "ATIVIDADES EXTRACURRICULARES",
+         "display": "ATIVIDADES EXTRACURRICULARES"},
+        {"heading": "IDIOMAS", "category": "Skills & Languages",
+         "index": 18, "damage": None, "raw": "IDIOMAS", "display": "IDIOMAS"},
+    ],
+    date_ranges=3,
+    # The extracurricular section is on the page, and the role sits on the line
+    # below the dates. Neither may be reported as absent.
+    no_issue_kinds=["entries_no_title", "entries_no_detail", "no_bullets_anywhere"],
+    missing_report_sections=["Courses and Certificates (optional)"],
+    ats_must_not_flag_headings=True,
+)
+
+
 def run() -> int:
     failures = 0
     for item in CASES:
@@ -265,7 +328,7 @@ def run() -> int:
         # records the lines they were on.
         text, icon_lines = heading_lookup.strip_private_use(item["text"])
         meta = {**item["meta"], "icon_lines": icon_lines}
-        sections = section_coverage.detect_sections(text)   # offline, no model
+        sections = item["sections"] or section_coverage.detect_sections(text)
         facts = cv_facts.analyse(text, meta, sections)
         result = severity.assess(facts)
         kinds = {i["key"] for i in result["all_issues"]}

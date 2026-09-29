@@ -39,6 +39,28 @@ MONTHS = {
     "oct": 10, "october": 10, "okt": 10, "oktober": 10,
     "nov": 11, "november": 11,
     "dec": 12, "december": 12, "dez": 12, "dezember": 12,
+    # Portuguese, Spanish, French and Italian. HSG students apply from and to
+    # more than two countries, and a CV in a language this file does not know
+    # loses every date - which silently takes entry detection with it, since an
+    # entry is anchored on its date range. Adding a language here is a dict
+    # entry; the alternative is a CV where half the checks quietly do nothing.
+    "janeiro": 1, "enero": 1, "janv": 1, "janvier": 1, "gen": 1, "gennaio": 1,
+    "ene": 1,
+    "fev": 2, "fevereiro": 2, "febrero": 2, "févr": 2, "fevr": 2, "février": 2,
+    "fevrier": 2, "febbraio": 2,
+    "março": 3, "marco": 3, "marzo": 3, "mars": 3,
+    "abr": 4, "abril": 4, "avr": 4, "avril": 4, "apr": 4, "aprile": 4,
+    "mayo": 5, "mag": 5, "maggio": 5, "may": 5,
+    "junho": 6, "junio": 6, "juin": 6, "giu": 6, "giugno": 6,
+    "julho": 7, "julio": 7, "juil": 7, "juillet": 7, "lug": 7, "luglio": 7,
+    "ago": 8, "agosto": 8, "août": 8, "aout": 8,
+    "set": 9, "setembro": 9, "septiembre": 9, "sept": 9, "septembre": 9,
+    "settembre": 9,
+    "out": 10, "outubro": 10, "oct": 10, "octubre": 10, "octobre": 10,
+    "ott": 10, "ottobre": 10,
+    "novembro": 11, "noviembre": 11, "novembre": 11,
+    "dezembro": 12, "diciembre": 12, "dic": 12, "déc": 12, "décembre": 12,
+    "decembre": 12, "dicembre": 12,
 }
 
 PRESENT_WORDS = (r"present|current|currently|now|today|ongoing|date|"
@@ -50,7 +72,7 @@ _ENDPOINT = (
     r"(?:"
     # The whitespace is capped deliberately. Allowing \s* let a column-aligned
     # CV line ("Matura              2013") read the preceding word as a month.
-    r"[A-Za-zäöüÄÖÜ]{3,9}\.?,?[ \t]{0,2}(?:19|20)\d{2}"  # Sep 2024 / Feb,2022
+    r"[A-Za-zÀ-ÖØ-öø-ÿ]{3,9}\.?[,/-]?[ \t]{0,2}(?:19|20)\d{2}"  # Sep 2024 / Feb,2022 / fev/2022
     r"|[A-Za-z0-9]{3,4}\.?[ \t]{1,2}(?:19|20)\d{2}"      # 3un 2025 (OCR damage)
     r"|(?:0?[1-9]|1[0-2])\s*[./]\s*(?:19|20)\d{2}"       # 09/2024 / 10.2021
     r"|(?:19|20)\d{2}"                                    # 2019
@@ -63,7 +85,7 @@ RANGE_RE = re.compile(
     re.IGNORECASE,
 )
 
-_MONTH_YEAR = re.compile(r"^([A-Za-z0-9äöüÄÖÜ]{3,9})\.?,?\s*((?:19|20)\d{2})$")
+_MONTH_YEAR = re.compile(r"^([A-Za-zÀ-ÖØ-öø-ÿ0-9]{3,9})\.?[,/-]?\s*((?:19|20)\d{2})$")
 _NUMERIC = re.compile(r"^(\d{1,2})\s*[./]\s*((?:19|20)\d{2})$")
 _YEAR_ONLY = re.compile(r"^((?:19|20)\d{2})$")
 
