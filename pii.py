@@ -34,6 +34,7 @@ less than it claims.
 import re
 
 import pii_local
+from guardrails import headings as heading_lookup
 
 
 # --- what each category is called, and what replaces it ----------------------
@@ -305,6 +306,13 @@ def _is_heading(line: str) -> bool:
     stripped = line.strip()
     if not stripped or len(stripped) > 60:
         return False
+    # The project's one heading vocabulary, which also repairs icon damage and
+    # single-character typos. The local HEADING_RE below is kept as a second
+    # chance, but it was the only check here and it did not know "Work
+    # Experience": a CV starting straight with that heading had it removed as
+    # the contact block, taking the whole section with it.
+    if heading_lookup.identify(stripped):
+        return True
     if HEADING_RE.match(stripped):
         return True
     # An all-caps short line with no contact markers is a heading by convention.
@@ -523,7 +531,11 @@ def strip_pii(text: str, language: str = "en") -> dict:
     # publication citation, a footer).
     names: list[str] = []
     if ner_available:
-        veto = pii_local.place_and_org_strings(text, language)
+        # Vetoed in BOTH languages. The place list is language-specific, so a
+        # German city read as a person by the English pipeline slipped through
+        # whenever the student chose English.
+        veto = (pii_local.place_and_org_strings(text, language)
+                | pii_local.place_and_org_strings(text, "de" if language != "de" else "en"))
         # The header name is the candidate's own: trusted, and removed everywhere
         # in the document, which is how it gets caught in a footer or a citation.
         names = _filter_names(pii_local.detect_persons(header_text, language), veto, text)
@@ -531,7 +543,15 @@ def strip_pii(text: str, language: str = "en") -> dict:
             # Try the other supported language before giving up: the pipelines
             # disagree on bare name lines often enough to be worth one more pass.
             other = "de" if language != "de" else "en"
-            names = _filter_names(pii_local.detect_persons(header_text, other), veto, text)
+            # The other pipeline over prose in the wrong language invents names,
+            # so its hits are only trusted where they sit on a line that reads
+            # like a name line in the first place.
+            names = [
+                name for name in _filter_names(
+                    pii_local.detect_persons(header_text, other), veto, text)
+                if any(name in line and _looks_like_a_name_line(line)
+                       for line in header_lines)
+            ]
         if not names:
             fallback = _name_line_fallback(header_lines)
             if fallback:

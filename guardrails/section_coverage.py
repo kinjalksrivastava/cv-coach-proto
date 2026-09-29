@@ -143,9 +143,16 @@ def detect_sections(cv_text: str, client=None, model: str | None = None) -> list
                 # The lookup wins on anything it recognises: it has the repaired
                 # heading and the model has the damaged one, and two entries for
                 # one section would be coached twice.
-                if heading_lookup.normalise(item["heading"]) in known:
+                # Compared after repair, not before. The lookup holds
+                # "AUSBILDUNG"; the model reports what it sees, "S AUSBILDUNG",
+                # which normalises to something else entirely and was added as a
+                # second copy of the same section.
+                repaired = heading_lookup.identify(item["heading"])
+                key = heading_lookup.normalise(
+                    repaired["clean"] if repaired else item["heading"])
+                if key in known:
                     continue
-                known.add(heading_lookup.normalise(item["heading"]))
+                known.add(key)
                 found.append({**item, "index": _line_index(cv_text, item["heading"]),
                               "damage": None, "raw": item["heading"],
                               "display": item["heading"]})

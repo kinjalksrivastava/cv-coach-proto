@@ -139,6 +139,13 @@ def _plausible_person(value: str) -> bool:
         return False  # "9000 St. Gallen" is a postcode, not a person
     if len(value.split()) > 5:
         return False
+    # A name on a CV is at least a given name and a surname. A single
+    # capitalised word is almost always the other model's opinion of an ordinary
+    # word: the German pipeline read "Comfortable" out of an English profile and
+    # the English one read "München" off a German employer line. Both were then
+    # deleted from every line that contained them.
+    if len(value.split()) < 2:
+        return False
     words = [w.strip(".,").lower() for w in value.split()]
     if any(w in NOT_A_PERSON for w in words):
         return False

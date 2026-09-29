@@ -366,6 +366,35 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
     return entries
 
 
+# Degrees that can carry a grade, and doctorates, which cannot. Matched against
+# the whole entry including its description, and tolerant of text that extracted
+# without spaces ("MasterofScienceinComputerScience").
+_DEGREE_LONG = ("bachelor", "master", "diplom", "magister", "licence", "laurea",
+                "staatsexamen", "lizentiat", "abitur", "matura", "baccalaureate",
+                "bakkalaureat", "vordiplom")
+_DEGREE_SHORT = re.compile(r"\b(ba|bsc|b\.sc|ma|msc|m\.sc|mba|llb|llm|bcom|mcom)\b",
+                           re.IGNORECASE)
+_DOCTORATE = ("phd", "ph.d", "doctorate", "doktor", "promotion", "dr.rer", "d.phil")
+
+
+# How a degree's own grade is introduced, as opposed to a mark mentioned in
+# passing inside a bullet about a project.
+DEGREE_GRADE_PHRASE = re.compile(
+    r"\b(grade average|average grade|final grade|overall grade|cumulative|gpa|cgpa|"
+    r"notendurchschnitt|gesamtnote|abschlussnote|durchschnitt|note[nd]?\s*:|"
+    r"grade\s*:|marks?\s*:|classification)\b",
+    re.IGNORECASE,
+)
+
+
+def _is_degree(value: str) -> bool:
+    lowered = value.lower()
+    if any(token in lowered for token in _DOCTORATE):
+        return False
+    return (any(token in lowered for token in _DEGREE_LONG)
+            or bool(_DEGREE_SHORT.search(value)))
+
+
 def _has_role_title(entry: dict) -> bool:
     """
     An entry needs a role as well as an employer. Reads the title line and the
@@ -683,8 +712,17 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
                 if section["category"] in ROLE_TITLE_CATEGORIES and not _has_role_title(e)
             ],
             "heading_typo": _close_to_known_heading(section["heading"]),
-            "is_bare": (len(content) <= 2 and not entries
-                        and section["category"] in ENTRY_SECTIONS),
+            # "Bare" needs both: too few lines, and too little on them. For
+            # interests one line can be the whole section and still be complete -
+            # "Climbing (multi-pitch routes, Piz Bernina), classical guitar (10
+            # years)" is exactly what Career Services ask for, and it was being
+            # reported as an almost-empty section.
+            "is_bare": (
+                len(content) <= 2 and not entries
+                and section["category"] in ENTRY_SECTIONS
+                and not (section["category"] == "Extracurricular & Interests"
+                         and sum(len(line) for line in content) >= 60)
+            ),
         })
 
     # Grades, and which education entries carry one.
@@ -692,10 +730,34 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
     education_lines = [line for s in education for line in s["lines"]]
     grades = grading.find_grades("\n".join(education_lines) or text, education_lines)
     education_entries = [e for s in education for e in _entries(s["lines"], extra_dates)]
+    # Counted against grades that were actually PARSED, not against the words
+    # that usually sit near one. Matching on keywords alone, "Matura" counted as
+    # a grade, so a CV showing no grades at all was told it showed some and hid
+    # others - a finding about a document that did not exist.
+    # A grade only counts as the DEGREE's grade. "(graded 5.5/6)" at the end of a
+    # bullet about a course project is a mark for that project, and counting it
+    # made a CV that shows no degree grades at all look like one that shows some
+    # and hides others.
+    grade_lines = {
+        g["line"] for g in grades
+        if DEGREE_GRADE_PHRASE.search(g["line"]) or len(g["line"].strip()) < 60
+    }
+    # Only degrees are compared with each other. The entry parser happily
+    # produces an entry for an exchange programme, a certificate, or the second
+    # line of a degree that wrapped, and none of those carries a grade - so a CV
+    # showing a grade on both of its actual degrees was told it showed some and
+    # hid others. Career Services sent that back as "This is actually wrong. The
+    # student has highlighted the grades in both."
+    #
+    # Doctorates are left out as well: a PhD has no grade to show.
+    comparable = [
+        e for e in education_entries
+        if _is_degree(f'{e.get("title_line", "")} {e["line"]} '
+                      f'{" ".join(e.get("description") or [])}')
+    ]
     entries_with_grade = sum(
-        1 for e in education_entries
-        if grading.GRADE_KEYWORDS.search(e["line"]) or any(
-            grading.GRADE_KEYWORDS.search(b) for b in e["bullets"])
+        1 for e in comparable
+        if any(line in grade_lines for line in [e["line"], *e["bullets"], *e["description"]])
     )
 
     # Outcome density, measured only over sections where describing the work is
@@ -833,7 +895,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         "language_levels": _language_levels(sliced),
         "grades": grades,
         "grade_notes": grading.describe(grades),
-        "grade_consistency": grading.consistency_note(len(education_entries), entries_with_grade),
+        "grade_consistency": grading.consistency_note(len(comparable), entries_with_grade),
         "missing_standard_sections": missing_standard,
         "missing_report_sections": _missing_report_sections(sliced, lowered, lang),
         "unlabelled_intro": _unlabelled_intro(text, sliced),
