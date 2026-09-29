@@ -203,6 +203,20 @@ def assess(facts: dict, target_role: str = "") -> dict:
                      "Don't paste the advert's wording over experience you don't have.",
         ))
 
+    # A profile with no heading over it. Career Services asked for this to be
+    # noticed and asked about rather than silently skipped - the CV that prompted
+    # it had a good profile that no check could see, because there was nothing to
+    # anchor it to.
+    if facts.get("unlabelled_intro"):
+        issues.append(_issue(
+            3, "unlabelled_intro", "There's a paragraph at the top with no heading",
+            f'The CV opens with text that belongs to no section: "'
+            f'{facts["unlabelled_intro"][:110]}…"',
+            guidance="If that is your profile, give it a heading so a reader — and an ATS "
+                     "— can see what it is. A profile works best as about three sentences "
+                     "covering what you bring and where you are heading.",
+        ))
+
     # --- Tier 3: structure and consistency -----------------------------------
     import cv_facts as cv_facts_module
     writing = cv_facts_module.typo_phrases(facts)
@@ -212,6 +226,16 @@ def assess(facts: dict, target_role: str = "") -> dict:
             "; ".join(str(w) for w in writing[:4]),
             guidance="These are quick to fix and they are the kind of thing a reader "
                      "notices immediately.",
+        ))
+    year_only = facts.get("year_only_ranges") or []
+    if len(year_only) >= 2:
+        issues.append(_issue(
+            3, "year_only_dates", "Dates give the year but not the month",
+            f"{len(year_only)} date ranges show years only: "
+            + ", ".join(f'"{r}"' for r in year_only[:4]),
+            guidance="Add the month to each — \"09/2023 – 06/2024\" or \"Sep 2023 – Jun "
+                     "2024\". Without it a reader cannot tell a three-month internship "
+                     "from a twelve-month one, and tends to assume the shorter.",
         ))
     if facts["mixed_spelling"]:
         issues.append(_issue(

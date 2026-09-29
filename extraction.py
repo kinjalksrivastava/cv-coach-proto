@@ -15,6 +15,7 @@ import io
 
 import pdfplumber
 from docx import Document
+from guardrails import headings as heading_lookup
 
 MIN_CHARS = 120  # confidence gate threshold
 MAX_SIZE_BYTES = 10 * 1024 * 1024  # 10 MB cap, matches the requirements doc
@@ -127,5 +128,12 @@ def extract_text(file_bytes: bytes, filename: str) -> ExtractionResult:
             ),
         )
 
+    # Icon fonts map to the Unicode private use area, and a CV with a little
+    # glyph beside each heading arrives here as "\uf0b7 BERUFSERFAHRUNG". Nothing
+    # legitimate on a CV lives in that range, so it comes out before anything
+    # else looks at the text. The count is kept: a document full of them is one
+    # whose author should be told the icons do not survive a parse.
+    raw, icon_lines = heading_lookup.strip_private_use(raw)
+    meta["icon_lines"] = icon_lines
     meta["char_count"] = len(raw.strip())
     return ExtractionResult(ok=True, text=raw, meta=meta)

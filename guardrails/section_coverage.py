@@ -15,13 +15,24 @@ verbatim, in document order, each mapped to a canonical category. The verbatim
 heading is what the bot says back to the student ("let's look at your Research &
 Publications section"); the category is what selects the coaching rules.
 
-The old keyword scan is kept as the offline fallback for when the model call
-fails - degraded, but never a broken app.
+Since the third review round the model is no longer the only reader. Standard
+headings - "Berufserfahrung", "Ausbildung", "Work Experience" - are a closed
+vocabulary, so guardrails/headings.py looks them up deterministically and repairs
+the ones the file damaged. Both reviewers reported the same failure: a CV with
+icons beside its headings came through as "S BERUFSERFAHRUNG", and a heading that
+is not merely correct but the single most common heading in German was reported
+to the student as unrecognisable.
+
+So both run, and the results are merged. The lookup is complete and never has an
+off day on the standard vocabulary; the model finds the unusual headings a fixed
+list cannot know about ("Board Memberships", "Case Studies", "Selected Working
+Papers"). When the model call fails, the lookup alone is a real answer rather
+than the degraded guess the old keyword scan produced.
 """
 
-import re
 
 import latency
+from guardrails import headings as heading_lookup
 
 # Canonical categories. The first four have their own dedicated rule modules in
 # sections/; the rest are handled by sections/other_sections.py.
@@ -63,37 +74,20 @@ Return JSON of this exact shape:
 {{"sections": [{{"heading": "<verbatim heading>", "category": "<one category>"}}]}}"""
 
 
-def _fallback_keyword_scan(cv_text: str) -> list[dict]:
-    """Offline path: the old fixed-keyword scan, used only if the model call fails."""
-    keywords: list[tuple[str, list[str]]] = [
-        ("Profile / Summary", ["profile", "summary", "kurzprofil", "über mich"]),
-        ("Education", ["education", "ausbildung", "studium", "akademische"]),
-        ("Experience", ["professional experience", "work experience", "experience",
-                        "berufserfahrung", "praktische erfahrung", "praktika"]),
-        ("Publications & Research", ["publications", "research", "publikationen",
-                                     "forschung", "thesis", "working papers"]),
-        ("Projects", ["projects", "projekte", "case studies"]),
-        ("Skills & Languages", ["skills", "languages", "sprachen", "kenntnisse",
-                                "fähigkeiten", "it skills", "edv"]),
-        ("Certifications & Training", ["certifications", "certificates", "zertifikate",
-                                       "weiterbildung", "training", "courses"]),
-        ("Awards & Scholarships", ["awards", "honors", "honours", "scholarships",
-                                   "auszeichnungen", "stipendien", "preise"]),
-        ("Extracurricular & Interests", ["extracurricular", "interests", "hobbies",
-                                         "ausserschulisch", "außerschulisch", "freizeit",
-                                         "interessen", "engagement"]),
-        ("Volunteering & Community", ["volunteer", "volunteering", "ehrenamt",
-                                      "freiwilligenarbeit", "community"]),
-        ("References", ["references", "referenzen"]),
+def _deterministic(cv_text: str) -> list[dict]:
+    """
+    Every heading in the closed vocabulary, verbatim and in document order.
+
+    This replaced a keyword scan that returned CANONICAL names - a CV headed
+    "AUSBILDUNG" came back as "Education", which matched no line in the document,
+    so the section slicer anchored nothing and the report went on to announce
+    that a CV full of bullet points had none. That failure was silent.
+    """
+    return [
+        {"heading": h["clean"], "category": h["category"], "index": h["index"],
+         "damage": h["damage"], "raw": h["raw"], "display": h["display"]}
+        for h in heading_lookup.find(cv_text)
     ]
-    lowered = cv_text.lower()
-    found = []
-    for category, kws in keywords:
-        for kw in kws:
-            if re.search(r"\b" + re.escape(kw) + r"\b", lowered):
-                found.append({"heading": category, "category": category})
-                break
-    return found
 
 
 def _clean(sections: list, cv_text: str) -> list[dict]:
@@ -120,25 +114,44 @@ def _clean(sections: list, cv_text: str) -> list[dict]:
     return out
 
 
+def _line_index(cv_text: str, heading: str) -> int:
+    """Where a heading sits in the document, so merged results keep CV order."""
+    target = heading_lookup.normalise(heading)
+    for index, line in enumerate(cv_text.splitlines()):
+        if heading_lookup.normalise(line) == target:
+            return index
+    return 10 ** 6  # unplaceable: sorts to the end rather than to the top
+
+
 def detect_sections(cv_text: str, client=None, model: str | None = None) -> list[dict]:
     """
-    Returns [{"heading": <verbatim>, "category": <canonical>}] in document order.
-    Falls back to the keyword scan when no client is given or the call fails, so
-    this function never raises and never returns None.
+    Returns [{"heading": <verbatim>, "category": <canonical>, ...}] in document
+    order. Never raises and never returns None.
     """
-    if client is None or not model:
-        return _fallback_keyword_scan(cv_text)
+    found = _deterministic(cv_text)
+    known = {heading_lookup.normalise(s["heading"]) for s in found}
 
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT.format(categories=", ".join(CATEGORIES))},
-        {"role": "user", "content": "--- CV START ---\n" + cv_text + "\n--- CV END ---"},
-    ]
-    data = latency.json_call(client, model, messages)
-    if isinstance(data, dict) and isinstance(data.get("sections"), list):
-        cleaned = _clean(data["sections"], cv_text)
-        if cleaned:
-            return cleaned
-    return _fallback_keyword_scan(cv_text)
+    if client and model:
+        messages = [
+            {"role": "system",
+             "content": SYSTEM_PROMPT.format(categories=", ".join(CATEGORIES))},
+            {"role": "user", "content": "--- CV START ---\n" + cv_text + "\n--- CV END ---"},
+        ]
+        data = latency.json_call(client, model, messages)
+        if isinstance(data, dict) and isinstance(data.get("sections"), list):
+            for item in _clean(data["sections"], cv_text):
+                # The lookup wins on anything it recognises: it has the repaired
+                # heading and the model has the damaged one, and two entries for
+                # one section would be coached twice.
+                if heading_lookup.normalise(item["heading"]) in known:
+                    continue
+                known.add(heading_lookup.normalise(item["heading"]))
+                found.append({**item, "index": _line_index(cv_text, item["heading"]),
+                              "damage": None, "raw": item["heading"],
+                              "display": item["heading"]})
+
+    found.sort(key=lambda s: s["index"])
+    return found
 
 
 def headings(sections: list[dict]) -> list[str]:

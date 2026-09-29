@@ -192,8 +192,10 @@ what to do about it}. If the key area list is empty, return an empty array.
 - "show_bullet_examples": true only if one of the key areas concerns bullets being \
 missing, thin, or duty-focused. Otherwise false.
 - "sections": one entry per section listed in SECTION STATUS, using exactly the status \
-given, plus an entry for each standard section the CV does not have (status "missing"): \
-{standard_sections}. Each: {{"name": the CV's own heading verbatim, "status": ..., \
+given, plus an entry for each section listed under MISSING SECTIONS (status "missing"), \
+using exactly those names. That list is measured, not your judgement: do not add a \
+"missing" entry for anything not on it, and do not leave one out. If it is empty, every \
+standard section is present and no "missing" entries belong in the report. Each: {{"name": the CV's own heading verbatim, "status": ..., \
 "summary": one short line, "points": 1-4 bullets}}. A "strong" section gets ONE point \
 saying why it works, written as a plain sentence with no "Strong section:" prefix, and \
 containing no request to change anything - if it needed changing it would not be strong. \
@@ -243,6 +245,9 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
         )
     context.append(facts_block)
     context.append(issues_block)
+    missing = facts.get("missing_report_sections") or []
+    context.append("MISSING SECTIONS (measured — use exactly these, add none): "
+                   + ("; ".join(missing) if missing else "none"))
     # Stated as flags rather than left for the model to work out from the CV text.
     # Both are measured in cv_facts; asking the model to notice them again would
     # produce a different answer on each run.
@@ -271,7 +276,6 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
 
     system = (
         SYSTEM_PROMPT
-        .replace("{standard_sections}", "; ".join(STANDARD_SECTIONS))
         .replace("{language_name}", language_name)
     )
     return [

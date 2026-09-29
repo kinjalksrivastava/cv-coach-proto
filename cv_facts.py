@@ -35,6 +35,7 @@ INLINE_BULLET = re.compile(rf"\s[{re.escape(INLINE_BULLET_CHARS)}]\s+\S")
 # second copy here is how "2019 - 2021" ended up invisible to the gap check
 # while cv_facts still saw it.
 from guardrails.dates import RANGE_RE as DATE_RANGE
+from guardrails import headings as heading_lookup
 
 MONTHS = ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec",
           "januar", "februar", "märz", "april", "mai", "juni", "juli", "august",
@@ -75,16 +76,76 @@ SPELLING_PAIRS = [
 ]
 
 # Headings a near-miss is measured against, for typo detection.
-KNOWN_HEADINGS = (
-    "education", "work experience", "professional experience", "experience",
-    "employment", "skills", "technical skills", "it skills", "languages",
-    "extracurricular activities", "extracurricular", "interests", "hobbies",
-    "certificates", "certifications", "courses", "publications", "projects",
-    "awards", "references", "profile", "summary", "volunteering",
-    "core competences", "core competencies", "additional information",
-    "community experience", "ausbildung", "berufserfahrung", "kenntnisse",
-    "sprachen", "interessen",
-)
+# The seven sections Career Services expect on a student CV, as named in the
+# report. Which detected sections satisfy each one: by category, by the display
+# name the heading lookup resolved to, or - last resort - by the content simply
+# being somewhere in the document under a heading of the student's own choosing.
+#
+# This is measured here because it used to be left to the model, which reported
+# sections missing that were plainly on the page. Serena flagged it twice:
+# "This person does actually have the skills and languages in this section",
+# "Again - the CV actually includes this information."
+REPORT_SECTIONS: list[tuple[str, set, set, tuple]] = [
+    ("Profile (optional)", {"Profile / Summary"}, {"Profile"}, ()),
+    ("Education", {"Education"}, {"Education"},
+     ("education", "ausbildung", "studium")),
+    ("Work / Professional Experience", {"Experience"}, {"Work Experience"},
+     ("work experience", "professional experience", "berufserfahrung", "praktika")),
+    ("Extracurricular Experience", {"Volunteering & Community"},
+     {"Extracurricular Experience", "Volunteering"}, ()),
+    ("Languages and IT Skills", {"Skills & Languages"}, {"Skills & Languages"},
+     ("languages", "sprachen", "skills", "kenntnisse", "fähigkeiten")),
+    ("Courses and Certificates (optional)", {"Certifications & Training"},
+     {"Certificates & Training"}, ()),
+    ("Interests / Hobbies (optional)", set(), {"Interests"},
+     ("interests", "hobbies", "interessen", "freizeit")),
+]
+
+
+def _missing_report_sections(sliced: list[dict], lowered: str) -> list[str]:
+    """Which of the seven are genuinely absent. Measured, never guessed."""
+    present_categories = {s["category"] for s in sliced}
+    present_displays = {s.get("display") for s in sliced}
+    missing = []
+    for name, categories, displays, keywords in REPORT_SECTIONS:
+        if present_categories & categories or present_displays & displays:
+            continue
+        if any(re.search(r"\b" + re.escape(k) + r"\b", lowered) for k in keywords):
+            continue
+        missing.append(name)
+    return missing
+
+
+# --- A block of prose at the top with no heading over it ----------------------
+#
+# "This person also has a personal profile at the top, which does not seem to be
+# picked up here. Maybe because the header is missing for it. If there is a
+# section without a header though, that should be picked up and asked."
+_SENTENCE = re.compile(r"[a-zäöüß]{3,}\s+[a-zäöüß]{3,}\s+[a-zäöüß]{3,}")
+
+
+def _unlabelled_intro(text: str, sliced: list[dict]) -> str | None:
+    """
+    Prose above the first heading. The contact block is already gone by the time
+    this runs, so anything left that reads like sentences is a profile the
+    student wrote without giving it a heading.
+    """
+    first = min((s["start"] for s in sliced), default=None)
+    if first is None or first == 0:
+        return None
+    block = [line.strip() for line in text.splitlines()[:first] if line.strip()]
+    prose = [line for line in block
+             if len(line) > 40 and _SENTENCE.search(line.lower())
+             and not _is_bullet(line)]
+    if not prose:
+        return None
+    joined = " ".join(prose)
+    return joined[:200] if len(joined) >= 80 else None
+
+
+# Where a role title is expected. Education is deliberately absent.
+ROLE_TITLE_CATEGORIES = {"Experience", "Extracurricular & Interests",
+                         "Volunteering & Community"}
 
 STANDARD_SECTION_CATEGORIES = {
     "Education": ("education",),
@@ -141,16 +202,15 @@ def _bullet_text(line: str) -> str:
 
 def _close_to_known_heading(heading: str) -> str | None:
     """
-    "Educatiqn" is a typo, "Community Experience" is a real heading. Only an
-    almost-exact match counts, so a legitimately unusual heading isn't corrected.
+    "Educatiqn" is a typo; "Community Experience" is a real heading.
+
+    There used to be a second heading list in this module for this one check, and
+    it had already drifted from the one in format_check - a heading could be
+    conventional to one and a typo to the other. There is now one vocabulary,
+    in guardrails/headings.py.
     """
-    value = heading.strip().lower()
-    if value in KNOWN_HEADINGS:
-        return None
-    for known in KNOWN_HEADINGS:
-        if abs(len(value) - len(known)) <= 2 and SequenceMatcher(None, value, known).ratio() >= 0.85:
-            return known
-    return None
+    entry = heading_lookup.identify(heading)
+    return entry["display"] if entry and entry["damage"] == "typo" else None
 
 
 def _month_typos(text: str) -> list[tuple[str, str]]:
@@ -177,13 +237,27 @@ def _month_typos(text: str) -> list[tuple[str, str]]:
 def _split_sections(text: str, sections: list[dict]) -> list[dict]:
     """Slice the document into its sections, using the parsed headings as anchors."""
     lines = text.splitlines()
-    anchors = []
+    anchors, used = [], set()
     for section in sections:
-        heading = section["heading"].strip()
-        for index, line in enumerate(lines):
-            if line.strip() == heading and index not in [a[0] for a in anchors]:
-                anchors.append((index, section))
-                break
+        # The parser already knows which line the heading is on, and a repaired
+        # heading no longer matches its own line as a string: the CV says
+        # "S BERUFSERFAHRUNG" and the heading is "BERUFSERFAHRUNG". Matching on
+        # text here is what silently anchored nothing and produced a report
+        # telling a student with bullets everywhere that they had none.
+        index = section.get("index")
+        if index is None or not (0 <= index < len(lines)) or index in used:
+            index = None
+            heading = section["heading"].strip()
+            for candidate, line in enumerate(lines):
+                if candidate in used:
+                    continue
+                if line.strip() == heading or line.strip().endswith(" " + heading):
+                    index = candidate
+                    break
+        if index is None or index in used:
+            continue
+        used.add(index)
+        anchors.append((index, section))
     anchors.sort(key=lambda a: a[0])
 
     out = []
@@ -224,6 +298,23 @@ def _entries(body: list[str]) -> list[dict]:
                 entry["bullets"].append(_bullet_text(line))
             elif line.strip() and line.strip() != entry["title_line"]:
                 entry["description"].append(line.strip())
+
+    # Two roles at one employer, stacked. Career Services recommend exactly this
+    # layout after a promotion:
+    #
+    #     UBS AG, Zurich
+    #     Senior Analyst                      09/2023 - present
+    #     Analyst                             09/2021 - 08/2023
+    #     - bullet describing both
+    #
+    # Read entry by entry, the first role ends where the second begins, so it
+    # owns no bullets and was reported as an entry with no description at all -
+    # a tier-1 finding, invented, on a CV that was formatted the way they teach.
+    # A role on the line directly above another role is part of the same block.
+    for index, entry in enumerate(entries[:-1]):
+        entry["stacked_with_next"] = entries[index + 1]["offset"] == entry["offset"] + 1
+    if entries:
+        entries[-1]["stacked_with_next"] = False
     return entries
 
 
@@ -481,6 +572,9 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
         section_facts.append({
             "heading": section["heading"],
             "category": section["category"],
+            # "icon" or "typo" where the heading had to be repaired to be read.
+            "damage": section.get("damage"),
+            "raw_heading": section.get("raw", section["heading"]),
             "line_count": len(content),
             "char_count": sum(len(line) for line in content),
             "bullet_count": len(bullets),
@@ -491,9 +585,15 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
                 (e["title_line"] or e["line"]) for e in entries
                 if section["category"] in DETAIL_CATEGORIES
                 and not e["bullets"] and not e["description"]
+                and not e.get("stacked_with_next")
             ],
+            # A degree is not a job: "MA in Banking and Finance, HSG" is complete
+            # as it stands. Career Services asked for this explicitly - "In the
+            # education section there shouldn't be a 'role'. Only in professional
+            # experience and extracurricular experience."
             "entries_without_title": [
-                (e["title_line"] or e["line"]) for e in entries if not _has_role_title(e)
+                (e["title_line"] or e["line"]) for e in entries
+                if section["category"] in ROLE_TITLE_CATEGORIES and not _has_role_title(e)
             ],
             "heading_typo": _close_to_known_heading(section["heading"]),
             "is_bare": (len(content) <= 2 and not entries
@@ -591,6 +691,10 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
         ],
         "month_typos": _month_typos(text),
         "date_findings": date_findings,
+        # "It doesn't tell the person to add months (instead of only years) in the
+        # timeline." A reader cannot tell a three-month internship from a
+        # twelve-month one when the CV says "2023 - 2024".
+        "year_only_ranges": date_check.uses_year_only(text),
         # Career Services asked that a CV mentioning no AI skills anywhere - not in
         # coursework, not in a job, not under skills - be told so in the overall
         # impression. Measured across the whole document, since students put it in
@@ -604,6 +708,8 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
         "grade_notes": grading.describe(grades),
         "grade_consistency": grading.consistency_note(len(education_entries), entries_with_grade),
         "missing_standard_sections": missing_standard,
+        "missing_report_sections": _missing_report_sections(sliced, lowered),
+        "unlabelled_intro": _unlabelled_intro(text, sliced),
         "table_count": meta.get("table_count", 0),
         "image_count": meta.get("image_count", 0),
         "section_order": [s["category"] for s in sliced],

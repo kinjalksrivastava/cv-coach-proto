@@ -16,6 +16,8 @@ judgement.
 
 import re
 
+from guardrails import headings as heading_lookup
+
 GOOD, ATTENTION, UNKNOWN = "good", "attention", "unknown"
 
 # --- Every sentence a student reads from this module, in both languages -------
@@ -44,6 +46,10 @@ TEXT = {
                     "parses more reliably",
         "std_headings": "conventional section headers",
         "bullets": "unusual bullet or icon characters ({items})",
+        "icon_headings": "icon or symbol characters beside your section headings that "
+                         "didn't survive the text extraction ({items}) — the headings "
+                         "themselves are correct, but an ATS reads the file the same way "
+                         "this tool did, so it's worth removing the icons",
         "tables": "{n} table(s) — tables used for layout are a common cause of scrambled "
                   "ATS parsing",
         "images": "{n} embedded images — any text inside them is invisible to a parser",
@@ -86,6 +92,10 @@ TEXT = {
                     "werden zuverlässiger gelesen",
         "std_headings": "gängige Abschnittstitel",
         "bullets": "ungewöhnliche Aufzählungs- oder Icon-Zeichen ({items})",
+        "icon_headings": "Icon- oder Symbolzeichen neben deinen Abschnittstiteln, die die "
+                         "Textextraktion nicht überstanden haben ({items}) — die Titel "
+                         "selbst sind korrekt, aber ein ATS liest die Datei genauso wie "
+                         "dieses Tool, deshalb lohnt es sich, die Icons zu entfernen",
         "tables": "{n} Tabelle(n) — für das Layout genutzte Tabellen sind eine häufige "
                   "Ursache für fehlerhaftes ATS-Parsing",
         "images": "{n} eingebettete Bilder — Text darin ist für einen Parser unsichtbar",
@@ -137,33 +147,6 @@ STANDARD_FONTS = {
 # these is why a perfectly ordinary CV was told its fonts were non-standard.
 FONT_SUFFIXES = ("psmt", "ps", "mt", "std", "pro", "lt")
 
-# Headings an ATS parser is likely to recognise, EN + DE.
-CONVENTIONAL_HEADINGS = {
-    "work experience", "professional experience", "experience", "employment",
-    "employment history", "berufserfahrung", "praktische erfahrung", "praktika",
-    "education", "ausbildung", "studium",
-    "skills", "technical skills", "it skills", "kenntnisse", "fähigkeiten", "edv",
-    "languages", "sprachen", "language skills",
-    "extracurricular activities", "extracurricular", "ausserschulische aktivitäten",
-    "außerschulische aktivitäten", "engagement",
-    "interests", "hobbies", "interessen", "freizeit",
-    "certificates", "certifications", "courses and certificates", "zertifikate",
-    "weiterbildung", "kurse",
-    "publications", "publikationen", "research", "forschung",
-    "projects", "projekte",
-    "awards", "honours", "honors", "auszeichnungen", "stipendien", "scholarships",
-    "references", "referenzen",
-    "profile", "summary", "profil", "kurzprofil",
-    "volunteering", "ehrenamt", "freiwilligenarbeit",
-    "it", "tools", "training", "military service", "militärdienst", "zivildienst",
-    "personal details", "contact", "kontakt",
-    # Career Services confirmed these read as normal CV headings and should not
-    # be reported as parsing risks.
-    "additional information", "community experience", "core competences",
-    "core competencies", "hobbies and interests", "interests and hobbies",
-    "languages and it skills", "work history", "voluntary work",
-}
-
 # Bullet marks that are safe. Anything else at the start of a list line - an
 # emoji, an icon glyph, a private-use character from an icon font - is the kind
 # of thing that turns into mojibake or vanishes in an ATS parse.
@@ -205,28 +188,19 @@ def _heading_candidates(text: str) -> list[str]:
     return found
 
 
-# Qualifiers that don't make a heading unconventional on their own.
-HEADING_QUALIFIERS = ("selected", "relevant", "key", "further", "additional", "other",
-                      "weitere", "ausgewählte", "sonstige")
-
-
 def _is_conventional(heading: str) -> bool:
     """
-    "Selected Publications", "Certifications & Training" and "IT & Languages" are
-    all conventional; splitting on the connectives and dropping the qualifier is
-    what stops the check from flagging ordinary headings as parsing risks.
+    Whether an ATS is likely to recognise this heading.
+
+    The vocabulary used to live here as a second copy, and had already drifted
+    from the one cv_facts used for typo detection - the same heading could be
+    conventional to one check and a typo to the other. It now comes from
+    guardrails/headings.py, which also means a heading repaired from icon damage
+    ("S BERUFSERFAHRUNG") is recognised instead of being reported back to the
+    student as unrecognisable. That false report is the one both reviewers led
+    with.
     """
-    value = heading.lower().strip(" :&/")
-    if value in CONVENTIONAL_HEADINGS:
-        return True
-    words = value.split()
-    while words and words[0] in HEADING_QUALIFIERS:
-        words = words[1:]
-    value = " ".join(words)
-    if value in CONVENTIONAL_HEADINGS:
-        return True
-    parts = [p.strip() for p in re.split(r"\s*(?:&|/|\band\b|\bund\b|,)\s*", value) if p.strip()]
-    return len(parts) > 1 and all(p in CONVENTIONAL_HEADINGS for p in parts)
+    return heading_lookup.identify(heading) is not None
 
 
 def unusual_bullets(text: str) -> list[str]:
@@ -294,6 +268,19 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
                                           items=", ".join(fonts[:3])))
     elif meta.get("fonts"):
         notes.append(t["std_fonts"])
+
+    # Career Services asked for this specifically: tell the student the headings
+    # are right and something beside them did not come through, rather than
+    # telling them their heading is wrong when it is not.
+    # Two ways an icon shows up: as a private-use codepoint, stripped during
+    # extraction and recorded there, or mapped onto an ordinary letter, which
+    # only the heading lookup can spot.
+    damaged = list(meta.get("icon_lines") or [])
+    damaged += [s["raw_heading"] for s in (facts or {}).get("sections") or []
+                if s.get("damage") == "icon" and s["raw_heading"] not in damaged]
+    if damaged:
+        problems.append(t["icon_headings"].format(
+            items=", ".join(f'"{d.strip()}"' for d in damaged[:3])))
 
     headings = [h for h in heading_source if not _is_conventional(h)]
     if headings:
