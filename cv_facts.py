@@ -451,7 +451,7 @@ _ACRONYM_NOISE = {"AND", "THE", "YOU", "YOUR", "FOR", "WITH", "ALL", "NEW", "CV"
                   "UND", "DER", "DIE", "DAS", "MIT", "WIR", "FTE", "PDF"}
 
 
-def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
+def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
     """
     Which of the advert's own load-bearing terms appear nowhere on the CV.
 
@@ -471,8 +471,12 @@ def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
     sensible and is not: a real advert says "SAP" once and "accounting" seven
     times, so it kept the generic term and discarded the decisive one.
     """
-    if not jd_text.strip():
+    # None, not "", is what the app holds when no job description was given, and
+    # it reached here unguarded. Coerced at the boundary rather than at the call
+    # site, because every caller would otherwise have to remember.
+    if not (jd_text or "").strip():
         return {"jd_provided": False, "jd_untailored": False, "jd_terms_missing": []}
+    jd_text = jd_text or ""
 
     counts = {}
     for match in _WORD.finditer(jd_text.lower()):
@@ -506,7 +510,7 @@ def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
     }
 
 
-def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
+def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "",
             lang: str = "en") -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the

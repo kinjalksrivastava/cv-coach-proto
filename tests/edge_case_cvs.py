@@ -317,7 +317,22 @@ def run() -> int:
         else:
             print(f"ok    {item['name']}")
 
-    print(f"\n{len(CASES) - failures}/{len(CASES)} passed")
+    # The production path when the student gives no job description passes None,
+    # not "". The cases above all default to "", so nothing here covered it, and
+    # `None.strip()` took the deployed app down on the first upload without a JD.
+    try:
+        case = CASES[-1]
+        text, _ = heading_lookup.strip_private_use(case["text"])
+        sections = section_coverage.detect_sections(text)
+        facts = cv_facts.analyse(text, case["meta"], sections, None)
+        severity.assess(facts)
+        assert facts["jd_provided"] is False
+        print("ok    no_job_description_is_none")
+    except Exception as exc:
+        failures += 1
+        print(f"FAIL  no_job_description_is_none\n        {exc!r}")
+
+    print(f"\n{len(CASES) + 1 - failures}/{len(CASES) + 1} passed")
     return 1 if failures else 0
 
 
