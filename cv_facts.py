@@ -308,16 +308,24 @@ def _split_sections(text: str, sections: list[dict]) -> list[dict]:
     return out
 
 
-def _entries(body: list[str]) -> list[dict]:
+def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict]:
     """
     An entry is one job, degree or activity. Anchored on a date range, which is
     what almost every CV entry carries and what a bullet almost never does.
+
+    `extra_dates` holds date text the pattern parser could not read but the model
+    could. Without it, a CV written "fev/2022 - dez/2025" has no recognisable
+    dates, therefore no entries, therefore none of the entry-level checks run at
+    all - and nothing anywhere says so.
     """
+    def _dated(line: str) -> bool:
+        return bool(DATE_RANGE.search(line)) or any(d in line for d in extra_dates)
+
     entries = []
     for offset, line in enumerate(body):
         if _is_bullet(line) or not line.strip():
             continue
-        if DATE_RANGE.search(line):
+        if _dated(line):
             # Many CVs put the employer and role on one line and the dates and
             # location on the next. Anchoring on the date line alone would read
             # "September 2021 - April 2024 St. Gallen, CH" as the whole entry and
@@ -325,14 +333,14 @@ def _entries(body: list[str]) -> list[dict]:
             title = ""
             for back in range(offset - 1, max(offset - 3, -1), -1):
                 candidate = body[back].strip()
-                if candidate and not _is_bullet(candidate) and not DATE_RANGE.search(candidate):
+                if candidate and not _is_bullet(candidate) and not _dated(candidate):
                     title = candidate
                     break
             entries.append({"line": line.strip(), "title_line": title,
                             "offset": offset, "bullets": [], "description": []})
     for entry in entries:
         for line in body[entry["offset"] + 1:]:
-            if DATE_RANGE.search(line) and not _is_bullet(line):
+            if _dated(line) and not _is_bullet(line):
                 break
             if _is_bullet(line):
                 entry["bullets"].append(_bullet_text(line))
@@ -569,18 +577,33 @@ def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
 
 
 def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "",
-            lang: str = "en", bullet_reviewer=None) -> dict:
+            lang: str = "en", bullet_reviewer=None, date_reader=None) -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
     """
     import grading
+    import date_review
     from guardrails import dates as date_check
     sliced = _split_sections(text, sections)
 
     # Every dated range in the document, used to tell a real gap from a period
     # the student was simply somewhere else on the CV.
-    all_ranges = date_check.extract_ranges(text)
+    #
+    # The pattern parser runs first and keeps everything it reads; the model is
+    # asked only for what it missed, and only ranges quoting text that genuinely
+    # appears in the CV are accepted. Reading a date in an unfamiliar format is
+    # the half the patterns keep failing at; the arithmetic below stays in code.
+    pattern_ranges = date_check.extract_ranges(text)
+    model_ranges = []
+    if date_reader:
+        try:
+            model_ranges = date_reader(text)
+        except Exception:
+            model_ranges = []
+    all_ranges = date_review.merge(pattern_ranges, model_ranges)
+    extra_dates = frozenset(
+        r["raw"] for r in all_ranges if r.get("source") == "model")
 
     def _covered_elsewhere(first_raw: str, second_raw: str, own: list[dict]) -> bool:
         """
@@ -611,8 +634,10 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         if section["category"] not in DATE_GAP_CATEGORIES:
             continue
         body = "\n".join(section["lines"])
-        own_ranges = date_check.extract_ranges(body)
-        for finding in date_check.find_findings(body, lang=lang):
+        own_ranges = date_review.merge(
+            date_check.extract_ranges(body),
+            [r for r in model_ranges if r["raw"] in body])
+        for finding in date_review.findings(own_ranges, lang=lang):
             if (finding["kind"] == "overlap"
                     and section["category"] not in DATE_OVERLAP_CATEGORIES):
                 continue
@@ -628,7 +653,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
     for section in sliced:
         body = section["lines"]
         bullets = [_bullet_text(line) for line in body if _is_bullet(line)]
-        entries = _entries(body)
+        entries = _entries(body, extra_dates)
         all_bullets.extend(bullets)
         content = [line for line in body if line.strip()]
         section_facts.append({
@@ -666,7 +691,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
     education = [s for s in sliced if s["category"] == "Education"]
     education_lines = [line for s in education for line in s["lines"]]
     grades = grading.find_grades("\n".join(education_lines) or text, education_lines)
-    education_entries = [e for s in education for e in _entries(s["lines"])]
+    education_entries = [e for s in education for e in _entries(s["lines"], extra_dates)]
     entries_with_grade = sum(
         1 for e in education_entries
         if grading.GRADE_KEYWORDS.search(e["line"]) or any(
@@ -687,7 +712,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
             continue
         # Which role each bullet belongs to, where the entry parser can tell.
         role_of = {}
-        for entry in _entries(block["lines"]):
+        for entry in _entries(block["lines"], extra_dates):
             role = (entry.get("title_line") or entry["line"]).strip()
             for entry_bullet in entry["bullets"]:
                 role_of[entry_bullet] = role
@@ -795,7 +820,8 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         # "It doesn't tell the person to add months (instead of only years) in the
         # timeline." A reader cannot tell a three-month internship from a
         # twelve-month one when the CV says "2023 - 2024".
-        "year_only_ranges": date_check.uses_year_only(text),
+        "year_only_ranges": [r["raw"] for r in all_ranges
+                             if not r["months_explicit"]],
         # Career Services asked that a CV mentioning no AI skills anywhere - not in
         # coursework, not in a job, not under skills - be told so in the overall
         # impression. Measured across the whole document, since students put it in

@@ -14,6 +14,7 @@ import report
 import ui
 import bullet_review
 import cv_facts
+import date_review
 import format_check
 import severity
 import hsg_activities
@@ -408,9 +409,15 @@ if st.session_state["cv_text"] is None:
                 return bullet_review.review(
                     client, MODEL, items, report.SECTION_RULES)
 
+            # Reading a date in an unfamiliar format is parsing, and the pattern
+            # list keeps losing formats silently. The model reads; the gap and
+            # overlap arithmetic stays in code.
+            def read_dates(document):
+                return date_review.read(client, MODEL, document)
+
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
                                      st.session_state["jd_text"], lang_code,
-                                     review_bullets)
+                                     review_bullets, read_dates)
             st.session_state["date_findings"] = facts["date_findings"]
             st.session_state["format_rows"] = format_check.run(
                 cv_text, cv_meta, facts, lang_code)
