@@ -153,10 +153,14 @@ def _close_to_known_heading(heading: str) -> str | None:
     return None
 
 
-def _month_typos(text: str) -> list[str]:
+def _month_typos(text: str) -> list[tuple[str, str]]:
     """
     Catches "3un 2025" and "Gun 2026" - a token sitting where a month belongs
     that is one character away from a real month name.
+
+    Returns (what the CV says, what it probably means) rather than a finished
+    sentence: this module measures, and the sentence has to exist in two
+    languages. Wording it here is what put English into German reports.
     """
     found = []
     for match in re.finditer(r"\b([A-Za-z0-9]{3,4})\.?\s+((?:19|20)\d{2})\b", text):
@@ -165,7 +169,7 @@ def _month_typos(text: str) -> list[str]:
             continue
         for month in MONTHS[:12]:
             if SequenceMatcher(None, token, month).ratio() >= 0.6 and len(token) == len(month):
-                found.append(f'"{match.group(0)}" - did you mean "{month.capitalize()} {match.group(2)}"?')
+                found.append((match.group(0), f"{month.capitalize()} {match.group(2)}"))
                 break
     return found
 
@@ -411,7 +415,8 @@ def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
     }
 
 
-def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "") -> dict:
+def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "",
+            lang: str = "en") -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
@@ -454,7 +459,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "") -> d
             continue
         body = "\n".join(section["lines"])
         own_ranges = date_check.extract_ranges(body)
-        for finding in date_check.find_findings(body):
+        for finding in date_check.find_findings(body, lang=lang):
             if (finding["kind"] == "overlap"
                     and section["category"] not in DATE_OVERLAP_CATEGORIES):
                 continue
@@ -578,8 +583,10 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "") -> d
         "buzzwords": buzz,
         "mixed_spelling": mixed_spelling,
         "bullet_punctuation_mixed": punctuation_mixed,
+        # (as written, as probably meant) - see _month_typos on why these are
+        # not finished sentences.
         "heading_typos": [
-            f'"{s["heading"]}" looks like a typo for "{s["heading_typo"]}"'
+            (s["heading"], s["heading_typo"])
             for s in section_facts if s["heading_typo"]
         ],
         "month_typos": _month_typos(text),
@@ -607,6 +614,18 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str = "") -> d
     }
 
 
+def typo_phrases(facts: dict) -> list[str]:
+    """
+    The (written, meant) typo pairs as English sentences, for the blocks the
+    model reads. The student-facing version is built in format_check, where it
+    exists in both languages.
+    """
+    return ([f'"{a}" looks like a typo for "{b}"'
+             for a, b in facts.get("heading_typos") or []]
+            + [f'"{a}" — probably "{b}"'
+               for a, b in facts.get("month_typos") or []])
+
+
 def describe_for_prompt(facts: dict) -> str:
     """The facts block handed to the report model as ground truth."""
     out = ["MEASURED FACTS ABOUT THIS CV (computed from the document itself - these are "
@@ -630,9 +649,9 @@ def describe_for_prompt(facts: dict) -> str:
         out.append("- Grades: " + " ".join(facts["grade_notes"]))
     if facts["grade_consistency"]:
         out.append("- Grade consistency: " + facts["grade_consistency"])
-    for key, label in (("heading_typos", "Likely heading typos"),
-                       ("month_typos", "Likely date typos"),
-                       ("mixed_spelling", "British/American spelling both used"),
+    if typo_phrases(facts):
+        out.append("- Likely typos: " + "; ".join(typo_phrases(facts)))
+    for key, label in (("mixed_spelling", "British/American spelling both used"),
                        ("buzzwords", "Unevidenced trait words"),
                        ("weak_opener_bullets", "Bullets opening with a duty phrase")):
         if facts.get(key):

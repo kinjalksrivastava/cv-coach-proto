@@ -32,13 +32,20 @@ import hsg_activities
 import latency
 import prompts
 
-STATUS_LABELS = {
-    "strong": ("🟢", "Strong"),
-    "needs_attention": ("🟠", "Needs attention"),
-    "missing": ("⚪", "Missing"),
-    "good": ("🟢", "Good"),
-    "attention": ("🟠", "Needs attention"),
-    "unknown": ("⚪", "Not assessable"),
+# The dot is language-independent; the word is not. These labels used to be
+# English-only and printed "🟢 Strong" into a German report - one of the two
+# things both reviewers meant by "mixing english and german in the same report".
+STATUS_MARKS = {
+    "strong": "🟢", "needs_attention": "🟠", "missing": "⚪",
+    "good": "🟢", "attention": "🟠", "unknown": "⚪",
+}
+STATUS_WORDS = {
+    "en": {"strong": "Strong", "needs_attention": "Needs attention",
+           "missing": "Missing", "good": "Good", "attention": "Needs attention",
+           "unknown": "Not assessable"},
+    "de": {"strong": "Stark", "needs_attention": "Braucht Aufmerksamkeit",
+           "missing": "Fehlt", "good": "Gut", "attention": "Braucht Aufmerksamkeit",
+           "unknown": "Nicht beurteilbar"},
 }
 
 SEVERITY_MARK = {"high": "🔴", "medium": "🟠", "low": "🟡"}
@@ -295,9 +302,9 @@ def generate(client, model, cv_text, jd_text, target_role, format_rows, facts,
 
 # --- rendering ----------------------------------------------------------------
 
-def _status(value: str) -> str:
-    mark, label = STATUS_LABELS.get(str(value).lower(), ("⚪", str(value)))
-    return f"{mark} {label}"
+def _status(value: str, words: dict) -> str:
+    key = str(value).lower()
+    return f"{STATUS_MARKS.get(key, '⚪')} {words.get(key, str(value))}"
 
 
 def _clean(value) -> str:
@@ -305,7 +312,19 @@ def _clean(value) -> str:
     return str(value).replace("|", "/").replace("\n", " ").strip()
 
 
-def deterministic_notes(facts: dict) -> list[str]:
+GRADE_NOTE = {
+    "en": "**On grades:** a recruiter assumes a grade that has been left out was the "
+          "bad one. Show a grade for every education entry, or for none of them — "
+          "grades are optional, but showing some and hiding others is the one option "
+          "that works against you.",
+    "de": "**Zu den Noten:** Recruiter gehen davon aus, dass eine weggelassene Note die "
+          "schlechtere war. Gib entweder bei jedem Ausbildungseintrag eine Note an oder "
+          "bei keinem — Noten sind freiwillig, aber einige zu zeigen und andere "
+          "wegzulassen ist die einzige Variante, die gegen dich arbeitet.",
+}
+
+
+def deterministic_notes(facts: dict, lang: str = "en") -> list[str]:
     """
     Sentences that must reach the student word for word.
 
@@ -313,16 +332,13 @@ def deterministic_notes(facts: dict) -> list[str]:
     reason was softened to "this can raise questions" on three separate attempts,
     even once the guidance was attached to the issue - and the reason is the part
     that actually persuades a student to act. So where the exact wording carries
-    the weight, it is rendered here instead of asked for.
+    the weight, it is rendered here instead of asked for - in both languages,
+    since rendering it here in English alone is how it ended up in a German
+    report untranslated.
     """
     notes = []
     if facts.get("grade_consistency"):
-        notes.append(
-            "**On grades:** a recruiter assumes a grade that has been left out was the "
-            "bad one. Show a grade for every education entry, or for none of them — "
-            "grades are optional, but showing some and hiding others is the one option "
-            "that works against you."
-        )
+        notes.append(GRADE_NOTE.get(lang, GRADE_NOTE["en"]))
     return notes
 
 
@@ -330,6 +346,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
                     date_findings: list[dict] | None = None,
                     notes: list[str] | None = None,
                     hsg_picks: list[tuple] | None = None) -> str:
+    words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip()]
 
@@ -337,7 +354,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
               f"| {strings['check']} | {strings['status']} | {strings['comment']} |",
               "| --- | --- | --- |"]
     parts += [
-        f"| {_clean(row['check'])} | {_status(row['status'])} | {_clean(row['comment'])} |"
+        f"| {_clean(row['check'])} | {_status(row['status'], words)} | {_clean(row['comment'])} |"
         for row in format_rows
     ]
     parts += ["", f"_{strings['criteria_note']}_"]
@@ -376,13 +393,14 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
         # directly underneath, and Career Services asked for the duplication to go.
         parts += ["", f"### 5. {strings['section_feedback']}", "",
                   f"| {strings['section']} | {strings['status']} |", "| --- | --- |"]
-        parts += [f"| {_clean(s.get('name'))} | {_status(s.get('status'))} |" for s in sections]
+        parts += [f"| {_clean(s.get('name'))} | {_status(s.get('status'), words)} |"
+                  for s in sections]
         for section in sections:
             points = [str(p).strip() for p in (section.get("points") or []) if str(p).strip()]
             if not points:
                 continue
             parts += ["", f"**{str(section.get('name', '')).strip()}** "
-                          f"{_status(section.get('status'))}", ""]
+                          f"{_status(section.get('status'), words)}", ""]
             parts += [f"- {point}" for point in points]
 
     if notes:
@@ -425,6 +443,7 @@ def bullet_examples_markdown(strings: dict) -> str:
 
 STRINGS = {
     "en": {
+        "lang": "en",
         "report_title": "Your CV feedback report",
         "overall": "Overall impression",
         "examples_intro": (
@@ -473,6 +492,7 @@ STRINGS = {
         ),
     },
     "de": {
+        "lang": "de",
         "report_title": "Dein CV-Feedback-Report",
         "overall": "Gesamteindruck",
         "examples_intro": (
@@ -579,8 +599,10 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     def plain(value) -> str:
         return (str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
+    words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
+
     def marker(value) -> str:
-        return STATUS_LABELS.get(str(value).lower(), ("", str(value)))[1]
+        return words.get(str(value).lower(), str(value))
 
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),

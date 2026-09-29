@@ -129,13 +129,36 @@ def extract_ranges(text: str) -> list[dict]:
     return ranges
 
 
-def find_findings(text: str, labels: dict | None = None) -> list[dict]:
+FINDING_TEXT = {
+    "en": {
+        "overlap": "{first} and {second} run at the same time. If one was part-time or "
+                   "alongside your studies, say so on the CV so a reader isn't left "
+                   "working it out.",
+        "gap": "There's a gap of about {months} months between {first} and {second}. You "
+               "don't need to over-explain it — a short line about what you were doing is "
+               "usually enough, and it's a good thing to talk through with your coach.",
+    },
+    "de": {
+        "overlap": "{first} und {second} laufen zeitgleich. Wenn eines davon Teilzeit oder "
+                   "neben dem Studium war, schreib das in den Lebenslauf, damit es sich "
+                   "niemand zusammenreimen muss.",
+        "gap": "Zwischen {first} und {second} liegt eine Lücke von rund {months} Monaten. "
+               "Du musst das nicht ausführlich erklären — ein kurzer Satz dazu, was du in "
+               "der Zeit gemacht hast, genügt meistens, und es lohnt sich, das mit deinem "
+               "Coach zu besprechen.",
+    },
+}
+
+
+def find_findings(text: str, labels: dict | None = None,
+                  lang: str = "en") -> list[dict]:
     """
-    Overlaps and gaps, written for the student to read.
+    Overlaps and gaps, written for the student to read, in `lang`.
 
     The old wording ("ask rather than assume", "ask before treating it as a
     weakness") was instruction addressed to the model and was being printed to
-    students verbatim - both reviewers flagged it independently.
+    students verbatim - both reviewers flagged it independently. It was also
+    English-only, which is how it reached German reports untranslated.
 
     `labels` optionally maps a raw range to the entry it belongs to, so a finding
     can name the experiences rather than only the dates.
@@ -143,6 +166,7 @@ def find_findings(text: str, labels: dict | None = None) -> list[dict]:
     Returns [{kind, first, second, months, text}].
     """
     labels = labels or {}
+    phrases = FINDING_TEXT.get(lang, FINDING_TEXT["en"])
     ranges = extract_ranges(text)
     findings = []
 
@@ -160,22 +184,15 @@ def find_findings(text: str, labels: dict | None = None) -> list[dict]:
         if a["end_idx"] > b["start_idx"] and both_explicit:
             findings.append({
                 "kind": "overlap", "first": a["raw"], "second": b["raw"], "months": None,
-                "text": (
-                    f"{name(a['raw'])} and {name(b['raw'])} run at the same time. "
-                    "If one was part-time or alongside your studies, say so on the CV so "
-                    "a reader isn't left working it out."
-                ),
+                "text": phrases["overlap"].format(first=name(a["raw"]),
+                                                  second=name(b["raw"])),
             })
         gap = b["start_idx"] - a["end_idx"]
         if gap > GAP_THRESHOLD_MONTHS:
             findings.append({
                 "kind": "gap", "first": a["raw"], "second": b["raw"], "months": gap,
-                "text": (
-                    f"There's a gap of about {gap} months between {name(a['raw'])} and "
-                    f"{name(b['raw'])}. You don't need to over-explain it — a short line "
-                    "about what you were doing is usually enough, and it's a good thing to "
-                    "talk through with your coach."
-                ),
+                "text": phrases["gap"].format(first=name(a["raw"]),
+                                              second=name(b["raw"]), months=gap),
             })
 
     return findings

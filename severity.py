@@ -204,7 +204,8 @@ def assess(facts: dict, target_role: str = "") -> dict:
         ))
 
     # --- Tier 3: structure and consistency -----------------------------------
-    writing = facts["heading_typos"] + facts["month_typos"]
+    import cv_facts as cv_facts_module
+    writing = cv_facts_module.typo_phrases(facts)
     if writing:
         issues.append(_issue(
             3, "typos", "Typos in headings or dates",

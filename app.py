@@ -302,9 +302,10 @@ if st.session_state["cv_text"] is None:
             sections = section_coverage.detect_sections(cv_text, client, MODEL)
             st.session_state["sections_detected"] = sections
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
-                                     st.session_state["jd_text"])
+                                     st.session_state["jd_text"], lang_code)
             st.session_state["date_findings"] = facts["date_findings"]
-            st.session_state["format_rows"] = format_check.run(cv_text, cv_meta, facts)
+            st.session_state["format_rows"] = format_check.run(
+                cv_text, cv_meta, facts, lang_code)
             ranked = severity.assess(facts, target_role)
             report_data = report.generate(
                 client, MODEL, cv_text, st.session_state["jd_text"], target_role,
@@ -314,8 +315,8 @@ if st.session_state["cv_text"] is None:
 
         if report_data:
             strings = dict(report.STRINGS[lang_code])
-            strings["criteria_note"] = format_check.CRITERIA_NOTE
-            notes = report.deterministic_notes(facts)
+            strings["criteria_note"] = format_check.criteria_note(lang_code)
+            notes = report.deterministic_notes(facts, lang_code)
             # Chosen in code, not by the model: the links have to be the real ones
             # from hsg_activities, and a model asked for a URL will invent a
             # plausible-looking dead one.
