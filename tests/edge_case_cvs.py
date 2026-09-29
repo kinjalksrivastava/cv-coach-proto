@@ -395,7 +395,32 @@ def run() -> int:
         failures += 1
         print(f"FAIL  no_job_description_is_none\n        {exc!r}")
 
-    print(f"\n{len(CASES) + 1 - failures}/{len(CASES) + 1} passed")
+    # A loop variable named `text` inside analyse() silently rebound the
+    # parameter holding the whole CV, so the date, AI, tailoring and profile
+    # checks all ran against the last bullet on the page. Nothing raised; the
+    # findings just quietly went empty. Worth a standing check.
+    try:
+        import ast
+        source = open(cv_facts.__file__, encoding="utf-8").read()
+        fn = next(n for n in ast.walk(ast.parse(source))
+                  if isinstance(n, ast.FunctionDef) and n.name == "analyse")
+        params = {a.arg for a in fn.args.args}
+        shadowed = set()
+        for node in ast.walk(fn):
+            if isinstance(node, ast.Name) and isinstance(node.ctx, ast.Store):
+                if node.id in params:
+                    shadowed.add((node.lineno, node.id))
+            if isinstance(node, (ast.For, ast.comprehension)):
+                for inner in ast.walk(node.target):
+                    if isinstance(inner, ast.Name) and inner.id in params:
+                        shadowed.add((getattr(node, "lineno", 0), inner.id))
+        assert not shadowed, f"analyse() rebinds its own parameters: {sorted(shadowed)}"
+        print("ok    analyse_does_not_shadow_its_parameters")
+    except Exception as exc:
+        failures += 1
+        print(f"FAIL  analyse_does_not_shadow_its_parameters\n        {exc}")
+
+    print(f"\n{len(CASES) + 2 - failures}/{len(CASES) + 2} passed")
     return 1 if failures else 0
 
 

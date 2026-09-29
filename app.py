@@ -12,6 +12,7 @@ import latency
 import prompts
 import report
 import ui
+import bullet_review
 import cv_facts
 import format_check
 import severity
@@ -398,8 +399,18 @@ if st.session_state["cv_text"] is None:
         with st.spinner(copy["spinner"]):
             sections = section_coverage.detect_sections(cv_text, client, MODEL)
             st.session_state["sections_detected"] = sections
+            # Whether a bullet describes a duty or a contribution is a judgement
+            # about language, not a fact about the document, so the model makes
+            # it - held to the same section rules the conversation uses. The
+            # phrase list inside cv_facts stays as the floor, so a failed or slow
+            # call costs the extra findings and nothing else.
+            def review_bullets(items):
+                return bullet_review.review(
+                    client, MODEL, items, report.SECTION_RULES)
+
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
-                                     st.session_state["jd_text"], lang_code)
+                                     st.session_state["jd_text"], lang_code,
+                                     review_bullets)
             st.session_state["date_findings"] = facts["date_findings"]
             st.session_state["format_rows"] = format_check.run(
                 cv_text, cv_meta, facts, lang_code)
@@ -427,9 +438,7 @@ if st.session_state["cv_text"] is None:
                 report_data, st.session_state["format_rows"], strings,
                 facts["date_findings"], notes, hsg_picks,
             )
-            st.session_state["show_bullet_examples"] = bool(
-                report_data.get("show_bullet_examples")
-            )
+            st.session_state["show_bullet_examples"] = True
         else:
             report_text = report.FAILURE_TEXT[lang_code]
         st.session_state["messages"].append({"role": "assistant", "content": report_text})

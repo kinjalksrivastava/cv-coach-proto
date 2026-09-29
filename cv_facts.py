@@ -569,7 +569,7 @@ def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
 
 
 def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "",
-            lang: str = "en") -> dict:
+            lang: str = "en", bullet_reviewer=None) -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
@@ -676,21 +676,60 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
     # Outcome density, measured only over sections where describing the work is
     # the point. A skills list is bullets too, and counting those would produce a
     # finding about "bullets with no outcome" on a CV whose only bullets are tools.
-    # Tracked per section, not just as a flat list. Without the section a bullet
-    # came from, the "weak bullets" issue carried no section, so the section it
-    # described kept its Strong mark - which is the contradiction both reviewers
-    # reported: key areas said the experience bullets were weak while section 5
-    # called that same section Strong.
-    detail_pairs = [
-        (block["heading"], _bullet_text(line))
-        for block in sliced if block["category"] in DETAIL_CATEGORIES
-        for line in block["lines"] if _is_bullet(line)
-    ]
+    # Tracked per section, and with the role each bullet sits under, not just as
+    # a flat list. Without the section a bullet came from, the "weak bullets"
+    # issue carried no section, so the section it described kept its Strong mark
+    # - the contradiction both reviewers reported. The role is carried because
+    # the model that judges these bullets needs to know what job they describe.
+    detail_items = []
+    for block in sliced:
+        if block["category"] not in DETAIL_CATEGORIES:
+            continue
+        # Which role each bullet belongs to, where the entry parser can tell.
+        role_of = {}
+        for entry in _entries(block["lines"]):
+            role = (entry.get("title_line") or entry["line"]).strip()
+            for entry_bullet in entry["bullets"]:
+                role_of[entry_bullet] = role
+        for line in block["lines"]:
+            if not _is_bullet(line):
+                continue
+            # Named `bullet` and not `text`: `text` is this function's parameter,
+            # the whole CV, and rebinding it here quietly pointed every later
+            # check - dates, AI mentions, tailoring, the headerless profile - at
+            # the last bullet on the page instead of the document.
+            bullet = _bullet_text(line)
+            detail_items.append({
+                "index": len(detail_items),
+                "section": block["heading"],
+                "category": block["category"],
+                "role": role_of.get(bullet, ""),
+                "bullet": bullet,
+            })
+
+    detail_pairs = [(item["section"], item["bullet"]) for item in detail_items]
     detail_bullets = [b for _, b in detail_pairs]
     with_outcome = [b for b in detail_bullets if IMPACT_MARKER.search(b)]
     no_outcome_pairs = [(h, b) for h, b in detail_pairs if not IMPACT_MARKER.search(b)]
-    weak_pairs = [(h, b) for h, b in detail_pairs
-                  if b.lower().startswith(WEAK_OPENERS) and not IMPACT_MARKER.search(b)]
+
+    # The phrase list is the floor, not the whole check. It is free, instant and
+    # identical on every run, which is what keeps the offline test suite honest -
+    # but it only catches the formulaic English openers, so the model is asked as
+    # well and the two are merged. The model can only ever add to this set.
+    weak_indices = {
+        item["index"] for item in detail_items
+        if item["bullet"].lower().startswith(WEAK_OPENERS)
+        and not IMPACT_MARKER.search(item["bullet"])
+    }
+    if bullet_reviewer and detail_items:
+        try:
+            weak_indices |= set(bullet_reviewer(detail_items))
+        except Exception:
+            # A judgement failing must never take the rest of the report with it.
+            pass
+
+    weak_pairs = [(detail_items[i]["section"], detail_items[i]["bullet"])
+                  for i in sorted(weak_indices)]
     weak = [b for _, b in weak_pairs]
 
     def _dominant(pairs):

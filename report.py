@@ -189,8 +189,6 @@ environments" are inventions: they are nowhere in the CV and nothing measured th
 {"title": the given title or a clearer rewording of it, "severity": "high" for tier 1-2, \
 "medium" for tier 3-4, "low" for tier 5, "detail": 1-2 sentences saying what is wrong and \
 what to do about it}. If the key area list is empty, return an empty array.
-- "show_bullet_examples": true only if one of the key areas concerns bullets being \
-missing, thin, or duty-focused. Otherwise false.
 - "sections": one entry per section listed in SECTION STATUS, using exactly the status \
 given, plus an entry for each section listed under MISSING SECTIONS (status "missing"), \
 using exactly those names. That list is measured, not your judgement: do not add a \
@@ -209,7 +207,7 @@ already fits the advert; it never invents experience, and it never supplies the 
 
 Write everything in {language_name}. Return only the JSON object:
 {{"overall_impression": "...", "what_works_well": ["..."], "areas_to_improve": \
-[{{"title": "...", "severity": "...", "detail": "..."}}], "show_bullet_examples": false, \
+[{{"title": "...", "severity": "...", "detail": "..."}}], \
 "sections": [{{"name": "...", "status": "...", "summary": "...", "points": ["..."]}}]}}"""
 
 # The report is held to the same per-section rules as the conversation that
@@ -401,8 +399,11 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     # Rendered in code rather than asked of the model. The instruction to mention
     # the examples was being compressed away along with the rest of the detail,
     # and a pointer that appears only sometimes is worse than none.
-    if data.get("show_bullet_examples"):
-        parts += ["", f"_{strings['bullet_pointer']}_"]
+    # Always shown. Career Services' worked examples are a resource a student can
+    # use whether or not this particular CV tripped the bullet checks, and making
+    # them conditional meant the one CV that most needed them - a German CV whose
+    # weak bullets the detection missed - was the one that did not get them.
+    parts += ["", f"_{strings['bullet_pointer']}_"]
 
     sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
     if sections:
@@ -703,9 +704,8 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
             story.append(Paragraph(plain(item.get("detail", "")), body))
     else:
         story.append(Paragraph(plain(strings["nothing_to_improve"]), body))
-    if data.get("show_bullet_examples"):
-        story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
-                                                 strings["bullet_pointer"])), small))
+    story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
+                                             strings["bullet_pointer"])), small))
 
     sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
     if sections:
@@ -763,7 +763,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     # they could be in an appendix at the end and also referred to here." On
     # screen the table opens on demand underneath the report; on paper there is
     # nothing to open, so it is printed.
-    if data.get("show_bullet_examples"):
+    if True:  # the appendix is always printed; see the pointer above
         story += [PageBreak(),
                   Paragraph(plain(strings.get("appendix", "Appendix")), h2),
                   Paragraph(plain(strings["examples_intro"]), body)]

@@ -152,9 +152,17 @@ def assess(facts: dict, target_role: str = "") -> dict:
     # --- Tier 2: bullets exist but do not communicate contribution ------------
     if facts["weak_opener_bullets"]:
         issues.append(_issue(
-            2, "duty_bullets", "Bullets describe duties rather than contribution",
-            f'{len(facts["weak_opener_bullets"])} bullets open with a duty phrase, e.g. '
-            f'"{facts["weak_opener_bullets"][0][:90]}"',
+            2, "duty_bullets",
+            # A title that says "bullets" when one bullet out of fifteen is the
+            # problem overstates it, and overstating is how a report loses a
+            # student who can see their own page.
+            ("One bullet names a duty rather than a contribution"
+             if len(facts["weak_opener_bullets"]) == 1
+             else "Bullets describe duties rather than contribution"),
+            (f'"{facts["weak_opener_bullets"][0][:110]}"'
+             if len(facts["weak_opener_bullets"]) == 1 else
+             f'{len(facts["weak_opener_bullets"])} bullets name a task and stop there, '
+             f'e.g. "{facts["weak_opener_bullets"][0][:90]}"'),
             section=facts.get("weak_opener_section"),
             guidance="Rework these around WHAT you did, HOW you did it, and WHY it mattered "
                      f"— and above all which transferable skill it shows{for_role}. A result "
