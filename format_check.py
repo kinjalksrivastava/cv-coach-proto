@@ -200,7 +200,11 @@ def _is_conventional(heading: str) -> bool:
     student as unrecognisable. That false report is the one both reviewers led
     with.
     """
-    return heading_lookup.identify(heading) is not None
+    entry = heading_lookup.identify(heading)
+    # A heading recognised only after correcting a typo is exactly what an ATS
+    # will fail on - "Educatiqn" is understood here and will not be understood
+    # there - so it stays on the list of parsing risks.
+    return entry is not None and entry["damage"] != "typo"
 
 
 def unusual_bullets(text: str) -> list[str]:

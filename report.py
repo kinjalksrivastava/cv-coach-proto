@@ -328,7 +328,7 @@ GRADE_NOTE = {
 }
 
 
-def deterministic_notes(facts: dict, lang: str = "en") -> list[str]:
+def deterministic_notes(facts: dict, lang: str = "en") -> list[dict]:
     """
     Sentences that must reach the student word for word.
 
@@ -339,10 +339,20 @@ def deterministic_notes(facts: dict, lang: str = "en") -> list[str]:
     the weight, it is rendered here instead of asked for - in both languages,
     since rendering it here in English alone is how it ended up in a German
     report untranslated.
+
+    Returns [{"section": <heading or None>, "text": ...}] so each note can be
+    printed under the section it is about rather than in a block at the end.
     """
     notes = []
     if facts.get("grade_consistency"):
-        notes.append(GRADE_NOTE.get(lang, GRADE_NOTE["en"]))
+        # Career Services asked for notes to sit under the section they are
+        # about: "This just randomly came at the end of the report... if the
+        # notes could always come after the section that they are relevant to,
+        # that would help." The grade note belongs under Education.
+        section = next((s["heading"] for s in facts.get("sections") or []
+                        if s["category"] == "Education"), None)
+        notes.append({"section": section,
+                      "text": GRADE_NOTE.get(lang, GRADE_NOTE["en"])})
     return notes
 
 
@@ -351,6 +361,9 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
                     notes: list[str] | None = None,
                     hsg_picks: list[tuple] | None = None) -> str:
     words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
+    placed: dict = {}
+    for note in notes or []:
+        placed.setdefault(note["section"], []).append(note["text"])
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip()]
 
@@ -400,15 +413,17 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
         parts += [f"| {_clean(s.get('name'))} | {_status(s.get('status'), words)} |"
                   for s in sections]
         for section in sections:
-            points = [str(p).strip() for p in (section.get("points") or []) if str(p).strip()]
-            if not points:
+            lines = [str(p).strip() for p in (section.get("points") or []) if str(p).strip()]
+            if not lines:
                 continue
-            parts += ["", f"**{str(section.get('name', '')).strip()}** "
-                          f"{_status(section.get('status'), words)}", ""]
-            parts += [f"- {point}" for point in points]
+            name = str(section.get("name", "")).strip()
+            parts += ["", f"**{name}** {_status(section.get('status'), words)}", ""]
+            parts += [f"- {point}" for point in lines]
+            for note in placed.pop(name, []):
+                parts += ["", f"> {note}"]
 
-    if notes:
-        parts += [""] + [f"> {note}" for note in notes]
+    for remaining in placed.values():
+        parts += [""] + [f"> {note}" for note in remaining]
 
     # The last two sections are both conditional, so they are numbered as they
     # are emitted rather than with a fixed 6 and 7.
@@ -475,6 +490,11 @@ STRINGS = {
             "Worked examples of weaker and stronger bullet points — Career Services' own, "
             "not rewrites of your CV — can be opened underneath this report."
         ),
+        "bullet_pointer_pdf": (
+            "Worked examples of weaker and stronger bullet points — Career Services' own, "
+            "not rewrites of your CV — are in the appendix at the end of this document."
+        ),
+        "appendix": "Appendix: what a stronger bullet point looks like",
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
         "hsg_heading": "HSG activities and certificates you may be interested in",
@@ -525,6 +545,12 @@ STRINGS = {
             "keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses "
             "Reports öffnen."
         ),
+        "bullet_pointer_pdf": (
+            "Beispiele für schwächere und stärkere Bullet Points — vom Career Services, "
+            "keine Umformulierungen deines Lebenslaufs — findest du im Anhang am Ende "
+            "dieses Dokuments."
+        ),
+        "appendix": "Anhang: So sieht ein stärkerer Bullet Point aus",
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
         "hsg_heading": "HSG-Angebote und Zertifikate, die dich interessieren könnten",
@@ -579,8 +605,8 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         from reportlab.lib.pagesizes import A4
         from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
         from reportlab.lib.units import mm
-        from reportlab.platypus import (Paragraph, SimpleDocTemplate, Spacer, Table,
-                                        TableStyle)
+        from reportlab.platypus import (PageBreak, Paragraph, SimpleDocTemplate,
+                                        Spacer, Table, TableStyle)
     except ImportError:
         return None
 
@@ -588,17 +614,33 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     INK = colors.HexColor("#15181A")
     BORDER = colors.HexColor("#E1E7E3")
 
+    # Career Services asked for the coloured dots from the on-screen report to
+    # appear in the PDF too - the status column and the key areas were rendering
+    # as grey words, which is what "this area looks a bit messy" referred to.
+    DOT_COLOUR = {"strong": "#00802F", "good": "#00802F",
+                  "needs_attention": "#E08A00", "attention": "#E08A00",
+                  "missing": "#9AA5A0", "unknown": "#9AA5A0",
+                  "high": "#C0392B", "medium": "#E08A00", "low": "#C9A227"}
+
     base = getSampleStyleSheet()
     h1 = ParagraphStyle("h1", parent=base["Heading1"], fontSize=17, textColor=GREEN,
                         spaceAfter=2, spaceBefore=0)
     h2 = ParagraphStyle("h2", parent=base["Heading2"], fontSize=12, textColor=GREEN,
                         spaceBefore=12, spaceAfter=4)
+    # reportlab's Heading3 is Helvetica-BoldOblique. "Maybe if the section
+    # headers were not in italics it would look cleaner."
     h3 = ParagraphStyle("h3", parent=base["Heading3"], fontSize=10, textColor=INK,
-                        spaceBefore=9, spaceAfter=2)
+                        fontName="Helvetica-Bold", spaceBefore=9, spaceAfter=2)
     body = ParagraphStyle("body", parent=base["BodyText"], fontSize=9.2, leading=13.4,
                           textColor=INK, alignment=TA_LEFT, spaceAfter=3)
     small = ParagraphStyle("small", parent=body, fontSize=7.8, leading=10.6,
                            textColor=colors.HexColor("#55605A"))
+    # A wrapped bullet used to run back to the left margin, so the second line
+    # sat under the dot instead of under the text. bulletIndent gives reportlab
+    # the hanging indent a bullet list is supposed to have.
+    bullet = ParagraphStyle("bullet", parent=body, leftIndent=11, bulletIndent=2,
+                            spaceAfter=2)
+
 
     def plain(value) -> str:
         return (str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
@@ -606,7 +648,16 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
 
     def marker(value) -> str:
-        return words.get(str(value).lower(), str(value))
+        key = str(value).lower()
+        colour = DOT_COLOUR.get(key, "#9AA5A0")
+        return f'<font color="{colour}">\u25cf</font> {plain(words.get(key, str(value)))}'
+
+    def point(text: str, style=bullet) -> "Paragraph":
+        return Paragraph(plain(text), style, bulletText="\u2022")
+
+    placed: dict = {}
+    for note in notes or []:
+        placed.setdefault(note["section"], []).append(note["text"])
 
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
@@ -618,7 +669,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
              Paragraph(f'<b>{plain(strings["comment"])}</b>', small)]]
     for row in format_rows:
         rows.append([Paragraph(plain(row["check"]), small),
-                     Paragraph(plain(marker(row["status"])), small),
+                     Paragraph(marker(row["status"]), small),
                      Paragraph(plain(row["comment"]), small)])
     table = Table(rows, colWidths=[32 * mm, 26 * mm, 105 * mm])
     table.setStyle(TableStyle([
@@ -634,7 +685,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(f'3. {plain(strings["works_well"])}', h2))
     if strengths:
         for item in strengths:
-            story.append(Paragraph("• " + plain(item), body))
+            story.append(point(item))
     else:
         story.append(Paragraph(plain(strings["no_strengths_yet"]), body))
 
@@ -644,17 +695,17 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         for item in improvements:
             if not isinstance(item, dict):
                 continue
-            sev = {"high": "High priority", "medium": "Worth fixing",
-                   "low": "Minor"}.get(str(item.get("severity", "medium")).lower(),
-                                       "Worth fixing")
+            level = str(item.get("severity", "medium")).lower()
+            colour = DOT_COLOUR.get(level, "#E08A00")
             story.append(Paragraph(
-                f'<b>{plain(item.get("title", ""))}</b>'
-                f'<font size="7.5" color="#55605A">  — {sev}</font>', h3))
+                f'<font color="{colour}">\u25cf</font> '
+                f'<b>{plain(item.get("title", ""))}</b>', h3))
             story.append(Paragraph(plain(item.get("detail", "")), body))
     else:
         story.append(Paragraph(plain(strings["nothing_to_improve"]), body))
     if data.get("show_bullet_examples"):
-        story.append(Paragraph(plain(strings["bullet_pointer"]), small))
+        story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
+                                                 strings["bullet_pointer"])), small))
 
     sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
     if sections:
@@ -663,7 +714,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
                      Paragraph(f'<b>{plain(strings["status"])}</b>', small)]]
         for section in sections:
             overview.append([Paragraph(plain(section.get("name", "")), small),
-                             Paragraph(plain(marker(section.get("status"))), small)])
+                             Paragraph(marker(section.get("status")), small)])
         overview_table = Table(overview, colWidths=[110 * mm, 53 * mm])
         overview_table.setStyle(TableStyle([
             ("GRID", (0, 0), (-1, -1), 0.4, BORDER),
@@ -674,23 +725,26 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         ]))
         story += [overview_table, Spacer(1, 4)]
         for section in sections:
-            points = [str(p).strip() for p in (section.get("points") or []) if str(p).strip()]
-            if not points:
+            lines = [str(p).strip() for p in (section.get("points") or []) if str(p).strip()]
+            if not lines:
                 continue
             story.append(Paragraph(
-                f'{plain(section.get("name", ""))} — {plain(marker(section.get("status")))}', h3))
-            for point in points:
-                story.append(Paragraph("• " + plain(point), body))
+                f'{plain(section.get("name", ""))}  {marker(section.get("status"))}', h3))
+            for text in lines:
+                story.append(point(text))
+            for note in placed.pop(section.get("name", ""), []):
+                story.append(Paragraph(plain(note.replace("**", "")), body))
 
-    for note in (notes or []):
-        story.append(Paragraph(plain(note.replace("**", "")), body))
+    for remaining in placed.values():
+        for note in remaining:
+            story.append(Paragraph(plain(note.replace("**", "")), body))
 
     number = 6
     if date_findings:
         story.append(Paragraph(f'{number}. {plain(strings["timeline"])}', h2))
         story.append(Paragraph(plain(strings["timeline_intro"]), body))
         for finding in date_findings:
-            story.append(Paragraph("• " + plain(finding["text"]), body))
+            story.append(point(finding["text"]))
         number += 1
 
     if hsg_picks:
@@ -700,9 +754,34 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
             # The URL is printed rather than linked: this PDF gets emailed on and
             # printed, and a link that only works on screen strands the reader.
             tail = f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>' if url else ""
-            story.append(Paragraph(f"• <b>{plain(name)}</b> — {plain(what)}{tail}", body))
+            story.append(Paragraph(f"<b>{plain(name)}</b> — {plain(what)}{tail}",
+                                   bullet, bulletText="\u2022"))
 
     story += [Spacer(1, 8), Paragraph(plain(strings["closing"]), small)]
+
+    # The appendix Career Services asked for: "In the PDF it would be good if
+    # they could be in an appendix at the end and also referred to here." On
+    # screen the table opens on demand underneath the report; on paper there is
+    # nothing to open, so it is printed.
+    if data.get("show_bullet_examples"):
+        story += [PageBreak(),
+                  Paragraph(plain(strings.get("appendix", "Appendix")), h2),
+                  Paragraph(plain(strings["examples_intro"]), body)]
+        example_rows = [[Paragraph(f'<b>{plain(strings["weak_bullet"])}</b>', small),
+                         Paragraph(f'<b>{plain(strings["strong_bullet"])}</b>', small)]]
+        for weak_text, strong_text in BULLET_EXAMPLES:
+            example_rows.append([Paragraph(plain(weak_text), small),
+                                 Paragraph(plain(strong_text), small)])
+        example_table = Table(example_rows, colWidths=[81 * mm, 82 * mm])
+        example_table.setStyle(TableStyle([
+            ("GRID", (0, 0), (-1, -1), 0.4, BORDER),
+            ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#F6F8F7")),
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 5), ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+            ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ]))
+        story += [Spacer(1, 4), example_table, Spacer(1, 6),
+                  Paragraph(plain(BULLET_GUIDANCE), small)]
 
     buffer = BytesIO()
     SimpleDocTemplate(
