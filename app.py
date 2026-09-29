@@ -24,33 +24,139 @@ from sections import jd_alignment
 MODEL = "gpt-4.1"
 
 st.set_page_config(
-    page_title="CV Coach — University of St.Gallen",
+    page_title="CV Coach | University of St.Gallen",
     page_icon=ui.page_icon(),
     layout="centered",
     initial_sidebar_state="collapsed",
 )
 ui.inject_styles()
 
+# Every word the interface itself says, in both languages. It used to be four
+# keys here and the rest hard-coded English, so a student who chose Deutsch got a
+# German report inside an English app. Career Services flagged the same mixing
+# inside the report; this is the other half of it.
+#
+# No em dashes anywhere in here. They read as machine-written, and Career
+# Services want this to sound like the university, not like a chatbot.
 COPY = {
     "en": {
         "unit": "Career Services",
         "title": "CV Coach",
         "subtitle": (
-            "A guided conversation to help you strengthen your own CV before your "
-            "Career Services appointment. It asks questions — it never scores your "
-            "CV and never writes it for you."
+            "Feedback on your own CV, before your Career Services appointment. "
+            "It shows you what a reader would stumble over and asks the questions "
+            "that help you fix it. It never gives your CV a score and never writes "
+            "it for you."
         ),
         "chat_placeholder": "Ask about your CV…",
+        "lang_title": "Language",
+        "lang_sub": ("You can switch at any time. Just write in the other language "
+                     "and the conversation follows."),
+        "cv_title": "Your CV",
+        "cv_sub": "PDF or Word, up to 10 MB.",
+        "required": "Required",
+        "optional": "Optional",
+        "upload": "Upload",
+        "paste": "Paste text",
+        "skip": "Skip",
+        "cv_placeholder": "Paste the full text of your CV here",
+        "role_title": "Target role",
+        "role_sub": ("With one, the feedback is specific to that role. Without one, "
+                     "it covers structure and completeness, and your CV still stands "
+                     "on its own."),
+        "jd_placeholder": "Paste the job description here",
+        "role_label": "Or simply name the role or industry",
+        "role_placeholder": "e.g. Audit Intern, Sustainability Consulting",
+        "start": "Start the session",
+        "too_little": ("That is very little text to work with. Please paste the full CV."),
+        "spinner": "Reading your CV and writing your feedback report…",
+        "panel_title": "What was read from your CV",
+        "panel_sub": ("Parsed when you uploaded it. Personal details are removed "
+                      "before anything is analysed."),
+        "sections_found": "Sections found",
+        "no_sections": "no section headings recognised",
+        "pii_removed": "Personal details removed",
+        "none_detected": "none detected",
+        "session": "Session",
+        "language_is": "Language",
+        "jd_provided": "Job description: provided",
+        "role_is": "Target role",
+        "role_unset": "Target role: not set yet",
+        "summary_button": "Prepare a summary for Career Services",
+        "summary_help": "Available at any time, you do not have to wait to be offered one.",
+        "download_pdf": "Download the report (PDF)",
+        "download_help": "The feedback report from the start of this conversation.",
+        "download_text": "Download the report",
+        "start_over": "Start over",
+        "summary_spinner": "Preparing summary…",
+        "download_summary": "Download summary (.txt)",
+        "pii_degraded": (
+            "**Reduced personal-data removal.** The local name-detection model is "
+            "not available on this deployment, so only the contact block and "
+            "pattern matching ran. A name elsewhere in the document may remain. "
+            "Check the list above before using this with a real CV."
+        ),
     },
     "de": {
         "unit": "Career Services",
         "title": "CV Coach",
         "subtitle": (
-            "Ein geführtes Gespräch, das dir hilft, deinen Lebenslauf vor dem Termin "
-            "beim Career Services selbst zu verbessern. Es stellt Fragen — es bewertet "
-            "deinen Lebenslauf nicht und schreibt ihn nicht für dich."
+            "Feedback zu deinem Lebenslauf, vor deinem Termin beim Career Services. "
+            "Es zeigt dir, worüber ein Lesender stolpern würde, und stellt dir die "
+            "Fragen, mit denen du es selbst verbesserst. Es bewertet deinen "
+            "Lebenslauf nicht und schreibt ihn nicht für dich."
         ),
         "chat_placeholder": "Frag mich etwas zu deinem Lebenslauf…",
+        "lang_title": "Sprache",
+        "lang_sub": ("Du kannst jederzeit wechseln. Schreib einfach in der anderen "
+                     "Sprache, das Gespräch folgt."),
+        "cv_title": "Dein Lebenslauf",
+        "cv_sub": "PDF oder Word, bis 10 MB.",
+        "required": "Erforderlich",
+        "optional": "Optional",
+        "upload": "Hochladen",
+        "paste": "Text einfügen",
+        "skip": "Überspringen",
+        "cv_placeholder": "Füge hier den vollständigen Text deines Lebenslaufs ein",
+        "role_title": "Zielposition",
+        "role_sub": ("Mit einer Angabe ist das Feedback auf diese Rolle zugeschnitten. "
+                     "Ohne geht es um Aufbau und Vollständigkeit, und dein Lebenslauf "
+                     "steht trotzdem für sich."),
+        "jd_placeholder": "Füge hier die Stellenanzeige ein",
+        "role_label": "Oder nenne einfach die Rolle oder Branche",
+        "role_placeholder": "z.B. Praktikum Audit, Sustainability Consulting",
+        "start": "Sitzung starten",
+        "too_little": ("Das ist sehr wenig Text. Bitte füge den vollständigen "
+                       "Lebenslauf ein."),
+        "spinner": "Dein Lebenslauf wird gelesen und dein Feedback geschrieben…",
+        "panel_title": "Was aus deinem Lebenslauf gelesen wurde",
+        "panel_sub": ("Beim Hochladen ausgewertet. Persönliche Angaben werden "
+                      "entfernt, bevor irgendetwas analysiert wird."),
+        "sections_found": "Gefundene Abschnitte",
+        "no_sections": "keine Abschnittstitel erkannt",
+        "pii_removed": "Entfernte persönliche Angaben",
+        "none_detected": "keine erkannt",
+        "session": "Sitzung",
+        "language_is": "Sprache",
+        "jd_provided": "Stellenanzeige: vorhanden",
+        "role_is": "Zielposition",
+        "role_unset": "Zielposition: noch nicht gesetzt",
+        "summary_button": "Zusammenfassung für Career Services vorbereiten",
+        "summary_help": ("Jederzeit verfügbar, du musst nicht warten, bis sie "
+                         "angeboten wird."),
+        "download_pdf": "Report herunterladen (PDF)",
+        "download_help": "Der Feedback-Report vom Beginn dieses Gesprächs.",
+        "download_text": "Report herunterladen",
+        "start_over": "Neu beginnen",
+        "summary_spinner": "Zusammenfassung wird vorbereitet…",
+        "download_summary": "Zusammenfassung herunterladen (.txt)",
+        "pii_degraded": (
+            "**Eingeschränkte Entfernung personenbezogener Daten.** Das lokale Modell "
+            "zur Namenserkennung ist in diesem Deployment nicht verfügbar. Es liefen "
+            "nur die Kontaktblock-Entfernung und die Mustererkennung, ein Name an "
+            "anderer Stelle im Dokument kann also erhalten bleiben. Prüfe die Liste "
+            "oben, bevor du damit einen echten Lebenslauf verarbeitest."
+        ),
     },
 }
 
@@ -141,43 +247,36 @@ if client is None:
 def document_panel():
     with ui.card("panel"):
         ui.card_head(
-            "What I read from your CV",
-            "Parsed automatically when you uploaded it. Personal details are removed "
-            "before anything is analysed.",
+            copy["panel_title"], copy["panel_sub"],
         )
         ui.chips(
-            "Sections found",
+            copy["sections_found"],
             section_coverage.headings(st.session_state["sections_detected"]),
-            empty_text="no section headings recognised",
+            empty_text=copy["no_sections"],
         )
         ui.chips(
-            "Personal details removed",
+            copy["pii_removed"],
             st.session_state["cv_redactions"],
             kind="",
-            empty_text="none detected",
+            empty_text=copy["none_detected"],
         )
         # Timeline notes used to sit here, at the top of the screen, in wording
         # written for the model rather than the student. They now close the
         # report instead, where a reader meets them after the substance.
-        context_bits = [f"Language: {language.SUPPORTED[lang]}"]
+        context_bits = [f'{copy["language_is"]}: {language.SUPPORTED[lang]}']
         if st.session_state["jd_text"]:
-            context_bits.append("Job description: provided")
+            context_bits.append(copy["jd_provided"])
         elif st.session_state["target_role_hint"]:
-            context_bits.append(f"Target role: {st.session_state['target_role_hint']}")
+            context_bits.append(
+                f'{copy["role_is"]}: {st.session_state["target_role_hint"]}')
         else:
-            context_bits.append("Target role: not set yet")
-        ui.chips("Session", context_bits, kind="")
+            context_bits.append(copy["role_unset"])
+        ui.chips(copy["session"], context_bits, kind="")
         if st.session_state["pii_degraded"]:
             # Loud rather than quiet on purpose: without the local name model, the
             # contact block and the patterns still run but a name in the body of
             # the CV can survive. Anyone demonstrating this needs to know.
-            st.warning(
-                "**Reduced personal-data removal.** The local name-detection model "
-                "isn't available on this deployment, so only the contact block and "
-                "pattern matching ran — a name elsewhere in the document may remain. "
-                "Check the list above before using this with a real CV.",
-                icon="⚠️",
-            )
+            st.warning(copy["pii_degraded"], icon="⚠️")
 
 
 # --- Step 1: document intake -------------------------------------------------
@@ -185,10 +284,7 @@ if st.session_state["cv_text"] is None:
     ui.title_block(copy["title"], copy["subtitle"])
 
     with ui.card("lang"):
-        ui.card_head(
-            "Language of this conversation",
-            "You can switch at any time — just write in the other language and I'll follow.",
-        )
+        ui.card_head(copy["lang_title"], copy["lang_sub"])
         st.radio(
             "Language", ["English", "Deutsch"], horizontal=True,
             label_visibility="collapsed", key="lang_choice",
@@ -198,53 +294,49 @@ if st.session_state["cv_text"] is None:
 
     with left:
         with ui.card("cv"):
-            ui.card_head("Your CV", "PDF or Word, up to 10 MB.", "Required", "req")
-            cv_mode = st.radio(
-                "CV input", ["Upload", "Paste text"], horizontal=True,
+            ui.card_head(copy["cv_title"], copy["cv_sub"], copy["required"], "req")
+            cv_options = [copy["upload"], copy["paste"]]
+            cv_mode = cv_options.index(st.radio(
+                "CV input", cv_options, horizontal=True,
                 label_visibility="collapsed", key="cv_mode",
-            )
+            ))
             cv_file, cv_pasted = None, ""
-            if cv_mode == "Upload":
+            if cv_mode == 0:
                 cv_file = st.file_uploader(
                     "CV", type=["pdf", "docx"], key="cv_upload", label_visibility="collapsed"
                 )
             else:
                 cv_pasted = st.text_area(
                     "CV text", height=180, key="cv_paste", label_visibility="collapsed",
-                    placeholder="Paste the full text of your CV here…",
+                    placeholder=copy["cv_placeholder"],
                 )
 
     with right:
         with ui.card("role"):
-            ui.card_head(
-                "Target role",
-                "With one, the feedback is role-specific. Without one, it covers structure "
-                "and completeness — your CV can stand alone.",
-                "Optional", "opt",
-            )
-            jd_mode = st.radio(
-                "Job description", ["Skip", "Upload", "Paste text"], horizontal=True,
+            ui.card_head(copy["role_title"], copy["role_sub"], copy["optional"], "opt")
+            jd_options = [copy["skip"], copy["upload"], copy["paste"]]
+            jd_mode = jd_options.index(st.radio(
+                "Job description", jd_options, horizontal=True,
                 label_visibility="collapsed", key="jd_mode",
-            )
+            ))
             jd_file, jd_pasted = None, ""
-            if jd_mode == "Upload":
+            if jd_mode == 1:
                 jd_file = st.file_uploader(
                     "Job description", type=["pdf", "docx"], key="jd_upload",
                     label_visibility="collapsed",
                 )
-            elif jd_mode == "Paste text":
+            elif jd_mode == 2:
                 jd_pasted = st.text_area(
                     "Job description text", height=180, key="jd_paste",
                     label_visibility="collapsed",
-                    placeholder="Paste the job description here…",
+                    placeholder=copy["jd_placeholder"],
                 )
             target_hint = st.text_input(
-                "Or simply name the role or industry",
-                placeholder="e.g. Audit Intern, Sustainability Consulting",
+                copy["role_label"], placeholder=copy["role_placeholder"],
             )
 
     ready = cv_file is not None or bool(cv_pasted.strip())
-    if st.button("Start coaching session", type="primary", disabled=not ready):
+    if st.button(copy["start"], type="primary", disabled=not ready):
         if cv_file is not None:
             cv_result = extract_text(cv_file.getvalue(), cv_file.name)
             if not cv_result.ok:
@@ -253,10 +345,7 @@ if st.session_state["cv_text"] is None:
             cv_raw, cv_meta = cv_result.text, cv_result.meta
         else:
             if len(cv_pasted.strip()) < MIN_CHARS:
-                st.error(
-                    "That's very little text to work with — please paste the full CV.",
-                    icon="📄",
-                )
+                st.error(copy["too_little"], icon="📄")
                 st.stop()
             cv_raw = cv_pasted
             # Pasted text carries no file to measure, so the format check will
@@ -298,7 +387,7 @@ if st.session_state["cv_text"] is None:
         # writes the report from that, rather than deciding for itself what is
         # wrong with the CV. ---
         lang_code = st.session_state["language_pref"]
-        with st.spinner("Reading your CV and writing your feedback report…"):
+        with st.spinner(copy["spinner"]):
             sections = section_coverage.detect_sections(cv_text, client, MODEL)
             st.session_state["sections_detected"] = sections
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
@@ -349,9 +438,9 @@ target_role_known = bool(st.session_state["jd_text"] or st.session_state["target
 col_summary, col_report, col_reset = st.columns([3, 2, 2], gap="small")
 with col_summary:
     summary_clicked = st.button(
-        "Prepare a summary for Career Services",
+        copy["summary_button"],
         disabled=len(st.session_state["messages"]) < 3,
-        help="Available at any time — you don't have to wait for the bot to offer one.",
+        help=copy["summary_help"],
         use_container_width=True,
     )
 with col_report:
@@ -359,17 +448,17 @@ with col_report:
     # The text download stays as the fallback if reportlab isn't installed.
     if st.session_state["report_pdf"]:
         st.download_button(
-            "Download the report (PDF)",
+            copy["download_pdf"],
             data=st.session_state["report_pdf"],
             file_name="cv_feedback_report.pdf",
             mime="application/pdf",
-            help="The feedback report from the start of this conversation.",
+            help=copy["download_help"],
             use_container_width=True,
             key="report_download_pdf",
         )
     elif st.session_state["report_text"]:
         st.download_button(
-            "Download the report",
+            copy["download_text"],
             data=st.session_state["report_text"],
             file_name="cv_feedback_report.md",
             mime="text/markdown",
@@ -377,7 +466,7 @@ with col_report:
             key="report_download",
         )
 with col_reset:
-    if st.button("Start over", use_container_width=True):
+    if st.button(copy["start_over"], use_container_width=True):
         reset_session()
         st.rerun()
 
@@ -386,7 +475,7 @@ if summary_clicked:
         st.session_state["messages"], st.session_state["sections_detected"],
         lang, language.SUPPORTED[lang],
     )
-    with st.spinner("Preparing summary…"):
+    with st.spinner(copy["summary_spinner"]):
         manual_summary_text = latency.stream_response(
             client, MODEL, summary_messages, lambda _: None,
             max_tokens=latency.SUMMARY_MAX_TOKENS, timeout=latency.SUMMARY_TIMEOUT_SECONDS,
@@ -394,7 +483,7 @@ if summary_clicked:
     with ui.card("summary"):
         st.markdown(manual_summary_text)
         st.download_button(
-            "Download summary (.txt)",
+            copy["download_summary"],
             data=manual_summary_text, file_name="cv_coach_summary.txt", mime="text/plain",
             key="manual_summary_download",
         )

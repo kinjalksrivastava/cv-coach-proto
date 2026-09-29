@@ -8,6 +8,12 @@ primaryColor = "#00802F"
 backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#F5F8F6"
 textColor = "#15181A"
+# Inter, loaded from Google Fonts in ui.STYLES. Set here as well as in the
+# stylesheet because Streamlit applies its own font to headings and widgets with
+# enough specificity to win, so a stylesheet rule alone left every heading in
+# Source Sans while Inter sat loaded and unused.
+font = "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
+headingFont = "Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif"
 
 [client]
 toolbarMode = "minimal"

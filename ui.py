@@ -23,6 +23,12 @@ GREEN_DARK = "#00632A"
 
 STYLES = f"""
 <style>
+/* Inter was named in the font stack but never loaded, so the app was rendering
+   in whatever the browser had - Helvetica on a Mac, Arial on Windows, which is
+   why it looked different on every machine it was demoed on. Loading it is also
+   what lets the weights below mean anything. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {{
   --hsg-green: {GREEN};
   --hsg-green-dark: {GREEN_DARK};
@@ -36,9 +42,27 @@ STYLES = f"""
 }}
 
 /* --- shell ------------------------------------------------------------- */
-html, body, [class*="st-"], button, input, textarea, select {{
+/* Streamlit sets its own font on headings and markdown with enough specificity
+   to win, so naming the elements is not optional here - a single rule on html
+   and body left every h1 in Source Sans while Inter sat loaded and unused. */
+html, body, button, input, textarea, select,
+[data-testid="stAppViewContainer"] h1, [data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3, [data-testid="stAppViewContainer"] h4,
+[data-testid="stAppViewContainer"] p, [data-testid="stAppViewContainer"] li,
+[data-testid="stAppViewContainer"] td, [data-testid="stAppViewContainer"] th,
+[data-testid="stAppViewContainer"] label, [data-testid="stAppViewContainer"] div,
+[data-testid="stAppViewContainer"] span, [data-testid="stAppViewContainer"] a,
+[data-testid="stAppViewContainer"] blockquote {{
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-               "Helvetica Neue", Arial, sans-serif;
+               "Helvetica Neue", Arial, sans-serif !important;
+}}
+/* ...except the icon fonts, which the span rule above would otherwise break. */
+[data-testid="stIconMaterial"], .material-symbols-rounded,
+[class*="material-icons"], [class*="material-symbols"] {{
+  font-family: "Material Symbols Rounded", "Material Icons" !important;
+}}
+code, pre, code span {{
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace !important;
 }}
 [data-testid="stAppViewContainer"] {{ background: var(--canvas); }}
 [data-testid="stHeader"] {{ background: transparent; height: 0; }}
@@ -47,32 +71,42 @@ html, body, [class*="st-"], button, input, textarea, select {{
 footer {{ display: none; }}
 #MainMenu {{ display: none; }}
 [data-testid="stMainBlockContainer"], .block-container {{
-  max-width: 980px;
-  padding-top: 2.2rem;
-  padding-bottom: 4rem;
+  max-width: 920px;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}}
+/* Inter's default spacing is loose at body sizes and tight at display sizes.
+   Both are corrected here rather than per-element. */
+html, body, [class*="st-"] {{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }}
 
 /* --- masthead ---------------------------------------------------------- */
 .hsg-masthead {{
   display: flex; align-items: flex-end; justify-content: space-between;
-  gap: 1.5rem; padding-bottom: 1rem;
+  gap: 1.5rem; padding-bottom: 1.1rem;
   border-bottom: 1px solid var(--border);
 }}
-.hsg-masthead svg {{ height: 38px; width: auto; display: block; }}
+.hsg-masthead svg {{ height: 34px; width: auto; display: block; }}
 .hsg-unit {{
-  font-size: 0.78rem; letter-spacing: 0.09em; text-transform: uppercase;
-  color: var(--ink-faint); font-weight: 600; padding-bottom: 3px;
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 500; padding-bottom: 4px;
 }}
-.hsg-title-block {{ padding: 1.6rem 0 1.9rem 0; }}
+.hsg-title-block {{ padding: 3.2rem 0 2.6rem 0; }}
 .hsg-title-block h1 {{
-  font-size: 2.15rem; font-weight: 680; letter-spacing: -0.02em;
-  color: var(--ink); margin: 0 0 0.35rem 0; padding: 0; line-height: 1.15;
+  font-size: 2.6rem; font-weight: 600; letter-spacing: -0.035em;
+  color: var(--ink); margin: 0 0 0.6rem 0; padding: 0; line-height: 1.08;
 }}
-.hsg-title-block.compact {{ padding: 1.1rem 0 1.1rem 0; }}
-.hsg-title-block.compact h1 {{ font-size: 1.6rem; margin-bottom: 0; }}
+.hsg-title-block.compact {{ padding: 1.2rem 0 1.2rem 0; }}
+.hsg-title-block.compact h1 {{
+  font-size: 1.45rem; font-weight: 600; margin-bottom: 0;
+  letter-spacing: -0.02em;
+}}
 .hsg-title-block p {{
-  font-size: 1rem; color: var(--ink-soft); margin: 0; max-width: 62ch;
-  line-height: 1.55;
+  font-size: 1.02rem; color: var(--ink-soft); margin: 0; max-width: 54ch;
+  line-height: 1.6; font-weight: 400;
 }}
 
 /* --- cards ------------------------------------------------------------- */
@@ -83,16 +117,17 @@ footer {{ display: none; }}
 .hsg-card-head {{
   display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.15rem;
 }}
-.hsg-card-head .t {{ font-size: 1rem; font-weight: 640; color: var(--ink); }}
+.hsg-card-head .t {{ font-size: 0.97rem; font-weight: 600; color: var(--ink);
+                     letter-spacing: -0.008em; }}
 .hsg-card-head .badge {{
-  font-size: 0.68rem; letter-spacing: 0.07em; text-transform: uppercase;
-  font-weight: 650; padding: 2px 8px; border-radius: 999px;
+  font-size: 0.64rem; letter-spacing: 0.1em; text-transform: uppercase;
+  font-weight: 600; padding: 2px 8px; border-radius: 999px;
 }}
 .badge-req {{ background: var(--hsg-green-tint); color: var(--hsg-green-dark); }}
 .badge-opt {{ background: #F1F3F2; color: var(--ink-faint); }}
 .hsg-card-sub {{
-  font-size: 0.87rem; color: var(--ink-soft); margin: 0 0 0.9rem 0;
-  line-height: 1.5;
+  font-size: 0.86rem; color: var(--ink-soft); margin: 0 0 0.95rem 0;
+  line-height: 1.55; max-width: 46ch;
 }}
 .hsg-rule {{ height: 1px; background: var(--border); margin: 0.2rem 0 1.2rem 0; }}
 
@@ -100,14 +135,19 @@ footer {{ display: none; }}
 [class*="st-key-hsgcard_"] {{
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 1.35rem 1.5rem 1.45rem 1.5rem;
+  border-radius: 16px;
+  padding: 1.5rem 1.6rem 1.6rem 1.6rem;
   height: 100%;
 }}
 [data-testid="stHorizontalBlock"] {{ align-items: stretch; }}
 [data-testid="stColumn"] {{ display: flex; }}
 [data-testid="stColumn"] > div,
 [data-testid="stColumn"] [data-testid="stVerticalBlock"] {{ height: 100%; flex: 1; }}
+/* Streamlit 1.61 puts a stLayoutWrapper between the column and the card, and it
+   does not grow, so side-by-side cards ended up different heights. */
+[data-testid="stColumn"] [data-testid="stLayoutWrapper"] {{
+  display: flex; flex: 1 1 auto;
+}}
 [class*="st-key-hsgcard_"] [data-testid="stVerticalBlock"] {{ gap: 0.75rem; }}
 
 /* --- chips ------------------------------------------------------------- */
@@ -189,8 +229,9 @@ div[role="radiogroup"] > label p {{
 /* --- buttons ----------------------------------------------------------- */
 button[kind="primary"], [data-testid="stBaseButton-primary"] {{
   background: var(--hsg-green) !important; border: 1px solid var(--hsg-green) !important;
-  border-radius: 10px !important; font-weight: 600 !important;
-  padding: 0.55rem 1.1rem !important;
+  border-radius: 10px !important; font-weight: 550 !important;
+  padding: 0.62rem 1.4rem !important; letter-spacing: -0.005em !important;
+  transition: background 0.15s ease, border-color 0.15s ease !important;
 }}
 button[kind="primary"]:disabled, [data-testid="stBaseButton-primary"]:disabled {{
   background: #EDF1EE !important; border-color: var(--border) !important;
@@ -201,7 +242,8 @@ button[kind="primary"]:hover, [data-testid="stBaseButton-primary"]:hover {{
 }}
 button[kind="secondary"], [data-testid="stBaseButton-secondary"] {{
   border-radius: 10px !important; border: 1px solid var(--border) !important;
-  color: var(--ink) !important; background: #fff !important; font-weight: 550 !important;
+  color: var(--ink) !important; background: #fff !important; font-weight: 500 !important;
+  transition: border-color 0.15s ease, color 0.15s ease !important;
 }}
 button[kind="secondary"]:hover, [data-testid="stBaseButton-secondary"]:hover {{
   border-color: var(--hsg-green) !important; color: var(--hsg-green-dark) !important;
