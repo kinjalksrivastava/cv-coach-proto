@@ -60,8 +60,17 @@ TEXT = {
         "spelling_mixed": "British and American spellings are both used ({items}) — pick "
                           "one and keep it consistent",
         "spelling_ok": "British/American spelling is used consistently",
-        "typo_heading": '"{written}" looks like a typo for "{correct}"',
-        "typo_month": '"{written}" — did you mean "{correct}"?',
+        # Career Services' point: on the CV that produced "Educatiqn" the student
+        # had written Education correctly and the extractor mangled it. Asserting
+        # a typo blames them for the parse. The wording now states what came
+        # through and leaves the cause open, which is also more useful: either it
+        # is a typo worth fixing, or the file does not extract cleanly, and an
+        # ATS will read it exactly the same way.
+        "typo_heading": ('"{written}" came through where "{correct}" was expected. '
+                         'If that is how it is written, it is a quick fix; if not, '
+                         'the file is not extracting cleanly, which an ATS would '
+                         'also struggle with'),
+        "typo_month": '"{written}" came through where "{correct}" was expected',
         "typos_none": "no obvious typos in headings or dates",
         "writing_comment": "Typos: {typos}. Spelling: {spelling}.",
         "criteria": (
@@ -106,8 +115,11 @@ TEXT = {
         "spelling_mixed": "Britische und amerikanische Schreibweisen kommen beide vor "
                           "({items}) — entscheide dich für eine und bleib dabei",
         "spelling_ok": "Britische/amerikanische Schreibweise wird einheitlich verwendet",
-        "typo_heading": '"{written}" sieht nach einem Tippfehler für "{correct}" aus',
-        "typo_month": '"{written}" — meintest du "{correct}"?',
+        "typo_heading": ('"{written}" kam an, wo "{correct}" erwartet wurde. Wenn es '
+                         'so geschrieben ist, ist das schnell korrigiert; wenn nicht, '
+                         'lässt sich die Datei nicht sauber auslesen, womit auch ein '
+                         'ATS Mühe hätte'),
+        "typo_month": '"{written}" kam an, wo "{correct}" erwartet wurde',
         "typos_none": "keine offensichtlichen Tippfehler in Titeln oder Daten",
         "writing_comment": "Tippfehler: {typos}. Schreibweise: {spelling}.",
         "criteria": (

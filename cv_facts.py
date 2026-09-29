@@ -726,9 +726,10 @@ def typo_phrases(facts: dict) -> list[str]:
     model reads. The student-facing version is built in format_check, where it
     exists in both languages.
     """
-    return ([f'"{a}" looks like a typo for "{b}"'
+    return ([f'"{a}" came through where "{b}" was expected (either a typo or the '
+             f'file not extracting cleanly - do not assert which)'
              for a, b in facts.get("heading_typos") or []]
-            + [f'"{a}" — probably "{b}"'
+            + [f'"{a}" came through where "{b}" was expected'
                for a, b in facts.get("month_typos") or []])
 
 

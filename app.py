@@ -90,6 +90,10 @@ COPY = {
         "start_over": "Start over",
         "summary_spinner": "Preparing summary…",
         "download_summary": "Download summary (.txt)",
+        "pii_spinner": "Removing personal details…",
+        "examples_expander": "See what a stronger bullet point looks like",
+        "handed_over": "This session has been flagged for a human advisor. "
+                       "Coaching is paused here.",
         "pii_degraded": (
             "**Reduced personal-data removal.** The local name-detection model is "
             "not available on this deployment, so only the contact block and "
@@ -150,6 +154,10 @@ COPY = {
         "start_over": "Neu beginnen",
         "summary_spinner": "Zusammenfassung wird vorbereitet…",
         "download_summary": "Zusammenfassung herunterladen (.txt)",
+        "pii_spinner": "Persönliche Angaben werden entfernt…",
+        "examples_expander": "So sieht ein stärkerer Bullet Point aus",
+        "handed_over": "Diese Sitzung wurde für eine Beratungsperson markiert. "
+                       "Das Coaching pausiert hier.",
         "pii_degraded": (
             "**Eingeschränkte Entfernung personenbezogener Daten.** Das lokale Modell "
             "zur Namenserkennung ist in diesem Deployment nicht verfügbar. Es liefen "
@@ -368,7 +376,7 @@ if st.session_state["cv_text"] is None:
         # --- personal data comes off FIRST, locally, before anything leaves this
         # machine. Nothing below this point ever sees the original document. ---
         cv_language = language.detect_message_language(cv_raw) or st.session_state["language_pref"]
-        with st.spinner("Removing personal details…"):
+        with st.spinner(copy["pii_spinner"]):
             cv_clean = strip_pii(cv_raw, cv_language)
             jd_clean = strip_pii(jd_raw, cv_language) if jd_raw.strip() else None
 
@@ -497,12 +505,12 @@ for msg in st.session_state["messages"]:
 # student had been told anything about their bullets - and wanted it behind a
 # click, at the point bullets are actually raised.
 if st.session_state["show_bullet_examples"]:
-    with st.expander("See what a stronger bullet point looks like"):
+    with st.expander(copy["examples_expander"]):
         strings = dict(report.STRINGS[st.session_state["effective_language"]])
         st.markdown(report.bullet_examples_markdown(strings))
 
 if st.session_state["handed_over"]:
-    st.info("This session has been flagged for a human advisor. Coaching is paused here.")
+    st.info(copy["handed_over"])
     st.stop()
 
 user_input = st.chat_input(copy["chat_placeholder"])
