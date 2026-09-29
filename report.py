@@ -169,7 +169,8 @@ shows AI experience - in coursework or projects, in a job, in an extracurricular
 under skills - and inviting them to add it if they have it, without implying they should \
 have it; (ii) if TAILORING is flagged, one sentence saying the CV does not yet speak to the \
 advert they uploaded. Do not name the specific missing terms here - they belong in the key \
-area.
+area - and never quantify the match: no percentage, no "matches 3 of 8", no score of any \
+kind, anywhere in the report.
 - "what_works_well": drawn ONLY from the MEASURED STRENGTHS list you are given. You may \
 reword each one for a student and you may use fewer, but you may not add one that is not \
 on that list, and if the list is empty you MUST return an empty array. Never praise the \
@@ -241,12 +242,19 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
     if not facts.get("mentions_ai"):
         context.append("AI IS NOT MENTIONED: nothing anywhere in this CV refers to AI, "
                        "machine learning, or an AI tool.")
-    overlap = facts.get("jd_overlap")
-    if overlap is not None and overlap < 0.4:
+    missing_terms = facts.get("jd_terms_missing") or []
+    if facts.get("jd_untailored"):
+        # Named, never counted. An earlier version passed the overlap as a
+        # percentage and the model printed it - which is a score, and the one
+        # thing this tool must never produce. The terms are the useful part
+        # anyway: "nothing here mentions stakeholders" can be acted on, "17%"
+        # cannot.
         context.append(
-            "TAILORING: this CV picks up only "
-            f"{int(overlap * 100)}% of what the advert keeps returning to. Missing: "
-            + ", ".join(facts.get("jd_terms_missing") or [])
+            "TAILORING: the advert keeps returning to things that appear nowhere in "
+            "this CV: " + ", ".join(missing_terms) + ". You may name these. You may NOT "
+            "state a percentage, a fraction, a count of matches, or any other figure for "
+            "how well the CV matches - that is a score. You may not assert the student "
+            "lacks the experience either; the check only sees words, so ask."
         )
     context.append("Format checks already computed (repeat these as given; you cannot "
                    "see the document yourself):\n" + checks)

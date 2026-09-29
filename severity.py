@@ -187,18 +187,20 @@ def assess(facts: dict, target_role: str = "") -> dict:
     # summary, the key areas AND the per-section feedback - it was the single most
     # common thing they correct in appointments, and the report was silent on it.
     # This issue carries the measurement; the report prompt carries the rest.
-    overlap = facts.get("jd_overlap")
-    if overlap is not None and overlap < 0.4:
+    if facts.get("jd_untailored"):
         missing = facts.get("jd_terms_missing") or []
         issues.append(_issue(
-            2, "not_tailored", "The CV doesn't speak to the job you uploaded",
-            f"Of the {facts['jd_terms_checked']} things the advert keeps coming back to, "
-            f"{len(missing)} appear nowhere in your CV"
-            + (f": {', '.join(missing[:6])}" if missing else ""),
-            guidance="Go through the advert and, for each thing it asks for, find where "
-                     "your CV already shows it — then make that visible in the wording you "
-                     "chose. Where you genuinely have none of it, that is worth knowing "
-                     "too. Don't paste the advert's words in over experience you don't have.",
+            2, "not_tailored", "The CV doesn't yet speak to the job you uploaded",
+            "The advert keeps coming back to things that appear nowhere on the CV: "
+            + ", ".join(missing),
+            # No count, no fraction, no percentage. Naming the terms is concrete;
+            # quantifying the match would be a score, and would also be dishonest -
+            # this check reads words, not experience.
+            guidance="Take each one and ask whether you have done it, under a different "
+                     "name. Where you have, the CV should say so in terms the reader is "
+                     "already looking for. Where you genuinely haven't, that is worth "
+                     "knowing before you apply — and worth a conversation with your coach. "
+                     "Don't paste the advert's wording over experience you don't have.",
         ))
 
     # --- Tier 3: structure and consistency -----------------------------------

@@ -329,6 +329,17 @@ JD_NOISE = {
     "that", "their", "them", "there", "these", "they", "this", "through", "time",
     "under", "very", "well", "what", "when", "where", "which", "while", "will",
     "with", "within", "work", "working", "years", "your", "you",
+    # Advert boilerplate. Telling a student their CV never mentions "advantage" or
+    # "responsibilities" is noise, and noise is what made the first version of this
+    # check useless - it named words no CV would ever contain.
+    "advantage", "ability", "able", "apply", "application", "benefits", "career",
+    "collaborative", "colleagues", "contribute", "culture", "dynamic", "employer",
+    "environment", "excellent", "flexible", "function", "growth", "ideally",
+    "including", "independent", "interest", "maintain", "motivated", "office",
+    "ongoing", "opportunities", "organisation", "organization", "passionate",
+    "personal", "possible", "preferably", "provide", "qualifications", "quality",
+    "responsibilities", "responsible", "salary", "start", "students", "tasks",
+    "training", "understanding", "university", "various", "welcome", "willing",
     "und", "der", "die", "das", "den", "dem", "des", "ein", "eine", "einen", "einer",
     "für", "mit", "von", "vom", "sind", "sich", "auch", "aber", "oder", "wir", "uns",
     "unser", "unsere", "dich", "deine", "deinem", "bei", "als", "auf", "aus", "nach",
@@ -336,43 +347,67 @@ JD_NOISE = {
     "erfahrung", "kenntnisse", "aufgaben", "stelle", "bereich", "team", "arbeiten",
 }
 _WORD = re.compile(r"[A-Za-zÄÖÜäöüß][\w&+#.-]{3,}")
+# Acronyms are the most diagnostic thing in a job advert - SAP, GAAP, IFRS, ERP,
+# KPI - and the word pattern above drops them for being short and, in the case of
+# SAP, for being three letters. They are pulled from the original casing.
+_ACRONYM = re.compile(r"\b[A-Z][A-Z&/+]{1,5}\b")
+_ACRONYM_NOISE = {"AND", "THE", "YOU", "YOUR", "FOR", "WITH", "ALL", "NEW", "CV",
+                  "EU", "USA", "UK", "CH", "GMBH", "AG", "SA", "PLC", "LTD", "INC",
+                  "UND", "DER", "DIE", "DAS", "MIT", "WIR", "FTE", "PDF"}
 
 
 def _jd_tailoring(cv_text: str, jd_text: str) -> dict:
     """
-    How much of the job ad's own vocabulary the CV actually uses.
+    Which of the advert's own load-bearing terms appear nowhere on the CV.
 
-    Deliberately crude: it counts terms the ad repeats, then checks whether each
-    appears anywhere in the CV. It cannot tell good tailoring from keyword
-    stuffing - it only tells the model whether there is a tailoring gap worth
-    raising, and names the terms so the feedback can be specific.
+    Deliberately NOT a match score. Career Services asked for an estimate of how
+    well a CV matches the advert, but a percentage is a score, and this tool does
+    not produce scores - it also would not deserve one: this sees words, not
+    experience, so a CV that does the same work in different vocabulary looks
+    like a bad match, and a CV that pastes the advert's wording in looks like a
+    good one.
+
+    What it can honestly say is "this advert is built around SAP, reconciliations
+    and GAAP, and none of those words appear anywhere on your CV - do you have
+    any of that?" That is a question a student can act on. The ratio below never
+    leaves this function; it only decides whether the gap is worth raising.
+
+    An earlier version only looked at words the advert REPEATED, which sounds
+    sensible and is not: a real advert says "SAP" once and "accounting" seven
+    times, so it kept the generic term and discarded the decisive one.
     """
     if not jd_text.strip():
-        return {"jd_provided": False, "jd_terms_checked": 0,
-                "jd_terms_missing": [], "jd_overlap": None}
+        return {"jd_provided": False, "jd_untailored": False, "jd_terms_missing": []}
 
     counts = {}
     for match in _WORD.finditer(jd_text.lower()):
         word = match.group(0).strip(".-")
-        if len(word) < 4 or word in JD_NOISE or word.isdigit():
+        if len(word) < 5 or word in JD_NOISE or word.isdigit():
             continue
         counts[word] = counts.get(word, 0) + 1
+    for match in _ACRONYM.finditer(jd_text):
+        token = match.group(0)
+        if token in _ACRONYM_NOISE:
+            continue
+        counts[token.lower()] = counts.get(token.lower(), 0) + 3  # worth more
 
-    # Repeated terms are the ones the ad is actually about. If nothing repeats the
-    # ad is too short to judge, and the check stays silent rather than guessing.
-    repeated = sorted((w for w, n in counts.items() if n >= 2),
-                      key=lambda w: -counts[w])[:25]
-    if len(repeated) < 5:
-        return {"jd_provided": True, "jd_terms_checked": 0,
-                "jd_terms_missing": [], "jd_overlap": None}
+    # Frequent first, then longer - at equal frequency "reconciliations" says more
+    # about the job than "records" does.
+    terms = sorted(counts, key=lambda w: (-counts[w], -len(w)))[:15]
+    if len(terms) < 6:
+        return {"jd_provided": True, "jd_untailored": False, "jd_terms_missing": []}
 
     cv_lower = cv_text.lower()
-    missing = [w for w in repeated if w[:5] not in cv_lower]
+    missing = [w for w in terms if w[:5] not in cv_lower]
+
+    # Both conditions, so neither a long advert with a few stray misses nor a
+    # short one with a couple of gaps trips it: most of the advert has to be
+    # absent, and enough of it to be worth naming.
+    untailored = len(missing) >= 4 and len(missing) / len(terms) > 0.5
     return {
         "jd_provided": True,
-        "jd_terms_checked": len(repeated),
-        "jd_terms_missing": missing[:10],
-        "jd_overlap": round((len(repeated) - len(missing)) / len(repeated), 2),
+        "jd_untailored": untailored,
+        "jd_terms_missing": missing[:8] if untailored else [],
     }
 
 
