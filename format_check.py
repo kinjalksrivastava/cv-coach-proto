@@ -73,6 +73,7 @@ TEXT = {
         "typo_month": '"{written}" came through where "{correct}" was expected',
         "typos_none": "no obvious typos in headings or dates",
         "writing_comment": "Typos: {typos}. Spelling: {spelling}.",
+        "writing_typos_only": "Typos: {typos}.",
         "criteria": (
             "An Applicant Tracking System (ATS) is software employers use to collect, scan "
             "and process applications digitally — many CVs are read by one before a person "
@@ -122,6 +123,7 @@ TEXT = {
         "typo_month": '"{written}" kam an, wo "{correct}" erwartet wurde',
         "typos_none": "keine offensichtlichen Tippfehler in Titeln oder Daten",
         "writing_comment": "Tippfehler: {typos}. Schreibweise: {spelling}.",
+        "writing_typos_only": "Tippfehler: {typos}.",
         "criteria": (
             "Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber "
             "Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe "
@@ -272,10 +274,13 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     # out of the text. The heuristic version kept nominating content lines -
     # "• Website Development", "German: Native", "Chess" - as section headers a
     # parser might not recognise, which is nonsense the student has to wade past.
-    if facts and facts.get("sections"):
-        heading_source = [s["heading"] for s in facts["sections"]]
-    else:
-        heading_source = _heading_candidates(text)
+    # Only headings the parser actually identified. The heuristic scan below was
+    # the fallback, and on a CV where the parser found nothing it nominated
+    # content lines - "German Native Speaker" was reported to a student as a
+    # section header an ATS might not recognise. If there is no parsed heading
+    # list, there is nothing here worth asserting.
+    parsed = [s["heading"] for s in (facts or {}).get("sections") or []]
+    heading_source = parsed
     problems, notes = [], []
 
     fonts = nonstandard_fonts(meta)
@@ -352,12 +357,17 @@ def _writing_row(facts: dict, t: dict) -> dict:
     # Both halves are always reported, even the clean one. Listing only the
     # failures meant a CV with typos never learned its British/American spelling
     # had been checked at all.
-    spelling_note = (t["spelling_mixed"].format(items=", ".join(facts["mixed_spelling"]))
-                     if facts.get("mixed_spelling") else t["spelling_ok"])
+    if facts.get("doc_language") == "de":
+        spelling_note = None      # not an English document; nothing to say
+    elif facts.get("mixed_spelling"):
+        spelling_note = t["spelling_mixed"].format(items=", ".join(facts["mixed_spelling"]))
+    else:
+        spelling_note = t["spelling_ok"]
     typo_note = "; ".join(str(p) for p in problems) if problems else t["typos_none"]
     status = ATTENTION if (problems or facts.get("mixed_spelling")) else GOOD
-    return {"check": t["writing"], "status": status,
-            "comment": t["writing_comment"].format(typos=typo_note, spelling=spelling_note)}
+    comment = (t["writing_comment"].format(typos=typo_note, spelling=spelling_note)
+               if spelling_note else t["writing_typos_only"].format(typos=typo_note))
+    return {"check": t["writing"], "status": status, "comment": comment}
 
 
 def run(text: str, meta: dict, facts: dict | None = None,

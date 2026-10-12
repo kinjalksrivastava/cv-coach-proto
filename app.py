@@ -579,7 +579,7 @@ if st.session_state["cv_text"] is None:
 
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
                                      st.session_state["jd_text"], lang_code,
-                                     review_bullets, read_dates)
+                                     review_bullets, read_dates, cv_language)
             st.session_state["date_findings"] = facts["date_findings"]
             st.session_state["format_rows"] = format_check.run(
                 cv_text, cv_meta, facts, lang_code)

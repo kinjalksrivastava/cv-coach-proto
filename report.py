@@ -198,7 +198,17 @@ could show for the target role - Career Services asked that a tailoring gap be v
 section level, not only in the summary. That point says where their existing material \
 already fits the advert; it never invents experience, and it never supplies the wording.
 
-Write everything in {language_name}. Return only the JSON object:
+Write everything in {language_name}. If that is English, use BRITISH English \
+throughout: organise, analyse, programme, specialise, centre, CV rather than resume.
+
+Personal details were removed before this text reached you - name, address, date of \
+birth, nationality, civil status, contact details. Never comment on them, never say they \
+are missing, and never treat a [REDACTED] marker as something the student omitted.
+
+Say each thing ONCE. If a point belongs in a key area, it does not also belong in the \
+section feedback in the same words, and two findings that amount to the same advice \
+should be stated as one. Career Services flagged the same sentence appearing twice in \
+one report more than once. Return only the JSON object:
 {{"overall_impression": "...", "areas_to_improve": \
 [{{"title": "...", "severity": "...", "detail": "..."}}], \
 "sections": [{{"name": "...", "status": "...", "summary": "...", "points": ["..."]}}]}}"""
@@ -308,14 +318,18 @@ def _clean(value) -> str:
 
 
 GRADE_NOTE = {
-    "en": "**On grades:** a recruiter assumes a grade that has been left out was the "
-          "bad one. Show a grade for every education entry, or for none of them — "
-          "grades are optional, but showing some and hiding others is the one option "
-          "that works against you.",
-    "de": "**Zu den Noten:** Recruiter gehen davon aus, dass eine weggelassene Note die "
-          "schlechtere war. Gib entweder bei jedem Ausbildungseintrag eine Note an oder "
-          "bei keinem — Noten sind freiwillig, aber einige zu zeigen und andere "
-          "wegzulassen ist die einzige Variante, die gegen dich arbeitet.",
+    # Career Services' own wording, requested twice and quoted here verbatim.
+    # Their point both times: say what a recruiter will conclude, and stop. The
+    # earlier version ended "show a grade for every entry, or for none of them",
+    # which is telling the student what to do - "it should highlight that this
+    # can cause recruiters to think that the left out grade was not good but it
+    # should not tell the student what to do".
+    "en": "**On grades:** be aware that if you leave out grades for certain education "
+          "experiences but not for others, recruiters will automatically assume that the "
+          "missing grades were worse than the ones you have listed.",
+    "de": "**Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für "
+          "einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten "
+          "schlechter waren als die, die du angegeben hast.",
 }
 
 

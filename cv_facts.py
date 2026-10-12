@@ -205,6 +205,44 @@ ENTRY_SECTIONS = {
 # is complete, and demanding bullets there would invent a problem.
 DETAIL_CATEGORIES = {"Experience", "Volunteering & Community", "Projects"}
 
+# Anything that marks a line as naming a real, checkable skill rather than a
+# personal quality: a tool, a language, a method, or a stated level.
+HARD_SKILL_MARKER = re.compile(
+    r"\b(excel|word|powerpoint|office|python|\br\b|sql|sap|matlab|stata|spss|tableau|"
+    r"power ?bi|bloomberg|photoshop|illustrator|figma|java|javascript|html|css|git|"
+    r"latex|access|vba|c\+\+|salesforce|erp|canva|looker|alteryx|"
+    r"deutsch|german|englisch|english|französisch|french|spanisch|spanish|"
+    r"italienisch|italian|chinese|mandarin|russisch|russian|portugues\w*|"
+    r"[ABC][12]\b|muttersprache|native|fluent|fliessend|verhandlungssicher|"
+    r"advanced|intermediate|basic|grundkenntnisse|proficient|beginner)",
+    re.IGNORECASE)
+
+
+def _soft_skills_only(sliced: list[dict]) -> tuple[str | None, list[str]]:
+    """
+    A skills section that lists character traits and nothing checkable.
+
+    Career Services: the section "should not be called strong, since this person
+    only added some adjectives about soft skills. The bot should say that the
+    skills should be hard skills like technical skills and languages."
+    """
+    for section in sliced:
+        if section["category"] != "Skills & Languages":
+            continue
+        content = [line.strip(" -–—•*·\t") for line in section["lines"] if line.strip()]
+        if not content or len(content) > 14:
+            continue
+        if any(HARD_SKILL_MARKER.search(line) for line in content):
+            continue
+        traits = [w for w in BUZZWORDS
+                  if re.search(r"\b" + re.escape(w) + r"\b", " ".join(content).lower())]
+        # Only when the section is visibly made of qualities, not when it is
+        # simply short or written in words this check does not know.
+        if len(traits) >= 2:
+            return section["heading"], traits[:6]
+    return None, []
+
+
 # Lines that introduce interests rather than claim a competence.
 INTEREST_LINE = re.compile(r"^\s*(hobbies|interests|freizeit|interessen)\b", re.IGNORECASE)
 
@@ -606,7 +644,8 @@ def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
 
 
 def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "",
-            lang: str = "en", bullet_reviewer=None, date_reader=None) -> dict:
+            lang: str = "en", bullet_reviewer=None, date_reader=None,
+            doc_language: str = "en") -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
@@ -833,7 +872,11 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         for line in s["lines"] if not INTEREST_LINE.match(line)
     ).lower()
     buzz = sorted({w for w in BUZZWORDS if re.search(r"\b" + re.escape(w) + r"\b", claim_text)})
-    mixed_spelling = [
+    # Only on an English CV. On a German one the check is meaningless and the
+    # row confused a reviewer: "it should not comment on British and American
+    # English here as this is confusing. For English CVs this check should be
+    # kept, as it is very useful."
+    mixed_spelling = [] if doc_language == "de" else [
         f"{uk}/{us}" for uk, us in SPELLING_PAIRS
         if re.search(rf"\b{uk}\w*", lowered) and re.search(rf"\b{us}\w*", lowered)
     ]
@@ -870,6 +913,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         "weak_opener_bullets": weak[:6],
         "buzzwords": buzz,
         "mixed_spelling": mixed_spelling,
+        "doc_language": doc_language,
         "bullet_punctuation_mixed": punctuation_mixed,
         # (as written, as probably meant) - see _month_typos on why these are
         # not finished sentences.
@@ -890,6 +934,8 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         # whichever of those four places suits them.
         "mentions_ai": bool(AI_TERMS.search(text)),
         **_jd_tailoring(text, jd_text),
+        "soft_skills_only_section": _soft_skills_only(sliced)[0],
+        "soft_skill_words": _soft_skills_only(sliced)[1],
         "single_word_interests": _single_word_interests(sliced)[1],
         "single_word_interests_section": _single_word_interests(sliced)[0],
         "language_levels": _language_levels(sliced),

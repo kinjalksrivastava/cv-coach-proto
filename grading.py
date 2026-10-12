@@ -91,10 +91,33 @@ def country_for(line: str, context: str = "") -> str | None:
     return None
 
 
-def _candidate_scales(country: str | None, line: str) -> list[dict]:
-    lowered = line.lower()
-    if "abitur" in lowered:
+GERMAN_SCHOOL = re.compile(
+    r"\b(abitur|gymnasium|realschule|gesamtschule|oberstufe|fachhochschulreife|"
+    r"allgemeine hochschulreife|deutschland|germany)\b", re.IGNORECASE)
+
+# The lowest grade a Swiss student would volunteer on a CV. 4.0 is the pass mark
+# on the 1-6 scale, so a self-reported 2.2 is not a Swiss grade at all.
+SWISS_SELF_REPORT_FLOOR = 4.0
+
+
+def _candidate_scales(country: str | None, line: str, context: str = "",
+                      value: float | None = None) -> list[dict]:
+    """
+    Which scales this grade could be on.
+
+    Two corrections from Career Services, both from the same CV. The Abitur
+    marker is looked for in the SURROUNDING entry as well as on the grade's own
+    line - a student writes "Abitur" on the school line and "Note: 2,2"
+    underneath. And where a CV is otherwise Swiss but the value would be a fail
+    on the Swiss scale, the German reading is preferred: "even if not, it should
+    assume that a student would not put a 2.00 from a Swiss grading scale on the
+    CV."
+    """
+    if GERMAN_SCHOOL.search(line) or GERMAN_SCHOOL.search(context):
         return [ABITUR_AVERAGE, ABITUR_POINTS]
+    if (country == "CH" and value is not None
+            and 1.0 <= value < SWISS_SELF_REPORT_FLOOR):
+        return [ABITUR_AVERAGE, SCALES["CH"]]
     if country and country in SCALES:
         return [SCALES[country]]
     return list(SCALES.values())
@@ -139,7 +162,7 @@ def find_grades(text: str, section_lines: list[str] | None = None) -> list[dict]
             token, max_token = match.group(1), match.group(2)
             value = _to_float(token)
             country = country_for(line, context)
-            scales = _candidate_scales(country, line)
+            scales = _candidate_scales(country, line, context, value)
             plausible = any(_plausible_on(value, s) for s in scales)
             scale_name = next((s["name"] for s in scales if _plausible_on(value, s)), None)
             found.append({
@@ -156,6 +179,38 @@ def find_grades(text: str, section_lines: list[str] | None = None) -> list[dict]
     return found
 
 
+def _reference(grade: dict) -> tuple[float | None, str]:
+    """
+    The number to print beside the grade, and how to pair the two.
+
+    On a Swiss or Dutch scale the useful reference is the top of the scale: 5.4
+    means little without "/ 6.0". On a German or Austrian scale the best grade is
+    the LOW end, so the top of the scale is the wrong number to show - Career
+    Services asked for an Abitur of 2.20 to be written "2.20 / 1.00", naming what
+    a top grade looks like, not what the worst one does.
+
+    Scales are picked per entry, so an Abitur inside an otherwise Swiss CV is
+    still read as German.
+    """
+    info = SCALES.get(grade["country"]) or {}
+    if grade.get("scale") == ABITUR_AVERAGE["name"] or GERMAN_SCHOOL.search(grade["line"]):
+        info = ABITUR_AVERAGE
+    if not info:
+        return None, ""
+    best_is_low = info.get("best_is_low")
+    reference = info.get("lo") if best_is_low else info.get("hi")
+    return reference, info.get("name", "")
+
+
+def _pair(value: float, reference: float) -> str:
+    """
+    Both numbers to the same number of decimals. "2.20 / 1.00", never
+    "2.2 / 1.00" - Career Services asked for this specifically.
+    """
+    decimals = max(2, len(f"{value}".split(".")[1]) if "." in f"{value}" else 0)
+    return f"{value:.{decimals}f} / {reference:.{decimals}f}"
+
+
 def describe(grades: list[dict]) -> list[str]:
     """Plain statements of fact for the report prompt - never a judgement."""
     notes = []
@@ -163,18 +218,15 @@ def describe(grades: list[dict]) -> list[str]:
         where = f'on the line "{g["line"][:70]}"'
         if not g["plausible"]:
             if g["suggestion"] is not None:
-                info = SCALES.get(g["country"], {})
-                scale = info.get("name", "the local scale")
-                top = info.get("hi")
-                # Knowing the country means knowing the maximum, so state it
-                # rather than asking the student what it is.
-                if top:
+                reference, scale_name = _reference(g)
+                scale = scale_name or "the local scale"
+                if reference is not None:
                     notes.append(
                         f'The grade "{g["raw"]}" {where} is not a possible value on '
                         f'{scale}. It is almost certainly {g["suggestion"]} with the '
                         f'decimal point lost. Confirm this with the student and tell them '
-                        f'to write it as {g["suggestion"]} / {top:.2f} - the maximum must '
-                        f'be on the CV so a reader in another country can read it.'
+                        f'to write it as {_pair(g["suggestion"], reference)} - the scale '
+                        f'must be on the CV so a reader in another country can read it.'
                     )
                 else:
                     notes.append(
@@ -188,8 +240,9 @@ def describe(grades: list[dict]) -> list[str]:
                     f"this tool recognises. Ask the student which scale it is on."
                 )
         elif g["missing_maximum"]:
-            top = SCALES.get(g["country"], {}).get("hi")
-            target = f'{g["value"]:g} / {top:.2f}' if top else "a value out of its maximum"
+            reference, _ = _reference(g)
+            target = (_pair(g["value"], reference) if reference is not None
+                      else "a value out of its maximum")
             notes.append(
                 f'The grade "{g["raw"]}" {where} is given without its maximum. '
                 f'A recruiter in another country cannot read it - it should be written '

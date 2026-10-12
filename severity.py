@@ -19,7 +19,15 @@ The model never decides WHAT is wrong. It receives this list and writes the
 guidance prose for it.
 """
 
+# The same set cv_facts uses: sections where describing the work is the point,
+# and therefore where an absence of bullets is a finding.
+DETAIL_CATEGORIES = {"Experience", "Volunteering & Community", "Projects",
+                     "Extracurricular & Interests"}
+
 MAX_KEY_AREAS = 5
+
+# Timeline findings live in their own report section and nowhere else.
+DATE_KEYS = {"date_gap", "date_overlap"}
 
 
 def _issue(tier, key, title, evidence, section=None, guidance=""):
@@ -82,6 +90,8 @@ def assess(facts: dict, target_role: str = "") -> dict:
              "section_status": {heading: "strong"|"needs_attention"}}
     """
     issues: list[dict] = []
+    # Sections that a section-less finding should still pull out of "Strong".
+    no_bullet_sections: set = set()
     date_findings = facts.get("date_findings", [])
 
     # Tier-5 findings need to know which section they belong to. Without it they
@@ -102,12 +112,24 @@ def assess(facts: dict, target_role: str = "") -> dict:
 
     # --- Tier 1: there is nothing for a reader to evaluate --------------------
     if facts["has_no_bullets_anywhere"]:
+        # Attached to every section that should have had bullets, not left
+        # section-less. Without this the finding flagged nothing, so a CV with
+        # no bullets at all still had its experience section marked Strong -
+        # reported by Miriam in the fourth round after being reported by both
+        # reviewers in the third.
+        describing = [s["heading"] for s in facts["sections"]
+                      if s["category"] in DETAIL_CATEGORIES and s["entry_count"]]
         issues.append(_issue(
             1, "no_bullets_anywhere", "No bullet points anywhere in the CV",
-            f"The document contains {facts['total_bullets']} bullet points in total.",
+            f"The document contains {facts['total_bullets']} bullet points in total."
+            + (f' Sections that should have them: {", ".join(describing)}.'
+               if describing else ""),
+            section=describing[0] if describing else None,
             guidance="Every role and activity needs a few lines saying what was actually "
                      "done. Without them a reader has only job titles to go on.",
         ))
+        for heading in describing[1:]:
+            no_bullet_sections.add(heading)
 
     for section in facts["sections"]:
         if section["entries_without_detail"]:
@@ -132,14 +154,35 @@ def assess(facts: dict, target_role: str = "") -> dict:
                 guidance="State the function you held alongside the organisation — a reader "
                          "cannot infer seniority or responsibility from an employer name.",
             ))
-        if section["is_bare"]:
-            issues.append(_issue(
-                1, "bare_section", f'"{section["heading"]}" is almost empty',
-                f'The section contains {section["line_count"]} lines of content.',
-                section=section["heading"],
-                guidance="Either develop this section or remove it — a heading with nothing "
-                         "under it draws attention to the gap.",
-            ))
+
+    # Bare sections are raised together, not one finding each. Career Services
+    # rewrote this tier for exactly that reason: "if more than one of these
+    # sections are bare with no bullets - mention them together in Key areas of
+    # improvement", so that a CV that is thin all over does not spend its whole
+    # five-item budget saying so section by section. Education is named first
+    # where it is among them; their list gives it its own priority line.
+    bare = [s for s in facts["sections"] if s["is_bare"]]
+    bare.sort(key=lambda s: s["category"] != "Education")
+    if len(bare) == 1:
+        only = bare[0]
+        issues.append(_issue(
+            1, "bare_section", f'"{only["heading"]}" is almost empty',
+            f'The section contains {only["line_count"]} lines of content.',
+            section=only["heading"],
+            guidance="Either develop this section or remove it — a heading with nothing "
+                     "under it draws attention to the gap.",
+        ))
+    elif len(bare) > 1:
+        names = ", ".join(f'"{s["heading"]}"' for s in bare)
+        issues.append(_issue(
+            1, "bare_sections", "Several sections are almost empty",
+            f"{names} each carry only a line or two of content.",
+            section=bare[0]["heading"],
+            guidance="Take them together: there is not yet enough on the page for a reader "
+                     "to judge this CV at all. Start with the education section, then the "
+                     "experience, and give each entry a few lines on what was actually "
+                     "done.",
+        ))
 
     if facts["too_short"]:
         issues.append(_issue(
@@ -223,6 +266,23 @@ def assess(facts: dict, target_role: str = "") -> dict:
             guidance="If that is your profile, give it a heading so a reader — and an ATS "
                      "— can see what it is. A profile works best as about three sentences "
                      "covering what you bring and where you are heading.",
+        ))
+
+    # A skills section containing nothing but character adjectives. Career
+    # Services: "the section should not be called strong. Since this person only
+    # added some adjectives about soft skills. The bot should say that the skills
+    # should be hard skills like technical skills and languages."
+    if facts.get("soft_skills_only_section"):
+        issues.append(_issue(
+            3, "soft_skills_only",
+            f'"{facts["soft_skills_only_section"]}" lists qualities, not skills',
+            "The section contains only descriptions of character — "
+            + ", ".join(facts.get("soft_skill_words") or [])[:120],
+            section=facts["soft_skills_only_section"],
+            guidance="This section is for hard skills: tools, software, methods and "
+                     "languages, each with the level you are at. Qualities like these "
+                     "cannot be verified by a reader and belong in an experience bullet "
+                     "that shows them happening.",
         ))
 
     # --- Tier 3: structure and consistency -----------------------------------
@@ -324,7 +384,12 @@ def assess(facts: dict, target_role: str = "") -> dict:
             # as guidance it is something the model has to render.
             # The reason is carried by report.deterministic_notes so it survives
             # verbatim; repeating it here produced it twice in one report.
-            guidance="Show a grade for every education entry, or for none of them.",
+            # No instruction. Career Services were explicit that the student
+            # decides: "like this we can still leave it up to the student what
+            # to do then, as it is not always a clear decision".
+            guidance="State what a recruiter is likely to conclude and leave the "
+                     "decision with the student. Do not tell them to add the missing "
+                     "grades or to remove the ones they have shown.",
         ))
     # The language ladder Career Services asked for. It has to be an issue rather
     # than a style note, otherwise it can neither be raised nor change the
@@ -377,14 +442,18 @@ def assess(facts: dict, target_role: str = "") -> dict:
     # at any tier - means it is not Strong, which is also what stops the report
     # contradicting itself between section 4 and section 5.
     status = {}
-    flagged = {i["section"] for i in issues if i["section"]}
+    flagged = {i["section"] for i in issues
+               if i["section"] and i["key"] not in DATE_KEYS} | no_bullet_sections
     for section in facts["sections"]:
         status[section["heading"]] = (
             "needs_attention" if section["heading"] in flagged else "strong"
         )
 
     return {
-        "key_areas": issues[:MAX_KEY_AREAS],
+        # "Gaps should only be addressed in section 5 - dates worth a look."
+        # They are still measured and still printed there; they just stop
+        # competing for a key-area slot and stop pulling a section out of Strong.
+        "key_areas": [i for i in issues if i["key"] not in DATE_KEYS][:MAX_KEY_AREAS],
         "all_issues": issues,
         "section_status": status,
         "dropped_from_key_areas": issues[MAX_KEY_AREAS:],

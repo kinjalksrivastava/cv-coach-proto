@@ -226,6 +226,39 @@ div[role="radiogroup"] > label p {{
   font-size: 0.87rem !important; color: var(--ink-soft) !important;
 }}
 
+/* --- expander ----------------------------------------------------------- */
+/* The bullet-examples dropdown had its label overlapping its own chevron, which
+   both reviewers sent back twice. Streamlit gives the summary row no explicit
+   line height and lets the caret sit over the text when the label is long, so
+   the row is laid out here instead of left to the default. */
+[data-testid="stExpander"] {{
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  background: var(--surface) !important;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}}
+[data-testid="stExpander"] summary,
+[data-testid="stExpander"] details > summary {{
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.55rem !important;
+  padding: 0.75rem 1rem !important;
+  line-height: 1.45 !important;
+  min-height: 2.9rem;
+  font-weight: 550 !important;
+  color: var(--ink) !important;
+  list-style: none;
+}}
+[data-testid="stExpander"] summary p {{
+  margin: 0 !important;
+  line-height: 1.45 !important;
+  overflow-wrap: anywhere;
+}}
+[data-testid="stExpander"] summary svg {{ flex: 0 0 auto; }}
+[data-testid="stExpander"] summary:hover {{ color: var(--hsg-green-dark) !important; }}
+[data-testid="stExpanderDetails"] {{ padding: 0 1rem 1rem 1rem; }}
+
 /* --- buttons ----------------------------------------------------------- */
 button[kind="primary"], [data-testid="stBaseButton-primary"] {{
   background: var(--hsg-green) !important; border: 1px solid var(--hsg-green) !important;
