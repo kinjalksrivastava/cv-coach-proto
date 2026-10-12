@@ -63,9 +63,33 @@ def _extract_pdf(file_bytes: bytes) -> tuple[str, dict]:
     return "\n".join(text_parts), meta
 
 
+def _is_word_list_item(paragraph) -> bool:
+    """
+    Is this paragraph one of Word's bullet- or number-list items?
+
+    Word stores the bullet as paragraph FORMATTING, not as a character, so
+    `paragraph.text` comes back without it. Career Services' own student CV
+    template is built that way, and the tool read it as a CV with no bullet
+    points anywhere - its canonical good example, told its bullets were missing.
+    Most students who upload a .docx will have used the same list button.
+    """
+    style = (getattr(paragraph.style, "name", "") or "").lower()
+    if style.startswith("list") or "bullet" in style:
+        return True
+    try:
+        properties = paragraph._p.pPr
+        return properties is not None and properties.numPr is not None
+    except Exception:
+        return False
+
+
 def _extract_docx(file_bytes: bytes) -> tuple[str, dict]:
     doc = Document(io.BytesIO(file_bytes))
-    parts = [p.text for p in doc.paragraphs]
+    # The bullet is put back as an ordinary character, so everything downstream
+    # sees the same shape it would in a PDF.
+    parts = [("- " + p.text.strip()) if (_is_word_list_item(p) and p.text.strip())
+             else p.text
+             for p in doc.paragraphs]
     fonts = set()
     for paragraph in doc.paragraphs:
         for run in paragraph.runs:

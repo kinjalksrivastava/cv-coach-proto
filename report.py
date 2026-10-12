@@ -782,10 +782,14 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     if hsg_picks:
         story.append(Paragraph(f'{number}. {plain(strings["hsg_heading"])}', h2))
         story.append(Paragraph(plain(strings["hsg_intro"]), body))
-        for name, what, url in hsg_picks:
-            # The URL is printed rather than linked: this PDF gets emailed on and
-            # printed, and a link that only works on screen strands the reader.
-            tail = f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>' if url else ""
+        for name, what, where, url in hsg_picks:
+            # Career Services' own CV-Section column, then the URL. The URL is
+            # printed rather than linked: this PDF gets emailed on and printed,
+            # and a link that only works on screen strands the reader.
+            tail = (f'<br/><font size="7.5" color="#55605A">'
+                    f'{plain(strings["hsg_where"])}: {plain(where)}</font>')
+            if url:
+                tail += f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>'
             story.append(Paragraph(f"<b>{plain(name)}</b> — {plain(what)}{tail}",
                                    bullet, bulletText="\u2022"))
 

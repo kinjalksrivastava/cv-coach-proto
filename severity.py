@@ -111,6 +111,18 @@ def assess(facts: dict, target_role: str = "") -> dict:
     for_role = f" for {role}" if role else ""
 
     # --- Tier 1: there is nothing for a reader to evaluate --------------------
+    if facts.get("no_sections_found"):
+        issues.append(_issue(
+            1, "no_sections", "No section headings could be read from this CV",
+            "The document has content but no heading this tool could identify, so "
+            "nothing below could be assessed section by section.",
+            guidance="This usually means the headings sit in a text box, a table or a "
+                     "second column, and did not survive the text extraction. An "
+                     "applicant tracking system reads the file the same way, so it would "
+                     "lose them too. Put the headings in the body of the document as "
+                     "ordinary text, one per line.",
+        ))
+
     if facts["has_no_bullets_anywhere"]:
         # Attached to every section that should have had bullets, not left
         # section-less. Without this the finding flagged nothing, so a CV with

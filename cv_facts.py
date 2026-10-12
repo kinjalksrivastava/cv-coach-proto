@@ -945,6 +945,12 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
         "missing_standard_sections": missing_standard,
         "missing_report_sections": _missing_report_sections(sliced, lowered, lang),
         "unlabelled_intro": _unlabelled_intro(text, sliced),
+        # A document with real content and no readable section headings at all.
+        # Usually a two-column or text-box layout whose headings do not survive
+        # extraction - which is exactly what an ATS will do to it too. Without
+        # this the report simply had nothing to say and did not say why.
+        "no_sections_found": (not sliced
+                              and len([l for l in text.splitlines() if l.strip()]) > 8),
         "table_count": meta.get("table_count", 0),
         "image_count": meta.get("image_count", 0),
         "section_order": [s["category"] for s in sliced],

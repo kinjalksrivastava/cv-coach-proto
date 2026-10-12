@@ -313,7 +313,8 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     recognised = len(heading_source) - len(headings)
     out_of_depth = recognised == 0 and len(heading_source) >= 3
     if headings and not out_of_depth:
-        problems.append(t["headings"].format(items=", ".join(headings[:3])))
+        problems.append(t["headings"].format(
+            items=", ".join(f'"{h}"' for h in headings[:3])))
     elif not headings:
         notes.append(t["std_headings"])
 

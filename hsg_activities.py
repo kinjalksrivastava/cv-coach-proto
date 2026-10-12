@@ -252,8 +252,10 @@ def suggestions_block(categories: list[str]) -> str:
             continue
         lines.append(f"  {category}:")
         for name, what, where, url in options:
-            link = f" [{url}]" if url else ""
-            lines.append(f"    - {name} — {what}. Belongs in: {where}.{link}")
+            # A ready-made markdown link. Handing the model a bare "[url]" got a
+            # bare "[url]" back, which reads as a blank to fill rather than a link.
+            label = f"[{name}]({url})" if url else name
+            lines.append(f"    - {label} — {what}. Belongs in: {where}.")
     if not lines:
         return ""
     return ("HSG OPTIONS RELEVANT TO THIS CV'S SECTIONS. Name one or two inside the "
