@@ -178,13 +178,6 @@ have it; (ii) if TAILORING is flagged, one sentence saying the CV does not yet s
 advert they uploaded. Do not name the specific missing terms here - they belong in the key \
 area - and never quantify the match: no percentage, no "matches 3 of 8", no score of any \
 kind, anywhere in the report.
-- "what_works_well": drawn ONLY from the MEASURED STRENGTHS list you are given. You may \
-reword each one for a student and you may use fewer, but you may not add one that is not \
-on that list, and if the list is empty you MUST return an empty array. Never praise the \
-mere presence of a section ("you have listed your interests" is not a strength). Above \
-all, never make a claim about how valuable, well regarded or sought-after something is - \
-"the St. Gallen Symposium, which is well regarded" and "tools valued in business \
-environments" are inventions: they are nowhere in the CV and nothing measured them.
 - "areas_to_improve": exactly one entry per KEY AREA you were given, in the same order. \
 {"title": the given title or a clearer rewording of it, "severity": "high" for tier 1-2, \
 "medium" for tier 3-4, "low" for tier 5, "detail": 1-2 sentences saying what is wrong and \
@@ -206,7 +199,7 @@ section level, not only in the summary. That point says where their existing mat
 already fits the advert; it never invents experience, and it never supplies the wording.
 
 Write everything in {language_name}. Return only the JSON object:
-{{"overall_impression": "...", "what_works_well": ["..."], "areas_to_improve": \
+{{"overall_impression": "...", "areas_to_improve": \
 [{{"title": "...", "severity": "...", "detail": "..."}}], \
 "sections": [{{"name": "...", "status": "...", "summary": "...", "points": ["..."]}}]}}"""
 
@@ -354,10 +347,30 @@ def deterministic_notes(facts: dict, lang: str = "en") -> list[dict]:
     return notes
 
 
+def _apply_status(sections: list[dict], computed: dict | None) -> list[dict]:
+    """
+    Force every section to the status measured in code.
+
+    The computed status was only ever an instruction in the prompt, and the
+    model kept overriding it: a section with no bullet points at all came back
+    labelled Strong, which both reviewers reported twice in two rounds. The
+    model writes the words; it does not get to decide the verdict.
+    """
+    if not computed:
+        return sections
+    lowered = {str(k).strip().lower(): v for k, v in computed.items()}
+    out = []
+    for section in sections:
+        name = str(section.get("name", "")).strip().lower()
+        out.append({**section, "status": lowered[name]} if name in lowered else section)
+    return out
+
+
 def render_markdown(data: dict, format_rows: list[dict], strings: dict,
                     date_findings: list[dict] | None = None,
-                    notes: list[str] | None = None,
-                    hsg_picks: list[tuple] | None = None) -> str:
+                    notes: list[dict] | None = None,
+                    hsg_picks: list[tuple] | None = None,
+                    section_status: dict | None = None) -> str:
     words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
     placed: dict = {}
     for note in notes or []:
@@ -374,18 +387,13 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     ]
     parts += ["", f"_{strings['criteria_note']}_"]
 
-    strengths = data.get("what_works_well") or []
-    parts += ["", f"### 3. {strings['works_well']}", ""]
-    if strengths:
-        parts += [f"- {str(item).strip()}" for item in strengths]
-    else:
-        # The heading stays even with nothing under it. Quietly dropping the
-        # section would read as an oversight; saying why is honest, and it is
-        # better than inventing praise to fill it.
-        parts.append(strings["no_strengths_yet"])
-
+    # Section 3, "What works well", is gone. Career Services asked for it to be
+    # removed three times across two review rounds: it padded the report with
+    # praise a student could not act on, and it pushed the real findings down
+    # the page. Strengths now live where they belong - a section marked Strong
+    # in the section feedback is the positive signal.
     improvements = data.get("areas_to_improve") or []
-    parts += ["", f"### 4. {strings['to_improve']}", ""]
+    parts += ["", f"### 3. {strings['to_improve']}", ""]
     if improvements:
         for item in improvements:
             if not isinstance(item, dict):
@@ -405,11 +413,12 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     # weak bullets the detection missed - was the one that did not get them.
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
-    sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
+    sections = _apply_status(
+        [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:
         # The overview table carries no Comment column: the detail follows
         # directly underneath, and Career Services asked for the duplication to go.
-        parts += ["", f"### 5. {strings['section_feedback']}", "",
+        parts += ["", f"### 4. {strings['section_feedback']}", "",
                   f"| {strings['section']} | {strings['status']} |", "| --- | --- |"]
         parts += [f"| {_clean(s.get('name'))} | {_status(s.get('status'), words)} |"
                   for s in sections]
@@ -428,7 +437,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
 
     # The last two sections are both conditional, so they are numbered as they
     # are emitted rather than with a fixed 6 and 7.
-    number = 6
+    number = 5
     if date_findings:
         parts += ["", f"### {number}. {strings['timeline']}", "",
                   strings["timeline_intro"], ""]
@@ -498,11 +507,18 @@ STRINGS = {
         "appendix": "Appendix: what a stronger bullet point looks like",
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
-        "hsg_heading": "HSG activities and certificates you may be interested in",
+        "hsg_heading": "Anything else from HSG worth adding?",
+        # Reworded on Career Services' instruction: the old version read as
+        # though each item had been chosen deliberately for this student, "or it
+        # makes it sound like this is the only relevant one". The section is a
+        # prompt to think, with examples underneath.
         "hsg_intro": (
-            "Picked for the role you're aiming at, and left out where your CV already "
-            "shows them. Nothing here is expected of you — take a look at whatever fits, "
-            "and ignore the rest."
+            "Before your appointment, it is worth asking yourself whether there is "
+            "anything else you have done at HSG that belongs on this CV: a club, a "
+            "certificate, a mentoring programme, a competition, a project with a "
+            "company. A few examples of what is on offer are below. They are examples, "
+            "not recommendations, and only what is genuinely relevant to the role you "
+            "are applying for is worth adding."
         ),
         "timeline": "Dates worth a look",
         "timeline_intro": (
@@ -554,11 +570,14 @@ STRINGS = {
         "appendix": "Anhang: So sieht ein stärkerer Bullet Point aus",
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
-        "hsg_heading": "HSG-Angebote und Zertifikate, die dich interessieren könnten",
+        "hsg_heading": "Gibt es noch etwas von der HSG, das dazugehört?",
         "hsg_intro": (
-            "Ausgewählt für die Rolle, auf die du hinarbeitest, und weggelassen, wo dein "
-            "Lebenslauf sie schon zeigt. Nichts davon wird von dir erwartet — schau dir "
-            "an, was passt, und lass den Rest."
+            "Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG "
+            "gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, "
+            "ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. "
+            "Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine "
+            "Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle "
+            "wirklich relevant ist."
         ),
         "timeline": "Daten, die auffallen könnten",
         "timeline_intro": (
@@ -592,8 +611,9 @@ FAILURE_TEXT = {
 
 def to_pdf(data: dict, format_rows: list[dict], strings: dict,
            date_findings: list[dict] | None = None,
-           notes: list[str] | None = None,
-           hsg_picks: list[tuple] | None = None) -> bytes | None:
+           notes: list[dict] | None = None,
+           hsg_picks: list[tuple] | None = None,
+           section_status: dict | None = None) -> bytes | None:
     """
     The report as a PDF. Built from the same dict the markdown comes from rather
     than by converting the markdown, so the tables survive. Returns None if
@@ -682,15 +702,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     ]))
     story += [table, Spacer(1, 3), Paragraph(plain(strings["criteria_note"]), small)]
 
-    strengths = data.get("what_works_well") or []
-    story.append(Paragraph(f'3. {plain(strings["works_well"])}', h2))
-    if strengths:
-        for item in strengths:
-            story.append(point(item))
-    else:
-        story.append(Paragraph(plain(strings["no_strengths_yet"]), body))
-
-    story.append(Paragraph(f'4. {plain(strings["to_improve"])}', h2))
+    story.append(Paragraph(f'3. {plain(strings["to_improve"])}', h2))
     improvements = data.get("areas_to_improve") or []
     if improvements:
         for item in improvements:
@@ -707,9 +719,10 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
                                              strings["bullet_pointer"])), small))
 
-    sections = [s for s in (data.get("sections") or []) if isinstance(s, dict)]
+    sections = _apply_status(
+        [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:
-        story.append(Paragraph(f'5. {plain(strings["section_feedback"])}', h2))
+        story.append(Paragraph(f'4. {plain(strings["section_feedback"])}', h2))
         overview = [[Paragraph(f'<b>{plain(strings["section"])}</b>', small),
                      Paragraph(f'<b>{plain(strings["status"])}</b>', small)]]
         for section in sections:
@@ -739,7 +752,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         for note in remaining:
             story.append(Paragraph(plain(note.replace("**", "")), body))
 
-    number = 6
+    number = 5
     if date_findings:
         story.append(Paragraph(f'{number}. {plain(strings["timeline"])}', h2))
         story.append(Paragraph(plain(strings["timeline_intro"]), body))

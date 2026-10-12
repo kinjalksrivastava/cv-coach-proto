@@ -438,12 +438,12 @@ if st.session_state["cv_text"] is None:
             hsg_picks = hsg_activities.closing_suggestions(target_role, cv_text)
             report_text = report.render_markdown(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"], notes, hsg_picks,
+                facts["date_findings"], notes, hsg_picks, ranked["section_status"],
             )
             st.session_state["report_text"] = report_text
             st.session_state["report_pdf"] = report.to_pdf(
                 report_data, st.session_state["format_rows"], strings,
-                facts["date_findings"], notes, hsg_picks,
+                facts["date_findings"], notes, hsg_picks, ranked["section_status"],
             )
             st.session_state["show_bullet_examples"] = True
         else:

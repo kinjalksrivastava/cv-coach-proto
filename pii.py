@@ -105,6 +105,18 @@ ID_NUMBER_RE = re.compile(
     r"driver'?s licen[cs]e|führerausweis|personalnummer)\b.*$"
 )
 
+# A line that is nothing but a single full date. On a CV that is a date of
+# birth: every other date belongs to an entry and is written as a range or sits
+# beside a role. Career Services found "12. August 1990" surviving under a
+# "PERSÖNLICHE DATEN" heading because nothing on the line said "Geburtsdatum",
+# and asked for absolute removal of personal details.
+BARE_DATE_LINE_RE = re.compile(
+    r"^\s*(?:geb\.?|\*)?\s*"
+    r"(?:\d{1,2}[.\s/-]\s*(?:\d{1,2}|[A-Za-zÄÖÜäöü]{3,10})[.\s/-]\s*(?:19|20)\d{2}"
+    r"|(?:19|20)\d{2}[-/]\d{1,2}[-/]\d{1,2})"
+    r"\s*\.?\s*$"
+)
+
 DOB_KEYWORDS = re.compile(
     r"(date of birth|d\.o\.b\.?|\bdob\b|born on|born in|geburtsdatum|geboren am|geb\.)",
     re.IGNORECASE,
@@ -236,15 +248,18 @@ def _deterministic_pass(text: str) -> tuple[str, list[str]]:
 
     # Date of birth must run BEFORE phones: 14.03.2001 is otherwise a plausible
     # phone-shaped digit run, and whichever pattern runs first consumes it.
-    if DOB_KEYWORDS.search(working):
-        lines = []
-        for line in working.splitlines():
-            if DOB_KEYWORDS.search(line):
-                line = DATE_NEAR_RE.sub(_placeholder("date_of_birth"), line)
-            lines.append(line)
-        new = "\n".join(lines)
-        if new != working:
-            working, _ = new, found.append("date_of_birth")
+    lines, dob_hit = [], False
+    for line in working.splitlines():
+        if DOB_KEYWORDS.search(line):
+            replaced = DATE_NEAR_RE.sub(_placeholder("date_of_birth"), line)
+            dob_hit = dob_hit or replaced != line
+            line = replaced
+        elif BARE_DATE_LINE_RE.match(line):
+            line, dob_hit = _placeholder("date_of_birth"), True
+        lines.append(line)
+    if dob_hit:
+        working = "\n".join(lines)
+        found.append("date_of_birth")
 
     working, hit = _sub_phones(working)
     if hit:
@@ -503,6 +518,43 @@ def _redact_names(text: str, names: list[str]) -> tuple[str, bool]:
 # --- public entry point -------------------------------------------------------
 
 
+def _drop_personal_sections(text: str) -> tuple[str, bool]:
+    """
+    Remove everything under a "Personal Details" heading, wherever it sits.
+
+    Nothing under that heading is CV content worth coaching - it is date of
+    birth, nationality, civil status, address, a photo caption. Career Services
+    were explicit twice: a student's second personal-details block survived and
+    the bot could still quote it back in chat, and separately, "since personal
+    details are removed when parsing, I don't think it should comment on them".
+    So the whole block goes, rather than each field being chased by its own
+    pattern.
+
+    Stops at the next recognised heading. A two-column CV interleaves its
+    columns, so the block may be short - the field patterns still run over the
+    rest of the document and catch what is left.
+    """
+    lines = text.splitlines()
+    out, removed, dropping = [], False, False
+    for line in lines:
+        entry = heading_lookup.identify(line.strip())
+        if entry and entry["display"] == "Personal Details":
+            dropping, removed = True, True
+            out.append(_placeholder("contact_block"))
+            continue
+        if dropping:
+            if entry:                       # the next real section starts here
+                dropping = False
+                out.append(line)
+            elif line.strip():
+                continue                    # inside the block: drop it
+            else:
+                out.append(line)
+            continue
+        out.append(line)
+    return "\n".join(out), removed
+
+
 def strip_pii(text: str, language: str = "en") -> dict:
     """
     Redacts a document. Takes no client and makes no network call by design:
@@ -522,6 +574,11 @@ def strip_pii(text: str, language: str = "en") -> dict:
 
     categories: list[str] = []
     ner_available = pii_local.available()
+
+    # Before anything else: a personal-details section anywhere in the document.
+    text, dropped_personal = _drop_personal_sections(text)
+    if dropped_personal:
+        categories.append("contact_block")
 
     header_lines, body_lines = split_contact_block(text)
     header_text = "\n".join(header_lines)
