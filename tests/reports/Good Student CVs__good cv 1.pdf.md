@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Titel und Beschreibung versehen, und Sie vermeiden nicht belegbare Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielposition oder Stellenanzeige nachreichen.
+Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Titel und Beschreibung versehen, und Sie vermeiden nicht belegbare Eigenschaftswörter. Die Rückmeldungen beziehen sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,12 +18,12 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf das, was Sie getan haben, wie Sie es umgesetzt haben und welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
-- 🔴 **Fehlende Ergebnisse und Kompetenzen in Bullet Points**  
-  Ergänzen Sie bei den Bullet Points, wo möglich, den Nutzen oder das Ergebnis Ihrer Tätigkeit – etwa, was sich durch Ihr Handeln verändert hat oder welche Fähigkeit Sie dabei unter Beweis gestellt haben. Zahlen oder Resultate sind hilfreich, wenn sie belegbar sind, aber der Fokus liegt auf der Kompetenz.
-- 🟠 **Fehlender Abschnitt zu Skills & Languages**  
-  Fügen Sie einen eigenen Abschnitt für Skills & Languages hinzu, um Ihre Sprachkenntnisse und technischen Fähigkeiten übersichtlich und mit Niveauangabe darzustellen.
+- 🔴 **Bullet Points: Aufgaben statt Beitrag**  
+  Überarbeiten Sie die Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf das, was Sie getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder Team relevant war.
+- 🔴 **Bullet Points: Wenig Ergebnisse oder Veränderungen sichtbar**  
+  Ergänzen Sie bei den Bullet Points in der Berufserfahrung, wo möglich, konkrete Ergebnisse oder Veränderungen, die Sie bewirkt haben. Zeigen Sie, welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben – Zahlen oder Resultate nur, wenn Sie diese belegen können.
+- 🟠 **Fehlende Skills & Languages Section**  
+  Fügen Sie eine eigene Sektion für Skills & Languages hinzu, um Ihre Sprachkenntnisse und IT-Kompetenzen übersichtlich und mit Niveauangabe darzustellen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -35,33 +35,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | ARBEITSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
 | AUSSERCURRICULARE AKTIVITÄTEN | 🟢 Stark |
 | ZUSÄTZLICHE INFORMATIONEN | 🟢 Stark |
+| Skills & Languages | ⚪ Fehlt |
 | Kurzprofil | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Ausbildungslaufbahn ist lückenlos, aktuell und mit Noten sowie relevanten Zusatzaktivitäten (z.B. Coaching-Programm, Maturaarbeit) belegt.
-
-**ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
-
-- Überarbeiten Sie die Bullet Points so, dass sie Ihren persönlichen Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen sichtbar machen – nicht nur die Aufgabe selbst.
-- Wenn Sie für eine bestimmte Zielposition optimieren möchten, prüfen Sie, welche Erfahrungen und Fähigkeiten aus Ihren bisherigen Tätigkeiten besonders relevant sind und heben Sie diese gezielt hervor.
+- Die Ausbildung enthält alle wichtigen Angaben, inklusive Noten und besonderer Leistungen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Sie belegen mit konkreten Rollen und Aufgaben Ihr Engagement und Ihre Verantwortungsübernahme außerhalb des Studiums.
+- Die Sektion hebt aktive Rollen und Verantwortlichkeiten außerhalb des Studiums klar hervor.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Sie listen Ihre Interessen, Sprachkenntnisse und IT-Kompetenzen klar und ohne unbelegte Eigenschaftswörter auf.
+- Die Angaben sind sachlich und konzentrieren sich auf überprüfbare Fakten.
+
+**Skills & Languages** ⚪ Fehlt
+
+- Fügen Sie eine Skills & Languages Sektion hinzu, um Ihre Sprachkenntnisse (mit Niveau, idealerweise nach CEFR: A1–C2) und IT-Kompetenzen (mit Angabe des Kenntnisstands, z.B. 'MS Office (fortgeschritten)') übersichtlich darzustellen.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls Sie ein Kurzprofil ergänzen möchten, nutzen Sie es, um in 2–3 Sätzen Ihre Alleinstellungsmerkmale und Ihre Zielrichtung für die nächste Position zu beschreiben.
+- Falls Sie ein Kurzprofil ergänzen möchten, konzentrieren Sie sich auf das, was Sie als Kandidat für Ihre Wunschposition besonders macht und wohin Sie sich entwickeln möchten.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) absolviert haben, können Sie diese hier aufführen.
+- Falls Sie relevante Zertifikate oder Zusatzkurse (z.B. Data Science, Nachhaltigkeit, Sprachen) absolviert haben, können Sie diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

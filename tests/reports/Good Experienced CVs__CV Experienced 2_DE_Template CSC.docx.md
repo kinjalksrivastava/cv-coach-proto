@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist strukturiert, weist eine lückenlose Chronologie auf und enthält keine formalen Fehler. Die wichtigsten Stationen Ihrer Karriere sind klar dargestellt, und Ihre Kompetenzen im Vertriebs- und Einkaufsbereich kommen deutlich zum Ausdruck. Da Sie keinen Zieljob angegeben haben, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es fällt auf, dass keinerlei Erfahrung mit KI oder KI-Tools erwähnt wird – falls Sie hier Kenntnisse oder Berührungspunkte haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist strukturiert, die Zeitachse ist lückenlos und die Angaben zu Daten und Rechtschreibung sind konsistent. Die wichtigsten Abschnitte sind vorhanden und die Berufserfahrung ist umfangreich dargestellt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es findet sich aktuell kein Hinweis auf KI-Kenntnisse oder Erfahrungen mit KI-Tools – falls Sie hier relevante Erfahrungen haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende Funktionsbezeichnungen in der Berufserfahrung**  
-  Geben Sie bei jeder Station in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben. Nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
-- 🟠 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Formulieren Sie Bullet Points so um, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen und die dahinterstehenden Kompetenzen zeigen. Der Fokus sollte auf den übertragbaren Fähigkeiten liegen.
-- 🟠 **Fehlende Ergebnisse und Kompetenzen in den Bullet Points**  
-  Ergänzen Sie bei den meisten Bullet Points, was Sie konkret erreicht oder verändert haben und welche Kompetenzen Sie dabei eingesetzt haben. Wo möglich, können Sie auch Ergebnisse oder Veränderungen nennen, sofern diese belegbar sind.
+- 🔴 **Fehlende Funktionsbezeichnung in einem Eintrag der Berufserfahrung**  
+  Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion oder Rolle an, nicht nur den Arbeitgeber oder Zeitraum. Nur so kann ein Leser Ihre Verantwortung und Seniorität nachvollziehen.
+- 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
+  Formulieren Sie Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihre konkrete Vorgehensweise und die dahinterstehenden Kompetenzen zeigen. Wo möglich, ergänzen Sie das Ergebnis oder den Nutzen für das Unternehmen.
+- 🔴 **Fehlende Ergebnisse und Kompetenzen in den meisten Bullet Points**  
+  Überarbeiten Sie die Bullet Points, indem Sie jeweils beschreiben, was Sie getan haben, wie Sie es umgesetzt haben und warum es relevant war. Wo ein messbares Ergebnis vorliegt, können Sie dieses ergänzen – aber nur, wenn es belegbar ist.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für Studierende steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, Sie verfügen bereits über viele Jahre einschlägige Berufspraxis, wie es bei Ihnen der Fall ist. Prüfen Sie, ob die aktuelle Reihenfolge für Ihre Zielposition sinnvoll ist.
+  Für Studierende steht die Ausbildung normalerweise vor der Berufserfahrung, es sei denn, Sie verfügen bereits über viele Jahre einschlägige Berufspraxis.
 - 🟡 **Interessen ohne Details**  
-  Fügen Sie bei Interessen und Aktivitäten kurze Angaben hinzu, wie oft, auf welchem Niveau oder in welchem Rahmen Sie diese verfolgen. So wird Ihr Engagement greifbarer.
+  Fügen Sie bei Interessen und ehrenamtlichen Tätigkeiten Details hinzu: Was genau machen Sie, wie oft, und auf welchem Niveau? So wird Ihr Engagement greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,34 +45,35 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Ihr Profil ist prägnant und vermittelt auf den ersten Blick Ihre Spezialisierung und Ihre Alleinstellungsmerkmale.
+- Das Profil vermittelt auf den ersten Blick Ihre Spezialisierung, Branchenerfahrung und zentrale Kompetenzen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei allen Stationen, bei denen nur das Unternehmen oder die Zeiträume genannt sind, die genaue Funktionsbezeichnung (z.B. "Sales Manager", "Einkäuferin").
-- Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen, die eingesetzten Kompetenzen und – wo möglich – erzielte Ergebnisse oder Veränderungen zeigen.
-- Prüfen Sie, ob Sie für die Zielposition relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference oder dem St. Gallen Symposium (https://shsg.ch/clubs) ergänzen möchten, sofern Sie dort in einer bezahlten Rolle tätig waren.
+- Ergänzen Sie bei jedem Eintrag die genaue Funktionsbezeichnung, insbesondere beim Sabbatical, damit die Rolle und Verantwortung klar wird.
+- Überarbeiten Sie Bullet Points, die nur Aufgaben beschreiben, indem Sie jeweils auch Ihre Vorgehensweise und die dahinterstehenden Kompetenzen darstellen.
+- Fügen Sie, wo möglich, konkrete Ergebnisse oder Veränderungen hinzu, um Ihre Wirkung und den Nutzen für das Unternehmen sichtbar zu machen.
+- Falls Sie relevante Erfahrungen aus HSG-Engagements wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) haben, können Sie diese als bezahlte Tätigkeit unter Berufserfahrung ergänzen – aber nur, wenn sie wirklich zutreffen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die wichtigsten Bildungsstationen sind vollständig und übersichtlich aufgeführt.
+- Die Angaben zu Abschlüssen, Institutionen und Zeiträumen sind vollständig und konsistent.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie bei Ihren Aktivitäten (z.B. Besuchsdienst beim Roten Kreuz) konkreter, wie oft und in welchem Umfang Sie diese ausgeübt haben und welche Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
-- Falls Sie als Assessment Guide (https://shsg.ch/services) tätig waren, können Sie dies als Engagement ergänzen.
+- Beschreiben Sie bei ehrenamtlichen Tätigkeiten genauer, wie oft und in welchem Umfang Sie aktiv waren, und welche konkreten Aufgaben oder Projekte Sie übernommen haben.
+- Falls Sie als Assessment Guide (SHSG) aktiv waren, können Sie dies hier ergänzen – aber nur, wenn es zutrifft.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Tools sind präzise und verzichten auf schwer überprüfbare Adjektive.
+- Die Angaben zu Sprachen und IT-Tools sind präzise und verzichten auf nicht belegbare Charaktereigenschaften.
 
 **INTERESSEN** 🟢 Stark
 
-- Ihre Interessen sind konkret benannt und geben einen Einblick in Ihre persönlichen Leidenschaften.
+- Die Interessen geben einen Einblick in Ihre persönlichen Aktivitäten und Leidenschaften.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder HSG-Zusatzqualifikationen (z.B. das Certificate in Data Science Fundamentals: https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben haben, können Sie diese hier aufführen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) absolviert haben, können Sie diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -80,8 +80,15 @@ _ENDPOINT = (
 )
 _SEPARATOR = r"\s*(?:[-–—]{1,2}|\bto\b|\bbis\b|\buntil\b)\s*"
 
+# An open-ended range written as a prefix rather than with a separator: "seit
+# 09/2022", "since March 2023", "ab 2024", "from Sep 2022". Without this the
+# line carried no range at all, so it was not an entry, so the whole entry-level
+# family of checks skipped it in silence.
+_OPEN_PREFIX = r"(?:seit|since|ab|from|desde|depuis)\s+"
+
 RANGE_RE = re.compile(
-    rf"(?P<start>{_ENDPOINT}){_SEPARATOR}(?P<end>{_ENDPOINT}|(?:{PRESENT_WORDS}))",
+    rf"(?:(?P<open>{_OPEN_PREFIX})(?P<open_start>{_ENDPOINT})(?!{_SEPARATOR})"
+    rf"|(?P<start>{_ENDPOINT}){_SEPARATOR}(?P<end>{_ENDPOINT}|(?:{PRESENT_WORDS})))",
     re.IGNORECASE,
 )
 
@@ -133,12 +140,44 @@ def parse_endpoint(token: str, *, is_end: bool) -> tuple[int, bool]:
     return 0, False
 
 
+_BARE_ENDPOINT_LINE = re.compile(rf"^\s*({_ENDPOINT})\s*$")
+
+
+def join_split_ranges(text: str) -> str:
+    """
+    Rejoin a range that a table extraction split across two lines.
+
+    A CV laid out as a table gives one cell per line, so "09/2022" and "08/2024"
+    arrive as two separate lines and no line carries a range - which means no
+    entry, which means the entry-level checks skip the section in silence.
+    """
+    lines = text.splitlines()
+    out, index = [], 0
+    while index < len(lines):
+        first = _BARE_ENDPOINT_LINE.match(lines[index])
+        second = (_BARE_ENDPOINT_LINE.match(lines[index + 1])
+                  if first and index + 1 < len(lines) else None)
+        if first and second:
+            out.append(f"{first.group(1)} - {second.group(1)}")
+            index += 2
+            continue
+        out.append(lines[index])
+        index += 1
+    return "\n".join(out)
+
+
 def extract_ranges(text: str) -> list[dict]:
     """Every date range in the text, sorted by start. Malformed ones are skipped."""
     ranges = []
     for match in RANGE_RE.finditer(text):
-        start_idx, start_explicit = parse_endpoint(match.group("start"), is_end=False)
-        end_idx, end_explicit = parse_endpoint(match.group("end"), is_end=True)
+        if match.group("open_start"):
+            start_idx, start_explicit = parse_endpoint(match.group("open_start"),
+                                                       is_end=False)
+            today = date.today()
+            end_idx, end_explicit = _month_index(today.year, today.month), True
+        else:
+            start_idx, start_explicit = parse_endpoint(match.group("start"), is_end=False)
+            end_idx, end_explicit = parse_endpoint(match.group("end"), is_end=True)
         if not start_idx or not end_idx or end_idx < start_idx:
             continue
         ranges.append({

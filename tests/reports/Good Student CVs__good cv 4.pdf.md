@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. The section headings, dates, and spelling are consistent throughout, and your professional experience entries all include both a role title and a description. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. If you have any experience or coursework involving AI, consider adding it, as nothing currently on your CV highlights this area.
+Your CV is well-structured, fits comfortably on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent throughout, and your professional experience entries all include both a role title and a description. The feedback below focuses on structure and completeness, as no specific target role or job description was provided—if you add a target, I can give more tailored advice. If you have any experience or coursework involving AI, consider adding it, as nothing currently on your CV highlights this area.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several bullets in your professional experience section state only the tasks you performed, without showing your specific contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you want to showcase.
+  Several bullets in your professional experience section state only the tasks you performed, without showing your specific contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you developed.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Nearly all your experience bullets list activities but do not show the outcome, change, or skill developed. For each, clarify what you did, how you did it, and what skill or result came from it. Add outcomes where you can genuinely support them.
+  Nearly all your experience bullets describe what you did but do not show the outcome, change, or skill involved. For each, clarify what you achieved or improved, and connect it to a skill relevant to future roles. Add results where you can genuinely support them.
 - 🟠 **Bullet punctuation is inconsistent**  
   Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 - 🟡 **Grades need clarifying**  
-  Your Bachelor's grade is listed as '5' without a maximum. Write it as 5.00 / 6.00 so that international readers can understand your achievement.
+  Your Bachelor's grade is listed as '5' without the maximum. Write it as 5.00 / 6.00 so international readers can interpret it correctly.
 - 🟡 **Languages are listed without a level**  
   For each language, add a plain label (Basic, Intermediate, Advanced, Fluent) and consider including the CEFR level (A1-C2) for clarity, as this is the standard recruiters recognise.
 
@@ -44,23 +44,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Clarify your Bachelor's grade by writing it as 5.00 / 6.00, so international readers can interpret it correctly.
-- If you have completed any additional qualifications, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), you could add them here if relevant to your goals.
-- If you participated in the HSG Mentoring Programme, consider adding it as a bullet under your degree, naming your mentor's industry if relevant.
+- Rewrite your Bachelor's grade as 5.00 / 6.00 so it is clear to readers outside Switzerland.
+- If you have completed any relevant HSG certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them if they are relevant to your future applications.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework bullets that currently state only duties or tasks (e.g. 'Channel Owner for UBS Digital Banking within the team, driving high-quality campaign execution') to highlight what you specifically did, how you did it, and what skill or impact resulted.
-- For each bullet, clarify the skill you demonstrated and, where possible, add a concrete outcome or result that you can support.
-- Ensure all bullet points use consistent punctuation, either ending all with a full stop or none.
+- Rework each bullet to show not just what you did, but how you did it and what skill or outcome resulted. For example, if you improved a process, explain how and what changed as a result.
+- Where you can genuinely support it, add a result or outcome to your bullets—such as an increase in engagement, efficiency, or another measurable change.
+- Make sure your bullet punctuation is consistent throughout this section.
 
 **EXTRACURRICULAR ACTIVITY** 🟢 Strong
 
-- This section works well because it demonstrates initiative and collaboration through concrete examples of event organisation and volunteering.
+- You show clear evidence of initiative and collaboration by describing your role in organising sustainability-focused events and the Oikos Start-up Night.
 
 **SKILLS & INTERESTS** 🟠 Needs attention
 
-- If you have completed relevant technical skills training, such as Bloomberg Market Concepts (BMC), you could add it here or in a Courses and Certificates section.
+- If you have completed relevant skills-based certifications, such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), you could add them here or in a Courses and Certificates section.
+- For each technical skill or tool, consider adding a level (e.g., Intermediate, Advanced) to help recruiters understand your proficiency.
 
 **Profile** ⚪ Missing
 
@@ -68,7 +68,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant certificates, such as the Certificate in Data Science Fundamentals (DSF), Certificate in Integrative Sustainability Management (SuM-HSG), or Bloomberg Market Concepts (BMC), consider adding them here.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here to showcase your additional skills.
 
 ### 5. Dates worth a look
 

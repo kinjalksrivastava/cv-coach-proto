@@ -21,11 +21,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 - 🔴 **Fehlende Funktionsbezeichnung in einem Berufserfahrungseintrag**  
   Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
 - 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Kompetenzen oder Ergebnisse hervorheben.
+  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
   Für einen studentischen Lebenslauf empfiehlt sich, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen über langjährige, direkt relevante Berufserfahrung.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder idealerweise CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
+  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
 - 🟡 **Interessen ohne Detailangaben**  
   Ergänzen Sie bei Ihren Interessen, wie oft, auf welchem Niveau oder in welchem Rahmen Sie diese ausüben, um ein klareres Bild Ihrer persönlichen Aktivitäten zu vermitteln.
 
@@ -45,29 +45,29 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil vermittelt auf den ersten Blick Ihre Spezialisierung und Ihre Motivation für neue Technologien.
+- Das Profil vermittelt auf den Punkt Ihre Spezialisierung und Ihre Motivation für neue Technologien.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei "Transformation NAME REDACTED" die genaue Rolle/Funktion, die Sie in diesem Zeitraum innehatten, damit Ihre Verantwortung und Ihr Beitrag klar werden.
-- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. "Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben"), indem Sie Ihren konkreten Beitrag, das Vorgehen und die daraus gewonnenen Kompetenzen oder Ergebnisse herausstellen.
+- Ergänzen Sie beim Eintrag 'Transformation NAME REDACTED' die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
+- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten oder Ergebnisse herausstellen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind mit Maximalwert angegeben, was internationale Vergleichbarkeit ermöglicht.
+- Die Noten sind transparent und international verständlich angegeben, und relevante Kurse sowie das Auslandssemester sind genannt.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei Ihren Interessen (z.B. Mentoring, Sport, Musik) konkrete Angaben hinzu: Wie oft, auf welchem Niveau oder in welchem Rahmen üben Sie diese aus? Das macht Ihr Engagement greifbarer.
+- Fügen Sie bei Ihren Interessen (z.B. Mentoring, Sport, Musik) Details hinzu: Wie oft, auf welchem Niveau oder in welchem Rahmen üben Sie diese aus? Das macht Ihr Engagement und Ihre Persönlichkeit greifbarer.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei jeder Sprache und jedem IT-Tool ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
-- Falls Sie weitere relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese im optionalen Abschnitt "Kurse und Zertifikate" aufführen.
+- Ergänzen Sie bei jeder Sprache und technischen Fähigkeit ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
+- Falls Sie zusätzliche relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese im optionalen Abschnitt 'Kurse und Zertifikate' aufführen.
 
 **INTERESSEN** 🟢 Stark
 
-- Sie geben bei Ihren Interessen (z.B. Schwimmen mit Teilnahme an der Seeüberquerung, Chorsingen) bereits Details zu Häufigkeit und Kontext an.
+- Die Interessen zeigen Engagement und geben einen persönlichen Einblick durch konkrete Aktivitäten.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 

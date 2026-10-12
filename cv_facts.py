@@ -21,14 +21,14 @@ import re
 from difflib import SequenceMatcher
 
 # A line that STARTS with one of these is a bullet - "- Did benchmark research".
-BULLET_CHARS = "-–—•·*▪◦‣"
+BULLET_CHARS = "-–—•·*▪◦‣→▸▹►‣⁃∙"
 BULLET_LINE = re.compile(rf"^\s*[{re.escape(BULLET_CHARS)}]\s+\S")
 
 # Mid-line, only true bullet glyphs count. A spaced hyphen is a date or title
 # separator far more often than a bullet ("Sep 2024 - Jun 2025 St Gallen
 # Symposium"), and counting those entry lines as bullets made every section
 # report zero entries - while reporting the job lines themselves as bullets.
-INLINE_BULLET_CHARS = "•·▪◦‣"
+INLINE_BULLET_CHARS = "•·▪◦‣→▸▹►∙"
 INLINE_BULLET = re.compile(rf"\s[{re.escape(INLINE_BULLET_CHARS)}]\s+\S")
 
 # One date parser for the whole project - see guardrails/dates.py. Keeping a
@@ -265,12 +265,20 @@ IMPACT_MARKER = re.compile(
 )
 
 
+INDENTED_LINE = re.compile(r"^(?:\t| {2,})\S")
+
+
 def _is_bullet(line: str) -> bool:
     # An entry carries its own dates, so a date-bearing line is never a bullet
     # whatever punctuation it happens to contain.
     if DATE_RANGE.search(line):
         return False
-    return bool(BULLET_LINE.match(line)) or bool(INLINE_BULLET.search(line))
+    if BULLET_LINE.match(line) or INLINE_BULLET.search(line):
+        return True
+    # No glyph, but indented and long enough to be a sentence rather than a
+    # column. Plenty of CVs indent instead of bulleting, and reading those as
+    # "no bullet points anywhere" is the worst answer this tool gives.
+    return bool(INDENTED_LINE.match(line)) and len(line.strip()) > 25
 
 
 def _bullet_text(line: str) -> str:
@@ -374,6 +382,15 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
                 if candidate and not _is_bullet(candidate) and not _dated(candidate):
                     title = candidate
                     break
+            if not title and not DATE_RANGE.sub("", line).strip(" \t,|–—-"):
+                # The line carries dates and nothing else, which happens when a
+                # two-column CV extracts its date column first. The title is
+                # below it, not above.
+                for ahead in range(offset + 1, min(offset + 3, len(body))):
+                    candidate = body[ahead].strip()
+                    if candidate and not _is_bullet(candidate) and not _dated(candidate):
+                        title = candidate
+                        break
             if not title:
                 # The employer sits on its own DATED line with the roles beneath
                 # it, each carrying its own range - the layout Career Services
@@ -442,6 +459,22 @@ DEGREE_GRADE_PHRASE = re.compile(
 )
 
 
+# Words that make a line a job title rather than an organisation. A freelance
+# or self-employed entry has a role and no employer, and demanding two
+# comma-separated parts reported the role as missing when it was the only thing
+# on the line.
+ROLE_WORDS = re.compile(
+    r"\b(analyst|manager|consultant|intern|internship|assistant|associate|advisor|"
+    r"adviser|engineer|developer|designer|researcher|scientist|coordinator|"
+    r"director|officer|specialist|trainee|tutor|teacher|lead|head|founder|"
+    r"freelance|self-employed|volunteer|president|treasurer|secretary|chair|"
+    r"ambassador|representative|supervisor|administrator|controller|auditor|"
+    r"praktikant\w*|werkstudent\w*|assistenz|assistent\w*|berater\w*|"
+    r"mitarbeiter\w*|leiter\w*|leitung|vorstand|kassier\w*|präsident\w*|"
+    r"betreuer\w*|tutor\w*|dozent\w*|selbstständig|freiberuflich)\b",
+    re.IGNORECASE)
+
+
 def _is_degree(value: str) -> bool:
     lowered = value.lower()
     if any(token in lowered for token in _DOCTORATE):
@@ -478,7 +511,12 @@ def _has_role_title(entry: dict) -> bool:
     )
     without_dates = DATE_RANGE.sub("", combined).strip(" ,-–—|")
     parts = [p.strip() for p in re.split(r"[|,–—]|\s-\s", without_dates) if p.strip()]
-    return len(parts) >= 2 and all(len(p) > 2 for p in parts[:2])
+    if len(parts) >= 2 and all(len(p) > 2 for p in parts[:2]):
+        return True
+    # One part only: a role with no employer, which freelance and self-employed
+    # entries legitimately have. Accepted when the line names a function rather
+    # than an organisation.
+    return len(parts) == 1 and bool(ROLE_WORDS.search(parts[0]))
 
 
 CEFR_TOKEN = re.compile(r"\b[ABC][12]\b")
@@ -660,7 +698,7 @@ def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
     }
 
 
-def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "",
+def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None = "",
             lang: str = "en", bullet_reviewer=None, date_reader=None,
             doc_language: str = "en") -> dict:
     """
@@ -670,6 +708,12 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
     import grading
     import date_review
     from guardrails import dates as date_check
+    # A table-extracted CV splits a date range across two lines; rejoin those
+    # before anything looks for entries. Kept as a new local rather than
+    # rebinding the parameter: a loop variable shadowing this one silently
+    # pointed every later check at the last bullet on the page, and the test
+    # suite now refuses any rebinding at all.
+    text = date_check.join_split_ranges(document)
     sliced = _split_sections(text, sections)
 
     # Every dated range in the document, used to tell a real gap from a period

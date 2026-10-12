@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is clear and well-structured, with consistent headings and dates, and no unexplained gaps in your timeline. However, it is currently very brief and does not yet provide enough detail for a recruiter to understand your skills, experiences, or achievements. There are no bullet points describing what you did in your studies, extracurriculars, or other activities, and several sections are almost empty. No experience section is present, and the CV does not yet fill a full page. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is clear and well-structured, with consistent headings and dates, and no unexplained gaps in your timeline. However, it is currently very brief and does not yet provide enough detail for a recruiter to understand your skills, experiences, or achievements. There are no bullet points describing what you did in your studies, extracurriculars, or other activities, and several sections are almost empty. No experience section is present, and the CV does not yet fill a full page. Nothing on the CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -23,7 +23,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Several sections are almost empty**  
   Expand the content in your education and extracurricular sections by adding a few lines for each entry, focusing on your responsibilities, achievements, and skills developed.
 - 🔴 **The CV does not fill a page**  
-  There is space to include more detail about your experiences and skills. Aim to provide enough information to give a full picture of your background.
+  There is space to include more detail about your experiences and skills. Aim to provide enough information for a recruiter to understand your background and potential.
 - 🟠 **Dates give the year but not the month**  
   Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can accurately understand the duration of your experiences.
 - 🟡 **No Experience section found**  
@@ -51,12 +51,13 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 **Master’s degree in “Marketing Management”** 🟠 Needs attention
 
 - Add bullet points describing your coursework, projects, thesis topic, or any practical experiences gained during your master's studies.
-- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/), consider adding it as a bullet under your degree, naming your mentor's industry if relevant.
-- Include the month and year for the start and expected end of your degree.
+- Include any relevant HSG options, such as the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/), if you participated.
+- Expand this section to give a clearer picture of your academic focus and skills developed.
 
 **Master certificate “Managmg Climate Solutions”** 🟠 Needs attention
 
-- Add bullet points explaining what you studied, any projects or case studies completed, and the skills or knowledge gained from this certificate.
+- Add bullet points explaining what you did as part of this certificate—such as specific projects, case studies, or skills acquired.
+- Describe any practical applications or outcomes from your coursework.
 
 **Bachelor’s degree in “Business Administration”** 🟢 Strong
 
@@ -64,35 +65,39 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Specialisation in “Marketing”** 🟢 Strong
 
-- The specialisation is presented in a way that aligns with your academic background.
+- The specialisation is clearly linked to your degree and overall academic profile.
 
 **Language Exchange for 1.5 months in Bordeaux, France** 🟢 Strong
 
-- The exchange is stated with location and duration, showing international exposure.
+- The exchange is clearly stated and supports your language skills.
 
 **Language Exchange for 1.5 months in Santa Barbara, CA, USA** 🟠 Needs attention
 
-- Add bullet points describing what you focused on during the exchange, any language or cultural skills developed, and how this experience contributed to your personal or academic growth.
+- Add bullet points describing what you did during the exchange—such as language skills developed, cultural experiences, or specific coursework.
 
 **Memberofthe Marketing Club atthe University of St. Gallen.** 🟢 Strong
 
-- The club membership is listed in a way that shows your engagement outside of coursework.
+- The club membership is listed in line with your academic interests.
 
 **German Native Speaker** 🟢 Strong
 
-- The section lists your native language without unnecessary trait words.
+- The language section is clear and avoids unevidenced trait words.
 
 **French BI (Matura Level)** 🟢 Strong
 
-- The language level is presented in a way that is easy for a recruiter to understand.
+- The language level is linked to your academic background.
 
 **Profile** ⚪ Missing
 
-- If you wish, add a short profile at the top of your CV outlining what makes you stand out as a candidate and your career goals.
+- If you wish, add a short profile at the top of your CV summarising what makes you stand out and your career goals.
+
+**Work / Professional Experience** ⚪ Missing
+
+- If you have any paid work experience, internships, or student jobs, add them here with bullet points describing your responsibilities and achievements.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), consider adding them here.
+- If you have completed relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), add them here.
 
 ### 5. Anything else from HSG worth adding?
 

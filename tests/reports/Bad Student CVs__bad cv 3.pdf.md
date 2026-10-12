@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und formal konsistent, aber aktuell noch sehr knapp gehalten und enthält keine inhaltlichen Beschreibungen zu deinen Tätigkeiten. Ohne Bullet Points oder kurze Erläuterungen zu deinen Erfahrungen kann ein Leser nicht erkennen, was du konkret gemacht und gelernt hast. Es fehlt zudem eine Ausbildung-/Education-Sektion, die für einen studentischen Lebenslauf zentral ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es ist außerdem kein Bezug zu KI oder AI-Tools erkennbar; falls du hier relevante Erfahrungen hast, kannst du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und formal konsistent, aber aktuell noch sehr knapp gehalten und enthält keine Beschreibungen zu deinen Tätigkeiten. Ohne Bullet Points und konkrete Angaben zu deinen Aufgaben und Erfolgen können Leser:innen deine Erfahrungen und Kompetenzen kaum einschätzen. Es fehlen zudem Angaben zu deiner Ausbildung, was für einen studentischen Lebenslauf zentral ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es ist außerdem kein Bezug zu KI oder AI-Tools erkennbar; falls du hier relevante Erfahrungen hast, kannst du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Füge unter jeder Station und jedem Engagement kurze Bullet Points hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Angaben bleibt unklar, welche Aufgaben und Kompetenzen du erworben hast.
+  Füge unter jeder Station und jedem Engagement ein paar Bullet Points hinzu, die konkret beschreiben, was du gemacht hast. Ohne diese Angaben bleibt unklar, welche Aufgaben und Kompetenzen du tatsächlich hattest.
 - 🔴 **Einträge in "BERUFSERFAHRUNG" ohne Beschreibung**  
-  Ergänze unter jeder Berufserfahrung einige Bullet Points, die deine Aufgaben, Vorgehensweise und erzielte Ergebnisse darstellen – insbesondere mit Blick auf übertragbare Kompetenzen.
+  Ergänze unter jeder Berufserfahrung einige Bullet Points, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – mit Fokus auf übertragbare Fähigkeiten.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Engagements zu berichten. Ein sehr kurzer Lebenslauf wirkt auf Lesende oft unvollständig.
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Engagements und Kompetenzen zu berichten. Ein sehr kurzer CV wirkt auf Lesende oft zu dünn.
 - 🟠 **Datumsangaben nur mit Jahr, nicht mit Monat**  
-  Ergänze bei allen Zeiträumen den Monat (z.B. 09/2023 – 06/2024), damit der Umfang deiner Tätigkeiten klar erkennbar ist.
-- 🟡 **Fehlende Ausbildung-/Education-Sektion**  
-  Falls du relevante Bildungsabschlüsse hast, füge eine entsprechende Sektion hinzu.
+  Ergänze bei allen Zeiträumen den Monat, damit klar wird, wie lange du jeweils aktiv warst. Ohne Monatsangabe wird oft von der kürzeren Dauer ausgegangen.
+- 🟡 **Fehlende Ausbildung (Education) Sektion**  
+  Falls du relevante Ausbildungsstationen hast, füge eine eigene Sektion hinzu. Das ist für einen studentischen Lebenslauf Standard.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -38,42 +38,42 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | BERUFSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
 | SPRACHEN | 🟢 Stark |
 | ENGAGEMENT | 🟠 Braucht Aufmerksamkeit |
-| Ausbildung | ⚪ Fehlt |
 | Kurzprofil | ⚪ Fehlt |
+| Ausbildung | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 | Interessen / Hobbys | ⚪ Fehlt |
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei den Zeiträumen jeweils den Monat, um die Dauer der Tätigkeit klar zu machen.
-- Nutze den Platz, um mehr über deine Erfahrungen zu berichten – auch Nebenjobs, Praktika oder relevante Tätigkeiten können hier aufgeführt werden.
-- Falls du z.B. bei der Talents Conference (Career Services) oder beim St. Gallen Symposium (International Students' Committee) mitgewirkt hast, kannst du bezahlte Rollen hier aufführen (nur falls zutreffend).
+- Füge unter jeder Position Bullet Points hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – insbesondere, welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast.
+- Nutze den Platz, um mehr über deine Rolle als Flugbegleiterin zu berichten: Welche Aufgaben hast du übernommen? Gab es besondere Herausforderungen oder Erfolge?
+- Falls du weitere relevante Erfahrungen hast, etwa durch studentische Nebenjobs oder HSG-Angebote wie die Talents Conference (Career Services) oder den St. Gallen Symposium (International Students' Committee), kannst du diese ergänzen – aber nur, wenn sie wirklich zutreffen.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Sprachkenntnisse sind mit nachvollziehbaren Labels (z.B. Cambridge Advanced, B1-B2) versehen und enthalten keine unbelegten Eigenschaftswörter.
+- Die Angaben zu deinen Sprachkenntnissen sind konsistent und sachlich gehalten, was einen professionellen Eindruck macht.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Engagement Bullet Points hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben – z.B. was du als Jugendrätin oder Co-Präsidentin organisiert oder bewirkt hast.
-- Falls du in weiteren HSG-Studentenclubs aktiv bist, kannst du diese mit Bullet Points ergänzen (siehe z.B. das Verzeichnis der [HSG student clubs](https://shsg.ch/clubs)).
-
-**Ausbildung** ⚪ Fehlt
-
-- Füge eine Ausbildung-/Education-Sektion hinzu, in der du deinen aktuellen Studiengang, relevante Abschlüsse und ggf. Schwerpunkte aufführst.
-- Falls du an Austauschprogrammen, Kursen oder Zertifikaten teilgenommen hast, kannst du diese ebenfalls ergänzen.
+- Füge unter jedem Engagement Bullet Points hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und Ergebnisse beschreiben – zum Beispiel, was du als Jugendrätin oder Co-Präsidentin organisiert oder bewirkt hast.
+- Ergänze die Monatsangaben zu den Zeiträumen, damit die Dauer deiner Engagements nachvollziehbar ist.
+- Falls du weitere relevante Aktivitäten hast, etwa aus HSG-Clubs (siehe das Verzeichnis unter https://shsg.ch/clubs), kannst du diese ergänzen – aber nur, wenn du dort wirklich aktiv warst.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du möchtest, kannst du ein Kurzprofil ergänzen, das in 2-3 Sätzen zusammenfasst, was dich als Kandidat:in auszeichnet und wohin du dich entwickeln möchtest.
+- Falls du ein Kurzprofil ergänzen möchtest, beschreibe in 2-3 Sätzen, was dich als Kandidat:in auszeichnet und wohin du dich entwickeln möchtest.
+
+**Ausbildung** ⚪ Fehlt
+
+- Füge eine Ausbildungssektion hinzu, in der du dein Studium an der HSG und ggf. vorherige Abschlüsse aufführst. Nenne dabei Studienrichtung, Abschlussart, voraussichtliches Abschlussdatum und ggf. relevante Schwerpunkte oder Noten.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate hast (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), kannst du diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Falls du persönliche Interessen oder Hobbys hast, kannst du diese in einer eigenen Sektion ergänzen. Das gibt einen Einblick in deine Persönlichkeit.
+- Wenn du persönliche Interessen oder Hobbys hast, kannst du diese ergänzen – idealerweise mit etwas Kontext (z.B. welche Sportart, wie aktiv).
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
