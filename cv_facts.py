@@ -729,6 +729,7 @@ def analyse(text: str, meta: dict, sections: list[dict], jd_text: str | None = "
             "category": section["category"],
             # "icon" or "typo" where the heading had to be repaired to be read.
             "damage": section.get("damage"),
+            "display": section.get("display"),
             "raw_heading": section.get("raw", section["heading"]),
             "line_count": len(content),
             "char_count": sum(len(line) for line in content),

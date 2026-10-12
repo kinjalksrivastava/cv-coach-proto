@@ -31,6 +31,7 @@ GOOD, ATTENTION, UNKNOWN = "good", "attention", "unknown"
 TEXT = {
     "en": {
         "length": "Length",
+        "plural": "s",
         "ats": "Estimated ATS compatibility",
         "writing": "Spelling and consistency",
         "pages_ok": "{n} page{s} — appropriate for a student or early-career CV.",
@@ -85,6 +86,7 @@ TEXT = {
     },
     "de": {
         "length": "Länge",
+        "plural": "n",
         "ats": "Geschätzte ATS-Kompatibilität",
         "writing": "Rechtschreibung und Konsistenz",
         "pages_ok": "{n} Seite{s} — passend für einen Lebenslauf zu Studienzeiten oder am "
@@ -251,7 +253,9 @@ def nonstandard_fonts(meta: dict) -> list[str]:
 
 def _page_row(meta: dict, char_count: int, t: dict) -> dict:
     pages = meta.get("page_count")
-    plural = lambda n: "s" if n > 1 else ""  # noqa: E731 - "1 Seite" / "2 Seiten"
+    # "1 Seite" / "2 Seiten", not "2 Seites". The suffix is part of the string
+    # table, not an English "s" bolted on in every language.
+    plural = (lambda n: t["plural"] if n > 1 else "")
     if pages:
         if pages <= 2:
             return {"check": t["length"], "status": GOOD,

@@ -167,6 +167,23 @@ at now rather than the last certificate they sat.
 - Soft or personal traits belong in the experience bullets as something demonstrably \
 done, not in a list of adjectives. Say that where it applies.
 
+SECTION BOUNDARIES. Career Services are strict about what belongs where, and the bot \
+kept blurring them:
+- WORK EXPERIENCE is PAID work. Never suggest adding volunteering, a student club or a \
+committee role to it; those go under extracurricular experience.
+- INTERESTS / HOBBIES are personal pursuits - sport, music, reading. Never suggest \
+adding a club, a society, a committee or any HSG activity here, even when the HSG \
+options list offers one: an active role belongs under extracurricular experience, and a \
+reader skims hobbies and will miss it.
+- A PROFILE is about what makes this student stand out as a candidate for their target \
+role, and where they want to go next. Never describe it as a place to state their \
+"academic focus" - that just restates the education section.
+- SKILLS are hard skills: tools, software, methods, languages, each with a level. Do not \
+ask the student to explain inside that section where they used a tool; that belongs in a \
+bullet under education, work experience or an extracurricular role.
+- Never name a number of bullet points. How many a role deserves depends on how relevant \
+it is to the target position.
+
 WHAT TO PRODUCE (JSON, exact shape at the end):
 - "overall_impression": 3-5 sentences to the student, second person, from a recruiter's \
 perspective. If the issue list is short, say plainly that the CV is in good shape. No score. \
@@ -205,10 +222,15 @@ Personal details were removed before this text reached you - name, address, date
 birth, nationality, civil status, contact details. Never comment on them, never say they \
 are missing, and never treat a [REDACTED] marker as something the student omitted.
 
-Say each thing ONCE. If a point belongs in a key area, it does not also belong in the \
-section feedback in the same words, and two findings that amount to the same advice \
-should be stated as one. Career Services flagged the same sentence appearing twice in \
-one report more than once. Return only the JSON object:
+SAY EACH THING ONCE. This is the single most repeated complaint Career Services have \
+made about these reports, so check your draft for it before you answer:
+  - A point made in "areas_to_improve" must NOT be repeated in that section's own \
+feedback. The section's points are for what the key area did not already cover. If the \
+key area said everything, give that section one short point naming what else to look at, \
+or none at all.
+  - Two findings that amount to the same advice are one finding.
+  - Do not restate anything that is already in the format-check table you were given: \
+length, typos, spelling, parsing risks. The student has just read it. Return only the JSON object:
 {{"overall_impression": "...", "areas_to_improve": \
 [{{"title": "...", "severity": "...", "detail": "..."}}], \
 "sections": [{{"name": "...", "status": "...", "summary": "...", "points": ["..."]}}]}}"""
@@ -227,7 +249,8 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
     facts_block = cv_facts.describe_for_prompt(facts)
     issues_block = severity_module.describe_for_prompt(severity_result)
     hsg_block = hsg_activities.suggestions_block(
-        [s["category"] for s in facts["sections"]] + ["Extracurricular & Interests"]
+        [s["category"] for s in facts["sections"]] + ["Extracurricular & Interests"],
+        {s.get("display") for s in facts["sections"]},
     )
 
     checks = "\n".join(
@@ -390,7 +413,11 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
-             str(data.get("overall_impression", "")).strip()]
+             str(data.get("overall_impression", "")).strip(), "",
+             # Rendered here, never asked of the model, for the same reason as
+             # the cover letter's: Career Services wrote "always add", and a
+             # sentence the model composes is a sentence it can drop.
+             f"_{strings['disclaimer']}_"]
 
     parts += ["", f"### 2. {strings['format_check']}", "",
               f"| {strings['check']} | {strings['status']} | {strings['comment']} |",
@@ -492,6 +519,12 @@ STRINGS = {
         "lang": "en",
         "report_title": "Your CV feedback report",
         "overall": "Overall impression",
+        "disclaimer": (
+            "Please note that this is a first feedback, mainly about the structure and "
+            "content of your CV. It does not evaluate in detail how well you have "
+            "tailored it to a particular role, and it is not a judgement about you as a "
+            "candidate. That is what your one-on-one session with Career Services is for."
+        ),
         "examples_intro": (
             "General examples of the difference between describing a responsibility and "
             "describing a contribution. These are illustrations from Career Services, "
@@ -554,6 +587,13 @@ STRINGS = {
         "lang": "de",
         "report_title": "Dein CV-Feedback-Report",
         "overall": "Gesamteindruck",
+        "disclaimer": (
+            "Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf "
+            "Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, "
+            "wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein "
+            "Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career "
+            "Services da."
+        ),
         "examples_intro": (
             "Allgemeine Beispiele für den Unterschied zwischen einer beschriebenen Aufgabe "
             "und einem beschriebenen Beitrag. Das sind Illustrationen des Career Services, "
@@ -701,7 +741,8 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
 
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
-              Paragraph(plain(data.get("overall_impression", "")), body)]
+              Paragraph(plain(data.get("overall_impression", "")), body),
+              Paragraph(plain(strings["disclaimer"]), small)]
 
     story.append(Paragraph(f'2. {plain(strings["format_check"])}', h2))
     rows = [[Paragraph(f'<b>{plain(strings["check"])}</b>', small),

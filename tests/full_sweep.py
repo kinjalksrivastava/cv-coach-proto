@@ -172,6 +172,8 @@ def audit(path: str) -> dict:
     #    section 5 - dates worth a look."
     if any(i["key"] in severity.DATE_KEYS for i in ranked["key_areas"]):
         problems.append("DATES a gap or overlap is competing for a key-area slot")
+    if any(i["key"] in severity.FORMAT_CHECK_KEYS for i in ranked["key_areas"]):
+        problems.append("DUPLICATION a format-check row is repeated as a key area")
 
     # 8. WEAKNESSES ARE SHOWN. No section called Strong while something names it,
     #    and nothing called Strong on a CV with no bullets at all.
@@ -216,6 +218,78 @@ def audit(path: str) -> dict:
         if hit:
             problems.append(f"LANGUAGE English in a German report: {hit.group(0)!r}")
 
+    # 12b. THE PROSE ITSELF. Every complaint Career Services made came from
+    #      reading a generated report, so the report text is read back for the
+    #      things they objected to, not just its structure.
+    low = md.lower()
+
+    # "It should not suggest volunteer roles in the work experience."
+    for block in re.split(r"\n\*\*", md.split("\n### ")[0] if False else md)[1:]:
+        block = block.split("\n### ")[0]          # stop at the next report section
+        head = block.split("**")[0].lower()
+        if any(w in head for w in ("work experience", "professional experience",
+                                   "berufserfahrung", "beruflicher werdegang")):
+            if re.search(r"volunteer|ehrenamt|freiwillig", block, re.I):
+                problems.append("CONTENT volunteering suggested under work experience")
+            break
+
+    # "Don't suggest a specific number of bullet points."
+    if re.search(r"(two|three|2|3)\s*[-–]\s*(three|four|3|4)\s+bullet|"
+                 r"(two|three|zwei|drei)\s+bullet|\d\s*[-–]\s*\d\s+(bullet|stichpunkt)",
+                 low):
+        problems.append("CONTENT a specific number of bullet points is suggested")
+
+    # "They should not explain where they have used the technical skills."
+    if re.search(r"(where|wo)\s+you\s+(have\s+)?used|erkl[äa]re?,?\s+wo\s+du", low):
+        problems.append("CONTENT asks the student to explain where a skill was used")
+
+    # "Extracurriculars shouldn't be mentioned in hobbies and interests."
+    for block in re.split(r"\n\*\*", md)[1:]:
+        block = block.split("\n### ")[0]          # stop at the next report section
+        head = block.split("**")[0].lower()
+        # Interests ONLY. A combined heading like "VOLUNTEERING, SOCIETIES &
+        # INTERESTS" is an extracurricular section too, and a club genuinely
+        # belongs there.
+        if ("hobb" in head or "interest" in head or "interessen" in head) and not any(
+                w in head for w in ("volunteer", "societ", "extracurricular", "club",
+                                    "ehrenamt", "engagement", "aktivit")):
+            # The complaint was about HSG activities being proposed here, not
+            # about the word "club". "What kind, how often, to what level (e.g.
+            # club membership)" is detail about an interest, which is exactly
+            # what Career Services asked for.
+            if re.search(r"shsg\.ch|unisg\.ch|HSG (student )?club|Consulting Club|"
+                         r"Helvetian Investment|oikos|START Summit|Symposium",
+                         block, re.I):
+                problems.append("CONTENT an HSG activity is suggested under hobbies")
+            break
+
+    # "Since personal details are removed when parsing, it should not comment on them."
+    if re.search(r"(add|include|ergänze|füge)[^.]{0,40}"
+                 r"(contact details|personal details|date of birth|nationality|"
+                 r"persönliche (daten|angaben)|geburtsdatum|adresse)", low):
+        problems.append("CONTENT comments on personal details")
+
+    # "The bot still uses american rather than British English."
+    if doc_lang == "en":
+        us = re.findall(r"\b(organiz\w+|analyz\w+|special[iy]z\w+|recogniz\w+|"
+                        r"emphasiz\w+|summariz\w+|\bresume\b|\bcenter\b|\bcolor\b)\b", low)
+        # The CV's own wording is quoted back as evidence, so only flag words
+        # that do not appear in the document itself.
+        invented = [w for w in set(us) if w not in cv_text.lower()]
+        if invented:
+            problems.append(f"CONTENT American spelling in the report: {sorted(invented)[:3]}")
+
+    # "Instead of 'use it to briefly state your academic focus'..." Only inside
+    # a profile block: the same words describing a degree specialisation are
+    # fine, and were being flagged.
+    for block in re.split(r"\n\*\*", md)[1:]:
+        block = block.split("\n### ")[0]
+        head = block.split("**")[0].lower()
+        if "profile" in head or "kurzprofil" in head or "summary" in head:
+            if re.search(r"academic focus|akademische[nr]? schwerpunkt", block, re.I):
+                problems.append("CONTENT the old profile wording is back")
+            break
+
     # 12. NOTHING SAID TWICE. The same sentence in a key area and a section.
     key_detail = {str(a.get("detail", "")).strip().lower()
                   for a in (data.get("areas_to_improve") or []) if a.get("detail")}
@@ -224,6 +298,12 @@ def audit(path: str) -> dict:
             if str(point).strip().lower() in key_detail:
                 problems.append("DUPLICATION a key area is repeated verbatim in a section")
                 break
+
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reports")
+    os.makedirs(out_dir, exist_ok=True)
+    with open(os.path.join(out_dir, name.replace("/", "__") + ".md"), "w",
+              encoding="utf-8") as handle:
+        handle.write(md)
 
     return {"name": name, "problems": problems, "lang": doc_lang,
             "sections": len(sections), "entries": entries, "coverage": coverage,

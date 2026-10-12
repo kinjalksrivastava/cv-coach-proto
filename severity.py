@@ -29,6 +29,13 @@ MAX_KEY_AREAS = 5
 # Timeline findings live in their own report section and nowhere else.
 DATE_KEYS = {"date_gap", "date_overlap"}
 
+# Findings the format-check table already states in full, with the same evidence
+# and the same advice. Putting them in the key areas as well said the same thing
+# twice in one report, which Career Services flagged twice: "these two seem to
+# nearly say the same thing", "this is a duplicate again - it is enough to say
+# this once". They are still measured, still shown, just not twice.
+FORMAT_CHECK_KEYS = {"typos", "spelling_variant"}
+
 
 def _issue(tier, key, title, evidence, section=None, guidance=""):
     return {"tier": tier, "key": key, "title": title, "evidence": evidence,
@@ -129,8 +136,12 @@ def assess(facts: dict, target_role: str = "") -> dict:
         # no bullets at all still had its experience section marked Strong -
         # reported by Miriam in the fourth round after being reported by both
         # reviewers in the third.
-        describing = [s["heading"] for s in facts["sections"]
-                      if s["category"] in DETAIL_CATEGORIES and s["entry_count"]]
+        # Any section made of entries. Career Services' complaint was not
+        # limited to professional experience: "the same goes for the
+        # Volunteering in this CV - it gives the same feedback", and a section
+        # called Strong on a CV with no bullets at all reads as a contradiction
+        # wherever it sits.
+        describing = [s["heading"] for s in facts["sections"] if s["entry_count"]]
         issues.append(_issue(
             1, "no_bullets_anywhere", "No bullet points anywhere in the CV",
             f"The document contains {facts['total_bullets']} bullet points in total."
@@ -465,7 +476,9 @@ def assess(facts: dict, target_role: str = "") -> dict:
         # "Gaps should only be addressed in section 5 - dates worth a look."
         # They are still measured and still printed there; they just stop
         # competing for a key-area slot and stop pulling a section out of Strong.
-        "key_areas": [i for i in issues if i["key"] not in DATE_KEYS][:MAX_KEY_AREAS],
+        "key_areas": [i for i in issues
+                      if i["key"] not in DATE_KEYS
+                      and i["key"] not in FORMAT_CHECK_KEYS][:MAX_KEY_AREAS],
         "all_issues": issues,
         "section_status": status,
         "dropped_from_key_areas": issues[MAX_KEY_AREAS:],

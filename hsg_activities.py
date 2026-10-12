@@ -239,14 +239,22 @@ def suggestions_for(category: str, limit: int = 4) -> list[tuple]:
     return SECTION_SUGGESTIONS.get(category, [])[:limit]
 
 
-def suggestions_block(categories: list[str]) -> str:
+def suggestions_block(categories: list[str], displays: set | None = None) -> str:
     """
     The per-section suggestion list for the report prompt. Only sections this CV
     actually has (plus any standard one it is missing) get options, so the bot
     never recommends into a vacuum.
     """
     lines = []
+    # An interests-only section gets nothing: a club is an extracurricular role,
+    # and offering one here is how the bot ended up suggesting clubs under
+    # hobbies, which Career Services asked twice for it to stop doing.
+    interests_only = (displays is not None
+                      and "Interests" in displays
+                      and "Extracurricular Experience" not in displays)
     for category in categories:
+        if interests_only and category == "Extracurricular & Interests":
+            continue
         options = suggestions_for(category)
         if not options:
             continue

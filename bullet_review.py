@@ -39,8 +39,15 @@ TIMEOUT_SECONDS = 25
 SYSTEM_PROMPT = """You are judging CV bullet points for HSG Career Services, against \
 their own standard.
 
-You are given numbered bullet points, each with the role and CV section it sits under. \
-You are NOT given the CV. Judge only what you are shown.
+You are given the bullet points grouped under the role and CV section each one sits \
+under. You are NOT given the CV. Judge only what you are shown.
+
+READ EACH ROLE AS A WHOLE FIRST, then judge its bullets individually. The bullets under \
+one role are a single account of a single job: three bullets that each name a task say \
+something different from one flat bullet among three that show real contribution. Where \
+a role's bullets collectively tell a reader what the person did and what came of it, be \
+slower to pick holes in one of them; where the whole group only lists duties, every one \
+of them is weak and should be returned.
 
 THE STANDARD. A bullet is WEAK when it names a task, a responsibility or an area of \
 work and stops there, so a reader learns what the person was assigned rather than what \
@@ -83,13 +90,24 @@ If none are weak, return {"weak": []}."""
 
 
 def _render(items: list[dict]) -> str:
-    lines = []
+    """
+    Grouped under the role each bullet belongs to, in CV order.
+
+    A consultant's three bullets are one account of one job, and they have to be
+    read that way: three bullets that each name a task tell you something
+    different from one weak bullet among three strong ones. A flat list hid
+    that, so the model was judging fifteen sentences instead of five roles.
+    """
+    lines, current = [], None
     for item in items:
-        where = item.get("section") or ""
+        where = (item.get("section") or "").strip()
         role = (item.get("role") or "").strip()
-        context = f"{where}" + (f" — {role}" if role else "")
-        lines.append(f"[{item['index']}] ({context}) {item['bullet']}")
-    return "\n".join(lines)
+        header = f"{where} — {role}" if role else where
+        if header != current:
+            current = header
+            lines.append(f"\n{header or 'Unattributed'}")
+        lines.append(f"  [{item['index']}] {item['bullet']}")
+    return "\n".join(lines).strip()
 
 
 def review(client, model: str, items: list[dict], section_rules: str = "") -> set[int]:
