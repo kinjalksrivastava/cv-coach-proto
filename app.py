@@ -66,6 +66,10 @@ COPY = {
         "mode_letter_sub": ("A short first check: does the letter add anything your CV "
                             "does not already say? The job advert or title is needed."),
         "mode_letter_button": "Review my cover letter",
+        "ref_cv_title": "Your CV",
+        "ref_cv_sub": ("Add it and the single most important check can be made properly: "
+                       "does the letter say anything the CV does not already say? Without "
+                       "it that can only be guessed at."),
         "letter_title": "Your cover letter",
         "letter_sub": "PDF or Word, up to 10 MB.",
         "role_sub_letter": ("A cover letter is written for one specific role, so this "
@@ -150,6 +154,10 @@ COPY = {
         "mode_letter_sub": ("Ein kurzer erster Check: Sagt das Schreiben etwas, das dein "
                             "Lebenslauf nicht schon sagt? Stellenanzeige oder Titel nötig."),
         "mode_letter_button": "Motivationsschreiben prüfen",
+        "ref_cv_title": "Dein Lebenslauf",
+        "ref_cv_sub": ("Mit dem Lebenslauf lässt sich die wichtigste Frage sauber prüfen: "
+                       "Sagt das Schreiben etwas, das der Lebenslauf nicht schon sagt? "
+                       "Ohne ihn bleibt das eine Vermutung."),
         "letter_title": "Dein Motivationsschreiben",
         "letter_sub": "PDF oder Word, bis 10 MB.",
         "role_sub_letter": ("Ein Motivationsschreiben richtet sich an eine konkrete "
@@ -435,6 +443,28 @@ if st.session_state["cv_text"] is None:
                 copy["role_label"], placeholder=copy["role_placeholder"],
             )
 
+    # In cover-letter mode, the CV itself is worth having: Career Services' most
+    # important check is whether the letter adds value BEYOND the CV, and without
+    # the CV that can only be inferred from whether the letter reads like a
+    # chronology. Optional, because a student may not have it to hand.
+    ref_file, ref_pasted = None, ""
+    if is_letter:
+        with ui.card("refcv"):
+            ui.card_head(copy["ref_cv_title"], copy["ref_cv_sub"], copy["optional"], "opt")
+            ref_options = [copy["skip"], copy["upload"], copy["paste"]]
+            ref_mode = ref_options.index(st.radio(
+                "Reference CV", ref_options, horizontal=True,
+                label_visibility="collapsed", key="ref_mode",
+            ))
+            if ref_mode == 1:
+                ref_file = st.file_uploader(
+                    "Reference CV", type=["pdf", "docx"], key="ref_upload",
+                    label_visibility="collapsed")
+            elif ref_mode == 2:
+                ref_pasted = st.text_area(
+                    "Reference CV text", height=150, key="ref_paste",
+                    label_visibility="collapsed", placeholder=copy["cv_placeholder"])
+
     have_doc = cv_file is not None or bool(cv_pasted.strip())
     have_target = (jd_file is not None or bool(jd_pasted.strip())
                    or bool(target_hint.strip()))
@@ -503,9 +533,18 @@ if st.session_state["cv_text"] is None:
         # the cover letter is doing its job, not replace a coaching appointment".
         if st.session_state["mode"] == "letter":
             letter_strings = cover_letter.STRINGS[lang_code]
+            # The reference CV goes through exactly the same redaction as every
+            # other document before anything sees it.
+            reference_cv = ""
+            if ref_file is not None:
+                parsed = extract_text(ref_file.getvalue(), ref_file.name)
+                if parsed.ok:
+                    reference_cv = strip_pii(parsed.text, cv_language)["text"]
+            elif ref_pasted.strip():
+                reference_cv = strip_pii(ref_pasted, cv_language)["text"]
             with st.spinner(copy["spinner_letter"]):
                 letter_facts = cover_letter.analyse(
-                    cv_text, st.session_state["jd_text"] or "", target_role)
+                    cv_text, st.session_state["jd_text"] or "", target_role, reference_cv)
                 letter_data = cover_letter.generate(
                     client, MODEL, cv_text, st.session_state["jd_text"] or "",
                     target_role, letter_facts, language.SUPPORTED[lang_code])
@@ -558,7 +597,15 @@ if st.session_state["cv_text"] is None:
             # Chosen in code, not by the model: the links have to be the real ones
             # from hsg_activities, and a model asked for a URL will invent a
             # plausible-looking dead one.
-            hsg_picks = hsg_activities.closing_suggestions(target_role, cv_text)
+            # Ordered by what this CV actually needs: the sections the report is
+            # unhappy about first, then the target role, then the standing picks
+            # so the section is never empty.
+            hsg_picks = hsg_activities.closing_suggestions(
+                target_role, cv_text,
+                section_status=ranked["section_status"],
+                missing_sections=facts.get("missing_report_sections"),
+                categories={s["heading"]: s["category"] for s in sections},
+            )
             report_text = report.render_markdown(
                 report_data, st.session_state["format_rows"], strings,
                 facts["date_findings"], notes, hsg_picks, ranked["section_status"],

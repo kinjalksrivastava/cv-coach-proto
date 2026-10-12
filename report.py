@@ -449,9 +449,12 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     if hsg_picks:
         parts += ["", f"### {number}. {strings['hsg_heading']}", "",
                   strings["hsg_intro"], ""]
-        for name, what, url in hsg_picks:
+        for name, what, where, url in hsg_picks:
             label = f"[{name}]({url})" if url else name
             parts.append(f"- **{label}** — {what}")
+            # Career Services' own CV-Section column. Where a thing belongs is
+            # half the value of knowing it exists.
+            parts.append(f"  _{strings['hsg_where']}: {where}_")
 
     parts += ["", "---", "", strings["closing"]]
     return "\n".join(parts)
@@ -508,6 +511,7 @@ STRINGS = {
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
         "hsg_heading": "Anything else from HSG worth adding?",
+        "hsg_where": "Belongs in",
         # Reworded on Career Services' instruction: the old version read as
         # though each item had been chosen deliberately for this student, "or it
         # makes it sound like this is the only relevant one". The section is a
@@ -571,6 +575,7 @@ STRINGS = {
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
         "hsg_heading": "Gibt es noch etwas von der HSG, das dazugehört?",
+        "hsg_where": "Gehört in",
         "hsg_intro": (
             "Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG "
             "gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, "

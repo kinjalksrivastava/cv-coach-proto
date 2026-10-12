@@ -58,7 +58,79 @@ RECIPIENT_RE = re.compile(
     re.MULTILINE)
 
 
-def analyse(text: str, jd_text: str = "", target_role: str = "") -> dict:
+# Words two documents about the same person will share no matter what, so
+# matching on them would make every letter look like a copy of the CV.
+_OVERLAP_NOISE = {
+    "about", "also", "and", "been", "being", "both", "business", "company", "could",
+    "during", "each", "experience", "first", "from", "have", "high", "into", "many",
+    "more", "most", "other", "role", "скills", "skills", "some", "student", "studies",
+    "study", "team", "that", "their", "them", "there", "these", "they", "this", "time",
+    "university", "well", "were", "what", "when", "where", "which", "while", "with",
+    "work", "would", "year", "years", "your",
+    "aber", "auch", "bei", "dem", "den", "der", "des", "die", "durch", "ein", "eine",
+    "einem", "einen", "einer", "für", "habe", "haben", "ich", "ist", "mein", "meine",
+    "meiner", "mich", "mit", "nach", "sich", "sind", "studium", "über", "und", "von",
+    "während", "war", "wie", "wurde", "zur", "zum",
+    # ASCII transliterations, because a letter typed without umlauts is common.
+    "fuer", "waehrend", "ueber", "koennen", "moechte", "zustaendig", "taetig",
+    # Ordinary connectives that carry no information either document owns.
+    "dort", "hier", "dann", "dabei", "damit", "sowie", "sehr", "seit", "bereits",
+    "anschliessend", "anschließend", "zudem", "ausserdem", "außerdem", "derzeit",
+    "aktuell", "momentan", "currently", "additionally", "furthermore", "moreover",
+    # Months. A sentence that restates a CV entry restates its dates with it.
+    "januar", "februar", "maerz", "märz", "april", "juni", "juli", "august",
+    "september", "oktober", "november", "dezember",
+    "january", "february", "march", "june", "july", "october", "december",
+}
+_WORD_RE = re.compile(r"[A-Za-zÄÖÜäöüß][\w\-]{3,}")
+# Sentence boundaries that survive "St. Gallen", "Dr. Keller" and "z. B." - a
+# naive split on every full stop cut that example in half and left two fragments
+# too short to judge, so the sentence was never checked at all.
+_SENTENCE_SPLIT = re.compile(
+    r"(?<!\bSt\.)(?<!\bDr\.)(?<!\bProf\.)(?<!\bNr\.)(?<!\bca\.)(?<!\bbzw\.)"
+    r"(?<!\betc\.)(?<!\bMr\.)(?<!\bMs\.)(?<!\bInc\.)(?<!\bLtd\.)"
+    r"(?<!\bu\.)(?<!\bz\.)(?<!\bB\.)(?<!\bbspw\.)(?<!\bggf\.)"
+    r"(?<=[.!?])\s+(?=[A-ZÄÖÜ])|\n{2,}")
+
+
+def _content_words(value: str) -> set:
+    return {w.lower() for w in _WORD_RE.findall(value)
+            if w.lower() not in _OVERLAP_NOISE}
+
+
+def _echoes_the_cv(letter: str, cv_text: str) -> list[str]:
+    """
+    Letter sentences that mostly restate a line of the CV.
+
+    Career Services' most important check, and the one part of it that can be
+    counted: a sentence is an echo when nearly all of its distinctive words
+    already appear together on one CV line. Their caveat is built in - a
+    sentence that references the CV AND says something else keeps enough of its
+    own vocabulary to fall below the threshold, because referring to a CV
+    experience is fine; repeating it without adding anything is not.
+    """
+    if not cv_text.strip():
+        return []
+    cv_words = _content_words(cv_text)
+    if len(cv_words) < 15:
+        return []
+
+    echoes = []
+    for sentence in _SENTENCE_SPLIT.split(letter):
+        sentence = sentence.strip()
+        words = _content_words(sentence)
+        if len(words) < 5:
+            continue
+        # Measured against the WHOLE CV, not line by line: a retelling usually
+        # gathers up several CV lines into one sentence, so per-line matching
+        # missed exactly the case this is for.
+        if len(words & cv_words) / len(words) >= 0.6:
+            echoes.append(sentence[:160])
+    return echoes
+
+
+def analyse(text: str, jd_text: str = "", target_role: str = "",
+            cv_text: str = "") -> dict:
     """What can be counted about a cover letter. No judgement here."""
     body = text.strip()
     words = len(re.findall(r"\b[\w'’-]+\b", body))
@@ -74,7 +146,11 @@ def analyse(text: str, jd_text: str = "", target_role: str = "") -> dict:
     lowered = body.lower()
     matched = [t for t in role_terms if t in lowered]
 
+    echoes = _echoes_the_cv(body, cv_text)
     return {
+        "cv_provided": bool(cv_text.strip()),
+        "cv_echoed_sentences": echoes[:6],
+        "cv_echo_count": len(echoes),
         "word_count": words,
         "paragraph_count": len(paragraphs),
         "page_estimate": round(words / WORDS_PER_PAGE, 2),
@@ -152,6 +228,22 @@ def build_messages(letter_text, jd_text, target_role, facts, language_name):
                "Cover letter (personal details removed):\n" + letter_text]
     if jd_text:
         context.append("Job advert:\n" + jd_text)
+    if facts.get("cv_provided"):
+        context.append(
+            "The student also uploaded their CV, so the most important check can be "
+            "made properly rather than guessed. Sentences already measured as mostly "
+            "restating a line of that CV"
+            + (":\n" + "\n".join(f"- {e}" for e in facts["cv_echoed_sentences"])
+               if facts["cv_echoed_sentences"] else ": none.")
+            + "\nJudge 'adds_value' with these in front of you. A sentence that "
+              "mentions something from the CV AND uses it to explain motivation, "
+              "relevance, learning, direction or contribution is doing its job and is "
+              "not repetition.")
+    else:
+        context.append(
+            "No CV was uploaded, so you cannot compare the two documents directly. "
+            "Judge 'adds_value' only on whether the letter reads as a chronological "
+            "retelling of a career, and say that you could not compare it with the CV.")
     if target_role:
         context.append(f"Target role as the student stated it: {target_role}")
     context.append(

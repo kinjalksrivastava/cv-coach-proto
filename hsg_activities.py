@@ -81,6 +81,19 @@ CERTIFICATES = [
     ("Certificate in Wirtschaftspädagogik",
      "the teaching qualification track",
      "Education as a specialisation, or Courses and Certificates", ""),
+    ("Certificate in Digital Communication and Journalism (DKJ)",
+     "Master's-level additional qualification in digital communication and journalism",
+     "Education as a specialisation, or Courses and Certificates",
+     "https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/"),
+    ("Certificate in Financial Technology (FinTech)",
+     "Master's-level, taught in English, at the intersection of finance and technology: "
+     "digital assets, blockchain, data-driven finance",
+     "Education as a specialisation, or Courses and Certificates",
+     "https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/financial-technology/"),
+    ("Real Estate Certificate (REC)",
+     "Master's-level, covering real estate finance, investment and management",
+     "Education as a specialisation, or Courses and Certificates",
+     "https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/real-estate/"),
     ("Bloomberg Market Concepts (BMC)",
      "a 12-hour e-learning introduction to the financial markets, via the HSG library",
      "Technical Skills, or Courses and Certificates",
@@ -182,13 +195,22 @@ GROUPS = [
     ("External case competitions", COMPETITIONS),
 ]
 
-# Defined, deliberately not used yet: pointing students at templates and job
-# boards is the "recommending" half of Career Services' request, which is still
-# being confirmed. Wiring this in is a one-line change to RULES below.
+# Career Services' own list, confirmed for recommending in the 29 September
+# update. The templates carry their caveat: good examples to compare against,
+# never something to copy.
 USEFUL_LINKS = [
-    ("HSG CV templates", "good examples to compare against - never to copy verbatim", ""),
-    ("HSG cover letter templates", "as above", ""),
-    ("My HSG Career", "part-time jobs, internships and company events for HSG students",
+    ("HSG CV templates (Career Services)",
+     "Career Services' own CV templates, EN and DE - worth comparing yours against, "
+     "never something to copy wholesale",
+     "Reference, not a CV section",
+     "https://www.unisg.ch/en/studying/during-your-studies/career-services/"),
+    ("HSG cover letter templates (Career Services)",
+     "the same for cover letters, EN and DE",
+     "Reference, not a CV section",
+     "https://www.unisg.ch/en/studying/during-your-studies/career-services/"),
+    ("My HSG Career",
+     "part-time jobs, internships and company events advertised for HSG students",
+     "Reference, not a CV section",
      "https://my.hsgcareer.ch"),
 ]
 
@@ -343,44 +365,99 @@ _BY_NAME = {name: (name, what, where, url)
             for name, what, where, url in entries}
 
 
+# Which HSG options speak to a weakness in a given CV section. Career Services
+# asked for the suggestions to be relevant SECTION BY SECTION rather than a
+# handful of role matches presented as though each had been chosen deliberately.
+SECTION_PICKS = {
+    "Education": ["HSG Mentoring Programme", "Bachelor's / Master's thesis",
+                  "Capstone Project (BWL)",
+                  "Company-linked practical projects (e.g. AWP projects, Student Impact)"],
+    "Experience": ["Talents Conference (Career Services)", "My HSG Career",
+                   "HSG University Sports"],
+    "Extracurricular & Interests": [
+        "HSG student clubs (~150 accredited, SHSG directory)",
+        "SHSG Student Union", "HSG University Sports",
+        "St. Gallen Symposium (International Students' Committee)"],
+    "Volunteering & Community": [
+        "HSG student clubs (~150 accredited, SHSG directory)",
+        "NextGen Impact Forum / SHSG Next Gen Impact Award"],
+    "Skills & Languages": ["Certificate in Data Science Fundamentals (DSF)",
+                           "Bloomberg Market Concepts (BMC)"],
+    "Certifications & Training": [
+        "Certificate in Data Science Fundamentals (DSF)",
+        "Other Additional Qualification Programmes",
+        "Bloomberg Market Concepts (BMC)"],
+    "Projects": ["Capstone Project (BWL)", "HSG Innovation Trophy",
+                 "Company-linked practical projects (e.g. AWP projects, Student Impact)"],
+    "Profile / Summary": [],
+}
+
+_BY_NAME_ALL = dict(_BY_NAME)
+for _name, _what, _where, _url in USEFUL_LINKS:
+    _BY_NAME_ALL.setdefault(_name, (_name, _what, _where, _url))
+
+
 def closing_suggestions(target_role: str = "", cv_text: str = "",
+                        section_status: dict | None = None,
+                        missing_sections: list | None = None,
+                        categories: dict | None = None,
                         limit: int = 5) -> list[tuple]:
     """
-    The HSG options to name at the end of the report, as (name, what, url).
+    The HSG options worth putting in front of THIS student, as
+    (name, what it is, which CV section it belongs in, url).
 
-    Role-matched first, general picks after, and anything the CV already shows is
-    dropped - there is no point inviting a student to something they have done.
+    Ordered by what their CV actually needs. A section the report marked as
+    needing attention, or found missing altogether, is where an addition would
+    do the most good, so those come first; the target role orders the rest; and
+    the general picks guarantee the list is never empty, because Career Services
+    want the student prompted to think every time, not only when the catalogue
+    happens to match.
+
+    Anything the CV already shows is dropped - that is what stopped the mentoring
+    programme appearing on every single report.
     """
     role = (target_role or "").lower()
     haystack = (cv_text or "").lower()
-
-    matched = [names for keywords, names in ROLE_AFFINITY
-               if any(keyword in role for keyword in keywords)]
-
-    # Round-robin rather than one group then the next, so "sustainability
-    # consultant" gets sustainability options too instead of five consulting ones.
     ordered, seen = [], set()
-    for rank in range(max((len(n) for n in matched), default=0)):
-        for names in matched:
-            if rank < len(names) and names[rank] not in seen:
-                seen.add(names[rank])
-                ordered.append(names[rank])
-    for name in GENERAL_PICKS:
-        if name not in seen:
+
+    def add(name):
+        if name and name not in seen:
             seen.add(name)
             ordered.append(name)
 
+    # 1. Sections the report is unhappy about, weakest signal first: a section
+    #    that is missing entirely, then one that needs attention.
+    weak_categories = []
+    for heading, status in (section_status or {}).items():
+        if status != "strong":
+            weak_categories.append((categories or {}).get(heading))
+    for name in (missing_sections or []):
+        weak_categories.append(name)
+    for category in weak_categories:
+        for name in SECTION_PICKS.get(category, []):
+            add(name)
+
+    # 2. Then whatever suits the role they named.
+    matched = [names for keywords, names in ROLE_AFFINITY
+               if any(keyword in role for keyword in keywords)]
+    for rank in range(max((len(n) for n in matched), default=0)):
+        for names in matched:
+            if rank < len(names):
+                add(names[rank])
+
+    # 3. Then the standing picks, so the section always has something in it.
+    for name in GENERAL_PICKS:
+        add(name)
+
     picks = []
     for name in ordered:
-        entry = _BY_NAME.get(name)
+        entry = _BY_NAME_ALL.get(name)
         if not entry:
             continue
-        # The name as written here is long; match on its distinctive head so
-        # "Law Clinic" is still recognised in a CV that writes "HSG Law Clinic".
         stem = re.split(r"[(/\-–]", entry[0])[0].strip().lower()
         if len(stem) > 4 and stem in haystack:
             continue
-        picks.append((entry[0], entry[1], entry[3]))
+        picks.append((entry[0], entry[1], entry[2], entry[3]))
         if len(picks) >= limit:
             break
     return picks
