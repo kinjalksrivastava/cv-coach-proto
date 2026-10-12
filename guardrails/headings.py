@@ -108,6 +108,7 @@ VOCAB: list[tuple[str, str, tuple[str, ...]]] = [
       "extra-curricular activity", "extracurricular involvement",
       "engagements", "ausserschulische aktivität", "außerschulische aktivität",
       "student engagement", "involvement", "activities", "societies",
+      "organisationen", "organizations", "organisations", "organisation",
       "zusätzliche teilnahmen", "weitere aktivitäten", "sonstige aktivitäten",
       "weitere engagements", "teilnahmen",
       "clubs", "society", "leadership", "leadership experience", "leadership roles",
@@ -214,7 +215,13 @@ def _match_fuzzy(value: str) -> tuple[str, str] | None:
 
 # A stray glyph left by an icon: one or two characters, then a space, then the
 # real heading. "S BERUFSERFAHRUNG" and "q Education" are both this.
-_STRAY_PREFIX = re.compile(r"^(?P<stray>[^\s\w]{1,2}|[A-Za-z0-9]{1,2})[\s ]+(?P<rest>\S.*)$")
+# Any one or two non-space characters. An icon can land as a symbol ("£"),
+# as an ASCII letter ("S BERUFSERFAHRUNG") or as an accented one
+# ("ö ORGANISATIONEN"), and the ASCII-only class missed the last of those.
+# Exact matching runs first, so a real heading that happens to start with a
+# short word - "IT Skills", "IT & Sprachen" - is recognised before this is
+# ever tried.
+_STRAY_PREFIX = re.compile(r"^(?P<stray>[^\s]{1,2})[\s\u00a0]+(?P<rest>\S.*)$")
 
 
 def identify(line: str) -> dict | None:

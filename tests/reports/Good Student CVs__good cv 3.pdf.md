@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear, with no unexplained gaps or overlaps, and your experience sections consistently include both role titles and descriptions. Many of your experience bullets go beyond listing tasks to show concrete results, which is a real strength. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
+Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear and continuous, and your experience sections consistently include both role titles and descriptions. Many of your experience bullets go beyond tasks to show concrete results, which is a real strength. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -39,23 +39,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFESSIONAL EXPERIENCE** 🟢 Strong
 
-- Nine of fifteen bullets state a concrete result or figure, demonstrating your impact in each role.
+- 9 of 15 experience bullets state a concrete result or figure, demonstrating your impact in each role.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Every entry carries both a role title and a description, making your contributions easy to understand.
+- The timeline runs without unexplained gaps or overlaps, making your progression easy to follow.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, keeping the section focused and relevant.
+- The section avoids unevidenced trait words and focuses on hard skills and language levels.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
+- If you choose to add a profile, use it to highlight what makes you unique as a candidate and where you want to go next.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant certifications, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), you could add them here to highlight technical or sustainability skills.
+- If you have completed relevant certifications or courses, consider listing them here to showcase additional expertise.
 
 ### 5. Anything else from HSG worth adding?
 

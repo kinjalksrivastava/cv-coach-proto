@@ -216,11 +216,14 @@ def _is_conventional(heading: str) -> bool:
     student as unrecognisable. That false report is the one both reviewers led
     with.
     """
-    entry = heading_lookup.identify(heading)
-    # A heading recognised only after correcting a typo is exactly what an ATS
-    # will fail on - "Educatiqn" is understood here and will not be understood
-    # there - so it stays on the list of parsing risks.
-    return entry is not None and entry["damage"] != "typo"
+    # A heading that only matched after repairing one character is NOT reported
+    # here. We cannot tell whether the student mistyped it or the file failed to
+    # extract cleanly - on a scanned CV "Education" arrives as "Educatiqn"
+    # through no fault of theirs - and the spelling row already says exactly
+    # that, with the cause left open. Asserting it twice, once as the student's
+    # mistake, is both the duplication and the blame Career Services objected
+    # to.
+    return heading_lookup.identify(heading) is not None
 
 
 def unusual_bullets(text: str) -> list[str]:

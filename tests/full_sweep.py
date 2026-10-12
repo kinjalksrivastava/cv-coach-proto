@@ -229,8 +229,20 @@ def audit(path: str) -> dict:
         head = block.split("**")[0].lower()
         if any(w in head for w in ("work experience", "professional experience",
                                    "berufserfahrung", "beruflicher werdegang")):
-            if re.search(r"volunteer|ehrenamt|freiwillig", block, re.I):
-                problems.append("CONTENT volunteering suggested under work experience")
+            # Only when volunteering is proposed as an ADDITION. Telling the
+            # student to move an unpaid role OUT of work experience is the rule
+            # working, not breaking.
+            for sentence in re.split(r"(?<=[.!?])\s+", block):
+                if not re.search(r"volunteer|ehrenamt|freiwillig", sentence, re.I):
+                    continue
+                if re.search(r"\bmov\w+|belong|gehör\w*|verschieb\w*|extracurricular|"
+                             r"ausserschulisch|if they were paid|wenn.*bezahlt",
+                             sentence, re.I):
+                    continue
+                if re.search(r"\badd\b|\binclude\b|ergänz\w*|füge\b|consider adding",
+                             sentence, re.I):
+                    problems.append("CONTENT volunteering suggested under work experience")
+                    break
             break
 
     # "Don't suggest a specific number of bullet points."
@@ -291,9 +303,11 @@ def audit(path: str) -> dict:
             break
 
     # 12. NOTHING SAID TWICE. The same sentence in a key area and a section.
+    # Against the DEDUPED data, which is what the student actually reads.
+    deduped = report._drop_duplicate_points(data)
     key_detail = {str(a.get("detail", "")).strip().lower()
-                  for a in (data.get("areas_to_improve") or []) if a.get("detail")}
-    for section in (data.get("sections") or []):
+                  for a in (deduped.get("areas_to_improve") or []) if a.get("detail")}
+    for section in (deduped.get("sections") or []):
         for point in (section.get("points") or []):
             if str(point).strip().lower() in key_detail:
                 problems.append("DUPLICATION a key area is repeated verbatim in a section")

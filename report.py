@@ -28,6 +28,8 @@ explicit request and both scoped as narrowly as possible:
     lines. "Never rewrite" is unchanged for anything they actually wrote.
 """
 
+import re
+
 import hsg_activities
 import latency
 import prompts
@@ -225,9 +227,12 @@ are missing, and never treat a [REDACTED] marker as something the student omitte
 SAY EACH THING ONCE. This is the single most repeated complaint Career Services have \
 made about these reports, so check your draft for it before you answer:
   - A point made in "areas_to_improve" must NOT be repeated in that section's own \
-feedback. The section's points are for what the key area did not already cover. If the \
-key area said everything, give that section one short point naming what else to look at, \
-or none at all.
+feedback IN THE SAME WORDS. The key area states the problem in general; the section's \
+points say what it means HERE - which entries, which lines, what specifically to look \
+at in this section. Never answer a key area in a section with a vague restatement like \
+"make sure to highlight your contribution in future entries": that is the same point \
+with the detail removed, which is worse than repeating it. If you genuinely have nothing \
+section-specific to add, give the section no points at all rather than filler.
   - Two findings that amount to the same advice are one finding.
   - Do not restate anything that is already in the format-check table you were given: \
 length, typos, spelling, parsing risks. The student has just read it. Return only the JSON object:
@@ -384,6 +389,69 @@ def deterministic_notes(facts: dict, lang: str = "en") -> list[dict]:
     return notes
 
 
+_DEDUP_NOISE = {"the", "a", "an", "and", "or", "to", "of", "in", "on", "for", "with",
+                "your", "you", "it", "is", "are", "as", "so", "that", "this", "be",
+                "der", "die", "das", "und", "oder", "zu", "in", "im", "für", "mit",
+                "dein", "deine", "du", "es", "ist", "sind", "als", "dass", "sich"}
+
+
+def _words(value: str) -> set:
+    return {w for w in re.findall(r"[\wäöüßÄÖÜ]{3,}", str(value).lower())
+            if w not in _DEDUP_NOISE}
+
+
+# "Add two to three bullet points under each role." Career Services asked for
+# no number to be named: how much a role deserves depends entirely on how
+# relevant it is to the position. The rule is in the prompt and the model still
+# reaches for a count, so the count is removed here, where it cannot come back.
+_BULLET_COUNT = re.compile(
+    r"\b(?:one|two|three|four|five|ein|eine|zwei|drei|vier|fünf|\d{1,2})"
+    r"(?:\s*(?:-|–|—|to|bis|or|oder)\s*"
+    r"(?:one|two|three|four|five|ein|eine|zwei|drei|vier|fünf|\d{1,2}))?"
+    r"\s+(bullet[\s-]?points?|bullets?|stichpunkte?n?|aufz[äa]hlungspunkte?n?)",
+    re.IGNORECASE)
+
+
+def _strip_bullet_counts(value):
+    if isinstance(value, str):
+        return _BULLET_COUNT.sub(lambda m: m.group(1), value)
+    if isinstance(value, list):
+        return [_strip_bullet_counts(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _strip_bullet_counts(v) for k, v in value.items()}
+    return value
+
+
+def _drop_duplicate_points(data: dict) -> dict:
+    """
+    Remove section points that just restate a key area.
+
+    Career Services have asked for this in three separate rounds - "these two
+    seem to nearly say the same thing", "this is a duplicate again, it is enough
+    to say this once" - and asking the model not to do it does not hold: the
+    grade advice still came back verbatim in both places. So it is removed here,
+    where it cannot come back. A point is a duplicate when almost all of its
+    content words already appear in one key area's detail.
+    """
+    areas = [_words(a.get("detail", "")) for a in (data.get("areas_to_improve") or [])
+             if isinstance(a, dict)]
+    if not areas:
+        return data
+    sections = []
+    for section in (data.get("sections") or []):
+        if not isinstance(section, dict):
+            continue
+        kept = []
+        for point in (section.get("points") or []):
+            words = _words(point)
+            if words and max((len(words & area) / len(words) for area in areas),
+                             default=0) >= 0.7:
+                continue
+            kept.append(point)
+        sections.append({**section, "points": kept})
+    return {**data, "sections": sections}
+
+
 def _apply_status(sections: list[dict], computed: dict | None) -> list[dict]:
     """
     Force every section to the status measured in code.
@@ -412,6 +480,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     placed: dict = {}
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
+    data = _strip_bullet_counts(data)
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip(), "",
              # Rendered here, never asked of the model, for the same reason as
@@ -454,6 +523,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     # weak bullets the detection missed - was the one that did not get them.
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
+    data = _drop_duplicate_points(_strip_bullet_counts(data))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:
@@ -739,6 +809,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
 
+    data = _strip_bullet_counts(data)
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
               Paragraph(plain(data.get("overall_impression", "")), body),
@@ -779,6 +850,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
                                              strings["bullet_pointer"])), small))
 
+    data = _drop_duplicate_points(_strip_bullet_counts(data))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:

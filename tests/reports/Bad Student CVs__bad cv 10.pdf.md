@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with clear section headings and a strong range of experiences for an early-career student. Each work experience entry includes both a role title and a description, and your skills section avoids unevidenced trait words, which is excellent. However, there are a couple of areas to refine: one work experience bullet currently lists duties rather than highlighting your personal contribution and transferable skills, and your GPA should be clarified for international readers by adding the maximum possible score. Nothing on your CV currently refers to AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Your CV is in good shape overall, with clear section headings and a strong range of experiences for an early-stage student. The structure covers all the main areas, and your skills are presented without unevidenced trait words, which is a plus. There are a couple of areas to clarify and strengthen, particularly around how you describe your contributions in work experience and how you present your grades for international readers. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -11,17 +11,17 @@ _Please note that this is a first feedback, mainly about the structure and conte
 | Check | Status | Comment |
 | --- | --- | --- |
 | Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Standard fonts, but section headers some parsers may not recognise ("EDUCAT10N", "SKILES & LANGUAGES", "DIPLOMAS & CERTIFICATIONS") — conventional wording such as "Work Experience" or "Education" parses more reliably; unusual bullet or icon characters (> ►); 2 embedded images — any text inside them is invisible to a parser. |
+| Estimated ATS compatibility | 🟠 Needs attention | Standard fonts, but section headers some parsers may not recognise ("EDUCAT10N", "DIPLOMAS & CERTIFICATIONS", "EXTRACURRICULAR & OTHER") — conventional wording such as "Work Experience" or "Education" parses more reliably; unusual bullet or icon characters (> ►); 2 embedded images — any text inside them is invisible to a parser. |
 | Spelling and consistency | 🟠 Needs attention | Typos: "SKILES & LANGUAGES" came through where "Skills & Languages" was expected. If that is how it is written, it is a quick fix; if not, the file is not extracting cleanly, which an ATS would also struggle with. Spelling: British/American spelling is used consistently. |
 
 _An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from four things this tool can actually observe: standard fonts, conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
 
 ### 3. Key areas to improve
 
-- 🔴 **Rework duty-based bullet in Work Experience**  
-  Revise the bullet under your SKK (Skriptenkommission HSG) role to focus on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. This will help recruiters understand your impact and suitability for future roles.
-- 🟡 **Clarify GPA grading scale**  
-  Add the maximum possible score to your GPA (e.g., 5.04 / 6.00) so that international recruiters can accurately interpret your academic performance.
+- 🟠 **Rework duty-based bullet in Work Experience**  
+  bullet in your work experience section lists duties rather than your personal contribution. Refocus this around what you did, how you did it, and which transferable skill it demonstrates—this helps recruiters see your impact.
+- 🟡 **Clarify grade scale for international readers**  
+  Your current GPA is listed as 5.04, but the maximum is not shown. Write it as 5.04 / 6.00 so that recruiters outside Switzerland can understand your achievement.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -38,27 +38,28 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Add the maximum possible score to your GPA to ensure it is understood internationally.
+- Add the maximum grade to your GPA (e.g., 5.04 / 6.00) so that readers from other countries can interpret your result accurately.
+- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these as bullets under your degree if relevant.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise the SKK (Skriptenkommission HSG) bullet to focus on your personal contribution and the skills you developed, rather than just listing duties.
+- For the SKK (Skriptenkommission HSG) entry, rework the bullet to focus on what you personally achieved, how you did it, and which transferable skill it demonstrates, rather than just listing duties.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- Skills are stated clearly and focus on hard skills and languages, which is exactly what recruiters look for in this section.
+- This section works well because it lists hard skills and language levels without including unverifiable personal traits.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- Certifications are presented in a straightforward way, making it easy for recruiters to see your additional qualifications.
+- This section is effective because it provides specific certifications with dates, making your achievements easy to verify.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- You show long-term dedication and achievement in activities like judo and skydiving, which helps illustrate your discipline and drive.
+- This section stands out by showing long-term dedication and competitive experience, which can be valuable to employers.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you unique as a candidate and where you want to go next in your career.
+- If you choose to add a profile, use it to highlight what makes you unique as a candidate and where you want to go next—focus on your strengths and aspirations relevant to your target role.
 
 ### 5. Dates worth a look
 

@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und vermittelt einen guten Überblick über deine akademische und berufliche Entwicklung. Die wichtigsten Stationen sind mit Rollen und Beschreibungen versehen, und du verzichtest auf unbelegte Eigenschaftswörter, was professionell wirkt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition oder Stellenanzeige nachreichen.
+Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und vermittelt einen guten Überblick über deine akademische und berufliche Entwicklung. Die wichtigsten Stationen sind mit Rollen und kurzen Beschreibungen versehen, und du verzichtest auf unbelegte Eigenschaftswörter. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,10 +19,10 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betreffenden Bullet Points so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Kompetenzen zeigen. Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen – der Fokus sollte aber auf der Fähigkeit liegen, die du damit belegst.
-- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die Kompetenz**  
-  Gehe jede Erfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche übertragbare Fähigkeit belege ich damit? Wo ein echtes Ergebnis vorliegt, ergänze es – aber erfinde keine Zahlen, nur um eine Lücke zu füllen.
-- 🟠 **Kein Abschnitt 'Skills & Languages' vorhanden**  
+  Überarbeite die betroffenen Bullet Points in der Rubrik 'ARBEITSERFAHRUNG', indem du jeweils erläuterst, was du konkret getan hast, wie du dabei vorgegangen bist und warum das relevant war – insbesondere, welches übertragbare Skill du damit belegst. Ein konkretes Ergebnis hilft, wenn es passt und belegbar ist.
+- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
+  Gehe jede Bullet Point in 'ARBEITSERFAHRUNG' durch und frage dich: Was habe ich gemacht? Wie? Warum war das wichtig? Welches Skill belege ich damit? Wo ein Ergebnis oder eine Veränderung belegbar ist, ergänze es – aber erfinde keine Zahlen.
+- 🟠 **Kein Skills & Languages Abschnitt vorhanden**  
   Füge einen Abschnitt 'Skills & Languages' hinzu, wenn du relevante Kompetenzen und Sprachkenntnisse hast. Das erleichtert es Lesenden, deine technischen Fähigkeiten und Sprachlevel auf einen Blick zu erfassen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
@@ -41,32 +41,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die wichtigsten Stationen sind mit Noten und relevanten Zusatzleistungen (z.B. Coaching-Programm, Maturaarbeit) versehen.
+- Die wichtigsten Stationen sind mit Abschluss, Notenschnitt und relevanten Zusatzaktivitäten versehen.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie deinen konkreten Beitrag, das Vorgehen und die übertragbaren Fähigkeiten zeigen, statt nur Aufgaben aufzulisten.
+- Ergänze, wo möglich, ein konkretes Ergebnis oder eine Veränderung – aber nur, wenn du diese belegen kannst.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Du belegst Engagement und Verantwortung außerhalb des Studiums, was deine Vielseitigkeit unterstreicht.
+- Du zeigst Engagement und Verantwortung in Sport und Vereinsarbeit, was deine Vielseitigkeit unterstreicht.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Angaben zu Interessen und Sprachen sind sachlich und klar, ohne vage Adjektive.
+- Du listest deine Interessen und Sprachen klar und ohne unbelegte Eigenschaftswörter auf.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Ein eigener Abschnitt für technische Fähigkeiten, Tools und Sprachkenntnisse (mit Level, idealerweise nach CEFR für Sprachen) erleichtert die Übersicht für Lesende.
-- Wenn du relevante Zertifikate oder IT-Kenntnisse hast, kannst du diese hier ebenfalls aufführen.
+- Füge einen eigenen Abschnitt hinzu, in dem du technische Fähigkeiten (z.B. MS Office, HubSpot, Zapier) jeweils mit einem Level (z.B. Grundkenntnisse, Fortgeschritten, Experte) versiehst.
+- Gib bei allen Sprachen das Niveau nach CEFR (A1–C2) an – das ist für Recruiter eindeutig und vergleichbar.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du ein Kurzprofil ergänzt, fokussiere dich auf das, was dich für deine Zielrolle besonders macht und wohin du dich entwickeln möchtest.
+- Falls du ein Kurzprofil ergänzt, fokussiere dich auf das, was dich für deine angestrebte Rolle besonders macht und wohin du dich entwickeln möchtest.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zusatzqualifikationen hast (z.B. das HSG-Zertifikat in Data Science Fundamentals: https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
+- Falls du relevante Zertifikate oder Zusatzkurse hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)), kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

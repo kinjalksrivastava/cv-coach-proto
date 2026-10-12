@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is concise and fits well on one page, with a clear timeline and no unexplained gaps or overlaps. The structure is generally sound, but several key sections lack detail about your actual responsibilities and achievements, making it difficult for a recruiter to understand your experience and skills. There are no bullet points anywhere, and some entries have no description at all, so adding these will make your contributions much clearer. Nothing on your CV currently refers to AI or related tools—if you have relevant experience or coursework, consider including it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is concise and fits well on one page, with a clear timeline and no unexplained gaps or overlaps. The structure covers the main sections, but several areas need more detail to help a recruiter understand your experience and skills. There are currently no bullet points or descriptions under your roles, which makes it difficult for a reader to see what you actually did in each position. No mention of AI or related tools appears anywhere in your CV—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **No bullet points anywhere in the CV**  
-  Every role and activity needs a few lines saying what was actually done. Without them, a reader has only job titles to go on—add bullet points to each entry to clarify your responsibilities and achievements.
-- 🔴 **Entries in 'BERUFLICHE ERFAHRUNG' have no description**  
-  Add a few bullets under each experience entry covering what you did, how you did it, and what changed as a result, focusing on transferable skills relevant to your future goals.
+  Add a few bullet points under each role and activity to explain what you did, how you did it, and what changed as a result. Without these, a recruiter cannot assess your skills or impact.
+- 🔴 **Entries in "BERUFLICHE ERFAHRUNG" have no description**  
+  Include bullet points under each job title in your work experience section, focusing on your responsibilities, methods, and outcomes—especially those that show transferable skills.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can distinguish between short and long experiences.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can see the duration of each role or study period clearly.
 - 🟠 **Education comes after work experience**  
-  For a student CV, education normally comes first unless you have several years of directly relevant work experience. Consider moving your education section to the top.
+  Move your education section before work experience unless you have several years of directly relevant professional experience.
 - 🟡 **Languages are listed without a level**  
-  Add a plain label (e.g., Basic, Intermediate, Advanced, Fluent) to each language, and consider using CEFR levels (A1–C2) for clarity.
+  Add a plain label (e.g., Basic, Intermediate, Advanced, Fluent) to each language, and consider using the CEFR scale (A1–C2) for clarity.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,34 +45,35 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **BERUFLICHE ERFAHRUNG** 🟠 Needs attention
 
-- Add bullet points under each role describing what you did, how you did it, and what changed as a result, focusing on transferable skills.
-- If you have participated in relevant HSG activities such as the Talents Conference (Career Services) or the St. Gallen Symposium (International Students' Committee), and these were paid or substantial roles, consider including them here if they are relevant.
+- Add bullet points under each job title to describe your main tasks, how you approached them, and what results you achieved—this helps a recruiter understand your skills and impact.
+- For each entry, focus on the transferable skills you developed that would be relevant to your future roles.
+- If you have participated in HSG-related paid part-time roles, such as the Talents Conference (Career Services), or held a staff position with the St. Gallen Symposium, consider adding these if relevant.
 
 **SPRACHEN** 🟠 Needs attention
 
-- Add a proficiency level (e.g., Basic, Intermediate, Advanced, Fluent) to each language, and consider using CEFR levels (A1–C2) for greater clarity.
+- Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for greater precision, as recruiters recognise these levels easily.
 
 **AUSBILDUNG** 🟠 Needs attention
 
-- Move this section above work experience unless you have several years of directly relevant work.
-- Add the month to each date range to clarify the duration of your studies.
-- If you have completed relevant HSG programmes such as the HSG Mentoring Programme, the Certificate in Data Science Fundamentals (DSF), or the Certificate in Integrative Sustainability Management (SuM-HSG), consider adding them if they are relevant.
+- Add the month to each date range for your degrees and courses so the duration is clear.
+- If you have participated in HSG programmes such as the HSG Mentoring Programme, the Certificate in Data Science Fundamentals (DSF), or the Certificate in Integrative Sustainability Management (SuM-HSG), consider adding these if relevant to your background or goals.
 
 **REFERENZEN** 🟠 Needs attention
 
-- Ensure that your referees have agreed to be named and that including them is expected in your target market. If not, 'Available upon request' is sufficient.
+- If you choose to include references, ensure that the referees have agreed to be named and that this is expected in your target market. Otherwise, 'Available on request' is sufficient.
 
 **Profile** ⚪ Missing
 
-- If you wish, add a short profile at the top summarising what makes you stand out as a candidate and your career goals. This helps recruiters quickly understand your unique value.
+- If you wish, add a short profile at the top of your CV outlining what makes you stand out as a candidate and your career goals. This helps recruiters quickly understand your unique value.
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have been involved in student clubs, volunteering, or committee roles (such as those listed in the HSG student clubs directory), add them here with a brief description of your role and contributions.
+- If you have held active roles in student clubs, committees, volunteering, or other extracurricular activities, add them here with bullet points describing your responsibilities and achievements.
+- You can refer to the HSG student clubs directory (https://shsg.ch/clubs) for examples of relevant activities.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts (BMC)), consider adding them here, especially if they are relevant to your target roles.
+- If you have completed relevant courses or certificates, such as Bloomberg Market Concepts (BMC) or HSG certificates, add them here with the completion date and a brief note on their relevance.
 
 ### 5. Anything else from HSG worth adding?
 

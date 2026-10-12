@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Revise your work experience bullets to focus on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where possible, include a result or outcome, but only if you can genuinely support it.
+  Rework your work experience bullets to focus on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where possible, include outcomes or results to show your impact.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify the skill you demonstrated by explaining your approach and the impact of your actions. Add outcomes where appropriate, but do not invent figures or results.
+  For each work experience bullet, clarify the skill you demonstrated and the value you added. Add results or changes where you can genuinely support them, but do not invent figures.
 - 🟠 **No Education section found**  
   Add an Education section to clearly present your academic background, including your degrees, institutions, dates, and any relevant achievements.
 - 🟡 **Grades need clarifying**  
-  When listing grades, always include the maximum (e.g., 5.0/6.0) so that recruiters from other countries can understand your results.
+  Clarify your grades by stating the grading scale used for each, so that recruiters from other countries can understand your academic performance.
 - 🟡 **Languages are listed without a level**  
-  Add a plain proficiency label (Basic, Intermediate, Advanced, Fluent) to each language, and consider using the CEFR scale (A1-C2) for clarity, as recruiters interpret these levels consistently.
+  Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1-C2) for clarity.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,16 +44,18 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Review each bullet to highlight your specific contributions, the skills you used, and the impact you made, rather than just listing tasks.
+- Revise each bullet to highlight what you personally did, how you approached the task, and the skills you demonstrated, rather than just listing responsibilities.
+- Where you can, add outcomes or results that show the impact of your work, but only if you have genuine evidence.
+- If you have experience from HSG options such as the St. Gallen Symposium (https://shsg.ch/clubs) in a paid or full-time staff role, consider adding it here if relevant.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your extracurricular activities are well described, showing both leadership and teamwork.
+- Your extracurricular activities show initiative, teamwork, and organisational skills through concrete achievements and responsibilities.
 
 **SKILES, ACTIVITIES & INTERESTS** 🟠 Needs attention
 
-- Add a proficiency level to each language, and consider using the CEFR scale for clarity.
-- For technical skills, add a consistent level (e.g., Intermediate, Advanced) to each entry.
+- If you have completed relevant technical skills training, such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), you could add it here.
+- For each technical skill or tool, include your level of proficiency to help recruiters understand your capabilities.
 
 **Profile** ⚪ Missing
 
@@ -61,13 +63,13 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Education** ⚪ Missing
 
-- Include your degrees, institutions, dates, and any notable achievements or relevant coursework.
-- If you have participated in an exchange semester or study abroad, you can add it here.
-- If you are involved in any [HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs) or have completed relevant academic projects, you can mention them if they support your application.
+- Include your degrees, institutions, dates, and any notable achievements or honours.
+- Clarify the grading scale for each grade listed so that international recruiters can interpret your results.
+- If you have participated in HSG student clubs (https://shsg.ch/clubs) or relevant academic projects, you can mention them here if they support your application.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certifications, such as [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), add them here with completion dates.
+- If you have completed relevant courses or certifications, such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), add them here with completion dates and their relevance.
 
 ### 5. Anything else from HSG worth adding?
 

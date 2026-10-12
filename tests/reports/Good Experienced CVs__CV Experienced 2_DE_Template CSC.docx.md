@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert und zeigt eine beeindruckende Laufbahn mit langjähriger Erfahrung im Vertrieb und Einkauf, insbesondere in der Medtech-Branche. Die Angaben zu Ihren Stationen sind konsistent und die wichtigsten Kompetenzen werden im Profil prägnant zusammengefasst. Für eine noch stärkere Wirkung sollten Sie die einzelnen Rollen in der Berufserfahrung klarer kennzeichnen und die Beiträge sowie Ergebnisse Ihrer Tätigkeiten deutlicher herausarbeiten. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es findet sich aktuell kein Hinweis auf KI- oder Machine-Learning-Erfahrung – falls Sie hier Kenntnisse oder Berührungspunkte haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist strukturiert und zeigt eine beeindruckende Laufbahn mit langjähriger Erfahrung im Vertrieb und Einkauf, insbesondere in der Medtech-Branche. Die Überschriften, Daten und die Rechtschreibung sind konsistent, und Ihre Skills sind klar und ohne unbelegte Eigenschaftswörter dargestellt. Da kein konkretes Berufsziel oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Zielrolle nachreichen. Es fällt auf, dass bisher keine Erfahrung mit KI oder KI-Tools erwähnt wird – falls Sie hier Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Rollenbezeichnungen in der Berufserfahrung fehlen**  
-  Fügen Sie zu jeder Station in der Berufserfahrung eine klare Funktionsbezeichnung hinzu, damit der Leser Ihre Verantwortung und Seniorität sofort erkennt.
-- 🟠 **Aufgaben statt Beitrag in den Bullet Points**  
-  Formulieren Sie die Bullet Points so um, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen, die dahinterstehenden Kompetenzen und – wo möglich – erzielte Ergebnisse oder Veränderungen zeigen.
-- 🟠 **Meist Aufgabenbeschreibung, wenig Ergebnisorientierung**  
-  Überarbeiten Sie die Bullet Points, indem Sie jeweils herausstellen, was Sie getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder Team relevant war. Wo ein messbares Ergebnis vorliegt, ergänzen Sie dieses.
+- 🔴 **Fehlende Funktionsbezeichnungen in der Berufserfahrung**  
+  Geben Sie bei jeder Station in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
+- 🟠 **Bullet Points beschreiben Aufgaben statt Beitrag**  
+  Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen, den Nutzen und die dahinterstehenden Kompetenzen zeigen. Wo möglich, ergänzen Sie Ergebnisse oder Veränderungen.
+- 🟠 **Bullet Points zeigen selten Ergebnisse oder Veränderungen**  
+  Ergänzen Sie bei den meisten Bullet Points, was sich durch Ihr Handeln verändert hat, welches Ergebnis erzielt wurde oder welche übertragbare Fähigkeit Sie damit belegen – aber nur, wenn Sie dies auch belegen können.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Überlegen Sie, ob Sie als erfahrene Fachkraft die aktuelle Reihenfolge beibehalten möchten. Für Berufseinsteiger steht die Ausbildung meist vorne, bei langjähriger relevanter Berufserfahrung ist die jetzige Reihenfolge jedoch ebenfalls gängig.
+  Für einen klassischen Studierenden-Lebenslauf empfiehlt sich die Ausbildung vor der Berufserfahrung – es sei denn, Sie sind bereits langjährig im Zielbereich tätig.
 - 🟡 **Interessen ohne Details**  
-  Ergänzen Sie bei den Interessen und Aktivitäten, wie oft, auf welchem Niveau oder in welchem Rahmen Sie diese verfolgen, um ein klareres Bild Ihrer persönlichen Schwerpunkte zu vermitteln.
+  Fügen Sie bei Interessen und ehrenamtlichen Aktivitäten Details hinzu: Was genau, wie oft, in welchem Rahmen? So wird Ihr Engagement greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,33 +45,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Die Zusammenfassung ist klar, fokussiert und hebt Ihre Alleinstellungsmerkmale für den Vertrieb im Medtech-Bereich hervor.
+- Das Profil vermittelt auf den ersten Blick Ihre Spezialisierung, Ihre wichtigsten Kompetenzen und Ihre Erfolge im Vertrieb.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu jeder Station eine eindeutige Funktionsbezeichnung hinzu, damit Ihre Rolle und Verantwortung sofort erkennbar sind.
-- Überarbeiten Sie die Bullet Points so, dass sie neben den Aufgaben auch Ihre Herangehensweise, die dahinterstehenden Kompetenzen und – wo möglich – konkrete Ergebnisse oder Veränderungen zeigen.
-- Prüfen Sie, ob Sie für besonders relevante Stationen zusätzliche Details zu Projekten, Teamgrößen oder besonderen Erfolgen ergänzen können.
+- Ergänzen Sie bei allen Stationen die genaue Funktionsbezeichnung (z.B. Key Account Manager, Einkäuferin), damit Ihre Rolle und Verantwortung klar wird.
+- Fügen Sie, wo möglich, Ergebnisse oder Veränderungen hinzu, die durch Ihr Handeln entstanden sind – das macht Ihre Wirkung sichtbar.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Angaben zu Abschlüssen, Institutionen und Zeiträumen sind klar und konsistent dargestellt.
+- Die Angaben zu Abschlüssen, Institutionen und Zeiträumen sind klar und konsistent.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie bei Ihren Aktivitäten, wie häufig, in welchem Rahmen und mit welchem Ziel Sie diese ausgeübt haben, um Ihr Engagement und Ihre Soft Skills besser sichtbar zu machen.
+- Beschreiben Sie bei Ihrer Tätigkeit für das Rote Kreuz, wie häufig Sie aktiv waren, welche konkreten Aufgaben Sie übernommen haben und welche Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Tools sind klar und enthalten nachvollziehbare Einstufungen.
+- Die Angaben zu Sprachen und IT-Tools sind präzise und enthalten nachvollziehbare Einstufungen.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen zeigen Engagement und Vielseitigkeit außerhalb des Berufs.
+- Die Interessen geben einen Einblick in Ihre persönlichen Leidenschaften und Aktivitäten.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder Kurse absolviert haben (z.B. im Bereich Data Science, Nachhaltigkeit oder Marktanalyse), können Sie diese ergänzen, um Ihr Profil weiter zu schärfen.
+- Falls Sie relevante Weiterbildungen, Zertifikate oder Kurse absolviert haben (z.B. im Bereich Data Science, Nachhaltigkeit oder Finanzmärkte), können Sie diese hier aufführen.
+- An der HSG gibt es z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), falls Sie eines davon absolviert haben.
 
 ### 5. Daten, die auffallen könnten
 

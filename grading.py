@@ -114,7 +114,13 @@ def _candidate_scales(country: str | None, line: str, context: str = "",
     CV."
     """
     if GERMAN_SCHOOL.search(line) or GERMAN_SCHOOL.search(context):
-        return [ABITUR_AVERAGE, ABITUR_POINTS]
+        # The points scale runs to 900, which makes almost any mangled number
+        # look plausible - "Grade Average: 513" was read as a valid Abitur
+        # points total and left alone, when it is a Swiss 5.13 with the decimal
+        # point lost. An Abitur points total is always labelled as points.
+        if re.search(r"\bpunkte?\b|\bpoints?\b", f"{line} {context}", re.IGNORECASE):
+            return [ABITUR_AVERAGE, ABITUR_POINTS]
+        return [ABITUR_AVERAGE]
     if (country == "CH" and value is not None
             and 1.0 <= value < SWISS_SELF_REPORT_FLOOR):
         return [ABITUR_AVERAGE, SCALES["CH"]]
@@ -150,9 +156,19 @@ def find_grades(text: str, section_lines: list[str] | None = None) -> list[dict]
     """
     context = "\n".join(section_lines) if section_lines else text
     found = []
-    for line in text.splitlines():
+    all_lines = text.splitlines()
+    for position, line in enumerate(all_lines):
         if not GRADE_KEYWORDS.search(line):
             continue
+        # Which scale applies is decided from the grade's OWN entry - its line
+        # and the two above it - not from the whole section. A CV with an Abitur
+        # in one entry and a Swiss bachelor in another was reading the
+        # bachelor's grade on the German scale, where 513 is a valid points
+        # total and so was left uncorrected.
+        # One line above, not two. CV entries are often single lines stacked
+        # directly on top of each other, so a two-line window reached into the
+        # entry above and read a Swiss bachelor's grade as a German one.
+        entry_context = "\n".join(all_lines[max(0, position - 1):position + 1])
         # Strip dates and years before looking for numbers. An entry line like
         # "Sep 2013 - Jun 2022 Bismarck Gymnasium Karlsruhe - Abitur" matches the
         # grade keyword, and scanning it raw yields "201" and "202" sliced out of
@@ -161,8 +177,11 @@ def find_grades(text: str, section_lines: list[str] | None = None) -> list[dict]
         for match in GRADE_NUMBER.finditer(scannable):
             token, max_token = match.group(1), match.group(2)
             value = _to_float(token)
-            country = country_for(line, context)
-            scales = _candidate_scales(country, line, context, value)
+            # Own entry first, then the rest of the section. On a CV with a
+            # German Abitur and a Swiss bachelor, the bachelor's grade was
+            # being read as German because "Karlsruhe" appears further up.
+            country = country_for(line, entry_context) or country_for(line, context)
+            scales = _candidate_scales(country, line, entry_context, value)
             plausible = any(_plausible_on(value, s) for s in scales)
             scale_name = next((s["name"] for s in scales if _plausible_on(value, s)), None)
             found.append({

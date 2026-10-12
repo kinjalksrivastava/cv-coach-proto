@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included grades with their maximums, making them easy to interpret internationally. However, the CV currently lacks bullet points describing your specific contributions and achievements in each role, which makes it difficult for a recruiter to understand what you actually did. There is no mention of AI experience anywhere in your CV—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included grades with their maximums, making them easy to interpret internationally. Each work experience entry includes both a role title and a description, and your skills are stated without unevidenced trait words. However, there are currently no bullet points anywhere in the CV, which means a reader cannot see what you actually did in each role or activity. This feedback focuses on structure and completeness, as no target role or job description was provided. If you have any experience with AI or related tools, consider adding it, as nothing currently on your CV refers to AI.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,7 +19,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **No bullet points anywhere in the CV**  
-  Every role and activity needs a few lines saying what was actually done. Without them, a reader has only job titles to go on. Add bullet points under each entry in your Education, Work Experience, and Extracurriculars sections to describe your responsibilities, actions, and outcomes.
+  Every role and activity needs a few lines saying what was actually done. Without bullet points, a reader has only job titles to go on, so add concise bullets under each entry to highlight your actions, skills used, and outcomes achieved.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -36,19 +36,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to highlight key projects, coursework, or initiatives—such as your Maturity Thesis, programming experience, or any involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if relevant.
+- Add bullet points under each education entry to describe what you did beyond attending classes, such as key projects, thesis work, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if relevant.
+- For your Maturity Thesis, include a bullet explaining what you actually did—your research question, data or sources used, methods applied, and the outcome.
+- If you participated in any specialisation or certificate programmes, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), add these as bullets under your degree if relevant.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under each position to explain what you did, how you did it, and what impact you had. Focus on your responsibilities, the skills you used, and any results or outcomes.
+- Add bullet points under each work experience entry to explain what you did, how you did it, who benefited, and what changed as a result. Focus on your actions, skills applied, and any measurable outcomes.
+- If you held a paid part-time role at an HSG event such as the Talents Conference, include it here with bullet points describing your responsibilities and achievements.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points for each activity to describe your role, what you organised or achieved, and any skills you developed. If you have participated in HSG student clubs (https://shsg.ch/clubs) or similar initiatives, include details relevant to your target field.
+- Add bullet points under each extracurricular entry to describe your responsibilities, the size and scope of your team or project, and any outcomes or results achieved.
+- If you have held active roles in HSG student clubs (https://shsg.ch/clubs), include these with bullet points outlining your contributions and skills developed.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, and grades are given with their maximum, making your achievements easy to interpret.
+- Skills are stated clearly and without unevidenced trait words, making this section easy for a recruiter to interpret.
 
 **Profile** ⚪ Missing
 
@@ -56,7 +60,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)—consider adding them here.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding them here.
 
 ### 5. Dates worth a look
 

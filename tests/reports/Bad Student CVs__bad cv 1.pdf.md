@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and covers all the main sections expected for a student or early-career candidate, with consistent headings, dates, and spelling. The education and skills sections are clear and complete, and your work experience entries are well-labelled and free of unexplained gaps. However, some sections would benefit from more detail about your specific contributions and the skills you developed, especially in your extracurricular roles and work experience bullets. This feedback focuses on structure and completeness, as no target role or job description was provided. Additionally, there is currently no mention of AI experience or tools—if you have relevant exposure, consider adding it.
+Your CV is well-structured, with consistent headings, dates, and spelling, and it covers all the main sections expected for a student or early-career profile. Each work experience entry includes both a clear role title and a description, and your timeline runs smoothly without unexplained gaps or overlaps. The skills you list are specific and avoid unevidenced trait words, which is a strong approach. There is currently nothing on your CV that refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific job or industry goal at any time.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -11,23 +11,21 @@ _Please note that this is a first feedback, mainly about the structure and conte
 | Check | Status | Comment |
 | --- | --- | --- |
 | Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Standard fonts, but icon or symbol characters beside your section headings that didn't survive the text extraction ("S BERUFSERFAHRUNG", "Q SPRACHEN", "£ CERTIFICATIONS") — the headings themselves are correct, but an ATS reads the file the same way this tool did, so it's worth removing the icons; section headers some parsers may not recognise ("ö ORGANISATIONEN") — conventional wording such as "Work Experience" or "Education" parses more reliably; unusual bullet or icon characters (£); 2 embedded images — any text inside them is invisible to a parser. |
+| Estimated ATS compatibility | 🟠 Needs attention | Standard fonts, conventional section headers, but icon or symbol characters beside your section headings that didn't survive the text extraction ("S BERUFSERFAHRUNG", "ö ORGANISATIONEN", "Q SPRACHEN") — the headings themselves are correct, but an ATS reads the file the same way this tool did, so it's worth removing the icons; unusual bullet or icon characters (£); 2 embedded images — any text inside them is invisible to a parser. |
 | Spelling and consistency | 🟢 Good | Typos: no obvious typos in headings or dates. Spelling: British/American spelling is used consistently. |
 
 _An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from four things this tool can actually observe: standard fonts, conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
 
 ### 3. Key areas to improve
 
-- 🔴 **Add descriptions to entries in 'ö ORGANISATIONEN'**  
-  Add a few bullets under each organisation role describing what you did, how you contributed, and what changed as a result—especially focusing on transferable skills gained.
-- 🟠 **Rework experience bullets to show your contribution**  
-  Revise your work experience bullets to highlight what you personally did, how you did it, and why it mattered, making sure to connect each to a transferable skill.
-- 🟠 **Add outcomes or skills to experience bullets**  
-  For each work experience bullet, clarify the outcome or skill demonstrated—what changed as a result of your actions, or which key skill you developed.
-- 🟠 **Add months to all date ranges**  
-  Update all date ranges to include both month and year (e.g., '09/2023 – 06/2024'), so readers can accurately understand the duration of each role.
-- 🟠 **Make bullet punctuation consistent**  
-  Choose a single style for bullet punctuation (with or without full stops) and apply it consistently throughout your CV.
+- 🔴 **Bullets describe duties rather than contribution**  
+  Many of your experience bullets list tasks rather than highlighting your personal contribution or the skills you developed. Rework these to focus on what you did, how you did it, and why it mattered, emphasising the transferable skills you gained.
+- 🔴 **Most bullets describe the task, not the skill behind it**  
+  Your experience section would be stronger if each bullet made clear what skill you demonstrated and, where possible, what changed as a result of your work. Add outcomes or results where you can genuinely support them, but focus on the skill shown.
+- 🟠 **Dates give the year but not the month**  
+  Some entries show only years for their date ranges. Add the month to each date range so a reader can see the true duration of your roles and activities.
+- 🟠 **Bullet punctuation is inconsistent**  
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -37,7 +35,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 | --- | --- |
 | AUSBILDUNG | 🟢 Strong |
 | BERUFSERFAHRUNG | 🟠 Needs attention |
-| ö ORGANISATIONEN | 🟠 Needs attention |
+| ORGANISATIONEN | 🟢 Strong |
 | SPRACHEN | 🟢 Strong |
 | SKILLS | 🟢 Strong |
 | CERTIFICATIONS | 🟢 Strong |
@@ -46,37 +44,38 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **AUSBILDUNG** 🟢 Strong
 
-- Entries are well-labelled and the timeline is consistent.
+- Entries are well-structured and show a logical academic progression.
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Review each bullet to clarify what you did, how you did it, and what skill or outcome resulted.
-- If you have experience relevant to a future target role, consider highlighting those skills or achievements.
+- Rework each bullet to highlight what you personally did, how you approached it, and what skill you demonstrated, rather than just listing tasks.
+- Where you can genuinely show an outcome or result, add it to the bullet to demonstrate your impact.
+- Ensure that each bullet makes clear which transferable skill it is meant to show, especially those relevant to your future goals.
+- Review your bullet punctuation and make it consistent throughout this section.
 
-**ö ORGANISATIONEN** 🟠 Needs attention
+**ORGANISATIONEN** 🟢 Strong
 
-- Add bullets under each entry describing your responsibilities, actions, and the skills you developed.
-- If you held an active role in an HSG organisation such as UNIVERSA - The Women's Business Network (https://www.universa-unisg.ch/), describe your contributions and any impact you made.
+- You have included a range of extracurricular activities that show engagement beyond your studies.
 
 **SPRACHEN** 🟢 Strong
 
-- Stating language certificates and levels provides clarity for readers.
+- You have provided language certificates and clearly stated your native languages.
 
 **SKILLS** 🟢 Strong
 
-- Technical skills are clearly stated and relevant to your background.
+- You have focused on specific tools and certifications, avoiding unevidenced trait words.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- Certifications are relevant and well-presented.
+- You have included recognised certifications that support your skills and experience.
 
 **INTERESTS** 🟢 Strong
 
-- Interests are clearly listed and add a personal dimension to your CV.
+- You have included a variety of interests that add personality to your CV.
 
 **Profile** ⚪ Missing
 
-- If you wish, you could add a short profile at the top of your CV outlining what makes you stand out as a candidate and your career goals.
+- If you would like to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next. This is especially useful if you have a specific target role or industry in mind.
 
 ### 5. Anything else from HSG worth adding?
 
@@ -88,10 +87,10 @@ Before your appointment, it is worth asking yourself whether there is anything e
   _Belongs in: Reference, not a CV section_
 - **[HSG University Sports](https://www.unisg.ch/en/)** — around 250 training sessions a week across 70+ sports
   _Belongs in: an active role or teaching a class: Extracurricular, or Work Experience if it was a paid contract_
+- **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
+  _Belongs in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
   _Belongs in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
-- **[NextGen Impact Forum / SHSG Next Gen Impact Award](https://www.unisg.ch/)** — student-run conference showcasing HSG sustainability initiatives, with a prize
-  _Belongs in: an active role: Extracurricular. Volunteering on the day: Volunteering or Interests_
 
 ---
 

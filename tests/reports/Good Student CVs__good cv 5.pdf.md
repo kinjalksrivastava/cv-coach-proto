@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with consistent headings, dates, and spelling, and it covers your education, work experience, leadership, volunteering, and skills. The timeline is clear and free of unexplained gaps or overlaps, and your skills are listed without unsupported trait words. However, the CV currently lacks bullet points describing your actual responsibilities and achievements in each role, which makes it difficult for a recruiter to understand your contributions. There is also a section for interests that is almost empty, and some volunteering entries do not specify your role. This feedback focuses on structure and completeness, as no target role or job description was provided. Additionally, there is no mention of AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured, with consistent headings, dates, and spelling, and it covers your education, work experience, leadership, volunteering, and skills. The timeline is clear and free of unexplained gaps or overlaps, and your work experience entries include both a role title and a description. However, there are no bullet points anywhere in the document, which makes it difficult for a recruiter to understand what you actually did in each role or activity. Additionally, some sections are thin or incomplete, such as the 'Interessen' section, and some volunteering entries lack a clear role title. There is currently nothing on your CV that refers to AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a target position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,11 +19,11 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **No bullet points anywhere in the CV**  
-  Add bullet points under every role and activity in your CV to describe what you actually did, how you did it, and what changed as a result. Without these, a reader cannot assess your skills or impact.
+  Every role and activity needs a few lines saying what was actually done. Without them, a reader has only job titles to go on—add concise bullet points under each entry to highlight your responsibilities, achievements, and the skills you developed.
 - 🔴 **Entries in 'VOLUNTEERING, SOCIETIES & INTERESTS' have no role title**  
-  For each volunteering or society entry, clearly state the function or role you held alongside the organisation name, so a reader can understand your level of responsibility.
+  State the function you held alongside the organisation—such as 'delegate', 'organiser', or 'participant'—so a reader can understand your level of responsibility and involvement.
 - 🔴 **'Interessen' is almost empty**  
-  Either add detail to your interests section—such as specific activities or pursuits—or remove the heading entirely, as an empty section draws attention to the gap.
+  Either develop this section by briefly describing your main interests (e.g. what kind of sport, music, or reading you pursue), or remove the heading if you do not wish to include personal interests.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,40 +42,36 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to highlight relevant coursework, projects, or extracurricular involvement, focusing on what you did and any outcomes.
-- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or earned a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider including these if relevant.
+- Add bullet points under each degree to describe relevant coursework, projects, or extracurricular activities, focusing on what you did and what you learned.
+- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these as bullets if relevant.
 
 **WORK EXPERIENCES** 🟠 Needs attention
 
-- Add bullet points for each position to explain your main tasks, how you approached them, and what results you achieved.
+- Add bullet points under each job to explain your main tasks, the skills you used, and any results or impact you achieved.
 
 **LEADERSHIP** 🟠 Needs attention
 
-- Include bullet points describing your specific contributions, such as initiatives you led, challenges you addressed, and measurable outcomes.
+- Add bullet points to describe what you did in your leadership role, such as initiatives you led, teams you managed, or results you achieved.
 
 **VOLUNTEERING, SOCIETIES & INTERESTS** 🟠 Needs attention
 
-- For each entry, specify your role (e.g., organiser, participant, board member) alongside the organisation name.
-- Add bullet points to describe your responsibilities, actions, and any results or recognition received.
-- If you held an active role in an HSG student club (https://shsg.ch/clubs), include this with a clear title and bullet points.
+- For each entry, state your role (e.g. 'Consultant', 'Board Member', 'Participant') so a reader can see your level of involvement.
+- Add bullet points to describe your main contributions, responsibilities, and any outcomes or skills gained in each activity.
+- If you have held an active role in an HSG student club (https://shsg.ch/clubs), add this as a bullet and explain your involvement.
 
 **FOREIGN LANGUAGES, CERTIFICATES & PROGRAMMING** 🟠 Needs attention
 
-- Add bullet points to highlight where and how you have applied these skills in your studies, work, or extracurricular activities.
-- For each language, add a CEFR level (A1–C2) to make your proficiency clear to all readers.
-- For technical skills and tools, indicate your level (e.g., Intermediate, Advanced) for each one.
-
-**Interessen** 🟠 Needs attention
-
-- Either expand this section with specific interests and brief details (e.g., type of sport, level of involvement), or remove the heading if you do not wish to include personal interests.
+- Add a proficiency level (e.g. Basic, Intermediate, Advanced, or CEFR A1–C2) next to each language to make your abilities clear to all readers.
+- For technical skills and tools, add a consistent level (e.g. 'Python (Intermediate)') to each entry.
+- If you have completed the Bloomberg Market Concepts (BMC) course (https://portal.bloombergforeducation.com/), consider adding it here if relevant.
 
 **Profile** ⚪ Missing
 
-- If you wish, add a short profile at the top of your CV summarising what makes you stand out as a candidate and your career goals.
+- If you wish, add a short profile at the top of your CV outlining what makes you stand out as a candidate and your career goals.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/)), consider adding them in a separate section.
+- If you have completed relevant courses or certificates (such as the Certificate in Integrative Sustainability Management (SuM-HSG): https://sustainability.unisg.ch/news/new-bachelor-certificate/), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 
