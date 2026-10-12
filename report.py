@@ -422,6 +422,49 @@ def _strip_bullet_counts(value):
     return value
 
 
+# "[Talents Conference] oder dem [St. Gallen Symposium]". The model copies the
+# bracket style of the markdown links it is shown even where there is no URL,
+# and bare brackets render as literal brackets - and read as a blank to fill.
+_BARE_BRACKETS = re.compile(r"\[([^\]\n]{2,80})\](?!\()")
+
+# An HSG club or society named inside a skills or interests section. Career
+# Services: an active role belongs under extracurricular experience, and a
+# reader skims hobbies and will miss it. The rule is in the prompt; it does not
+# always hold, so the point is removed here.
+_HSG_ACTIVITY = re.compile(
+    r"shsg\.ch|HSG (student )?clubs?|Consulting Club|Helvetian Investment|oikos|"
+    r"START Summit|Symposium|Talents Conference|UNIVERSA|Entretech|LawDays",
+    re.IGNORECASE)
+_WRONG_HOME = re.compile(r"skill|kenntnis|kompetenz|interest|interessen|hobb", re.I)
+
+
+def _unwrap_bare_brackets(value):
+    if isinstance(value, str):
+        return _BARE_BRACKETS.sub(lambda m: m.group(1), value)
+    if isinstance(value, list):
+        return [_unwrap_bare_brackets(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _unwrap_bare_brackets(v) for k, v in value.items()}
+    return value
+
+
+def _drop_misplaced_activities(data: dict) -> dict:
+    """Remove HSG club suggestions from a skills or interests section."""
+    sections = []
+    for section in (data.get("sections") or []):
+        if not isinstance(section, dict):
+            continue
+        name = str(section.get("name", ""))
+        if _WRONG_HOME.search(name) and not re.search(
+                r"extracurricular|ausserschulisch|außerschulisch|engagement|"
+                r"volunteer|ehrenamt|societ", name, re.I):
+            section = {**section, "points": [
+                p for p in (section.get("points") or [])
+                if not _HSG_ACTIVITY.search(str(p))]}
+        sections.append(section)
+    return {**data, "sections": sections}
+
+
 def _drop_duplicate_points(data: dict) -> dict:
     """
     Remove section points that just restate a key area.
@@ -480,7 +523,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     placed: dict = {}
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
-    data = _strip_bullet_counts(data)
+    data = _unwrap_bare_brackets(_strip_bullet_counts(data))
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip(), "",
              # Rendered here, never asked of the model, for the same reason as
@@ -523,7 +566,8 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     # weak bullets the detection missed - was the one that did not get them.
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
-    data = _drop_duplicate_points(_strip_bullet_counts(data))
+    data = _drop_misplaced_activities(
+        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data))))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:
@@ -809,7 +853,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
 
-    data = _strip_bullet_counts(data)
+    data = _unwrap_bare_brackets(_strip_bullet_counts(data))
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
               Paragraph(plain(data.get("overall_impression", "")), body),
@@ -850,7 +894,8 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
                                              strings["bullet_pointer"])), small))
 
-    data = _drop_duplicate_points(_strip_bullet_counts(data))
+    data = _drop_misplaced_activities(
+        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data))))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:

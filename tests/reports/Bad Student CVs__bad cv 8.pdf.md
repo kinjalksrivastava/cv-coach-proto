@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt Engagement in verschiedenen Bereichen, von Praktika über studentische Initiativen bis hin zu internationalen Erfahrungen. Die Überschriften, Daten und die Rechtschreibung sind durchgehend konsistent, und deine Skills werden ohne unbelegte Eigenschaftswörter dargestellt – das wirkt professionell. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Beachte, dass die Rubrik "Interessen" aktuell fast leer ist und einzelne Berufserfahrungen noch ohne Beschreibung bleiben – hier solltest du nachbessern, um ein vollständiges Bild zu vermitteln.
+Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt Engagement in verschiedenen Bereichen. Die Überschriften, Daten und die Rechtschreibung sind durchgehend konsistent, und du vermeidest unbelegte Eigenschaftswörter bei den Skills – das ist positiv. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Beachte, dass der Lebenslauf aktuell drei Seiten umfasst – für Studierende werden ein bis maximal zwei Seiten erwartet.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende Beschreibungen bei Berufserfahrungen**  
-  Füge unter jeder Position in "ARBEITS- & FÜHRUNGSERFAHRUNGEN" einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🔴 **Fehlende Beschreibungen bei Einträgen in "ARBEITS- & FÜHRUNGSERFAHRUNGEN"**  
+  Füge unter jedem Eintrag, der noch keine Beschreibung hat, einige Stichpunkte hinzu, die deine Aufgaben, das Vorgehen und die Ergebnisse abdecken – mit Fokus auf übertragbare Kompetenzen.
 - 🔴 **"Interessen" ist nahezu leer**  
-  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Interessen mit Details ergänzt, oder entferne ihn – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
-- 🔴 **Stichpunkte beschreiben Aufgaben, nicht den eigenen Beitrag**  
+  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Interessen mit Details aufführst, oder entferne die Überschrift – ein leerer Abschnitt fällt negativ auf.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
   Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret gemacht hast, wie du es gemacht hast und warum es relevant war – insbesondere, welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast.
-- 🟠 **Lebenslauf ist zu lang (3 Seiten)**  
-  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Kürze weniger relevante Inhalte, um die Übersichtlichkeit zu erhöhen.
-- 🟡 **Abiturnote muss verständlich gemacht werden**  
-  Bestätige, ob die Note tatsächlich 1,7 ist, und schreibe sie als 1,70 / 1,00 (beste Note) aus – so ist sie auch international verständlich.
+- 🟡 **Der Lebenslauf ist zu lang (3 Seiten)**  
+  Reduziere den Lebenslauf auf eine, maximal zwei Seiten. Streiche dafür weniger relevante Inhalte.
+- 🟡 **Noten müssen klarer dargestellt werden**  
+  Bestätige, ob die Abiturnote korrekt ist (vermutlich 1,7 statt 17) und gib sie als 1,70 / 1,00 an, damit sie auch international verständlich ist.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,33 +45,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls du relevante Zusatzqualifikationen wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben hast, kannst du diese ergänzen.
-- Wenn du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst, kannst du dies als Bullet unter deinem Studium aufführen.
+- Überprüfe die Abiturnote und gib sie als 1,70 / 1,00 an, damit sie auch für internationale Leser verständlich ist.
+- Falls du relevante Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben hast, könntest du diese ergänzen.
+- Falls du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst, kann ein entsprechender Hinweis als Bullet unter dem Studiengang sinnvoll sein.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Füge für jede Position, insbesondere für die Servicekraft-Tätigkeit, Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – mit Fokus auf übertragbare Kompetenzen.
-- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag und die dabei genutzten Fähigkeiten hervorheben.
-- Kürze bei Bedarf weniger relevante Tätigkeiten, um die Gesamtlänge des Lebenslaufs zu reduzieren.
+- Füge beim Eintrag "Kellner Bonn, Deutschland" Stichpunkte hinzu, die deine konkreten Tätigkeiten, Vorgehensweisen und Lernerfahrungen beschreiben – insbesondere, welche Kompetenzen du dabei entwickelt hast.
+- Überarbeite die bestehenden Stichpunkte so, dass sie deinen eigenen Beitrag, das Vorgehen und die Relevanz für zukünftige Rollen hervorheben – nicht nur die Aufgaben.
+- Falls du an der Organisation von HSG-Großveranstaltungen wie der Talents Conference oder dem [St. Gallen Symposium](https://shsg.ch/clubs) beteiligt warst, kannst du dies als bezahlte Tätigkeit mit aufnehmen, sofern zutreffend.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Darstellung der Sprachkenntnisse und technischen Fähigkeiten ist sachlich und frei von nicht belegbaren Charaktereigenschaften.
+- Die Fremdsprachenkenntnisse und technischen Fähigkeiten sind sachlich und ohne nicht belegbare Adjektive aufgeführt.
 
 **Engagements** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze zu jedem Engagement konkrete Stichpunkte: Was hast du gemacht, wie oft, in welchem Teamumfang, und was war das Ergebnis?
-- Wenn du in weiteren HSG-Clubs aktiv bist (siehe [HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)), führe diese mit kurzen Beschreibungen auf.
-- Beschreibe bei Auszeichnungen (z.B. "Honorable Mention"), wofür du diese erhalten hast.
+- Ergänze zu jedem Engagement (z.B. Model United Nations, Sicherheitspolitisches Forum) kurze Stichpunkte, die deine Rolle, konkrete Aufgaben, Teamgröße und besondere Erfolge oder Lernerfahrungen beschreiben.
+- Falls du in weiteren HSG-Clubs aktiv bist, prüfe, ob ein Eintrag mit konkreten Aufgaben sinnvoll ist – eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
 
 **Interessen** 🟠 Braucht Aufmerksamkeit
 
-- Führe zu jedem Interesse Details an: Welche Sportart, wie oft, auf welchem Niveau? Bei Musik: Instrument, Ensemble, Auftritte? Bei Lesen: bestimmte Genres oder Autoren?
-- Wenn du keine weiteren Details angeben möchtest, entferne die Überschrift, um keine Lücke zu hinterlassen.
+- Führe zu jedem Interesse (z.B. Sport, Klavier, Angeln, Reisen, Lesen) kurz aus, welche Sportart du betreibst, auf welchem Niveau, wie regelmäßig oder in welchem Kontext.
+- Falls du keine weiteren Details ergänzen möchtest, entferne die Überschrift, um einen leeren Eindruck zu vermeiden.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du ein Kurzprofil ergänzt, beschreibe in 2-3 Sätzen, was dich als Kandidat:in für dein Ziel auszeichnet und wohin du dich entwickeln möchtest.
+- Falls du ein Kurzprofil ergänzt, beschreibe in 2-3 Sätzen, was dich als Kandidat für deine Wunschrolle auszeichnet und wohin du dich entwickeln möchtest.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 

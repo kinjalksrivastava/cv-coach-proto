@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und vermittelt einen guten Überblick über deine akademische und berufliche Entwicklung. Die wichtigsten Stationen sind mit Rollen und kurzen Beschreibungen versehen, und du verzichtest auf unbelegte Eigenschaftswörter. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition oder Stellenanzeige nachreichen.
+Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und enthält alle wesentlichen Stationen Ihrer Ausbildung und Berufserfahrung. Die Rollenbeschreibungen sind vollständig und verzichten auf unbelegte Eigenschaftswörter, was einen professionellen Eindruck hinterlässt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Bullet Points in der Rubrik 'ARBEITSERFAHRUNG', indem du jeweils erläuterst, was du konkret getan hast, wie du dabei vorgegangen bist und warum das relevant war – insbesondere, welches übertragbare Skill du damit belegst. Ein konkretes Ergebnis hilft, wenn es passt und belegbar ist.
-- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
-  Gehe jede Bullet Point in 'ARBEITSERFAHRUNG' durch und frage dich: Was habe ich gemacht? Wie? Warum war das wichtig? Welches Skill belege ich damit? Wo ein Ergebnis oder eine Veränderung belegbar ist, ergänze es – aber erfinde keine Zahlen.
-- 🟠 **Kein Skills & Languages Abschnitt vorhanden**  
-  Füge einen Abschnitt 'Skills & Languages' hinzu, wenn du relevante Kompetenzen und Sprachkenntnisse hast. Das erleichtert es Lesenden, deine technischen Fähigkeiten und Sprachlevel auf einen Blick zu erfassen.
+  Überarbeiten Sie die betroffenen Bullet Points in der Arbeits­erfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihren konkreten Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf übertragbare Fähigkeiten und, wo möglich, auf Ergebnisse.
+- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterstehende Fähigkeit**  
+  Gehen Sie jede Bullet Point in der Arbeits­erfahrung durch und fragen Sie sich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Ergänzen Sie echte Resultate, wo diese belegbar sind.
+- 🟠 **Kein Skills & Languages-Abschnitt vorhanden**  
+  Fügen Sie einen Abschnitt zu Hard Skills und Sprachkenntnissen hinzu, wenn Sie relevante Kompetenzen haben. Das erleichtert es Recruitern, Ihre Eignung auf einen Blick zu erkennen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,32 +41,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die wichtigsten Stationen sind mit Abschluss, Notenschnitt und relevanten Zusatzaktivitäten versehen.
+- Die Ausbildung enthält aktuelle Noten, relevante Zusatzprogramme und gibt einen vollständigen Überblick über Ihren Werdegang.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze, wo möglich, ein konkretes Ergebnis oder eine Veränderung – aber nur, wenn du diese belegen kannst.
+- Überarbeiten Sie die Bullet Points so, dass sie Ihren persönlichen Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen sichtbar machen – nicht nur die Aufgabe selbst.
+- Ergänzen Sie, wo möglich, Resultate oder Veränderungen, die durch Ihr Handeln entstanden sind, sofern diese belegbar sind.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Du zeigst Engagement und Verantwortung in Sport und Vereinsarbeit, was deine Vielseitigkeit unterstreicht.
+- Die Darstellung Ihrer Rollen im Sport und Verein unterstreicht Ihr Engagement und Ihre Verantwortungsbereitschaft außerhalb des Studiums.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Du listest deine Interessen und Sprachen klar und ohne unbelegte Eigenschaftswörter auf.
+- Die Interessen, Sprachkenntnisse und IT-Kompetenzen sind klar und ohne unbelegte Eigenschaftswörter dargestellt.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Füge einen eigenen Abschnitt hinzu, in dem du technische Fähigkeiten (z.B. MS Office, HubSpot, Zapier) jeweils mit einem Level (z.B. Grundkenntnisse, Fortgeschritten, Experte) versiehst.
-- Gib bei allen Sprachen das Niveau nach CEFR (A1–C2) an – das ist für Recruiter eindeutig und vergleichbar.
+- Fügen Sie einen eigenen Abschnitt für Hard Skills (z.B. Tools, Software, Methoden) und Sprachkenntnisse hinzu, jeweils mit Niveauangabe (bei Sprachen idealerweise nach CEFR, z.B. B2, C1). Das erleichtert die schnelle Einschätzung Ihrer Eignung.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du ein Kurzprofil ergänzt, fokussiere dich auf das, was dich für deine angestrebte Rolle besonders macht und wohin du dich entwickeln möchtest.
+- Falls Sie ein Kurzprofil ergänzen möchten, nutzen Sie es, um in 2–3 Sätzen Ihre Alleinstellungsmerkmale und Ihre Zielrichtung für den nächsten Karriereschritt zu beschreiben.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Zusatzkurse hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)), kannst du diese hier aufführen.
+- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) absolviert haben, können Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Daten, die auffallen könnten
 

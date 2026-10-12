@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und klar strukturiert, mit konsistenten Überschriften und einer lückenlosen Zeitlinie. Die wichtigsten Abschnitte sind vorhanden und die Angaben zu Kenntnissen und Sprachen sind sachlich gehalten. Allerdings ist der Textumfang noch sehr gering – du hast auf einer Seite viel Platz, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es ist zudem kein Bezug zu KI oder AI-Tools erkennbar – falls du hier Erfahrungen hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und klar strukturiert, mit konsistenten Überschriften und einer lückenlosen Zeitlinie. Die wichtigsten Abschnitte sind vorhanden und die Angaben zu Kenntnissen und Sprachen sind sachlich gehalten. Allerdings ist der CV insgesamt noch sehr kurz und bietet viel Raum, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Es gibt aktuell keine Hinweise auf Erfahrungen mit KI oder AI-Tools – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,9 +19,9 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um ausführlicher auf deine bisherigen Erfahrungen, Aufgaben und Engagements einzugehen. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Lesende schnell dünn und lässt Potenzial ungenutzt.
-- 🟠 **Aufzählungen beschreiben Aufgaben statt Beitrag**  
-  Formuliere die Stichpunkte in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Kompetenzen du dabei eingesetzt oder entwickelt hast. Ein Ergebnis ist hilfreich, aber der Fokus sollte auf der erkennbaren Fähigkeit liegen.
+  Nutze den vorhandenen Platz, um ausführlicher auf deine bisherigen Erfahrungen, Engagements und Fähigkeiten einzugehen. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Lesende oft zu knapp und lässt Potenzial ungenutzt.
+- 🟠 **Aufgaben statt Beitrag in den Bulletpoints**  
+  Formuliere die Bulletpoints in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Kompetenzen du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis oder eine sichtbare Fähigkeit macht deinen Beitrag greifbar.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -39,24 +39,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟢 Stark
 
-- Die Ausbildung ist sauber und konsistent dargestellt, mit vollständigen Zeitangaben.
+- Die Ausbildung ist mit konsistenten Daten und ohne Zeitlücken dargestellt.
 
 **Berufserfahrung** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Stichpunkte so, dass sie deinen konkreten Beitrag, die Herangehensweise und die daraus gewonnenen Fähigkeiten oder Ergebnisse sichtbar machen.
-- Nutze den vorhandenen Platz, um weitere relevante Erfahrungen oder Details zu ergänzen, sofern vorhanden.
+- Überarbeite die Bulletpoints so, dass sie deinen konkreten Beitrag, die eingesetzten Fähigkeiten und – wo möglich – ein Ergebnis oder eine Entwicklung zeigen.
+- Nutze den vorhandenen Platz, um weitere relevante Erfahrungen oder Details zu ergänzen, die deine Entwicklung und Kompetenzen sichtbar machen.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind klar benannt und zeigen Zusatzqualifikationen, die für viele Bereiche nützlich sind.
+- Die Zertifikate sind klar benannt und zeigen Zusatzqualifikationen.
 
 **Kenntnisse** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Kenntnissen sind präzise und ohne vage Adjektive formuliert.
+- Die Angaben zu Sprachen und IT-Kenntnissen sind klar und ohne vage Adjektive formuliert.
 
 **Engagement** 🟢 Stark
 
-- Die Mitgliedschaften und Aktivitäten zeigen vielseitiges Engagement und Interesse an wirtschaftlichen Themen.
+- Die Mitgliedschaften und Teilnahmen an Events zeigen dein Interesse an Wirtschaft und Finanzen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -64,7 +64,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du relevante Hobbys oder persönliche Interessen hast, kannst du diese ergänzen – etwa Sportarten, Musik, Reisen oder andere Aktivitäten, die dich ausmachen.
+- Wenn du relevante Hobbys oder Interessen hast (z.B. Sportarten, Musik, Reisen), kannst du diese ergänzen, um ein vollständigeres Bild von dir zu vermitteln.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

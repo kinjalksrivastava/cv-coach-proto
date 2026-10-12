@@ -260,6 +260,14 @@ def suggestions_block(categories: list[str], displays: set | None = None) -> str
             continue
         lines.append(f"  {category}:")
         for name, what, where, url in options:
+            if category == "Experience":
+                # Several entries carry both placements ("a paid part-time
+                # role: Work Experience. Volunteering on the day: ..."), and
+                # the model copied the whole note into the work-experience
+                # section, suggesting volunteering there. Work experience is
+                # paid work.
+                where = next((part.strip() for part in re.split(r"(?<=\.)\s+", where)
+                              if "Work Experience" in part), where)
             # A ready-made markdown link. Handing the model a bare "[url]" got a
             # bare "[url]" back, which reads as a blank to fill rather than a link.
             label = f"[{name}]({url})" if url else name

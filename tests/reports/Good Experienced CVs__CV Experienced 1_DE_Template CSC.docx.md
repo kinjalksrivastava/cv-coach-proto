@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Die Angaben zu Noten und Daten sind klar und konsistent, und Sie vermeiden unbelegte Eigenschaftswörter bei den Fähigkeiten. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es fällt auf, dass keine explizite Erfahrung mit KI, maschinellem Lernen oder KI-Tools im Lebenslauf genannt wird – falls Sie hier relevante Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist strukturiert, klar und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Die Angaben zu Noten und Daten sind konsistent und ermöglichen eine internationale Vergleichbarkeit. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es fällt auf, dass keine explizite Erfahrung mit KI oder maschinellem Lernen genannt wird – falls Sie entsprechende Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende Funktionsbezeichnungen in der Berufserfahrung**  
-  Geben Sie bei jeder Station in der Berufserfahrung die genaue Funktion an, die Sie innehatten – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
+- 🔴 **Fehlende Funktionsbezeichnungen in zwei Berufserfahrungseinträgen**  
+  Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Positionsbezeichnung an, damit der Leser Ihre Rolle, Verantwortung und Seniorität klar erkennen kann.
 - 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben.
-- 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich normalerweise, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen über viele Jahre einschlägiger Berufserfahrung.
+  Überarbeiten Sie die betroffenen Bullet Points so, dass sie Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben – insbesondere die übertragbaren Kompetenzen.
+- 🟠 **Reihenfolge: Ausbildung steht nach Berufserfahrung**  
+  Für einen studentischen oder akademisch geprägten Lebenslauf empfiehlt sich, die Ausbildung vor der Berufserfahrung zu platzieren, es sei denn, Sie sind bereits langjährig im Beruf.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, C1), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
+  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
 - 🟡 **Interessen ohne Details**  
-  Ergänzen Sie bei den Interessen, wie oft, auf welchem Niveau oder in welchem Rahmen Sie diese verfolgen, um ein klareres Bild Ihrer Aktivitäten zu vermitteln.
+  Ergänzen Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben, um Ihr Engagement und Ihre Persönlichkeit greifbarer zu machen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,11 +45,12 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil fasst Ihre Expertise und Ihren USP als Innovationsexperte überzeugend zusammen.
+- Das Profil vermittelt auf den Punkt gebracht Ihre Spezialisierung und Ihre Motivation für neue Technologien.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei allen Positionen die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar erkennbar sind.
+- Ergänzen Sie bei den Einträgen 'Senior Transformation NAME REDACTED' und 'Transformation NAME REDACTED' jeweils die genaue Positionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
+- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, das Vorgehen und die daraus gewonnenen Kompetenzen oder Ergebnisse herausstellen.
 
 **AUSBILDUNG** 🟢 Stark
 
@@ -57,20 +58,20 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei den Interessen und Aktivitäten Details hinzu, wie häufig, auf welchem Niveau oder in welchem Rahmen Sie diese ausüben (z.B. Mentor – wie oft, in welchem Programm, mit welchem Fokus).
+- Beschreiben Sie bei Ihren Interessen und Engagements (z.B. Mentoring), wie oft, in welchem Rahmen und auf welchem Niveau Sie aktiv sind, um Ihr Engagement und Ihre Soft Skills besser sichtbar zu machen.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei allen Sprachen und IT-Kenntnissen ein klares Niveau (z.B. Grundkenntnisse, Fortgeschritten, C1), damit Recruiter Ihre Kompetenzen besser einschätzen können.
-- Falls Sie Interesse an einer Vertiefung im Bereich Finanzmärkte haben, könnten Sie z.B. das Bloomberg Market Concepts Zertifikat (https://portal.bloombergforeducation.com/) ergänzen, sofern relevant.
+- Fügen Sie bei jeder Sprache und jedem IT-Tool ein Niveau hinzu (z.B. 'Englisch (C1)', 'Python (Grundkenntnisse)'), damit Ihre Kompetenzen klar einschätzbar sind.
+- Für eine noch präzisere Darstellung können Sie das CEFR-Raster (A1–C2) für Sprachen verwenden.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen sind mit Beispielen und Kontext (z.B. Teilnahme an der Seeüberquerung, Chormitgliedschaft) anschaulich dargestellt.
+- Die Angaben zu Sport, Musik und Kochen sind anschaulich und geben einen guten Einblick in Ihre Persönlichkeit.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Weiterbildungen abgeschlossen haben, könnten Sie diese in einem eigenen Abschnitt aufführen, um zusätzliche Qualifikationen sichtbar zu machen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Onlinekurse, HSG-Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)) absolviert haben, könnten Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Daten, die auffallen könnten
 
