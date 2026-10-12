@@ -320,6 +320,29 @@ Inglês: avançado
 )
 
 
+# --------------------------------------------------------------------------
+# 11. Career Services' own template layout: the employer on its own dated line,
+#     each role beneath it with its own range. Both faults it produced were on
+#     their own good example - a role reported as having no role title, and the
+#     employer's period reported as concurrent with the role inside it.
+# --------------------------------------------------------------------------
+case(
+    "employer_line_with_dated_roles_beneath",
+    """Work Experience
+Swiss Consulting AG, Zurich, Switzerland            06/2017 - 01/2021
+Senior Transformation Excellence Consultant         01/2019 - 01/2021
+- Led digital transformation initiatives for three financial services clients
+Transformation Consultant                           06/2017 - 12/2018
+- Built the delivery model later adopted across the practice
+
+Education
+MA in Business Administration, HSG                  09/2015 - 06/2017
+- Major in Strategy
+""",
+    no_issue_kinds=["entries_no_title", "date_overlap", "entries_no_detail"],
+)
+
+
 def run() -> int:
     failures = 0
     for item in CASES:

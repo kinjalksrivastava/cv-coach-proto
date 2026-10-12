@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits on one page, and presents a strong academic and professional background with clear grades and role descriptions. The section headings and content are clear, and you avoid unevidenced trait words in your skills section. However, many of your experience bullets focus on tasks rather than the skills you developed or the impact you made, so adding more detail on outcomes and transferable skills will help recruiters understand your strengths. There is no mention of AI experience or tools—if you have relevant exposure, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is well-structured, fits comfortably on one page, and presents a strong academic and professional background. Each professional experience entry includes both a clear role title and description, and your grades are shown with their maximums, making them easy to interpret internationally. Your skills section avoids unevidenced trait words and focuses on hard skills and languages. This feedback covers structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,10 +18,10 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Experience bullets focus on tasks, not skills or outcomes**  
-  Many of your experience bullets describe what you did but not how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you demonstrated, the method you used, and the impact or outcome where possible. This will help recruiters see your transferable skills and achievements.
-- 🟠 **Inconsistent bullet punctuation**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV to maintain a professional appearance.
+- 🔴 **Most bullets describe the task, not the skill behind it**  
+  Many of your experience bullets focus on what you did, but do not explain how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you want to highlight, the approach you took, and the outcome or impact where possible—this helps a reader see your transferable skills.
+- 🟠 **Bullet punctuation is inconsistent**  
+  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV for a more professional appearance.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -38,12 +38,12 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟢 Strong
 
-- Grades are given with their maximum, so a reader in another country can interpret them.
+- Grades are given with their maximum, making them easy to interpret for international readers.
 
 **Professional Experience** 🟠 Needs attention
 
-- Review each bullet and add detail on what skill you demonstrated, how you approached the task, and what changed as a result—this will make your achievements and transferable skills clearer to recruiters.
-- Ensure all bullets use consistent punctuation—either all with or all without a full stop.
+- For each bullet, clarify what you did, how you did it, and why it mattered—add outcomes or changes where you can genuinely evidence them.
+- Decide on a consistent punctuation style for your bullets and apply it throughout this section.
 
 **Extracurriculars** 🟢 Strong
 
@@ -51,15 +51,15 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Skills & Interests** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, and language levels are clearly indicated.
+- Skills are stated with levels and without unsupported personal traits, making this section clear and credible.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
+- If you choose to add a profile, use it to summarise what makes you a strong candidate for your target role and where you want to go next.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here, especially if they support your target role.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here, especially if they support your target roles.
 
 ### 5. Dates worth a look
 

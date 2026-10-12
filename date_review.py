@@ -173,7 +173,15 @@ def findings(ranges: list[dict], labels: dict | None = None,
 
     for i in range(len(ranges) - 1):
         a, b = ranges[i], ranges[i + 1]
-        if a["end_idx"] > b["start_idx"] and a["months_explicit"] and b["months_explicit"]:
+        # One range wholly inside another is not two things at once. It is the
+        # layout Career Services use in their own templates: the employer with
+        # its full period on one line and each role beneath it with its own
+        # range. Reporting that as concurrent work told a student their own
+        # template was contradictory.
+        nested = (a["start_idx"] <= b["start_idx"] and b["end_idx"] <= a["end_idx"]) or \
+                 (b["start_idx"] <= a["start_idx"] and a["end_idx"] <= b["end_idx"])
+        if (a["end_idx"] > b["start_idx"] and not nested
+                and a["months_explicit"] and b["months_explicit"]):
             out.append({"kind": "overlap", "first": a["raw"], "second": b["raw"],
                         "months": None,
                         "text": phrases["overlap"].format(first=name(a["raw"]),

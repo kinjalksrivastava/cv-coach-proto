@@ -202,8 +202,15 @@ def find_findings(text: str, labels: dict | None = None,
         # years alone the boundaries are this parser's own guess (January and
         # December), so "2013 - 2017" against "2017 - 2018" would be reported as
         # concurrent when the student simply finished one and started the next.
+        # One range wholly inside another is not two things at once. It is the
+        # layout Career Services use in their own templates: the employer with
+        # its full period on one line and each role beneath it with its own
+        # range. Reporting that as concurrent work told a student their own
+        # template was contradictory.
+        nested = (a["start_idx"] <= b["start_idx"] and b["end_idx"] <= a["end_idx"]) or \
+                 (b["start_idx"] <= a["start_idx"] and a["end_idx"] <= b["end_idx"])
         both_explicit = a["months_explicit"] and b["months_explicit"]
-        if a["end_idx"] > b["start_idx"] and both_explicit:
+        if a["end_idx"] > b["start_idx"] and both_explicit and not nested:
             findings.append({
                 "kind": "overlap", "first": a["raw"], "second": b["raw"], "months": None,
                 "text": phrases["overlap"].format(first=name(a["raw"]),

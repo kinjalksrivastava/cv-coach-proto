@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits comfortably on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent throughout, and your professional experience entries all include both a role title and a description. The feedback below focuses on structure and completeness, as no specific target role or job description was provided—if you add a target, I can give more tailored advice. There is currently no evidence of AI experience in your coursework, projects, jobs, or skills section; if you have relevant exposure, consider adding it.
+Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. The section headings, dates, and spelling are consistent throughout, and your professional experience entries all include both a role title and a description. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. If you have any experience or coursework involving AI, consider adding it, as nothing currently on your CV highlights this area.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several bullets in your professional experience section state only the tasks you performed, without highlighting your personal contribution or the transferable skills you developed. Rework these to focus on what you did, how you did it, and why it mattered, making sure to surface the skills most relevant to your future applications.
+  Several bullets in your professional experience section state only the tasks you performed, without showing your specific contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you want to showcase.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Nearly all experience bullets list activities but do not show the outcome, impact, or skill demonstrated. For each, clarify what you achieved or changed, and connect it to a transferable skill—add results where you can genuinely evidence them.
+  Nearly all your experience bullets list activities but do not show the outcome, change, or skill developed. For each, clarify what you did, how you did it, and what skill or result came from it. Add outcomes where you can genuinely support them.
 - 🟠 **Bullet punctuation is inconsistent**  
   Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 - 🟡 **Grades need clarifying**  
-  Your Bachelor's grade is listed as '5' without a maximum. To ensure international recruiters understand your achievement, write it as '5.00 / 6.00'.
+  Your Bachelor's grade is listed as '5' without a maximum. Write it as 5.00 / 6.00 so that international readers can understand your achievement.
 - 🟡 **Languages are listed without a level**  
-  For each language, add a plain label (Basic, Intermediate, Advanced, Fluent, Native) and consider including the CEFR level (A1–C2) for clarity, as this is widely understood by recruiters.
+  For each language, add a plain label (Basic, Intermediate, Advanced, Fluent) and consider including the CEFR level (A1-C2) for clarity, as this is the standard recruiters recognise.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,33 +44,31 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Update your Bachelor's grade to show the maximum (e.g. '5.00 / 6.00') so it is clear to readers outside Switzerland.
-- If you have completed any additional qualifications, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), consider adding them if relevant to your future applications.
-- If you participated in the HSG Mentoring Programme, you could add this as a bullet under your degree, naming your mentor's industry if relevant.
+- Clarify your Bachelor's grade by writing it as 5.00 / 6.00, so international readers can interpret it correctly.
+- If you have completed any additional qualifications, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), you could add them here if relevant to your goals.
+- If you participated in the HSG Mentoring Programme, consider adding it as a bullet under your degree, naming your mentor's industry if relevant.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Revise bullets that only describe tasks (e.g. 'Channel Owner for UBS Digital Banking within the team, driving high-quality campaign execution') to highlight what you personally contributed, how you approached the work, and what skill or outcome resulted.
-- For each bullet, clarify the impact of your work—what changed, improved, or was achieved as a result of your actions. Where you can genuinely evidence a result or outcome, add it.
-- Ensure all bullet points use consistent punctuation—either all with or all without a full stop.
+- Rework bullets that currently state only duties or tasks (e.g. 'Channel Owner for UBS Digital Banking within the team, driving high-quality campaign execution') to highlight what you specifically did, how you did it, and what skill or impact resulted.
+- For each bullet, clarify the skill you demonstrated and, where possible, add a concrete outcome or result that you can support.
+- Ensure all bullet points use consistent punctuation, either ending all with a full stop or none.
 
 **EXTRACURRICULAR ACTIVITY** 🟢 Strong
 
-- Your extracurricular activity is well-presented, showing both initiative and collaboration in organising sustainability-focused events.
+- This section works well because it demonstrates initiative and collaboration through concrete examples of event organisation and volunteering.
 
 **SKILLS & INTERESTS** 🟠 Needs attention
 
-- Add a proficiency level for each language (e.g. 'English (C1)', 'French (B2)'), and consider using CEFR levels for clarity.
-- For each technical skill or tool (e.g. Adobe Campaign, Figma), add your level of proficiency (e.g. Basic, Intermediate, Advanced) to help recruiters understand your capabilities.
-- If you have completed relevant certifications, such as Bloomberg Market Concepts (BMC), you could add them here or in a separate Courses and Certificates section.
+- If you have completed relevant technical skills training, such as Bloomberg Market Concepts (BMC), you could add it here or in a Courses and Certificates section.
 
 **Profile** ⚪ Missing
 
-- If you wish, you can add a short profile at the top of your CV to highlight what makes you stand out as a candidate and your career goals. This is optional, but can help recruiters quickly understand your unique strengths and direction.
+- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF), Certificate in Integrative Sustainability Management (SuM-HSG), or Bloomberg Market Concepts (BMC)—consider adding them here to showcase additional qualifications.
+- If you have completed any relevant certificates, such as the Certificate in Data Science Fundamentals (DSF), Certificate in Integrative Sustainability Management (SuM-HSG), or Bloomberg Market Concepts (BMC), consider adding them here.
 
 ### 5. Dates worth a look
 

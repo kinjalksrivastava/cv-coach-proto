@@ -374,6 +374,23 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
                 if candidate and not _is_bullet(candidate) and not _dated(candidate):
                     title = candidate
                     break
+            if not title:
+                # The employer sits on its own DATED line with the roles beneath
+                # it, each carrying its own range - the layout Career Services
+                # use in their own templates:
+                #
+                #     Swiss Consulting AG, Zurich        06/2017 - 01/2021
+                #     Senior Transformation Consultant   01/2019 - 01/2021
+                #     Transformation Consultant          06/2017 - 12/2018
+                #
+                # The back-search above skips dated lines, so the role entry had
+                # nothing but its own title and was reported as having no role
+                # title - on their own template.
+                for back in range(offset - 1, max(offset - 3, -1), -1):
+                    candidate = body[back].strip()
+                    if candidate and not _is_bullet(candidate) and _dated(candidate):
+                        title = candidate
+                        break
             entries.append({"line": line.strip(), "title_line": title,
                             "offset": offset, "bullets": [], "description": []})
     for entry in entries:
