@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits on one page, and presents a clear timeline without gaps or overlaps. Each work experience entry includes both a role title and a description, and your section headings and dates are consistent throughout. However, the feedback below focuses on structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, fits on one page, and presents a clear timeline without gaps or overlaps. Each work experience entry includes both a role title and a description, and your skills section avoids unevidenced trait words. However, this feedback focuses on structure and completeness, as no target role or job description was provided—if you add one, I can give more tailored advice. Nothing on your CV currently refers to AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many of your work experience bullets list tasks rather than highlighting your specific contribution or the skills you developed. Rework these to focus on what you did, how you did it, and why it mattered, emphasising transferable skills relevant to your future applications.
+  Revise your work experience bullets to focus on what you personally did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where possible, include a result or outcome to show your impact.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Several experience bullets stop at describing the activity, without showing the outcome or the skill demonstrated. For each, clarify what you achieved, how you approached the task, and what skill it demonstrates. Add results where you can genuinely evidence them.
+  For each experience bullet, clarify the skill you demonstrated and the value you added, not just the task performed. Add outcomes or changes where you can genuinely evidence them.
 - 🟠 **No Education section found**  
-  Your education details are present but not under a clear 'Education' heading. Add a dedicated Education section to ensure recruiters can easily find your academic background.
+  Add a dedicated Education section to clearly present your academic background, including your degrees, institutions, dates, and any relevant achievements.
 - 🟡 **Grades need clarifying**  
-  Some grades are listed in a format that may not be understood internationally. Clarify the grading scale for each, and write them as 'your grade / maximum' so recruiters from other countries can interpret them correctly.
+  Clarify the grading scale for your Matura GPA so that readers unfamiliar with the system can understand your results.
 - 🟡 **Languages are listed without a level**  
-  Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for clarity, as this is widely recognised by recruiters.
+  Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for clarity.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,16 +44,17 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise each bullet to highlight what you personally did, how you did it, and why it mattered, focusing on the transferable skills you developed.
-- Where possible, add outcomes or results that you can evidence, but only if they are appropriate and accurate.
+- Rework each bullet to highlight what you did, how you did it, and the skills you developed or demonstrated, rather than just listing tasks.
+- Where you can genuinely evidence an outcome or result, add it to show your impact.
+- If you have experience from HSG options such as the Talents Conference or the St. Gallen Symposium (https://shsg.ch/clubs) in a paid or staff role, consider including it if relevant.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your extracurricular activities show initiative, teamwork, and organisational skills through concrete achievements and responsibilities.
+- Your extracurricular activities are well described, showing both leadership and commitment.
 
 **SKILES, ACTIVITIES & INTERESTS** 🟠 Needs attention
 
-- For technical skills, state your level of proficiency (e.g., Intermediate, Advanced) to help recruiters understand your capabilities.
+- If you have completed relevant technical skills training, such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), you could add it here.
 
 **Profile** ⚪ Missing
 
@@ -61,11 +62,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Education** ⚪ Missing
 
-- Add an Education section listing your degrees, institutions, dates, and clarified grades. If you have relevant club memberships or academic achievements, you can include them here if they support your target role.
+- If you have participated in HSG student clubs (https://shsg.ch/clubs) or relevant academic projects, you could mention them here if they support your target role.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certifications (such as Bloomberg Market Concepts), add them here with completion dates and, if applicable, a brief note on their relevance.
+- If you have completed relevant courses or certifications, such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), add them here.
 
 ### 5. Anything else from HSG worth adding?
 

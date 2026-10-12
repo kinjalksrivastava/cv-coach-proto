@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear and continuous, and your experience sections consistently include both role titles and descriptions. Many of your experience bullets go beyond listing tasks to show concrete results, which is a real strength. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
+Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear and continuous, and your experience sections consistently include both role titles and descriptions. Many of your experience bullets go beyond listing tasks to show concrete results, which is a real strength. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -35,27 +35,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Your education section is strong because it provides clear degree details, relevant projects, and grades with their maximum, making your achievements easy to interpret for readers from different backgrounds.
+- Grades are presented with their maximum, making your academic achievements easy to interpret for readers from different systems.
 
 **PROFESSIONAL EXPERIENCE** 🟢 Strong
 
-- This section stands out because most bullets go beyond tasks to show measurable outcomes, and each entry is clearly described with a role title and context.
+- Most experience bullets go beyond tasks to show measurable results or impact, which helps a recruiter understand your contribution.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- You effectively present your community involvement by specifying your roles and describing your contributions in each entry.
+- Each community experience entry includes both a role title and a description, making your involvement and impact clear.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- This section works well because it lists hard skills and language abilities clearly, and avoids unsupported personal traits.
+- Skills are listed factually, and language levels are specified in plain terms, avoiding vague or unsubstantiated claims.
 
 **Profile** ⚪ Missing
 
-- If you have a specific career goal or unique value proposition, consider adding a short profile at the top of your CV to highlight what sets you apart and where you want to go next.
+- If you choose to add a profile, use it to highlight what makes you unique as a candidate and where you want to go next, focusing on your strengths and career goals.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed additional courses or certificates (such as the HSG Certificate in Data Science Fundamentals or Integrative Sustainability Management), you could add them here to showcase further expertise, especially if they are relevant to your future applications.
+- If you have completed additional courses or certificates relevant to your target roles, consider adding them in a separate section to make them more visible to recruiters.
 
 ### 5. Anything else from HSG worth adding?
 

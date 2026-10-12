@@ -45,33 +45,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil vermittelt auf den Punkt Ihre Spezialisierung und Ihre Motivation für neue Technologien.
+- Das Profil vermittelt auf den Punkt, was Sie als Kandidat auszeichnet und gibt einen überzeugenden Überblick über Ihre Schwerpunkte.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
 - Ergänzen Sie beim Eintrag 'Transformation NAME REDACTED' die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
-- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten oder Ergebnisse herausstellen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind transparent und international verständlich angegeben, und relevante Kurse sowie das Auslandssemester sind genannt.
+- Die Noten sind transparent und international verständlich angegeben, und relevante Zusatzqualifikationen werden genannt.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei Ihren Interessen (z.B. Mentoring, Sport, Musik) Details hinzu: Wie oft, auf welchem Niveau oder in welchem Rahmen üben Sie diese aus? Das macht Ihr Engagement und Ihre Persönlichkeit greifbarer.
+- Fügen Sie bei Ihren Interessen und Aktivitäten Details hinzu, wie häufig, auf welchem Niveau oder in welchem Rahmen Sie diese ausüben, um Ihr Engagement und Ihre Persönlichkeit greifbarer zu machen.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei jeder Sprache und technischen Fähigkeit ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
-- Falls Sie zusätzliche relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese im optionalen Abschnitt 'Kurse und Zertifikate' aufführen.
+- Ergänzen Sie bei allen Sprachen und IT-Kenntnissen ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
+- Wenn Sie weitere relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese hier oder in einem eigenen Abschnitt aufführen.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen zeigen Engagement und geben einen persönlichen Einblick durch konkrete Aktivitäten.
+- Die Interessen zeigen Engagement und geben einen persönlichen Einblick, indem sie konkrete Aktivitäten und Teilnahmen nennen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) erworben haben, können Sie diese hier aufführen, um Ihr Profil weiter zu schärfen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) haben, können Sie diese in einem eigenen Abschnitt aufführen, um Ihre fachliche Breite zu unterstreichen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -167,6 +167,66 @@ Analyst, Beispiel AG, Zurich                          09/2022 - 08/2024
 """, 1),
 ]
 
+# --- education, which stacks differently from experience ---------------------
+# Layouts taken from how CVs are actually written rather than invented: degree
+# first then school, school first then degree, the minimalist one-line form,
+# an expected graduation date, a grade on the degree line, and the Swiss and
+# German conventions Career Services' own samples use.
+EDUCATION_LAYOUTS = [
+    ("degree first, school and dates beneath", """Education
+MA in Banking and Finance
+University of St. Gallen, St. Gallen, Switzerland     09/2022 - 06/2024
+- Grade average 5.4 / 6.0
+- Exchange semester at Bocconi, Milan
+""", 2),
+
+    ("school and dates on one line, degree beneath", """Education
+University of St. Gallen, Switzerland                 09/2022 - 06/2024
+MA in Banking and Finance, major in Corporate Finance
+- Grade average 5.4 / 6.0
+- Thesis on covenant pricing in mid-market lending
+""", 2),
+
+    ("degree, school and dates pipe separated", """Education
+MA in Banking and Finance | University of St. Gallen | 09/2022 - 06/2024
+- Grade average 5.4 / 6.0
+- Exchange semester at Bocconi, Milan
+""", 2),
+
+    ("expected graduation", """Education
+MA in Banking and Finance, University of St. Gallen   09/2022 - expected 06/2026
+- Grade average 5.4 / 6.0
+- Thesis on covenant pricing in mid-market lending
+""", 2),
+
+    ("grade on the degree line itself", """Education
+University of St. Gallen | MA Banking and Finance (GPA 5.4/6.0)   09/2022 - 06/2024
+- Exchange semester at Bocconi, Milan
+- Thesis on covenant pricing in mid-market lending
+""", 2),
+
+    ("German: institution above, degree beneath", """Ausbildung
+Universität St. Gallen, St. Gallen                    09/2022 - 06/2024
+Master of Arts in Banking and Finance
+- Notendurchschnitt 5.4 / 6.0
+- Masterarbeit über Covenant-Pricing im Mittelstandskredit
+""", 2),
+
+    ("Matura entry beneath a degree, year only", """Education
+MA in Banking and Finance, University of St. Gallen   09/2022 - 06/2024
+- Grade average 5.4 / 6.0
+Kantonsschule Wettingen                               2015 - 2019
+- Matura, focus on economics and law
+""", 2),
+
+    ("education and certificates under one heading", """Education & Certificates
+MA in Banking and Finance, University of St. Gallen   09/2022 - 06/2024
+- Grade average 5.4 / 6.0
+Bloomberg Market Concepts                             03/2023
+- Twelve-hour e-learning introduction to the financial markets
+""", 2),
+]
+
 EDUCATION = """
 Education
 MA in Banking and Finance, University of St. Gallen   09/2019 - 06/2021
@@ -174,21 +234,89 @@ MA in Banking and Finance, University of St. Gallen   09/2019 - 06/2021
 """
 
 
-def check(name: str, section: str, roles: int) -> list[str]:
-    text = section + EDUCATION
+# --- leaks: a repair meant for one layout firing on another -----------------
+#
+# Every fix above is a rule that says "when the text looks like THIS, read it
+# like THAT". Each one can misfire on a layout it was not meant for, and a
+# misfire is silent. So each rule gets a case where it must NOT fire, with the
+# finding that proves it did not.
+#
+# (name, section, issue keys that must NOT appear, issue keys that MUST appear)
+LEAKS = [
+    # join_split_ranges rejoins a range a table split across two lines. It must
+    # not weld together two bare years that belong to different entries.
+    ("two bare years from different entries are not welded into a range", """Education
+Universitaet Zuerich, BA Economics
+2019
+Kantonsschule Wettingen
+2015
+Work Experience
+Analyst, Beispiel AG, Zurich                          09/2022 - 08/2024
+- Rebuilt the monthly reporting pack, cutting two days off the close
+""", ["date_overlap", "date_gap"], []),
+
+    ("a genuine overlap is still reported", """Work Experience
+Analyst, Beispiel AG, Zurich                          09/2021 - 06/2023
+- Built the quarterly reporting pack
+Consultant, Andere AG, Basel                          01/2022 - 09/2024
+- Advised two clients on cost reduction
+""", [], ["date_overlap"]),
+
+    ("an entry with genuinely no role title is still caught", """Work Experience
+Beispiel AG                                           09/2022 - 08/2024
+- Rebuilt the monthly reporting pack, cutting two days off the close
+Andere AG                                             01/2020 - 08/2022
+- Ran reconciliations across four entities
+""", [], ["entries_no_title"]),
+
+    ("an entry with genuinely no description is still caught", """Work Experience
+Analyst, Beispiel AG, Zurich                          09/2022 - 08/2024
+
+Consultant, Andere AG, Basel                          01/2020 - 08/2022
+
+Intern, Dritte AG, Bern                               06/2019 - 12/2019
+""", [], ["entries_no_detail"]),
+
+    ("a wrapped title line is not read as a bullet", """Work Experience
+Analyst, Corporate Finance and Capital Markets Advisory,
+    Beispiel Aktiengesellschaft, Zurich               09/2022 - 08/2024
+- Rebuilt the monthly reporting pack, cutting two days off the close
+- Ran reconciliations across four entities
+""", ["no_bullets_anywhere"], []),
+
+    # The indented-line rule must not invent bullets where there are none.
+    ("a CV with truly no bullets is still caught", """Work Experience
+Analyst, Beispiel AG, Zurich                          09/2022 - 08/2024
+Consultant, Andere AG, Basel                          01/2020 - 08/2022
+Education
+MA in Banking and Finance, University of St. Gallen   09/2019 - 06/2021
+""", [], ["no_bullets_anywhere"]),
+]
+
+
+EXPERIENCE_TAIL = """
+Work Experience
+Analyst, Beispiel AG, Zurich                          09/2024 - 08/2025
+- Rebuilt the monthly reporting pack, cutting two days off the close
+"""
+
+
+def check(name: str, section: str, bullets: int,
+          category: str = "Experience", tail: str = None) -> list[str]:
+    text = section + (EDUCATION if tail is None else tail)
     sections = section_coverage.detect_sections(text)
     facts = cv_facts.analyse(text, {"page_count": 1}, sections)
     issues = {i["key"] for i in severity.assess(facts)["all_issues"]}
     experience = next((s for s in facts["sections"]
-                       if s["category"] == "Experience"), None)
+                       if s["category"] == category), None)
 
     problems = []
     if experience is None:
         return ["the experience section was not found at all"]
     if not experience["entry_count"]:
         problems.append("no entries found")
-    if experience["bullet_count"] < 2:
-        problems.append(f"{experience['bullet_count']} bullets found, expected 2")
+    if experience["bullet_count"] < bullets:
+        problems.append(f"{experience['bullet_count']} bullets found, expected {bullets}")
     if experience["entries_without_title"]:
         problems.append(f"role title reported missing: "
                         f"{experience['entries_without_title'][0][:44]!r}")
@@ -204,8 +332,8 @@ def check(name: str, section: str, roles: int) -> list[str]:
 
 def main() -> int:
     failed = 0
-    for name, section, roles in LAYOUTS:
-        problems = check(name, section, roles)
+    for name, section, bullets in LAYOUTS:
+        problems = check(name, section, bullets)
         if problems:
             failed += 1
             print(f"FAIL  {name}")
@@ -213,7 +341,37 @@ def main() -> int:
                 print(f"        {problem}")
         else:
             print(f"ok    {name}")
-    print(f"\n{len(LAYOUTS) - failed}/{len(LAYOUTS)} layouts read correctly")
+    print()
+    for name, section, bullets in EDUCATION_LAYOUTS:
+        problems = check(name, section, bullets, "Education", EXPERIENCE_TAIL)
+        if problems:
+            failed += 1
+            print(f"FAIL  education: {name}")
+            for problem in problems:
+                print(f"        {problem}")
+        else:
+            print(f"ok    education: {name}")
+
+    print()
+    for name, section, forbidden, required in LEAKS:
+        # Self-contained: a shared tail would supply bullets or dates of its own
+        # and the case would stop testing what it says it tests.
+        text = section if "Education" in section else section + EDUCATION
+        sections = section_coverage.detect_sections(text)
+        facts = cv_facts.analyse(text, {"page_count": 1}, sections)
+        keys = {i["key"] for i in severity.assess(facts)["all_issues"]}
+        problems = [f"{k!r} leaked in" for k in forbidden if k in keys]
+        problems += [f"{k!r} was missed" for k in required if k not in keys]
+        if problems:
+            failed += 1
+            print(f"FAIL  leak: {name}")
+            for problem in problems:
+                print(f"        {problem}")
+        else:
+            print(f"ok    leak: {name}")
+
+    total = len(LAYOUTS) + len(EDUCATION_LAYOUTS) + len(LEAKS)
+    print(f"\n{total - failed}/{total} layouts read correctly")
     return 1 if failed else 0
 
 

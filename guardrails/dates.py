@@ -79,6 +79,11 @@ _ENDPOINT = (
     r")"
 )
 _SEPARATOR = r"\s*(?:[-–—]{1,2}|\bto\b|\bbis\b|\buntil\b)\s*"
+# A qualifier in front of the end date. Students writing a degree in progress
+# put one there as a matter of course - "09/2022 - expected 06/2026" - and
+# without this the line carried no range at all, so the degree was not an entry.
+_END_QUALIFIER = (r"(?:expected|anticipated|planned|estimated|est\.?|exp\.?|"
+                  r"voraussichtlich|geplant|erwartet)\s+")
 
 # An open-ended range written as a prefix rather than with a separator: "seit
 # 09/2022", "since March 2023", "ab 2024", "from Sep 2022". Without this the
@@ -88,7 +93,8 @@ _OPEN_PREFIX = r"(?:seit|since|ab|from|desde|depuis)\s+"
 
 RANGE_RE = re.compile(
     rf"(?:(?P<open>{_OPEN_PREFIX})(?P<open_start>{_ENDPOINT})(?!{_SEPARATOR})"
-    rf"|(?P<start>{_ENDPOINT}){_SEPARATOR}(?P<end>{_ENDPOINT}|(?:{PRESENT_WORDS})))",
+    rf"|(?P<start>{_ENDPOINT}){_SEPARATOR}(?:{_END_QUALIFIER})?"
+    rf"(?P<end>{_ENDPOINT}|(?:{PRESENT_WORDS})))",
     re.IGNORECASE,
 )
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear structure and a solid range of experiences for your stage. Each work experience entry includes both a role title and a description, and your timeline is consistent without unexplained gaps or overlaps. Your skills are listed without unevidenced trait words, which keeps the section focused and credible. However, several experience bullets currently describe only the tasks you performed, rather than highlighting your specific contributions or the skills you developed—reworking these will help you stand out. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Your CV is in good shape overall, with a clear structure and a solid range of experiences for your stage. Each work experience entry includes both a role title and a description, and your timeline is consistent without unexplained gaps or overlaps. Your skills are listed without unevidenced trait words, which keeps the section focused and credible. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several experience bullets only state what you did, not how you did it or what skill you demonstrated. Rework these to show your approach, the skills you used, and why your work mattered—this makes your impact clear to a recruiter.
+  Several work experience bullets focus on tasks rather than your personal contribution or the skills you developed. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you gained.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many of your experience bullets stop at listing tasks, without showing the outcome or the transferable skill. For each, ask yourself what skill you want to highlight and, where possible, add a result or change that came from your work.
+  Many experience bullets stop at describing the activity, without showing the skill or outcome. For each, clarify what you did, how you did it, and what skill it demonstrates. Add a result where you genuinely have one, but only if you can back it up.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+  Some bullets end with a full stop and others do not. Choose one style and make every bullet consistent throughout your CV.
 - 🟡 **Grades need clarifying**  
-  Your GPA is listed as 5.04, but without the maximum scale. Write it as 5.04 / 6.00 so international readers can understand your result.
+  Your St. Gallen GPA is listed as 5.04, but without the maximum. Write it as 5.04 / 6.00 so international readers can understand your achievement.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,30 +42,30 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Rewrite your GPA as 5.04 / 6.00 so that recruiters outside Switzerland can interpret your result easily.
-- If you have completed or are pursuing any HSG certificates such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them here if relevant.
+- Clarify your St. Gallen GPA by writing it as 5.04 / 6.00, so that recruiters outside Switzerland can interpret it correctly.
+- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these as bullets under your degree if relevant.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Rework each bullet to show not just what you did, but how you did it and what skill you demonstrated—think about what you contributed and why it mattered.
-- Where you can, add a result or outcome to show the impact of your work, but only if you have genuine evidence.
-- Make sure all bullets use consistent punctuation—either all with or all without a full stop.
+- Revise your bullets to go beyond listing tasks—explain what you personally contributed, how you approached the work, and what skills you developed or demonstrated.
+- For each role, consider what changed as a result of your work, and add a result or outcome where you can genuinely support it.
+- Make sure all bullet points use consistent punctuation—either all with full stops or all without.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- This section works well because it focuses on hard skills and language levels, avoiding unsupported personal traits.
+- This section works well because it focuses on hard skills and language proficiency, avoiding unsupported personal traits.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- This section is effective as it highlights your additional qualifications and relevant certifications.
+- This section is effective because it provides concrete evidence of your additional qualifications and training.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- This section stands out by demonstrating long-term commitment and achievement in sports and club involvement.
+- This section stands out by highlighting your long-term involvement and achievements in sports and club activities.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you unique as a candidate and where you want to go next—especially if you have a specific target role or industry in mind.
+- If you choose to add a profile, use it to summarise what makes you a strong candidate for your target role and where you want to go next.
 
 ### 5. Anything else from HSG worth adding?
 

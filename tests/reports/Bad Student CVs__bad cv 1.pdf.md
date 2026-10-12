@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your experience bullets to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you developed. This will help recruiters see your unique contribution rather than just your responsibilities.
+  Many of your experience bullets list what you did, but not how you did it or what skill you demonstrated. Rework these to highlight your approach, the skills you used, and why your actions mattered—this will make your transferable skills clear to any reader.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify the skill you demonstrated and, where possible, add a concrete result or outcome. Only include results you can genuinely evidence—never invent figures just to fill the gap.
+  Currently, your experience bullets do not show outcomes, changes, or the skills you applied. For each, ask yourself what you did, how you did it, and why it mattered. Where you have a concrete result, add it, but only if you can back it up.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range in your extracurricular section so a reader can distinguish between short and long commitments.
+  Some entries in your extracurricular section show only years. Add the month to each date range so a reader can see the true duration of your involvement.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose a consistent punctuation style for your bullets (with or without full stops) and apply it throughout your CV.
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -48,32 +48,32 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Revise each bullet to show what you personally achieved, how you approached your tasks, and which transferable skills you developed.
-- Ensure each bullet highlights a skill relevant to your future applications, not just the task performed.
+- Rework each bullet to show not just what you did, but how you did it and what skill you demonstrated—this will help recruiters see your transferable skills.
+- Where you have a concrete result or outcome, add it to the relevant bullet, but only if you can genuinely support it.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- Entries demonstrate involvement in diverse activities, which can be valuable for showcasing soft skills.
+- You have included a range of extracurricular activities, showing engagement beyond your studies.
 
 **SPRACHEN** 🟢 Strong
 
-- You have provided both language names and recognised certificates, making your skills easy for recruiters to assess.
+- You have provided both language names and recognised certificates, making your proficiency easy to assess.
 
 **SKILLS** 🟢 Strong
 
-- You focus on hard skills and certifications, which are directly relevant for most roles.
+- You focus on hard skills and certifications, which are directly relevant to employers.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- Certifications are presented in a way that is easy for recruiters to verify.
+- You include recognised certificates, supporting your skills and language claims.
 
 **INTERESTS** 🟢 Strong
 
-- You provide enough detail to show genuine engagement in your hobbies.
+- You provide enough detail to give a sense of your personal interests without overloading the section.
 
 **Profile** ⚪ Missing
 
-- If you wish, you could add a short profile at the top of your CV to highlight what makes you stand out as a candidate and your career goals.
+- If you choose to add a profile, use it to highlight what makes you unique as a candidate and what you are aiming for next—focus on your motivation and your unique selling points for your target role.
 
 ### 5. Anything else from HSG worth adding?
 

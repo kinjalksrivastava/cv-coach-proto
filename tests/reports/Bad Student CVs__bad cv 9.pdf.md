@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist übersichtlich und zeigt eine breite akademische und praktische Basis, mit konsistenten Angaben zu Rollen und Zeiträumen. Die wichtigsten Abschnitte sind vorhanden, und die Einträge sind klar voneinander abgegrenzt. Allerdings fehlen durchgehend Bullet Points, sodass Ihre konkreten Aufgaben und Beiträge in den einzelnen Stationen für Leser nicht erkennbar werden. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Ihr CV enthält zudem keine Hinweise auf Erfahrungen mit KI oder KI-Tools – falls Sie hier Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist übersichtlich und zeigt einen klaren Werdegang ohne Lücken oder Überschneidungen. Die Angaben zu Positionen und Zeiträumen sind konsistent, und Sie vermeiden unbelegte Eigenschaftswörter. Allerdings fehlen durchgehend Bullet Points, sodass Ihre konkreten Aufgaben und Beiträge in den einzelnen Stationen nicht sichtbar werden. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen. Ihr CV enthält zudem keine Hinweise auf Erfahrungen mit KI oder KI-Tools – falls Sie hier Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -20,14 +20,14 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
   Fügen Sie zu jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) Bullet Points hinzu, die konkret beschreiben, was Sie dort gemacht haben. Ohne diese Angaben bleibt unklar, welche Aufgaben, Verantwortlichkeiten oder Erfolge Sie hatten.
-- 🟠 **Datumsangaben nur mit Jahren, nicht mit Monaten**  
-  Ergänzen Sie bei allen Zeiträumen, die aktuell nur Jahre zeigen, auch den Monat (z.B. "09/2023 – 06/2024"). So wird der Umfang Ihrer Tätigkeiten für Leser nachvollziehbar.
+- 🟠 **Datumsangaben nur mit Jahren**  
+  Ergänzen Sie bei allen Zeiträumen, die aktuell nur Jahre zeigen, auch den Monat (z.B. 09/2023 – 06/2024). So wird der Umfang Ihrer Tätigkeiten für den Leser klarer.
 - 🟠 **Kein Abschnitt zu Skills & Languages vorhanden**  
-  Falls Sie relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills haben, fügen Sie einen eigenen Abschnitt hinzu. Geben Sie bei Sprachen möglichst das Niveau nach CEFR (A1–C2) an.
-- 🟡 **Note muss verständlicher gemacht werden**  
-  Die Note "2,2" sollte als "2,20 / 1,00" (bzw. mit maximal möglicher Note) angegeben werden, damit auch internationale Leser sie einordnen können.
-- 🟡 **Noten werden nur teilweise angegeben**  
-  Wenn Sie bei einem Abschluss eine Note angeben und bei anderen nicht, gehen viele Recruiter davon aus, dass die nicht genannten Noten schwächer waren. Entscheiden Sie bewusst, ob Sie alle Noten aufführen oder keine.
+  Falls Sie relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills haben, fügen Sie einen eigenen Abschnitt hinzu.
+- 🟡 **Note muss verständlich gemacht werden**  
+  Die Note 2,2 sollte im internationalen Format angegeben werden (z.B. 2.20 / 1.00), damit auch Recruiter außerhalb Deutschlands sie einordnen können.
+- 🟡 **Noten werden uneinheitlich angegeben**  
+  Wenn Sie bei einem Abschluss eine Note angeben und bei anderen nicht, gehen viele Recruiter davon aus, dass die fehlende Note schlechter war. Entscheiden Sie bewusst, ob Sie alle Noten angeben oder keine.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,46 +46,45 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu jedem Studienabschnitt Bullet Points hinzu, die Ihre Schwerpunkte, relevante Projekte, Abschlussarbeiten oder besondere Leistungen beschreiben.
-- Ergänzen Sie bei der Note "2,2" die maximale Punktzahl (z.B. "2,20 / 1,00"), damit internationale Leser sie verstehen.
-- Überlegen Sie, ob Sie Noten für alle Abschlüsse angeben oder konsequent darauf verzichten möchten, um Missverständnisse zu vermeiden.
-- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnehmen, können Sie dies als Bullet Point unter dem passenden Studienabschnitt aufführen.
-- Wenn Sie relevante Zertifikate wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben haben, können Sie diese als Spezialisierung oder unter einem eigenen Abschnitt ergänzen.
+- Fügen Sie zu jedem Abschluss Bullet Points hinzu, die Ihre Schwerpunkte, relevante Projekte, Abschlussarbeiten oder besondere Leistungen beschreiben.
+- Ergänzen Sie bei der Note 2,2 das internationale Format (z.B. 2.20 / 1.00), damit sie auch außerhalb Deutschlands verständlich ist.
+- Überlegen Sie, ob Sie bei allen Abschlüssen Noten angeben möchten, um einen einheitlichen Eindruck zu vermitteln.
+- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnehmen, können Sie dies als Bullet Point unter dem jeweiligen Studiengang aufführen.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **Praktische Erfahrungen** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie zu jeder Position Bullet Points, die Ihre konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben.
-- Falls Sie bei ALDI SÜD oder ALDI SE & Co. KG spezielle Projekte, Prozessverbesserungen oder Teamleistungen hatten, heben Sie diese hervor.
+- Ergänzen Sie zu jeder Position Bullet Points, die Ihre Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben.
+- Falls Sie an einer Tätigkeit teilgenommen haben, die für Ihre Zielposition besonders relevant ist, heben Sie dies mit einem eigenen Bullet Point hervor.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu jeder ehrenamtlichen Tätigkeit Bullet Points hinzu, die Ihre Aufgaben, den Umfang Ihres Engagements und besondere Erfolge oder Herausforderungen beschreiben.
-- Falls Sie bei einer der Aktivitäten eine besondere Verantwortung übernommen oder ein Team koordiniert haben, machen Sie dies sichtbar.
+- Fügen Sie zu jeder ehrenamtlichen Tätigkeit Bullet Points hinzu, die Ihre konkreten Aufgaben, Verantwortlichkeiten und den Nutzen für andere beschreiben.
+- Falls Sie bei einer Aktivität besondere Soft Skills (z.B. Teamarbeit, Organisation) eingesetzt haben, machen Sie dies mit Beispielen sichtbar.
 
 **Zusätzliche Teilnahmen** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie Bullet Points, die beschreiben, welche Kompetenzen oder Netzwerke Sie im Mentoring-Programm aufgebaut haben und welche Weiterbildungsseminare besonders relevant waren.
-- Falls Sie weitere extracurriculare Aktivitäten, z.B. in HSG-Studentenclubs (https://shsg.ch/clubs), haben, können Sie diese mit Bullet Points ergänzen.
+- Ergänzen Sie Bullet Points, die beschreiben, was Sie im Rahmen des Mentoring-Programms konkret gemacht oder gelernt haben.
+- Falls Sie weitere relevante Zusatzprogramme, Kurse oder Engagements haben, können Sie diese hier mit Bullet Points aufführen.
 - Beschreiben Sie bei Interessen oder persönlicher Entwicklung, welche Themen Sie besonders verfolgen, wie oft Sie sich engagieren oder auf welchem Niveau.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls Sie ein Kurzprofil ergänzen möchten, beschreiben Sie in 2–3 Sätzen, was Sie als Kandidat:in auszeichnet und wohin Sie sich entwickeln möchten.
+- Falls Sie ein Kurzprofil ergänzen möchten, beschreiben Sie in 2-3 Sätzen, was Sie als Kandidat auszeichnet und wohin Sie sich entwickeln möchten.
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Fügen Sie einen Abschnitt hinzu, in dem Sie Ihre Sprachkenntnisse (mit Niveau, idealerweise nach CEFR) und IT-Kenntnisse (mit Erfahrungsgrad) aufführen.
-- Falls Sie Kenntnisse in KI-Tools oder Programmiersprachen haben, können Sie diese hier ebenfalls nennen.
+- Fügen Sie einen Abschnitt hinzu, in dem Sie Ihre Sprachkenntnisse (mit Niveau, idealerweise nach CEFR: A1–C2) und IT-Kenntnisse (mit Niveau: Grundkenntnisse, Fortgeschritten, Experte) aufführen.
+- Geben Sie bei jeder Sprache und jedem Tool das Niveau an, das Sie aktuell beherrschen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zusatzqualifikationen, Zertifikate oder Weiterbildungen haben, können Sie diese in einem eigenen Abschnitt aufführen.
+- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) absolviert haben, können Sie diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn Sie persönliche Interessen oder Hobbys haben, die für Ihre Persönlichkeit oder Ihr Netzwerk relevant sind, können Sie diese ergänzen. Geben Sie dabei an, wie Sie sich engagieren oder auf welchem Niveau Sie aktiv sind.
+- Falls Sie persönliche Interessen oder Hobbys haben, die für Ihre Zielposition relevant sind oder Engagement zeigen, können Sie diese mit kurzen Erläuterungen ergänzen (z.B. Sportart, Engagement im Verein, regelmäßige Aktivitäten).
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

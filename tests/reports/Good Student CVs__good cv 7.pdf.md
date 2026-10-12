@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits comfortably on one page, and presents a strong academic and professional background. Each professional experience entry includes both a clear role title and a description, and your grades are shown with their maximums, making them easy to interpret internationally. The skills section avoids unevidenced trait words, focusing on hard skills and language levels. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, fits comfortably on one page, and presents a strong academic and professional background. Each professional experience entry includes both a clear role title and a description, and your grades are shown with their maximums, making them easy to interpret internationally. The skills section avoids unevidenced trait words and focuses on hard skills. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,9 +19,9 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many of your experience bullets focus on what you did, but do not explain how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you demonstrated, the approach you took, and the impact or outcome where possible—this helps a reader see your transferable skills.
+  Many of your experience bullets focus on what you did, but do not explain how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you want to highlight, the approach you took, and the outcome or impact where possible.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV for a more professional appearance.
+  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,24 +42,24 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Professional Experience** 🟠 Needs attention
 
-- Review each bullet to clarify what skill you demonstrated, how you approached the task, and what changed as a result—this will help highlight your transferable skills.
-- Ensure all bullets use consistent punctuation, either ending all with a full stop or none.
+- Where you have a concrete result or impact, add it—only if you can back it up.
+- Choose a consistent punctuation style for all bullets in this section and apply it throughout.
 
 **Extracurriculars** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, focusing on concrete activities.
+- Skills are stated without unevidenced trait words.
 
 **Skills & Interests** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, focusing on hard skills and language proficiency.
+- Skills are stated without unevidenced trait words.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next.
+- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), consider adding them here.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here, especially if they support your target roles.
 
 ### 5. Dates worth a look
 

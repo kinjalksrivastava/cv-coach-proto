@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included both grades and their maximums, making your achievements easy to interpret internationally. Each work experience entry includes a role title and description, and your skills are stated without unsupported trait words. However, there are currently no bullet points anywhere in the CV, which means a reader cannot see what you actually did in each role or activity. This feedback covers structure and completeness; if you have a specific target role or job description, I can provide more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included both grades and their maximums, making your achievements easy to interpret internationally. Each work experience entry includes a role title and description, and your skills are stated without unsupported trait words. However, there are currently no bullet points anywhere in the CV, which means a reader cannot see what you actually did in each role or activity. This feedback covers structure and completeness; if you have a specific target role or job description, adding it will allow for more tailored advice. Nothing in your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -36,29 +36,33 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to explain what you did beyond coursework—such as thesis work, relevant projects, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
-- Describe any special projects, research, or leadership roles (e.g., graduation speaker, prize-winning thesis) with a focus on what you contributed and the skills you developed.
+- Add bullet points under each degree to describe what you did beyond attending classes—such as key projects, thesis work, relevant coursework, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
+- For your Maturity Thesis and any major coursework, briefly outline your research question, methods, tools used, and the outcome.
+- If you participated in any special certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), include them as a bullet under your degree.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- For each position, add bullet points that clarify what you did, how you did it, and what impact you had. For example, specify your responsibilities, the tools or methods you used, and any outcomes or improvements resulting from your work.
+- Add bullet points for each position to explain what you did, how you did it, who benefited, and what changed as a result. For example, describe the process of building models, the skills or tools you applied, and any outcomes or improvements.
+- Highlight any quantifiable results or feedback received, such as integration of your solutions or presentations delivered.
+- If you participated in HSG-related paid roles, such as the Talents Conference, include them with bullet points describing your responsibilities and achievements.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points for each extracurricular activity to highlight your responsibilities, the skills you used or developed, and any results or achievements. For example, describe what you organised, led, or contributed to in each role.
-- If you have been involved in other HSG student clubs or initiatives (https://shsg.ch/clubs), consider adding them with bullet points if they are relevant.
+- Add bullet points under each extracurricular activity to specify your responsibilities, the size and scope of events or teams you led, and any concrete outcomes or initiatives you drove.
+- For leadership roles, describe what you organised, who you coordinated with, and the impact of your work.
+- If you have been active in other HSG student clubs (https://shsg.ch/clubs), include these with bullet points explaining your role and achievements.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Skills are stated without unsupported trait words, making this section clear and credible.
+- Your skills are stated without unsupported trait words, and you have included both language proficiency and relevant certifications.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
+- If you choose to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding them here.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF), you could add them here to strengthen your technical profile.
 
 ### 5. Dates worth a look
 
