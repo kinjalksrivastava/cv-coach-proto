@@ -92,6 +92,9 @@ COPY = {
         "start_over": "Start over",
         "summary_spinner": "Preparing summary…",
         "download_summary": "Download summary (.txt)",
+        "pii_residual": ("**Personal details found late in the check.** These got past "
+                         "the normal removal and were caught by the final sweep ({items}). "
+                         "They have been removed, but please report this."),
         "pii_spinner": "Removing personal details…",
         "examples_expander": "See what a stronger bullet point looks like",
         "handed_over": "This session has been flagged for a human advisor. "
@@ -156,6 +159,9 @@ COPY = {
         "start_over": "Neu beginnen",
         "summary_spinner": "Zusammenfassung wird vorbereitet…",
         "download_summary": "Zusammenfassung herunterladen (.txt)",
+        "pii_residual": ("**Persönliche Angaben erst spät erkannt.** Diese sind durch die "
+                         "normale Entfernung gerutscht und wurden erst im letzten Durchgang "
+                         "gefunden ({items}). Sie wurden entfernt, bitte melde das aber."),
         "pii_spinner": "Persönliche Angaben werden entfernt…",
         "examples_expander": "So sieht ein stärkerer Bullet Point aus",
         "handed_over": "Diese Sitzung wurde für eine Beratungsperson markiert. "
@@ -196,6 +202,7 @@ def init_state():
         "cv_text": None,
         "cv_redactions": [],
         "pii_degraded": False,
+        "pii_residual": [],
         "format_rows": [],
         "report_text": None,
         "report_pdf": None,
@@ -282,6 +289,9 @@ def document_panel():
         else:
             context_bits.append(copy["role_unset"])
         ui.chips(copy["session"], context_bits, kind="")
+        if st.session_state["pii_residual"]:
+            st.warning(copy["pii_residual"].format(
+                items=", ".join(st.session_state["pii_residual"])), icon="⚠️")
         if st.session_state["pii_degraded"]:
             # Loud rather than quiet on purpose: without the local name model, the
             # contact block and the patterns still run but a name in the body of
@@ -386,6 +396,10 @@ if st.session_state["cv_text"] is None:
         st.session_state["cv_text"] = cv_text
         st.session_state["cv_redactions"] = cv_clean["redactions"]
         st.session_state["pii_degraded"] = cv_clean["degraded"]
+        # Anything here got past every removal layer and was caught only by the
+        # final verification sweep. It is redacted either way, but it means a
+        # layer is not doing its job and someone should look.
+        st.session_state["pii_residual"] = cv_clean.get("residual") or []
         if jd_clean:
             st.session_state["jd_text"] = jd_clean["text"]
             st.session_state["jd_redactions"] = jd_clean["redactions"]

@@ -110,6 +110,27 @@ ID_NUMBER_RE = re.compile(
 # beside a role. Career Services found "12. August 1990" surviving under a
 # "PERSÖNLICHE DATEN" heading because nothing on the line said "Geburtsdatum",
 # and asked for absolute removal of personal details.
+# "Geburtsort: Konstanz", "Nationality: Swiss", "Zivilstand: ledig" - a personal
+# field with its label, anywhere in the document rather than only inside a
+# contact block. Career Services' point: a student can put these anywhere, and
+# the guarantee has to hold wherever they are. The whole value after the colon
+# goes, because what follows a label like this is never CV content.
+PERSONAL_FIELD_RE = re.compile(
+    r"^(?P<label>\s*[\W_]{0,3}(?:"
+    r"geburtsort|geburtsdatum|geburtstag|geboren|place of birth|date of birth|"
+    r"staatsangeh[öo]rigkeit\w*|nationalit[äa]t\w*|nationality|citizenship|"
+    r"zivilstand|familienstand|marital status|civil status|"
+    r"adresse|anschrift|wohnhaft|address|"
+    r"telefon\w*|mobil\w*|handy|natel|phone|mobile|tel|"
+    r"e-?mail|mail|"
+    r"alter|age|geschlecht|gender|sex|religion|konfession|"
+    r"ahv|sozialversicherung|social security|passnummer|passport|"
+    r"matrikelnummer|student number|"
+    r"name|vorname|nachname|familienname|surname|first name|last name|full name"
+    r")\s*[:：]\s*)(?P<value>\S.*)$",
+    re.IGNORECASE,
+)
+
 BARE_DATE_LINE_RE = re.compile(
     r"^\s*(?:geb\.?|\*)?\s*"
     r"(?:\d{1,2}[.\s/-]\s*(?:\d{1,2}|[A-Za-zÄÖÜäöü]{3,10})[.\s/-]\s*(?:19|20)\d{2}"
@@ -248,6 +269,17 @@ def _deterministic_pass(text: str) -> tuple[str, list[str]]:
 
     # Date of birth must run BEFORE phones: 14.03.2001 is otherwise a plausible
     # phone-shaped digit run, and whichever pattern runs first consumes it.
+    # Labelled personal fields, wherever they appear.
+    lines, field_hit = [], False
+    for line in working.splitlines():
+        match = PERSONAL_FIELD_RE.match(line)
+        if match:
+            line, field_hit = match.group("label") + _placeholder("contact_block"), True
+        lines.append(line)
+    if field_hit:
+        working = "\n".join(lines)
+        found.append("contact_block")
+
     lines, dob_hit = [], False
     for line in working.splitlines():
         if DOB_KEYWORDS.search(line):
@@ -555,6 +587,55 @@ def _drop_personal_sections(text: str) -> tuple[str, bool]:
     return "\n".join(out), removed
 
 
+# The last line of defence. Everything above removes personal data; this checks
+# whether any got through, and is the only part that can say so out loud.
+#
+# Career Services' requirement is absolute: nothing personal reaches the model,
+# in English or German, wherever on the page the student put it. Three layers
+# of removal cannot promise that on their own - a layer can silently do nothing,
+# which is how a date of birth under "PERSÖNLICHE DATEN" survived. So after the
+# removal passes, the document is read back and anything still PII-shaped is
+# both redacted and REPORTED, so the caller can warn rather than assume.
+RESIDUAL_CHECKS = (
+    ("email", re.compile(r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}")),
+    ("profile_url", re.compile(r"(?:linkedin|xing|github|gitlab)\.com/[\w\-./]+", re.I)),
+    ("phone", re.compile(r"\+\d{1,3}[\s\-./]?\d[\d\s\-./]{7,}\d")),
+    ("address", re.compile(r"\b\w*(?:strasse|straße|gasse|platz)\s*\d{1,4}\b", re.I)),
+    ("date_of_birth", BARE_DATE_LINE_RE),
+)
+
+
+def residual_pii(text: str) -> list[str]:
+    """What is still PII-shaped after the removal passes. Empty is the goal."""
+    hits = []
+    for key, pattern in RESIDUAL_CHECKS:
+        if pattern is BARE_DATE_LINE_RE:
+            if any(pattern.match(line) for line in text.splitlines()):
+                hits.append(key)
+        elif pattern.search(text):
+            hits.append(key)
+    return hits
+
+
+def _sweep_residual(text: str) -> tuple[str, list[str]]:
+    """Redact whatever the verification pass found, and name it."""
+    hits = []
+    for key, pattern in RESIDUAL_CHECKS:
+        if pattern is BARE_DATE_LINE_RE:
+            lines, hit = [], False
+            for line in text.splitlines():
+                if pattern.match(line):
+                    line, hit = _placeholder(key), True
+                lines.append(line)
+            if hit:
+                text, _ = "\n".join(lines), hits.append(key)
+        else:
+            new = pattern.sub(_placeholder(key), text)
+            if new != text:
+                text, _ = new, hits.append(key)
+    return text, hits
+
+
 def strip_pii(text: str, language: str = "en") -> dict:
     """
     Redacts a document. Takes no client and makes no network call by design:
@@ -632,6 +713,11 @@ def strip_pii(text: str, language: str = "en") -> dict:
     working, pattern_categories = _deterministic_pass(working)
     categories.extend(pattern_categories)
 
+    # Verification, then a final sweep of anything the layers above missed.
+    working, swept = _sweep_residual(working)
+    categories.extend(swept)
+    leaked = residual_pii(working)
+
     present = set(categories)
     ordered = [c for c in CATEGORIES if c in present]
     ordered += sorted(present - set(CATEGORIES))
@@ -642,4 +728,8 @@ def strip_pii(text: str, language: str = "en") -> dict:
         "categories": ordered,
         "names_found": len(names),
         "degraded": not ner_available,
+        # Empty means the verification pass found nothing personal left. Anything
+        # in here got through every removal layer and was only caught by the
+        # final sweep - worth showing the student, and worth investigating.
+        "residual": leaked,
     }
