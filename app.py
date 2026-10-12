@@ -13,6 +13,7 @@ import prompts
 import report
 import ui
 import bullet_review
+import cover_letter
 import cv_facts
 import date_review
 import format_check
@@ -50,7 +51,25 @@ COPY = {
             "that help you fix it. It never gives your CV a score and never writes "
             "it for you."
         ),
+        "subtitle_letter": (
+            "A short first check on your cover letter, before your Career Services "
+            "appointment. It looks at whether the letter adds anything your CV does not "
+            "already say, and whether it says where you want to go. It never writes it "
+            "for you."
+        ),
         "chat_placeholder": "Ask about your CV…",
+        "mode_cv_title": "Your CV",
+        "mode_cv_sub": ("Feedback on structure, content and how the CV reads to a "
+                        "recruiter. A target role is optional."),
+        "mode_cv_button": "Review my CV",
+        "mode_letter_title": "Your cover letter",
+        "mode_letter_sub": ("A short first check: does the letter add anything your CV "
+                            "does not already say? The job advert or title is needed."),
+        "mode_letter_button": "Review my cover letter",
+        "letter_title": "Your cover letter",
+        "letter_sub": "PDF or Word, up to 10 MB.",
+        "role_sub_letter": ("A cover letter is written for one specific role, so this "
+                            "one is needed. The advert is best; the job title works."),
         "lang_title": "Language",
         "lang_sub": ("You can switch at any time. Just write in the other language "
                      "and the conversation follows."),
@@ -72,6 +91,7 @@ COPY = {
         "start": "Start the session",
         "too_little": ("That is very little text to work with. Please paste the full CV."),
         "spinner": "Reading your CV and writing your feedback report…",
+        "spinner_letter": "Reading your cover letter…",
         "panel_title": "What was read from your CV",
         "panel_sub": ("Parsed when you uploaded it. Personal details are removed "
                       "before anything is analysed."),
@@ -115,7 +135,26 @@ COPY = {
             "Fragen, mit denen du es selbst verbesserst. Es bewertet deinen "
             "Lebenslauf nicht und schreibt ihn nicht für dich."
         ),
+        "subtitle_letter": (
+            "Ein kurzer erster Check deines Motivationsschreibens, vor deinem Termin "
+            "beim Career Services. Geprüft wird, ob das Schreiben etwas sagt, das dein "
+            "Lebenslauf nicht schon sagt, und ob klar wird, wohin du willst. Geschrieben "
+            "wird es nicht für dich."
+        ),
         "chat_placeholder": "Frag mich etwas zu deinem Lebenslauf…",
+        "mode_cv_title": "Dein Lebenslauf",
+        "mode_cv_sub": ("Feedback zu Aufbau, Inhalt und dazu, wie der Lebenslauf auf "
+                        "Recruiter wirkt. Eine Zielposition ist optional."),
+        "mode_cv_button": "Lebenslauf prüfen",
+        "mode_letter_title": "Dein Motivationsschreiben",
+        "mode_letter_sub": ("Ein kurzer erster Check: Sagt das Schreiben etwas, das dein "
+                            "Lebenslauf nicht schon sagt? Stellenanzeige oder Titel nötig."),
+        "mode_letter_button": "Motivationsschreiben prüfen",
+        "letter_title": "Dein Motivationsschreiben",
+        "letter_sub": "PDF oder Word, bis 10 MB.",
+        "role_sub_letter": ("Ein Motivationsschreiben richtet sich an eine konkrete "
+                            "Stelle, deshalb ist diese Angabe nötig. Am besten die "
+                            "Anzeige, der Stellentitel genügt auch."),
         "lang_title": "Sprache",
         "lang_sub": ("Du kannst jederzeit wechseln. Schreib einfach in der anderen "
                      "Sprache, das Gespräch folgt."),
@@ -138,6 +177,7 @@ COPY = {
         "too_little": ("Das ist sehr wenig Text. Bitte füge den vollständigen "
                        "Lebenslauf ein."),
         "spinner": "Dein Lebenslauf wird gelesen und dein Feedback geschrieben…",
+        "spinner_letter": "Dein Motivationsschreiben wird gelesen…",
         "panel_title": "Was aus deinem Lebenslauf gelesen wurde",
         "panel_sub": ("Beim Hochladen ausgewertet. Persönliche Angaben werden "
                       "entfernt, bevor irgendetwas analysiert wird."),
@@ -201,6 +241,9 @@ def init_state():
     defaults = {
         "cv_text": None,
         "cv_redactions": [],
+        "mode": None,          # "cv" or "letter", chosen on the first screen
+        "letter_report": None,
+        "letter_pdf": None,
         "pii_degraded": False,
         "pii_residual": [],
         "format_rows": [],
@@ -299,9 +342,33 @@ def document_panel():
             st.warning(copy["pii_degraded"], icon="⚠️")
 
 
+# --- Step 0: which document ---------------------------------------------------
+# Two separate jobs with two separate standards. A CV is judged on what it shows;
+# a cover letter is judged on whether it adds anything the CV does not. Career
+# Services asked for them to be chosen up front rather than inferred.
+if st.session_state["mode"] is None:
+    ui.title_block(copy["title"], copy["subtitle"])
+    left, right = st.columns(2, gap="medium")
+    with left:
+        with ui.card("mode_cv"):
+            ui.card_head(copy["mode_cv_title"], copy["mode_cv_sub"])
+            if st.button(copy["mode_cv_button"], type="primary", use_container_width=True):
+                st.session_state["mode"] = "cv"
+                st.rerun()
+    with right:
+        with ui.card("mode_letter"):
+            ui.card_head(copy["mode_letter_title"], copy["mode_letter_sub"])
+            if st.button(copy["mode_letter_button"], use_container_width=True):
+                st.session_state["mode"] = "letter"
+                st.rerun()
+    st.stop()
+
+
 # --- Step 1: document intake -------------------------------------------------
 if st.session_state["cv_text"] is None:
-    ui.title_block(copy["title"], copy["subtitle"])
+    is_letter = st.session_state["mode"] == "letter"
+    ui.title_block(copy["title"],
+                   copy["subtitle_letter"] if is_letter else copy["subtitle"])
 
     with ui.card("lang"):
         ui.card_head(copy["lang_title"], copy["lang_sub"])
@@ -314,7 +381,9 @@ if st.session_state["cv_text"] is None:
 
     with left:
         with ui.card("cv"):
-            ui.card_head(copy["cv_title"], copy["cv_sub"], copy["required"], "req")
+            ui.card_head(copy["letter_title"] if is_letter else copy["cv_title"],
+                         copy["letter_sub"] if is_letter else copy["cv_sub"],
+                         copy["required"], "req")
             cv_options = [copy["upload"], copy["paste"]]
             cv_mode = cv_options.index(st.radio(
                 "CV input", cv_options, horizontal=True,
@@ -333,12 +402,23 @@ if st.session_state["cv_text"] is None:
 
     with right:
         with ui.card("role"):
-            ui.card_head(copy["role_title"], copy["role_sub"], copy["optional"], "opt")
-            jd_options = [copy["skip"], copy["upload"], copy["paste"]]
-            jd_mode = jd_options.index(st.radio(
+            # A cover letter is written for one specific role, so the advert or at
+            # least a job title is required here - Career Services were explicit.
+            # A CV stands on its own, so it stays optional there.
+            ui.card_head(
+                copy["role_title"],
+                copy["role_sub_letter"] if is_letter else copy["role_sub"],
+                copy["required"] if is_letter else copy["optional"],
+                "req" if is_letter else "opt")
+            # No "Skip" when the role is required - offering a choice the form
+            # then refuses to accept is just a dead end.
+            jd_options = ([copy["upload"], copy["paste"]] if is_letter
+                          else [copy["skip"], copy["upload"], copy["paste"]])
+            chosen = jd_options.index(st.radio(
                 "Job description", jd_options, horizontal=True,
                 label_visibility="collapsed", key="jd_mode",
             ))
+            jd_mode = chosen + 1 if is_letter else chosen
             jd_file, jd_pasted = None, ""
             if jd_mode == 1:
                 jd_file = st.file_uploader(
@@ -355,7 +435,12 @@ if st.session_state["cv_text"] is None:
                 copy["role_label"], placeholder=copy["role_placeholder"],
             )
 
-    ready = cv_file is not None or bool(cv_pasted.strip())
+    have_doc = cv_file is not None or bool(cv_pasted.strip())
+    have_target = (jd_file is not None or bool(jd_pasted.strip())
+                   or bool(target_hint.strip()))
+    ready = have_doc and (have_target or not is_letter)
+    if is_letter and have_doc and not have_target:
+        st.info(cover_letter.STRINGS[st.session_state["language_pref"]]["needs_jd"], icon="📌")
     if st.button(copy["start"], type="primary", disabled=not ready):
         if cv_file is not None:
             cv_result = extract_text(cv_file.getvalue(), cv_file.name)
@@ -411,6 +496,30 @@ if st.session_state["cv_text"] is None:
         # writes the report from that, rather than deciding for itself what is
         # wrong with the CV. ---
         lang_code = st.session_state["language_pref"]
+
+        # --- the cover letter path. A different document with a different job,
+        # judged against Career Services' cover-letter rules rather than the CV
+        # prioritisation list, and deliberately much shorter: "identify whether
+        # the cover letter is doing its job, not replace a coaching appointment".
+        if st.session_state["mode"] == "letter":
+            letter_strings = cover_letter.STRINGS[lang_code]
+            with st.spinner(copy["spinner_letter"]):
+                letter_facts = cover_letter.analyse(
+                    cv_text, st.session_state["jd_text"] or "", target_role)
+                letter_data = cover_letter.generate(
+                    client, MODEL, cv_text, st.session_state["jd_text"] or "",
+                    target_role, letter_facts, language.SUPPORTED[lang_code])
+            if letter_data:
+                st.session_state["letter_report"] = cover_letter.render_markdown(
+                    letter_data, letter_facts, letter_strings)
+                st.session_state["letter_pdf"] = cover_letter.to_pdf(
+                    letter_data, letter_facts, letter_strings)
+                opening = st.session_state["letter_report"]
+            else:
+                opening = letter_strings["failure"]
+            st.session_state["messages"].append({"role": "assistant", "content": opening})
+            st.rerun()
+
         with st.spinner(copy["spinner"]):
             sections = section_coverage.detect_sections(cv_text, client, MODEL)
             st.session_state["sections_detected"] = sections
@@ -469,7 +578,8 @@ if st.session_state["cv_text"] is None:
 
 # --- Step 2: chat -------------------------------------------------------------
 ui.title_block(copy["title"], compact=True)
-document_panel()
+if st.session_state["mode"] != "letter":
+    document_panel()
 
 target_role_known = bool(st.session_state["jd_text"] or st.session_state["target_role_hint"])
 
@@ -484,7 +594,14 @@ with col_summary:
 with col_report:
     # PDF by default - a reviewer could not open the markdown version at all.
     # The text download stays as the fallback if reportlab isn't installed.
-    if st.session_state["report_pdf"]:
+    if st.session_state["letter_pdf"]:
+        st.download_button(
+            copy["download_pdf"], data=st.session_state["letter_pdf"],
+            file_name="cover_letter_feedback.pdf", mime="application/pdf",
+            help=copy["download_help"], use_container_width=True,
+            key="letter_download_pdf",
+        )
+    elif st.session_state["report_pdf"]:
         st.download_button(
             copy["download_pdf"],
             data=st.session_state["report_pdf"],
@@ -641,7 +758,12 @@ if user_input:
         [f["text"] for f in st.session_state["date_findings"]],
         st.session_state["sections_detected"],
     )
+    # In cover-letter mode the conversation is held to Career Services' cover
+    # letter rules, not the CV prioritisation list: a different document with a
+    # different job, and a much narrower remit.
     api_messages = [{"role": "system", "content": prompts.SYSTEM_PROMPT}]
+    if st.session_state["mode"] == "letter":
+        api_messages.append({"role": "system", "content": cover_letter.RULES})
     api_messages.append({"role": "system", "content": context_block})
     if st.session_state["target_role_hint"]:
         api_messages.append(
