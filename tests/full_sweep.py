@@ -251,9 +251,20 @@ def audit(path: str) -> dict:
                  low):
         problems.append("CONTENT a specific number of bullet points is suggested")
 
-    # "They should not explain where they have used the technical skills."
-    if re.search(r"(where|wo)\s+you\s+(have\s+)?used|erkl[äa]re?,?\s+wo\s+du", low):
+    # "They should not explain where they have used the technical skills, but
+    # they should ideally show examples of when they have used them, in their
+    # bullets under education, work experience or extra-curricular." So the
+    # fault is asking them to explain it INSIDE the skills section; pointing
+    # them to a bullet elsewhere is the rule working.
+    for sentence in re.split(r"(?<=[.!?])\s+", md):
+        if not re.search(r"(where|wo)\s+you\s+(have\s+)?used|erkl[äa]re?,?\s+wo\s+du",
+                         sentence, re.I):
+            continue
+        if re.search(r"bullet|stichpunkt|experience|erfahrung|education|ausbildung|"
+                     r"extracurricular|ausserschulisch", sentence, re.I):
+            continue
         problems.append("CONTENT asks the student to explain where a skill was used")
+        break
 
     # "Extracurriculars shouldn't be mentioned in hobbies and interests."
     for block in re.split(r"\n\*\*", md)[1:]:

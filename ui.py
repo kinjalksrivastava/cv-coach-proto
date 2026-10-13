@@ -50,16 +50,12 @@ html, body, button, input, textarea, select,
 [data-testid="stAppViewContainer"] h3, [data-testid="stAppViewContainer"] h4,
 [data-testid="stAppViewContainer"] p, [data-testid="stAppViewContainer"] li,
 [data-testid="stAppViewContainer"] td, [data-testid="stAppViewContainer"] th,
-[data-testid="stAppViewContainer"] label, [data-testid="stAppViewContainer"] div,
-[data-testid="stAppViewContainer"] span, [data-testid="stAppViewContainer"] a,
-[data-testid="stAppViewContainer"] blockquote {{
+[data-testid="stAppViewContainer"] label,
+[data-testid="stAppViewContainer"] div:not([class*="material"]),
+[data-testid="stAppViewContainer"] span:not([data-testid="stIconMaterial"]):not([class*="material"]),
+[data-testid="stAppViewContainer"] a, [data-testid="stAppViewContainer"] blockquote {{
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                "Helvetica Neue", Arial, sans-serif !important;
-}}
-/* ...except the icon fonts, which the span rule above would otherwise break. */
-[data-testid="stIconMaterial"], .material-symbols-rounded,
-[class*="material-icons"], [class*="material-symbols"] {{
-  font-family: "Material Symbols Rounded", "Material Icons" !important;
 }}
 code, pre, code span {{
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace !important;

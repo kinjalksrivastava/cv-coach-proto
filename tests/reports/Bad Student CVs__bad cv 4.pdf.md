@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und klar strukturiert, mit konsistenten Überschriften und einer lückenlosen Zeitlinie. Die wichtigsten Abschnitte sind vorhanden und die Angaben zu Fähigkeiten und Sprachen sind sachlich gehalten. Allerdings ist der Textumfang noch sehr gering – du hast auf einer Seite viel Platz, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu berichten. Es gibt aktuell keine Hinweise auf KI-Kenntnisse oder -Erfahrungen; falls du in diesem Bereich etwas vorweisen kannst, könntest du dies ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist übersichtlich, klar strukturiert und weist keine Lücken oder Überschneidungen im Zeitverlauf auf. Die wichtigsten Abschnitte sind vorhanden und die Angaben zu Kenntnissen und Sprachen sind sachlich gehalten. Allerdings ist der CV insgesamt sehr kurz und bietet noch viel Raum, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Es ist kein Bezug zu KI oder AI-Tools erkennbar – falls du hier Erfahrungen hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,10 +18,10 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Der Lebenslauf füllt die Seite nicht aus**  
-  Nutze den vorhandenen Platz, um ausführlicher auf deine Tätigkeiten, Lernerfahrungen und erworbenen Kompetenzen einzugehen. Ein Lebenslauf, der nur halbseitig gefüllt ist, wirkt auf Lesende schnell dünn und lässt Potenzial ungenutzt.
-- 🟠 **Aufgaben statt Beitrag in den Bulletpoints**  
-  Formuliere die Bulletpoints in der Berufserfahrung so um, dass sie deinen konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten oder Ergebnisse zeigen. Der Fokus sollte auf übertragbaren Kompetenzen liegen, nicht nur auf der bloßen Aufgabenbeschreibung.
+- 🔴 **Der Lebenslauf füllt keine Seite**  
+  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Verantwortungen und Lernerfahrungen zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Lesende oft zu knapp und lässt Potenzial ungenutzt.
+- 🟠 **Bullets beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Kompetenzen du dabei eingesetzt oder entwickelt hast. Ein Ergebnis oder eine Veränderung, die du bewirkt hast, macht deine Rolle greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -39,24 +39,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟢 Stark
 
-- Die Ausbildung ist sauber datiert und zeigt einen lückenlosen Werdegang.
+- Die Ausbildung ist klar und ohne Lücken dargestellt.
 
 **Berufserfahrung** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bulletpoints so, dass sie zeigen, was du konkret erreicht oder gelernt hast, wie du vorgegangen bist und welche Kompetenzen du dabei entwickelt hast.
-- Nutze den Platz, um auch kleinere Erfolge, besondere Herausforderungen oder übertragbare Fähigkeiten (z.B. Teamarbeit, Eigeninitiative, Umgang mit Stress) sichtbar zu machen.
+- Überarbeite die Stichpunkte so, dass sie deinen persönlichen Beitrag, die eingesetzten Fähigkeiten und – wo möglich – ein Ergebnis oder eine Veränderung hervorheben.
+- Nutze den Platz, um weitere relevante Erfahrungen oder Details zu ergänzen, die deine Entwicklung und Kompetenzen zeigen.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind klar benannt und zeigen Zusatzqualifikationen, die dein Profil ergänzen.
+- Die Zertifikate sind klar benannt und zeigen Zusatzqualifikationen.
 
 **Kenntnisse** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Kenntnissen sind präzise und verzichten auf nicht belegbare Soft Skills.
+- Die Angaben zu Sprachen und IT-Kenntnissen sind klar und ohne Übertreibungen formuliert.
 
 **Engagement** 🟢 Stark
 
-- Die Mitgliedschaften und Teilnahmen an Events unterstreichen dein Interesse an Wirtschaft und Finanzen.
+- Die Teilnahme an mehreren Clubs und Events unterstreicht dein Interesse an Wirtschaft und Finanzen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -64,7 +64,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du relevante Hobbys oder Interessen hast (z.B. Sportarten, Musik, Reisen), kannst du diese ergänzen, um deine Persönlichkeit zu zeigen.
+- Wenn du relevante Hobbys oder Interessen hast (z.B. Sportarten, Musik, Reisen), kannst du diese ergänzen, um weitere Facetten von dir zu zeigen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
@@ -80,6 +80,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
   _Gehört in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
   _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
+
+### 6. Unterlagen und Vorlagen des Career Services
+
+Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
+
+- [Wie du deinen Lebenslauf stärker machst - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+- [CV template, Englisch](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+
+_Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt passt, in dem du dich bewirbst, nicht zur Sprache, in der du gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum Abschreiben._
 
 ---
 

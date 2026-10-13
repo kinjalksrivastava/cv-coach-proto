@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a comprehensive and consistent career history, with clear role titles and descriptions throughout your professional experience. The timeline is well-structured, with no unexplained gaps or overlaps, and your skills are listed without unsupported personal traits. As you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring to a specific position. There is currently no mention of AI experience or tools; if you have relevant exposure, consider adding it in the appropriate section.
+Your CV presents a comprehensive and consistent record of over 20 years’ experience in sales and purchasing, with clear role titles and descriptions throughout your professional history. The section order is appropriate for a mature candidate with significant industry experience, and your timeline is clear and free of unexplained gaps. Your skills are listed without unevidenced trait words, which keeps the document focused and credible. Nothing on your CV currently refers to AI, machine learning, or related tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several experience bullets focus on listing tasks rather than highlighting your personal contribution or the skills demonstrated. Rework these to show what you did, how you did it, and why it mattered, emphasising transferable skills relevant to your next step.
+  Some experience bullets only state the task performed, without showing your personal contribution or the transferable skill involved. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the skills you demonstrated.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many experience bullets state responsibilities without showing outcomes, changes, or the skills applied. For each, clarify what you achieved, how you approached it, and the impact or skill demonstrated. Add results where you can genuinely evidence them.
+  Many of your experience bullets describe responsibilities but do not show the outcome, change, or skill developed. For each, clarify what you did, how you did it, and what skill or result you achieved—add a result where you genuinely have one.
 - 🟠 **Education comes after work experience**  
-  For most student CVs, education is placed before work experience unless you have extensive, directly relevant professional history. Consider whether your background justifies the current order or if switching would better highlight your academic credentials.
+  For a student CV, education usually comes first, but for a mature candidate with extensive relevant experience, your current order is appropriate. If you are applying for a role where recent education is more relevant than your work history, consider moving education up.
 - 🟡 **Interests are listed without any detail**  
-  Some interests are listed as single words or phrases without context. Add detail about the type, frequency, or level of involvement to give a clearer picture of your engagement.
+  Some interests and extracurricular activities are listed as bare words. Add detail about what kind of activity, how often you participate, and to what level, to give a clearer picture of your engagement.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,14 +43,12 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively summarises your experience and highlights your unique selling points for a recruiter.
+- It effectively highlights your expertise, results, and approach, making your value proposition clear to the reader.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework bullets that only describe tasks (e.g., 'Conducted customer needs analyses and developed sales forecasts') to clarify what you personally achieved, how you approached the task, and what skill or outcome resulted.
-- For bullets that currently state only responsibilities, add context about the impact, change, or skill demonstrated—such as how your actions benefited the team, client, or organisation.
-- If you have results or outcomes (such as increased sales, improved processes, or successful projects), include them where you can genuinely support the claim.
-- If you have participated in relevant HSG activities such as the Talents Conference (Career Services) or held a staff position at the St. Gallen Symposium (https://shsg.ch/clubs), consider adding these as paid roles if applicable.
+- Review bullets that only state a task (e.g., 'Conducted customer needs analyses and developed sales forecasts') and expand them to show what you personally contributed, how you approached the task, and which transferable skill you demonstrated.
+- For bullets that describe responsibilities without outcomes or skills, clarify what you did, how you did it, and why it mattered—add a result or skill where appropriate and supported by your experience.
 
 **EDUCATION** 🟢 Strong
 
@@ -58,20 +56,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EXTRACURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For activities like 'Visiting Service', add detail about the type of tasks, frequency, and the impact of your involvement to give a fuller picture of your engagement.
-- If you have held active roles in HSG student clubs (https://shsg.ch/clubs) or similar organisations, consider adding them here with a brief description of your responsibilities and achievements.
+- Add more detail to your extracurricular activities, such as the frequency, context, and level of your involvement, to give a fuller picture of your engagement and skills developed.
 
 **LANGUAGE AND IT SKILLS** 🟢 Strong
 
-- Skills are presented without unsupported personal traits, making it easy for a recruiter to assess your capabilities.
+- The section is focused on hard skills and avoids unevidenced personal traits, making it clear and actionable for recruiters.
 
 **INTERESTS** 🟢 Strong
 
-- They provide insight into your personality and outside interests, complementing your professional profile.
+- You provide detail about your hobbies, which helps to personalise your profile and show your engagement outside of work.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certifications—such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)—consider adding them here to showcase additional qualifications.
+- If you have completed any relevant courses or certifications—such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or other industry-specific training—consider adding them here to further support your profile.
 
 ### 5. Anything else from HSG worth adding?
 
@@ -87,6 +84,16 @@ Before your appointment, it is worth asking yourself whether there is anything e
   _Belongs in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
 - **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
   _Belongs in: Extracurricular, if they held an active role_
+
+### 6. Career Services' own guidance and templates
+
+Written by Career Services, and the place to go for the full picture rather than this one report.
+
+- [How to write a stronger CV - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV template, English](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+
+_Both templates are there on purpose: pick the one that matches where you are applying, not the language you are reading in. They are good examples to compare your own against, never something to copy._
 
 ---
 

@@ -198,16 +198,57 @@ GROUPS = [
 # Career Services' own list, confirmed for recommending in the 29 September
 # update. The templates carry their caveat: good examples to compare against,
 # never something to copy.
+# Career Services' own guidance pages and templates, which they asked to be
+# pointed to directly. Both the English and the German CV templates are offered
+# whatever the report language: students apply across the DACH region and into
+# English-speaking markets, and the right template is the one that matches where
+# the application is going, not the language they happen to be reading in.
+#
+# Their caveat travels with them: these are good examples to compare against,
+# never something to copy.
+GUIDANCE = {
+    "cv": {
+        "en": {
+            "how": ("How to write a stronger CV - Career Services",
+                    "https://hsgcareer.ch/en/curriculum-vitae/"),
+            "templates": [
+                ("CV template, English", "https://hsgcareer.ch/media/4195/cv-template-english.pdf"),
+                ("CV-Vorlage, Deutsch (DACH)",
+                 "https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf"),
+            ],
+        },
+        "de": {
+            "how": ("Wie du deinen Lebenslauf stärker machst - Career Services",
+                    "https://hsgcareer.ch/en/curriculum-vitae/"),
+            "templates": [
+                ("CV-Vorlage, Deutsch (DACH)",
+                 "https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf"),
+                ("CV template, Englisch",
+                 "https://hsgcareer.ch/media/4195/cv-template-english.pdf"),
+            ],
+        },
+    },
+    "letter": {
+        "en": {
+            "how": ("How to write a cover letter - Career Services",
+                    "https://hsgcareer.ch/en/cover-letter/"),
+            "templates": [
+                ("Cover letter template, English",
+                 "https://hsgcareer.ch/media/4051/motivationsschreiben_template_en.pdf"),
+            ],
+        },
+        "de": {
+            "how": ("Wie du ein Motivationsschreiben schreibst - Career Services",
+                    "https://hsgcareer.ch/en/cover-letter/"),
+            "templates": [
+                ("Vorlage Motivationsschreiben, Englisch",
+                 "https://hsgcareer.ch/media/4051/motivationsschreiben_template_en.pdf"),
+            ],
+        },
+    },
+}
+
 USEFUL_LINKS = [
-    ("HSG CV templates (Career Services)",
-     "Career Services' own CV templates, EN and DE - worth comparing yours against, "
-     "never something to copy wholesale",
-     "Reference, not a CV section",
-     "https://www.unisg.ch/en/studying/during-your-studies/career-services/"),
-    ("HSG cover letter templates (Career Services)",
-     "the same for cover letters, EN and DE",
-     "Reference, not a CV section",
-     "https://www.unisg.ch/en/studying/during-your-studies/career-services/"),
     ("My HSG Career",
      "part-time jobs, internships and company events advertised for HSG students",
      "Reference, not a CV section",

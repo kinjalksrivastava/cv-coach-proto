@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist strukturiert, weist eine lückenlose Chronologie auf und ist sprachlich sowie formal konsistent. Die Berufserfahrung ist umfangreich und zeigt eine klare Spezialisierung im Vertriebs- und Einkaufsbereich der Medtech-Branche. Die Angaben zu IT- und Sprachkenntnissen sind präzise und ohne unbelegte Eigenschaftswörter formuliert. Da kein Zieljob oder Stellenprofil vorliegt, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Position können Sie jederzeit eine Zielrolle nachreichen. Es findet sich aktuell kein Hinweis auf KI-Kenntnisse oder Erfahrungen mit KI-Tools – falls Sie hier relevante Erfahrungen haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist strukturiert, weist eine lückenlose Chronologie auf und ist frei von Rechtschreibfehlern. Die Angaben zu Ihren beruflichen Stationen und Kompetenzen sind klar und konsistent. Es fällt jedoch auf, dass bei einigen Berufserfahrungen die Funktionsbezeichnung fehlt und viele Bullet Points eher Aufgaben als konkrete Beiträge oder Ergebnisse beschreiben. Da keine Zielposition oder Stellenanzeige hinterlegt wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit. Es ist zudem kein Bezug zu KI oder AI-Tools erkennbar – falls Sie hier relevante Erfahrungen haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende Funktionsbezeichnung bei Sabbatical in der Berufserfahrung**  
-  Geben Sie bei jedem Eintrag in der Berufserfahrung die konkrete Funktion oder Rolle an, auch bei Auszeiten wie einem Sabbatical. Nur so kann ein Leser Ihre Verantwortung und Seniorität nachvollziehen.
-- 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Formulieren Sie die betreffenden Bullet Points so um, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen und die dahinterstehenden Kompetenzen zeigen. Wo möglich, ergänzen Sie das Ergebnis oder den Nutzen für das Unternehmen.
-- 🔴 **Fehlende Ergebnisse und Kompetenzen in den meisten Bullet Points**  
-  Überarbeiten Sie die Bullet Points so, dass sie neben der Tätigkeit auch das Wie und Warum sowie die erworbenen oder eingesetzten Fähigkeiten hervorheben. Ein belegbares Ergebnis kann ergänzt werden, wenn es authentisch ist.
+- 🔴 **Fehlende Funktionsbezeichnung bei einer Berufserfahrung**  
+  Geben Sie bei jeder Station in der Berufserfahrung die genaue Funktion an, damit der Leser Ihre Rolle und Verantwortung nachvollziehen kann – ein Firmenname allein reicht nicht aus.
+- 🟠 **Bullet Points beschreiben nur Aufgaben, nicht den eigenen Beitrag**  
+  Überarbeiten Sie die betreffenden Bullet Points so, dass sie zeigen, was Sie konkret getan haben, wie Sie es umgesetzt haben und welche übertragbaren Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
+- 🟠 **Die meisten Bullet Points zeigen keine Ergebnisse oder Veränderungen**  
+  Ergänzen Sie, wo möglich, die Resultate Ihrer Arbeit oder beschreiben Sie, welchen Unterschied Ihr Beitrag gemacht hat – sofern dies belegbar ist.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für Studierende steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, Sie verfügen bereits über viele Jahre einschlägige Berufspraxis. Prüfen Sie, ob eine Umstellung für Ihre Zielposition sinnvoll wäre.
-- 🟡 **Interessen ohne Detailangaben**  
-  Ergänzen Sie bei Interessen und ehrenamtlichen Aktivitäten, was genau Sie tun, wie häufig und auf welchem Niveau. So wird Ihr Engagement für den Leser greifbarer.
+  Für Studierende steht normalerweise die Ausbildung an erster Stelle, es sei denn, Sie verfügen bereits über langjährige relevante Berufserfahrung.
+- 🟡 **Interessen ohne Details**  
+  Fügen Sie bei Ihren Interessen kurze Angaben hinzu, wie oft oder auf welchem Niveau Sie diese verfolgen, um ein klareres Bild Ihrer Aktivitäten zu vermitteln.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -43,22 +43,35 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | INTERESSEN | 🟢 Stark |
 | Kurse und Zertifikate | ⚪ Fehlt |
 
+**PROFIL** 🟢 Stark
+
+- Das Profil vermittelt klar Ihre Spezialisierung, Ihre Stärken und einen messbaren Erfolg, was einen überzeugenden ersten Eindruck schafft.
+
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie beim Sabbatical eine Funktionsbezeichnung hinzu, z.B. "Sabbatical (persönliche Weiterentwicklung)" oder eine vergleichbare Rolle, damit der Abschnitt für den Leser nachvollziehbar bleibt.
-- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. "Begleiten der persönlichen Wohnungsrenovierung"), indem Sie Ihr konkretes Vorgehen, die eingesetzten Fähigkeiten und – falls vorhanden – das Ergebnis oder den Mehrwert für Sie oder andere herausstellen.
-- Gehen Sie die übrigen Bullet Points durch und ergänzen Sie, wo möglich, das Ergebnis Ihrer Tätigkeit oder die erworbenen Kompetenzen. Fragen Sie sich jeweils: Was habe ich konkret bewirkt? Welche Fähigkeit habe ich dabei eingesetzt oder entwickelt?
-- Falls Sie sich künftig auf eine bestimmte Zielposition bewerben, prüfen Sie, welche Erfahrungen und Erfolge aus Ihrer Berufserfahrung besonders relevant sind und heben Sie diese gezielt hervor.
+- Ergänzen Sie bei der Sabbatical-Station eine Funktionsbezeichnung, damit Ihre Rolle auch in dieser Zeit nachvollziehbar bleibt.
+- Überarbeiten Sie Bullet Points, die nur Aufgaben beschreiben (z.B. 'Begleiten der persönlichen Wohnungsrenovierung'), indem Sie Ihren Beitrag, die Vorgehensweise und die daraus resultierenden Kompetenzen oder Ergebnisse hervorheben.
+- Prüfen Sie alle Bullet Points darauf, ob sie neben der Tätigkeit auch ein Ergebnis, eine Veränderung oder eine übertragbare Fähigkeit sichtbar machen – insbesondere bei den Stationen, die für Ihre Zielposition besonders relevant sind.
+
+**AUSBILDUNG** 🟢 Stark
+
+- Die Angaben zu Ihren Abschlüssen und Bildungswegen sind übersichtlich und nachvollziehbar.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei Ihren Aktivitäten (z.B. Besuchsdienst), wie häufig Sie diese ausgeübt haben, welche konkreten Aufgaben Sie übernommen haben und welche Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
-- Falls Sie weitere relevante Aktivitäten oder Engagements haben, können Sie diese ergänzen – insbesondere, wenn sie für Ihre angestrebte Position von Bedeutung sind.
+- Ergänzen Sie bei Ihren Aktivitäten (z.B. Besuchsdienst), wie häufig Sie diese ausgeübt haben, welche konkreten Aufgaben Sie übernommen haben und welche Kompetenzen Sie dabei entwickelt oder eingesetzt haben.
+
+**SPRACH- UND IT-KENNTNISSE** 🟢 Stark
+
+- Die Kompetenzen sind ohne vage Eigenschaftswörter und mit nachvollziehbaren Levelangaben dargestellt.
+
+**INTERESSEN** 🟢 Stark
+
+- Die Interessen geben einen Einblick in Ihre persönlichen Aktivitäten und runden das Profil ab.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder Kurse absolviert haben (z.B. im Bereich Data Science, Nachhaltigkeit oder branchenspezifische Fortbildungen), können Sie diese hier aufführen.
-- An der HSG gibt es beispielsweise das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), falls Sie eines davon erworben haben.
+- Falls Sie relevante Weiterbildungen, Zertifikate oder Zusatzqualifikationen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) erworben haben, können Sie diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
@@ -74,6 +87,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
   _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
 - **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
   _Gehört in: Extracurricular, if they held an active role_
+
+### 6. Unterlagen und Vorlagen des Career Services
+
+Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
+
+- [Wie du deinen Lebenslauf stärker machst - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+- [CV template, Englisch](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+
+_Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt passt, in dem du dich bewirbst, nicht zur Sprache, in der du gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum Abschreiben._
 
 ---
 

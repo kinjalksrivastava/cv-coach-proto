@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist strukturiert, klar und weist eine durchgängige Chronologie ohne Lücken oder Überschneidungen auf. Die Angaben zu Noten sind transparent und international verständlich, und Sie vermeiden unbelegte Eigenschaftswörter bei den Fähigkeiten. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen.
+Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Die Angaben zu Daten, Noten und Rechtschreibung sind konsistent und verständlich. Da kein konkretes Berufsziel oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Zielrolle nachreichen. Es fällt auf, dass keine explizite Erfahrung mit KI oder maschinellem Lernen genannt wird – falls Sie entsprechende Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Fehlende Funktionsbezeichnung in einem Berufserfahrungseintrag**  
-  Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
+  Bei einem Eintrag in der Berufserfahrung fehlt die genaue Funktionsbezeichnung. Ergänzen Sie die Rolle, die Sie in diesem Zeitraum innehatten, damit der Leser Ihre Verantwortung und Seniorität nachvollziehen kann.
 - 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben.
+  Einige Bullet Points beschreiben nur Aufgaben, nicht aber Ihren konkreten Beitrag oder die daraus resultierenden Fähigkeiten. Überarbeiten Sie diese, indem Sie hervorheben, was Sie wie erreicht haben und welches Ergebnis oder welche Kompetenz daraus hervorgeht.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen über langjährige, direkt relevante Berufserfahrung.
+  Bei Studierenden wird die Ausbildung üblicherweise vor der Berufserfahrung genannt, es sei denn, Sie verfügen über langjährige einschlägige Berufserfahrung. Prüfen Sie, ob eine Umstellung sinnvoll ist.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
+  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. B2, C1), damit der Leser Ihre Kenntnisse besser einschätzen kann. Die Angabe nach CEFR (A1–C2) ist besonders präzise und international verständlich.
 - 🟡 **Interessen ohne Detailangaben**  
-  Ergänzen Sie bei Ihren Interessen, wie oft, auf welchem Niveau oder in welchem Rahmen Sie diese ausüben, um ein klareres Bild Ihrer persönlichen Aktivitäten zu vermitteln.
+  Ergänzen Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben. So wird Ihr Engagement und Ihre Persönlichkeit für den Leser greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,32 +45,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil vermittelt auf den Punkt, was Sie als Kandidat auszeichnet und gibt einen überzeugenden Überblick über Ihre Schwerpunkte.
+- Das Profil vermittelt klar Ihre Spezialisierung und Ihre Motivation für Innovationsthemen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie beim Eintrag 'Transformation NAME REDACTED' die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
+- Ergänzen Sie bei dem Eintrag 'Transformation NAME REDACTED' die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
+- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, das Vorgehen und das Ergebnis bzw. die erworbene Kompetenz herausstellen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind transparent und international verständlich angegeben, und relevante Zusatzqualifikationen werden genannt.
+- Die Angaben zu Noten und Auslandserfahrung sind klar und nachvollziehbar.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei Ihren Interessen und Aktivitäten Details hinzu, wie häufig, auf welchem Niveau oder in welchem Rahmen Sie diese ausüben, um Ihr Engagement und Ihre Persönlichkeit greifbarer zu machen.
+- Fügen Sie bei Ihren Interessen und Aktivitäten Details hinzu: Wie oft üben Sie diese aus, auf welchem Niveau, und gibt es besondere Erfolge oder Engagements? Das macht Ihr Profil persönlicher und greifbarer.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei allen Sprachen und IT-Kenntnissen ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
-- Wenn Sie weitere relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese hier oder in einem eigenen Abschnitt aufführen.
+- Ergänzen Sie bei allen Sprachen und IT-Kenntnissen ein Niveau (z.B. 'Englisch (C1)', 'Python (Grundkenntnisse)'), damit der Leser Ihre Kompetenzen besser einschätzen kann.
+- Falls Sie weitere relevante Zertifikate oder Kurse abgeschlossen haben, könnten Sie diese hier oder in einem eigenen Abschnitt aufführen.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen zeigen Engagement und geben einen persönlichen Einblick, indem sie konkrete Aktivitäten und Teilnahmen nennen.
+- Die Angaben zu Sport, Musik und Kochen sind anschaulich und geben einen persönlichen Einblick.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) haben, können Sie diese in einem eigenen Abschnitt aufführen, um Ihre fachliche Breite zu unterstreichen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Onlinekurse, HSG-Zertifikate) abgeschlossen haben, können Sie diese in einem eigenen Abschnitt aufführen, um Ihre Zusatzqualifikationen hervorzuheben.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
@@ -86,6 +87,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
   _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
 - **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
   _Gehört in: Extracurricular, if they held an active role_
+
+### 6. Unterlagen und Vorlagen des Career Services
+
+Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
+
+- [Wie du deinen Lebenslauf stärker machst - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+- [CV template, Englisch](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+
+_Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt passt, in dem du dich bewirbst, nicht zur Sprache, in der du gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum Abschreiben._
 
 ---
 

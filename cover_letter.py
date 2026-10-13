@@ -21,6 +21,7 @@ what the candidate brings.
 
 import re
 
+import hsg_activities
 import latency
 
 # Their table, in their order. The last four are measured; the first five are
@@ -311,6 +312,13 @@ def render_markdown(data: dict, facts: dict, strings: dict) -> str:
         value = str(rows.get(key, "")).replace("|", "/").replace("\n", " ").strip()
         parts.append(f"| {t['labels'][key]} | {value or '—'} |")
 
+    guidance = hsg_activities.GUIDANCE["letter"][t.get("lang", "en")]
+    parts += ["", f"### 3. {t['guidance_heading']}", "", t["guidance_intro"], "",
+              f"- [{guidance['how'][0]}]({guidance['how'][1]})"]
+    for label, url in guidance["templates"]:
+        parts.append(f"- [{label}]({url})")
+    parts += ["", f"_{t['templates_note']}_"]
+
     parts += ["", "---", "", t["closing"]]
     return "\n".join(parts)
 
@@ -364,6 +372,14 @@ def to_pdf(data: dict, facts: dict, strings: dict) -> bytes | None:
         ("LEFTPADDING", (0, 0), (-1, -1), 5), ("RIGHTPADDING", (0, 0), (-1, -1), 5),
         ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ]))
+    guidance = hsg_activities.GUIDANCE["letter"][t.get("lang", "en")]
+    story.append(Paragraph(f'3. {plain(t["guidance_heading"])}', h2))
+    story.append(Paragraph(plain(t["guidance_intro"]), body))
+    for label, url in [guidance["how"]] + list(guidance["templates"]):
+        story.append(Paragraph(
+            f'{plain(label)}<br/><font size="7.5" color="#55605A">{plain(url)}</font>',
+            body))
+    story.append(Paragraph(plain(t["templates_note"]), small))
     story += [grid, Spacer(1, 8), Paragraph(plain(t["closing"]), small)]
 
     buffer = BytesIO()
@@ -400,6 +416,11 @@ STRINGS = {
             "length": "Length: max. one page",
             "availability": "Availability / start date",
         },
+        "guidance_heading": "Career Services' own guidance and template",
+        "guidance_intro": ("Written by Career Services, and the place to go for the full "
+                           "picture rather than this one report."),
+        "templates_note": ("A good example to compare your own against, never something "
+                           "to copy."),
         "recipient_yes": "The company and recipient details are there.",
         "recipient_no": "No company or recipient block found — add who the letter is to "
                         "and where. We don't check whether the details are correct.",
@@ -446,6 +467,10 @@ STRINGS = {
             "length": "Länge: maximal eine Seite",
             "availability": "Verfügbarkeit / Eintrittstermin",
         },
+        "guidance_heading": "Unterlagen und Vorlage des Career Services",
+        "guidance_intro": ("Vom Career Services selbst verfasst — dort findest du das ganze "
+                           "Bild, nicht nur diesen einen Report."),
+        "templates_note": ("Ein gutes Vergleichsbeispiel, nichts zum Abschreiben."),
         "recipient_yes": "Unternehmen und Empfängerangaben sind vorhanden.",
         "recipient_no": "Kein Empfängerblock gefunden — ergänze, an wen das Schreiben "
                         "geht. Ob die Angaben stimmen, prüfen wir nicht.",

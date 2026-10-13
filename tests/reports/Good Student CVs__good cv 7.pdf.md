@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits comfortably on one page, and presents a strong academic and professional background. Each professional experience entry includes both a clear role title and a description, and your grades are shown with their maximums, making them easy to interpret internationally. The skills section avoids unevidenced trait words and focuses on hard skills. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, fits comfortably on one page, and presents a strong academic and professional background. Each professional experience entry includes both a clear role title and a description, and your grades are shown with their maximums, making them easy to interpret internationally. The skills section avoids unevidenced trait words and focuses on hard skills. This review covers structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored feedback. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework in this area, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,9 +19,9 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many of your experience bullets focus on what you did, but do not explain how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you want to highlight, the approach you took, and the outcome or impact where possible.
+  Many of your experience bullets focus on what you did, but do not explain how you did it, why it mattered, or what changed as a result. For each bullet, clarify the skill you demonstrated, the approach you took, and the impact or outcome where possible—this helps recruiters see your transferable skills.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV for a more professional appearance.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -38,28 +38,28 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟢 Strong
 
-- Grades are given with their maximum, so a reader in another country can interpret them.
+- Grades are given with their maximum, making them easy to interpret for international readers.
 
 **Professional Experience** 🟠 Needs attention
 
-- Where you have a concrete result or impact, add it—only if you can back it up.
-- Choose a consistent punctuation style for all bullets in this section and apply it throughout.
+- For each bullet, expand beyond the task to explain how you approached it, what skill you demonstrated, and what changed as a result—this will better highlight your transferable skills.
+- Review your bullet punctuation and make sure every bullet ends the same way, either all with or all without a full stop.
 
 **Extracurriculars** 🟢 Strong
 
-- Skills are stated without unevidenced trait words.
+- Entries include concrete roles and outcomes, showing your engagement outside of academics and work.
 
 **Skills & Interests** 🟢 Strong
 
-- Skills are stated without unevidenced trait words.
+- You provide language levels and focus on hard skills, which makes this section clear and actionable for recruiters.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, focus on what makes you a strong candidate for your target role and where you want to go next.
+- If you choose to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next—focus on your unique strengths and career goals.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here, especially if they support your target roles.
+- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), consider adding them here to showcase additional expertise.
 
 ### 5. Dates worth a look
 
@@ -82,6 +82,16 @@ Before your appointment, it is worth asking yourself whether there is anything e
   _Belongs in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
   _Belongs in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
+
+### 7. Career Services' own guidance and templates
+
+Written by Career Services, and the place to go for the full picture rather than this one report.
+
+- [How to write a stronger CV - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV template, English](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+
+_Both templates are there on purpose: pick the one that matches where you are applying, not the language you are reading in. They are good examples to compare your own against, never something to copy._
 
 ---
 

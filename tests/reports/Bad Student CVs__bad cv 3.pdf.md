@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und formal konsistent, aber aktuell noch sehr knapp gehalten und enthält keine inhaltlichen Beschreibungen zu deinen Tätigkeiten. Ohne Bullet Points und konkrete Angaben zu deinen Aufgaben und Erfolgen können Leser:innen deine Erfahrungen und Kompetenzen kaum einschätzen. Es fehlt zudem eine Ausbildung-/Education-Sektion, die für einen studentischen Lebenslauf zentral ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige ergänzen. Es findet sich aktuell kein Hinweis auf KI- oder Machine-Learning-Erfahrung; falls du in diesem Bereich Kenntnisse oder Projekte hast, kannst du diese gerne ergänzen.
+Dein Lebenslauf ist übersichtlich und klar strukturiert, mit konsistenten Überschriften und fehlerfreier Rechtschreibung. Die Angaben zu deinen Stationen sind lückenlos und ohne Überschneidungen dargestellt. Allerdings enthält der CV aktuell nur sehr wenige Informationen zu deinen konkreten Tätigkeiten und Erfolgen – so kann ein Leser kaum einschätzen, was du tatsächlich gemacht und erreicht hast. Es gibt keine Hinweise auf Erfahrungen mit KI oder AI-Tools; falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Füge unter jeder Station und jedem Engagement ein paar Bullet Points hinzu, die konkret beschreiben, was du gemacht hast. Ohne diese Angaben bleibt unklar, welche Aufgaben und Kompetenzen du tatsächlich hattest.
+  Füge unter jeder Station und jedem Engagement ein paar Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Details bleibt unklar, welche Aufgaben und Erfolge du hattest.
 - 🔴 **Einträge in "BERUFSERFAHRUNG" ohne Beschreibung**  
-  Ergänze unter jeder Berufserfahrung einige Bullet Points, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – mit Fokus auf übertragbare Fähigkeiten.
+  Ergänze unter jeder Berufserfahrung einige Stichpunkte dazu, was du gemacht hast, wie du es gemacht hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Engagements zu berichten. Ein sehr kurzer CV wirkt schnell lückenhaft.
-- 🟠 **Datumsangaben nur mit Jahr, nicht mit Monat**  
-  Ergänze bei allen Zeiträumen den Monat (z.B. 09/2023 – 06/2024), damit der Umfang deiner Erfahrungen klar wird.
-- 🟡 **Keine Ausbildung-/Education-Sektion vorhanden**  
-  Falls du relevante Bildungsabschlüsse hast, füge eine eigene Ausbildung-/Education-Sektion hinzu.
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt schnell zu knapp.
+- 🟠 **Datumsangaben nur mit Jahren**  
+  Ergänze bei allen Zeiträumen den Monat – zum Beispiel "09/2023 – 06/2024". So kann ein Leser die Dauer deiner Stationen besser einschätzen.
+- 🟡 **Fehlende Rubrik "Ausbildung"**  
+  Falls du relevante Ausbildungsstationen hast, füge eine Rubrik "Ausbildung" hinzu.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,27 +45,28 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jeder Position Bullet Points hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – insbesondere, welche Fähigkeiten du dabei entwickelt hast.
-- Nutze den Platz, um mehr über deine Erfahrungen zu berichten – auch Nebenjobs, Praktika oder relevante Tätigkeiten können hier aufgeführt werden.
-- Falls du an HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) teilgenommen oder mitgearbeitet hast, kannst du diese als bezahlte Tätigkeit hier ergänzen, sofern relevant.
+- Füge unter jeder Position (z.B. Flugbegleiterin bei SWISS) Stichpunkte hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und Erfolge beschreiben.
+- Konzentriere dich dabei auf Tätigkeiten und Kompetenzen, die auch für andere Branchen oder Positionen relevant sind.
+- Ergänze bei den Zeiträumen jeweils den Monat, damit die Dauer der Anstellung klar wird.
+- Falls du relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (https://shsg.ch/clubs) hast, kannst du diese als bezahlte Tätigkeit ergänzen – aber nur, wenn sie wirklich zutreffen.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Sprachkenntnisse sind mit nachvollziehbaren Labels und ohne unklare Adjektive angegeben, was die Vergleichbarkeit für Leser:innen erleichtert.
+- Die Angaben zu deinen Sprachkenntnissen sind präzise und ohne nicht belegbare Adjektive formuliert.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Engagement Bullet Points hinzu, die deine Rolle, konkrete Aufgaben, Teamgröße und besondere Beiträge beschreiben.
-- Falls du weitere aktive Rollen in HSG-Studentenclubs hattest, kannst du diese mit Bullet Points ergänzen – eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
+- Füge unter jedem Engagement (z.B. Jugendrätin, Co-Präsidentin) Stichpunkte hinzu, die deine Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben.
+- Beschreibe, mit wem du zusammengearbeitet hast, was du organisiert oder bewirkt hast und welche Kompetenzen du dabei eingesetzt oder entwickelt hast.
+- Falls du dich in weiteren HSG-Studierendenclubs engagierst (siehe https://shsg.ch/clubs), kannst du diese mit konkreten Rollen und Aufgaben ergänzen – aber nur, wenn sie zutreffen.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du möchtest, kannst du ein Kurzprofil ergänzen, das in 2-3 Sätzen beschreibt, was dich als Kandidat:in auszeichnet und wohin du dich entwickeln möchtest.
+- Falls du möchtest, kannst du ein Kurzprofil ergänzen, das in 2-3 Sätzen beschreibt, was dich als Kandidatin auszeichnet und wohin du dich entwickeln möchtest.
 
 **Ausbildung** ⚪ Fehlt
 
-- Füge eine eigene Ausbildung-/Education-Sektion hinzu, in der du deinen aktuellen Studiengang, relevante Abschlüsse und ggf. Schwerpunkte aufführst.
-- Falls du an Austauschprogrammen, Kursen oder besonderen Projekten teilgenommen hast, kannst du diese hier ebenfalls aufführen.
+- Füge eine Rubrik "Ausbildung" hinzu, in der du deinen aktuellen Studiengang, relevante Abschlüsse und ggf. besondere Leistungen aufführst.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
@@ -73,7 +74,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du persönliche Interessen oder Hobbys hast, kannst du diese ergänzen – idealerweise mit etwas Kontext (z.B. welche Sportart, wie oft, in welchem Rahmen).
+- Wenn du möchtest, kannst du eine kurze Liste deiner Interessen oder Hobbys ergänzen – z.B. Sportarten, Musik, Reisen oder andere persönliche Aktivitäten.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
@@ -89,6 +90,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
   _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
 - **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
   _Gehört in: Extracurricular, if they held an active role_
+
+### 6. Unterlagen und Vorlagen des Career Services
+
+Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
+
+- [Wie du deinen Lebenslauf stärker machst - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+- [CV template, Englisch](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+
+_Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt passt, in dem du dich bewirbst, nicht zur Sprache, in der du gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum Abschreiben._
 
 ---
 

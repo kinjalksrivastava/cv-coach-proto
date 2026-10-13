@@ -21,7 +21,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Bullets describe duties rather than contribution**  
   Many of your experience bullets list what you did, but not how you did it or what skill you demonstrated. Rework these to highlight your approach, the skills you used, and why your actions mattered—this will make your transferable skills clear to any reader.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Currently, your experience bullets do not show outcomes, changes, or the skills you applied. For each, ask yourself what you did, how you did it, and why it mattered. Where you have a concrete result, add it, but only if you can back it up.
+  Currently, your experience bullets do not show outcomes, changes, or the skills you applied. For each, ask yourself what you did, how you did it, and what skill or result you want to highlight. Add outcomes where you genuinely have them, but focus on the skill.
 - 🟠 **Dates give the year but not the month**  
   Some entries in your extracurricular section show only years. Add the month to each date range so a reader can see the true duration of your involvement.
 - 🟠 **Bullet punctuation is inconsistent**  
@@ -48,16 +48,16 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Rework each bullet to show not just what you did, but how you did it and what skill you demonstrated—this will help recruiters see your transferable skills.
-- Where you have a concrete result or outcome, add it to the relevant bullet, but only if you can genuinely support it.
+- Rework each bullet to show not just what you did, but how you did it and what skill you demonstrated—this will help recruiters see your transferable abilities.
+- Where you have a concrete outcome or result, add it to the relevant bullet, but only if you can genuinely support it.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- You have included a range of extracurricular activities, showing engagement beyond your studies.
+- You demonstrate involvement in a range of organisations, which adds depth to your profile.
 
 **SPRACHEN** 🟢 Strong
 
-- You have provided both language names and recognised certificates, making your proficiency easy to assess.
+- You provide both language names and supporting certificates, making your proficiency easy to assess.
 
 **SKILLS** 🟢 Strong
 
@@ -65,15 +65,15 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **CERTIFICATIONS** 🟢 Strong
 
-- You include recognised certificates, supporting your skills and language claims.
+- You include recognised certificates that support your skills and language proficiency.
 
 **INTERESTS** 🟢 Strong
 
-- You provide enough detail to give a sense of your personal interests without overloading the section.
+- You provide specific interests, which helps personalise your CV.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you unique as a candidate and what you are aiming for next—focus on your motivation and your unique selling points for your target role.
+- If you would like to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next. This is especially helpful when targeting a specific role or industry.
 
 ### 5. Anything else from HSG worth adding?
 
@@ -89,6 +89,16 @@ Before your appointment, it is worth asking yourself whether there is anything e
   _Belongs in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
   _Belongs in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
+
+### 6. Career Services' own guidance and templates
+
+Written by Career Services, and the place to go for the full picture rather than this one report.
+
+- [How to write a stronger CV - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
+- [CV template, English](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+- [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+
+_Both templates are there on purpose: pick the one that matches where you are applying, not the language you are reading in. They are good examples to compare your own against, never something to copy._
 
 ---
 

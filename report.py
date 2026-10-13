@@ -610,6 +610,18 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
             # Career Services' own CV-Section column. Where a thing belongs is
             # half the value of knowing it exists.
             parts.append(f"  _{strings['hsg_where']}: {where}_")
+        number += 1
+
+    # Career Services' own guidance and templates, last, in code. Asked for
+    # directly, and a fixed list of theirs is not something to route through a
+    # model that could paraphrase a URL.
+    guidance = hsg_activities.GUIDANCE["cv"][strings.get("lang", "en")]
+    parts += ["", f"### {number}. {strings['guidance_heading']}", "",
+              strings["guidance_intro"], "",
+              f"- [{guidance['how'][0]}]({guidance['how'][1]})"]
+    for label, url in guidance["templates"]:
+        parts.append(f"- [{label}]({url})")
+    parts += ["", f"_{strings['templates_note']}_"]
 
     parts += ["", "---", "", strings["closing"]]
     return "\n".join(parts)
@@ -673,6 +685,13 @@ STRINGS = {
         "section": "Section",
         "hsg_heading": "Anything else from HSG worth adding?",
         "hsg_where": "Belongs in",
+        "guidance_heading": "Career Services' own guidance and templates",
+        "guidance_intro": ("Written by Career Services, and the place to go for the full "
+                           "picture rather than this one report."),
+        "templates_note": ("Both templates are there on purpose: pick the one that matches "
+                           "where you are applying, not the language you are reading in. "
+                           "They are good examples to compare your own against, never "
+                           "something to copy."),
         # Reworded on Career Services' instruction: the old version read as
         # though each item had been chosen deliberately for this student, "or it
         # makes it sound like this is the only relevant one". The section is a
@@ -744,6 +763,13 @@ STRINGS = {
         "section": "Abschnitt",
         "hsg_heading": "Gibt es noch etwas von der HSG, das dazugehört?",
         "hsg_where": "Gehört in",
+        "guidance_heading": "Unterlagen und Vorlagen des Career Services",
+        "guidance_intro": ("Vom Career Services selbst verfasst — dort findest du das ganze "
+                           "Bild, nicht nur diesen einen Report."),
+        "templates_note": ("Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt "
+                           "passt, in dem du dich bewirbst, nicht zur Sprache, in der du "
+                           "gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum "
+                           "Abschreiben."),
         "hsg_intro": (
             "Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG "
             "gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, "
@@ -950,6 +976,16 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
                 tail += f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>'
             story.append(Paragraph(f"<b>{plain(name)}</b> — {plain(what)}{tail}",
                                    bullet, bulletText="\u2022"))
+        number += 1
+
+    guidance = hsg_activities.GUIDANCE["cv"][strings.get("lang", "en")]
+    story.append(Paragraph(f'{number}. {plain(strings["guidance_heading"])}', h2))
+    story.append(Paragraph(plain(strings["guidance_intro"]), body))
+    for label, url in [guidance["how"]] + list(guidance["templates"]):
+        story.append(Paragraph(
+            f'<b>{plain(label)}</b><br/><font size="7.5" color="#55605A">{plain(url)}</font>',
+            bullet, bulletText="\u2022"))
+    story.append(Paragraph(plain(strings["templates_note"]), small))
 
     story += [Spacer(1, 8), Paragraph(plain(strings["closing"]), small)]
 
