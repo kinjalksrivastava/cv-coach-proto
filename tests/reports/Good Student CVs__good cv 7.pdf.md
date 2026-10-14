@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall: it fits well on one page, each professional experience entry is clearly described, and your grades are presented with their maximums for clarity. The skills section avoids unevidenced trait words, which keeps it focused and credible. This review covers structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored feedback. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, fits on one page, and provides clear information about your education and professional experience. Grades are presented with their maximums, making them easy to interpret internationally, and your skills are listed without unsupported trait words. However, there are a few areas where you could add detail to help a recruiter understand your achievements and the skills you bring. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific target at any time.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,12 +18,12 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Academic Experience**  
-  A reader learns only which certificate you hold, with no sense of what you did during your studies. Add a line or two under each degree where you genuinely have something relevant: key modules, thesis details, an exchange semester, a certificate, a scholarship, or a mentoring programme—only what is true and relevant to your future applications.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, some education entries only list the qualification, date, and grade. Add a line or two under each degree where you have relevant content—such as key modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes—to give a fuller picture of your academic experience.
 - 🟠 **Expand experience bullets to show skills and outcomes**  
-  Most experience bullets describe only the task, not the skill or result. For each, clarify what you did, how you did it, and why it mattered, highlighting any transferable skills and outcomes where appropriate and accurate.
+  Many of your professional experience bullets describe tasks but do not show the skills you used or the results you achieved. For each, clarify what you did, how you did it, why it mattered, and what changed as a result, focusing on transferable skills.
 - 🟡 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it throughout for a more professional appearance.
+  Some bullets end with a full stop and others do not. Choose one style and apply it throughout your CV for a more professional appearance.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -40,22 +40,20 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟠 Needs attention
 
-- Add a line or two under each degree where you have relevant content: key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) if applicable.
-- If you have completed any additional qualifications or participated in relevant academic projects, include them as bullets under the appropriate degree.
+- Add a line or two under each degree where you have relevant content, such as key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/), focusing on what is most relevant to your future applications.
 
 **Professional Experience** 🟠 Needs attention
 
-- Review each bullet and expand it to show not just what you did, but how you did it and what changed as a result—this helps a reader see your transferable skills and impact.
-- Where you can genuinely evidence an outcome or result, add it, but only if it is accurate and appropriate for the role.
-- Make sure all bullets use consistent punctuation throughout the section.
+- Review each bullet to clarify what you did, how you did it, why it mattered, and what changed as a result, making sure to highlight transferable skills and measurable outcomes where possible.
+- Ensure that bullet punctuation is consistent throughout this section.
 
 **Extracurriculars** 🟢 Strong
 
-- You provide concrete examples of involvement and achievements, which helps demonstrate your engagement beyond academics.
+- Your extracurriculars show real engagement and include specific contributions, which helps a recruiter see your broader interests and initiative.
 
 **Skills & Interests** 🟢 Strong
 
-- Your skills section is focused and avoids unsupported claims, making it clear and credible.
+- You present your language and technical skills with clear levels and avoid unevidenced personal traits, making this section easy for a recruiter to interpret.
 
 **Profile** ⚪ Missing
 
@@ -63,7 +61,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), consider adding them here to showcase further expertise.
 
 ### 5. Dates worth a look
 

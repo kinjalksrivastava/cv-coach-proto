@@ -21,8 +21,20 @@ import re
 from difflib import SequenceMatcher
 
 # A line that STARTS with one of these is a bullet - "- Did benchmark research".
-BULLET_CHARS = "-–—•·*▪◦‣→▸▹►‣⁃∙"
-BULLET_LINE = re.compile(rf"^\s*[{re.escape(BULLET_CHARS)}]\s+\S")
+BULLET_CHARS = "-–—•·*▪■◦‣→▸▹►‣⁃∙"
+_BULLET_LINE = re.compile(rf"^\s*[{re.escape(BULLET_CHARS)}]\s+\S")
+
+# Word's own outline levels two and three are a Courier "o" and a Wingdings
+# square, so a CV written in Word arrives with "o Did the research" and no
+# glyph a font-blind reader would recognise. The square is in the list above.
+# The letter cannot be, or any line opening on the word "o" becomes a bullet.
+# It counts only before a capital, which is where an outline level sits.
+WORD_SUB_BULLET = re.compile(r"^\s*o\s+(?=[A-ZÄÖÜ])")
+
+
+def BULLET_LINE_match(line: str):
+    """A bullet marker at the start of the line, in any of its spellings."""
+    return _BULLET_LINE.match(line) or WORD_SUB_BULLET.match(line)
 
 # Mid-line, only true bullet glyphs count. A spaced hyphen is a date or title
 # separator far more often than a bullet ("Sep 2024 - Jun 2025 St Gallen
@@ -325,7 +337,7 @@ def _is_bullet(line: str) -> bool:
     # whatever punctuation it happens to contain.
     if DATE_RANGE.search(line):
         return False
-    if BULLET_LINE.match(line) or INLINE_BULLET.search(line):
+    if BULLET_LINE_match(line) or INLINE_BULLET.search(line):
         return True
     # No glyph, but indented and long enough to be a sentence rather than a
     # column. Plenty of CVs indent instead of bulleting, and reading those as
@@ -334,7 +346,7 @@ def _is_bullet(line: str) -> bool:
 
 
 def _bullet_text(line: str) -> str:
-    stripped = line.strip()
+    stripped = WORD_SUB_BULLET.sub("", line.strip())
     return stripped.lstrip(BULLET_CHARS + " ").strip()
 
 

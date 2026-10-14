@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Rolle und Beschreibung versehen, und Sie vermeiden unbelegte Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Die Rollen in der Berufserfahrung sind jeweils mit Titel und Beschreibung versehen, und du vermeidest unbelegte Eigenschaftswörter. Die Rückmeldungen beziehen sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fehlt aktuell ein Abschnitt zu Skills & Languages; falls du relevante Kompetenzen oder Sprachkenntnisse hast, solltest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeiten Sie die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf das Wie und Warum – und welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
-- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  Gehen Sie jede Bullet Point in der Berufserfahrung durch und fragen Sie sich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo möglich, ergänzen Sie ein echtes Ergebnis – aber nur, wenn Sie es belegen können. Ziel ist, Ihre Kompetenzen sichtbar zu machen.
-- 🟠 **Kein Skills & Languages Abschnitt vorhanden**  
-  Fügen Sie einen Abschnitt für Skills & Languages hinzu, wenn Sie relevante Fähigkeiten und Sprachkenntnisse haben. Das erleichtert es Recruitern, Ihre technischen und sprachlichen Kompetenzen auf einen Blick zu erfassen.
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Fähigkeiten zeigen. Wo möglich, ergänze ein Ergebnis oder eine Veränderung.
+- 🔴 **Die meisten Bullets zeigen keine Ergebnisse oder Veränderungen**  
+  Gehe jede Bullet Point in der Berufserfahrung durch und ergänze, was du konkret bewirkt hast, wie du vorgegangen bist und warum das für den Arbeitgeber oder das Team relevant war. Füge ein Ergebnis hinzu, wenn es belegbar ist.
+- 🟠 **Kein Abschnitt Skills & Languages vorhanden**  
+  Füge einen eigenen Abschnitt für Skills & Languages hinzu, um deine technischen Kompetenzen und Sprachkenntnisse mit Niveau sichtbar zu machen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,24 +41,27 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Angaben zu Abschlüssen, Noten und besonderen Leistungen sind klar und nachvollziehbar dargestellt.
+- Die Ausbildung zeigt klar die wichtigsten Stationen, aktuelle Noten und Zusatzengagements wie das Coaching-Programm.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fragen Sie sich bei jeder Station: Was habe ich konkret bewirkt? Welche Kompetenzen oder Soft Skills habe ich dabei eingesetzt oder entwickelt?
+- Überarbeite die Bullet Points so, dass sie deinen persönlichen Beitrag, das Vorgehen und die dahinterstehenden Fähigkeiten sichtbar machen – nicht nur die Aufgabe selbst.
+- Ergänze, wo möglich, ein konkretes Ergebnis oder eine Veränderung, die durch dein Handeln entstanden ist.
+- Überlege bei jeder Station, welche übertragbaren Kompetenzen für zukünftige Rollen sichtbar werden sollen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Sie zeigen Engagement und Verantwortung in Sport und Vereinsarbeit, was Ihre Vielseitigkeit und Eigeninitiative unterstreicht.
+- Die Darstellung zeigt Engagement und Verantwortung in Sport und Vereinsarbeit mit konkreten Aufgaben.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Angaben zu Interessen, Sprachen und IT-Kenntnissen sind klar und ohne unbelegte Eigenschaftswörter dargestellt.
+- Die Interessen und Kompetenzen sind klar benannt und vermeiden unbelegte Eigenschaftswörter.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Fügen Sie einen eigenen Abschnitt hinzu, in dem Sie Ihre technischen Fähigkeiten (z.B. MS Office, HubSpot, Zapier) und Sprachkenntnisse jeweils mit einem Niveau (z.B. nach CEFR: A1–C2) angeben.
-- So können Recruiter Ihre Kompetenzen schnell erfassen und gezielt mit den Anforderungen einer Stelle abgleichen.
+- Füge einen Abschnitt hinzu, in dem du deine technischen Fähigkeiten (z.B. MS Office, HubSpot, Zapier) und Sprachkenntnisse jeweils mit einem Niveau (z.B. B2, C1) aufführst.
+- Für Sprachen empfiehlt sich die Angabe des CEFR-Levels (A1–C2), da dies international eindeutig verstanden wird.
+- So werden deine Kompetenzen für verschiedene Zielrollen auf einen Blick sichtbar.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -66,7 +69,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Zusatzqualifikationen (z.B. Data Science, Nachhaltigkeit, Sprachzertifikate) haben, können Sie diese hier aufführen.
+- Falls du relevante Zertifikate oder Zusatzkurse hast (z.B. das HSG-Zertifikat in Data Science Fundamentals: https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

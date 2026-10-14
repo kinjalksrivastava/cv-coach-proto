@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear, with no unexplained gaps or overlaps, and your education and community experience sections are particularly strong, each entry providing both a role and a description. Most of your professional experience bullets highlight concrete results, which is a real asset. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can offer more tailored advice.
+Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear and complete, with no unexplained gaps or overlaps, and your education section provides grades with their maximums for international clarity. Most of your experience bullets highlight concrete results, which is a real strength. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,7 +19,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **bullet names a duty rather than a contribution**  
-  Rework the bullet that lists duties rather than contributions by focusing on what you did, how you did it, and why it mattered—especially which transferable skill it demonstrates. Including a result is helpful where you genuinely have one, but the main point is to show the skill.
+  Rework the bullet that lists duties to focus on what you did, how you did it, and why it mattered—especially highlighting the transferable skills you demonstrated. Including a result is helpful where you have one, but the main point is to show your skills in action.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -36,19 +36,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Each entry includes a role title and description, and grades are presented in a way that is easy for readers from different countries to interpret.
+- Grades are given with their maximums, making your achievements easy to interpret for readers from different countries.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to focus on what you specifically did, how you did it, and the skills you demonstrated, rather than just listing tasks.
+- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to clarify what you specifically did, how you approached it, and what skill or impact you demonstrated, rather than listing tasks.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Descriptions are specific and quantify your contributions, which helps a reader understand your role and achievements.
+- Every entry carries both a role title and a description, making your contributions easy to understand.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- This section avoids unsupported claims and provides a straightforward overview of your skills and interests.
+- Skills are listed without unsupported trait words, keeping the section focused and credible.
 
 **Profile** ⚪ Missing
 
@@ -56,7 +56,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or others), you could add them here to showcase additional skills or specialisations.
+- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 
