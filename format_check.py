@@ -318,11 +318,9 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     # to. Silence is the honest answer; with even one heading recognised we are
     # on familiar ground and the rest can be judged.
     recognised = len(heading_source) - len(headings)
-    # Out of depth when MOST headings are unrecognised, not only when none is.
-    # The keyword fallback recognises the odd heading in a language the
-    # vocabulary does not cover - "ATIVIDADES EXTRACURRICULARES" matches
-    # "extracurricular" - and a single hit was enough to make the check start
-    # asserting that the rest of a Portuguese CV was unreadable.
+    # Out of depth when MOST headings are unrecognised. Recognising one heading
+    # of five in a language the vocabulary does not cover is not grounds for
+    # telling a student the other four are unreadable.
     out_of_depth = len(heading_source) >= 3 and recognised <= len(heading_source) * 0.4
     if headings and not out_of_depth:
         problems.append(t["headings"].format(

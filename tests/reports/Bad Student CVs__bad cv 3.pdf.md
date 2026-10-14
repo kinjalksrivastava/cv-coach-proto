@@ -22,10 +22,10 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
   Gib dem Block am Anfang deines Lebenslaufs eine passende Überschrift wie 'Ausbildung' oder 'Education'. Ohne Überschrift ist für Lesende und Bewerbermanagementsysteme nicht klar, worum es sich handelt, und die Einträge könnten falsch zugeordnet werden.
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
   Füge unter jeder Position und jedem Engagement kurze Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Informationen bleibt unklar, welche Aufgaben und Verantwortlichkeiten du übernommen hast.
-- 🔴 **Keine Beschreibung unter 'BERUFSERFAHRUNG'**  
-  Ergänze unter deiner Tätigkeit als Flugbegleiterin einige Stichpunkte dazu, was du gemacht hast, wie du vorgegangen bist und welche Ergebnisse oder Veränderungen daraus entstanden sind – besonders mit Blick auf übertragbare Kompetenzen.
-- 🔴 **Der Lebenslauf ist sehr kurz**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Fähigkeiten zu berichten. Ein Lebenslauf, der nur halbseitig gefüllt ist, wirkt schnell lückenhaft.
+- 🔴 **Keine Beschreibung unter Berufserfahrung**  
+  Ergänze unter deiner Tätigkeit als Flugbegleiterin einige Bullet Points, die deine Aufgaben, Vorgehensweise und erzielten Ergebnisse darstellen – insbesondere solche, die für spätere Bewerbungen übertragbar sind.
+- 🔴 **Lebenslauf ist sehr kurz**  
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig gefüllt ist, wirkt schnell lückenhaft.
 - 🟠 **Datumsangaben ohne Monate**  
   Ergänze bei allen Zeiträumen die Monatsangabe (z.B. 09/2023 – 06/2024). So wird klar, wie lange du eine Station tatsächlich ausgeübt hast.
 
@@ -45,26 +45,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter deiner Position als Flugbegleiterin Stichpunkte hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – insbesondere solche, die für zukünftige Tätigkeiten relevant sind.
-- Nutze den Platz, um weitere relevante Erfahrungen oder Nebenjobs zu ergänzen, falls vorhanden.
-- Ergänze bei den Zeitangaben den jeweiligen Monat, um die Dauer der Beschäftigung klarer zu machen.
-- Falls du an der Talents Conference (Career Services) oder beim St. Gallen Symposium (International Students' Committee) mitgewirkt hast, kannst du dies als bezahlte Tätigkeit unter Berufserfahrung aufführen, sofern relevant.
+- Füge unter deiner Position als Flugbegleiterin Bullet Points hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – insbesondere solche, die für spätere Bewerbungen relevant sind.
+- Nutze den Platz, um weitere relevante Tätigkeiten oder Nebenjobs zu ergänzen, falls vorhanden. Auch Erfahrungen aus HSG-Angeboten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (https://shsg.ch/clubs) können hier aufgeführt werden, sofern sie bezahlt waren.
+- Ergänze bei den Zeitangaben jeweils den Monat, um die Dauer der Beschäftigung klar zu machen.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Angaben zu deinen Sprachkenntnissen sind übersichtlich und konsistent dargestellt.
+- Die Angabe der Sprachkenntnisse ist übersichtlich und nachvollziehbar gestaltet.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter deinem Engagement als Jugendrätin Stichpunkte hinzu, die deine Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben – z.B. Projekte, Teamarbeit, Organisation von Veranstaltungen.
-- Beschreibe Interessen nicht nur als Stichworte, sondern mit Details: Was genau machst du, wie oft, auf welchem Niveau? Ein Engagement in einem Verein oder Club sollte mit konkreten Tätigkeiten unterlegt werden.
-- Falls du in einem der HSG-Studentenclubs (https://shsg.ch/clubs) aktiv bist, kannst du dies mit einer kurzen Beschreibung deiner Rolle und Aufgaben ergänzen.
+- Füge unter deinem Engagement als Jugendrätin Bullet Points hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben – z.B. welche Projekte du betreut hast, mit wem du zusammengearbeitet hast oder welche Fähigkeiten du dabei eingesetzt hast.
+- Falls du Mitglied in einem HSG-Club bist oder warst, kannst du dies mit einer kurzen Beschreibung ergänzen. Eine Übersicht findest du im HSG-Clubverzeichnis (https://shsg.ch/clubs).
+- Wenn du persönliche Interessen oder Hobbys hast, beschreibe diese genauer: Was genau machst du, wie oft, auf welchem Niveau? So wird dein Profil greifbarer.
 
 **Ausbildung** ⚪ Fehlt
 
-- Füge einen Abschnitt 'Ausbildung' hinzu, in dem du deine Studiengänge, Abschlüsse und relevante Stationen aufführst.
-- Ergänze, falls vorhanden, auch Austauschsemester, relevante Kurse oder besondere Schwerpunkte.
-- Falls du an HSG-spezifischen Programmen teilgenommen hast, wie z.B. Consulting Club HSG (https://consultingclub.ch/) oder Helvetian Investment Club (https://shsg.ch/clubs), kannst du diese hier oder unter Engagement aufführen, sofern sie für dein Ziel relevant sind.
+- Füge einen Abschnitt 'Ausbildung' hinzu, in dem du deine bisherigen Bildungsstationen aufführst – z.B. Universität St. Gallen, Kantonsschule Frauenfeld. Ergänze Abschluss, relevante Schwerpunkte, ggf. Noten und besondere Leistungen.
+- Falls du an Austauschprogrammen, Kursen oder Zertifikaten teilgenommen hast, kannst du diese ebenfalls aufführen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -72,11 +70,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate absolviert hast, kannst du diese in einem eigenen Abschnitt aufführen. Zum Beispiel das Bloomberg Market Concepts (BMC) Zertifikat (https://portal.bloombergforeducation.com/), falls du es gemacht hast.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du persönliche Interessen oder Hobbys hast, kannst du diese in einem eigenen Abschnitt aufführen. Beschreibe dabei, was genau du machst, wie oft und auf welchem Niveau – so wird dein Profil greifbarer.
+- Wenn du persönliche Interessen oder Hobbys hast, kannst du diese in einem eigenen Abschnitt aufführen. Beschreibe dabei, was du konkret machst, wie oft und auf welchem Niveau – das macht dein Profil persönlicher und greifbarer.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

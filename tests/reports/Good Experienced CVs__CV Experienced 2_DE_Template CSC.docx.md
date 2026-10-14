@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Fehlende inhaltliche Angaben zu Abschlüssen im Ausbildungsbereich**  
-  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, eine Abschlussarbeit (inklusive Thema und Vorgehen), ein Austauschsemester, Zertifikate oder besondere Programme nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
+  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Schwerpunkte, eine Abschlussarbeit (inklusive Thema und Methode), ein Austauschsemester oder besondere Qualifikationen nennen – jeweils nur, wenn diese tatsächlich zutreffen und für Ihr Ziel relevant sind.
 - 🔴 **Fehlende Funktionsbezeichnung bei einer Station in der Berufserfahrung**  
-  Ergänzen Sie bei jeder Station in der Berufserfahrung die genaue Funktion oder Rolle, damit der Leser Ihre Verantwortung und Seniorität nachvollziehen kann.
+  Ergänzen Sie bei jeder Station in der Berufserfahrung die genaue Funktion oder Rolle, die Sie dort ausgeübt haben – ein reiner Arbeitgebername reicht nicht aus, um Verantwortung oder Seniorität zu erkennen.
 - 🟠 **Aufgabenbeschreibungen ohne Bezug zu Beitrag oder Kompetenz**  
-  Überarbeiten Sie Aufgabenbeschreibungen so, dass klar wird, was Sie konkret getan haben, wie Sie dabei vorgegangen sind und welche übertragbaren Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
+  Überarbeiten Sie Aufgabenbeschreibungen so, dass klar wird, was Sie konkret getan haben, wie Sie dabei vorgegangen sind und welche übertragbaren Kompetenzen Sie dabei eingesetzt oder entwickelt haben. Ein Ergebnis oder eine Veränderung kann ergänzt werden, wenn es belegbar ist.
 - 🟠 **Fehlende Ergebnisse oder Veränderungen in den meisten Aufgabenbeschreibungen**  
-  Ergänzen Sie, wo möglich, den konkreten Nutzen, das Ergebnis oder die Veränderung, die Sie bewirkt haben – sofern Sie diese belegen können. Der Fokus sollte auf der vermittelten Kompetenz liegen, nicht auf Zahlen um ihrer selbst willen.
+  Gehen Sie jede Aufgabenbeschreibung durch und überlegen Sie, welches Ergebnis, welche Veränderung oder welche Kompetenz Sie damit belegen können. Ergänzen Sie dies, sofern es angemessen und belegbar ist.
 - 🟡 **Abschnittsreihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen klassischen Studierenden-Lebenslauf empfiehlt sich, die Ausbildung vor die Berufserfahrung zu stellen – es sei denn, Sie sind bereits langjährig im Zielbereich tätig.
+  Für einen klassischen Studierenden-Lebenslauf steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, Sie sind bereits langjährig im Zielbereich tätig.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,37 +45,38 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil vermittelt auf den Punkt gebracht Ihre Spezialisierung, Erfolge und persönlichen Stärken.
+- Das Profil hebt Ihre langjährige Erfahrung, Ihre Vertriebskompetenz und Ihre Erfolge klar hervor.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei der Sabbatical-Station eine Funktionsbezeichnung, damit der Abschnitt einheitlich und nachvollziehbar bleibt.
-- Überarbeiten Sie Aufgabenbeschreibungen so, dass Ihr konkreter Beitrag, die Vorgehensweise und die dahinterstehenden Kompetenzen sichtbar werden – insbesondere bei Aufgaben, die aktuell nur Tätigkeiten nennen.
-- Fügen Sie, wo möglich, Ergebnisse oder Veränderungen hinzu, die Sie bewirkt haben, um Ihre Wirkung und Kompetenzen zu unterstreichen.
-- Falls Sie an HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) in einer bezahlten Rolle teilgenommen haben, könnten Sie diese als Berufserfahrung ergänzen – sofern relevant.
+- Ergänzen Sie bei der Sabbatical-Station eine Funktionsbezeichnung, damit klar ist, welche Rolle oder Tätigkeit Sie in dieser Zeit ausgeübt haben.
+- Überarbeiten Sie Aufgabenbeschreibungen, die nur Tätigkeiten nennen (z.B. 'Begleiten der persönlichen Wohnungsrenovierung'), indem Sie erläutern, wie Sie vorgegangen sind, welche Kompetenzen Sie eingesetzt haben und welches Ergebnis oder welche Veränderung daraus resultierte.
+- Prüfen Sie alle Aufgabenbeschreibungen darauf, ob sie einen Beitrag, eine Veränderung oder eine übertragbare Kompetenz sichtbar machen – ergänzen Sie dies, wo es sinnvoll und belegbar ist.
+- Falls Sie sich künftig auf eine bestimmte Position bewerben, prüfen Sie, ob Ihre bisherigen Aufgaben und Erfolge gezielt auf die Anforderungen der Zielstelle eingehen.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet unter dem entsprechenden Abschluss aufführen.
-- Falls Sie ein Zertifikat wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben haben, können Sie dies ebenfalls unter Ausbildung oder im Abschnitt 'Kurse und Zertifikate' ergänzen.
+- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester oder besonderen Qualifikationen hinzu, sofern vorhanden.
+- Falls Sie an Programmen wie dem [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet unter dem entsprechenden Abschluss ergänzen.
+- Wenn Sie sich auf eine bestimmte Stelle bewerben, heben Sie in diesem Abschnitt gezielt die für die Zielposition relevanten Inhalte hervor.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie bei Ihren Aktivitäten, wie oft und in welchem Umfang Sie diese ausgeübt haben (z.B. wöchentliche Besuche, Anzahl betreuter Personen) und welche Kompetenzen Sie dabei eingesetzt oder entwickelt haben.
-- Falls Sie als Assessment Guide (SHSG) tätig waren, können Sie dies als Engagement ergänzen (https://shsg.ch/services).
+- Beschreiben Sie bei Ihren Aktivitäten, wie oft und in welchem Umfang Sie diese ausgeübt haben und welche konkreten Aufgaben oder Erfolge damit verbunden waren.
+- Falls Sie als Mentor:in, Tutor:in oder in studentischen Initiativen (z.B. Assessment Guide) aktiv waren, können Sie dies ergänzen – jeweils mit Fokus auf die übertragbaren Kompetenzen.
+- Für eine gezielte Bewerbung: Zeigen Sie, welche Soft Skills oder Erfahrungen aus diesen Aktivitäten für die Zielposition relevant sind.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Kenntnissen sind präzise und verzichten auf nicht belegbare Eigenschaftswörter.
+- Alle Angaben zu Sprachen und IT-Kenntnissen sind einheitlich und ohne unbelegte Eigenschaftswörter formuliert.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen sind differenziert dargestellt und geben einen guten Einblick in Ihre persönlichen Aktivitäten.
+- Die Interessen sind mit Beispielen und Kontext versehen, was ein differenziertes Bild Ihrer persönlichen Schwerpunkte vermittelt.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder Zusatzqualifikationen erworben haben (z.B. Data Science, Nachhaltigkeit, IT), können Sie diese in einem eigenen Abschnitt aufführen.
-- Hier könnten Sie auch externe Kurse wie das Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/) oder HSG-Zertifikate ergänzen, sofern sie für Ihr Ziel relevant sind.
+- Falls Sie relevante Weiterbildungen, Zertifikate oder Zusatzqualifikationen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) erworben haben, können Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

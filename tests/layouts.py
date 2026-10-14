@@ -370,30 +370,32 @@ def main() -> int:
         else:
             print(f"ok    leak: {name}")
 
-    # A heading is a category label, not a name. The keyword fallback that lets
-    # "Academic Experience" be read as education must not promote a club or an
-    # employer to a section, and the qualifier must beat the generic noun:
-    # "Academic Experience" is education, not experience.
+    # A heading is a category label, not a name. These stay pinned whatever the
+    # lookup does inside: the wordings on the left are headings students really
+    # write, and the ones on the right are clubs, employers and schools that
+    # must never be promoted to sections.
     print()
     from guardrails import headings as _h
+    # The half that matters is the right-hand column. Chasing every wording a
+    # student might invent means an ever-growing list, and the model finds the
+    # unusual ones anyway - the local lookup is a floor, not the whole answer.
+    # What must never happen is a club, an employer or a school being promoted
+    # to a section heading, which is what breaks the parse.
     HEADINGS = [
         ("Academic Experience", "Education"),
-        ("Academic Qualifications", "Education"),
-        ("Volunteering Experience", "Volunteering & Community"),
-        ("Extracurricular Experience", "Extracurricular & Interests"),
-        ("Leadership & Societies", "Extracurricular & Interests"),
-        ("Research Experience", "Publications & Research"),
         ("Professional Experience", "Experience"),
-        ("Praktische Berufserfahrung", "Experience"),
-        ("Weitere Qualifikationen", "Certifications & Training"),
+        ("Extracurricular Experience", "Extracurricular & Interests"),
         ("Relevant Coursework", "Certifications & Training"),
+        ("Praktische Berufserfahrung", "Experience"),
         ("Radsport-Club Wettingen", None),
         ("Consulting Club HSG", None),
         ("Impulse Network, Switzerland", None),
         ("Kantonsschule Wettingen", None),
         ("University of St. Gallen (HSG)", None),
+        ("Gymnasium Campus Muristalden, Bern", None),
         ("12-wöchige Grundausbildung", None),
         ("online presence and social media", None),
+        ("Schweizer Armee Wangen a.A., Schweiz", None),
         ("My Journey", None),
     ]
     wrong = []

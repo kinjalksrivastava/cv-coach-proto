@@ -21,11 +21,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 - 🔴 **Fehlende Funktionsbezeichnung in einem Berufserfahrungseintrag**  
   Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
 - 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
-  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben.
+  Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihren konkreten Beitrag, die Vorgehensweise und das Ergebnis hervorheben – insbesondere, welche übertragbaren Kompetenzen Sie dabei gezeigt haben.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich normalerweise, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen bereits über viele Jahre einschlägiger Berufserfahrung.
+  Für einen studentischen Lebenslauf empfiehlt sich normalerweise, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen bereits über viele Jahre einschlägiger Berufspraxis.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
+  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder idealerweise CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
 - 🟡 **Interessen ohne Detailangaben**  
   Ergänzen Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben – so wird Ihr Engagement und Ihre Persönlichkeit für den Leser greifbarer.
 
@@ -45,7 +45,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil ist prägnant formuliert und hebt Ihre Expertise sowie Ihre Motivation für Innovation und neue Technologien hervor.
+- Das Profil fasst Ihre langjährige Erfahrung, Ihre methodischen Stärken und Ihre Innovationsorientierung prägnant zusammen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
@@ -57,19 +57,20 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei Ihren Interessen und Aktivitäten konkrete Angaben hinzu, wie häufig und auf welchem Niveau Sie diese ausüben (z.B. Teilnahme an Wettbewerben, regelmäßige Treffen, besondere Leistungen).
+- Fügen Sie bei Ihren Interessen und Aktivitäten Details hinzu, wie häufig und auf welchem Niveau Sie diese ausüben (z.B. Teilnahme an Wettbewerben, Engagement im Verein oder besondere Leistungen).
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei jeder Sprache und jedem IT-Tool das jeweilige Kompetenzniveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2 für Sprachen), damit Ihre Kenntnisse klar einschätzbar sind.
+- Ergänzen Sie bei allen Sprachen und IT-Kenntnissen ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Ihre Kompetenzen klar einschätzbar sind.
+- Wenn Sie weitere relevante Zertifikate oder Kurse absolviert haben, könnten Sie diese im optionalen Abschnitt 'Kurse und Zertifikate' aufführen.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Angaben zu Sport und Musik sind mit Beispielen und Engagement (z.B. Teilnahme an der Seeüberquerung, Chormitgliedschaft) unterlegt.
+- Die Angaben zu Sport und Musik sind mit Beispielen und Kontext versehen, was Ihr Engagement unterstreicht.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Onlinekurse, HSG-Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)) absolviert haben, können Sie diese in einem eigenen Abschnitt aufführen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) erworben haben, können Sie diese hier aufführen, um Ihr Profil weiter zu schärfen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
