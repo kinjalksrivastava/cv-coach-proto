@@ -343,6 +343,31 @@ MA in Business Administration, HSG                  09/2015 - 06/2017
 )
 
 
+# --------------------------------------------------------------------------
+# 12. A degree with only a grade and a date under it. Career Services asked
+#     twice for this to be picked up - a reader learns which certificate exists
+#     and nothing about what the student did - so the section is not Strong.
+#     And the dates are written without spaces around the dash, which the PII
+#     layer used to read as a phone number and redact, taking the entries with
+#     them.
+# --------------------------------------------------------------------------
+case(
+    "degrees with only grades, dates written without spaces",
+    """Education
+Universitaet St. Gallen, MA Banking and Finance       09/2022-06/2024
+- Grade average 5.4 / 6.0
+Universitaet Zuerich, BA Economics                    09/2019-06/2022
+- Notendurchschnitt 5.1
+
+Work Experience
+Analyst, Beispiel AG, Zurich                          07/2024-08/2025
+- Rebuilt the monthly reporting pack, cutting two days off the close
+""",
+    issue_kinds=["education_thin"],
+    date_ranges=3,
+)
+
+
 def run() -> int:
     failures = 0
     for item in CASES:

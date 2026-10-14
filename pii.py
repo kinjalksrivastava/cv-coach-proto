@@ -34,6 +34,7 @@ less than it claims.
 import re
 
 import pii_local
+from guardrails import dates as date_parser
 from guardrails import headings as heading_lookup
 
 
@@ -206,6 +207,13 @@ def _is_phone(matched: str, line: str) -> bool:
     if not (7 <= len(digits) <= 15):
         return False
     if YEAR_RANGE_RE.match(text):
+        return False
+    # Anything the project's own date parser reads as a range is a date, not a
+    # phone number. The year-only guard above missed "07/2018-01/2019" - a
+    # perfectly ordinary CV date written without spaces around the dash - and
+    # redacting it took the dates off five entries of one sample CV, which
+    # silently took their entries, their gaps and their month checks with them.
+    if date_parser.RANGE_RE.fullmatch(text) or date_parser.extract_ranges(text):
         return False
     if re.fullmatch(r"\d{7,}", text) and not PHONE_CONTEXT_RE.search(line):
         return False  # a bare digit run with no phone context: could be anything

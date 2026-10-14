@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with clear headings, consistent dates, and accurate spelling throughout. Each professional experience entry includes both a role title and a description, and your skills section avoids unevidenced trait words. However, the feedback below focuses on structure and completeness, as no target role or job description was provided—if you add one, I can give more tailored advice. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework in this area, consider adding it.
+Your CV is well-structured, with consistent headings, dates, and spelling, and each professional experience entry includes both a clear role title and description. The skills section avoids unevidenced trait words, which keeps your profile focused on verifiable abilities. However, most of your experience bullets describe tasks rather than the skills you developed or the impact you made, so adding more detail about your contributions and outcomes will help recruiters understand your strengths. Some grades and language levels need clarification for international readers. Your interests are listed, but adding more detail about your involvement will make them more meaningful. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,14 +18,14 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Experience bullets focus on tasks, not skills or outcomes**  
-  Review each experience bullet and expand it to show not just what you did, but how you did it and why it mattered. Highlight the transferable skills you developed and, where possible, include a concrete result or change that came from your work.
-- 🟡 **Clarify and contextualise grades**  
-  For each grade, ensure you state both the value and the grading scale (e.g., 80/100). For the Swiss Matura, specify the grading scale used, as international recruiters may not recognise it.
-- 🟡 **Add language proficiency levels**  
-  Add a clear proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for greater clarity, as this is widely understood by recruiters.
-- 🟡 **Add detail to interests and extracurricular activities**  
-  For each interest or extracurricular activity, specify what you do, how often, and to what level. This helps a reader understand your commitment and the skills you may have developed.
+- 🔴 **Most bullets describe the task, not the skill behind it**  
+  Review each experience bullet and expand on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where you have a concrete result or outcome, include it, but only if you can support it with evidence.
+- 🟡 **Grades need clarifying**  
+  Clarify your grades for international readers by stating both the grade and its maximum (e.g., 80/100), and specify the grading scale for your Swiss Matura so recruiters can interpret your results accurately.
+- 🟡 **Languages are listed without a level**  
+  Add a plain proficiency label (Basic, Intermediate, Advanced, Fluent) to each language, and consider using the CEFR scale (A1-C2) for greater clarity, as recruiters recognise these levels universally.
+- 🟡 **Interests are listed without any detail**  
+  Provide more detail for each interest, such as the type, frequency, and level of involvement, to give recruiters a clearer picture of your personal pursuits and commitment.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,35 +43,33 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Clarify the grading scale for your BSc Economics (e.g., 80/100) and for your Swiss Matura (state the scale, such as 5.0/6.0), so recruiters from other countries can interpret your results accurately.
-- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these if relevant.
+- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these if relevant.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- For each bullet, expand beyond the task to explain how you approached it, what skills you used or developed, and what changed as a result. For example, if you improved a process, increased efficiency, or contributed to a team outcome, make that explicit.
-- If you have participated in paid part-time roles at events like the Talents Conference or the St. Gallen Symposium, consider including these if they are relevant to your experience.
+- If you have participated in a paid part-time role at the Talents Conference or a full-time staff position at the St. Gallen Symposium, consider adding these if relevant.
 
 **EXTRACURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For each activity, specify your responsibilities, the scale of your involvement (e.g., team size, event size), and any outcomes or achievements. This helps demonstrate your leadership, teamwork, or organisational skills.
-- If you have held roles in other HSG student clubs (https://shsg.ch/clubs), or participated in initiatives like the Law Clinic (https://www.unisg.ch/), consider adding these with specific details if relevant.
+- For each extracurricular activity, add detail about your responsibilities, the skills you used, and the outcomes achieved. For example, specify the size of events you organised or the impact of your partnerships.
+- If you have participated in other HSG student clubs (https://shsg.ch/clubs), the Law Clinic (https://www.unisg.ch/), or the Consulting Club HSG (https://consultingclub.ch/), consider adding these if relevant.
 
 **OTHER SKILLS** 🟠 Needs attention
 
-- For technical skills, ensure each tool or software is listed with a consistent level (e.g., MS Office Suite – Advanced; Python – Beginner).
-- If you have completed the Bloomberg Market Concepts (BMC) course (https://portal.bloombergforeducation.com/), you could mention this under technical skills or in a Courses and Certificates section.
+- For technical skills and tools, add a consistent proficiency level (e.g., MS Office Suite (Advanced), Python (Beginner)).
+- If you have completed the Bloomberg Market Concepts (BMC) course (https://portal.bloombergforeducation.com/), you may wish to include it under technical skills or in a separate Courses and Certificates section.
 
 **INTERESTS** 🟢 Strong
 
-- Your interests section stands out by providing detail on your activities, such as mastering multi-pitch climbing routes and long-term commitment to classical guitar.
+- This section works well because it highlights a variety of interests, demonstrating breadth beyond academics and work.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next. Focus on your unique strengths and career goals.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), consider adding them here to showcase your additional skills.
+- If you have completed relevant courses or certificates, such as the Bloomberg Market Concepts (BMC) or HSG certificates, consider adding them here to showcase your additional expertise.
 
 ### 5. Dates worth a look
 

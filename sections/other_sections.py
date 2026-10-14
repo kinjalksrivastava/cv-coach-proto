@@ -15,10 +15,12 @@ headings actually found in THIS student's CV. Coach the ones that are there, usi
 the heading the student's own CV uses, and never invent a section they don't have.
 
 - Profile / Summary / personal statement: the question to put to the student is what \
-makes them stand out as a candidate FOR THEIR TARGET ROLE - their USP - together with \
-where they want to go next. Around three sentences is enough. Do not describe it as a \
-place to "state your academic focus": that produces a restatement of the education \
-section. Never write or reword the statement.
+they would want a recruiter to know about them that would help them BE CHOSEN for the \
+role they are applying to - what they think they are good at, what they care about, what \
+they would bring - together with where they want to go next. It is their own view of \
+themselves, in their own words, not a summary of the sections below it. Around three \
+sentences is enough. Do not describe it as a place to "state your academic focus": that \
+produces a restatement of the education section. Never write or reword the statement.
 - Publications & Research: ask what the student's own contribution to each output was \
 - their role among the authors, the data or method they handled, what the output was \
 used for. Never infer a contribution from author order or a title. Never comment on \

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is concise and easy to follow, but as it stands, it does not yet fill a full page and leaves significant room to expand on your experiences and skills. The work experience section lists roles without any description, which makes it difficult for a recruiter to understand your contributions or the skills you developed. Several sections would benefit from more detail and clarification, especially around grades, language levels, and your interests. This feedback focuses on structure and completeness, as no target role or job description was provided. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is clear and easy to follow, but it currently reads as very brief and leaves a lot of your experience and skills unexplored. There is significant room to expand on what you have done in your education and work experience, and to add detail that will help a recruiter understand your strengths. No content on your CV currently refers to AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Work experience entries lack descriptions**  
-  Add a few bullets under each work experience entry covering what you did, how you did it, and what changed as a result—focus on the transferable skills you developed.
-- 🔴 **CV does not fill a page**  
-  There is room to say considerably more about your experiences, skills, and activities. Expand on your roles, achievements, and relevant extracurriculars to present a fuller picture.
-- 🟠 **Dates lack months**  
-  Add the month to each date range (e.g., 'Sep 2023 – Jun 2024') so a reader can accurately gauge the duration of your roles.
-- 🟡 **Grade needs clarifying**  
-  Confirm whether your grade is 5.13 and write it as 5.13 / 6.00, including the scale, so it is clear to readers in other countries.
-- 🟡 **Grades shown for some degrees but not others**  
-  Recruiters may assume an omitted grade was weaker. Decide whether to add missing grades or remove the ones shown, but be consistent.
+- 🔴 **Add detail under each degree in Education**  
+  Currently, your education entries only list the institution, dates, and a grade. Add a line or two under each degree about relevant modules, a thesis or project, an exchange semester, or any additional qualifications or scholarships you have completed.
+- 🔴 **Add descriptions to Work Experience entries**  
+  Your work experience entries have no description. Add bullets under each role explaining what you did, how you did it, and what changed as a result, focusing on transferable skills.
+- 🔴 **Expand your CV to fill a full page**  
+  There is space to include more about your achievements, responsibilities, and skills. A fuller CV gives a more complete picture of your background.
+- 🟠 **Add months to all date ranges**  
+  List both month and year for each entry (e.g., 'Sep 2023 – Jun 2024') so a reader can see the duration of each experience clearly.
+- 🟡 **Clarify your grade format**  
+  Confirm whether your grade is 5.13 and write it as '5.13 / 6.00' so it is clear to readers from other countries.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,45 +46,40 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Educatiqn** 🟠 Needs attention
 
-- Clarify your grade by confirming if it is 5.13 and write it as 5.13 / 6.00, including the scale.
-- Decide whether to add missing grades for earlier education or remove the grade shown, as showing some but not others can raise questions.
-- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these as bullets under your degree if relevant.
+- Add a line or two under each degree about relevant modules, a thesis or project, an exchange semester, or any additional qualifications or scholarships you have completed. If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or earned a certificate such as the Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), include it if relevant.
+- Clarify your grade: confirm whether it is 5.13 and write it as '5.13 / 6.00' so the scale is clear to international readers.
+- There is a gap of about 15 months between your Abitur and the start of your university studies. If you were working, travelling, or pursuing another activity during this time, add a short line to explain.
+- Grades are shown for some degrees but not others. Recruiters may assume a missing grade was lower, so consider whether you want to add or remove grades for consistency, but the choice is yours.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **Work experience** 🟠 Needs attention
 
-- Add bullets under each role describing what you did, how you did it, and what changed as a result, focusing on the skills and outcomes relevant to future opportunities.
-- Include the months in your date ranges so the duration of each role is clear.
-- If you held a paid part-time role at the St. Gallen Symposium (https://shsg.ch/clubs), ensure your bullets reflect your specific contributions and achievements.
+- Include the month as well as the year for each date range so the duration of each role is clear.
 
 **Core Competences** 🟠 Needs attention
 
-- Move personal traits like 'adaptability' and 'high self-initiative' into your experience bullets, where you can demonstrate them through concrete actions.
-- For technical skills, add a level to each (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)'), and ensure consistency across all entries.
-- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), consider adding them here or in a Courses and Certificates section.
+- Move personal traits such as 'adaptability' and 'high self-initiative' into your experience bullets, where you can demonstrate them with concrete examples. A reader discounts these if they are not backed up by evidence.
 
 **LANGUAGES** 🟠 Needs attention
 
-- Upgrade your language levels to CEFR (A1-C2) for clarity—recruiters understand these levels universally.
-- State the level you are genuinely at now, not just the last certificate you completed.
+- Upgrade your language levels to CEFR (A1-C2) for clarity. For example, instead of 'Proficient', state 'English (B2)' or the level you are genuinely at now.
 
 **Hobbies and Interests** 🟠 Needs attention
 
-- Add detail to each interest—what kind, how often, and to what level (e.g., club membership, rating, or regular commitment).
-- If you participate in any organised activities or clubs, consider moving those to an extracurricular section.
+- Add detail to each interest: what kind, how often, and to what level. For example, if you play chess competitively, mention your rating or club involvement.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you stand out and where you want to go next.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have participated in student clubs, committees, volunteering, or peer mentoring (such as the Assessment Guide (SHSG): https://shsg.ch/services), add these roles here with bullets describing your contributions.
+- If you have been involved in student clubs, volunteering, or committee roles, add them here with a line or two about your responsibilities and achievements. This section is the place for active roles outside paid work.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), add them here with the completion date and a brief description.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), add them here.
 
 ### 5. Dates worth a look
 

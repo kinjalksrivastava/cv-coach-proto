@@ -183,6 +183,43 @@ def _unlabelled_intro(text: str, sliced: list[dict]) -> str | None:
     return joined[:200] if len(joined) >= 80 else None
 
 
+# A line under a degree that says nothing a reader could not already guess from
+# the degree itself: the grade, the dates, the institution again.
+_ONLY_A_GRADE = re.compile(
+    r"^[\W_]*(?:(?:grade|grades|note|noten|notendurchschnitt|gesamtnote|abschlussnote|"
+    r"gpa|cgpa|average|durchschnitt|final|overall|cumulative|mark|marks|score|"
+    r"of|out|von|mit)\b[\W_]*){1,4}[\d.,/\s]*$",
+    re.IGNORECASE)
+
+
+def _education_thin_entries(sliced: list[dict]) -> tuple[str | None, list[str]]:
+    """
+    Degrees with nothing under them but a grade and a date.
+
+    Career Services asked for this twice: "it should pick up on the fact that
+    the student has no bullet points under the different education experiences.
+    The bot could suggest to add modules when relevant and also other things
+    like mentoring programme etc." A degree line, a grade and a year tell a
+    reader what certificate exists and nothing about what the student did, so
+    an education section made only of those is not Strong.
+
+    A grade on its own does not count as detail. Anything else does - a module
+    list, a thesis, an exchange semester, a certificate, a scholarship.
+    """
+    for section in sliced:
+        if section["category"] != "Education":
+            continue
+        thin = []
+        for entry in _entries(section["lines"]):
+            substantive = [line for line in (entry["bullets"] + entry["description"])
+                           if line.strip() and not _ONLY_A_GRADE.match(line.strip())]
+            if not substantive:
+                thin.append((entry["title_line"] or entry["line"])[:70])
+        if thin:
+            return section["heading"], thin
+    return None, []
+
+
 # Where a role title is expected. Education is deliberately absent.
 ROLE_TITLE_CATEGORIES = {"Experience", "Extracurricular & Interests",
                          "Volunteering & Community"}
@@ -1007,6 +1044,8 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
         "missing_standard_sections": missing_standard,
         "missing_report_sections": _missing_report_sections(sliced, lowered, lang),
         "unlabelled_intro": _unlabelled_intro(text, sliced),
+        "education_thin_section": _education_thin_entries(sliced)[0],
+        "education_thin_entries": _education_thin_entries(sliced)[1],
         # A document with real content and no readable section headings at all.
         # Usually a two-column or text-box layout whose headings do not survive
         # extraction - which is exactly what an ATS will do to it too. Without

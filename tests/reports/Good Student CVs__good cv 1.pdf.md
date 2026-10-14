@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und zeigt einen lückenlosen Werdegang mit relevanten Stationen. Die Rollenbeschreibungen sind vollständig und verzichten auf unbelegte Eigenschaftswörter. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
+Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Titel und Beschreibung versehen, und Sie vermeiden unbelegte Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die Herangehensweise und die dahinterstehenden übertragbaren Kompetenzen zeigen. Ein Ergebnis ergänzt, wo es sinnvoll und belegbar ist.
-- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  Gehe jede Bullet Point durch und frage dich: Was habe ich gemacht, wie habe ich es gemacht, warum war das wichtig und welche Fähigkeit wird dadurch sichtbar? Ergänze ein Ergebnis, wenn es passt und belegbar ist.
-- 🟠 **Kein Skills & Languages-Abschnitt vorhanden**  
-  Füge einen Abschnitt zu Hard Skills und Sprachkenntnissen hinzu, wenn du relevante Kompetenzen hast, die du zeigen möchtest.
+  Überarbeiten Sie die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf das, was Sie getan haben, wie Sie es umgesetzt haben und welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
+- 🔴 **Kaum Ergebnisse oder Veränderungen in den Bullets sichtbar**  
+  Ergänzen Sie Ihre Bullet Points in der Berufserfahrung um Ergebnisse oder Veränderungen, wo dies sinnvoll und belegbar ist. Zeigen Sie, welchen Unterschied Ihr Beitrag gemacht hat, und benennen Sie die dahinterstehenden Kompetenzen.
+- 🟠 **Fehlende Skills & Languages Section**  
+  Fügen Sie eine eigene Sektion für Hard Skills und Sprachkenntnisse hinzu, um Ihre technischen Fähigkeiten und Sprachlevel klar und strukturiert darzustellen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,28 +41,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die wichtigsten Stationen, Abschlüsse und Noten sind übersichtlich aufgeführt.
+- Die Ausbildungslaufbahn ist lückenlos, aktuell und mit Noten sowie relevanten Zusatzaktivitäten (z.B. Coaching-Programm, Maturaarbeit) dokumentiert.
+
+**ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
+
+- Ergänzen Sie, wo möglich, Ergebnisse oder Veränderungen, die durch Ihren Beitrag entstanden sind.
+- Für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie in dieser Sektion besonders relevante Erfahrungen und Kompetenzen hervorheben, sobald Sie eine Zielrolle festgelegt haben.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Die Rollen sind mit konkreten Aufgaben und Verantwortlichkeiten beschrieben.
+- Sie zeigen Engagement und Verantwortung in Sport und Vereinsarbeit mit konkreten Rollen und Aufgaben.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Angaben sind klar und verzichten auf unbelegte Eigenschaftswörter.
+- Sie listen Ihre Interessen, Sprachkenntnisse und IT-Kompetenzen klar und ohne unbelegte Eigenschaftswörter auf.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Füge einen eigenen Abschnitt hinzu, in dem du relevante IT-Kenntnisse, Tools und Sprachen jeweils mit einem Niveau (z.B. "MS Office (fortgeschritten)", "Englisch (C1)") aufführst.
-- Für Sprachen empfiehlt sich die Angabe des CEFR-Levels (A1–C2), da dies international eindeutig verstanden wird.
+- Fügen Sie eine Skills & Languages Sektion hinzu, in der Sie Ihre technischen Fähigkeiten (z.B. MS Office, HubSpot, Zapier) und Sprachkenntnisse mit einem Level (idealerweise nach CEFR, z.B. B2, C1) angeben.
+- So können Recruiter Ihre Kompetenzen auf einen Blick erfassen und gezielt mit den Anforderungen einer Stelle abgleichen.
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls du ein Kurzprofil ergänzt, fokussiere dich auf das, was dich für deine angestrebte Position besonders macht und wohin du dich entwickeln möchtest.
+- Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese Stelle ausgewählt zu werden: worin du gut bist, was dir wichtig ist, was du mitbringst und wohin du willst. Etwa drei Sätze, in deinen eigenen Worten, und keine Zusammenfassung der Abschnitte darunter.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Zusatzqualifikationen hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)), kannst du diese hier aufführen.
+- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachzertifikate) absolviert haben, können Sie diese in einer eigenen Sektion aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

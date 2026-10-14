@@ -130,6 +130,26 @@ def assess(facts: dict, target_role: str = "") -> dict:
                      "ordinary text, one per line.",
         ))
 
+    # Their prioritisation list gives education its own line under tier 1: a
+    # section that is extremely bare or underdeveloped. A degree with only a
+    # grade and a year under it is exactly that.
+    if facts.get("education_thin_entries"):
+        thin = facts["education_thin_entries"]
+        issues.append(_issue(
+            1, "education_thin",
+            "Your degrees have nothing under them but a grade and a date",
+            f"{len(thin)} education entries carry no detail: "
+            + "; ".join(e[:60] for e in thin[:3]),
+            section=facts.get("education_thin_section"),
+            guidance="A reader learns which certificate you hold and nothing about what "
+                     "you did. Add a line or two under each degree where you genuinely "
+                     "have something: the modules that matter for the role you want, a "
+                     "thesis and what it was actually about, an exchange semester, a "
+                     "certificate or additional qualification, a scholarship, a "
+                     "mentoring programme. Only what is true and only what is relevant "
+                     "to where you are applying.",
+        ))
+
     if facts["has_no_bullets_anywhere"]:
         # Attached to every section that should have had bullets, not left
         # section-less. Without this the finding flagged nothing, so a CV with

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a comprehensive and consistent record of your actuarial career, with clear role titles and descriptions for each position. The timeline is well-structured, with no unexplained gaps or overlaps, and your skills are stated without unevidenced trait words. However, the bullet points in your employment history focus mainly on duties rather than your specific contributions or the skills you demonstrated, so adding more detail about your impact and transferable skills would strengthen your application. There is currently no mention of AI experience or tools; if you have relevant exposure, consider adding it. As no target role or job description was provided, this feedback focuses on structure and completeness—role-specific advice is available if you share your target.
+Your CV presents a clear and consistent professional history, with well-labelled roles and a timeline free of gaps or overlaps. The structure and completeness feedback below is based on your current document, as no target role or job description was provided—if you add a target, I can give more tailored advice. At present, your experience bullets focus on duties rather than the skills or impact behind them, so reworking these will help showcase your strengths. There is also no mention of AI or related tools; if you have relevant experience or coursework, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Revise your employment history bullets to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated. Where possible, include outcomes or results to show your impact.
+  Rework your experience bullets to highlight what you did, how you did it, and why it mattered—focusing on the transferable skills you demonstrated. Where you have a concrete result, include it, but the main aim is to show your skills.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify the skill you used or developed, and add results or changes where you can genuinely evidence them. This will help recruiters see your value beyond the tasks themselves.
+  For each experience bullet, clarify the skill you used or developed, and add outcomes or changes where appropriate. This helps a reader see your impact and the abilities you bring.
 - 🟠 **There's a paragraph at the top with no heading**  
-  If the opening paragraph is your profile, add a clear heading (e.g., 'Profile' or 'Summary') and ensure it briefly covers what you bring and where you are heading.
+  If this is your profile, add a heading such as 'Profile' or 'Summary' so it is clearly identified and easily found by both readers and applicant tracking systems.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately assess the duration of your roles and experiences.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately gauge the length of each role or activity.
 - 🟠 **Education comes after work experience**  
-  For a student CV, education typically comes first unless you have extensive, directly relevant work experience. Consider whether your current order best supports your application.
+  For a student CV, education usually comes first unless you have extensive, directly relevant work experience. Consider whether your current order best supports your goals.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,33 +45,33 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EMPLOYMENT HISTORY** 🟠 Needs attention
 
-- Rework each bullet to show what you did, how you did it, and why it mattered, highlighting the transferable skills you used or developed.
-- Where you can genuinely evidence an outcome or result, add it to demonstrate your impact.
-- If you are targeting a specific role in the future, tailor your experience bullets to reflect the skills and achievements most relevant to that position.
+- Review each bullet to show not just what you did, but how you did it and what skill or impact you demonstrated. For example, if you led a team or improved a process, specify your approach and the result.
+- Where you can, add outcomes or changes that resulted from your work—such as improvements, efficiencies, or recognition—without inventing figures.
+- If you are targeting a specific role in future, tailor these bullets to highlight the skills and experiences most relevant to that position.
 
 **EDUCATION** 🟢 Strong
 
-- The section provides a clear academic background, including degree titles, institutions, and relevant qualifications.
+- This section is well-structured, with clear degree titles and honours.
 
 **ADDITIONAL EXPERIENCE / SKILLS** 🟢 Strong
 
-- Entries are well-labelled and skills are presented factually, supporting your professional profile.
+- Role titles and descriptions are consistently presented, and the section avoids unsupported personal traits.
 
 **ADDITIONAL ACTIVITIES** 🟢 Strong
 
-- This section demonstrates your engagement outside of work, adding depth to your profile.
+- This section effectively lists your extracurricular involvement, showing breadth of engagement.
 
 **Profile** ⚪ Missing
 
-- If you wish to add a profile, use it to briefly summarise what makes you stand out as a candidate and where you want to go next.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)), consider adding them here to highlight additional expertise.
+- If you have completed relevant courses or certificates—such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)—consider adding them here, especially if they support your target field.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies that add to your profile, you could include a short section to show your broader interests.
+- If you have personal interests or hobbies, you can add a short section to give a fuller picture of yourself. Focus on activities you genuinely pursue.
 
 ### 5. Anything else from HSG worth adding?
 

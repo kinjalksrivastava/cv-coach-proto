@@ -177,9 +177,12 @@ committee role to it; those go under extracurricular experience.
 adding a club, a society, a committee or any HSG activity here, even when the HSG \
 options list offers one: an active role belongs under extracurricular experience, and a \
 reader skims hobbies and will miss it.
-- A PROFILE is about what makes this student stand out as a candidate for their target \
-role, and where they want to go next. Never describe it as a place to state their \
-"academic focus" - that just restates the education section.
+- A PROFILE is where the student says, in their own words, what they would want a \
+recruiter to know about them that would help them BE CHOSEN for the role they are \
+applying to - what they are good at, what they care about, what they would bring - and \
+where they want to go next. Invite that; never describe it as a place to state their \
+"academic focus", which just restates the education section, and never suggest what they \
+should say about themselves.
 - SKILLS are hard skills: tools, software, methods, languages, each with a level. Do not \
 ask the student to explain inside that section where they used a tool; that belongs in a \
 bullet under education, work experience or an extracurricular role.
@@ -448,6 +451,40 @@ def _unwrap_bare_brackets(value):
     return value
 
 
+# What a missing Profile section should say, written here rather than asked for.
+# Three prompt attempts produced "what makes you stand out and where you want to
+# develop", which is not the question Career Services want put to the student:
+# theirs is what the student would want a recruiter to know that would help them
+# BE CHOSEN for this particular role.
+PROFILE_PROMPT = {
+    "en": "A profile is optional, and it is the one place on the CV that is yours "
+          "rather than a record. If you add one, write what you would want a recruiter "
+          "to know about you that might help you be chosen for the role you are applying "
+          "to: what you are good at, what you care about, what you would bring, and where "
+          "you want to go next. Around three sentences, in your own words, and not a "
+          "summary of the sections below it.",
+    "de": "Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir "
+          "gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein "
+          "Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese "
+          "Stelle ausgewählt zu werden: worin du gut bist, was dir wichtig ist, was du "
+          "mitbringst und wohin du willst. Etwa drei Sätze, in deinen eigenen Worten, "
+          "und keine Zusammenfassung der Abschnitte darunter.",
+}
+_PROFILE_NAME = re.compile(r"profil|summary|kurzprofil", re.IGNORECASE)
+
+
+def _fix_profile_point(data: dict, lang: str) -> dict:
+    """Replace the model's wording for a MISSING profile with Career Services'."""
+    sections = []
+    for section in (data.get("sections") or []):
+        if (isinstance(section, dict)
+                and str(section.get("status", "")).lower() == "missing"
+                and _PROFILE_NAME.search(str(section.get("name", "")))):
+            section = {**section, "points": [PROFILE_PROMPT.get(lang, PROFILE_PROMPT["en"])]}
+        sections.append(section)
+    return {**data, "sections": sections}
+
+
 def _drop_misplaced_activities(data: dict) -> dict:
     """Remove HSG club suggestions from a skills or interests section."""
     sections = []
@@ -566,8 +603,9 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     # weak bullets the detection missed - was the one that did not get them.
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
-    data = _drop_misplaced_activities(
-        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data))))
+    data = _fix_profile_point(_drop_misplaced_activities(
+        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data)))),
+        strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:
@@ -920,8 +958,9 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(plain(strings.get("bullet_pointer_pdf",
                                              strings["bullet_pointer"])), small))
 
-    data = _drop_misplaced_activities(
-        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data))))
+    data = _fix_profile_point(_drop_misplaced_activities(
+        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data)))),
+        strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
     if sections:

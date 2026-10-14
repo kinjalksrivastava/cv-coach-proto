@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and fits comfortably on one page, which is ideal for early-career applications. The timeline is clear and continuous, and you provide concrete results and figures in most of your experience bullets, which helps a recruiter quickly understand your impact. Your education section is particularly strong, with grades clearly contextualised for international readers. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can offer more tailored advice.
+Your CV is well-structured, concise, and fits on a single page without feeling thin, which is ideal for an early-career profile. The timeline is clear and continuous, and you provide concrete results and figures in most of your experience bullets, which helps a recruiter quickly see your impact. Grades are clearly stated with their maximum, making them easy to interpret internationally. Your skills section avoids unevidenced trait words, focusing on hard skills. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,8 +18,8 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🟠 **Rework duty-based bullet in Professional Experience**  
-  bullet in your Professional Experience section opens with a duty rather than a specific contribution. Rework this line to focus on what you did, how you did it, and why it mattered, highlighting the transferable skill it demonstrates.
+- 🔴 **bullet names a duty rather than a contribution**  
+  Rework the bullet that lists duties ('Performed operational, sales, and marketing tasks...') to focus on what you did, how you did it, and why it mattered, highlighting the transferable skill it demonstrates. Including a result is helpful where you genuinely have one, but the main point is to show the skill.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -36,27 +36,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Grades are given with their maximum, making them easy to interpret for international readers.
+- Grades are stated with their maximum, making your academic achievements easy to interpret for readers from different systems.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework the bullet that begins with 'Performed operational, sales, and marketing tasks...' to focus on your specific actions, how you achieved them, and the skills you demonstrated, rather than listing duties.
+- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to clarify your specific actions, how you carried them out, and the skills you demonstrated, rather than listing general responsibilities.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Every entry carries both a role title and a description, making your contributions easy to understand.
+- Every entry includes both a role title and a description, making your contributions easy to understand.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, and your interests are described with specific achievements and context.
+- Skills are listed without unevidenced trait words, focusing on hard skills and language proficiency.
 
 **Profile** ⚪ Missing
 
-- If you choose to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next, tailored to your target role.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant certifications or courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to strengthen your technical profile.
+- If you have completed relevant certifications or additional courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to highlight further skills or specialisations.
 
 ### 5. Anything else from HSG worth adding?
 

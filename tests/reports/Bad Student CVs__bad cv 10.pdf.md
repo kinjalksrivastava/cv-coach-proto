@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear timeline, well-labelled roles, and a strong set of skills and extracurricular activities. The structure covers all the main sections expected for a student or early-career candidate. However, several experience bullets focus on tasks rather than the skills or impact behind them, so adding more detail about your personal contribution and the results achieved will help your application stand out. Your current GPA is listed, but clarifying the grading scale will make it easier for international readers to interpret. Nothing on your CV currently refers to AI or machine learning; if you have relevant experience or coursework in this area, consider adding it.
+Your CV is in good shape overall, with a clear timeline and well-labelled roles throughout your work experience. Each job entry includes both a title and a description, and your skills are stated without unsupported trait words. There is currently nothing on your CV that refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your experience bullets to focus on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where possible, include a result or outcome to show your impact.
+  Rework your work experience bullets to focus on what you did, how you did it, and why it mattered—highlighting the transferable skills you developed. Where possible, include a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify the skill you demonstrated and the change or benefit that resulted from your actions. Only add outcomes or figures where you can genuinely support them.
+  For each work experience bullet, clarify what you did, how you did it, and why it was important, making sure to show the skill you gained or demonstrated. Add a result where you have one, but do not invent figures.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose a consistent punctuation style for your bullets (either all with or all without full stops) and apply it throughout your CV.
+  Choose either to end all bullets with a full stop or none, and make sure every bullet in your CV matches this choice.
 - 🟡 **Grades need clarifying**  
-  Add the maximum possible grade alongside your GPA (e.g., 5.04 / 6.00) so that international readers can understand your academic performance.
+  Clarify your GPA by writing it as 5.04 / 6.00, so that recruiters outside Switzerland can understand your result.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,30 +42,29 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Add the maximum possible grade to your GPA (e.g., 5.04 / 6.00) so that readers outside Switzerland can interpret your result easily.
-- If you have completed or are pursuing any additional qualifications, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), consider adding them if relevant.
+- Update your GPA to show the maximum (e.g. 5.04 / 6.00), so international readers can interpret your result.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise your experience bullets to go beyond listing tasks—explain what you personally contributed, how you approached the work, and what changed as a result.
-- For each role, identify the transferable skill you want to highlight and, where possible, add a concrete outcome or result.
-- Ensure all bullet points use consistent punctuation (either all with or all without full stops).
+- Revise each bullet to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you developed.
+- Where you have a concrete result or outcome, add it to the bullet, but only if it is accurate and you can support it.
+- Make sure all bullets use consistent punctuation—either all with full stops or all without.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- Skills are listed without unsupported personal traits, making this section clear and focused.
+- Your section avoids unsupported trait words and focuses on concrete skills and language levels.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- Certifications are clearly listed, showing your commitment to ongoing learning.
+- Your certifications are presented clearly, making it easy for a reader to see your additional qualifications.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- You have included a strong mix of sports, club involvement, and unique experiences, which adds depth to your profile.
+- You show long-term commitment and achievement in judo and skydiving, as well as active involvement in a student club.
 
 **Profile** ⚪ Missing
 
-- If you would like to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next. This is optional, but can help frame your application for a specific role or industry.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 ### 5. Anything else from HSG worth adding?
 

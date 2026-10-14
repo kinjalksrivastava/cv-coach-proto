@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with consistent headings, dates, and spelling, and it covers all the main sections expected for a student or early-career candidate. Each work experience entry includes both a clear role title and a description, and your timeline runs smoothly without unexplained gaps or overlaps. The skills section avoids unevidenced trait words, focusing on concrete abilities. However, your experience bullets currently focus on tasks rather than the skills you demonstrated or the impact you made—reworking these will help you stand out. Nothing on your CV currently refers to AI, machine learning, or AI tools; if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is well-structured, with clear section headings, consistent dates, and no unexplained gaps in your timeline. Each work experience entry includes both a role title and a description, and your skills are listed without unevidenced trait words. However, your experience bullets currently focus on tasks rather than the skills you developed or the impact you made—reworking these will help recruiters see your strengths more clearly. Nothing on your CV currently mentions AI or related tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a specific job or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many of your experience bullets list what you did, but not how you did it or what skill you demonstrated. Rework these to highlight your approach, the skills you used, and why your actions mattered—this will make your transferable skills clear to any reader.
+  Rework your experience bullets to highlight what you did, how you did it, and why it mattered—focusing on the transferable skills you developed. Where possible, include a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Currently, your experience bullets do not show outcomes, changes, or the skills you applied. For each, ask yourself what you did, how you did it, and what skill or result you want to highlight. Add outcomes where you genuinely have them, but focus on the skill.
+  For each experience bullet, clarify the skill you demonstrated and the impact of your actions. Add outcomes where appropriate, but do not invent figures—focus on what you contributed and learned.
 - 🟠 **Dates give the year but not the month**  
-  Some entries in your extracurricular section show only years. Add the month to each date range so a reader can see the true duration of your involvement.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately understand the duration of your roles and activities.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+  Choose a consistent punctuation style for your bullets (all with or all without full stops) and apply it throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,36 +44,37 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **AUSBILDUNG** 🟢 Strong
 
-- Entries are well-structured and show a logical academic progression.
+- Entries are well-structured and the timeline is complete.
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Rework each bullet to show not just what you did, but how you did it and what skill you demonstrated—this will help recruiters see your transferable abilities.
-- Where you have a concrete outcome or result, add it to the relevant bullet, but only if you can genuinely support it.
+- Revise each bullet to show what you did, how you did it, and why it mattered, highlighting the transferable skills you developed.
+- Where you can genuinely support it, add outcomes or results to demonstrate your impact.
+- Ensure your bullet punctuation is consistent throughout this section.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- You demonstrate involvement in a range of organisations, which adds depth to your profile.
+- Entries are well-presented and show ongoing engagement outside your studies.
 
 **SPRACHEN** 🟢 Strong
 
-- You provide both language names and supporting certificates, making your proficiency easy to assess.
+- Language skills are presented clearly and without unsupported claims.
 
 **SKILLS** 🟢 Strong
 
-- You focus on hard skills and certifications, which are directly relevant to employers.
+- Skills are stated without unevidenced trait words, focusing on hard skills.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- You include recognised certificates that support your skills and language proficiency.
+- Certifications are relevant and presented in a straightforward manner.
 
 **INTERESTS** 🟢 Strong
 
-- You provide specific interests, which helps personalise your CV.
+- Interests are described with enough detail to give a sense of your personality.
 
 **Profile** ⚪ Missing
 
-- If you would like to add a profile, use it to highlight what makes you stand out as a candidate and where you want to go next. This is especially helpful when targeting a specific role or industry.
+- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to: what you are good at, what you care about, what you would bring, and where you want to go next. Around three sentences, in your own words, and not a summary of the sections below it.
 
 ### 5. Anything else from HSG worth adding?
 

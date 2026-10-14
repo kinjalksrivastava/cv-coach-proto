@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist übersichtlich, die Zeitachse ist lückenlos und alle Einträge sind klar datiert und beschrieben. Die wichtigsten Stationen Ihrer Ausbildung und Berufserfahrung sind nachvollziehbar dargestellt. Allerdings fehlen durchgehend Bullet Points, sodass Ihre konkreten Tätigkeiten und Beiträge in den einzelnen Rollen für Leser nicht sichtbar werden. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit. Es ist zudem kein Bezug zu KI oder AI-Tools erkennbar; falls Sie hier Erfahrungen haben, können Sie diese gern ergänzen.
+Dein Lebenslauf ist übersichtlich und zeigt eine durchgehende, lückenlose Chronologie mit klaren Rollenbezeichnungen und konsistenten Angaben. Die wichtigsten Stationen deines Bildungs- und Berufswegs sind nachvollziehbar dargestellt. Allerdings fehlen durchgehend kurze Beschreibungen oder Bullet Points, die deine konkreten Tätigkeiten, Kompetenzen und Erfolge sichtbar machen – so bleibt für Leser:innen unklar, was du in den einzelnen Stationen tatsächlich gemacht hast. Es gibt aktuell keinen Abschnitt zu Skills & Languages, was für viele Bewerbungen relevant ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; gerne gebe ich gezieltes Feedback, sobald du eine Wunschposition oder Branche ergänzt. Dein CV enthält zudem keine Hinweise auf Erfahrungen mit KI oder KI-Tools – falls du hier Kenntnisse hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
+- 🔴 **Fehlende inhaltliche Details unter den Bildungsabschlüssen**  
+  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, die relevante Module, Schwerpunkte, Abschlussarbeiten, Austauschsemester oder Zusatzqualifikationen beschreiben – immer mit Blick auf das, was für deine Wunschposition zählt.
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Fügen Sie zu jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) Bullet Points hinzu, die konkret beschreiben, was Sie dort gemacht haben. Ohne diese Angaben bleibt unklar, welche Fähigkeiten und Erfahrungen Sie tatsächlich erworben haben.
-- 🟠 **Datumsangaben nur mit Jahren**  
-  Ergänzen Sie bei allen Zeiträumen, die aktuell nur Jahre zeigen, auch den Monat (z.B. 09/2023 – 06/2024). So wird der Umfang Ihrer Tätigkeiten für Leser klarer.
-- 🟠 **Kein Abschnitt zu Skills & Languages vorhanden**  
-  Falls Sie relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills haben, fügen Sie einen eigenen Abschnitt hinzu. Das macht Ihre Kompetenzen für verschiedene Zielrollen sichtbar.
-- 🟡 **Note muss verständlich gemacht werden**  
-  Geben Sie Ihre Abiturnote im internationalen Format an, z.B. 2,20 / 1,00, damit auch internationale Recruiter diese richtig einordnen können.
-- 🟡 **Noten werden uneinheitlich angegeben**  
-  Wenn Sie bei einem Abschluss eine Note angeben und bei anderen nicht, gehen viele Recruiter davon aus, dass die fehlende Note schlechter war. Überlegen Sie, ob Sie alle Noten angeben oder alle weglassen möchten.
+  Ergänze zu jeder Station (Studium, Beruf, Ehrenamt, Zusatzprogramme) stichpunktartige Beschreibungen deiner Aufgaben, Methoden und Ergebnisse, damit Leser:innen deine Kompetenzen und Erfahrungen nachvollziehen können.
+- 🟠 **Datumsangaben ohne Monatsangabe**  
+  Ergänze bei allen Zeiträumen, die bisher nur Jahre zeigen, auch den Monat (z.B. 09/2023 – 06/2024), damit der Umfang deiner Tätigkeiten klar wird.
+- 🟡 **Fehlender Abschnitt zu Skills & Languages**  
+  Falls du relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills hast, füge einen eigenen Abschnitt hinzu.
+- 🟡 **Notensystem nicht international verständlich**  
+  Schreibe deine Abiturnote als 2,20 / 1,00, damit auch internationale Leser:innen sie korrekt einordnen können.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,46 +46,41 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu jedem Studienabschnitt Bullet Points hinzu, die Ihre Schwerpunkte, Projekte, relevante Kurse oder besondere Leistungen beschreiben.
-- Ergänzen Sie bei der Abiturnote das internationale Format (z.B. 2,20 / 1,00), damit diese auch im Ausland verständlich ist.
-- Überlegen Sie, ob Sie Noten für alle Studienabschlüsse angeben oder konsequent darauf verzichten möchten.
-- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnehmen, können Sie dies als Bullet Point unter dem passenden Studienabschnitt aufführen.
-- Wenn Sie sich auf eine bestimmte Zielrolle bewerben, heben Sie relevante Studienschwerpunkte oder Zusatzqualifikationen hervor.
-
-> **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
+- Nutze Bullet Points, um deine wichtigsten Tätigkeiten, Projekte oder Lernerfolge sichtbar zu machen.
+- Schreibe deine Abiturnote als 2,20 / 1,00, damit sie international verständlich ist.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst, kannst du dies als Bullet unter dem passenden Abschluss aufführen – nenne dabei auch den Bereich deines Mentors, falls relevant.
 
 **Praktische Erfahrungen** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie zu jeder Position Bullet Points, die Ihre konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben.
-- Falls Sie sich auf eine bestimmte Zielrolle bewerben, wählen Sie Beispiele, die besonders relevant für diese Position sind.
+- Ergänze zu jeder Position stichpunktartig, was du konkret gemacht hast, wie du vorgegangen bist und welche Ergebnisse oder Veränderungen du bewirkt hast.
+- Nutze Bullet Points, um Aufgaben, Methoden und Erfolge sichtbar zu machen.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu jedem Ehrenamt Bullet Points hinzu, die Ihre konkreten Aufgaben, Verantwortlichkeiten und den Mehrwert für die Organisation oder Zielgruppe beschreiben.
-- Falls Sie an HSG-spezifischen Initiativen wie dem NextGen Impact Forum (https://www.unisg.ch/) oder einem studentischen Club aktiv beteiligt waren, können Sie dies mit Bullet Points ergänzen.
+- Füge zu jeder ehrenamtlichen Tätigkeit Bullet Points hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und ggf. besondere Ergebnisse oder Lernerfahrungen beschreiben.
 
 **Zusätzliche Teilnahmen** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie in Bullet Points, welche Themen Sie im Mentoring-Programm behandelt haben und wie Sie davon profitiert haben.
-- Falls Sie weitere relevante Zusatzprogramme, Workshops oder Seminare besucht haben, können Sie diese hier mit Bullet Points aufführen.
-- Geben Sie bei Interessen oder persönlicher Entwicklung an, welche konkreten Aktivitäten, Themen oder Ziele Sie verfolgen (z.B. regelmäßige Teilnahme an Workshops, bestimmte Soft Skills, die Sie gezielt entwickeln).
+- Beschreibe in Bullet Points, was du im Rahmen des Mentoring-Programms konkret gemacht oder gelernt hast.
+- Falls du weitere relevante Zusatzprogramme, Kurse oder Zertifikate hast, kannst du diese hier ergänzen.
+- Wenn du persönliche Interessen oder Hobbys aufführst, beschreibe sie konkreter: Was genau, wie oft, auf welchem Niveau?
 
 **Kurzprofil** ⚪ Fehlt
 
-- Falls Sie ein Kurzprofil ergänzen möchten, beschreiben Sie in 2-3 Sätzen, was Sie als Kandidat:in auszeichnet und welches Ziel Sie verfolgen.
+- Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese Stelle ausgewählt zu werden: worin du gut bist, was dir wichtig ist, was du mitbringst und wohin du willst. Etwa drei Sätze, in deinen eigenen Worten, und keine Zusammenfassung der Abschnitte darunter.
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Fügen Sie einen Abschnitt hinzu, in dem Sie Ihre Sprachkenntnisse (mit Niveau, z.B. B2/C1 nach GER) und IT-Kenntnisse (mit Niveau, z.B. Excel – Fortgeschritten) aufführen.
-- Falls Sie Erfahrung mit KI-Tools oder Programmiersprachen haben, können Sie diese hier ebenfalls nennen.
+- Füge einen Abschnitt hinzu, in dem du deine Sprachkenntnisse (mit Niveau, idealerweise nach GER/CEFR: A1–C2) und IT-Kenntnisse (mit Niveau: Grundkenntnisse, Fortgeschritten, Experte) aufführst.
+- Wenn du Kenntnisse in KI, Datenanalyse oder anderen digitalen Tools hast, führe diese hier mit Niveau auf.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate (z.B. Data Science Fundamentals, Integrative Sustainability Management) oder Weiterbildungen absolviert haben, können Sie diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) hast, kannst du diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Falls Sie sportliche, kulturelle oder andere regelmäßige Aktivitäten haben, können Sie diese mit kurzer Beschreibung (Art, Häufigkeit, ggf. Verein) ergänzen.
+- Wenn du persönliche Interessen oder Hobbys hast, die für deine Zielposition relevant sind oder Engagement zeigen, kannst du sie hier aufführen – möglichst konkret (z.B. Sportart, Verein, regelmäßige Aktivitäten).
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
