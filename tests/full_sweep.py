@@ -29,7 +29,7 @@ import bullet_review, cv_facts, date_review, format_check            # noqa: E40
 import hsg_activities, report, severity                              # noqa: E402
 from extraction import extract_text                                  # noqa: E402
 from guardrails import language, section_coverage                    # noqa: E402
-from pii import strip_pii                                        # noqa: E402
+from pii import select_cv_content, strip_pii                                        # noqa: E402
 
 MODEL = "gpt-4.1"
 SAMPLES = os.path.expanduser("~/Downloads/CV Samples")
@@ -71,7 +71,8 @@ def audit(path: str) -> dict:
         return {"name": name, "problems": [f"extraction failed: {res.error[:60]}"]}
 
     doc_lang = language.detect_message_language(res.text) or "en"
-    clean = strip_pii(res.text, doc_lang)
+    selected = select_cv_content(res.text)
+    clean = strip_pii(selected["text"], doc_lang)
     cv_text = clean["text"]
 
     # 0. REDACTION MUST NOT EAT THE CV. A date range read as a phone number

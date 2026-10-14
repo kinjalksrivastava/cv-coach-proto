@@ -760,3 +760,64 @@ def strip_pii(text: str, language: str = "en") -> dict:
         # final sweep - worth showing the student, and worth investigating.
         "residual": leaked,
     }
+
+
+# --- positive selection: send only what the task needs ------------------------
+#
+# Everything above REMOVES personal data: find a pattern, take it out. That can
+# only ever cover the patterns someone thought of, and a CV can carry personal
+# data in a shape nobody anticipated - a footer, a sidebar, a photo caption, a
+# referee block, a line in a language the detectors do not know.
+#
+# This inverts it. The coaching needs section headings, entries, dates and
+# bullets, and nothing else. So the document handed on is REBUILT from the
+# sections the local heading lookup recognises, and anything outside them never
+# reaches the removal layers at all, let alone the model. A contact block is not
+# removed because it matched a pattern; it is absent because it is not inside a
+# section, which is true of every unanticipated form of it too.
+#
+# Deliberately conservative. Where the lookup finds too little - an unusual CV,
+# a scan, a layout whose headings did not survive - keeping only what it found
+# would silently delete most of the document, which is worse than relying on the
+# removal layers. In that case the whole text goes through unchanged and the
+# caller is told, so the fallback is visible rather than assumed.
+MIN_SECTIONS_TO_TRUST = 2
+MIN_SHARE_TO_TRUST = 0.55
+
+
+def select_cv_content(text: str) -> dict:
+    """
+    Rebuild a CV from its recognised sections.
+
+    Returns {text, applied, dropped_lines, sections}. `applied` is False when
+    the structure was too thin to trust, and `text` is then the input unchanged.
+    """
+    lines = text.splitlines()
+    found = heading_lookup.find(text)
+    if len(found) < MIN_SECTIONS_TO_TRUST:
+        return {"text": text, "applied": False, "dropped_lines": 0,
+                "sections": len(found)}
+
+    # Everything above the first recognised heading is the candidate for
+    # dropping. If it carries a date range it is not a header - it is a section
+    # whose heading the local lookup did not recognise, and dropping it would
+    # take real entries out of the document. Fall back rather than guess.
+    header = "\n".join(lines[:found[0]["index"]])
+    if date_parser.RANGE_RE.search(header):
+        return {"text": text, "applied": False, "dropped_lines": 0,
+                "sections": len(found)}
+
+    bounds = [h["index"] for h in found] + [len(lines)]
+    keep: set = set()
+    for position, start in enumerate(bounds[:-1]):
+        keep.update(range(start, bounds[position + 1]))
+
+    real = [i for i, line in enumerate(lines) if line.strip()]
+    kept = [i for i in real if i in keep]
+    if not real or len(kept) / len(real) < MIN_SHARE_TO_TRUST:
+        return {"text": text, "applied": False,
+                "dropped_lines": len(real) - len(kept), "sections": len(found)}
+
+    rebuilt = "\n".join(lines[i] for i in sorted(keep))
+    return {"text": rebuilt, "applied": True,
+            "dropped_lines": len(real) - len(kept), "sections": len(found)}

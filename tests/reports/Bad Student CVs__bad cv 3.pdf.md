@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und formal konsistent, mit klaren Zeitangaben und ohne Lücken im Werdegang. Allerdings fehlen überall beschreibende Stichpunkte, sodass ein Leser nicht erkennen kann, was du in deinen bisherigen Rollen konkret gemacht hast. Es gibt noch viel Platz, um deine Erfahrungen und Fähigkeiten ausführlicher darzustellen – nutze die Möglichkeit, um deine Tätigkeiten und Kompetenzen sichtbar zu machen. Es ist kein Bezug zu Künstlicher Intelligenz (AI) erkennbar; falls du hier Erfahrungen hast, kannst du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist übersichtlich und formal konsistent, mit klaren Zeitangaben und ohne Lücken im Werdegang. Allerdings fehlen überall kurze Beschreibungen oder Stichpunkte zu deinen Tätigkeiten, sodass ein Leser kaum erkennen kann, was du konkret gemacht oder gelernt hast. Es gibt noch viel Platz, um deine Erfahrungen und Fähigkeiten ausführlicher darzustellen – nutze die Möglichkeit, um deine Stärken und Kompetenzen sichtbar zu machen. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es ist zudem kein Bezug zu KI oder KI-bezogenen Tools oder Projekten erkennbar – falls du hier Erfahrungen hast, kannst du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Keine Stichpunkte im gesamten Lebenslauf**  
-  Füge unter jeder Position und jedem Engagement einige Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Informationen bleibt unklar, welche Aufgaben und Verantwortlichkeiten du übernommen hast.
+  Füge unter jeder Station und jedem Engagement einige Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese bleibt unklar, welche Aufgaben, Verantwortungen oder Erfolge du hattest.
 - 🔴 **Einträge in "BERUFSERFAHRUNG" ohne Beschreibung**  
-  Ergänze unter deiner Tätigkeit als Flugbegleiterin einige Stichpunkte, die deine Aufgaben, Vorgehensweise und erzielten Ergebnisse darstellen – insbesondere solche, die auf übertragbare Kompetenzen hinweisen.
+  Ergänze unter deiner Tätigkeit als Flugbegleiterin einige Stichpunkte dazu, was du gemacht hast, wie du vorgegangen bist und welche Fähigkeiten du dabei eingesetzt oder entwickelt hast – insbesondere solche, die auf andere Bereiche übertragbar sind.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt schnell lückenhaft.
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt oft zu knapp und lässt Potenzial ungenutzt.
 - 🟠 **Datumsangaben nur mit Jahren**  
-  Ergänze bei allen Zeiträumen den Monat (z.B. 09/2023 – 06/2024), damit der Umfang deiner Tätigkeiten klarer wird.
-- 🟡 **Kein Abschnitt "Ausbildung" vorhanden**  
-  Falls du relevante Bildungsabschlüsse hast, füge einen Abschnitt "Ausbildung" hinzu. Hier kannst du Studiengänge, Abschlüsse und ggf. Schwerpunkte oder besondere Leistungen aufführen.
+  Ergänze bei allen Zeiträumen den Monat (z.B. 09/2023 – 06/2024), damit klar wird, wie lange du jeweils aktiv warst. Ohne Monatsangabe kann der Umfang einer Tätigkeit leicht unterschätzt werden.
+- 🟡 **Fehlende Rubrik "Ausbildung"**  
+  Füge eine eigene Rubrik für deine Ausbildung hinzu, falls du relevante Abschlüsse oder Studiengänge hast. Hier kannst du auch besondere Schwerpunkte, Noten oder relevante Kurse aufführen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -38,44 +38,45 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | BERUFSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
 | SPRACHEN | 🟢 Stark |
 | ENGAGEMENT | 🟠 Braucht Aufmerksamkeit |
-| Kurzprofil | ⚪ Fehlt |
 | Ausbildung | ⚪ Fehlt |
+| Kurzprofil | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 | Interessen / Hobbys | ⚪ Fehlt |
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter deiner Position als Flugbegleiterin Stichpunkte hinzu, die deine konkreten Aufgaben, besondere Situationen oder erlernte Kompetenzen beschreiben.
-- Konzentriere dich auf Fähigkeiten und Erfahrungen, die auch in anderen Bereichen relevant sein könnten (z.B. Teamarbeit, Kundenkontakt, Stressresistenz).
-- Ergänze für jede Tätigkeit den genauen Zeitraum mit Monat und Jahr.
-- Falls du weitere relevante Nebenjobs, Praktika oder studentische Tätigkeiten hast, ergänze diese. Auch ein Engagement bei der Talents Conference (Career Services) oder beim St. Gallen Symposium (International Students' Committee) könnte hier aufgeführt werden, sofern zutreffend.
+- Füge unter deiner Tätigkeit als Flugbegleiterin Stichpunkte hinzu, die deine Aufgaben, Verantwortlichkeiten und besondere Situationen oder Erfolge beschreiben.
+- Konzentriere dich dabei auf Fähigkeiten, die auch in anderen Bereichen gefragt sind (z.B. Kommunikation, Teamarbeit, Stressresistenz).
+- Ergänze bei den Zeitangaben den jeweiligen Monat, um die Dauer der Tätigkeit klarer zu machen.
+- Falls du weitere relevante Nebenjobs, Praktika oder studentische Tätigkeiten hattest, ergänze diese mit kurzen Beschreibungen.
+- Wenn du an HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (https://shsg.ch/clubs) teilgenommen hast, kannst du diese als bezahlte Tätigkeit hier aufführen – aber nur, wenn sie wirklich zutreffen.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Angaben zu deinen Sprachkenntnissen sind präzise und verzichten auf nicht belegbare Eigenschaftswörter.
+- Die Angaben zu deinen Sprachkenntnissen sind konsistent und ohne nicht belegbare Eigenschaftswörter formuliert.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Beschreibe in Stichpunkten, was du als Jugendrätin konkret gemacht hast: Welche Projekte, Veranstaltungen oder Initiativen hast du betreut? Mit wem hast du zusammengearbeitet? Welche Ergebnisse wurden erzielt?
-- Falls du Mitglied in einem HSG-Club bist oder warst, kannst du dies mit einer kurzen Beschreibung ergänzen. Eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
-- Falls du persönliche Interessen oder Hobbys hast, führe diese in einem eigenen Abschnitt auf und beschreibe sie kurz (z.B. welche Sportart, wie oft, auf welchem Niveau).
+- Beschreibe in Stichpunkten, was du als Jugendrätin konkret gemacht hast: Welche Projekte, Veranstaltungen oder Initiativen hast du betreut? Mit wem hast du zusammengearbeitet? Welche Fähigkeiten hast du dabei eingesetzt oder entwickelt?
+- Falls du Mitglied oder aktiv in einem HSG-Club warst (z.B. [HSG student clubs](https://shsg.ch/clubs)), führe dies mit kurzer Beschreibung auf.
+- Ergänze bei den Zeitangaben den jeweiligen Monat.
+- Wenn du persönliche Interessen oder Hobbys hast, führe diese in einer eigenen Rubrik auf und beschreibe sie kurz (z.B. welche Sportart, wie oft, auf welchem Niveau).
+
+**Ausbildung** ⚪ Fehlt
+
+- Falls du an Kursen oder Zertifikaten teilgenommen hast, kannst du diese ebenfalls aufführen – z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), falls relevant.
 
 **Kurzprofil** ⚪ Fehlt
 
 - Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese Stelle ausgewählt zu werden: worin du gut bist, was dir wichtig ist, was du mitbringst und wohin du willst. Etwa drei Sätze, in deinen eigenen Worten, und keine Zusammenfassung der Abschnitte darunter.
 
-**Ausbildung** ⚪ Fehlt
-
-- Füge einen Abschnitt "Ausbildung" hinzu, in dem du deine bisherigen Bildungsstationen aufführst – z.B. das Assessment-Jahr an der HSG und die Matura an der Kantonsschule Frauenfeld.
-- Ergänze bei jedem Abschluss den Zeitraum mit Monat und Jahr sowie ggf. Schwerpunkte, relevante Kurse oder besondere Leistungen.
-
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. Sprachzertifikate, Online-Kurse, [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du persönliche Interessen oder Hobbys hast, füge sie als eigenen Abschnitt hinzu und beschreibe sie kurz (z.B. welche Sportart, wie oft, auf welchem Niveau).
+- Füge eine kurze Rubrik hinzu, in der du deine Interessen oder Hobbys beschreibst – mit etwas Kontext (z.B. welche Sportart, wie oft, auf welchem Niveau).
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -21,7 +21,7 @@ import severity
 import hsg_activities
 from extraction import extract_text, MIN_CHARS
 from guardrails import confidentiality, global_rules, language, section_coverage
-from pii import strip_pii
+from pii import select_cv_content, strip_pii
 from sections import jd_alignment
 
 MODEL = "gpt-4.1"
@@ -254,6 +254,7 @@ def init_state():
         "letter_pdf": None,
         "pii_degraded": False,
         "pii_residual": [],
+        "pii_structure_applied": False,
         "format_rows": [],
         "report_text": None,
         "report_pdf": None,
@@ -504,7 +505,17 @@ if st.session_state["cv_text"] is None:
         # machine. Nothing below this point ever sees the original document. ---
         cv_language = language.detect_message_language(cv_raw) or st.session_state["language_pref"]
         with st.spinner(copy["pii_spinner"]):
-            cv_clean = strip_pii(cv_raw, cv_language)
+            # Before removing anything: keep only what the coaching needs. The
+            # document is rebuilt from the sections the local heading lookup
+            # recognises, so a contact block, a footer, a sidebar or a
+            # personal-details block outside those sections never reaches the
+            # removal layers at all - no pattern required for forms of personal
+            # data nobody anticipated. A CV whose structure is too thin to trust
+            # passes through whole and the removal layers carry it alone.
+            selected = select_cv_content(cv_raw) if not is_letter else {
+                "text": cv_raw, "applied": False, "dropped_lines": 0}
+            st.session_state["pii_structure_applied"] = selected["applied"]
+            cv_clean = strip_pii(selected["text"], cv_language)
             jd_clean = strip_pii(jd_raw, cv_language) if jd_raw.strip() else None
 
         cv_text = cv_clean["text"]

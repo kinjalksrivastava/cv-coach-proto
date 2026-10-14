@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is clear and well-structured, with consistent headings and dates, and it avoids unsupported trait words in the skills section. However, it is currently very brief and does not fill a full page, which leaves significant room to expand on your academic, extracurricular, and practical experiences. There are no bullet points or detail under your degrees, so a reader cannot see what you actually did or achieved. No experience section is present, and there is no mention of AI-related skills or experience—if you have any, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your intended role or industry.
+Your CV is clear and well-structured, with consistent headings, dates, and spelling, and it avoids unsupported trait words in the skills section. The timeline is easy to follow and free of unexplained gaps or overlaps. However, the document is currently very brief and does not fill a full page, leaving significant room to expand on your academic, extracurricular, and practical experiences. There are no bullet points or detail under your degrees, and several standard sections are missing, so a reader cannot yet see what you have actually done or achieved. Nothing in your CV currently refers to AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something to show—such as relevant modules, thesis topic and what you did, exchange semesters, certificates, or scholarships—so a reader can see what you focused on and achieved.
+  Add a line or two under each degree where you genuinely have something to show—such as relevant modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes. This helps a reader understand your academic focus and achievements beyond the degree title.
 - 🔴 **No bullet points anywhere in the CV**  
-  Include bullet points under each role and activity to describe what you actually did, how you did it, and what changed as a result, so a reader can understand your contributions and skills.
+  Add bullet points under each role and activity to describe what you actually did, how you did it, and what changed as a result. This gives substance to your experience and helps a recruiter see your skills in action.
 - 🔴 **"2019-2025 University of St. Gallen (HSG)" is almost empty**  
-  Develop this section with more detail about your Bachelor’s degree—such as specialisations, key projects, or extracurricular involvement—or remove the heading if there is nothing to add.
+  Either develop this section with more detail about your Bachelor’s studies—such as key courses, projects, or extracurricular involvement—or remove the heading if there is nothing relevant to add. A bare heading draws attention to the lack of content.
 - 🔴 **The CV does not fill a page**  
-  Expand your CV with more detail about your studies, activities, and any experience you have, as a short CV can appear thin to a recruiter.
+  Expand your CV by adding more detail about your studies, any work or extracurricular experience, and relevant skills or certificates. A fuller page gives a more complete picture of your background.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g. "09/2023 – 06/2024") so a reader can see the true duration of your studies and activities.
+  Add the month to each date range (e.g., '09/2023 – 06/2024'). This allows a reader to understand the duration of your experiences more precisely.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -48,26 +48,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **2025 - 2027 University of St. Gallen (HSG)** 🟢 Strong
 
-- Headings, dates, and spelling are consistent throughout.
+- The degree and specialisation are clearly presented, making your academic path easy to follow.
 
 **2019-2025 University of St. Gallen (HSG)** 🟠 Needs attention
 
-- Add detail about your Bachelor’s degree, such as relevant modules, thesis topic and what you did, specialisations, or any additional qualifications (e.g. [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) if relevant).
-- Include bullet points to describe your academic focus, key projects, or extracurricular involvement.
+- Add detail about your Bachelor’s studies, such as relevant coursework, thesis topic and what you did, exchange semesters, certificates like the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) if you completed them, or participation in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/). Only include what is genuinely relevant.
+- If you have nothing to add, consider removing this heading to avoid drawing attention to the gap.
+- Add the month to the start and end dates for clarity.
 
 **2024 Language Exchange for 1.5 months in Bordeaux, France** 🟠 Needs attention
 
-- Add bullet points under each entry to explain what you did during your language exchanges—such as the language skills developed, cultural experiences, or any coursework completed.
-- Include the month as well as the year for each exchange.
-- If you participated in any mentoring programmes, certificates, or relevant extracurricular activities during your studies, consider adding them here (e.g. [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)).
+- Add bullet points under each entry to describe what you did during your exchanges—such as language skills developed, cultural experiences, or specific achievements.
+- Include the month as well as the year for each date range.
+- If you participated in any relevant mentoring or peer support programmes, such as the [Assessment Guide (SHSG)](https://shsg.ch/services), you could add these as well.
 
 **German Native Speaker** 🟢 Strong
 
-- Skills are stated without unevidenced trait words.
+- The section accurately presents your native language, which is always useful for recruiters.
 
 **French BI (Matura Level)** 🟢 Strong
 
-- Skills are stated without unevidenced trait words.
+- The section gives a clear indication of your French language skills, which is helpful for international roles.
 
 **Profile** ⚪ Missing
 
@@ -75,19 +76,20 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Work / Professional Experience** ⚪ Missing
 
-- If you have any paid work experience, internships, or student jobs, add a section for them with bullet points describing your responsibilities and achievements.
+- If you have any paid work experience, internships, or student jobs, add a section for these with bullet points describing your responsibilities and achievements.
+- If you do not yet have paid experience, this is common for early-stage students, but consider whether you have any freelance work, paid projects, or internships to include.
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have been actively involved in student clubs, volunteering, or other activities (such as the [HSG student clubs](https://shsg.ch/clubs)), add a section with bullet points explaining your role and what you contributed.
+- If you have been actively involved in student clubs, volunteering, or other activities (such as the [HSG student clubs](https://shsg.ch/clubs)), add a section for these and describe your role and contributions with bullet points.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates (such as [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), add them here with the date completed.
+- If you have completed any relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), add them here with the date completed.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies, add a short section listing them to give a fuller picture of yourself.
+- If you have personal interests or hobbies, such as sports, music, or travel, you can add a short section to give a fuller picture of yourself.
 
 ### 5. Anything else from HSG worth adding?
 

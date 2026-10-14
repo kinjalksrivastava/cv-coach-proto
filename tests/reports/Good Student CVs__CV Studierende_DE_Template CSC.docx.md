@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein CV ist insgesamt gut strukturiert und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Berufserfahrung sowohl eine klare Positionsbezeichnung als auch eine Beschreibung enthält und die Angaben zu Rechtschreibung, Daten und Überschriften konsistent sind. Die Skills sind ohne unbelegte Eigenschaftswörter dargestellt, was für Klarheit sorgt. Es gibt aktuell keine Hinweise auf Erfahrungen mit KI oder AI-Tools – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich das Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
+Dein Lebenslauf ist insgesamt gut strukturiert und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Berufserfahrung sowohl eine klare Positionsbezeichnung als auch eine Beschreibung enthält und die Angaben zu Rechtschreibung, Daten und Überschriften konsistent sind. Die Skills sind ohne unbelegte Eigenschaftswörter dargestellt, was Professionalität zeigt. Es gibt jedoch einige Punkte, die du noch verbessern kannst, insbesondere bei der Darstellung deiner Beiträge und Ergebnisse in den Berufserfahrungen. Da aktuell keine KI-bezogenen Kenntnisse oder Erfahrungen aufgeführt sind, könntest du diese ergänzen, falls vorhanden. Da kein Zieljob angegeben wurde, bezieht sich das Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Kompetenzen zeigen. Wo möglich, ergänze ein Ergebnis oder eine Veränderung, die du bewirkt hast.
-- 🔴 **Die meisten Bullet Points beschreiben die Tätigkeit, nicht die dahinterstehende Fähigkeit**  
-  Gehe jede Bullet Point in der Berufserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche übertragbare Fähigkeit wird dadurch sichtbar? Wo ein konkretes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn es belegbar ist.
+- 🔴 **Bullet Points beschreiben Aufgaben statt Beiträge**  
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie klar machen, was du konkret bewirkt hast, wie du vorgegangen bist und welche übertragbaren Fähigkeiten du dabei eingesetzt hast. Ein konkretes Ergebnis hilft, sofern vorhanden.
+- 🔴 **Die meisten Bullet Points beschreiben Aufgaben, nicht die dahinterstehenden Fähigkeiten**  
+  Gehe jede Bullet Point in der Berufserfahrung durch und ergänze, welches Ziel du verfolgt hast, wie du vorgegangen bist und welche Fähigkeit du damit belegst. Wo ein Ergebnis belegbar ist, führe es an – aber nur, wenn es wirklich zutrifft.
 - 🟡 **Notenskala der Matura klären**  
-  Die angegebene Note für die Matura (5.0/6.0) entspricht keiner international gängigen Skala. Bitte gib an, auf welcher Skala diese Note basiert, damit Recruiter sie richtig einordnen können.
+  Bitte gib an, auf welcher Skala die Note 5.0/6.0 der Matura basiert, damit ein Leser sie korrekt einordnen kann.
 - 🟡 **Noten sind nur teilweise angegeben**  
-  Du zeigst Noten für einige, aber nicht alle Abschlüsse. Recruiter nehmen bei fehlenden Noten oft an, dass diese weniger gut ausgefallen sind. Überlege, ob du die fehlenden Noten ergänzen oder alle Noten weglassen möchtest – die Entscheidung liegt bei dir.
+  Du hast für einige Abschlüsse Noten angegeben, für andere nicht. Recruiter nehmen bei fehlenden Noten oft an, dass diese weniger gut waren. Überlege, ob du die Noten ergänzen oder konsequent weglassen möchtest.
 - 🟡 **Interessen ohne Details**  
-  Führe bei den Interessen und Engagements genauer aus, was du konkret machst, wie oft und auf welchem Niveau. So wird dein Engagement für den Leser greifbarer.
+  Führe bei den Interessen und Engagements genauer aus, wie oft, auf welchem Niveau oder in welchem Rahmen du diese Aktivitäten ausübst, damit ein Leser den Umfang und die Relevanz besser einschätzen kann.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,24 +45,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil verbindet analytische und kreative Stärken mit konkreten Beispielen und gibt einen guten ersten Eindruck deiner Arbeitsweise.
+- Das Profil fasst deine Stärken und Erfahrungen prägnant zusammen und zeigt, wie du analytisches Denken mit Kreativität verbindest.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überlege, ob du die Noten für alle Abschlüsse einheitlich angibst oder ganz darauf verzichtest, um Missverständnisse zu vermeiden.
-- Falls du weitere relevante Zertifikate oder Zusatzqualifikationen wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) hast, könntest du diese ergänzen.
+- Überlege, ob du die Noten für alle Abschlüsse ergänzen oder konsequent weglassen möchtest, da Recruiter bei fehlenden Noten oft von einer schwächeren Leistung ausgehen.
+- Falls du weitere relevante Zusatzqualifikationen wie das HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder Zertifikate wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) hast, könntest du diese ergänzen, sofern sie für deine Zielrichtung relevant sind.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze, wo möglich, Ergebnisse oder Veränderungen, die du bewirkt hast – etwa Verbesserungen, Effizienzsteigerungen oder konkrete Resultate.
-- Wenn du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit unter Berufserfahrung aufnehmen, sofern zutreffend.
+- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten zeigen.
+- Füge, wo möglich, Ergebnisse oder Veränderungen hinzu, die durch dein Handeln entstanden sind – aber nur, wenn du diese belegen kannst.
 
 **EXTRAKURRIKULÄRES ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Beschreibe bei deinen Engagements und Interessen genauer, was du konkret gemacht hast, wie oft und auf welchem Niveau (z.B. wie häufig du Veranstaltungen organisiert hast oder wie viele Teilnehmende involviert waren).
-- Falls du als Assessment Guide im [Assessment Guide (SHSG)](https://shsg.ch/services) tätig warst, könntest du dies als Engagement ergänzen.
+- Beschreibe bei deinen Rollen (z.B. Leiterin Partnerschaften, Diskussionsleiterin) genauer, wie oft, auf welchem Niveau und in welchem Rahmen du aktiv bist oder warst, damit der Umfang und die Wirkung deiner Tätigkeit klarer werden.
+- Falls du als Assessment Guide (https://shsg.ch/services) tätig warst, könntest du dies als Engagement ergänzen, sofern relevant.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
@@ -70,7 +70,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **ZERTIFIKATE & KURSE** 🟢 Stark
 
-- Die Zertifikate und Kurse sind klar benannt und zeigen Zusatzqualifikationen, die für viele Rollen relevant sind.
+- Die Zertifikate und Kurse sind klar benannt und zeigen zusätzliche Qualifikationen.
 
 **INTERESSEN** 🟢 Stark
 
