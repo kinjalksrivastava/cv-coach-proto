@@ -215,8 +215,17 @@ def _is_phone(matched: str, line: str) -> bool:
     # silently took their entries, their gaps and their month checks with them.
     if date_parser.RANGE_RE.fullmatch(text) or date_parser.extract_ranges(text):
         return False
-    if re.fullmatch(r"\d{7,}", text) and not PHONE_CONTEXT_RE.search(line):
-        return False  # a bare digit run with no phone context: could be anything
+    if re.fullmatch(r"\d{7,}", text):
+        # A bare run of digits with nothing around it. Starting 0 or 00 it is a
+        # national or international dialling prefix, and at phone length it is
+        # a phone number far more often than anything else on a CV - plenty of
+        # students write "0791234567" with no plus sign, no spaces and no
+        # label. Starting with any other digit it could be a matriculation
+        # number, a figure in a bullet, an ID, so it needs a label to qualify.
+        if text.startswith("0") and 10 <= len(text) <= 15:
+            return True
+        if not PHONE_CONTEXT_RE.search(line):
+            return False
     if text.startswith("+") or text.startswith("00") or text.startswith("0"):
         return True
     if PHONE_CONTEXT_RE.search(line):
@@ -392,7 +401,11 @@ def split_contact_block(text: str) -> tuple[list[str], list[str]]:
     """
     lines = text.splitlines()
     for index, line in enumerate(lines[:MAX_CONTACT_BLOCK_LINES]):
-        if _is_heading(line):
+        # A contact block never contains a date RANGE. A date of birth is a
+        # single date, so this does not let one through - but "2019-2023
+        # Kantonsschule Frauenfeld" is an education entry, and swallowing it
+        # took the entry and its dates out of the document.
+        if _is_heading(line) or date_parser.RANGE_RE.search(line):
             return lines[:index], lines[index:]
 
     cut = 0
@@ -412,6 +425,12 @@ def _clean_contact_block(header_lines: list[str], person_names: list[str]) -> tu
     kept, removed_any = [], False
     for line in header_lines:
         if not line.strip():
+            kept.append(line)
+            continue
+        if date_parser.RANGE_RE.search(line):
+            # Same rule, applied to what survives: a year followed by a town
+            # ("2023 Kantonsschule") is shaped exactly like a postcode and a
+            # city, and the postcode pattern was deleting education entries.
             kept.append(line)
             continue
         if CONTACT_LINE_RE.search(line) or any(name in line for name in person_names):

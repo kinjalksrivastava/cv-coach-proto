@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with consistent headings, dates, and spelling, and each professional experience entry includes both a clear role title and description. The skills section avoids unevidenced trait words, which keeps your profile focused on verifiable abilities. However, most of your experience bullets describe tasks rather than the skills you developed or the impact you made, so adding more detail about your contributions and outcomes will help recruiters understand your strengths. Some grades and language levels need clarification for international readers. Your interests are listed, but adding more detail about your involvement will make them more meaningful. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
+Your CV is well-structured, with consistent headings, dates, and spelling, and each professional experience entry includes both a clear role title and description. The skills section avoids unevidenced trait words, which keeps your profile credible. However, most of your experience bullets focus on tasks rather than the skills you developed or the impact you made, so adding outcomes or changes will help recruiters see your value. Some grades and language levels need clarification for international readers. Your interests and extracurricular activities could be made more compelling with additional detail. This feedback covers structure and completeness, as no target role or job description was provided. There is currently no mention of AI experience or skills; if you have relevant exposure, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Review each experience bullet and expand on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where you have a concrete result or outcome, include it, but only if you can support it with evidence.
+  Review each experience bullet and expand on what you did, how you did it, and why it mattered, highlighting the transferable skills you developed. Where you can, add a concrete result or change, but only if you can support it.
 - 🟡 **Grades need clarifying**  
   Clarify your grades for international readers by stating both the grade and its maximum (e.g., 80/100), and specify the grading scale for your Swiss Matura so recruiters can interpret your results accurately.
 - 🟡 **Languages are listed without a level**  
-  Add a plain proficiency label (Basic, Intermediate, Advanced, Fluent) to each language, and consider using the CEFR scale (A1-C2) for greater clarity, as recruiters recognise these levels universally.
+  Add a plain proficiency label (Basic, Intermediate, Advanced, Fluent) to each language, and consider using the CEFR scale (A1-C2) for greater clarity, as this is widely understood by recruiters.
 - 🟡 **Interests are listed without any detail**  
-  Provide more detail for each interest, such as the type, frequency, and level of involvement, to give recruiters a clearer picture of your personal pursuits and commitment.
+  Provide more detail for each interest, such as the type, frequency, and level of involvement, to give a clearer picture of your engagement and commitment.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,25 +43,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these if relevant.
+- Clarify your BSc Economics grade by stating both the grade and its maximum (e.g., 80/100), so it is easily understood outside your home country.
+- Specify the grading scale for your Swiss Matura (e.g., what 5.0/6.0 means), as this may not be familiar to all recruiters.
+- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these if relevant.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- If you have participated in a paid part-time role at the Talents Conference or a full-time staff position at the St. Gallen Symposium, consider adding these if relevant.
+- Where possible, add a concrete result or change that came from your work, but only if you can support it with evidence.
 
 **EXTRACURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For each extracurricular activity, add detail about your responsibilities, the skills you used, and the outcomes achieved. For example, specify the size of events you organised or the impact of your partnerships.
-- If you have participated in other HSG student clubs (https://shsg.ch/clubs), the Law Clinic (https://www.unisg.ch/), or the Consulting Club HSG (https://consultingclub.ch/), consider adding these if relevant.
+- For each activity, add detail about your responsibilities, the size and scope of events or teams, and any outcomes or achievements.
+- If you have participated in other HSG student clubs (https://shsg.ch/clubs) or relevant extracurriculars, consider adding them with specific details about your role and contributions.
 
 **OTHER SKILLS** 🟠 Needs attention
 
-- For technical skills and tools, add a consistent proficiency level (e.g., MS Office Suite (Advanced), Python (Beginner)).
-- If you have completed the Bloomberg Market Concepts (BMC) course (https://portal.bloombergforeducation.com/), you may wish to include it under technical skills or in a separate Courses and Certificates section.
+- For technical skills, add a level for each tool or programming language (e.g., Python (Beginner), MS Office Suite (Advanced)).
+- If you have completed the Bloomberg Market Concepts (BMC) course (https://portal.bloombergforeducation.com/), ensure it is clearly listed with the year of completion.
 
 **INTERESTS** 🟢 Strong
 
-- This section works well because it highlights a variety of interests, demonstrating breadth beyond academics and work.
+- This section works well because it demonstrates a variety of interests and long-term commitments, such as rock climbing and classical guitar.
 
 **Profile** ⚪ Missing
 
@@ -69,7 +71,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Bloomberg Market Concepts (BMC) or HSG certificates, consider adding them here to showcase your additional expertise.
+- If you have completed relevant courses or certificates beyond those already listed, consider adding a section to highlight them, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/).
 
 ### 5. Dates worth a look
 

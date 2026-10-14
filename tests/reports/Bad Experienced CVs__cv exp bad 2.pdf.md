@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a clear and consistent professional history, with well-labelled roles and a timeline free of gaps or overlaps. The structure and completeness feedback below is based on your current document, as no target role or job description was provided—if you add a target, I can give more tailored advice. At present, your experience bullets focus on duties rather than the skills or impact behind them, so reworking these will help showcase your strengths. There is also no mention of AI or related tools; if you have relevant experience or coursework, consider adding it.
+Your CV presents a clear and consistent professional history, with well-labelled roles and a timeline free of gaps or overlaps. The structure and completeness feedback below is based on your current content, as no target role or job description was provided—if you add a target, I can give more tailored advice. At present, your experience bullets focus on duties rather than your specific contributions or the skills you demonstrated, so adding more detail about your impact will help recruiters understand your strengths. There is also no mention of AI or related tools; if you have relevant experience or coursework, consider including it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your experience bullets to highlight what you did, how you did it, and why it mattered—focusing on the transferable skills you demonstrated. Where you have a concrete result, include it, but the main aim is to show your skills.
+  Rework your experience bullets to highlight what you did, how you did it, and why it mattered—focusing on the transferable skills you demonstrated. Where you have a concrete result, include it, but only if it is appropriate and accurate.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify the skill you used or developed, and add outcomes or changes where appropriate. This helps a reader see your impact and the abilities you bring.
+  For each experience bullet, clarify the skill you used or developed, and add outcomes or changes where possible. This helps recruiters see your value beyond the job description.
 - 🟠 **There's a paragraph at the top with no heading**  
   If this is your profile, add a heading such as 'Profile' or 'Summary' so it is clearly identified and easily found by both readers and applicant tracking systems.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately gauge the length of each role or activity.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately assess the duration of your roles and studies.
 - 🟠 **Education comes after work experience**  
-  For a student CV, education usually comes first unless you have extensive, directly relevant work experience. Consider whether your current order best supports your goals.
+  For a student CV, education typically comes first unless you have extensive, directly relevant work experience. Consider whether your current order best supports your goals.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,21 +45,21 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EMPLOYMENT HISTORY** 🟠 Needs attention
 
-- Review each bullet to show not just what you did, but how you did it and what skill or impact you demonstrated. For example, if you led a team or improved a process, specify your approach and the result.
-- Where you can, add outcomes or changes that resulted from your work—such as improvements, efficiencies, or recognition—without inventing figures.
-- If you are targeting a specific role in future, tailor these bullets to highlight the skills and experiences most relevant to that position.
+- Revise each bullet to show what you personally achieved, how you approached your responsibilities, and which transferable skills you demonstrated.
+- Where you can, add outcomes or results that show your impact, but only if you can support them.
+- For future applications, tailor this section to highlight experience and skills that match the requirements of your target role.
 
 **EDUCATION** 🟢 Strong
 
-- This section is well-structured, with clear degree titles and honours.
+- Degree titles, institutions, and achievements are clearly stated, supporting your academic background.
 
 **ADDITIONAL EXPERIENCE / SKILLS** 🟢 Strong
 
-- Role titles and descriptions are consistently presented, and the section avoids unsupported personal traits.
+- Role titles and descriptions are clear, and the section avoids unevidenced trait words.
 
 **ADDITIONAL ACTIVITIES** 🟢 Strong
 
-- This section effectively lists your extracurricular involvement, showing breadth of engagement.
+- Extracurricular activities are clearly listed, demonstrating engagement beyond your core studies and work.
 
 **Profile** ⚪ Missing
 
@@ -67,11 +67,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)—consider adding them here, especially if they support your target field.
+- If you have completed relevant courses or certificates—such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)—consider adding them here.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies, you can add a short section to give a fuller picture of yourself. Focus on activities you genuinely pursue.
+- If you have personal interests or hobbies, you can add a short section to give a fuller picture of yourself beyond work and study.
 
 ### 5. Anything else from HSG worth adding?
 

@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt bereits relevante Praxiserfahrung, insbesondere im Bereich KI und Digitalpolitik. Die Überschriften, Daten und die Rechtschreibung sind konsistent, und du vermeidest unbelegte Eigenschaftswörter bei den Skills – das ist positiv. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Die Rubrik "Interessen" ist aktuell fast leer – entweder solltest du sie mit konkreten Inhalten füllen oder entfernen, um keinen unnötigen Fokus auf eine Lücke zu lenken.
+Dein Lebenslauf ist insgesamt gut strukturiert und zeigt eine breite Palette an Erfahrungen, insbesondere im Bereich AI und Digitalpolitik. Die Überschriften, Datumsangaben und die Rechtschreibung sind konsistent, und deine Skills werden ohne unbelegte Eigenschaftswörter dargestellt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Fehlende Beschreibung bei Einträgen in "ARBEITS- & FÜHRUNGSERFAHRUNGEN"**  
-  Füge unter jeder Position, die aktuell keine Beschreibung hat (z.B. Kellner), einige Stichpunkte hinzu, die zeigen, was du gemacht hast, wie du es gemacht hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
-- 🔴 **"Interessen" ist nahezu leer**  
-  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Interessen mit Details aufführst, oder entferne die Überschrift ganz – ein leerer Abschnitt fällt negativ auf.
-- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Formuliere die Stichpunkte so um, dass sie deinen persönlichen Beitrag, das Wie und den Nutzen für das Team oder Projekt hervorheben – der Fokus sollte auf den gezeigten Kompetenzen liegen.
-- 🟡 **Lebenslauf ist zu lang (3 Seiten)**  
-  Für Studierende werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für dein Ziel am relevantesten sind, und kürze entsprechend.
-- 🟡 **Abiturnote muss klarer dargestellt werden**  
-  Bestätige, ob deine Abiturnote tatsächlich 1,3 ist und ergänze die Skala (z.B. 1,30 / 1,00), damit internationale Leser sie korrekt einordnen können.
+  Füge unter jedem Eintrag, insbesondere bei der Tätigkeit als Servicekraft, einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es gemacht hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Fähigkeiten.
+- 🔴 **"Interessen" ist fast leer**  
+  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Details zu deinen Interessen gibst, oder entferne ihn – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
+- 🔴 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret getan hast, wie du es gemacht hast und warum es relevant war – und vor allem, welche übertragbare Fähigkeit du damit belegst.
+- 🟠 **Lebenslauf ist zu lang (3 Seiten)**  
+  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Kürze die Inhalte, die für deine nächste Zielrolle am wenigsten relevant sind.
+- 🟡 **Noten müssen klarer dargestellt werden**  
+  Bestätige, ob deine Abiturnote tatsächlich 1,7 ist, und schreibe sie als 1,70 / 1,00 auf den Lebenslauf – die Skala muss für internationale Leser sichtbar sein.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,28 +45,27 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Prüfe, ob deine Abiturnote korrekt als 1,30 / 1,00 dargestellt ist, damit sie auch international verständlich ist.
-- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder am Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilnimmst, kannst du dies als Bullet ergänzen, sofern relevant.
+- Bestätige, ob deine Abiturnote 1,7 ist, und gib sie als 1,70 / 1,00 an, damit internationale Leser die Skala verstehen.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder am Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilnimmst, kannst du dies als Bullet ergänzen, sofern es relevant ist.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Füge bei Positionen ohne Beschreibung (z.B. Kellner) Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse zeigen.
-- Überarbeite bestehende Stichpunkte so, dass sie deinen persönlichen Beitrag und die gezeigten Kompetenzen hervorheben – nicht nur die Aufgabe, sondern auch das Wie und Warum.
+- Überarbeite die bestehenden Stichpunkte so, dass sie deinen eigenen Beitrag und die erlernten Fähigkeiten hervorheben – nicht nur die Aufgabe, sondern auch das Wie und Warum.
 - Falls du an der Talents Conference oder am St. Gallen Symposium teilgenommen hast, kannst du relevante Erfahrungen als Bullet ergänzen.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Darstellung der Skills ist sachlich und vermeidet nicht belegbare Charaktereigenschaften – das ist überzeugend.
+- Die Darstellung der Skills ist sachlich und vermeidet nicht belegbare Charaktereigenschaften.
 
 **Engagements** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei jedem Engagement konkrete Stichpunkte: Was hast du gemacht, wie oft, in welchem Umfang, und was war das Ergebnis? Das macht deine Rolle und die erworbenen Soft Skills für Leser nachvollziehbar.
+- Ergänze zu jedem Engagement konkrete Stichpunkte: Was hast du gemacht, wie oft, in welchem Team, und was war das Ergebnis?
 - Falls du in weiteren HSG-Clubs (https://shsg.ch/clubs) aktiv bist, kannst du diese mit kurzen Bullets ergänzen.
 
 **Interessen** 🟠 Braucht Aufmerksamkeit
 
-- Führe bei jedem Interesse aus, was genau du machst, wie oft und auf welchem Niveau (z.B. "Klavier – seit 10 Jahren, regelmäßig Auftritte" statt nur "Klavier").
-- Wenn du keine weiteren Details angeben möchtest, entferne die Überschrift, um keinen Fokus auf eine Lücke zu lenken.
+- Beschreibe zu jedem Interesse, was genau du machst, wie oft und auf welchem Niveau – z.B. welche Sportart, ob du im Verein spielst, welche Bücher du liest oder wohin du reist.
+- Falls du keine weiteren Details ergänzen möchtest, entferne den Abschnitt ganz.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -74,7 +73,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder Bloomberg Market Concepts (https://portal.bloombergforeducation.com/)) absolviert hast, kannst du sie hier aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder Bloomberg Market Concepts (https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

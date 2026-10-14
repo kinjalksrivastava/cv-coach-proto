@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Titel und Beschreibung versehen, und Sie vermeiden unbelegte Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Die Rollen in der Berufserfahrung sind jeweils mit Titel und Beschreibung versehen, und du verzichtest auf unbelegte Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeiten Sie die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihr konkretes Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussieren Sie auf das, was Sie getan haben, wie Sie es umgesetzt haben und welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen zeigen. Fokussiere dich darauf, welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast.
 - 🔴 **Kaum Ergebnisse oder Veränderungen in den Bullets sichtbar**  
-  Ergänzen Sie Ihre Bullet Points in der Berufserfahrung um Ergebnisse oder Veränderungen, wo dies sinnvoll und belegbar ist. Zeigen Sie, welchen Unterschied Ihr Beitrag gemacht hat, und benennen Sie die dahinterstehenden Kompetenzen.
+  Gehe jede Bullet Point in der Berufserfahrung durch und ergänze, wo möglich, was sich durch dein Handeln verändert hat oder welches Ergebnis erzielt wurde. Zeige, warum deine Tätigkeit für das Team oder das Unternehmen relevant war – aber nur, wenn du das Ergebnis auch wirklich belegen kannst.
 - 🟠 **Fehlende Skills & Languages Section**  
-  Fügen Sie eine eigene Sektion für Hard Skills und Sprachkenntnisse hinzu, um Ihre technischen Fähigkeiten und Sprachlevel klar und strukturiert darzustellen.
+  Füge einen eigenen Abschnitt für Skills & Languages hinzu, um deine Sprachkenntnisse (mit Niveau, idealerweise nach CEFR) und IT-Kompetenzen übersichtlich darzustellen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,25 +41,26 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Ausbildungslaufbahn ist lückenlos, aktuell und mit Noten sowie relevanten Zusatzaktivitäten (z.B. Coaching-Programm, Maturaarbeit) dokumentiert.
+- Die Angaben zu Abschlüssen, Noten und besonderen Aktivitäten (z.B. Coaching-Programm, Maturaarbeit) sind klar und nachvollziehbar.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie, wo möglich, Ergebnisse oder Veränderungen, die durch Ihren Beitrag entstanden sind.
-- Für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie in dieser Sektion besonders relevante Erfahrungen und Kompetenzen hervorheben, sobald Sie eine Zielrolle festgelegt haben.
+- Ergänze, wo möglich, konkrete Ergebnisse oder Veränderungen, die durch dein Handeln erzielt wurden.
+- Wenn du weitere relevante Praxiserfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium hast, kannst du diese ergänzen – aber nur, wenn sie wirklich zu deiner Zielrolle passen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Sie zeigen Engagement und Verantwortung in Sport und Vereinsarbeit mit konkreten Rollen und Aufgaben.
+- Du belegst aktive Rollen und Verantwortung außerhalb des Studiums, was Teamfähigkeit und Eigeninitiative unterstreicht.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Sie listen Ihre Interessen, Sprachkenntnisse und IT-Kompetenzen klar und ohne unbelegte Eigenschaftswörter auf.
+- Die Interessen sind konkret benannt und die Sprachkenntnisse mit Niveau versehen.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Fügen Sie eine Skills & Languages Sektion hinzu, in der Sie Ihre technischen Fähigkeiten (z.B. MS Office, HubSpot, Zapier) und Sprachkenntnisse mit einem Level (idealerweise nach CEFR, z.B. B2, C1) angeben.
-- So können Recruiter Ihre Kompetenzen auf einen Blick erfassen und gezielt mit den Anforderungen einer Stelle abgleichen.
+- Füge einen Abschnitt hinzu, in dem du deine IT-Kenntnisse und Sprachen jeweils mit Niveau (z.B. Englisch C1, Französisch B2) aufführst.
+- Für die Sprachkenntnisse empfiehlt sich die Angabe nach CEFR (A1–C2), da dies für Recruiter eindeutig ist.
+- Bei den IT-Kompetenzen gib jeweils das Niveau an (z.B. MS Office – Fortgeschritten).
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -67,7 +68,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachzertifikate) absolviert haben, können Sie diese in einer eigenen Sektion aufführen.
+- Falls du relevante Zertifikate oder Zusatzqualifikationen hast (z.B. das HSG Certificate in Data Science Fundamentals: https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

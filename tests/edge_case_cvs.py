@@ -468,7 +468,38 @@ def run() -> int:
         failures += 1
         print(f"FAIL  analyse_does_not_shadow_its_parameters\n        {exc}")
 
-    print(f"\n{len(CASES) + 2 - failures}/{len(CASES) + 2} passed")
+    # Phone removal and date parsing compete for the same characters, and both
+    # directions are expensive: a missed phone breaks the privacy guarantee, and
+    # a date read as a phone silently removes the entry it belongs to. Neither
+    # side of this may regress quietly, so both are pinned.
+    import pii
+    MUST_REMOVE = [
+        "+41 79 123 45 67", "+41791234567", "0041 79 123 45 67", "0041791234567",
+        "079 123 45 67", "0791234567", "079/123 45 67", "079-123-45-67",
+        "Tel. 071 224 21 11", "Mobile: 079 123 4567", "Natel 078 888 77 66",
+        "+49 171 2345678", "0171 2345678", "01712345678", "+44 7700 900123",
+        "Telefon: 044 123 45 67", "T: +41 (0)79 123 45 67",
+    ]
+    MUST_SURVIVE = [
+        "07/2018-01/2019", "09/2022 - 06/2024", "2019 - 2022", "2019-2022",
+        "Sep 2024-Jun 2025", "01.2019 - 12.2021", "10.2021 - Heute",
+        "02/2019 – 07/2019", "2019–2021", "09/2022–02/2026", "Feb,2022-Nov,2022",
+        "fev/2022 - dez/2025", "seit 09/2022", "09/2022 - expected 06/2026",
+        "Matrikelnummer 16607842", "Managed a budget of 10000000 CHF",
+    ]
+    missed = [t for t in MUST_REMOVE if not pii._sub_phones(t)[1]]
+    eaten = [t for t in MUST_SURVIVE if pii._sub_phones(t)[1]]
+    if missed or eaten:
+        failures += 1
+        print("FAIL  phone_removal_vs_date_parsing")
+        for text in missed:
+            print(f"        phone NOT removed: {text!r}")
+        for text in eaten:
+            print(f"        not a phone, removed anyway: {text!r}")
+    else:
+        print("ok    phone_removal_vs_date_parsing")
+
+    print(f"\n{len(CASES) + 3 - failures}/{len(CASES) + 3} passed")
     return 1 if failures else 0
 
 

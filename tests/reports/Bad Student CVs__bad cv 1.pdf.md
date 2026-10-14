@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with clear section headings, consistent dates, and no unexplained gaps in your timeline. Each work experience entry includes both a role title and a description, and your skills are listed without unevidenced trait words. However, your experience bullets currently focus on tasks rather than the skills you developed or the impact you made—reworking these will help recruiters see your strengths more clearly. Nothing on your CV currently mentions AI or related tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a specific job or industry.
+Your CV is well-structured, with clear section headings, consistent dates and spelling, and a logical timeline without gaps or overlaps. Each work experience entry includes both a role title and a description, and your skills are listed without unevidenced trait words. However, your experience bullets currently focus on tasks rather than the skills you demonstrated or the impact you made—reworking these will help recruiters see your strengths more clearly. Some date ranges and bullet punctuation could be made more precise for clarity. Nothing on your CV currently refers to AI or related tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness—role-specific advice is available any time you add a target.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -23,7 +23,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Most bullets describe the task, not the skill behind it**  
   For each experience bullet, clarify the skill you demonstrated and the impact of your actions. Add outcomes where appropriate, but do not invent figures—focus on what you contributed and learned.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can accurately understand the duration of your roles and activities.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can distinguish between short and long experiences.
 - 🟠 **Bullet punctuation is inconsistent**  
   Choose a consistent punctuation style for your bullets (all with or all without full stops) and apply it throughout your CV.
 
@@ -44,33 +44,34 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **AUSBILDUNG** 🟢 Strong
 
-- Entries are well-structured and the timeline is complete.
+- Entries are well-structured and presented in a way that is easy to follow.
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
 - Revise each bullet to show what you did, how you did it, and why it mattered, highlighting the transferable skills you developed.
-- Where you can genuinely support it, add outcomes or results to demonstrate your impact.
-- Ensure your bullet punctuation is consistent throughout this section.
+- Where you can genuinely show an outcome or result, add it to demonstrate your impact.
+- Ensure that your bullet punctuation is consistent throughout this section.
+- Add the month to each date range so the duration of each role is clear.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- Entries are well-presented and show ongoing engagement outside your studies.
+- You present a range of organisational involvement, demonstrating commitment outside your studies.
 
 **SPRACHEN** 🟢 Strong
 
-- Language skills are presented clearly and without unsupported claims.
+- You provide both language names and supporting certificates, making your proficiency easy to assess.
 
 **SKILLS** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, focusing on hard skills.
+- You focus on hard skills and relevant certifications, which is what recruiters look for in this section.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- Certifications are relevant and presented in a straightforward manner.
+- You include recognised certificates that support your skills and language proficiency.
 
 **INTERESTS** 🟢 Strong
 
-- Interests are described with enough detail to give a sense of your personality.
+- You provide detail on your interests, making this section more engaging for the reader.
 
 **Profile** ⚪ Missing
 

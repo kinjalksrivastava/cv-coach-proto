@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is clear and easy to follow, but it currently reads as very brief and leaves a lot of your experience and skills unexplored. There is significant room to expand on what you have done in your education and work experience, and to add detail that will help a recruiter understand your strengths. No content on your CV currently refers to AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Your CV is concise and easy to follow, but it currently leaves a lot of your experience and skills unexplored. As it stands, it provides only the most basic information about your education and work experience, without giving a recruiter insight into what you actually did or achieved. There is significant room to expand on your activities, skills, and interests to present a fuller picture of your abilities and potential. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Education**  
-  Currently, your education entries only list the institution, dates, and a grade. Add a line or two under each degree about relevant modules, a thesis or project, an exchange semester, or any additional qualifications or scholarships you have completed.
-- 🔴 **Add descriptions to Work Experience entries**  
-  Your work experience entries have no description. Add bullets under each role explaining what you did, how you did it, and what changed as a result, focusing on transferable skills.
-- 🔴 **Expand your CV to fill a full page**  
-  There is space to include more about your achievements, responsibilities, and skills. A fuller CV gives a more complete picture of your background.
-- 🟠 **Add months to all date ranges**  
-  List both month and year for each entry (e.g., 'Sep 2023 – Jun 2024') so a reader can see the duration of each experience clearly.
-- 🟡 **Clarify your grade format**  
-  Confirm whether your grade is 5.13 and write it as '5.13 / 6.00' so it is clear to readers from other countries.
+- 🔴 **Your degrees have nothing under them but a grade and a date**  
+  Add a line or two under each degree where you genuinely have something to share: relevant modules, a thesis and what it was about, an exchange semester, a certificate, a scholarship, or a mentoring programme. Only include what is true and relevant to your future applications.
+- 🔴 **Entries in "Work experience" have no description**  
+  Add a few bullets under each work experience entry describing what you did, how you did it, and what changed as a result—focus on the transferable skills that matter for your future roles.
+- 🔴 **The CV does not fill a page**  
+  There is room to say considerably more about your activities, achievements, and skills. Expand on your experiences to give a fuller picture of your background.
+- 🟠 **Dates give the year but not the month**  
+  Add the month to each date range (e.g., "09/2023 – 06/2024"). This helps a reader understand the duration of your experiences.
+- 🟡 **Grades need clarifying**  
+  Confirm whether your grade is 5.13 and write it as 5.13 / 6.00, including the scale. This ensures clarity for readers in other countries.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,24 +46,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Educatiqn** 🟠 Needs attention
 
-- Add a line or two under each degree about relevant modules, a thesis or project, an exchange semester, or any additional qualifications or scholarships you have completed. If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or earned a certificate such as the Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), include it if relevant.
-- Clarify your grade: confirm whether it is 5.13 and write it as '5.13 / 6.00' so the scale is clear to international readers.
-- There is a gap of about 15 months between your Abitur and the start of your university studies. If you were working, travelling, or pursuing another activity during this time, add a short line to explain.
-- Grades are shown for some degrees but not others. Recruiters may assume a missing grade was lower, so consider whether you want to add or remove grades for consistency, but the choice is yours.
+- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these under the relevant degree.
+- There is a gap of about 15 months between your Abitur and the start of your university studies. A short line explaining what you were doing during this time (e.g., gap year, work, travel, military service) is usually enough.
+- Grades are shown for some degrees but not others. Recruiters may assume an omitted grade was weaker, so consider whether you want to add or remove grades for consistency.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **Work experience** 🟠 Needs attention
 
-- Include the month as well as the year for each date range so the duration of each role is clear.
+- Include the month as well as the year for each date range, so the duration of each role is clear.
+- If you held a paid part-time role at the St. Gallen Symposium, this fits well here. If you have other relevant paid roles, consider adding them.
 
 **Core Competences** 🟠 Needs attention
 
-- Move personal traits such as 'adaptability' and 'high self-initiative' into your experience bullets, where you can demonstrate them with concrete examples. A reader discounts these if they are not backed up by evidence.
+- Trait words like 'adaptability' and 'high self-initiative' should be demonstrated in your experience bullets, not listed as adjectives. Move these into your work or extracurricular descriptions, showing how you demonstrated them.
+- For technical skills, consider adding a level for each tool or software (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)').
 
 **LANGUAGES** 🟠 Needs attention
 
-- Upgrade your language levels to CEFR (A1-C2) for clarity. For example, instead of 'Proficient', state 'English (B2)' or the level you are genuinely at now.
+- Add a CEFR level (A1–C2) for each language. For example, 'English (B2)' or 'English (C1)'. This makes your proficiency clear to recruiters everywhere.
+- State the level you are genuinely at now, not just the last certificate you completed.
 
 **Hobbies and Interests** 🟠 Needs attention
 
@@ -75,7 +77,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have been involved in student clubs, volunteering, or committee roles, add them here with a line or two about your responsibilities and achievements. This section is the place for active roles outside paid work.
+- If you have been involved in student clubs, volunteering, or committee roles, add them here with a brief description of your responsibilities and achievements.
 
 **Courses and Certificates** ⚪ Missing
 

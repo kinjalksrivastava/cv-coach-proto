@@ -74,6 +74,15 @@ def audit(path: str) -> dict:
     clean = strip_pii(res.text, doc_lang)
     cv_text = clean["text"]
 
+    # 0. REDACTION MUST NOT EAT THE CV. A date range read as a phone number
+    #    takes its entry with it, and nothing says so. Counted before and after.
+    from guardrails import dates as _dates
+    before = len(_dates.extract_ranges(res.text))
+    after = len(_dates.extract_ranges(cv_text))
+    if after < before:
+        problems.append(f"REDACTION lost {before - after} date range(s): "
+                        f"{before} in the file, {after} after personal details were removed")
+
     # 1. PRIVACY. "We need ABSOLUTE privacy."
     if clean["residual"]:
         problems.append(f"PRIVACY residual after the gate: {clean['residual']}")
