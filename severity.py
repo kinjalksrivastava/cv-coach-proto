@@ -52,8 +52,15 @@ def strengths(facts: dict) -> list[str]:
     the market values that appear nowhere in the CV and were never measured.
     That is inventing, which is the one rule that cannot bend.
 
-    So a strength here must be either a measured positive or a measured absence
-    of a problem. Nothing about how impressive or valuable anything is.
+    So a strength must be a measured POSITIVE. The absence of a problem is not
+    one: Career Services were explicit that "you have listed your languages" is
+    the minimum, not a strength, and four of these were exactly that - one page,
+    consistent spelling, no timeline gaps, no trait words. Each is already
+    stated where it belongs, in the format check or the dates section, and as
+    strengths they had nowhere to go: the model was told to write a "what works
+    well" section that no longer exists, so it attached them to whichever
+    section it liked. That is how a CV's Research Papers section came back
+    "Strong" because "skills are stated without unevidenced trait words".
     """
     found = []
     total = facts.get("experience_bullets", 0)
@@ -70,23 +77,10 @@ def strengths(facts: dict) -> list[str]:
             found.append(f'every entry in "{section["heading"]}" carries both a role '
                          f"title and a description")
 
-    if not (facts.get("heading_typos") or facts.get("month_typos")
-            or facts.get("mixed_spelling")):
-        found.append("headings, dates and spelling are consistent throughout")
-
-    if facts.get("fits_one_page") and not facts.get("too_short"):
-        found.append("it fits on one page without reading as thin")
-
-    if not facts.get("date_findings"):
-        found.append("the timeline runs without unexplained gaps or overlapping entries")
-
     grades = facts.get("grades") or []
     if grades and all(g["plausible"] and not g["missing_maximum"] for g in grades):
         found.append("grades are given with their maximum, so a reader in another "
                      "country can interpret them")
-
-    if not facts.get("buzzwords"):
-        found.append("skills are stated without unevidenced trait words")
 
     return found
 

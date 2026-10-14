@@ -537,71 +537,59 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
             return False
         return _dated(line) or bool(SINGLE_DATE_END.search(line))
 
+    def _descriptor(offset: int, line: str) -> str:
+        """
+        The line that names the employer, institution or degree for this entry.
+
+        One rule with four ordered cases, because CVs disagree about where the
+        name goes and each case is a layout Career Services' own samples use:
+
+            dates alone on the line, name below   two-column extraction
+            name and dates on the line, degree    "HSG ... Feb 2026" / "PhD in
+              below                               Management" - searching up on
+                                                  this layout gave every entry
+                                                  the line above it, and put a
+                                                  PhD at HSG against NYU
+            name above, role and dates on the     the common layout
+              line
+            name above on its own DATED line      two roles at one employer,
+                                                  stacked after a promotion
+
+        A candidate below must be immediately below: skipping a bullet to find
+        one reaches into the next entry. A candidate above may be one blank
+        line further up. Either must be title-shaped - a wrapped bullet
+        continues in lower case, and "decoding accuracy." is not a job title.
+        """
+        below = body[offset + 1].strip() if offset + 1 < len(body) else ""
+        usable_below = bool(below) and not _is_bullet(below)
+        if not DATE_RANGE.sub("", line).strip(" \t,|\u2013\u2014-"):
+            # Dates and nothing else. A two-column CV extracts its whole date
+            # column first, so the name may be a line or two further down with
+            # more dates in between - the search has to pass over those.
+            for ahead in range(offset + 1, min(offset + 3, len(body))):
+                candidate = body[ahead].strip()
+                if candidate and not _is_bullet(candidate) and not _dated(candidate):
+                    return candidate
+        if (usable_below and not _anchors(below) and _title_shaped(below)
+                and len(below) <= MAX_TITLE_LINE and not below.endswith(".")):
+            return below
+        above = [body[back].strip() for back in range(offset - 1, max(offset - 3, -1), -1)]
+        above = [c for c in above if c and not _is_bullet(c)]
+        for candidate in above:
+            if not _anchors(candidate) and _title_shaped(candidate):
+                return candidate
+        for candidate in above:
+            if _dated(candidate):
+                return candidate
+        return ""
+
     entries = []
     for offset, line in enumerate(body):
         if _is_bullet(line) or not line.strip():
             continue
         if _anchors(line):
-            # Many CVs put the employer and role on one line and the dates and
-            # location on the next. Anchoring on the date line alone would read
-            # "September 2021 - April 2024 St. Gallen, CH" as the whole entry and
-            # then report a missing job title that is plainly there.
-            title = ""
-            # Some CVs put the institution and its dates on the entry line and
-            # the degree UNDERNEATH it:
-            #
-            #     University of St. Gallen (HSG), Switzerland  Feb 2026 - Present
-            #     PhD in Management
-            #     New York University, NY                      Sept 2023 - May 2025
-            #     MSc Computer Science                         GPA: 3.97/4.00
-            #
-            # Searching upwards on that layout gives every entry the line that
-            # belongs to the entry above it, so a PhD at HSG was attributed to
-            # NYU. The tell is that the line below this one is the descriptor -
-            # undated, not a bullet, short enough to be a title rather than
-            # prose. Where that is so, the entry's own line is below it and
-            # nothing above it belongs to this entry at all.
-            following = body[offset + 1].strip() if offset + 1 < len(body) else ""
-            if (following and not _is_bullet(following) and not _anchors(following)
-                    and _title_shaped(following)
-                    and len(following) <= MAX_TITLE_LINE
-                    and not following.endswith(".")):
-                title = following
-            for back in range(offset - 1, max(offset - 3, -1), -1):
-                if title:
-                    break
-                candidate = body[back].strip()
-                if (candidate and not _is_bullet(candidate) and not _anchors(candidate)
-                        and _title_shaped(candidate)):
-                    title = candidate
-                    break
-            if not title and not DATE_RANGE.sub("", line).strip(" \t,|–—-"):
-                # The line carries dates and nothing else, which happens when a
-                # two-column CV extracts its date column first. The title is
-                # below it, not above.
-                for ahead in range(offset + 1, min(offset + 3, len(body))):
-                    candidate = body[ahead].strip()
-                    if candidate and not _is_bullet(candidate) and not _dated(candidate):
-                        title = candidate
-                        break
-            if not title:
-                # The employer sits on its own DATED line with the roles beneath
-                # it, each carrying its own range - the layout Career Services
-                # use in their own templates:
-                #
-                #     Swiss Consulting AG, Zurich        06/2017 - 01/2021
-                #     Senior Transformation Consultant   01/2019 - 01/2021
-                #     Transformation Consultant          06/2017 - 12/2018
-                #
-                # The back-search above skips dated lines, so the role entry had
-                # nothing but its own title and was reported as having no role
-                # title - on their own template.
-                for back in range(offset - 1, max(offset - 3, -1), -1):
-                    candidate = body[back].strip()
-                    if candidate and not _is_bullet(candidate) and _dated(candidate):
-                        title = candidate
-                        break
-            entries.append({"line": line.strip(), "title_line": title,
+            entries.append({"line": line.strip(),
+                            "title_line": _descriptor(offset, line),
                             "offset": offset, "bullets": [], "description": []})
     for entry in entries:
         for line in body[entry["offset"] + 1:]:
