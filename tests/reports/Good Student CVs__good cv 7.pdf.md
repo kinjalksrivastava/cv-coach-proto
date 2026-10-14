@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits on one page, and provides a clear overview of your academic and professional background. Each professional experience entry includes both a role title and a description, and your grades are presented with their maximum for international clarity. Your skills section avoids unevidenced trait words, focusing on hard skills and languages. This review covers structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored feedback. Nothing on your CV currently mentions AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured, fits on one page, and provides a clear overview of your academic and professional background. Each professional experience entry includes both a role title and a description, and your grades are presented with their maximum for international clarity. Your skills section avoids unevidenced trait words, focusing on hard skills and languages. However, there is currently no mention of AI, machine learning, or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your intended position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Add detail under each degree in Academic Experience**  
-  A reader learns only which certificate you hold, with no insight into what you did during your studies. Add a line or two under each degree where you genuinely have something relevant: key modules, thesis details, exchange semesters, certificates, scholarships, or participation in programmes such as the HSG Mentoring Programme.
-- 🟠 **Expand experience bullets to show skills and outcomes**  
-  Most experience bullets describe only the task, not the skill demonstrated or the outcome achieved. For each, clarify what you did, how you did it, why it mattered, and what transferable skill it shows. Add results or figures where you can genuinely support them.
+  Currently, your degrees list only the qualification, grade, and dates. Add a line or two under each degree where you have relevant content: key modules, thesis details, exchange semesters, certificates, scholarships, or participation in programmes such as the HSG Mentoring Programme. Only include what is true and relevant to your future applications.
+- 🟠 **Strengthen experience bullets with outcomes and skills**  
+  Most of your professional experience bullets describe tasks rather than the skills demonstrated or the results achieved. For each, clarify what you did, how you did it, and why it mattered, highlighting any transferable skills and measurable outcomes where appropriate.
 - 🟠 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it to every bullet for a professional and consistent appearance.
-- 🟡 **Grade display for Bachelor’s degree is your choice**  
-  Grades are optional on a CV and are commonly included from 5.00 upward. For grades below this, consider discussing with a Career Services coach whether to show it, but the decision is yours.
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+- 🟡 **Grade display for Bachelor’s degree is optional**  
+  Including your Bachelor’s grade is your choice. Grades are commonly shown from 5.00 upward; below that, it is worth discussing with a Career Services coach whether to keep it. There is no requirement to remove it if you prefer to leave it visible.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,24 +42,15 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟠 Needs attention
 
-- Add a line or two under each degree where you have relevant content: highlight key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/), if applicable.
-- For your thesis, briefly describe your research question, data, methods, and outcome, rather than just the title.
-- For your Bachelor’s degree, grades below 5.00 are optional to show; consider whether you want to keep this visible or discuss with a Career Services coach.
-- If you have completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), you could add it here if relevant.
-
-**Professional Experience** 🟠 Needs attention
-
-- Review each bullet and expand it to show what you did, how you did it, why it mattered, and what skill it demonstrates. Where you have a measurable result or outcome, add it if you can support it.
-- Ensure bullet punctuation is consistent throughout this section.
-- If you have experience relevant to a specific target role, tailor your bullets to highlight the skills and achievements that match that role.
+- Add a line or two under each degree where you have relevant content, such as key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/).
 
 **Extracurriculars** 🟢 Strong
 
-- Your extracurricular section works well by showing both active roles and specific achievements, such as organising events and participating in high-level performances.
+- Your extracurricular section shows real engagement and provides evidence of initiative and teamwork.
 
 **Skills & Interests** 🟢 Strong
 
-- Your skills and interests section is effective, providing clear language levels and technical skills without including unverifiable personal traits.
+- Your skills section is clear and concise, listing technical skills and language proficiency without unsupported personal attributes.
 
 **Profile** ⚪ Missing
 
@@ -67,14 +58,13 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), you could add them here to showcase additional expertise.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), consider adding them here.
 
 ### 5. Dates worth a look
 
 A couple of things in the timeline that a reader might pause on. Neither is necessarily a problem — they are worth a sentence on the CV, or a conversation with your coach.
 
 - There's a gap of about 26 months between "Sept. 2015 - Jul. 2016" and "Sept. 2018 — May. 2023". You don't need to over-explain it — a short line about what you were doing is usually enough, and it's a good thing to talk through with your coach.
-- There's a gap of about 9 months between "Sept. 2018 — May. 2023" and "Feb. 2024 — Feb. 2026". You don't need to over-explain it — a short line about what you were doing is usually enough, and it's a good thing to talk through with your coach.
 
 ### 6. Anything else from HSG worth adding?
 

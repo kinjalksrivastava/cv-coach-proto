@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, with clear section headings, consistent dates and spelling, and a timeline that flows logically without gaps or overlaps. Each work experience entry includes both a role title and a description, and your skills are listed without unsupported trait words. There is currently no mention of AI experience or tools—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific job or industry at any time.
+Your CV is well-structured, with clear section headings, consistent dates and spelling, and a logical timeline without gaps or overlaps. Each work experience entry includes both a role title and a description, and your skills are listed without unevidenced trait words. However, your experience bullets currently focus on tasks rather than the skills you demonstrated or the impact you made—reworking these will help recruiters see your strengths more clearly. Some date ranges and bullet punctuation could be made more precise for clarity. Nothing on your CV currently refers to AI or related tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness—role-specific advice is available any time you add a target.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your experience bullets to focus on what you did, how you did it, and why it mattered—highlighting the transferable skills you developed. Where possible, show your personal contribution rather than just listing tasks.
+  Rework your experience bullets to highlight what you did, how you did it, and why it mattered—focusing on the transferable skills you developed. Where possible, include a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify what skill you demonstrated and, where appropriate, add a concrete result or outcome. Only include results you can genuinely support.
+  For each experience bullet, clarify the skill you demonstrated and the impact of your actions. Add outcomes where appropriate, but do not invent figures—focus on what you contributed and learned.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can see the exact duration of each role or activity.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can distinguish between short and long experiences.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose a consistent punctuation style for your bullets—either all with full stops or all without—and apply it throughout your CV.
+  Choose a consistent punctuation style for your bullets—either all with or all without full stops—and apply it throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -48,30 +48,30 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Revise each bullet to highlight what you personally achieved, how you approached the task, and which transferable skill it demonstrates.
-- Where you can, add a result or outcome to show the impact of your work, but only if you have concrete evidence.
-- Ensure all date ranges in this section include both month and year for clarity.
+- Revise each bullet to show what you did, how you did it, and why it mattered, highlighting the transferable skills you developed.
+- Where you can, add outcomes or results to demonstrate your impact, but only if you have genuine evidence.
+- Ensure all date ranges include both month and year for clarity.
 - Make your bullet punctuation consistent throughout this section.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- You present a range of organisational and volunteer roles, demonstrating commitment outside your studies.
+- The section demonstrates ongoing engagement and leadership in various organisations.
 
 **SPRACHEN** 🟢 Strong
 
-- You provide both language names and supporting certificates, making your skills easy to assess.
+- Language skills are presented clearly and without unsupported claims.
 
 **SKILLS** 🟢 Strong
 
-- You focus on concrete skills and certifications, which helps recruiters quickly see your capabilities.
+- Technical skills are stated clearly and are relevant to your background.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- You include recognised certificates that support your skills and language proficiency.
+- Certifications are relevant and presented in a straightforward manner.
 
 **INTERESTS** 🟢 Strong
 
-- You provide detail on your interests, giving a sense of your personality and activities outside of work and study.
+- Interests are described with enough detail to give a sense of your personality and activities outside of studies.
 
 **Profile** ⚪ Missing
 

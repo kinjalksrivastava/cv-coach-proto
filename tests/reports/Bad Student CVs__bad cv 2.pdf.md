@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is clear and concise, but it currently stops well short of a full page and leaves out key details that would help a recruiter understand your background and skills. The education and work experience sections list only titles and dates, with no information about what you studied, contributed, or achieved. There is nothing on the CV that refers to AI, machine learning, or related tools—if you have any experience or coursework in this area, consider adding it. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, add a specific job or industry.
+Your CV is concise and easy to read, but it currently stops well short of a full page and leaves out key details that would help a recruiter understand your background and skills. The education and work experience sections list only titles and dates, with no information about what you studied, contributed, or achieved. No content on your CV currently refers to AI, machine learning, or related tools—if you have any experience or coursework in this area, consider adding it. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something to share: relevant modules, a thesis and what it was about, an exchange semester, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
+  Add a line or two under each degree describing relevant modules, a thesis, an exchange semester, certificates, scholarships, or mentoring programmes—only what is true and relevant to your future applications.
 - 🔴 **Entries in "Work experience" have no description**  
-  Add a few bullets under each work experience entry describing what you did, how you did it, and what changed as a result, focusing on transferable skills.
+  Add bullets under each work experience entry explaining what you did, how you did it, and what changed as a result, focusing on transferable skills.
 - 🔴 **The CV does not fill a page**  
-  There is room to say considerably more about your experiences, skills, and achievements. Expand on your education, work experience, and other sections to provide a fuller picture.
+  There is space to add more detail about your education, work, skills, and activities—use this to give a fuller picture of your experience and strengths.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., "09/2023 – 06/2024") so a reader can accurately understand the duration of your roles and studies.
+  Add the month to each date range so a reader can see the duration of your roles and studies clearly.
 - 🟠 **Entries in "Educatiqn" are not newest-first**  
-  Reorder your education section so that your most recent degree appears at the top, as readers expect to see your current or latest studies first.
+  List your most recent education at the top of the section so a recruiter immediately sees where you are now.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,35 +46,34 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Educatiqn** 🟠 Needs attention
 
-- Add a line or two under each degree with relevant modules, thesis topic and what you actually did, any exchange semester, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
-- Reorder your entries so your current studies at the University of St. Gallen appear first.
-- Clarify the grade for your current studies: confirm if it should be 5.13 / 6.00, and always include the grading scale for clarity.
-- If you have a gap between your Abitur and university studies, add a short line explaining what you were doing during that time (e.g., gap year, internship, language course).
-- If you have participated in relevant certificates such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them if relevant.
-- Grades are shown for some degrees but not others; be aware that showing some and omitting others can lead a recruiter to assume the missing grade is weaker. Decide whether to add or remove grades for consistency.
+- Add a line or two under each degree describing relevant modules, a thesis (and what it was about), an exchange semester, certificates, scholarships, or mentoring programmes such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if you participated.
+- Reorder your entries so your current or most recent education appears first.
+- Clarify the grade for your university studies—if it is 5.13, write it as 5.13 / 6.00 so the scale is clear to international readers.
+- If you have a gap between your Abitur and university, add a short line explaining what you were doing during that time.
+- Grades are shown for some degrees but not others; recruiters may assume a missing grade was omitted for a reason. Decide whether to add the missing grade or remove the one you have shown, but be consistent.
+- If you have completed or are pursuing a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding it here if relevant.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **Work experience** 🟠 Needs attention
 
-- Add bullet points under each role describing what you did, how you did it, and what changed as a result, focusing on skills and outcomes relevant to future applications.
+- Add bullets under each role describing what you did, how you did it, and what changed as a result, focusing on skills and outcomes relevant to future applications.
 - Include the month as well as the year for each date range so the duration of each role is clear.
-- If you held a paid part-time role at the St. Gallen Symposium, this is a strong experience to highlight with concrete examples of your contribution.
+- If you participated in other paid part-time roles, such as the Talents Conference, add them here if relevant.
 
 **Core Competences** 🟠 Needs attention
 
-- Move personal traits like 'adaptability' and 'high self-initiative' into your experience bullets, where you can show how you demonstrated them in practice.
-- For technical skills, add a level for each tool or software (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)'), and ensure consistency across all entries.
-- If you have completed relevant courses such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), consider adding them here or in a Courses and Certificates section.
+- Move personal traits like 'adaptability' and 'high self-initiative' into your experience bullets, where you can show how you demonstrated them.
+- For each technical skill, add a level if not already present (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)').
+- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), add them here or in a Courses and Certificates section.
 
 **LANGUAGES** 🟠 Needs attention
 
-- Add a CEFR level (A1-C2) for each language. For example, 'English (C1)' gives recruiters a clear, standardised understanding of your proficiency.
-- State the level you are genuinely at now, not just the last certificate you completed.
+- Upgrade your language levels to CEFR (A1-C2) for clarity—recruiters understand these levels consistently across countries. State the level you are genuinely at now, not just the last certificate you sat.
 
 **Hobbies and Interests** 🟠 Needs attention
 
-- Add detail to each interest: what kind, how often, and to what level (e.g., 'Chess (club member, weekly tournaments)' or 'Learning new languages (currently studying Spanish)').
+- Add detail to each interest—what kind, how often, and to what level (e.g., club membership, rating, or regular commitment).
 
 **Profile** ⚪ Missing
 
@@ -82,11 +81,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have participated in student clubs, committees, volunteering, or peer mentoring (such as the Assessment Guide (SHSG): https://shsg.ch/services), add these here with a brief description of your role and what you contributed.
+- If you have participated in student clubs, committees, volunteering, or peer mentoring (such as the Assessment Guide (SHSG): https://shsg.ch/services), add these here with a line or two about your role and what you contributed.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF), Certificate in Integrative Sustainability Management (SuM-HSG), or Bloomberg Market Concepts (BMC)), add them here with the date completed and a short description if relevant.
+- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF), Certificate in Integrative Sustainability Management (SuM-HSG), or Bloomberg Market Concepts (BMC)), add them here with the date completed and a brief description if relevant.
 
 ### 5. Dates worth a look
 

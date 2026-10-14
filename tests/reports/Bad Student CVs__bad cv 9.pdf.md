@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist übersichtlich und zeigt einen klaren Werdegang ohne Lücken oder Überschneidungen. Die Rollenbezeichnungen und Beschreibungen in den Abschnitten Praktische Erfahrungen und Ehrenamtliche Tätigkeiten sind konsistent und nachvollziehbar. Allerdings fehlen durchgehend Bullet Points, sodass ein Leser nicht erkennen kann, was Sie konkret in den jeweiligen Positionen gemacht oder erreicht haben. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Nichts im Lebenslauf weist auf Erfahrung mit KI oder KI-Tools hin; falls Sie hier Kenntnisse oder Erfahrungen haben, könnten Sie diese ebenfalls aufnehmen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für eine gezielte Rückmeldung zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
+Ihr Lebenslauf ist übersichtlich und zeigt einen klaren Werdegang ohne Lücken oder Überschneidungen. Die Rollenbezeichnungen und Beschreibungen in den Abschnitten Praktische Erfahrungen und Ehrenamtliche Tätigkeiten sind konsistent und nachvollziehbar. Allerdings fehlen durchgehend Bullet Points, sodass ein Leser nicht erkennen kann, was Sie konkret in den jeweiligen Positionen gemacht oder erreicht haben. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Nichts im Lebenslauf verweist auf Erfahrung mit KI oder KI-Tools; falls Sie hier Kenntnisse oder Erfahrungen haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für eine gezielte Rückmeldung zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,13 +18,13 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Ihre Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
+- 🔴 **Ihre Abschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
   Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Schwerpunkte, eine Abschlussarbeit (inklusive Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme wie das HSG Mentoring Programme nennen – immer nur, was tatsächlich zutrifft und für Ihr Ziel relevant ist.
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Ergänzen Sie unter jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) einige Bullet Points, die konkret beschreiben, was Sie dort gemacht haben. Ohne diese Angaben bleibt unklar, welche Aufgaben, Verantwortlichkeiten oder Erfolge Sie hatten.
+  Ergänzen Sie unter jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) stichpunktartig, was Sie konkret gemacht haben. Ohne diese Angaben bleibt unklar, welche Aufgaben, Verantwortlichkeiten oder Ergebnisse Sie hatten.
 - 🟠 **Datumsangaben enthalten nur das Jahr, nicht den Monat**  
   Ergänzen Sie bei allen Zeiträumen den Monat, z.B. "09/2023 – 06/2024". So kann ein Leser die Dauer Ihrer Tätigkeiten besser einschätzen.
-- 🟡 **Abschnitt Skills & Languages fehlt**  
+- 🟡 **Kein Abschnitt zu Skills & Languages vorhanden**  
   Falls Sie relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills haben, fügen Sie einen eigenen Abschnitt hinzu.
 - 🟡 **Noten müssen verständlicher gemacht werden**  
   Geben Sie Noten immer im Format "2,20 / 1,00" an, damit auch internationale Leser sie richtig einordnen können.
@@ -46,23 +46,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie Bullet Points, die Ihre konkreten Tätigkeiten, Projekte oder besondere Leistungen im Studium beschreiben.
+- Ergänzen Sie Bullet Points, die Ihre konkreten Tätigkeiten, Schwerpunkte oder besondere Leistungen im Studium beschreiben.
 - Passen Sie die Notenangabe an das internationale Format an, z.B. "2,20 / 1,00".
 - Ergänzen Sie bei allen Zeiträumen den Monat, damit die Dauer der einzelnen Stationen klar wird.
 
 **Praktische Erfahrungen** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie unter jeder Position Bullet Points hinzu, die beschreiben, was Sie konkret gemacht haben, wie Sie vorgegangen sind, wer davon profitiert hat und was sich dadurch verändert hat.
+- Fügen Sie unter jeder Position stichpunktartig hinzu, was Sie konkret gemacht haben: Welche Aufgaben hatten Sie? Wie haben Sie diese umgesetzt? Wer hat davon profitiert? Was war das Ergebnis?
+- Ergänzen Sie die Monatsangaben zu den Zeiträumen, damit die Dauer der Tätigkeiten nachvollziehbar ist.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie Bullet Points, die Ihre Aufgaben, Verantwortlichkeiten und ggf. besondere Ergebnisse oder Lernerfahrungen in den jeweiligen Ehrenämtern beschreiben.
+- Ergänzen Sie unter jeder ehrenamtlichen Tätigkeit stichpunktartig, was Sie konkret gemacht haben, z.B. Organisation, Teamgröße, besondere Herausforderungen oder Ergebnisse.
+- Fügen Sie Monatsangaben zu den Zeiträumen hinzu, um die Dauer der Engagements klar zu machen.
 
 **Zusätzliche Teilnahmen** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie Bullet Points hinzu, die beschreiben, welche Themen, Seminare oder Schwerpunkte Sie im Rahmen des Mentoring-Programms bearbeitet haben.
-- Falls Sie weitere relevante Zusatzprogramme, Kurse oder Zertifikate absolviert haben, können Sie diese hier ergänzen.
-- Beschreiben Sie Interessen nicht nur als Stichwort (z.B. "persönliche Entwicklung"), sondern mit mehr Kontext: Was genau, wie oft, auf welchem Niveau?
+- Beschreiben Sie in Stichpunkten, was Sie im Rahmen des Mentoring-Programms konkret gemacht oder gelernt haben – z.B. Themen der Weiterbildungsseminare, besondere Projekte oder persönliche Entwicklungsschritte.
+- Ergänzen Sie die Monatsangaben zum Zeitraum.
+- Falls Sie weitere Interessen oder Hobbys haben, können Sie diese mit Details ergänzen: Was genau machen Sie, wie oft, auf welchem Niveau?
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -70,16 +72,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Erstellen Sie einen eigenen Abschnitt, in dem Sie Ihre Sprachkenntnisse (mit Niveau, z.B. nach GER: A1–C2) und IT-Kenntnisse (mit Niveau, z.B. "Excel (fortgeschritten)") aufführen.
-- Falls Sie Kenntnisse in KI-Tools oder Programmiersprachen haben, können Sie diese hier ebenfalls nennen.
+- Erstellen Sie einen Abschnitt, in dem Sie Ihre Sprachkenntnisse (mit Niveau, idealerweise nach GER: A1–C2) und IT-Kenntnisse (mit Niveau, z.B. "Excel (fortgeschritten)") aufführen.
+- Falls Sie keine relevanten Kenntnisse haben, können Sie diesen Abschnitt weglassen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolviert haben, können Sie diese hier aufführen.
+- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science Fundamentals, Integrative Sustainability Management) absolviert haben, können Sie diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Fügen Sie, falls gewünscht, einen kurzen Abschnitt zu Ihren Interessen oder Hobbys hinzu. Beschreiben Sie dabei, was Sie konkret machen, wie oft und auf welchem Niveau (z.B. "Mitglied im Schachclub", "regelmäßige Teilnahme an Laufveranstaltungen").
+- Fügen Sie, falls vorhanden, persönliche Interessen oder Hobbys hinzu und beschreiben Sie diese kurz: Was machen Sie, wie oft, auf welchem Niveau?
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

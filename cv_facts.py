@@ -949,29 +949,48 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
     extra_dates = frozenset(
         r["raw"] for r in all_ranges if r.get("source") == "model")
 
-    def _covered_elsewhere(first_raw: str, second_raw: str, own: list[dict]) -> bool:
+    def _unexplained_window(first_raw: str, second_raw: str,
+                            own: list[dict]) -> tuple[int, int, int]:
         """
+        The longest run inside the gap that nothing on the CV accounts for,
+        as (months, from_index, to_index).
+
         A gap between two internships is not a gap if the student was at
         university throughout - the Education section covers it. Without this,
         a strong CV came back with four "unexplained gap" findings that were
         just the spaces between internships during a full-time degree.
+
+        What counts is the longest stretch inside the gap that NOTHING on the
+        CV covers, not how much of it the single best-overlapping entry covers.
+        Taking the best single entry told a student with a bachelor's to May
+        2023 and a master's from September 2023 that he had a 28-month gap: the
+        degrees covered 8 and 16 of those months, neither reached the old 60%
+        threshold on its own, and the four months that are genuinely uncovered
+        are under the reporting threshold anyway. A gap only survives here if
+        an unexplained run of it is at least as long as that threshold.
         """
         own_raws = {r["raw"] for r in own}
         starts = [r["end_idx"] for r in own if r["raw"] == first_raw]
         ends = [r["start_idx"] for r in own if r["raw"] == second_raw]
         if not starts or not ends:
-            return False
+            return 0, 0, 0
         gap_start, gap_end = starts[0], ends[0]
-        span = gap_end - gap_start
-        if span <= 0:
-            return False
-        covered = 0
-        for other in all_ranges:
-            if other["raw"] in own_raws:
-                continue
-            overlap = min(gap_end, other["end_idx"]) - max(gap_start, other["start_idx"])
-            covered = max(covered, max(0, overlap))
-        return covered >= span * 0.6
+        if gap_end - gap_start <= 0:
+            return 0, 0, 0
+        covering = sorted(
+            (max(gap_start, r["start_idx"]), min(gap_end, r["end_idx"]))
+            for r in all_ranges
+            if r["raw"] not in own_raws
+            and min(gap_end, r["end_idx"]) > max(gap_start, r["start_idx"])
+        )
+        longest, window, cursor = 0, (gap_start, gap_start), gap_start
+        for start, end in covering:
+            if start - cursor > longest:
+                longest, window = start - cursor, (cursor, start)
+            cursor = max(cursor, end)
+        if gap_end - cursor > longest:
+            longest, window = gap_end - cursor, (cursor, gap_end)
+        return longest, window[0], window[1]
 
     date_findings = []
     for section in sliced:
@@ -985,9 +1004,20 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
             if (finding["kind"] == "overlap"
                     and section["category"] not in DATE_OVERLAP_CATEGORIES):
                 continue
-            if finding["kind"] == "gap" and _covered_elsewhere(
-                    finding["first"], finding["second"], own_ranges):
-                continue
+            if finding["kind"] == "gap":
+                unexplained, from_idx, to_idx = _unexplained_window(
+                    finding["first"], finding["second"], own_ranges)
+                if unexplained < date_check.GAP_THRESHOLD_MONTHS:
+                    continue
+                # Part of the gap accounted for elsewhere on the CV means the
+                # span between the two entries is not the number to quote.
+                if unexplained < finding["months"]:
+                    finding["months"] = unexplained
+                    finding["text"] = date_check.FINDING_TEXT.get(
+                        lang, date_check.FINDING_TEXT["en"])["gap_partial"].format(
+                            from_month=date_check.month_label(from_idx, lang),
+                            to_month=date_check.month_label(to_idx, lang),
+                            months=unexplained)
             finding["section"] = section["heading"]
             date_findings.append(finding)
     page_count = meta.get("page_count")

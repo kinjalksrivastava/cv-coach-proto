@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist klar strukturiert, mit konsistenten Überschriften und Datumsangaben, und alle Abschnitte sind lückenlos. Die wichtigsten Stationen sind genannt, und du hast auf Eigenschaftswörter ohne Nachweis verzichtet. Allerdings ist der CV aktuell sehr kurz und enthält wenig inhaltliche Tiefe – es bleibt viel Platz, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu zeigen. Nichts im CV verweist bisher auf Erfahrung mit KI oder KI-Tools – falls du hier Kenntnisse oder Projekte hast, könntest du sie ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist klar strukturiert, die Zeitachse ist lückenlos und alle Einträge sind sauber mit Rollen und Daten versehen. Die wichtigsten Abschnitte sind vorhanden und die Angaben zu Kenntnissen und Zertifikaten sind übersichtlich. Es fällt jedoch auf, dass der CV aktuell nur etwa eine halbe Seite füllt – hier ist noch viel Raum, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu zeigen. Nichts im CV verweist bisher auf Erfahrung mit KI oder KI-Tools – falls du hier Kenntnisse oder Projekte hast, kannst du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Deine Studienabschlüsse enthalten außer Abschluss und Datum keine weiteren Angaben**  
-  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, eine Abschlussarbeit (mit Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme nennst – immer nur, was wirklich zutrifft und für dein Ziel relevant ist.
+  Füge unter jedem Studienabschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, Schwerpunkte, eine Abschlussarbeit (mit Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme nennst – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Kompetenzen und Engagements zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt auf Lesende oft zu knapp.
+  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Engagements und Kompetenzen zu berichten. Ein Lebenslauf, der nur eine halbe Seite umfasst, wirkt auf Lesende oft zu knapp.
 - 🟠 **Aufgaben statt Beitrag in den Bullet Points**  
-  Formuliere die Bullet Points so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein Ergebnis ist hilfreich, wenn es belegbar ist, aber der Fokus sollte auf der Kompetenz liegen.
+  Formuliere die Bullet Points in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis kann helfen, ist aber nicht zwingend – im Vordergrund steht der Skill.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,17 +41,12 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (mit Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen, sofern vorhanden.
-- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolvierst, kannst du dies als Bullet unter dem jeweiligen Abschluss aufführen – aber nur, wenn es zutrifft.
-
-**Berufserfahrung** 🟠 Braucht Aufmerksamkeit
-
-- Überarbeite die Bullet Points so, dass sie deinen konkreten Beitrag, die Herangehensweise und die dabei genutzten Kompetenzen zeigen. Überlege: Was genau hast du gemacht? Wie? Wer hat davon profitiert? Was hat sich dadurch verändert?
-- Falls du bei einer Tätigkeit ein besonderes Ergebnis erzielt hast (z.B. positives Feedback, Übernahme von Verantwortung, Rückkehrangebot), kannst du dies als Ergebnis ergänzen.
+- Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, einer Abschlussarbeit (mit Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was tatsächlich zutrifft und für deine nächste Bewerbung relevant ist.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolvierst, kannst du dies als Bullet unter dem jeweiligen Abschluss aufführen.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind übersichtlich und ohne unnötige Eigenschaftswörter dargestellt.
+- Die Zertifikate sind übersichtlich und mit relevanten Modulen bzw. Inhalten versehen.
 
 **Kenntnisse** 🟢 Stark
 
@@ -59,7 +54,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Engagement** 🟢 Stark
 
-- Die Mitgliedschaften und Teilnahmen an Events sind übersichtlich dargestellt.
+- Die Engagements sind übersichtlich dargestellt und zeigen deine Einbindung in verschiedene HSG-Clubs und Aktivitäten.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -67,7 +62,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du persönliche Hobbys oder Interessen hast (z.B. Sportarten, Musik, Reisen), kannst du diese in einem eigenen Abschnitt ergänzen. Aktivitäten in Vereinen oder Clubs gehören weiterhin ins Engagement.
+- Wenn du möchtest, kannst du persönliche Interessen oder Hobbys ergänzen – etwa Sportarten, Musik, Reisen oder andere Aktivitäten, die dich außerhalb des Studiums beschäftigen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

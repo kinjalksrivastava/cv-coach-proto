@@ -601,7 +601,47 @@ geb. 12.03.1999
     else:
         print("ok    prioritisation_list_rules")
 
-    print(f"\n{len(CASES) + 5 - failures}/{len(CASES) + 5} passed")
+    # A gap is only a gap for the part of it the rest of the CV does not
+    # account for. This shape - a bachelor's to May 2023, a master's from
+    # September 2023, and two short roles either side of them - was reported as
+    # a 28-month unexplained gap, because the old check asked whether any SINGLE
+    # other entry covered 60% of the span rather than whether anything at all
+    # covered it. Four months are genuinely uncovered, which is under the
+    # semester floor, so the honest answer is to say nothing.
+    GAP_CV = """EDUCATION
+PhD in Management, University of St. Gallen            Feb 2026 - Present
+MSc Computer Science, New York University              Sept 2023 - May 2025
+BTech Electronics, SRM Institute                       Jun 2019 - May 2023
+
+EXPERIENCE
+Teaching Fellow, New York University                   Jan 2025 - May 2025
+- Facilitated coursework on systematic trading
+Research Intern, NLP Lab, Kookmin University           Jul 2022 - Sept 2022
+- Compared machine learning algorithms for toxicity classification
+"""
+    gap_sections = [
+        {"heading": "EDUCATION", "category": "Education", "index": 0,
+         "damage": None, "raw": "EDUCATION", "display": "Education"},
+        {"heading": "EXPERIENCE", "category": "Experience", "index": 5,
+         "damage": None, "raw": "EXPERIENCE", "display": "Experience"},
+    ]
+    gap_facts = cv_facts.analyse(GAP_CV, {"page_count": 1}, gap_sections,
+                                 None, "en")
+    gaps = [f for f in gap_facts["date_findings"] if f["kind"] == "gap"]
+    # The one real gap is May 2025 to Feb 2026, between the master's and the
+    # PhD: nine months that nothing else on the CV covers.
+    expected = [9]
+    if sorted(g["months"] for g in gaps) != expected:
+        failures += 1
+        print("FAIL  gap_only_where_nothing_covers_it")
+        print(f"        expected gaps of {expected} months, got "
+              f"{sorted(g['months'] for g in gaps)}")
+        for g in gaps:
+            print(f"        {g['text'][:100]}")
+    else:
+        print("ok    gap_only_where_nothing_covers_it")
+
+    print(f"\n{len(CASES) + 6 - failures}/{len(CASES) + 6} passed")
     return 1 if failures else 0
 
 

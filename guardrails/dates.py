@@ -111,6 +111,23 @@ def _month_index(year: int, month: int) -> int:
     return year * 12 + month
 
 
+MONTH_LABELS = {
+    "en": ("January", "February", "March", "April", "May", "June", "July",
+           "August", "September", "October", "November", "December"),
+    "de": ("Januar", "Februar", "M\u00e4rz", "April", "Mai", "Juni", "Juli",
+           "August", "September", "Oktober", "November", "Dezember"),
+}
+
+
+def month_label(index: int, lang: str = "en") -> str:
+    """A month index back to "September 2022", for naming a window of time."""
+    names = MONTH_LABELS.get(lang, MONTH_LABELS["en"])
+    year, month = divmod(index, 12)
+    if month == 0:
+        year, month = year - 1, 12
+    return f"{names[month - 1]} {year}"
+
+
 def parse_endpoint(token: str, *, is_end: bool) -> tuple[int, bool]:
     """
     One end of a range -> (month index, month_was_explicit).
@@ -204,6 +221,15 @@ FINDING_TEXT = {
         "gap": "There's a gap of about {months} months between {first} and {second}. You "
                "don't need to over-explain it — a short line about what you were doing is "
                "usually enough, and it's a good thing to talk through with your coach.",
+        # Where the rest of the CV accounts for part of the gap, only the part
+        # it does not account for is named. Quoting the whole span told a
+        # student he had a 28-month gap when his two degrees covered all but
+        # four months of it, and that is the kind of error a student takes to
+        # Career Services rather than to the bot.
+        "gap_partial": "Nothing on the CV covers {from_month} to {to_month} — about "
+                       "{months} months. You don't need to over-explain it \u2014 a short "
+                       "line about what you were doing is usually enough, and it's a good "
+                       "thing to talk through with your coach.",
     },
     "de": {
         "overlap": "{first} und {second} laufen zeitgleich. Wenn eines davon Teilzeit oder "
@@ -213,6 +239,10 @@ FINDING_TEXT = {
                "Du musst das nicht ausführlich erklären — ein kurzer Satz dazu, was du in "
                "der Zeit gemacht hast, genügt meistens, und es lohnt sich, das mit deinem "
                "Coach zu besprechen.",
+        "gap_partial": "Für die Zeit von {from_month} bis {to_month} steht nichts "
+                       "im Lebenslauf — rund {months} Monate. Du musst das nicht "
+                       "ausführlich erklären, ein kurzer Satz dazu genügt meistens, "
+                       "und es lohnt sich, das mit deinem Coach zu besprechen.",
     },
 }
 

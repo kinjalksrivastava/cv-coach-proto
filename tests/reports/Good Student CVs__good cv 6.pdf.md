@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly, with consistent headings and dates. Grades are shown with their maximum, making them easy to interpret internationally, and your skills are listed without unsupported personal traits. However, there are currently no bullet points under any section, which means a recruiter cannot see what you actually did in each role or activity. This feedback focuses on structure and completeness, as no target role or job description was provided. Nothing on your CV currently mentions AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured, fits neatly on one page, and presents a clear academic and professional timeline with consistent headings and dates. You have included strong grades with their maximums, making them easy to interpret internationally, and your work experience entries all include both a title and a description. However, there are currently no bullet points under any section, which means a recruiter cannot see what you actually did in each role or activity. Since you have not provided a target role or job description, this feedback focuses on structure and completeness. Nothing on your CV currently mentions AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -36,23 +36,25 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to explain what you did beyond attending classes—such as key projects, relevant coursework, or involvement in initiatives like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) if relevant.
-- For your Maturity Thesis, include a bullet describing what you actually did—your research question, data, methods, and any tools used.
+- Add bullet points under each degree to explain what you did beyond attending classes—such as relevant coursework, projects, thesis work, or involvement in programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) if applicable.
+- For your Maturity Thesis, include a bullet describing what you actually did—your research question, data or sources used, methods, and the outcome.
 - If you participated in an exchange semester or study abroad, consider adding it as a bullet under the relevant degree.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
 - Add bullet points under each work experience entry to describe what you did, how you did it, who benefited, and what changed as a result.
-- Highlight any technical skills or tools you used in context, such as Python, Excel, or Bloomberg Terminal, within these bullets.
+- Highlight any technical skills, tools, or methods you used in each role, and connect them to your achievements.
+- If you held a paid part-time role at an HSG event such as the Talents Conference, include it here with bullet points describing your contribution.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points under each extracurricular activity to explain your concrete contributions—such as team size, what you organised, or specific outcomes.
-- If you have been involved in other HSG student clubs (https://shsg.ch/clubs) or initiatives like the Consulting Club HSG (https://consultingclub.ch/), include these with bullets describing your role and achievements.
+- Add bullet points under each extracurricular entry to explain your specific contributions, the size and scope of your team, what you organised or achieved, and any skills you developed.
+- If you held an active role in an HSG student club (https://shsg.ch/clubs), describe your responsibilities and impact in bullet points.
+- For competitions or case classes, specify your role, the challenge, and the outcome.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Your skills and languages are presented clearly and objectively, making it easy for a recruiter to assess your capabilities.
+- Your skills and languages are stated clearly and concisely, making it easy for a recruiter to see your capabilities.
 
 **Profile** ⚪ Missing
 
@@ -60,15 +62,9 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)—consider adding them here.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), you could add them here to showcase your technical skills.
 
-### 5. Dates worth a look
-
-A couple of things in the timeline that a reader might pause on. Neither is necessarily a problem — they are worth a sentence on the CV, or a conversation with your coach.
-
-- There's a gap of about 24 months between "July - July 2022" and "July 2024 — September 2024". You don't need to over-explain it — a short line about what you were doing is usually enough, and it's a good thing to talk through with your coach.
-
-### 6. Anything else from HSG worth adding?
+### 5. Anything else from HSG worth adding?
 
 Before your appointment, it is worth asking yourself whether there is anything else you have done at HSG that belongs on this CV: a club, a certificate, a mentoring programme, a competition, a project with a company. A few examples of what is on offer are below. They are examples, not recommendations, and only what is genuinely relevant to the role you are applying for is worth adding.
 
@@ -83,7 +79,7 @@ Before your appointment, it is worth asking yourself whether there is anything e
 - **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
   _Belongs in: Reference, not a CV section_
 
-### 7. Career Services' own guidance and templates
+### 6. Career Services' own guidance and templates
 
 Written by Career Services, and the place to go for the full picture rather than this one report.
 
