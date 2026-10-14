@@ -37,13 +37,58 @@ class ExtractionResult:
         self.meta = meta or {}
 
 
+# pdfplumber decides where a word ends from the gap between two characters, and
+# its default tolerance of 3 points is wider than the inter-word gap in a tightly
+# set font. A LaTeX CV in Charter came out as "TeachingFellow,NewYorkUniversity"
+# - every space in the document gone, which silently broke every rule that reads
+# a word boundary. Narrowing the tolerance is not safe as a blanket default: on a
+# loosely tracked font it splits words instead. So the default is tried first and
+# only replaced when the result is visibly space-starved, and then only by a
+# candidate that is not full of one-character fragments.
+WORD_GAP_TOLERANCES = (2.0, 1.5)
+# Two thresholds, deliberately far apart. A re-read is only triggered by a page
+# that is plainly broken (this CV came out at 0.016), and the densest real CV in
+# the samples sits at 0.067 - well clear of it. The replacement then has to be
+# properly spaced, not marginally better, or the default stands.
+BROKEN_SPACE_SHARE = 0.04   # below this, the spaces are missing, not merely few
+GOOD_SPACE_SHARE = 0.08     # ordinary prose runs near 0.15
+MAX_FRAGMENT_SHARE = 0.12   # one-character tokens, the sign of over-splitting
+
+
+def _space_share(text: str) -> float:
+    return text.count(" ") / len(text) if text else 1.0
+
+
+def _fragment_share(text: str) -> float:
+    tokens = text.split()
+    if not tokens:
+        return 1.0
+    return sum(1 for t in tokens if len(t) == 1) / len(tokens)
+
+
+def _page_text(page) -> str:
+    """The page's text, re-read at a narrower word gap if the spaces are missing."""
+    default = page.extract_text() or ""
+    if _space_share(default) >= BROKEN_SPACE_SHARE:
+        return default
+    for tolerance in WORD_GAP_TOLERANCES:
+        try:
+            candidate = page.extract_text(x_tolerance=tolerance) or ""
+        except Exception:
+            continue
+        if (_space_share(candidate) >= GOOD_SPACE_SHARE
+                and _fragment_share(candidate) <= MAX_FRAGMENT_SHARE):
+            return candidate
+    return default
+
+
 def _extract_pdf(file_bytes: bytes) -> tuple[str, dict]:
     text_parts, fonts = [], set()
     image_count, table_count = 0, 0
     with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
         page_count = len(pdf.pages)
         for page in pdf.pages:
-            text_parts.append(page.extract_text() or "")
+            text_parts.append(_page_text(page))
             for char in page.chars:
                 name = char.get("fontname") or ""
                 # PDF font names are usually subset-tagged, e.g. "ABCDEF+Arial-Bold".
