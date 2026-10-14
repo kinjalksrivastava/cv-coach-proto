@@ -19,7 +19,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Rework duty-based bullet in Professional Experience**  
-  bullet in your professional experience section lists duties rather than your specific contribution. Rework this line to clarify what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
+  bullet in your professional experience section lists duties rather than your specific contribution. Rework this line to clarify what you did, how you did it, and why it mattered, highlighting the transferable skills you developed.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -36,19 +36,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Grades are provided with their maximum, making your academic achievements easy to interpret for readers from different systems.
+- Grades are given with their maximum, making them easy to interpret for international readers.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to focus on what you specifically achieved, how you did it, and the skills you used or developed.
+- Rework the bullet beginning 'Performed operational, sales, and marketing tasks...' to clarify your specific actions, how you carried them out, and the skills you demonstrated, rather than listing general responsibilities.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Every entry provides both a role title and a description, making your contributions and responsibilities clear.
+- Every entry carries both a role title and a description, making your contributions easy to understand.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- You avoid unevidenced trait words and instead focus on concrete skills and interests, which is effective.
+- Skills are stated without unevidenced trait words, keeping the section focused and credible.
 
 **Profile** ⚪ Missing
 
@@ -56,7 +56,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)—consider adding them here to showcase additional skills or specialisations.
+- If you have completed relevant certifications or additional courses, you could add them here to highlight further skills or specialisations.
 
 ### 5. Anything else from HSG worth adding?
 

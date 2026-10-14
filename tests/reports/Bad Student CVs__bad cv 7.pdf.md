@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist insgesamt gut strukturiert und enthält alle wichtigen Abschnitte für eine Bewerbung im Studium oder am Berufseinstieg. Die Angaben zu deinen Positionen und Abschlüssen sind klar und konsistent dargestellt. Es fällt auf, dass bisher keine Erfahrungen oder Kenntnisse im Bereich Künstliche Intelligenz (AI) aufgeführt sind – falls du hier relevante Erfahrungen hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
+Dein Lebenslauf ist insgesamt gut strukturiert und enthält alle wichtigen Abschnitte, die für eine Bewerbung im Studium oder am Berufseinstieg erwartet werden. Die Angaben zu deinen beruflichen Stationen und zur Ausbildung sind vollständig und klar, und die Überschriften sowie die Datumsangaben sind konsistent. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition oder Stellenanzeige nachreichen. Es fällt auf, dass aktuell keine Erfahrungen oder Kenntnisse im Bereich KI oder maschinelles Lernen aufgeführt sind – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die Bullet Points im Abschnitt 'Beruflicher Werdegang', indem du jeweils erläuterst, was du konkret gemacht hast, wie du es umgesetzt hast und warum es relevant war – insbesondere im Hinblick auf übertragbare Kompetenzen. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt.
-- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
-  Gehe jede Bullet Point im Abschnitt 'Beruflicher Werdegang' durch und frage dich, welche Fähigkeit du damit zeigen möchtest. Ergänze, wie du vorgegangen bist und welchen Unterschied dein Beitrag gemacht hat. Ein Ergebnis ist hilfreich, wenn es belegbar ist.
-- 🟠 **Datumsangaben nur mit Jahren**  
-  Füge bei allen Ausbildungsstationen und Tätigkeiten die Monate hinzu (z.B. 09/2023 – 06/2024), damit der Umfang und die Dauer für Lesende klar erkennbar sind.
-- 🟠 **Reihenfolge: Ausbildung sollte vor Berufserfahrung stehen**  
-  Für einen studentischen Lebenslauf empfiehlt es sich, den Abschnitt 'Ausbildung' vor die Berufserfahrung zu setzen, außer du hast bereits mehrere Jahre einschlägige Berufserfahrung.
-- 🟡 **Noten müssen verständlich gemacht werden**  
-  Gib bei Noten immer die Maximalnote an (z.B. 5.28 / 6.00), damit auch internationale Lesende deine Leistungen einordnen können.
+- 🔴 **Bulletpoints beschreiben Aufgaben statt Beitrag**  
+  Überarbeite die Bulletpoints in deinem Abschnitt 'Beruflicher Werdegang', indem du jeweils erläuterst, was du konkret gemacht hast, wie du es umgesetzt hast und warum es relevant war – insbesondere, welches übertragbare Skill du damit belegst. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt.
+- 🔴 **Die meisten Bulletpoints zeigen die Aufgabe, nicht das dahinterliegende Skill**  
+  Gehe jede Bulletpoint im Abschnitt 'Beruflicher Werdegang' durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welches Skill wird dadurch sichtbar? Ergänze, wo möglich, ein Ergebnis – aber nur, wenn es belegbar ist.
+- 🟠 **Datumsangaben enthalten nur das Jahr**  
+  Füge bei allen Ausbildungsstationen die Monate hinzu (z.B. 09/2023 – 06/2024), damit der zeitliche Rahmen für Praktika und Studienabschnitte klar erkennbar ist.
+- 🟠 **Ausbildung steht nach Berufserfahrung**  
+  Für einen studentischen Lebenslauf empfiehlt es sich, die Ausbildung vor die Berufserfahrung zu stellen, außer du hast bereits mehrere Jahre einschlägige Berufserfahrung.
+- 🟡 **Noten müssen verständlicher gemacht werden**  
+  Gib bei den Noten immer die Maximalnote an (z.B. 5.28 / 6.00), damit auch internationale Leser deine Leistungen richtig einordnen können.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,32 +46,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Beruflicher Werdegang** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Herangehensweise und die dahinterliegende Kompetenz zeigen. Frage dich bei jeder Station: Was habe ich konkret gemacht? Wie bin ich vorgegangen? Was war das Ergebnis oder der Mehrwert?
-- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) hast, kannst du diese als bezahlte Tätigkeit ergänzen – aber nur, wenn sie wirklich zutreffen.
+- Überarbeite die Bulletpoints so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und das dahinterliegende Skill zeigen.
+- Füge, wo möglich, Ergebnisse oder Veränderungen hinzu, die durch deine Arbeit entstanden sind – aber nur, wenn du diese belegen kannst.
+- Wenn du relevante Erfahrungen aus studentischen Nebenjobs, Praktika oder bezahlten Projekten hast, die noch nicht aufgeführt sind, ergänze sie.
+- Falls du an HSG-spezifischen Formaten wie der Talents Conference oder dem St. Gallen Symposium teilgenommen hast und dies eine bezahlte Tätigkeit war, kannst du diese unter Beruflicher Werdegang ergänzen (nur, wenn relevant).
 
 **Ausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei allen Ausbildungsstationen die Monate zu den Jahreszahlen, damit der zeitliche Rahmen klar wird.
-- Führe bei allen Noten die Maximalnote mit auf (z.B. 5.28 / 6.00), damit internationale Lesende deine Leistung einordnen können.
+- Ergänze bei allen Ausbildungsstationen die Monatsangaben zu Beginn und Ende, damit der zeitliche Rahmen klar wird.
 - Du hast für einige Abschlüsse Noten angegeben, für andere nicht. Recruiter nehmen bei fehlenden Noten oft an, dass diese schlechter waren. Überlege, ob du die Noten ergänzen oder konsequent weglassen möchtest.
-- Falls du an HSG-Formaten wie dem HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen hast, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen.
-- Wenn du relevante Zertifikate wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du diese unter Ausbildung oder in einem eigenen Abschnitt aufführen.
+- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (DSF) oder das Certificate in Integrative Sustainability Management (SuM-HSG) erworben hast, kannst du dies als Bulletpoint unter dem jeweiligen Studiengang ergänzen (nur, wenn relevant).
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **Kompetenzen** 🟠 Braucht Aufmerksamkeit
 
-- Streiche die Soft Skills (z.B. belastbar, teamfähig) aus der Liste und belege sie stattdessen durch konkrete Beispiele in den Bullet Points deiner Berufserfahrung.
-- Füge bei allen technischen Fähigkeiten und Tools ein Niveau hinzu (z.B. Python (Fortgeschritten), R (Grundkenntnisse)), damit Lesende deine Kenntnisse besser einschätzen können.
-- Falls du Zertifikate wie Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/) absolviert hast, kannst du diese hier oder unter 'Kurse und Zertifikate' aufführen.
+- Führe für jede technische Fähigkeit (z.B. R, Python, Matlab, Microsoft Office) ein Niveau an, z.B. 'Python (Fortgeschritten)' oder 'Microsoft Office (Sehr gut)'.
+- Soft Skills wie 'belastbar' und 'teamfähig' sollten nicht als reine Adjektive gelistet werden, sondern durch konkrete Beispiele in den Bulletpoints der Berufserfahrung belegt werden.
+- Falls du Zertifikate wie das Bloomberg Market Concepts (BMC) abgeschlossen hast, kannst du diese hier oder im Abschnitt 'Kurse und Zertifikate' aufführen.
 
 **Sprachen** 🟢 Stark
 
-- Die Sprachkenntnisse sind klar und nachvollziehbar mit Niveau und CEFR-Stufe dargestellt.
+- Die Sprachkenntnisse sind präzise und nachvollziehbar dargestellt.
 
 **Hobbies** 🟢 Stark
 
-- Die Angaben zu Hobbys geben einen guten Einblick in deine Interessen und zeigen langjähriges Engagement.
+- Die Angaben zu Hobbys geben einen guten Einblick in deine Interessen und Aktivitäten außerhalb des Studiums.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -79,11 +79,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausserschulisches Engagement** ⚪ Fehlt
 
-- Falls du dich in Vereinen, Initiativen oder ehrenamtlich engagierst, kannst du dies mit Rolle, Zeitraum und Bullet Points zu deinen Aufgaben und Erfolgen ergänzen.
+- Falls du dich in Vereinen, Initiativen, studentischen Organisationen oder ehrenamtlich engagierst, führe dies mit konkreten Rollen und Aufgaben in diesem Abschnitt auf.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. Data Science, Bloomberg Market Concepts) absolviert hast, kannst du diese hier aufführen.
+- Wenn du relevante Kurse oder Zertifikate (z.B. Data Science, Bloomberg Market Concepts) absolviert hast, kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

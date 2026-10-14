@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist insgesamt gut strukturiert und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Berufserfahrung sowohl eine Positionsbezeichnung als auch eine Beschreibung enthält und die Angaben zu Rechtschreibung, Daten und Überschriften konsistent sind. Die Skills sind klar und ohne unbelegte Eigenschaftswörter dargestellt. Es gibt jedoch einige Punkte, die du noch verbessern kannst, insbesondere bei der Darstellung deiner Beiträge und Ergebnisse in den Berufserfahrungen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es ist zudem auffällig, dass keinerlei Erfahrung mit KI, Machine Learning oder entsprechenden Tools erwähnt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
+Dein CV ist insgesamt gut strukturiert und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Rollenbezeichnung als auch eine Beschreibung enthält und die Angaben zu Rechtschreibung, Daten und Überschriften konsistent sind. Die Skills sind ohne unbelegte Eigenschaftswörter dargestellt, was für Klarheit sorgt. Es fällt auf, dass keinerlei Erfahrung mit KI, Machine Learning oder KI-Tools erwähnt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie klar machen, was du konkret getan hast, wie du es umgesetzt hast und warum es für das Unternehmen oder das Team relevant war. Hebe dabei insbesondere die übertragbaren Fähigkeiten hervor, die du für zukünftige Rollen mitbringst.
-- 🔴 **Die meisten Bullet Points beschreiben Aufgaben, nicht die dahinterstehenden Fähigkeiten**  
-  Gehe jede Bullet Point in der Berufserfahrung durch und ergänze, welches Skill oder Ergebnis du damit zeigen möchtest. Wo ein konkretes Resultat vorliegt, führe es an – aber nur, wenn es belegbar ist. So wird für den Leser klar, welchen Mehrwert du geschaffen hast.
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Fähigkeiten zeigen. Wo möglich, ergänze ein Ergebnis oder eine Veränderung, die du bewirkt hast.
+- 🔴 **Die meisten Bullet Points beschreiben die Tätigkeit, nicht die dahinterstehende Fähigkeit**  
+  Gehe jede Bullet Point in der Berufserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Wo ein konkretes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn es belegbar ist.
 - 🟡 **Notenskala der Matura klären**  
-  Die angegebene Note (5.0/6.0) bei der Matura entspricht keiner international gängigen Skala. Bitte gib an, welches Bewertungssystem hier zugrunde liegt, damit Recruiter die Leistung richtig einordnen können.
-- 🟡 **Noten sind nur teilweise angegeben**  
-  Du hast für einige Abschlüsse Noten angegeben, für andere nicht. Recruiter nehmen bei fehlenden Noten oft an, dass diese weniger gut ausgefallen sind. Überlege, ob du die Noten für alle relevanten Abschlüsse ergänzen oder sie konsequent weglassen möchtest.
+  Die angegebene Note für die Matura (5.0/6.0) entspricht keiner international gängigen Skala. Bitte gib an, auf welcher Skala diese Note basiert, damit Recruiter sie richtig einordnen können.
+- 🟡 **Noten werden nur teilweise angegeben**  
+  Du zeigst Noten für einige, aber nicht alle Abschlüsse. Recruiter nehmen bei fehlenden Noten oft an, dass diese weniger gut ausgefallen sind. Überlege, ob du die fehlenden Noten ergänzen oder alle Noten weglassen möchtest – die Entscheidung liegt bei dir.
 - 🟡 **Interessen ohne Details**  
-  Führe bei deinen Interessen und Engagements genauer aus, was du konkret gemacht hast, wie oft und auf welchem Niveau. So wird dein Engagement für den Leser greifbarer.
+  Führe bei den Interessen und Engagements genauer aus, was du konkret machst, wie oft und auf welchem Niveau. So wird dein Engagement für den Leser greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,39 +45,34 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil fasst deine Stärken und deinen Ansatz prägnant zusammen und zeigt, wie du analytisches Denken mit Kreativität verbindest.
+- Das Profil verbindet analytische und kreative Stärken und hebt relevante Praxiserfahrung hervor.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Bitte gib an, welches Notensystem bei deiner Matura verwendet wurde, damit die Bewertung nachvollziehbar ist.
-- Überlege, ob du die Noten für alle Studienabschlüsse einheitlich aufführst oder sie konsequent weglässt, da Recruiter bei fehlenden Noten oft von einer schwächeren Leistung ausgehen.
-- Falls du weitere relevante Zusatzqualifikationen wie das HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder Zertifikate wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolviert hast, könntest du diese ergänzen, sofern sie für deine Zielrichtung relevant sind.
+- Falls du weitere relevante Zusatzqualifikationen wie das HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder Zertifikate wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) hast, könntest du diese ergänzen, sofern sie für deine Zielrichtung relevant sind.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die angewandte Methode und das Ergebnis bzw. die erlernte Fähigkeit sichtbar machen.
-- Frage dich bei jeder Station: Was habe ich konkret bewirkt? Welche übertragbaren Skills habe ich dabei eingesetzt oder entwickelt?
-- Falls du an HSG-spezifischen Formaten wie der Talents Conference oder dem St. Gallen Symposium teilgenommen hast und dies eine bezahlte Tätigkeit war, könntest du diese als Berufserfahrung ergänzen, sofern relevant.
+- Falls du relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit unter Berufserfahrung aufnehmen, sofern zutreffend.
 
 **EXTRAKURRIKULÄRES ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Beschreibe bei deinen Engagements und Interessen genauer, was du gemacht hast, wie oft und auf welchem Niveau (z.B. wie häufig du Veranstaltungen organisiert hast oder wie regelmäßig du dich engagierst).
-- Wenn du als Assessment Guide (https://shsg.ch/services) tätig warst, könntest du dies als Engagement ergänzen.
-- Falls du weitere relevante Aktivitäten oder Vereinsrollen hast, die für deine Zielrichtung wichtig sind, füge diese mit kurzen, aussagekräftigen Bullet Points hinzu.
+- Beschreibe bei den Interessen und Engagements genauer, was du konkret machst, wie oft und auf welchem Niveau – z.B. wie häufig du als Diskussionsleiterin aktiv warst oder welche konkreten Aufgaben du als Leiterin Partnerschaften übernommen hast.
+- Falls du als Assessment Guide (https://shsg.ch/services) tätig warst, kannst du dies als Engagement ergänzen.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Skills sind präzise und nachvollziehbar formuliert.
+- Die Angaben zu Sprachen und IT-Kenntnissen sind präzise und ohne unbelegte Eigenschaftswörter formuliert.
 
 **ZERTIFIKATE & KURSE** 🟢 Stark
 
-- Die Auswahl und Darstellung der Zertifikate und Kurse ist klar und zeigt Zusatzqualifikationen, die dein Profil abrunden.
+- Die Zertifikate und Kurse sind klar benannt und zeigen Zusatzqualifikationen, die dein Profil abrunden.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen sind differenziert dargestellt und geben einen guten Einblick in deine persönlichen Schwerpunkte.
+- Die Interessen geben einen guten Einblick in deine persönlichen Aktivitäten und Leidenschaften.
 
 ### 5. Daten, die auffallen könnten
 

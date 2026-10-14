@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt Engagement in verschiedenen Bereichen, von Praktika über studentische Initiativen bis hin zu internationalen Erfahrungen. Die Überschriften, Daten und die Rechtschreibung sind durchgehend konsistent, und du vermeidest unbelegte Eigenschaftswörter bei den Skills – das ist positiv. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Beachte, dass dein CV aktuell auf drei Seiten läuft – für den Schweizer Markt sind ein bis zwei Seiten üblich, daher lohnt sich eine gezielte Straffung.
+Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt Engagement in verschiedenen Bereichen. Die Überschriften, Daten und die Rechtschreibung sind durchgehend konsistent, und du verzichtest auf unbelegte Eigenschaftswörter bei den Skills – das wirkt professionell. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Beachte, dass der Lebenslauf aktuell drei Seiten umfasst – für Studierende werden ein bis maximal zwei Seiten erwartet.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Deine Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
-  Füge unter jedem Abschluss, wo möglich, ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen hinzu – immer mit Blick darauf, was für deine nächste Bewerbung relevant ist.
+  Füge unter jedem Abschluss, wo es passt, ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen hinzu. Das gibt dem Leser einen besseren Eindruck deiner Schwerpunkte und Zusatzqualifikationen.
 - 🔴 **Einträge in "ARBEITS- & FÜHRUNGSERFAHRUNGEN" haben keine Beschreibung**  
   Ergänze unter jedem Eintrag einige Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und welches Ergebnis oder welche Fähigkeit daraus hervorgeht – besonders mit Blick auf übertragbare Kompetenzen.
 - 🔴 **"Interessen" ist nahezu leer**  
-  Entweder entwickle diesen Abschnitt weiter, indem du zu jedem Interesse kurz erläuterst, was genau du machst und auf welchem Niveau, oder entferne die Überschrift ganz – ein leerer Abschnitt fällt negativ auf.
+  Entweder entwickle diesen Abschnitt weiter, indem du zu jedem Interesse kurz erläuterst, was genau du machst (z.B. welche Sportart, wie oft, auf welchem Niveau), oder entferne die Überschrift ganz, um keinen unnötigen Fokus auf eine Lücke zu lenken.
 - 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Formuliere die Stichpunkte so um, dass sie deinen eigenen Beitrag, das Wie und den Nutzen für das Team oder das Projekt hervorheben – der Fokus sollte auf der gezeigten Fähigkeit liegen, nicht nur auf der Aufgabe.
+  Formuliere die Stichpunkte so um, dass sie deinen eigenen Beitrag, das Vorgehen und die daraus resultierende Fähigkeit oder das Ergebnis hervorheben – nicht nur die Aufgabe selbst.
 - 🟡 **Der Lebenslauf umfasst 3 Seiten**  
-  Für Studierende werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für deine nächste Bewerbung am relevantesten sind, und kürze entsprechend.
+  Reduziere den Lebenslauf auf maximal zwei Seiten, indem du weniger relevante Inhalte kürzt oder zusammenfasst. Das entspricht den Erwartungen für Studierende im Schweizer Markt.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,24 +45,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Abschluss, wo es passt, ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen hinzu – zum Beispiel das HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), falls du daran teilgenommen hast.
+- Füge unter jedem Abschluss, wo möglich, kurze Angaben zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), Austauschsemestern, Zertifikaten oder besonderen Programmen hinzu – nur das, was wirklich zutrifft und für deine Zielrichtung relevant ist.
 - Prüfe die Abiturnote: Die Angabe "17" ist vermutlich ein Tippfehler und sollte als 1.70 / 1.00 (mit Skala) dargestellt werden, damit internationale Leser sie korrekt einordnen können.
-- Du zeigst die Note nur beim Abitur, nicht aber bei anderen Abschlüssen. Das ist erlaubt, aber wenn du bei einem Abschluss eine Note angibst und bei anderen nicht, gehen viele Recruiter davon aus, dass die fehlende Note schwächer war. Überlege, ob du die Noten entweder konsequent ergänzt oder ganz weglässt.
+- Noten sind optional, aber wenn du sie bei einem Abschluss angibst und bei anderen nicht, könnte ein Leser vermuten, dass die fehlenden Noten schwächer waren. Überlege, ob du die Noten entweder konsequent ergänzt oder bewusst weglässt.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolvierst, kannst du dies als zusätzlichen Bullet unter dem jeweiligen Abschluss aufführen – sofern relevant.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Überlege, welche Erfahrungen für deine nächste Bewerbung am relevantesten sind, und kürze gegebenenfalls weniger relevante Einträge, um die Gesamtlänge zu reduzieren.
+- Falls du an einer HSG-Veranstaltung wie der Talents Conference oder dem St. Gallen Symposium teilgenommen hast (z.B. als studentische Hilfskraft), kannst du dies als bezahlte Tätigkeit mit aufnehmen, sofern es relevant ist.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Du listest deine Sprachkenntnisse und Fähigkeiten sachlich und ohne nicht belegbare Adjektive auf – das ist für Recruiter nachvollziehbar.
+- Die Darstellung der Skills verzichtet auf nicht belegbare Charaktereigenschaften und bleibt sachlich.
 
 **Engagements** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze zu jedem Interesse, was genau du machst, wie oft und auf welchem Niveau – zum Beispiel ob du regelmäßig an Turnieren teilnimmst, in einem Verein aktiv bist oder autodidaktisch lernst.
-- Wenn du in weiteren HSG-Clubs aktiv bist, prüfe, ob ein Eintrag als Engagement mit kurzer Beschreibung sinnvoll ist – eine Übersicht findest du im HSG Clubverzeichnis (https://shsg.ch/clubs).
+- Ergänze zu jedem Engagement oder Interesse, was genau du machst, wie oft und auf welchem Niveau – z.B. bei Sport: welche Disziplin, im Verein oder privat, wie regelmäßig.
+- Wenn du in weiteren HSG-Clubs aktiv bist, kannst du diese mit konkreten Aufgaben und Erfolgen als Bulletpoints ergänzen. Die Übersicht aller Clubs findest du hier: https://shsg.ch/clubs
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -70,7 +71,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder Bloomberg Market Concepts (https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese in einem eigenen Abschnitt aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals oder Bloomberg Market Concepts) absolviert hast, kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

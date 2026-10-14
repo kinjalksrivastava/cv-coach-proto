@@ -219,6 +219,95 @@ def _match_fuzzy(value: str) -> tuple[str, str] | None:
     return best if best_ratio >= 0.86 else None
 
 
+# Last resort: what domain word does this heading CONTAIN?
+#
+# A closed vocabulary can only hold the headings someone wrote down, and
+# students invent wordings endlessly - "Academic Experience", "Leadership &
+# Societies", "Praktische Berufserfahrung". Matching on a contained keyword
+# generalises past that.
+#
+# Order is the whole trick, and a naive containment rule gets it backwards.
+# "Academic Experience" contains "experience" but is EDUCATION; "Volunteering
+# Experience" is volunteering; "Extracurricular Experience" is extracurricular.
+# So the qualifier is tested before the generic noun, and "experience" sits near
+# the bottom where it only applies once nothing more specific has matched.
+# Every keyword is anchored at a word start. Without that, "Kantonsschule
+# Wettingen" matched "schul", "Impulse Network" matched "work", and ordinary
+# content lines were promoted to headings.
+KEYWORD_RULES: list[tuple[str, str, str]] = [
+    (r"\bacademic|\bakademisch|\bscholastic", "Education", "Education"),
+    (r"\bvolunteer|\bvoluntary|\behrenamt|\bfreiwillig|\bgemeinnütz|\bcharit",
+     "Volunteering", "Volunteering & Community"),
+    (r"\bextra[- ]?curricular|\bausserschulisch|\baußerschulisch|\bco[- ]?curricular",
+     "Extracurricular Experience", "Extracurricular & Interests"),
+    (r"\bleadership|\bsociet|\bclubs?\b|\bvereine?\b|\bgremi|\bcommittee|"
+     r"\bengagement|\bmitgliedschaft",
+     "Extracurricular Experience", "Extracurricular & Interests"),
+    (r"\bpublicat|\bresearch|\bforschung|\bthesis\b|\bthesen\b|\bpapers?\b|"
+     r"\bveröffentlich", "Publications & Research", "Publications & Research"),
+    (r"\bcertificat|\bzertifikat|\bweiterbildung|\bqualification|\bqualifikation|"
+     r"\bkurse?\b|\bcourses?\b|\bcoursework\b|\btrainings?\b|\bfortbildung",
+     "Certificates & Training", "Certifications & Training"),
+    (r"\bawards?\b|\bauszeichnung|\bscholarship|\bstipendi|\bhonou?rs?\b|"
+     r"\bpreise?\b|\bachievement", "Awards & Scholarships", "Awards & Scholarships"),
+    (r"\beducat|\bausbildung|\bstudium\b|\bstudies\b|\bbildung\b|\bdegrees?\b|"
+     r"\babschluss\b|\bschul[- ]", "Education", "Education"),
+    (r"\bskills?\b|\bkenntnis|\bkompetenz|\blanguages?\b|\bsprach|\bit\b|"
+     r"\bedv\b|\btools?\b|\bsoftware\b|\bprogrammier|\btechnical\b",
+     "Skills & Languages", "Skills & Languages"),
+    (r"\binterests?\b|\bhobb|\bfreizeit", "Interests", "Extracurricular & Interests"),
+    (r"\bprofil|\bsummary\b|\bzusammenfassung\b|\babout me\b|\büber mich\b",
+     "Profile", "Profile / Summary"),
+    (r"\breferences?\b|\breferenzen?\b|\breferee", "References", "References"),
+    (r"\bmilitär|\bzivildienst|\bwehrdienst|\bmilitary\b|\bnational service\b",
+     "Military / Civil Service", "Other"),
+    # Generic, and therefore last.
+    (r"\bexperiences?\b|\berfahrung|\bemployment\b|\bberuf|\bwork\b|\barbeit|"
+     r"\bpraktik|\bwerdegang\b|\bcareer\b|\banstellung", "Work Experience", "Experience"),
+]
+_KEYWORD_RULES = [(re.compile(pattern, re.IGNORECASE), display, category)
+                  for pattern, display, category in KEYWORD_RULES]
+
+
+# Every word that appears in a known heading, plus the qualifiers and
+# connectives that decorate one. A heading is a CATEGORY LABEL: every word in it
+# should be a word headings are made of. A line with a proper noun in it -
+# "Radsport-Club Wettingen", "Impulse Network" - is a club or an employer, not a
+# section, and the keyword rule was promoting those to headings.
+ALLOWED_TOKENS = (
+    {word
+     for _display, _category, variants in VOCAB
+     for variant in variants
+     for word in re.split(r"[\s/&,+-]+", variant) if word}
+    | set(QUALIFIERS)
+    | {"and", "und", "or", "oder", "of", "in", "im", "für", "for", "the", "der", "die",
+       "das", "my", "meine", "weitere", "sonstige", "general", "allgemeine",
+       "professional", "practical", "praktische", "berufliche", "relevant",
+       "academic", "akademische", "akademischer", "personal", "persönliche",
+       "voluntary", "ehrenamtliche", "ehrenamtliches", "coursework", "leadership",
+       "societies", "qualifikationen", "qualifications", "achievements"}
+)
+
+
+def _looks_like_a_category(value: str) -> bool:
+    """Is every word in this heading a word that headings are made of?"""
+    words = [w for w in re.split(r"[\s/&,+()-]+", value.lower()) if w]
+    return bool(words) and all(w in ALLOWED_TOKENS for w in words)
+
+
+def _match_keyword(value: str) -> tuple[str, str] | None:
+    """
+    The first rule whose keyword appears in the heading, and only when the
+    heading reads as a category rather than a name.
+    """
+    if not _looks_like_a_category(value):
+        return None
+    for pattern, display, category in _KEYWORD_RULES:
+        if pattern.search(value):
+            return display, category
+    return None
+
+
 # A stray glyph left by an icon: one or two characters, then a space, then the
 # real heading. "S BERUFSERFAHRUNG" and "q Education" are both this.
 # Any one or two non-space characters. An icon can land as a symbol ("£"),
@@ -268,6 +357,15 @@ def identify(line: str) -> dict | None:
     if entry:
         return {"raw": raw, "clean": stripped.strip(" \t:"), "display": entry[0],
                 "category": entry[1], "damage": "typo"}
+
+    # Nothing matched as a whole. Does it CONTAIN a domain word? Only for a
+    # heading-shaped line of a few words - this must not fire on a sentence that
+    # happens to mention experience.
+    if len(value.split()) <= 4:
+        entry = _match_keyword(value)
+        if entry:
+            return {"raw": raw, "clean": stripped.strip(" \t:"), "display": entry[0],
+                    "category": entry[1], "damage": None}
     return None
 
 

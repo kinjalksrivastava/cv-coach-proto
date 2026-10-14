@@ -370,7 +370,47 @@ def main() -> int:
         else:
             print(f"ok    leak: {name}")
 
-    total = len(LAYOUTS) + len(EDUCATION_LAYOUTS) + len(LEAKS)
+    # A heading is a category label, not a name. The keyword fallback that lets
+    # "Academic Experience" be read as education must not promote a club or an
+    # employer to a section, and the qualifier must beat the generic noun:
+    # "Academic Experience" is education, not experience.
+    print()
+    from guardrails import headings as _h
+    HEADINGS = [
+        ("Academic Experience", "Education"),
+        ("Academic Qualifications", "Education"),
+        ("Volunteering Experience", "Volunteering & Community"),
+        ("Extracurricular Experience", "Extracurricular & Interests"),
+        ("Leadership & Societies", "Extracurricular & Interests"),
+        ("Research Experience", "Publications & Research"),
+        ("Professional Experience", "Experience"),
+        ("Praktische Berufserfahrung", "Experience"),
+        ("Weitere Qualifikationen", "Certifications & Training"),
+        ("Relevant Coursework", "Certifications & Training"),
+        ("Radsport-Club Wettingen", None),
+        ("Consulting Club HSG", None),
+        ("Impulse Network, Switzerland", None),
+        ("Kantonsschule Wettingen", None),
+        ("University of St. Gallen (HSG)", None),
+        ("12-wöchige Grundausbildung", None),
+        ("online presence and social media", None),
+        ("My Journey", None),
+    ]
+    wrong = []
+    for heading, expected in HEADINGS:
+        entry = _h.identify(heading)
+        got = entry["category"] if entry else None
+        if got != expected:
+            wrong.append(f"{heading!r} -> {got}, expected {expected}")
+    if wrong:
+        failed += 1
+        print("FAIL  headings: category label vs name")
+        for line in wrong:
+            print(f"        {line}")
+    else:
+        print(f"ok    headings: {len(HEADINGS)} category-vs-name cases")
+
+    total = len(LAYOUTS) + len(EDUCATION_LAYOUTS) + len(LEAKS) + 1
     print(f"\n{total - failed}/{total} layouts read correctly")
     return 1 if failed else 0
 

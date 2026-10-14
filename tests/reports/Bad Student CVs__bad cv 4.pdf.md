@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist klar strukturiert, die Zeitachse ist lückenlos und alle Einträge sind sauber mit Rollen und Beschreibungen versehen. Die Angaben zu deinen Kenntnissen sind sachlich und ohne unbelegte Eigenschaften formuliert. Allerdings ist der CV aktuell sehr kurz und bietet noch viel Raum, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu zeigen. Es ist kein Bezug zu Künstlicher Intelligenz (AI) erkennbar – falls du hier relevante Erfahrungen hast, kannst du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist übersichtlich, klar strukturiert und enthält alle wichtigen Abschnitte für den Berufseinstieg. Die Angaben zu deinen bisherigen Tätigkeiten und Qualifikationen sind konsistent und fehlerfrei. Es fällt jedoch auf, dass der CV noch deutlich unter einer Seite bleibt – du hast also viel Raum, um mehr über deine Erfahrungen, Kompetenzen und Engagements zu berichten. Nichts im CV verweist bisher auf Erfahrung mit KI oder AI-Tools – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Deine Studienabschlüsse enthalten außer Abschluss und Datum keine weiteren Angaben**  
-  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, eine Abschlussarbeit (inklusive Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme nennst – immer nur, was tatsächlich zutrifft und für deine Wunschrolle relevant ist.
+  Füge unter jedem Studienabschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, Schwerpunkte, eine Abschlussarbeit (mit Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme nennst – immer nur das, was wirklich zutrifft und für deine Wunschrolle relevant ist.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Kompetenzen und Engagements zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt auf Lesende oft zu knapp.
-- 🟠 **Aufgaben statt Beitrag in den Bullet Points**  
-  Formuliere die Bullet Points so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt – im Fokus steht aber der Skill.
+  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Engagements und Kompetenzen zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Lesende oft zu knapp.
+- 🟠 **Aufgabenbeschreibungen nennen nur Tätigkeiten, nicht deinen Beitrag**  
+  Überarbeite die Bullet Points in der Berufserfahrung so, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis kann helfen, ist aber nicht zwingend – im Vordergrund steht die Kompetenz.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,21 +41,20 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (mit Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen, sofern vorhanden.
-- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilnimmst, kannst du dies als Bullet unter dem jeweiligen Abschluss aufführen – aber nur, wenn es tatsächlich zutrifft und relevant ist.
+- Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, einer Abschlussarbeit (mit Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur das, was wirklich zutrifft und für deine Zielrolle relevant ist.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolvierst, kannst du dies als Bullet unter dem jeweiligen Abschluss aufführen.
 
 **Berufserfahrung** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die Vorgehensweise und die dabei genutzten oder entwickelten Fähigkeiten zeigen. Überlege, welches Ergebnis oder welche Veränderung du bewirkt hast.
-- Nutze den Platz, um weitere relevante Erfahrungen oder Details zu ergänzen, die für deine Entwicklung oder eine Zielrolle wichtig sein könnten.
+- Falls du bei einer Tätigkeit besondere Verantwortung übernommen, Prozesse verbessert oder Feedback erhalten hast, kannst du dies als Ergebnis ergänzen.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind übersichtlich und sachlich dargestellt.
+- Die Zertifikate sind mit Titel und Anbieter übersichtlich dargestellt.
 
 **Kenntnisse** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Kenntnissen sind sachlich und ohne vage Adjektive formuliert.
+- Die Angaben zu Sprachen und IT-Kenntnissen sind sachlich und ohne nicht belegbare Adjektive formuliert.
 
 **Engagement** 🟢 Stark
 
