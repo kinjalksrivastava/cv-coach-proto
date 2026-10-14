@@ -23,11 +23,11 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🟠 **Bullets describe duties rather than contribution**  
   Rework the bullets that only name a task so they show WHAT you did, HOW you did it, and WHY it mattered—especially which transferable skill it demonstrates. Add a result where you genuinely have one, but focus on the skill.
 - 🟠 **Most bullets describe the task, not the skill behind it**  
-  Review your experience bullets and take each one through WHAT you did, HOW you did it, and WHY it mattered. Where you have a result or outcome, add it, but only if it is appropriate and accurate. The main aim is to highlight the transferable skills you used or developed.
+  Review your experience bullets and take each one through WHAT you did, HOW you did it, and WHY it mattered. Where you have a result or outcome, add it if appropriate and accurate. The aim is to highlight the transferable skills you used or developed.
 - 🟠 **Education comes after work experience**  
   For a student CV, education normally comes first. The exception is a mature student with several years of directly relevant work.
 - 🟡 **Interests are listed without any detail**  
-  Add detail to your interests: what kind, how often, and to what level. For example, if you participate in a club, have a rating, or make a regular commitment, include that information.
+  Add detail to your interests: what kind, how often, and to what level. For example, if you participate in a club or have a regular commitment, mention it.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,7 +45,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively highlights your expertise, industry focus, and personal approach, setting the tone for the rest of your CV.
+- The profile clearly summarises your experience, sector focus, and key strengths, making it easy for a recruiter to understand your background.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
@@ -54,23 +54,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add a line or two under each degree where you have relevant content: modules, thesis topic and what you actually did, exchange semesters, certificates, scholarships, or participation in programmes such as the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
+- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these under the relevant degree.
 
 **EXTRACURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For each activity, specify what kind of involvement you had, how often you participated, and any particular achievements or responsibilities. If you have taken an active role in any [HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs), consider adding them with a brief description of your contribution.
+- If you have held an active role in an HSG student club or participated in initiatives such as the [Consulting Club HSG](https://consultingclub.ch/) or [Law Clinic](https://www.unisg.ch/), consider adding these with a brief description of your involvement.
 
 **LANGUAGE AND IT SKILLS** 🟢 Strong
 
-- Skills are stated with clear levels and without unevidenced trait words, making it easy for a recruiter to assess your technical and language proficiency.
+- Skills are stated clearly and consistently, with no unevidenced trait words, making it easy for a recruiter to assess your technical and language abilities.
 
 **INTERESTS** 🟢 Strong
 
-- You provide specific examples of your interests, such as gardening, mountaineering, and creative writing, which add a personal dimension to your CV.
+- You provide concrete examples of your interests, such as gardening, mountaineering, and creative writing, which add depth to your profile.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), consider adding them here to showcase additional qualifications.
+- If you have completed any relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

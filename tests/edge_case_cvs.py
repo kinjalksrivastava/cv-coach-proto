@@ -499,7 +499,36 @@ def run() -> int:
     else:
         print("ok    phone_removal_vs_date_parsing")
 
-    print(f"\n{len(CASES) + 3 - failures}/{len(CASES) + 3} passed")
+    # A lone date is a birth date in the header and an entry's own date below
+    # it. "09.Juni 2024" under "Europawahlen 2024 Bonn, Deutschland" was being
+    # redacted as a date of birth, which cost that CV the whole entry - an
+    # entry with no date left is not read as an entry at all.
+    # A two-column CV interleaves its columns, so a real date of birth lands in
+    # the middle of the experience list - line 10 below. Position cannot tell
+    # the two apart; a birth year the author could not have been born in can.
+    DOB_LINES = """Max Muster
+Musterstrasse 4, 8000 Zurich
+09.06.2001
+AUSBILDUNG
+Kantonsschule Zurich 2016 - 2020
+ENGAGEMENTS
+Ehrenamtlicher Wahlhelfen bei den Europawahlen 2024 Bonn, Deutschland
+09.Juni 2024
+geb. 12.03.1999
+12. August 1990"""
+    hits = pii._dob_lines(DOB_LINES)
+    wrong = sorted(hits ^ {2, 8, 9})
+    if wrong:
+        failures += 1
+        print("FAIL  date_of_birth_only_where_it_belongs")
+        body = DOB_LINES.splitlines()
+        for index in wrong:
+            verb = "redacted" if index in hits else "kept"
+            print(f"        line {index} {verb}: {body[index]!r}")
+    else:
+        print("ok    date_of_birth_only_where_it_belongs")
+
+    print(f"\n{len(CASES) + 4 - failures}/{len(CASES) + 4} passed")
     return 1 if failures else 0
 
 

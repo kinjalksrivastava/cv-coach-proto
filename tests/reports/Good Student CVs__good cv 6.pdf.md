@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly, with consistent headings and dates. Grades are shown with their maximum, making them easy to interpret internationally, and your skills are listed without unsupported personal traits. However, there are currently no bullet points under any section, which means a recruiter cannot see what you actually did in each role or activity. This feedback focuses on structure and completeness, as no target role or job description was provided. Nothing on your CV currently mentions AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included grades with their maximums, making them easy to interpret internationally. However, there are currently no bullet points under any of your roles or activities, which means a reader cannot see what you actually did in each position. If you have any experience with AI, machine learning, or related tools—whether in coursework, projects, or jobs—consider adding it, as nothing on your CV currently refers to this area. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -36,22 +36,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each education entry to explain what you did beyond attending classes—such as key projects, thesis work, relevant coursework, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
-- If you have completed or are pursuing a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), include it as a bullet or in a Courses and Certificates section.
+- Add bullet points under each degree to explain what you did beyond attending classes—such as key projects, thesis work, relevant coursework, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under each work experience entry to describe what you did, how you did it, and what changed as a result—focus on your contributions, skills used, and any outcomes.
-- If you participated in HSG-related paid roles, such as the Talents Conference, include these as relevant work experience with bullet points.
+- Add bullet points under each job to detail what you did, how you did it, and what changed as a result—this helps a reader understand your skills and contributions.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points under each extracurricular entry to detail your responsibilities, the skills you developed, and any outcomes or impact.
-- If you have held active roles in HSG student clubs (https://shsg.ch/clubs), describe your contributions with bullet points.
+- Add bullet points under each extracurricular activity to describe your responsibilities, the skills you used, and any outcomes or impact you achieved.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Your skills are stated without unsupported trait words, making this section clear and credible.
+- Skills are stated without unevidenced trait words, making this section clear and factual.
 
 **Profile** ⚪ Missing
 
@@ -59,7 +56,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF), add them here to showcase your technical skills.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)—consider adding them here.
 
 ### 5. Dates worth a look
 

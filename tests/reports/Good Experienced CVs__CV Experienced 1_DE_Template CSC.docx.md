@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Die Angaben zu Daten, Noten und Rechtschreibung sind konsistent und verständlich, und die Zeitlinie weist keine Lücken oder Überschneidungen auf. Da kein konkretes Berufsziel oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Zielrolle nachreichen.
+Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Die Angaben zu Daten, Noten und Rechtschreibung sind konsistent und verständlich, und die Zeitlinie weist keine Lücken oder Überschneidungen auf. Da kein konkretes Berufsziel oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,13 +19,13 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Fehlende Funktionsbezeichnung in einem Berufserfahrungseintrag**  
-  Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Rolle, Verantwortung und Seniorität nachvollziehen.
+  Geben Sie bei jedem Eintrag in der Berufserfahrung die genaue Funktion an, die Sie ausgeübt haben – nur so kann ein Leser Ihre Verantwortung und Seniorität einschätzen.
 - 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
   Überarbeiten Sie die betroffenen Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihren konkreten Beitrag, das Vorgehen und die daraus resultierenden Fähigkeiten oder Ergebnisse hervorheben.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen über viele Jahre einschlägiger Berufspraxis.
+  Für einen studentischen Lebenslauf empfiehlt es sich, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen bereits über viele Jahre einschlägiger Berufserfahrung.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Fügen Sie bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
+  Fügen Sie bei jeder Sprache eine Niveaubezeichnung hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder idealerweise das CEFR-Level wie B2, C1), damit Recruiter Ihre Sprachkompetenz eindeutig einschätzen können.
 - 🟡 **Interessen ohne Detailangaben**  
   Ergänzen Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben – so wird Ihr Engagement und Ihre Persönlichkeit für den Leser greifbarer.
 
@@ -45,31 +45,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil ist prägnant formuliert und hebt Ihre Expertise sowie Ihre methodischen und analytischen Stärken hervor.
+- Das Profil fasst Ihre langjährige Erfahrung, Ihre methodischen Stärken und Ihre technologische Neugier prägnant zusammen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
 - Ergänzen Sie bei dem Eintrag 'Transformation NAME REDACTED' die genaue Funktionsbezeichnung, damit Ihre Rolle und Verantwortung klar wird.
+- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten oder Ergebnisse hervorheben.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Angaben zu Abschlüssen, Noten und Auslandserfahrung sind klar und nachvollziehbar dargestellt.
+- Die Noten sind mit Maximalwert angegeben, was internationale Vergleichbarkeit ermöglicht.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei Ihren Interessen und Aktivitäten konkrete Angaben hinzu, wie häufig und auf welchem Niveau Sie diese ausüben (z.B. Teilnahme an Wettbewerben, Vereinsmitgliedschaft, regelmäßige Treffen).
+- Fügen Sie bei Ihren Interessen und Aktivitäten Details hinzu, wie häufig Sie diese ausüben und auf welchem Niveau (z.B. Teilnahme an Wettbewerben, regelmäßige Treffen, besondere Leistungen).
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie weitere relevante technische Fähigkeiten oder Zertifikate besitzen, können Sie diese ebenfalls mit Niveauangabe ergänzen.
+- Ergänzen Sie bei jeder Sprache und technischen Fähigkeit eine Niveaubezeichnung (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR-Level bei Sprachen), damit Ihre Kompetenzen klar einschätzbar sind.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Angaben zu Sport und Musik sind mit Beispielen und Zeitrahmen versehen, was Ihr Engagement unterstreicht.
+- Die Angaben zu Sport und Musik sind mit Beispielen und Engagement (z.B. Teilnahme an der Seeüberquerung, Chormitgliedschaft) unterlegt.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate oder Onlinekurse abgeschlossen haben (z.B. Data Science, Innovation Management), können Sie diese in einem eigenen Abschnitt aufführen, um Ihre Zusatzqualifikationen hervorzuheben.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. Onlinekurse, HSG-Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)) haben, können Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

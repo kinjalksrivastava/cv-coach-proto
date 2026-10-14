@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several bullets in your professional experience section state only the task or duty. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
+  Several bullets in your professional experience section state only the task or duty, without showing what you personally contributed or which transferable skill you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the skills you want to showcase.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Nearly all experience bullets lack outcomes or evidence of change. For each, clarify what you did, how you did it, and what skill it shows; add a result where you genuinely have one.
+  Nearly all experience bullets describe what was done but not the outcome, skill, or change achieved. For each, clarify what skill you used or developed, and add a result where you genuinely have one and can support it.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout.
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 - 🟡 **Grades need clarifying**  
-  The grade for your Bachelor's degree is shown as '5' without a maximum. Write it as 5.00 / 6.00 so international readers can interpret it correctly.
+  The grade for your Bachelor's degree is shown as '5' without a maximum. To ensure international recruiters understand it, write it as 5.00 / 6.00.
 - 🟡 **Grades are shown for some degrees but not others**  
-  Grades are optional, but showing some and omitting others can lead a recruiter to assume the missing grade was lower. Decide whether to add the missing grade or remove the others for consistency.
+  Grades are optional, but showing some and omitting others can lead a recruiter to assume the missing grade was lower. Consider whether you want to add the missing grade or remove the others for consistency.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,27 +44,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Clarify the Bachelor's grade by writing it as 5.00 / 6.00, so it is understandable to readers outside Switzerland.
-- Consider whether to add the missing grade for your high school diploma or remove the others, as showing some but not all can lead to assumptions about the omitted result.
+- Clarify the Bachelor's grade by writing it as 5.00 / 6.00 so it is clear to international readers.
+- Decide whether to add the missing grade for your high school diploma or remove the others, as showing some but not all can lead recruiters to assume the missing grade was lower.
 - If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), you could add these as bullets under the relevant degree if they are relevant to your goals.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework bullets that only describe tasks or duties to show what you did, how you did it, and why it mattered, highlighting the transferable skills you used or developed.
-- Where you have a concrete result or outcome, add it to the bullet, but only if you can genuinely support it.
+- Where possible, add outcomes or results to your bullets, but only if you can genuinely support them.
 - Ensure bullet punctuation is consistent throughout this section.
 
 **EXTRACURRICULAR ACTIVITY** 🟢 Strong
 
-- This section works well because it demonstrates active involvement and concrete contributions to student initiatives.
+- This section works well because it describes your concrete involvement and the impact of your role in organising events.
 
 **SKILLS & INTERESTS** 🟠 Needs attention
 
-- For each language, you have already included a level or native status, which is good. If you want to be more precise, consider adding the CEFR level (A1-C2) for each language, as this is widely understood by recruiters.
-- For each technical skill or tool, add a proficiency level (e.g., Intermediate, Advanced) to help readers understand your capability.
+- For each language, add a CEFR level (A1-C2) or a clear label (Basic, Intermediate, Advanced, Fluent) so recruiters can accurately assess your proficiency.
 - If you have completed relevant certifications such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), you could add them here or in a Courses and Certificates section.
+- For each technical skill or tool, add a proficiency level (e.g., 'Figma (Intermediate)') to make your skillset clearer.
 
 **Profile** ⚪ Missing
 
@@ -72,7 +71,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates outside your main degree (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), you could add them here to strengthen your technical profile.
+- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/)), consider adding them here to strengthen your profile.
 
 ### 5. Dates worth a look
 

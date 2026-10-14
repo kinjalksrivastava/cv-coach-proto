@@ -32,6 +32,7 @@ less than it claims.
 """
 
 import re
+from datetime import date
 
 import pii_local
 from guardrails import dates as date_parser
@@ -129,6 +130,21 @@ PERSONAL_FIELD_RE = re.compile(
     r"matrikelnummer|student number|"
     r"name|vorname|nachname|familienname|surname|first name|last name|full name"
     r")\s*[:：]\s*)(?P<value>\S.*)$",
+    re.IGNORECASE,
+)
+
+# "geb. 09.06.2001" or "* 09.06.2001" names itself as a birth date, so it is
+# removed wherever it sits. An UNMARKED lone date does not name itself, and
+# position is the only thing that distinguishes the two: in the header region
+# it is a date of birth, and below the first section heading it is an entry's
+# own date that happened to wrap onto a line of its own - "Europawahlen 2024
+# Bonn, Deutschland" / "09.Juni 2024". Redacting those cost that CV a whole
+# entry, because an entry with no date left is not read as an entry at all.
+MARKED_DOB_LINE_RE = re.compile(
+    r"^\s*(?:geb\.?|\*)\s*"
+    r"(?:\d{1,2}[.\s/-]\s*(?:\d{1,2}|[A-Za-zÄÖÜäöü]{3,10})[.\s/-]\s*(?:19|20)\d{2}"
+    r"|(?:19|20)\d{2}[-/]\d{1,2}[-/]\d{1,2})"
+    r"\s*\.?\s*$",
     re.IGNORECASE,
 )
 
@@ -298,12 +314,13 @@ def _deterministic_pass(text: str) -> tuple[str, list[str]]:
         found.append("contact_block")
 
     lines, dob_hit = [], False
-    for line in working.splitlines():
+    bare = _dob_lines(working)
+    for index, line in enumerate(working.splitlines()):
         if DOB_KEYWORDS.search(line):
             replaced = DATE_NEAR_RE.sub(_placeholder("date_of_birth"), line)
             dob_hit = dob_hit or replaced != line
             line = replaced
-        elif BARE_DATE_LINE_RE.match(line):
+        elif index in bare:
             line, dob_hit = _placeholder("date_of_birth"), True
         lines.append(line)
     if dob_hit:
@@ -577,6 +594,38 @@ def _redact_names(text: str, names: list[str]) -> tuple[str, bool]:
 # --- public entry point -------------------------------------------------------
 
 
+# Nobody writing a CV was born in the last fifteen years, so a lone date from
+# a recent year cannot be a date of birth - it is an entry's own date that
+# wrapped onto a line of its own. An older one might be either, and there the
+# privacy guarantee decides: it goes. Position cannot decide this on its own,
+# because a two-column CV interleaves its columns and drops a real date of
+# birth into the middle of the experience list.
+YOUNGEST_PLAUSIBLE_AGE = 15
+YEAR_IN_LINE_RE = re.compile(r"(19|20)\d{2}")
+
+
+def _dob_lines(text: str) -> set[int]:
+    """
+    Which lines hold a date of birth: one that names itself with "geb." or "*"
+    anywhere, and a lone date unless its year is too recent to be a birth year.
+    """
+    lines = text.splitlines()
+    header_depth = len(split_contact_block(text)[0])
+    cutoff = date.today().year - YOUNGEST_PLAUSIBLE_AGE
+    hits = set()
+    for index, line in enumerate(lines):
+        if MARKED_DOB_LINE_RE.match(line):
+            hits.add(index)
+            continue
+        if not BARE_DATE_LINE_RE.match(line):
+            continue
+        year = YEAR_IN_LINE_RE.search(line)
+        if index >= header_depth and year and int(year.group(0)) > cutoff:
+            continue
+        hits.add(index)
+    return hits
+
+
 def _drop_personal_sections(text: str) -> tuple[str, bool]:
     """
     Remove everything under a "Personal Details" heading, wherever it sits.
@@ -637,7 +686,7 @@ def residual_pii(text: str) -> list[str]:
     hits = []
     for key, pattern in RESIDUAL_CHECKS:
         if pattern is BARE_DATE_LINE_RE:
-            if any(pattern.match(line) for line in text.splitlines()):
+            if _dob_lines(text):
                 hits.append(key)
         elif pattern.search(text):
             hits.append(key)
@@ -649,9 +698,9 @@ def _sweep_residual(text: str) -> tuple[str, list[str]]:
     hits = []
     for key, pattern in RESIDUAL_CHECKS:
         if pattern is BARE_DATE_LINE_RE:
-            lines, hit = [], False
-            for line in text.splitlines():
-                if pattern.match(line):
+            lines, hit, bare = [], False, _dob_lines(text)
+            for index, line in enumerate(text.splitlines()):
+                if index in bare:
                     line, hit = _placeholder(key), True
                 lines.append(line)
             if hit:

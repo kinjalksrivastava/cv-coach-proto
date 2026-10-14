@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die Bullet Points im Abschnitt 'Beruflicher Werdegang', indem du jeweils erläuterst, was du konkret gemacht hast, wie du es umgesetzt hast und warum es relevant war – insbesondere im Hinblick auf übertragbare Kompetenzen. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt.
+  Überarbeite die Bullet Points in deinem Abschnitt 'Beruflicher Werdegang', indem du jeweils erläuterst, was du konkret gemacht hast, wie du es umgesetzt hast und warum es relevant war – insbesondere im Hinblick auf übertragbare Kompetenzen. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt.
 - 🔴 **Bullet Points zeigen Aufgaben, nicht die dahinterliegenden Kompetenzen**  
-  Gehe jede Bullet Point im Abschnitt 'Beruflicher Werdegang' durch und überlege, welche Fähigkeit oder Kompetenz du damit belegen möchtest. Wo möglich, ergänze ein Ergebnis oder eine Veränderung, die durch dein Handeln bewirkt wurde.
+  Gehe jede Bullet Point durch und frage dich, welche Fähigkeit oder Kompetenz du damit zeigen möchtest. Ergänze, wie du vorgegangen bist und welchen Mehrwert dein Beitrag hatte. Ein Ergebnis ist hilfreich, wenn es belegbar ist.
 - 🟠 **Datumsangaben enthalten nur das Jahr**  
-  Füge bei allen Ausbildungsstationen die Monatsangaben hinzu (z.B. 09/2023 – 06/2024), damit der Umfang und die Dauer der Stationen für Leser:innen nachvollziehbar sind.
+  Füge bei allen Zeiträumen in Ausbildung und Berufserfahrung den Monat hinzu (z.B. 09/2023 – 06/2024), damit der Umfang der jeweiligen Station für Lesende klar erkennbar ist.
 - 🟠 **Reihenfolge: Ausbildung sollte vor Berufserfahrung stehen**  
   Für einen studentischen Lebenslauf empfiehlt es sich, die Ausbildung vor die Berufserfahrung zu stellen, außer du hast bereits mehrere Jahre einschlägige Berufserfahrung.
 - 🟡 **Noten müssen verständlich gemacht werden**  
-  Gib bei den Noten immer die Maximalnote an (z.B. 5.28 / 6.00), damit auch internationale Leser:innen deine Leistungen einordnen können.
+  Gib bei Noten immer die Maximalnote an (z.B. 5.28 / 6.00), damit auch internationale Lesende deine Leistungen einordnen können.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,32 +46,30 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Beruflicher Werdegang** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Herangehensweise und das Ergebnis hervorheben – insbesondere im Hinblick auf übertragbare Fähigkeiten.
-- Frage dich bei jeder Bullet Point, welche Kompetenz du damit zeigen möchtest, und ergänze dies, wo möglich, durch ein konkretes Ergebnis.
-- Falls du relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) hast, kannst du diese als bezahlte Tätigkeit ergänzen, sofern sie passen: https://shsg.ch/clubs.
+- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Herangehensweise und die dahinterliegende Kompetenz zeigen.
+- Füge, wo möglich, konkrete Ergebnisse oder Veränderungen hinzu, die durch deine Arbeit erzielt wurden.
+- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium (https://shsg.ch/clubs) hast, kannst du diese als bezahlte Tätigkeit ergänzen – aber nur, wenn sie wirklich zutreffen.
 
 **Ausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei allen Ausbildungsstationen die Monatsangaben, damit die Dauer und der zeitliche Ablauf klar werden.
-- Führe die Noten im Format 'Note / Maximalnote' auf (z.B. 5.28 / 6.00), damit sie auch international verständlich sind.
-- Du hast für einige Abschlüsse Noten angegeben, für andere nicht. Recruiter:innen nehmen bei fehlenden Noten oft an, dass diese schlechter ausfielen. Überlege, ob du die Noten ergänzen oder konsequent weglassen möchtest.
-- Falls du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen hast oder ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du dies als Bullet Point unter dem jeweiligen Abschluss ergänzen, sofern relevant.
+- Du hast für einige Abschlüsse Noten angegeben, für andere nicht. Recruiter nehmen bei fehlenden Noten oft an, dass diese schlechter ausfielen – überlege, ob du die Noten ergänzen oder konsequent weglassen möchtest.
+- Falls du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen hast oder ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du dies als Bullet Point unter dem jeweiligen Abschluss ergänzen.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **Kompetenzen** 🟠 Braucht Aufmerksamkeit
 
-- Füge bei allen technischen Fähigkeiten (z.B. R, Python, Matlab, Microsoft Office) jeweils das Niveau hinzu, z.B. 'Python (Fortgeschritten)' oder 'Microsoft Office (Sehr gut)'.
-- Die Soft Skills wie 'belastbar' und 'teamfähig' solltest du nicht als Liste aufführen, sondern in den Bullet Points deiner Berufserfahrung durch konkrete Beispiele belegen.
-- Falls du Zertifikate wie [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) erworben hast, kannst du diese hier oder in einem eigenen Abschnitt 'Kurse und Zertifikate' aufführen.
+- Streiche die Soft Skills (z.B. belastbar, teamfähig) aus der Liste und zeige diese stattdessen durch konkrete Beispiele in den Bullet Points deiner Berufserfahrung.
+- Ergänze bei technischen Fähigkeiten wie R, Python, Matlab und Microsoft Office jeweils dein Niveau (z.B. 'Python (Fortgeschritten)'), damit Recruiter deine Kenntnisse besser einschätzen können.
+- Falls du Zertifikate wie [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) absolviert hast, kannst du diese hier oder unter 'Kurse und Zertifikate' aufführen.
 
 **Sprachen** 🟢 Stark
 
-- Die Angabe der Sprachkenntnisse mit CEFR-Niveau (z.B. Englisch C1, Französisch B2, Norwegisch A1) ist präzise und für internationale Bewerbungen sehr hilfreich.
+- Die Sprachkenntnisse sind klar und nachvollziehbar mit Niveau und CEFR-Stufe dargestellt.
 
 **Hobbies** 🟢 Stark
 
-- Die Auflistung verschiedener Sportarten und musikalischer Aktivitäten vermittelt ein vielseitiges Profil und gibt einen persönlichen Einblick.
+- Die Hobbys geben einen guten Einblick in deine Interessen und zeigen langjähriges Engagement, z.B. im Orchester.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -79,11 +77,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausserschulisches Engagement** ⚪ Fehlt
 
-- Falls du dich in Vereinen, Initiativen, Ehrenamt oder studentischen Organisationen engagierst, führe dies mit Rolle, Zeitraum und Bullet Points zu deinen Aufgaben und Erfolgen auf.
+- Falls du dich in Vereinen, Initiativen oder als Freiwillige engagierst, kannst du dies mit Rolle, Zeitraum und Bullet Points zu deinen Aufgaben und Erfolgen ergänzen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate (z.B. Data Science, Bloomberg Market Concepts) oder Weiterbildungen absolviert hast, kannst du diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. Data Science, Bloomberg Market Concepts) absolviert hast, kannst du diese mit Abschlussdatum und ggf. kurzer Beschreibung ergänzen.
 
 ### 5. Daten, die auffallen könnten
 
