@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear structure and a strong set of experiences for your stage. Each work experience entry includes both a role title and a description, and your timeline is consistent without unexplained gaps or overlaps. Your skills are stated without unevidenced trait words, which keeps the section focused and credible. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Your CV is in good shape overall, with a clear structure and a strong range of experiences for your stage. Every work experience entry includes both a role title and a description, and your timeline is consistent without unexplained gaps or overlaps. Your skills are stated without unevidenced trait words, which keeps the section focused and credible. There is currently nothing on your CV that refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -21,11 +21,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Bullets describe duties rather than contribution**  
   Rework your work experience bullets to focus on what you did, how you did it, and why it mattered—highlighting the transferable skills you developed. Where possible, include a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify what you did, how you did it, and why it was important, making sure to surface the skill you want to demonstrate. Add a result where you have one, but do not invent figures.
+  For each experience bullet, clarify what you did, how you did it, and why it was important, making sure to surface the underlying skill. Add a result where you have one, but do not invent figures just to fill the space.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose a consistent approach for bullet punctuation—either all with full stops or all without—and apply it throughout your CV.
+  Choose a consistent approach for ending your bullets (either all with full stops or none) and apply it throughout your CV.
 - 🟡 **Grades need clarifying**  
-  Clarify your GPA by writing it as 5.04 / 6.00, so that recruiters outside Switzerland can understand your result.
+  Where you show a grade, add the maximum (e.g. 5.04 / 6.00) so that recruiters from other countries can interpret it correctly.
+- 🟡 **Grades are shown for some degrees but not others**  
+  Recruiters may assume that an omitted grade was lower than those shown. Decide whether you want to add the missing grades or remove the ones you have shown, but be aware of this perception.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,25 +44,29 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Rewrite your GPA as 5.04 / 6.00 to ensure international recruiters understand your result.
-- If you have completed or are pursuing any additional HSG qualifications, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them if relevant.
+- Add the maximum possible grade alongside your current GPA (e.g. 5.04 / 6.00) so that international recruiters can interpret it.
+- Consider whether to add grades for your earlier degrees or remove the current GPA, as showing some but not others can lead recruiters to assume omitted grades were lower.
+- If you have participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), you could add these as bullets under your degree if relevant.
+
+> **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
+- Revise your bullets to highlight what you personally did, how you did it, and why it mattered, making sure to surface the transferable skills you developed.
 - Where you have a concrete result or outcome, add it to the relevant bullet, but only if you can genuinely support it.
-- Ensure bullet punctuation is consistent throughout this section.
+- Ensure that bullet punctuation is consistent throughout this section.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- Your section is clear and focused on hard skills and language levels, which is exactly what recruiters look for here.
+- This section works well because it focuses on hard skills and provides clear language levels.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- You have included relevant certifications with clear dates, which adds credibility to your profile.
+- This section is effective as it presents your certifications in a straightforward and relevant way.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- You have shown long-term commitment and achievement in judo and skydiving, as well as active involvement in a student club, which helps evidence your skills and interests.
+- This section stands out by providing detail on your involvement and achievements, such as national-level judo and skydiving.
 
 **Profile** ⚪ Missing
 

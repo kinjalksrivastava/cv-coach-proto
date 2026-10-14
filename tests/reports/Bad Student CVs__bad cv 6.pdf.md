@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und formal konsistent, mit klaren Überschriften und einer lückenlosen Zeitachse. Allerdings ist der Textumfang sehr gering und es gibt noch viel Raum, um deine Erfahrungen und Fähigkeiten ausführlicher darzustellen. Die Angaben zu deinen Aufgaben in der Berufserfahrung könnten stärker auf deinen persönlichen Beitrag und die erworbenen Kompetenzen eingehen. Es fehlen zudem die Abschnitte Ausbildung sowie Skills & Languages, die für einen vollständigen CV wichtig sind. Nichts im aktuellen CV verweist auf Erfahrungen mit KI oder KI-Tools – falls du hier Kenntnisse hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und formal konsistent, mit klaren Überschriften und einer lückenlosen Zeitachse. Allerdings ist der Textumfang sehr gering und es gibt noch viel Raum, um mehr über deine Erfahrungen, Kompetenzen und deinen Werdegang zu berichten. Es fehlen Angaben zu Ausbildung und Skills, was für einen vollständigen CV wichtig ist. Nichts im Lebenslauf verweist auf Erfahrungen mit KI oder KI-Tools – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Der Lebenslauf ist zu kurz**  
-  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Verantwortlichkeiten und erworbenen Fähigkeiten zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt schnell lückenhaft.
+- 🔴 **Der Lebenslauf füllt keine Seite**  
+  Nutze den vorhandenen Platz, um ausführlicher auf deine bisherigen Tätigkeiten, Kompetenzen und deinen Bildungsweg einzugehen. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Lesende oft zu knapp.
 - 🔴 **Aufgaben statt Beitrag in den Bullets**  
-  Formuliere die Bullet Points in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du vorgegangen bist und welche Kompetenzen du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis oder eine Veränderung macht deine Rolle greifbarer.
-- 🟠 **Kein Abschnitt Ausbildung vorhanden**  
-  Füge einen Abschnitt zu deiner Ausbildung hinzu, falls du relevante Abschlüsse oder Studienleistungen vorweisen kannst.
-- 🟠 **Kein Abschnitt Skills & Languages vorhanden**  
-  Ergänze einen Abschnitt zu deinen Hard Skills und Sprachkenntnissen, sofern du hier relevante Kompetenzen hast.
+  Formuliere die Bullet Points in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche Fähigkeiten du dabei eingesetzt oder entwickelt hast. Wenn möglich, beschreibe auch, welchen Unterschied dein Beitrag gemacht hat.
+- 🟠 **Kein Abschnitt zu Ausbildung vorhanden**  
+  Falls du relevante Ausbildungsstationen hast, solltest du diese ergänzen. Ein Abschnitt zur Ausbildung ist für einen vollständigen Lebenslauf unerlässlich.
+- 🟠 **Kein Abschnitt zu Skills & Languages vorhanden**  
+  Füge einen Abschnitt hinzu, in dem du deine Hard Skills (z.B. IT-Kenntnisse, Tools) und Sprachkenntnisse mit Niveau aufführst. Das hilft Lesenden, deine Kompetenzen schnell zu erfassen.
 - 🟡 **Interessen ohne Details**  
-  Beschreibe deine Interessen konkreter: Welche Sportart, wie oft, auf welchem Niveau? So wird dein Engagement für den Leser greifbarer.
+  Beschreibe bei deinen Interessen, welche Sportarten du betreibst, wie oft oder auf welchem Niveau. So wird dein Engagement und deine Persönlichkeit greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -44,18 +44,17 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullet Points so, dass sie deinen persönlichen Beitrag, die eingesetzten Methoden und die daraus resultierenden Kompetenzen oder Ergebnisse hervorheben.
-- Falls du weitere relevante Tätigkeiten oder Praktika hattest, ergänze diese, um den Abschnitt zu stärken.
-- Wenn du an HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium teilgenommen hast (z.B. als Teilzeitkraft oder im Organisationsteam), kannst du diese als Berufserfahrung aufführen, sofern sie bezahlt waren und relevant sind.
+- Überarbeite die Bullet Points so, dass sie deinen konkreten Beitrag, die eingesetzten Fähigkeiten und – wenn möglich – das Ergebnis deiner Arbeit zeigen.
+- Nutze den Platz, um weitere relevante Tätigkeiten oder Nebenjobs zu ergänzen, falls vorhanden. Auch ein Engagement bei der Talents Conference (Career Services) oder im Organisationsteam des St. Gallen Symposiums könnte hier passen, sofern es sich um eine bezahlte Tätigkeit handelt.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Führe bei deinen Engagements (z.B. als Jugendtrainer oder aktiver Spieler) aus, was genau du gemacht hast, wie oft und in welchem Rahmen. Nenne z.B. Teamgröße, Aufgaben oder besondere Projekte.
-- Wenn du in einem HSG-Club aktiv bist, beschreibe deine Rolle und deinen Beitrag (siehe z.B. das breite Angebot an [HSG student clubs](https://shsg.ch/clubs)).
+- Führe bei deinen Engagements aus, was genau du gemacht hast, wie oft und in welchem Rahmen. Zum Beispiel: Welche Aufgaben hattest du als Jugendtrainer? Wie oft trainierst du oder spielst du aktiv?
+- Falls du in einem HSG-Club aktiv bist, beschreibe deine Rolle und deinen Beitrag. Eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen sind prägnant und sachlich aufgeführt.
+- Die Interessen sind sachlich und ohne unbelegte Charaktereigenschaften dargestellt.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -63,11 +62,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausbildung** ⚪ Fehlt
 
-- Füge deine aktuellen und abgeschlossenen Studiengänge, relevante Abschlüsse und ggf. Schwerpunkte hinzu.
+- Füge deine bisherigen Bildungsstationen hinzu – z.B. Studium, Schule, relevante Weiterbildungen. Falls du an einem Austauschprogramm teilgenommen hast, kannst du dies ebenfalls aufführen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate hast, kannst du diese hier aufführen.
+- Falls du relevante Kurse oder Zertifikate hast, kannst du diese ergänzen – etwa IT-Kurse, Sprachzertifikate oder Weiterbildungen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -41,11 +41,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Angaben zu Abschlüssen, Noten und besonderen Leistungen sind präzise und nachvollziehbar.
+- Die Angaben zu Abschlüssen, Noten und besonderen Leistungen sind klar und nachvollziehbar dargestellt.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze, wo möglich, konkrete Ergebnisse oder Veränderungen, die durch dein Handeln entstanden sind, und mache sichtbar, welche übertragbaren Fähigkeiten du eingesetzt hast.
+- Ergänze, wo möglich, konkrete Ergebnisse oder Veränderungen, die durch dein Handeln entstanden sind, und mache sichtbar, welche Fähigkeiten du dabei eingesetzt hast.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
@@ -57,7 +57,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Skills & Languages** ⚪ Fehlt
 
-- Füge einen Abschnitt hinzu, in dem du deine Sprachkenntnisse mit Niveau (idealerweise nach CEFR) und deine IT-Kompetenzen jeweils mit Kenntnisstand aufführst. Das erleichtert es Recruitern, deine Qualifikationen schnell zu erfassen.
+- Füge einen Abschnitt hinzu, in dem du deine Sprachkenntnisse mit Niveau (idealerweise nach CEFR: A1–C2) und IT-Kompetenzen jeweils mit Kenntnisstand aufführst. Das erleichtert Recruitern die schnelle Einordnung deiner Fähigkeiten.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -65,7 +65,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zusatzqualifikationen, Zertifikate oder Weiterbildungen hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)), kannst du diese in einem eigenen Abschnitt aufführen.
+- Falls du relevante Zusatzqualifikationen, Zertifikate oder Weiterbildungen hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)), kannst du diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

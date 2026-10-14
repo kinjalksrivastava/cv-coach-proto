@@ -19,7 +19,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Rework duty-based bullet in Professional Experience**  
-  bullet in your professional experience section lists duties rather than your specific contribution. Rework this line to clarify what you did, how you did it, and why it mattered, highlighting the transferable skill it demonstrates.
+  bullet in your professional experience section lists duties rather than your specific contribution. Rework this line to clarify what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -40,15 +40,15 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to focus on what you specifically achieved, how you did it, and the transferable skill it demonstrates.
+- Revise the bullet beginning 'Performed operational, sales, and marketing tasks...' to focus on what you specifically achieved, how you did it, and the skills you used or developed.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Every entry provides a clear sense of your responsibilities and the impact you made.
+- Every entry provides both a role title and a description, making your contributions and responsibilities clear.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- You have avoided unevidenced trait words and instead focused on concrete skills and language levels.
+- You avoid unevidenced trait words and instead focus on concrete skills and interests, which is effective.
 
 **Profile** ⚪ Missing
 
@@ -56,7 +56,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, consider adding them here to showcase further skills or specialisations.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)—consider adding them here to showcase additional skills or specialisations.
 
 ### 5. Anything else from HSG worth adding?
 

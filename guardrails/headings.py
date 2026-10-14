@@ -54,6 +54,12 @@ VOCAB: list[tuple[str, str, tuple[str, ...]]] = [
      ("education", "ausbildung", "studium", "academic background", "akademischer werdegang",
       "akademische ausbildung", "educational background", "schulbildung", "studies",
       "academic education", "bildungsweg", "bildung", "schulische ausbildung",
+      # "Academic Experience" is an ordinary education heading and was not in
+      # here, so a CV using it lost its whole education section offline.
+      "academic experience", "academic record", "academic history",
+      "academic qualifications", "academic career", "academic training",
+      "university education", "studies and education", "education and training",
+      "akademische erfahrung", "akademischer hintergrund", "studium und ausbildung",
       "schul- und berufsausbildung", "schul und berufsausbildung",
       "schulbildung und ausbildung", "aus- und weiterbildung",
       "ausbildung und studium", "akademische laufbahn")),

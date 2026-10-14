@@ -220,6 +220,15 @@ def _education_thin_entries(sliced: list[dict]) -> tuple[str | None, list[str]]:
     return None, []
 
 
+def _unlabelled_entries(text: str, sliced: list[dict]) -> list[str]:
+    """Dated entries above the first heading, which belong to no section."""
+    first = min((s["start"] for s in sliced), default=None)
+    if not first:
+        return []
+    head = text.splitlines()[:first]
+    return [e["title_line"] or e["line"] for e in _entries(head)][:4]
+
+
 # Where a role title is expected. Education is deliberately absent.
 ROLE_TITLE_CATEGORIES = {"Experience", "Extracurricular & Interests",
                          "Volunteering & Community"}
@@ -303,6 +312,12 @@ IMPACT_MARKER = re.compile(
 
 
 INDENTED_LINE = re.compile(r"^(?:\t| {2,})\S")
+
+# A single date closing a line, rather than a range: "…, June 1992", "Matura
+# 2019", "… 06/2024". Only at the end, where an entry puts its date.
+SINGLE_DATE_END = re.compile(
+    r"(?:[A-Za-zÀ-ÖØ-öø-ÿ]{3,9}\.?,?[ \t]{0,2}|(?:0?[1-9]|1[0-2])\s*[./]\s*)?"
+    r"(?:19|20)\d{2}\s*[.,;)]?\s*$")
 
 
 def _is_bullet(line: str) -> bool:
@@ -404,11 +419,25 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
     def _dated(line: str) -> bool:
         return bool(DATE_RANGE.search(line)) or any(d in line for d in extra_dates)
 
+    def _anchors(line: str) -> bool:
+        """
+        Does this line start an entry?
+
+        A range is the usual signal, but plenty of entries carry a single date
+        instead - "Bachelor of Science in Mathematics, June 1992", "Matura
+        2019". Without this such a section parsed to zero entries, so none of
+        the entry-level checks ran on it and nothing said so. Bullets are
+        excluded: a bullet mentioning a year is not a new entry.
+        """
+        if _is_bullet(line):
+            return False
+        return _dated(line) or bool(SINGLE_DATE_END.search(line))
+
     entries = []
     for offset, line in enumerate(body):
         if _is_bullet(line) or not line.strip():
             continue
-        if _dated(line):
+        if _anchors(line):
             # Many CVs put the employer and role on one line and the dates and
             # location on the next. Anchoring on the date line alone would read
             # "September 2021 - April 2024 St. Gallen, CH" as the whole entry and
@@ -416,7 +445,7 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
             title = ""
             for back in range(offset - 1, max(offset - 3, -1), -1):
                 candidate = body[back].strip()
-                if candidate and not _is_bullet(candidate) and not _dated(candidate):
+                if candidate and not _is_bullet(candidate) and not _anchors(candidate):
                     title = candidate
                     break
             if not title and not DATE_RANGE.sub("", line).strip(" \t,|–—-"):
@@ -449,7 +478,7 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
                             "offset": offset, "bullets": [], "description": []})
     for entry in entries:
         for line in body[entry["offset"] + 1:]:
-            if _dated(line) and not _is_bullet(line):
+            if _anchors(line):
                 break
             if _is_bullet(line):
                 entry["bullets"].append(_bullet_text(line))
@@ -1044,6 +1073,12 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
         "missing_standard_sections": missing_standard,
         "missing_report_sections": _missing_report_sections(sliced, lowered, lang),
         "unlabelled_intro": _unlabelled_intro(text, sliced),
+        # Entries sitting above the first heading. Career Services asked for a
+        # section with no header to be picked up and asked about; this is the
+        # case where that block is not a profile but a run of real entries, so
+        # none of the section rules reach it and an ATS cannot categorise it
+        # either.
+        "unlabelled_entries": _unlabelled_entries(text, sliced),
         "education_thin_section": _education_thin_entries(sliced)[0],
         "education_thin_entries": _education_thin_entries(sliced)[1],
         # A document with real content and no readable section headings at all.

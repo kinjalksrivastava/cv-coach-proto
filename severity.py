@@ -118,6 +118,19 @@ def assess(facts: dict, target_role: str = "") -> dict:
     for_role = f" for {role}" if role else ""
 
     # --- Tier 1: there is nothing for a reader to evaluate --------------------
+    if facts.get("unlabelled_entries"):
+        entries = facts["unlabelled_entries"]
+        issues.append(_issue(
+            1, "unlabelled_entries",
+            "A block of entries at the top sits under no heading",
+            f"{len(entries)} entries appear before any section heading: "
+            + "; ".join(e[:50] for e in entries[:3]),
+            guidance="Give that block a heading - Education, Work Experience, whichever "
+                     "it is. Without one a reader has to work out what they are looking "
+                     "at, and an applicant tracking system cannot file the entries at "
+                     "all, so they may be read as belonging to the section below them.",
+        ))
+
     if facts.get("no_sections_found"):
         issues.append(_issue(
             1, "no_sections", "No section headings could be read from this CV",

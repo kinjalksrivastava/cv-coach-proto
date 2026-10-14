@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert, die Zeitachse ist lückenlos und alle Angaben zu Daten und Rechtschreibung sind konsistent. Die Angaben zu Ihren IT- und Sprachkenntnissen sind präzise und ohne unbelegte Eigenschaftswörter formuliert. Es fällt auf, dass aktuell keine Erfahrung mit KI, maschinellem Lernen oder KI-Tools aufgeführt ist – falls Sie hier relevante Kenntnisse oder Projekte haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen.
+Ihr Lebenslauf ist klar strukturiert, weist eine konsistente Zeitlinie ohne Lücken oder Überschneidungen auf und verwendet durchgehend einheitliche Überschriften und Daten. Die Angaben zu Ihren Sprach- und IT-Kenntnissen sind sachlich und ohne unbelegte Eigenschaftswörter formuliert. Es fällt auf, dass aktuell keine Erfahrungen oder Kenntnisse im Bereich Künstliche Intelligenz (AI) aufgeführt sind – falls Sie hier relevante Kompetenzen oder Projekte haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Rückmeldung zu einer bestimmten Position können Sie jederzeit eine Stellenbeschreibung nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Ihre Abschlüsse enthalten nur Abschluss, Datum und ggf. Note**  
-  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, eine Abschlussarbeit (inklusive Thema und Vorgehen), ein Austauschsemester, Zertifikate oder besondere Programme nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
-- 🔴 **Einträge in "Berufserfahrung" ohne Funktionsbezeichnung**  
+- 🔴 **Ihre Abschlüsse enthalten nur Abschluss, Note und Datum**  
+  Fügen Sie unter jedem Abschluss Stichpunkte hinzu, die relevante Module, eine Abschlussarbeit (inklusive Thema und Vorgehen), ein Austauschsemester, ein Zertifikat oder ein Stipendium beschreiben – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
+- 🔴 **Einträge in "BERUFSERFAHRUNG" ohne Funktionsbezeichnung**  
   Ergänzen Sie bei jedem Eintrag die genaue Rolle oder Funktion, die Sie ausgeübt haben – ein Arbeitgebername allein lässt keine Rückschlüsse auf Ihre Verantwortung oder Seniorität zu.
-- 🟠 **Aufgaben statt Beitrag in den Bulletpoints**  
-  Überarbeiten Sie die Bulletpoints so, dass jeweils klar wird, was Sie konkret getan haben, wie Sie dabei vorgegangen sind und warum das für das Unternehmen oder Team wichtig war. Wo möglich, zeigen Sie die dahinterliegenden übertragbaren Kompetenzen.
-- 🟠 **Die meisten Bulletpoints zeigen keine Ergebnisse oder Veränderungen**  
-  Ergänzen Sie dort, wo es passt und belegbar ist, das Ergebnis Ihrer Tätigkeit – etwa eine Verbesserung, eine Kennzahl oder eine Veränderung. Der Fokus sollte aber immer auf der übertragbaren Fähigkeit liegen, nicht auf einer Zahl um der Zahl willen.
-- 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen klassischen Studierenden-Lebenslauf steht die Ausbildung normalerweise an erster Stelle – es sei denn, Sie sind bereits langjährig im Zielbereich tätig.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Überarbeiten Sie die betreffenden Stichpunkte so, dass klar wird, was Sie konkret getan haben, wie Sie dabei vorgegangen sind und welche übertragbaren Kompetenzen Sie dabei eingesetzt oder entwickelt haben. Ein Ergebnis kann ergänzt werden, wenn es belegbar ist.
+- 🟠 **Die meisten Stichpunkte nennen Aufgaben, nicht die dahinterstehenden Kompetenzen**  
+  Gehen Sie jeden Stichpunkt durch und fragen Sie sich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit zeigt das? Wo ein Ergebnis belegbar ist, können Sie es ergänzen – aber nur, wenn es wirklich zutrifft.
+- 🟡 **Ausbildung steht nach Berufserfahrung**  
+  Für einen klassischen Studierenden-Lebenslauf empfiehlt sich, die Ausbildung vor die Berufserfahrung zu stellen – es sei denn, Sie sind bereits langjährig im Zielbereich tätig.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,36 +45,34 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Ihr Profil vermittelt auf den ersten Blick Ihre Spezialisierung, Ihre wichtigsten Erfolge und Ihre persönlichen Stärken.
+- Das Profil vermittelt klar Ihre Spezialisierung, Branchenerfahrung und Ihre wichtigsten Kompetenzen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei jedem Eintrag eine klare Funktionsbezeichnung hinzu, insbesondere beim Sabbatical, damit Ihre Rolle und Verantwortung für den Leser eindeutig sind.
-- Überarbeiten Sie die Bulletpoints so, dass jeweils Ihr konkreter Beitrag, die Vorgehensweise und – wo möglich – das Ergebnis oder die Veränderung sichtbar werden. Fragen Sie sich bei jedem Punkt: Was habe ich gemacht? Wie? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar?
-- Wo Sie bereits Ergebnisse nennen (z.B. Umsatzsteigerung, neue Kunden), können Sie zusätzlich die übertragbare Kompetenz betonen, die dahintersteht.
-- Falls Sie relevante Erfahrungen aus HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (https://shsg.ch/clubs) haben, können Sie diese als bezahlte Tätigkeit oder Vollzeitrolle ergänzen – aber nur, wenn sie wirklich zutreffen.
+- Ergänzen Sie bei jedem Eintrag die genaue Funktionsbezeichnung, insbesondere beim Sabbatical, damit Ihre Rolle und Verantwortung für den Leser klar wird.
+- Überarbeiten Sie die Stichpunkte so, dass nicht nur Aufgaben, sondern auch Ihr konkreter Beitrag, die Herangehensweise und die dahinterstehenden Kompetenzen sichtbar werden.
+- Falls Sie relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) haben, können Sie diese als bezahlte Tätigkeit oder Vollzeitrolle ergänzen, sofern sie für Ihr Ziel relevant sind.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bulletpoint unter dem entsprechenden Abschluss aufführen.
-- Wenn Sie zusätzliche Zertifikate wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben haben, können Sie diese ebenfalls unter Ausbildung oder in einem eigenen Abschnitt ergänzen.
+- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben oder ein Zertifikat wie das Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben haben, können Sie dies als Stichpunkt unter dem jeweiligen Abschluss ergänzen.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie bei Ihren Aktivitäten (z.B. Besuchsdienst beim Roten Kreuz) konkreter, wie oft und in welchem Umfang Sie aktiv waren und welche Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
-- Falls Sie als Assessment Guide (https://shsg.ch/services) tätig waren, können Sie dies als Engagement ergänzen – aber nur, wenn es zutrifft.
+- Beschreiben Sie bei Ihren Aktivitäten, wie oft und in welchem Umfang Sie diese ausgeübt haben und welche konkreten Aufgaben oder Erfolge damit verbunden waren.
+- Falls Sie als Assessment Guide (SHSG) tätig waren, können Sie dies als Engagement ergänzen, sofern es zutrifft.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Niveaustufen sind einheitlich und ohne unbelegte Eigenschaftswörter angegeben.
+- Die Angaben zu Ihren Sprach- und IT-Kenntnissen sind präzise und einheitlich formuliert.
 
 **INTERESSEN** 🟢 Stark
 
-- Ihre Interessen sind mit Beispielen und Kontext versehen, was einen authentischen Einblick in Ihre persönlichen Schwerpunkte gibt.
+- Ihre Interessen sind mit Beispielen und Kontext versehen, was einen persönlichen Einblick gibt.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder Kurse absolviert haben (z.B. Data Science, Nachhaltigkeit, IT), können Sie diese in einem eigenen Abschnitt aufführen. Das bietet Raum, zusätzliche Kompetenzen sichtbar zu machen, die nicht direkt aus Studium oder Beruf hervorgehen.
+- Falls Sie relevante Zertifikate oder Weiterbildungen (z.B. das Certificate in Data Science Fundamentals (DSF) oder Bloomberg Market Concepts (BMC)) erworben haben, können Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
