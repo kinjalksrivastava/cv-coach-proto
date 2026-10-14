@@ -394,11 +394,34 @@ IMPACT_MARKER = re.compile(
 
 INDENTED_LINE = re.compile(r"^(?:\t| {2,})\S")
 
+# A title or degree line, as against a sentence of prose. Long enough for
+# "Bachelor of Technology (BTech) in Electronics and Communication Engineering
+# CGPA: 9.34/10.00", short enough to exclude a described duty.
+MAX_TITLE_LINE = 100
+
+
+def _title_shaped(candidate: str) -> bool:
+    """
+    Could this line be an employer, an institution or a degree?
+
+    A wrapped bullet continues in lower case - "and undergraduate students at
+    NYU Stern.", "decoding accuracy." - and those were being taken as the role
+    title of the entry below them. A real title line does not begin in lower
+    case in either language, German capitalising its nouns and English its
+    proper ones.
+    """
+    first = candidate.strip()[:1]
+    return bool(first) and not (first.isalpha() and first.islower())
+
 # A single date closing a line, rather than a range: "…, June 1992", "Matura
 # 2019", "… 06/2024". Only at the end, where an entry puts its date.
 SINGLE_DATE_END = re.compile(
     r"(?:[A-Za-zÀ-ÖØ-öø-ÿ]{3,9}\.?,?[ \t]{0,2}|(?:0?[1-9]|1[0-2])\s*[./]\s*)?"
-    r"(?:19|20)\d{2}\s*[.,;)]?\s*$")
+    # A closing bracket belongs here with the other trailing punctuation: a
+    # paper line ends "[Submitted ACL 2026]", and without it that section
+    # resolved to zero entries, so no rule ever looked at it and it could only
+    # come back Strong.
+    r"(?:19|20)\d{2}\s*[.,;)\]]?\s*$")
 
 
 def _is_bullet(line: str) -> bool:
@@ -524,9 +547,32 @@ def _entries(body: list[str], extra_dates: frozenset = frozenset()) -> list[dict
             # "September 2021 - April 2024 St. Gallen, CH" as the whole entry and
             # then report a missing job title that is plainly there.
             title = ""
+            # Some CVs put the institution and its dates on the entry line and
+            # the degree UNDERNEATH it:
+            #
+            #     University of St. Gallen (HSG), Switzerland  Feb 2026 - Present
+            #     PhD in Management
+            #     New York University, NY                      Sept 2023 - May 2025
+            #     MSc Computer Science                         GPA: 3.97/4.00
+            #
+            # Searching upwards on that layout gives every entry the line that
+            # belongs to the entry above it, so a PhD at HSG was attributed to
+            # NYU. The tell is that the line below this one is the descriptor -
+            # undated, not a bullet, short enough to be a title rather than
+            # prose. Where that is so, the entry's own line is below it and
+            # nothing above it belongs to this entry at all.
+            following = body[offset + 1].strip() if offset + 1 < len(body) else ""
+            if (following and not _is_bullet(following) and not _anchors(following)
+                    and _title_shaped(following)
+                    and len(following) <= MAX_TITLE_LINE
+                    and not following.endswith(".")):
+                title = following
             for back in range(offset - 1, max(offset - 3, -1), -1):
+                if title:
+                    break
                 candidate = body[back].strip()
-                if candidate and not _is_bullet(candidate) and not _anchors(candidate):
+                if (candidate and not _is_bullet(candidate) and not _anchors(candidate)
+                        and _title_shaped(candidate)):
                     title = candidate
                     break
             if not title and not DATE_RANGE.sub("", line).strip(" \t,|–—-"):
@@ -929,6 +975,7 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
     # pointed every later check at the last bullet on the page, and the test
     # suite now refuses any rebinding at all.
     text = date_check.join_split_ranges(document)
+    text = _normalise_bullet_markers(text)
     sliced = _split_sections(text, sections)
 
     # Every dated range in the document, used to tell a real gap from a period
@@ -1280,6 +1327,51 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
             and categories.index("Education") > categories.index("Experience")
         ),
     }
+
+
+# A CV that marks its bullets with a character we have never seen reads as a CV
+# with no bullets at all - which is the most damaging finding the tool makes,
+# and one of Career Services' own good student CVs was getting it for 24 bullets
+# marked ">". Collecting glyphs one at a time does not end, so the document is
+# asked instead: a character that opens three or more lines and is followed by a
+# space is that document's bullet, whatever it is. Once is not a pattern, so a
+# stray "£" or an opening bracket is left alone.
+MIN_MARKER_REPEATS = 3
+
+
+def _document_bullet_markers(text: str) -> set[str]:
+    counts: dict[str, int] = {}
+    for line in text.splitlines():
+        stripped = line.lstrip()
+        if len(stripped) < 4 or stripped[1:2] not in (" ", "\t"):
+            continue
+        first = stripped[0]
+        if first.isalnum() or first.isspace() or first in BULLET_CHARS:
+            continue
+        counts[first] = counts.get(first, 0) + 1
+    return {g for g, n in counts.items() if n >= MIN_MARKER_REPEATS}
+
+
+def _normalise_bullet_markers(text: str) -> str:
+    """
+    This document's own bullet character rewritten to one we recognise.
+
+    Only the character is changed, never the number of lines or their order -
+    section detection has already handed back line indices against this text.
+    The ATS check still reads the original, so an unusual glyph is still
+    reported as a parsing risk; it is just no longer invisible to every rule.
+    """
+    markers = _document_bullet_markers(text)
+    if not markers:
+        return text
+    out = []
+    for line in text.splitlines():
+        stripped = line.lstrip()
+        if stripped[:1] in markers:
+            out.append(line[:len(line) - len(stripped)] + "-" + stripped[1:])
+        else:
+            out.append(line)
+    return "\n".join(out)
 
 
 def typo_phrases(facts: dict) -> list[str]:

@@ -549,7 +549,14 @@ def _body_name_is_corroborated(name: str, lines: list[str]) -> bool:
             return True
         if "@" in line or _placeholder("email") in line or _placeholder("phone") in line:
             return True
-        if PHONE_CANDIDATE_RE.search(line) and any(ch.isdigit() for ch in line):
+        # A real phone number beside the name, not merely phone-shaped digits.
+        # "Senior Transformation Excellence Consultant  01/2019 - 01/2021" was
+        # corroborating itself on its own date range, so the NER model's reading
+        # of "Excellence Consultant" as a person was trusted and a job title on
+        # Career Services' own template was replaced by [NAME REDACTED] - after
+        # which the tool reported the entry as having no role title.
+        if any(_is_phone(match.group(0), line)
+               for match in PHONE_CANDIDATE_RE.finditer(line)):
             return True
     return False
 

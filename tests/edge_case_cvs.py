@@ -641,7 +641,56 @@ Research Intern, NLP Lab, Kookmin University           Jul 2022 - Sept 2022
     else:
         print("ok    gap_only_where_nothing_covers_it")
 
-    print(f"\n{len(CASES) + 6 - failures}/{len(CASES) + 6} passed")
+    # A CV that marks its bullets with a character the vocabulary has never seen
+    # read as a CV with no bullets at all. One of Career Services' own good
+    # student CVs marks all 24 of its bullets with ">" and was being told it had
+    # none - the most damaging finding the tool makes. A character that opens
+    # three or more lines is that document's bullet; once is not a pattern.
+    MARKER_CV = """EXPERIENCE
+Intern, Example AG, Zurich        09/2023 - 03/2024
+> Prepared the monthly reporting pack for the management team
+> Reconciled the general ledger across three entities
+> Built the variance commentary for the quarterly review
+£ 1,200 was the budget line referenced above
+"""
+    markers = cv_facts._document_bullet_markers(MARKER_CV)
+    normalised = cv_facts._normalise_bullet_markers(MARKER_CV)
+    bullets = [l for l in normalised.splitlines() if cv_facts._is_bullet(l)]
+    stray_eaten = any("1,200 was the budget" in b for b in bullets)
+    if markers != {">"} or len(bullets) != 3 or stray_eaten:
+        failures += 1
+        print("FAIL  document_supplies_its_own_bullet_marker")
+        print(f"        markers={markers} bullets={len(bullets)} stray_taken={stray_eaten}")
+    else:
+        print("ok    document_supplies_its_own_bullet_marker")
+
+    # A body name is only trusted beside something that corroborates it. A date
+    # range is phone-shaped, so "Senior Transformation Excellence Consultant
+    # 01/2019 - 01/2021" corroborated itself, the NER model's reading of
+    # "Excellence Consultant" as a person was trusted, and a job title on Career
+    # Services' own template was replaced by [NAME REDACTED] - after which the
+    # tool reported that entry as having no role title.
+    ROLE_LINE = "Senior Transformation Excellence Consultant\t01/2019 \u2013 01/2021"
+    REFEREE_LINES = ["References", "Anna Meier, Example AG, +41 79 123 45 67"]
+    PROF_LINE = ["- Facilitated coursework under Prof. Vasant Dhar at NYU Stern"]
+    corroboration = [
+        ("a date range does not corroborate a name", False,
+         lambda: pii._body_name_is_corroborated("Excellence Consultant", [ROLE_LINE])),
+        ("a real phone does", True,
+         lambda: pii._body_name_is_corroborated("Anna Meier", REFEREE_LINES)),
+        ("a title prefix does", True,
+         lambda: pii._body_name_is_corroborated("Vasant Dhar", PROF_LINE)),
+    ]
+    wrong = [name for name, expected, probe in corroboration if bool(probe()) != expected]
+    if wrong:
+        failures += 1
+        print("FAIL  body_name_corroboration")
+        for name in wrong:
+            print(f"        {name}")
+    else:
+        print("ok    body_name_corroboration")
+
+    print(f"\n{len(CASES) + 8 - failures}/{len(CASES) + 8} passed")
     return 1 if failures else 0
 
 

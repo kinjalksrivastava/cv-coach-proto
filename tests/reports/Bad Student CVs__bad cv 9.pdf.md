@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist übersichtlich und zeigt einen klaren Werdegang ohne Lücken oder Überschneidungen. Die Rollenbezeichnungen und Beschreibungen in den Abschnitten Praktische Erfahrungen und Ehrenamtliche Tätigkeiten sind konsistent und nachvollziehbar. Allerdings fehlen durchgehend Bullet Points, sodass ein Leser nicht erkennen kann, was Sie konkret in den jeweiligen Positionen gemacht oder erreicht haben. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls Sie relevante Kenntnisse oder Sprachfähigkeiten haben, könnten Sie diese ergänzen. Nichts im Lebenslauf verweist auf Erfahrung mit KI oder KI-Tools; falls Sie hier Kenntnisse oder Erfahrungen haben, könnten Sie diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für eine gezielte Rückmeldung zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle nachreichen.
+Ihr Lebenslauf ist übersichtlich und weist eine klare Struktur sowie konsistente Angaben zu Daten und Rollen auf. Die wichtigsten Stationen Ihres Bildungs- und Berufswegs sind vollständig aufgeführt, und es gibt keine unerklärten Lücken im Zeitverlauf. Allerdings fehlen durchgehend beschreibende Bullet Points, sodass ein Leser kaum erkennen kann, was Sie in den jeweiligen Positionen konkret gemacht oder erreicht haben. Es gibt aktuell keinen Hinweis auf Erfahrungen mit KI oder KI-Tools – falls Sie hier relevante Kenntnisse oder Projekte haben, könnten Sie diese ergänzen. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Ihre Abschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
-  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Schwerpunkte, eine Abschlussarbeit (inklusive Thema und Methode), ein Austauschsemester, Zertifikate oder besondere Programme wie das HSG Mentoring Programme nennen – immer nur, was tatsächlich zutrifft und für Ihr Ziel relevant ist.
+- 🔴 **Fehlende inhaltliche Angaben zu Ihren Abschlüssen**  
+  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Schwerpunkte, Abschlussarbeiten, Austauschsemester oder Zusatzqualifikationen nennen – jeweils nur, wenn sie tatsächlich zutreffen und für Ihr Ziel relevant sind.
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Ergänzen Sie unter jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) stichpunktartig, was Sie konkret gemacht haben. Ohne diese Angaben bleibt unklar, welche Aufgaben, Verantwortlichkeiten oder Ergebnisse Sie hatten.
-- 🟠 **Datumsangaben enthalten nur das Jahr, nicht den Monat**  
-  Ergänzen Sie bei allen Zeiträumen den Monat, z.B. "09/2023 – 06/2024". So kann ein Leser die Dauer Ihrer Tätigkeiten besser einschätzen.
-- 🟡 **Kein Abschnitt zu Skills & Languages vorhanden**  
-  Falls Sie relevante IT-Kenntnisse, Sprachkenntnisse oder andere Hard Skills haben, fügen Sie einen eigenen Abschnitt hinzu.
-- 🟡 **Noten müssen verständlicher gemacht werden**  
-  Geben Sie Noten immer im Format "2,20 / 1,00" an, damit auch internationale Leser sie richtig einordnen können.
+  Ergänzen Sie unter jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) einige Bullet Points, die konkret beschreiben, was Sie dort gemacht haben. Ohne diese Angaben bleibt unklar, welche Kompetenzen und Erfahrungen Sie mitbringen.
+- 🔴 **Fehlende Beschreibungen in der Berufserfahrung**  
+  Fügen Sie unter jeder Position in der Berufserfahrung Bullet Points hinzu, die Ihre Aufgaben, Methoden und erzielten Ergebnisse darstellen – mit Fokus auf übertragbare Fähigkeiten.
+- 🟠 **Datumsangaben ohne Monatsangabe**  
+  Ergänzen Sie bei allen Zeiträumen die Monatsangabe, damit der Umfang Ihrer Tätigkeiten klar erkennbar ist.
+- 🟡 **Fehlende Sektion zu Skills & Languages**  
+  Falls Sie relevante Sprachkenntnisse oder IT-Kenntnisse haben, fügen Sie eine entsprechende Sektion hinzu.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,25 +46,22 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie Bullet Points, die Ihre konkreten Tätigkeiten, Schwerpunkte oder besondere Leistungen im Studium beschreiben.
-- Passen Sie die Notenangabe an das internationale Format an, z.B. "2,20 / 1,00".
-- Ergänzen Sie bei allen Zeiträumen den Monat, damit die Dauer der einzelnen Stationen klar wird.
+- Fügen Sie Bullet Points hinzu, die Ihre wichtigsten Lernerfahrungen, Projekte oder besondere Leistungen hervorheben.
+- Korrigieren Sie die Notenangabe zur Abiturnote auf das internationale Format (z. B. 2,20 / 1,00), damit sie auch im Ausland verständlich ist.
+- Falls Sie am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnehmen, können Sie dies als Bullet Point unter dem entsprechenden Abschluss aufführen, sofern es für Ihr Ziel relevant ist.
 
 **Praktische Erfahrungen** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie unter jeder Position stichpunktartig hinzu, was Sie konkret gemacht haben: Welche Aufgaben hatten Sie? Wie haben Sie diese umgesetzt? Wer hat davon profitiert? Was war das Ergebnis?
-- Ergänzen Sie die Monatsangaben zu den Zeiträumen, damit die Dauer der Tätigkeiten nachvollziehbar ist.
+- Stellen Sie dabei besonders die Kompetenzen und Erfahrungen heraus, die für Ihre angestrebte Richtung relevant sind.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie unter jeder ehrenamtlichen Tätigkeit stichpunktartig, was Sie konkret gemacht haben, z.B. Organisation, Teamgröße, besondere Herausforderungen oder Ergebnisse.
-- Fügen Sie Monatsangaben zu den Zeiträumen hinzu, um die Dauer der Engagements klar zu machen.
+- Ergänzen Sie, wo möglich, konkrete Angaben zu Umfang, Teamgröße oder besonderen Ergebnissen, um Ihre Rolle noch greifbarer zu machen.
 
 **Zusätzliche Teilnahmen** 🟠 Braucht Aufmerksamkeit
 
-- Beschreiben Sie in Stichpunkten, was Sie im Rahmen des Mentoring-Programms konkret gemacht oder gelernt haben – z.B. Themen der Weiterbildungsseminare, besondere Projekte oder persönliche Entwicklungsschritte.
-- Ergänzen Sie die Monatsangaben zum Zeitraum.
-- Falls Sie weitere Interessen oder Hobbys haben, können Sie diese mit Details ergänzen: Was genau machen Sie, wie oft, auf welchem Niveau?
+- Beschreiben Sie genauer, welche Art von persönlicher Entwicklung oder Weiterbildung Sie im Rahmen des Mentoring-Programms verfolgt haben.
+- Geben Sie bei Interessen oder persönlichen Entwicklungsthemen an, was genau Sie tun, wie oft und auf welchem Niveau.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -72,16 +69,15 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Erstellen Sie einen Abschnitt, in dem Sie Ihre Sprachkenntnisse (mit Niveau, idealerweise nach GER: A1–C2) und IT-Kenntnisse (mit Niveau, z.B. "Excel (fortgeschritten)") aufführen.
-- Falls Sie keine relevanten Kenntnisse haben, können Sie diesen Abschnitt weglassen.
+- Fügen Sie eine Sektion hinzu, in der Sie Ihre Sprachkenntnisse (idealerweise mit CEFR-Level, z. B. B2, C1) und IT-Kenntnisse (mit Niveauangabe, z. B. Excel – Fortgeschritten) aufführen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science Fundamentals, Integrative Sustainability Management) absolviert haben, können Sie diese hier aufführen.
+- Ergänzen Sie diese Sektion, wenn Sie z. B. das Certificate in Data Science Fundamentals (DSF) oder das Certificate in Integrative Sustainability Management (SuM-HSG) erworben haben.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Fügen Sie, falls vorhanden, persönliche Interessen oder Hobbys hinzu und beschreiben Sie diese kurz: Was machen Sie, wie oft, auf welchem Niveau?
+- Fügen Sie diese Sektion hinzu, wenn Sie Hobbys oder Interessen haben, die Sie regelmäßig verfolgen – nennen Sie dabei Art, Häufigkeit und ggf. besondere Leistungen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
