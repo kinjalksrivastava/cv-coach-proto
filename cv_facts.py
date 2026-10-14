@@ -310,6 +310,75 @@ INTEREST_LINE = re.compile(r"^\s*(hobbies|interests|freizeit|interessen)\b", re.
 # with no real timeline problem. Overlaps are narrower still: two concurrent
 # club roles are normal, so only jobs are checked against each other.
 DATE_GAP_CATEGORIES = {"Education", "Experience"}
+
+# Career Services' tier 3: "most recent experience has to be on top in each
+# section". Ordering is by when an entry ENDED, with an ongoing one counting as
+# today, because a role running since 2019 belongs above an internship that
+# ended in 2022 - sorting by start date would call that correct CV wrong. A
+# violation needs six clear months between the two, so a year-only date or two
+# entries in the same term never produce a finding.
+CHRONOLOGY_MARGIN_MONTHS = 6
+
+# Mixed tense, English only. German CVs are written in nominal style
+# ("Unterstützung bei...") where the rule does not apply, which is the same
+# reason the British/American check is English-only. Only the two endings a
+# reader cannot misread count: "Led" against "Leading". A handful of -ing words
+# are ordinary nouns in a CV and are left out rather than guessed at.
+GERUND_OPENER = re.compile(r"^(\w{4,}ing)\b")
+PAST_OPENER = re.compile(r"^(\w{3,}ed)\b")
+GERUND_NOUNS = {"marketing", "engineering", "consulting", "accounting",
+                "banking", "sourcing", "programming", "manufacturing"}
+
+
+def _entry_chronology(sliced: list[dict], extra_dates=None) -> dict | None:
+    """The first section whose entries do not run newest-first, or None."""
+    from guardrails import dates as date_check
+    for section in sliced:
+        if section["category"] not in DATE_GAP_CATEGORIES:
+            continue
+        spans = []
+        for entry in _entries(section["lines"], extra_dates):
+            ranges = date_check.extract_ranges(
+                f"{entry['title_line']}\n{entry['line']}")
+            if not ranges:
+                continue
+            latest = max(ranges, key=lambda r: r["end_idx"])
+            spans.append((latest["start_idx"], latest["end_idx"], latest["raw"]))
+        # An entry below only counts as misplaced when it is newer on BOTH
+        # measures. A CV ordered by start date is a CV ordered correctly - a
+        # degree running 09/2022-02/2026 above a job running 02/2019-now is
+        # not out of order, and flagging it was a finding about nothing.
+        for (a_start, a_end, a_raw), (b_start, b_end, b_raw) in zip(spans, spans[1:]):
+            if (b_end - a_end >= CHRONOLOGY_MARGIN_MONTHS
+                    and b_start - a_start >= CHRONOLOGY_MARGIN_MONTHS):
+                return {"section": section["heading"],
+                        "earlier": a_raw, "later": b_raw}
+    return None
+
+
+def _mixed_tense(sliced: list[dict], doc_language: str) -> dict | None:
+    """A section whose bullets mix past tense and -ing, with one of each named."""
+    if doc_language == "de":
+        return None
+    for section in sliced:
+        if section["category"] not in DETAIL_CATEGORIES:
+            continue
+        bullets = [_bullet_text(line) for line in section["lines"] if _is_bullet(line)]
+        if len(bullets) < 3:
+            continue
+        past, gerund = [], []
+        for bullet in bullets:
+            match = PAST_OPENER.match(bullet)
+            if match:
+                past.append(bullet)
+                continue
+            match = GERUND_OPENER.match(bullet)
+            if match and match.group(1).lower() not in GERUND_NOUNS:
+                gerund.append(bullet)
+        if past and gerund:
+            return {"section": section["heading"],
+                    "past": past[0], "gerund": gerund[0]}
+    return None
 DATE_OVERLAP_CATEGORIES = {"Experience"}
 
 # A bullet that opens with a duty phrase but lands on a measured result is not a
@@ -636,6 +705,74 @@ def _language_levels(sliced: list[dict]) -> dict:
     return {"section": section, "missing": missing, "plain_only": plain_only}
 
 
+# Career Services' tier 5 asks for a proficiency level against technical skills,
+# the same way it asks for CEFR against languages. A language name is excluded
+# here because _language_levels already has it, and a trait word is excluded
+# because the buzzword finding already has that - otherwise one listing comes
+# back as three separate issues.
+LANGUAGE_NAMES = {
+    "english", "german", "french", "italian", "spanish", "portuguese", "dutch",
+    "russian", "chinese", "mandarin", "japanese", "arabic", "hindi", "swedish",
+    "norwegian", "danish", "polish", "czech", "turkish", "greek", "latin",
+    "englisch", "deutsch", "französisch", "italienisch", "spanisch",
+    "portugiesisch", "niederländisch", "russisch", "chinesisch",
+    "japanisch", "arabisch", "schwedisch", "polnisch", "türkisch",
+    "griechisch", "latein", "mutterspr", "schweizerdeutsch",
+}
+SKILL_LEVEL_TOKEN = re.compile(
+    r"\b(native|fluent|advanced|intermediate|basic|proficient|beginner|expert|"
+    r"conversational|working knowledge|[ABC][12]|grundkenntnisse|grundlagen|"
+    r"fortgeschritten|verhandlungssicher|sehr gut|gut|sicher|erfahren|"
+    r"kenntnisse)\b", re.IGNORECASE)
+# What the CV calls a technical list. Anything outside this - interests,
+# certificates, soft skills - has its own finding or none at all.
+TECHNICAL_LABEL = re.compile(
+    r"\b(it|edv|ikt|technical|technisch\w*|computer|software|hardware|digital\w*|"
+    r"tool\w*|programmier\w*|programming|coding|anwendung\w*|application\w*|"
+    r"system\w*|data|daten|analytic\w*|office)\b", re.IGNORECASE)
+SKILL_ITEM_SPLIT = re.compile(r"\s*[,;/()\u2022\u00b7|]\s*|\s+(?:and|und)\s+")
+
+
+def _skills_without_level(sliced: list[dict]) -> tuple[str | None, list[str]]:
+    """
+    Technical skills listed with no indication of how well they are known.
+
+    Only where the CV itself says the list is technical - a heading like "IT
+    Skills" or a label like "Software:". Reading every line of a skills section
+    as a technical skill produced findings about interests, course titles and a
+    date range, which is the manufactured feedback Career Services objected to.
+    """
+    section, bare = None, []
+    for block in sliced:
+        if block["category"] != "Skills & Languages":
+            continue
+        heading_is_technical = bool(TECHNICAL_LABEL.search(block["heading"]))
+        for line in block["lines"]:
+            stripped = _bullet_text(line)
+            if not stripped or SKILL_LEVEL_TOKEN.search(stripped):
+                continue
+            label, _, rest = stripped.partition(":")
+            labelled = bool(rest.strip()) and bool(TECHNICAL_LABEL.search(label))
+            if not (labelled or heading_is_technical):
+                continue
+            for item in SKILL_ITEM_SPLIT.split(rest if labelled else stripped):
+                item = item.strip(" .-\u2013\u2014()")
+                if not (1 < len(item) <= 28) or len(item.split()) > 3:
+                    continue
+                low = item.lower()
+                if any(low.startswith(n) for n in LANGUAGE_NAMES):
+                    continue
+                if low in BUZZWORDS or not any(c.isalpha() for c in item):
+                    continue
+                # A year or a date range is not a skill. Certificate lines are
+                # full of them, and they were being listed back as skills.
+                if re.search(r"(19|20)\d{2}", item) or DATE_RANGE.search(item):
+                    continue
+                section = section or block["heading"]
+                bare.append(item)
+    return (section, bare) if len(bare) >= 3 else (None, [])
+
+
 def _single_word_interests(sliced: list[dict]) -> tuple[str | None, list[str]]:
     """
     "Chess", "Shogi" on their own tell a reader nothing. Career Services' rule is
@@ -856,6 +993,7 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
     page_count = meta.get("page_count")
     char_count = meta.get("char_count") or len(text.strip())
 
+    skills_bare_section, skills_bare = _skills_without_level(sliced)
     section_facts, all_bullets = [], []
     for section in sliced:
         body = section["lines"]
@@ -1079,8 +1217,13 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
         "single_word_interests": _single_word_interests(sliced)[1],
         "single_word_interests_section": _single_word_interests(sliced)[0],
         "language_levels": _language_levels(sliced),
+        "skills_without_level": skills_bare,
+        "skills_without_level_section": skills_bare_section,
+        "entry_chronology": _entry_chronology(sliced, extra_dates),
+        "mixed_tense": _mixed_tense(sliced, doc_language),
         "grades": grades,
         "grade_notes": grading.describe(grades),
+        "grade_convention": grading.convention_note(grades),
         "grade_consistency": grading.consistency_note(len(comparable), entries_with_grade),
         "missing_standard_sections": missing_standard,
         "missing_report_sections": _missing_report_sections(sliced, lowered, lang),

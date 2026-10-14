@@ -373,6 +373,28 @@ def assess(facts: dict, target_role: str = "") -> dict:
             "Some bullets end with a full stop and others do not.",
             guidance="Choose one and make every bullet match.",
         ))
+    chronology = facts.get("entry_chronology")
+    if chronology:
+        issues.append(_issue(
+            3, "entry_chronology",
+            f'Entries in "{chronology["section"]}" are not newest-first',
+            f'"{chronology["earlier"]}" is listed above "{chronology["later"]}".',
+            section=chronology["section"],
+            guidance="Within each section the most recent entry goes at the top. A "
+                     "reader scans the first entry of a section and assumes it is where "
+                     "you are now.",
+        ))
+    tense = facts.get("mixed_tense")
+    if tense:
+        issues.append(_issue(
+            3, "mixed_tense",
+            f'Bullet tense changes within "{tense["section"]}"',
+            f'"{tense["past"][:52]}" against "{tense["gerund"][:52]}".',
+            section=tense["section"],
+            guidance="Pick one and hold it across the section - past tense for work that "
+                     "is finished, present for a role you are still in. Switching between "
+                     "them inside one section reads as carelessness.",
+        ))
     if facts["education_after_experience"]:
         issues.append(_issue(
             3, "education_order", "Education comes after work experience",
@@ -431,6 +453,19 @@ def assess(facts: dict, target_role: str = "") -> dict:
             " ".join(facts["grade_notes"]),
             section=education_section, guidance="",
         ))
+    if facts.get("grade_convention"):
+        issues.append(_issue(
+            5, "grade_convention", "Showing this grade is your call",
+            facts["grade_convention"], section=education_section,
+            # Career Services' wording, and the limit of it: state the
+            # convention, never judge the number. "Below 5.00 is weak" is the
+            # scoring this tool exists not to do.
+            guidance="State the convention and leave the decision with the student: "
+                     "grades are optional on a CV, and are commonly included from 5.00 "
+                     "upward. Below that it is worth discussing with a Career Services "
+                     "coach whether to show it. Do not say the grade is low, weak or bad, "
+                     "and do not tell them to remove it.",
+        ))
     if facts["grade_consistency"]:
         issues.append(_issue(
             5, "grade_consistency", "Grades are shown for some degrees but not others",
@@ -473,6 +508,16 @@ def assess(facts: dict, target_role: str = "") -> dict:
                      "the last certificate you sat.",
         ))
 
+    if facts.get("skills_without_level"):
+        issues.append(_issue(
+            5, "skills_no_level", "Technical skills are listed without a level",
+            "Listed with no indication of how well: "
+            + ", ".join(facts["skills_without_level"][:5]),
+            section=facts.get("skills_without_level_section"),
+            guidance="Say how well you know each one - Basic, Intermediate, Advanced, or "
+                     "what you have actually built with it. A bare list leaves a reader "
+                     "guessing, and they tend to guess low.",
+        ))
     if facts.get("single_word_interests"):
         issues.append(_issue(
             5, "bare_interests", "Interests are listed without any detail",

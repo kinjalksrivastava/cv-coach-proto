@@ -270,6 +270,28 @@ def describe(grades: list[dict]) -> list[str]:
     return notes
 
 
+# Career Services' tier-5 item: grades are optional, and the convention in this
+# market is to show them from 5.00 upward. This states the convention and
+# nothing about the grade itself - there is still no "below 5.00 is weak" here,
+# which is the scoring the whole product refuses to do. The exception is the
+# coach's call, which is why the note says so rather than telling the student
+# to delete anything.
+SWISS_CONVENTION_THRESHOLD = 5.0
+
+
+def convention_note(grades: list[dict]) -> str | None:
+    """Where a shown grade sits below the threshold the convention assumes."""
+    for grade in grades:
+        if not grade["plausible"] or grade["value"] is None:
+            continue
+        if not (grade.get("scale") or "").startswith("Swiss"):
+            continue
+        if grade["value"] < SWISS_CONVENTION_THRESHOLD:
+            return (f'The grade "{grade["raw"]}" is shown on the line '
+                    f'"{grade["line"][:60]}".')
+    return None
+
+
 def consistency_note(education_entry_count: int, entries_with_grades: int) -> str | None:
     """
     Career Services' rule: showing a grade for one degree and not another invites

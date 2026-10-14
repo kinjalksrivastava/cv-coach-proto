@@ -18,7 +18,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import cv_facts  # noqa: E402
+import cv_facts
+import grading  # noqa: E402
 import severity  # noqa: E402
 import format_check  # noqa: E402
 from guardrails import headings as heading_lookup  # noqa: E402
@@ -528,7 +529,79 @@ geb. 12.03.1999
     else:
         print("ok    date_of_birth_only_where_it_belongs")
 
-    print(f"\n{len(CASES) + 4 - failures}/{len(CASES) + 4} passed")
+    # The four tier rules from Career Services' prioritisation list that had no
+    # implementation until they were checked against it: within-section
+    # ordering, bullet tense, a level against technical skills, and the
+    # convention on showing a grade. Each one is checked both ways - it has to
+    # fire where the list says it should and stay quiet everywhere else, which
+    # is where the first version of all four went wrong.
+    def _section(heading, category, lines):
+        return [{"heading": heading, "category": category, "lines": lines}]
+
+    PRIORITISATION = [
+        ("chronology fires on oldest-first", True, lambda: cv_facts._entry_chronology(
+            _section("EDUCATION", "Education", [
+                "Kantonsschule Zurich  Sep 2013 - Jun 2022",
+                "University of St. Gallen  Sep 2023 - present"]))),
+        ("chronology quiet when ordered by start", False, lambda: cv_facts._entry_chronology(
+            _section("AUSBILDUNG", "Education", [
+                "BA International Affairs  09/2022 - 02/2026",
+                "Berufsmatura  02/2019 - Heute"]))),
+        ("tense fires on mixed bullets", True, lambda: cv_facts._mixed_tense(
+            _section("EXPERIENCE", "Experience", [
+                "- Led a team of four analysts through quarterly close",
+                "- Building dashboards for the regional sales desk",
+                "- Managed the reporting calendar end to end"]), "en")),
+        ("tense quiet when consistent", False, lambda: cv_facts._mixed_tense(
+            _section("EXPERIENCE", "Experience", [
+                "- Led the close process", "- Managed four analysts",
+                "- Built the reporting dashboard"]), "en")),
+        ("tense quiet on a German CV", False, lambda: cv_facts._mixed_tense(
+            _section("EXPERIENCE", "Experience", [
+                "- Led a team of four analysts through quarterly close",
+                "- Building dashboards for the regional sales desk",
+                "- Managed the reporting calendar end to end"]), "de")),
+        ("tense quiet on an -ing noun", False, lambda: cv_facts._mixed_tense(
+            _section("EXPERIENCE", "Experience", [
+                "- Managed the desk", "- Marketing of three product lines",
+                "- Delivered the review"]), "en")),
+        ("skills level fires on a technical list", True, lambda: cv_facts._skills_without_level(
+            _section("IT SKILLS", "Skills & Languages",
+                     ["Software: Excel, SAP, Tableau"]))[1]),
+        ("skills level quiet on interests", False, lambda: cv_facts._skills_without_level(
+            _section("SKILLS & INTERESTS", "Skills & Languages",
+                     ["Interests: Skiing, Hiking, Cooking, Travelling"]))[1]),
+        ("skills level quiet on certificates", False, lambda: cv_facts._skills_without_level(
+            _section("CERTIFICATES", "Skills & Languages",
+                     ["edX (2022), Coursera (2023), IBM (2021)"]))[1]),
+        ("grade convention fires below 5.00", True, lambda: grading.convention_note(
+            grading.find_grades("BA Business Administration, HSG | GPA: 4.84 / 6.0"))),
+        ("grade convention quiet above 5.00", False, lambda: grading.convention_note(
+            grading.find_grades("BA Business Administration, HSG | GPA: 5.420 / 6.0"))),
+        # A German 1.3 is excellent. The threshold is a Swiss-scale convention
+        # and must not be read across scales, or the note tells a student with
+        # a top Abitur that showing it is a judgement call.
+        ("grade convention quiet on a German scale", False, lambda: grading.convention_note(
+            grading.find_grades("Abitur, Collegium Josephinum Bonn | Abschlussnote: 1,3"))),
+    ]
+    wrong = []
+    for name, should_fire, probe in PRIORITISATION:
+        try:
+            fired = bool(probe())
+        except Exception as error:                        # a rule that crashes is a failure
+            wrong.append(f"{name}: raised {error!r}")
+            continue
+        if fired != should_fire:
+            wrong.append(f"{name}: {'silent' if should_fire else 'fired'}")
+    if wrong:
+        failures += 1
+        print("FAIL  prioritisation_list_rules")
+        for line in wrong:
+            print(f"        {line}")
+    else:
+        print("ok    prioritisation_list_rules")
+
+    print(f"\n{len(CASES) + 5 - failures}/{len(CASES) + 5} passed")
     return 1 if failures else 0
 
 

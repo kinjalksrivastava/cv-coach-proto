@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape, with a clear structure and strong evidence of results in your professional experience. The timeline is consistent, and your education section is well-presented with grades and relevant details. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice. There is no visible AI experience in your skills or project work—if you have relevant AI coursework, projects, or experience, consider adding it.
+Your CV presents a strong professional background with clear achievements and a well-structured timeline, and your education section is particularly clear with grades and relevant coursework. This review focuses on structure and completeness, as no target role or job description was provided—if you add a specific target, I can give more tailored feedback. There are a few areas where you can further strengthen your CV, especially by clarifying your personal contribution in some experience bullets, ensuring consistent tense, and adding detail to your interests and skills sections.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Some experience bullets focus on tasks rather than your specific contribution or the skills demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on transferable skills.
+  Rework the bullets that currently just state tasks to highlight what you did, how you did it, and why it mattered—especially focusing on the transferable skills you demonstrated. Where possible, add a result or outcome to show your impact.
+- 🟠 **Bullet tense changes within PROFESSIONAL EXPERIENCE**  
+  Choose either past or present tense for each role and keep it consistent throughout the section—use present tense for your current job and past tense for previous roles.
 - 🟠 **Education comes after work experience**  
-  For a student CV, education usually comes before work experience unless you have several years of directly relevant professional experience. Consider whether your current section order best supports your application.
+  For most student CVs, education should come before work experience unless you have several years of directly relevant professional experience. Consider whether your experience justifies the current order.
 - 🟡 **Interests are listed without any detail**  
-  Interests should include detail on what kind, how often, and to what level you participate. This gives a clearer picture of your engagement and commitment.
+  Add more detail to your interests—explain what kind, how often, and to what level you participate. This helps a reader understand your commitment and what you gain from these activities.
 - 🟡 **Trait words with nothing behind them**  
-  Trait words like 'analytical thinking' need to be backed up by examples in your experience bullets, rather than listed as standalone adjectives.
+  Move trait words like 'analytical thinking' into your experience bullets, where you can show how you demonstrated these qualities in practice.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,11 +45,12 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It clearly summarises your expertise, leadership, and interest in innovation, setting the tone for the rest of your CV.
+- It effectively summarises your expertise, leadership, and curiosity for new technologies.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework the bullets that only describe tasks (such as those beginning with 'Developed and supported complex transformation projects', 'Implemented innovative technological strategies', and 'Conducted analyses and workshops') to clarify what you personally did, how you did it, and what skill or impact you demonstrated.
+- Rework the bullets that currently just state duties (such as 'Developed and supported complex transformation projects') to clarify what you personally did, how you did it, and what skill or impact you demonstrated.
+- If you later target a specific role, highlight the experience and skills in this section that match the requirements of that position.
 
 **EDUCATION** 🟢 Strong
 
@@ -55,22 +58,20 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EXTRA-CURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For each activity, add detail on your involvement—what you did, how often, and any outcomes or skills developed. For example, specify the frequency and nature of your mentoring or volunteering.
-- If you have held an active role in any [HSG student club](https://shsg.ch/clubs), consider adding it here with a brief description of your responsibilities and achievements.
+- For each activity, add detail about your involvement—what you did, how often, and any outcomes or skills developed.
+- If you have held an active role in any [HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs), consider adding these with a brief description of your contribution.
 
 **ADDITIONAL SKILLS** 🟠 Needs attention
 
-- Move trait words like 'analytical thinking' into your experience bullets, where you can demonstrate them through concrete examples.
-- For each technical skill or tool, add a proficiency level (e.g., 'Python (Beginner)').
-- For languages, you have already included CEFR levels, which is the preferred format.
+- For each technical skill and language, ensure you have included a clear proficiency level (e.g., 'Python (beginner)', 'English (C1)').
 
 **INTERESTS** 🟢 Strong
 
-- You provide detail on your activities, such as participating in the Lake Zurich Crossing and singing in a choir, which gives a well-rounded impression.
+- You provide concrete examples, such as participating in the Lake Zurich Crossing and singing in a choir, which help bring your interests to life.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the MIT edX or IBM Coursera courses you mention), you could add a dedicated section to highlight these credentials.
+- If you have completed relevant courses or certificates, such as the 'Python for Data Science, AI & Development' course, consider adding a dedicated section to make these stand out.
 
 ### 5. Anything else from HSG worth adding?
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly. Headings, dates, and spelling are consistent, and you have included grades with their maximums, making them easy to interpret internationally. However, there are currently no bullet points under any of your roles or activities, which means a reader cannot see what you actually did in each position. If you have any experience with AI, machine learning, or related tools—whether in coursework, projects, or jobs—consider adding it, as nothing on your CV currently refers to this area. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Your CV is well-structured, fits neatly on one page, and presents your academic and professional background clearly, with consistent headings and dates. Grades are shown with their maximum, making them easy to interpret internationally, and your skills are listed without unsupported personal traits. However, there are currently no bullet points under any section, which means a recruiter cannot see what you actually did in each role or activity. This feedback focuses on structure and completeness, as no target role or job description was provided. Nothing on your CV currently mentions AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -36,19 +36,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to explain what you did beyond attending classes—such as key projects, thesis work, relevant coursework, or involvement in mentoring programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
+- Add bullet points under each degree to explain what you did beyond attending classes—such as key projects, relevant coursework, or involvement in initiatives like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) if relevant.
+- For your Maturity Thesis, include a bullet describing what you actually did—your research question, data, methods, and any tools used.
+- If you participated in an exchange semester or study abroad, consider adding it as a bullet under the relevant degree.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under each job to detail what you did, how you did it, and what changed as a result—this helps a reader understand your skills and contributions.
+- Add bullet points under each work experience entry to describe what you did, how you did it, who benefited, and what changed as a result.
+- Highlight any technical skills or tools you used in context, such as Python, Excel, or Bloomberg Terminal, within these bullets.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points under each extracurricular activity to describe your responsibilities, the skills you used, and any outcomes or impact you achieved.
+- Add bullet points under each extracurricular activity to explain your concrete contributions—such as team size, what you organised, or specific outcomes.
+- If you have been involved in other HSG student clubs (https://shsg.ch/clubs) or initiatives like the Consulting Club HSG (https://consultingclub.ch/), include these with bullets describing your role and achievements.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Skills are stated without unevidenced trait words, making this section clear and factual.
+- Your skills and languages are presented clearly and objectively, making it easy for a recruiter to assess your capabilities.
 
 **Profile** ⚪ Missing
 

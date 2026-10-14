@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Jede Position in der Berufserfahrung ist mit Titel und Beschreibung versehen, und Sie vermeiden unbelegte Eigenschaftswörter. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
+Dein Lebenslauf ist klar strukturiert, passt auf eine Seite und deckt alle wichtigen Stationen ohne Lücken ab. Die Rollen in der Berufserfahrung sind jeweils mit Titel und Beschreibung versehen, und du vermeidest unbelegte Eigenschaftswörter. Die Rückmeldungen beziehen sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fehlt aktuell ein Abschnitt zu Skills & Languages; falls du relevante Kompetenzen oder Sprachkenntnisse hast, solltest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,12 +18,12 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeiten Sie die betroffenen Bullet Points in der Berufserfahrung so, dass klar wird, was Sie konkret getan haben, wie Sie es umgesetzt haben und welches übertragbare Skill dahintersteht. Ein Ergebnis kann ergänzt werden, wenn es belegbar ist – der Fokus liegt aber auf der Kompetenz.
-- 🔴 **Die meisten Bullet Points zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
-  Gehen Sie jede Bullet Point in der Berufserfahrung durch und fragen Sie sich: Was habe ich gemacht? Wie? Warum war das wichtig? Welches Skill wird dadurch sichtbar? Ergänzen Sie ein Ergebnis, wenn es sinnvoll und belegbar ist, aber erfinden Sie keine Zahlen.
-- 🟠 **Fehlende Skills & Languages Section**  
-  Fügen Sie eine eigene Sektion für Skills & Languages hinzu, wenn Sie relevante Kompetenzen und Sprachkenntnisse haben. Das erleichtert es Recruitern, Ihre technischen Fähigkeiten und Sprachlevel auf einen Blick zu erfassen.
+- 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben nennen, sondern auch zeigen, wie du sie umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt hast. Ein konkretes Ergebnis hilft, wenn es belegbar ist.
+- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
+  Gehe jede Bullet Point in der Berufserfahrung durch und ergänze, was du konkret gemacht hast, wie du es gemacht hast und warum es für das Team oder das Unternehmen wichtig war. Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn du es belegen kannst.
+- 🟠 **Kein Abschnitt Skills & Languages vorhanden**  
+  Füge einen eigenen Abschnitt für Skills & Languages hinzu, wenn du relevante Kompetenzen und Sprachkenntnisse hast. Das erleichtert es Recruitern, deine technischen Fähigkeiten und Sprachlevel auf einen Blick zu erfassen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,26 +41,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Ausbildung enthält aktuelle Abschlüsse, Noten und relevante Zusatzaktivitäten, was einen klaren und vollständigen Überblick bietet.
+- Die Ausbildung enthält aktuelle Noten, Zusatzprogramme und relevante Aktivitäten, was einen guten Überblick über deinen akademischen Werdegang gibt.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern Ihren konkreten Beitrag, das Vorgehen und das dahinterliegende Skill sichtbar machen.
-- Ergänzen Sie, wo möglich, ein Ergebnis oder eine Veränderung, die Sie bewirkt haben – aber nur, wenn diese belegbar ist.
+- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Herangehensweise und die dahinterliegenden Fähigkeiten zeigen – zum Beispiel, wie du Prozesse verbessert, Teams geführt oder Ergebnisse erzielt hast.
+- Ergänze, wo möglich, konkrete Resultate oder Veränderungen, die durch dein Handeln entstanden sind, sofern diese belegbar sind.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Die Sektion hebt aktive Rollen und Verantwortlichkeiten außerhalb des Studiums hervor und zeigt so Engagement und Teamfähigkeit.
+- Die aufgeführten Aktivitäten belegen Eigeninitiative und Verantwortungsbewusstsein außerhalb des Studiums.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Sektion gibt einen schnellen Überblick über persönliche Interessen, Sprachkenntnisse und IT-Kompetenzen, ohne unbelegte Eigenschaftswörter.
+- Die Interessen und Kompetenzen sind klar benannt und verzichten auf unbelegte Eigenschaftswörter.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Fügen Sie eine Skills & Languages Sektion hinzu, um technische Fähigkeiten und Sprachkenntnisse mit Level (z.B. nach CEFR für Sprachen) klar und einheitlich darzustellen.
-- Für Sprachen empfiehlt sich die Angabe des CEFR-Levels (A1–C2), da dies international eindeutig verstanden wird.
-- Für IT- und andere Hard Skills geben Sie jeweils den Kenntnisstand an (z.B. MS Office – Fortgeschritten).
+- Füge einen Abschnitt hinzu, in dem du deine technischen Fähigkeiten (z.B. MS Office, HubSpot, Zapier) jeweils mit einem Level (z.B. Grundkenntnisse, Fortgeschritten, Experte) aufführst.
+- Ergänze bei den Sprachen jeweils das Niveau nach CEFR (A1–C2), damit Recruiter deine Sprachkenntnisse einheitlich einschätzen können.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -68,7 +67,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) absolviert haben, können Sie diese in einer eigenen Sektion aufführen.
+- Falls du relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachzertifikate) hast, kannst du diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
