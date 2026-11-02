@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits on one page, and provides clear role titles and descriptions for each professional experience. Grades are shown with their maximum, making them easy to interpret internationally, and your skills section avoids unevidenced trait words. However, the education section would benefit from more detail under each degree, and many experience bullets could be strengthened by showing the skills you used and the outcomes achieved. There is currently no mention of AI experience or tools—if you have relevant exposure, consider adding it. As no target role or job description was provided, this feedback focuses on structure and completeness; for tailored advice, please add a target position or industry.
+Your CV is well-structured and concise, fitting comfortably on one page and providing clear role titles and descriptions for each professional experience. Grades are presented with their maximum, making them easy to interpret internationally. However, the education section currently lists only degrees, dates, and grades, without any detail about your academic focus, thesis content, or relevant modules. Most experience bullets describe tasks rather than the skills you developed or the outcomes achieved, so adding more context and results will help recruiters understand your impact. This review covers structure and completeness only, as no target role or job description was provided. Nothing on your CV currently refers to AI, machine learning, or AI tools—if you have relevant experience or coursework, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,14 +18,14 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Academic Experience**  
-  Currently, most degrees list only the qualification, grade, and dates. Add a line or two under each degree where you have relevant content: key modules, thesis details (what you did, not just the title), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme. Only include what is true and relevant to your future applications.
-- 🔴 **Strengthen experience bullets with skills and outcomes**  
-  Many experience bullets describe only the task. For each, clarify what you did, how you did it, and why it mattered—highlighting the transferable skill you want to show. Where you have a concrete result or outcome, add it, but only if it is accurate and you can support it.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, your education entries list only the degree, date, and grade. Add a line or two under each degree where you have relevant content: modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes. Focus on what is true and relevant to your future applications.
+- 🔴 **Expand experience bullets to show skills and outcomes**  
+  Most of your experience bullets describe tasks but not the skills you used or the results you achieved. For each, clarify what you did, how you did it, and why it mattered, highlighting transferable skills and outcomes where possible.
 - 🟠 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
-- 🟡 **Grade display for Bachelor’s degree is your choice**  
-  Grades are optional on a CV and are commonly included from 5.00 upward. For grades below this, it is worth discussing with a Career Services coach whether to show it. The decision is yours—there is no requirement to remove it.
+  Some bullets end with a full stop and others do not. Choose one style and apply it throughout your CV for a professional and consistent appearance.
+- 🟡 **Consider whether to show your Bachelor's grade**  
+  Grades are optional on a CV and are commonly included from 5.00 upward. Since your Bachelor's grade is below this, you may wish to discuss with a Career Services coach whether to keep it or remove it, but the choice is yours.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -42,19 +42,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟠 Needs attention
 
-- For your thesis, briefly describe your research question, data, methods, and outcome, rather than just the title.
+- Add a line or two under each degree where you have relevant content, such as key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), if applicable.
+- If you have completed a thesis, briefly describe your research question, methods, data, and findings to give recruiters insight into your analytical and research skills.
+- Grades are given with their maximum, which helps international readers interpret them.
 
 **Professional Experience** 🟠 Needs attention
 
+- Review each bullet and expand it to show not just what you did, but how you did it and what changed as a result. Highlight the skills you developed and any measurable outcomes where possible.
 - Ensure bullet punctuation is consistent throughout this section.
+- If you have experience relevant to AI, machine learning, or data science, consider adding it here or under Skills & Interests.
 
 **Extracurriculars** 🟢 Strong
 
-- Your extracurriculars show real engagement and specific achievements, which helps evidence soft skills.
+- You provide clear evidence of your extracurricular engagement, including specific roles and activities.
 
 **Skills & Interests** 🟢 Strong
 
-- Your skills and languages are presented clearly, with levels indicated and no unsupported personal traits.
+- You specify language proficiency levels (including CEFR for English and French) and provide detail on your IT skills and personal interests.
 
 **Profile** ⚪ Missing
 
@@ -62,7 +66,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), consider adding them here.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), consider adding them here.
 
 ### 5. Dates worth a look
 

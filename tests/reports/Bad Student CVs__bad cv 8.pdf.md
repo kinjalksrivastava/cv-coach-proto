@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist inhaltlich breit aufgestellt und zeigt Engagement in verschiedenen Bereichen, von Praktika über studentische Initiativen bis hin zu internationalen Erfahrungen. Die Überschriften, Daten und die Rechtschreibung sind durchgehend konsistent, und du hast auf nicht belegbare Eigenschaftswörter bei den Skills verzichtet – das wirkt professionell. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde; sobald du eine Zielrolle hast, kann das Feedback gezielt auf die Anforderungen dieser Position eingehen. Beachte, dass die Rubrik "Interessen" fast leer ist – das fällt auf und sollte entweder ergänzt oder entfernt werden.
+Dein Lebenslauf deckt viele relevante Bereiche ab und zeigt bereits ein breites Engagement, aber es gibt noch einige strukturelle und inhaltliche Punkte, die du verbessern kannst. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Besonders auffällig ist, dass einige Abschnitte (wie Interessen) fast leer sind und bei den Bildungsabschlüssen sowie Berufserfahrungen wichtige Details fehlen. Achte darauf, dass dein Lebenslauf auf maximal zwei Seiten gekürzt wird, um den Erwartungen im Schweizer Markt zu entsprechen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Deine Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
-  Füge unter jedem Abschluss, wo es passt, ein bis zwei Zeilen hinzu: relevante Module, ein besonderes Projekt, ein Stipendium, ein Austauschsemester oder eine Zusatzqualifikation – immer mit Blick darauf, was für deine nächste Bewerbung zählt.
-- 🔴 **Einträge in "ARBEITS- & FÜHRUNGSERFAHRUNGEN" sind teils ohne Beschreibung**  
-  Ergänze unter jedem Eintrag einige Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Fähigkeiten.
+  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, eine Abschlussarbeit (mit Thema und Methode), ein Austauschsemester, ein Zertifikat oder ein Stipendium nennst – immer nur, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Einträge in "ARBEITS- & FÜHRUNGSERFAHRUNGEN" haben keine Beschreibung**  
+  Ergänze unter jedem Eintrag einige Stichpunkte dazu, was du konkret gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf die übertragbaren Fähigkeiten, die für deine nächste Rolle wichtig sind.
 - 🔴 **"Interessen" ist nahezu leer**  
-  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Interessen mit Details aufführst, oder entferne die Überschrift ganz – ein leerer Abschnitt lenkt die Aufmerksamkeit auf die Lücke.
+  Entweder entwickle diesen Abschnitt weiter, indem du konkrete Interessen mit Details aufführst, oder entferne die Überschrift ganz – ein leerer Abschnitt fällt negativ auf.
 - 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Formuliere die Stichpunkte so um, dass klar wird, was du selbst beigetragen hast, wie du vorgegangen bist und welche Fähigkeit du damit belegst. Ein konkretes Ergebnis hilft, wenn es passt.
+  Formuliere die Stichpunkte so um, dass klar wird, was du gemacht hast, wie du es gemacht hast und warum es wichtig war – und vor allem, welche übertragbare Fähigkeit du damit belegst. Ein konkretes Ergebnis hilft, wenn es passt.
 - 🟠 **Die meisten Stichpunkte beschreiben nur die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht? Wie? Warum war das wichtig? Welche übertragbare Fähigkeit steckt dahinter? Wo ein Ergebnis belegbar ist, ergänze es – aber nur, wenn es wirklich zutrifft.
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht? Wie? Warum war das relevant? Welche Fähigkeit zeigt das? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,25 +45,28 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Für die Zeit von Dezember 2020 bis September 2022 steht nichts im Lebenslauf – ein kurzer Satz dazu genügt meist, um die Lücke zu erklären.
-- Die Note beim Abitur ist als "17" angegeben – das ist vermutlich ein Tippfehler. Bitte prüfe, ob es 1,7 oder 1,3 sein soll, und gib die Skala an (z.B. 1,30 / 1,00), damit internationale Leser sie einordnen können.
-- Du zeigst die Note für das Abitur, aber nicht für andere Abschlüsse. Das ist erlaubt, aber ein Recruiter könnte annehmen, dass eine nicht genannte Note schwächer war. Überlege, ob du die Noten ergänzen oder konsequent weglassen möchtest.
-- Wenn du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilnimmst, kannst du das als Bullet unter dem jeweiligen Abschluss ergänzen – aber nur, wenn es wirklich zutrifft.
+- Für die Zeit von Dezember 2020 bis September 2022 steht nichts im Lebenslauf – ein kurzer erklärender Satz genügt meist, um diese Lücke zu adressieren.
+- Prüfe die Angabe deiner Abiturnote: Die Zahl "17" ist vermutlich ein Tippfehler und sollte als 1.70 / 1.00 (mit Skala) angegeben werden, damit internationale Leser sie korrekt einordnen können.
+- Du zeigst die Note für das Abitur, aber nicht für andere Abschlüsse. Wenn du Noten angibst, dann möglichst konsistent – ansonsten kann der Eindruck entstehen, dass du schwächere Noten bewusst weglässt.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Wenn du an der Talents Conference oder beim St. Gallen Symposium (https://shsg.ch/clubs) mitgewirkt hast, kannst du das als bezahlte Tätigkeit mit Stichpunkten aufführen – aber nur, wenn es zutrifft.
+- Überarbeite die bestehenden Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Methode und das Ergebnis (wo vorhanden) sowie die übertragbaren Fähigkeiten zeigen.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Skills sind ohne unbelegte Eigenschaftswörter aufgeführt, was einen professionellen Eindruck macht.
+- Die Angabe der Sprachkenntnisse mit Niveau (z.B. B2, C1, A1) ist klar und für internationale Leser verständlich.
 
 **Engagements** 🟠 Braucht Aufmerksamkeit
 
-- Führe bei den Interessen genauer aus, was du konkret machst – z.B. welche Sportart, wie oft, auf welchem Niveau, oder welche Art von Musik du spielst.
-- Wenn du in weiteren HSG-Clubs (https://shsg.ch/clubs) aktiv bist, kannst du diese mit einer kurzen Beschreibung deiner Rolle und deines Beitrags ergänzen – aber nur, wenn es wirklich zutrifft.
+- Beschreibe bei den Interessen, was genau du machst, wie oft und auf welchem Niveau – z.B. welche Sportart, ob du im Verein bist, wie regelmäßig du Klavier spielst oder welche Art von Büchern du liest.
+- Wenn du weitere aktive Rollen in HSG-Clubs hast, prüfe, ob diese als Engagements mit Stichpunkten aufgenommen werden sollten – siehe das HSG Clubverzeichnis: https://shsg.ch/clubs.
+
+**Interessen** 🟠 Braucht Aufmerksamkeit
+
+- Führe konkrete Interessen mit Details auf (z.B. welche Sportart, wie oft, auf welchem Niveau), oder entferne die Überschrift, wenn du dazu nichts angeben möchtest.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -71,7 +74,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Wenn du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder Bloomberg Market Concepts (https://portal.bloombergforeducation.com/)) absolviert hast, kannst du sie hier aufführen – aber nur, wenn sie für deine nächste Bewerbung relevant sind.
+- Falls du relevante Zertifikate oder Zusatzkurse hast (z.B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

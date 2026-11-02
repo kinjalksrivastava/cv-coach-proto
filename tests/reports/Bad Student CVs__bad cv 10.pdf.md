@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear timeline, well-labelled roles, and a strong set of skills and extracurricular activities. The structure covers all the main sections, and your experience is well organised without gaps or overlaps. However, several experience bullets focus on tasks rather than your personal contribution or the skills you developed, so adding more detail about what you achieved and how you worked will make your CV stand out. Nothing on your CV currently mentions AI or related tools—if you have any relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific job or industry at any time.
+Your CV is in good shape overall, with clear section headings and a solid range of experiences for your stage. Each work experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, several of your bullets focus on listing tasks rather than highlighting your personal contribution or the skills you developed, so refining these will make your impact clearer. Your grade for the University of St. Gallen is shown, but adding the grading scale will help international recruiters interpret it. Nothing on your CV currently mentions AI or related tools—if you have any relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your experience bullets to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you gained. Where possible, include a result or outcome to show your impact.
+  Rework your work experience bullets to focus on what you personally did, how you did it, and why it mattered—especially the transferable skills you gained. Where you have a concrete result, include it, but only if it is genuine and you can support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify what skill you demonstrated, how you applied it, and what changed as a result. Only add outcomes or figures if you can genuinely support them.
+  For each experience bullet, clarify what you did, how you did it, and why it mattered, and highlight the transferable skill it demonstrates. Add a result where appropriate, but only if you can back it up.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose a consistent punctuation style for your bullets—either all with full stops or all without—and apply it throughout your CV.
+  Choose a consistent approach to bullet punctuation—either end all bullets with a full stop or none—and apply it throughout your CV.
 - 🟠 **Bullet tense changes within "WORK EXPERIENCE"**  
-  Use past tense for completed roles and present tense for current positions, and keep this consistent within the section.
+  Use past tense for completed roles and present tense for current roles, and keep this consistent within the section.
 - 🟡 **Grades need clarifying**  
-  When listing your GPA, include the maximum (e.g., 5.04 / 6.00) so that recruiters from other countries can interpret your results correctly.
+  Add the grading scale to your University of St. Gallen GPA (e.g., 5.04 / 6.00) so international recruiters can interpret it correctly.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,30 +44,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Add the maximum possible grade when listing your GPA (e.g., 5.04 / 6.00) so that international recruiters can understand your results.
-- You have shown a grade for your university degree but not for your Baccalaureat. While grades are optional, showing some and omitting others can lead recruiters to assume the missing grade was weaker. Decide whether to add the missing grade or remove the one you have shown for consistency.
-- If you have completed any additional qualifications relevant to your studies, such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them here.
+- Add the grading scale to your University of St. Gallen GPA (e.g., 5.04 / 6.00) so that recruiters from other countries can understand your result.
+- You have shown a grade for your current degree but not for your earlier qualification. While grades are optional, showing some and omitting others can lead a recruiter to assume the missing grade was weaker. Decide whether to add the missing grade or remove the one you have shown, based on what best represents your academic record.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise your experience bullets to show what you personally contributed, how you approached the work, and what skills you developed or demonstrated. For example, instead of just listing tasks, explain your role in achieving a result or solving a problem.
-- Where you have a measurable outcome or a clear result, include it to show your impact, but only if you can genuinely support it.
-- Ensure that bullet points use a consistent tense: present tense for current roles, past tense for completed ones.
-- Standardise punctuation at the end of each bullet—choose either full stops or none and apply this throughout the section.
+- Revise your bullets to highlight your personal contribution, the skills you developed, and the impact you made in each role. For example, instead of just listing tasks, explain how you approached them and what changed as a result.
+- Ensure each bullet makes clear what transferable skill it demonstrates, and add a concrete result where you genuinely have one.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- Your section lists hard skills and language levels without relying on vague adjectives, which makes your abilities clear to a recruiter.
+- Languages are presented with clear proficiency levels, making it easy for recruiters to assess your language skills.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- You have included relevant certifications with clear dates, which adds credibility to your profile.
+- Certifications are clearly presented with dates, demonstrating your commitment to ongoing learning and achievement.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- You demonstrate long-term commitment and achievement in sports and club activities, which helps evidence soft skills such as discipline and teamwork.
+- Your extracurricular section highlights significant achievements and long-term commitment, which helps demonstrate your initiative and dedication.
 
 **Profile** ⚪ Missing
 

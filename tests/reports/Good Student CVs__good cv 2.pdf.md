@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, fits on one page, and presents a clear timeline without gaps or overlaps. Each work experience entry includes both a role title and a description, and your section headings and dates are consistent. However, there are a few structural issues to address: some entries at the top are missing a section heading, and there is no dedicated Education section, which makes it harder for a recruiter or an applicant tracking system to interpret your academic background. Additionally, your work experience bullets focus mainly on tasks rather than your specific contributions or the skills you demonstrated. Nothing on your CV currently refers to AI or related tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a target position or industry.
+Your CV is in good shape overall, with a clear structure and a strong set of experiences for an early-career profile. However, there are a few structural issues that could confuse a recruiter or an applicant tracking system, such as missing section headings and the absence of an Education section. None of your entries mention AI, machine learning, or related tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **A block of entries at the top sits under no heading**  
-  Add a clear heading (such as 'Education') above the academic entries at the top of your CV. Without a heading, readers and applicant tracking systems may misinterpret these entries or miss them entirely.
+  Add a clear heading (such as 'Education') above the block of entries at the top of your CV. Without a heading, readers and applicant tracking systems may not recognise what these entries represent, which can lead to confusion or misclassification.
 - 🟠 **Bullets describe duties rather than contribution**  
-  Revise your work experience bullets to highlight what you personally achieved, how you did it, and which transferable skills you demonstrated, rather than just listing tasks.
+  Revise your work experience bullets to focus on what you personally contributed, how you did it, and the skills you demonstrated, rather than just listing tasks. This helps recruiters see your impact and transferable skills.
 - 🟠 **Most bullets describe the task, not the skill behind it**  
-  For each work experience bullet, clarify what you did, how you did it, and why it mattered, focusing on the skills you developed or applied. Add outcomes or results where you can genuinely support them.
+  For each experience bullet, clarify what you did, how you did it, and why it mattered, highlighting the underlying skill. Add outcomes or results where you can genuinely support them.
 - 🟡 **There's a paragraph at the top with no heading**  
-  If the unheaded text at the top is meant as a profile or summary, give it a heading and use it to briefly state what you bring and where you are heading.
+  If the paragraph at the top is intended as a profile or summary, give it a heading. A profile should briefly state what you bring and where you are heading.
 - 🟡 **No Education section found**  
-  Add an 'Education' section to clearly present your academic background, making it easy for recruiters to find your qualifications.
+  Add an 'Education' section to clearly present your academic background. This helps recruiters quickly find your qualifications.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,17 +44,18 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
+- Where possible, add outcomes or results that show your impact, but only if you can genuinely support them.
 - If you have experience from HSG options such as the Talents Conference or the St. Gallen Symposium (https://shsg.ch/clubs) in a paid or staff role, consider adding it here if relevant.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your extracurricular activities are well described, showing both initiative and impact.
+- You provide concrete evidence of your involvement and impact, which helps demonstrate your skills beyond academics.
 
 **SKILES, ACTIVITIES & INTERESTS** 🟠 Needs attention
 
 - Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1-C2) for clarity.
-- For technical skills or tools, add a consistent level (e.g., Intermediate, Advanced) to each entry.
-- If you have completed relevant certifications such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), consider adding them here or in a dedicated Courses and Certificates section.
+- If you have technical skills (such as Excel, Python, or Bloomberg), list them here with a level (e.g., Intermediate, Advanced).
+- If you have completed relevant certifications, such as Bloomberg Market Concepts (https://portal.bloombergforeducation.com/), you could add them here or in a separate Courses and Certificates section.
 
 **Profile** ⚪ Missing
 
@@ -62,13 +63,13 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Education** ⚪ Missing
 
-- Add an 'Education' section with your university, degree, expected graduation date, and relevant grades.
-- Clarify the grading scale for your Matura (5.3/6.0), as this is not universally recognised.
-- If you have participated in HSG student clubs (https://shsg.ch/clubs) or relevant academic activities, you can mention them here if they support your application.
+- Add an 'Education' heading above your academic background to make this section clear and easy to find.
+- Clarify the grading scale for your Matura (5.3/6.0), as this format may not be familiar to all readers.
+- If you have completed relevant courses, exchanges, or academic projects, include them here with brief details.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certifications (such as Bloomberg Market Concepts), add them here with completion dates and their relevance to your goals.
+- If you have completed relevant courses or certifications (such as Bloomberg Market Concepts), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist strukturiert, enthält durchgehend klare Rollenbezeichnungen und konsistente Zeitangaben, und weist keine Lücken im Werdegang auf. Die Berufserfahrung ist detailliert und zeigt eine breite Verantwortungsspanne, während die Noten transparent mit Maximalwert angegeben sind. Da kein Zieljob oder Stellenprofil vorliegt, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Zielrolle nachreichen.
+Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Besonders positiv fällt auf, dass Sie für alle Berufsstationen sowohl die Rolle als auch eine Beschreibung angegeben haben und Ihre Noten mit Maximalwerten versehen sind, was die internationale Vergleichbarkeit erleichtert. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es fällt auf, dass aktuell keine KI-bezogenen Erfahrungen oder Tools explizit genannt werden; falls Sie relevante Kenntnisse oder Projekte in diesem Bereich haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Ihre Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
-  Fügen Sie unter jedem Abschluss, wo möglich, ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Auslandssemester, Zertifikaten oder besonderen Programmen hinzu – jeweils nur, was tatsächlich zutrifft und für Ihre nächste Bewerbung relevant ist.
-- 🔴 **Aufgabenbeschreibungen statt konkretem Beitrag in den Berufserfahrungs-Bullets**  
-  Überarbeiten Sie die betroffenen Bulletpoints so, dass klar wird, was Sie konkret getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder das Team einen Unterschied gemacht hat – mit Fokus auf übertragbare Kompetenzen.
+- 🔴 **Ihre Studienabschlüsse enthalten außer Note und Datum keine weiteren Details**  
+  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Ihre Abschlussarbeit (inklusive Thema und Methodik), ein Auslandssemester, Zertifikate oder besondere Programme nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
+- 🔴 **Aufgabenbeschreibungen statt konkretem Beitrag in den Berufserfahrungen**  
+  Überarbeiten Sie die betroffenen Bullet Points so, dass klar wird, was Sie konkret getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder das Team einen Unterschied gemacht hat – mit Fokus auf übertragbare Kompetenzen.
 - 🟠 **Reihenfolge: Ausbildung folgt auf Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich normalerweise, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, Sie verfügen bereits über viele Jahre einschlägiger Berufspraxis.
+  Für einen klassischen Studierenden-Lebenslauf steht die Ausbildung normalerweise an erster Stelle, außer Sie haben bereits mehrere Jahre einschlägige Berufserfahrung. Prüfen Sie, ob eine Umstellung für Ihre Zielposition sinnvoll wäre.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Ergänzen Sie bei jeder Sprache ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, C1), idealerweise nach dem CEFR-Standard (A1–C2), damit Recruiter Ihre Sprachkenntnisse eindeutig einschätzen können.
-- 🟡 **Interessen ohne Detailangaben**  
-  Beschreiben Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben – z.B. Teilnahme an Wettkämpfen, Vereinsmitgliedschaft oder besondere Projekte.
+  Ergänzen Sie bei jeder Sprache ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, C1), idealerweise nach dem CEFR-Standard (A1–C2), damit Recruiter Ihre Kenntnisse eindeutig einschätzen können.
+- 🟡 **Interessen ohne Details**  
+  Beschreiben Sie bei Ihren Interessen, wie oft und auf welchem Niveau Sie diese ausüben – so wird Ihr Engagement und Ihre Persönlichkeit für den Leser greifbarer.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,37 +45,39 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil vermittelt auf den ersten Blick Ihre Schwerpunkte und Ihre Motivation für Innovation und neue Technologien.
+- Das Profil hebt Ihre langjährige Erfahrung, Ihre methodische Stärke und Ihre Begeisterung für Innovation und neue Technologien prägnant hervor.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeiten Sie die Bulletpoints, die nur Aufgaben beschreiben, indem Sie Ihren konkreten Beitrag, die Umsetzung und das Ergebnis hervorheben – insbesondere dort, wo übertragbare Kompetenzen für Ihre nächste Zielposition sichtbar werden sollen.
-- Falls Sie sich auf eine bestimmte Position bewerben, prüfen Sie, ob Ihre bisherigen Erfahrungen gezielt auf die Anforderungen der Zielrolle eingehen.
+- Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, die Vorgehensweise und das Ergebnis herausstellen – insbesondere, welche Kompetenzen Sie dabei gezeigt haben.
+- Falls Sie sich auf eine bestimmte Zielposition bewerben, prüfen Sie, welche Erfahrungen und Projekte besonders relevant sind und heben Sie diese gezielt hervor.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet unter dem entsprechenden Abschluss ergänzen.
-- Falls Sie sich auf eine bestimmte Position bewerben, heben Sie die für die Zielrolle relevanten Studieninhalte oder Projekte hervor.
+- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Abschlussarbeiten (inklusive Thema und Methodik), Auslandssemestern oder besonderen Programmen hinzu, sofern vorhanden.
+- Falls Sie am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet unter dem jeweiligen Abschluss ergänzen.
+- Wenn Sie sich auf eine bestimmte Position bewerben, wählen Sie die Inhalte aus, die für diese Rolle besonders relevant sind.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei Ihren Aktivitäten, wie oft und in welchem Umfang Sie diese ausüben (z.B. Anzahl der betreuten Mentees, Häufigkeit der Einsätze, besondere Projekte oder Erfolge).
-- Falls Sie als Mentor tätig waren, beschreiben Sie, welche Kompetenzen Sie dabei entwickelt oder vermittelt haben.
-- Falls Sie sich auf eine bestimmte Position bewerben, wählen Sie die Aktivitäten aus, die für die Zielrolle besonders relevant sind.
+- Ergänzen Sie bei Ihren Interessen und Aktivitäten, wie oft und auf welchem Niveau Sie diese ausüben (z.B. Teilnahme an Wettbewerben, regelmäßige Engagements, besondere Leistungen).
+- Wenn Sie als Mentor tätig sind, beschreiben Sie kurz, wie Sie unterstützen und welche Kompetenzen Sie dabei einbringen.
+- Für eine gezielte Bewerbung: Heben Sie Aktivitäten hervor, die für die angestrebte Position besonders relevant sind.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie zusätzliche relevante Zertifikate oder Onlinekurse absolviert haben, können Sie diese mit Abschlussjahr und ggf. Niveau ergänzen.
-- Für eine gezielte Bewerbung: Heben Sie die für die Zielrolle wichtigsten Fähigkeiten besonders hervor.
+- Fügen Sie bei jeder Sprache und jedem IT-Tool ein Niveau hinzu (z.B. 'Python (Grundkenntnisse)', 'Englisch (C1)'), idealerweise nach dem CEFR-Standard für Sprachen.
+- Wenn Sie weitere relevante Zertifikate oder Onlinekurse abgeschlossen haben, können Sie diese mit Abschlussjahr und ggf. Niveau ergänzen.
+- Für eine Bewerbung im Bereich Datenanalyse oder Digitalisierung: Erwähnen Sie relevante Tools, Methoden oder Zertifikate, die im Zielbereich gefragt sind.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Angaben zu Sport und Musik sind durch Beispiele (z.B. Teilnahme an der Seeüberquerung, Chormitgliedschaft) konkretisiert und machen Ihr Engagement sichtbar.
+- Sie beschreiben Ihre Interessen mit Beispielen und Aktivitäten, was Ihre Vielseitigkeit und Ihr Engagement unterstreicht.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate, Onlinekurse oder Weiterbildungen abgeschlossen haben, können Sie diese in einem eigenen Abschnitt aufführen – z.B. den MIT-Kurs oder das IBM-Zertifikat zu Python und KI.
-- Für Bewerbungen im Bereich Daten, Digitalisierung oder Innovation kann dies Ihre technische Kompetenz zusätzlich unterstreichen.
+- Falls Sie relevante Zertifikate, Onlinekurse oder Weiterbildungen abgeschlossen haben, können Sie diese in einem eigenen Abschnitt aufführen – z.B. 'Certificate in Data Science Fundamentals (DSF)' oder 'Bloomberg Market Concepts (BMC)'.
+- Nennen Sie jeweils das Abschlussjahr und ggf. das Niveau oder die wichtigsten Inhalte, sofern für Ihre Zielposition relevant.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

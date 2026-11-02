@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape structurally, with clear section headings, consistent dates, and no unexplained gaps in your timeline. Each work experience entry includes both a role title and a description, and your skills are listed without unevidenced trait words. There is currently nothing on your CV that refers to AI, machine learning, or AI tools—if you have relevant experience or coursework in this area, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice.
+Your CV is in good shape structurally, with all the main sections present and a clear record of both academic and professional experience. The experience section is especially well organised, with each role clearly described. However, there are some key areas to address: your education entries currently list only the degree and dates, so adding detail about your studies, relevant modules, or projects will help a recruiter understand your academic strengths. Your experience bullets focus on duties rather than your personal contribution or the skills you developed—reworking these will make your impact clearer. No content on your CV currently refers to AI, machine learning, or related tools; if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific job or industry at any time.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,13 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Add detail under each degree in your education section**  
-  Currently, your education entries only show the degree, institution, and dates. Add a line or two under each degree where you have something relevant: key modules, a thesis and what it was about, an exchange semester, a certificate, a scholarship, or participation in a mentoring programme. Only include what is true and relevant to your future applications.
+  Currently, your education entries only show the degree and dates. Add a line or two under each degree where you have relevant content: modules that matter for your future direction, a thesis and what it was about, an exchange semester, a certificate, a scholarship, or a mentoring programme. Only include what is true and relevant.
 - 🟠 **Rework experience bullets to show your contribution and skills**  
-  Many of your experience bullets describe only the tasks you performed. For each, explain what you did, how you did it, and why it mattered—highlighting the transferable skills you developed. Where you have a concrete result or outcome, add it, but only if it is accurate and you can support it.
+  Many of your experience bullets describe tasks rather than your personal contribution or the skills you developed. For each, clarify what you did, how you did it, and why it mattered—highlighting the transferable skill shown. Add a result where you genuinely have one.
+- 🟠 **Show outcomes and skills in your experience bullets**  
+  Most of your experience bullets describe the task but not the outcome or the skill behind it. For each, explain what you did, how you did it, and why it mattered, and add a result if you have one. Focus on the transferable skill each bullet demonstrates.
 - 🟠 **Add months to all date ranges**  
-  Several entries show only years. Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can see the true duration of each role or activity.
+  Several date ranges show only years. Add the month to each (e.g., '09/2023 – 06/2024') so a reader can see the true duration of each role or activity.
 - 🟠 **Make bullet punctuation consistent**  
-  Some of your bullets end with a full stop and others do not. Choose one style and apply it to every bullet throughout your CV.
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,32 +46,33 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **AUSBILDUNG** 🟠 Needs attention
 
-- Add a line or two under each degree with relevant details: key modules, thesis topic and what you actually did, an exchange semester, certificates, scholarships, or participation in a mentoring programme such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
-- If you have completed or are pursuing additional qualifications like the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), include them here if relevant.
+- Add a line or two under each degree describing what you studied, any relevant modules, thesis topic and what you actually did, exchange semesters, certificates, scholarships, or participation in programmes such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if relevant.
+- If you have completed or are pursuing additional qualifications like the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), include them here if they are relevant.
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- Make sure each bullet is punctuated consistently throughout this section.
+- Where you have a concrete result or outcome, add it to show your impact, but only if you can genuinely support it.
+- Make sure each bullet is written in a consistent style, including punctuation.
 
 **ORGANISATIONEN** 🟢 Strong
 
-- Your entries show a range of involvement and leadership in organisations, which demonstrates engagement beyond your studies.
+- Your section demonstrates involvement in organisations and volunteering, which adds depth to your profile.
 
 **SPRACHEN** 🟢 Strong
 
-- You have provided both language names and recognised certificates, making your proficiency easy for a recruiter to assess.
+- Stating both your native languages and your certified levels in English and French gives a clear picture of your language skills.
 
 **SKILLS** 🟢 Strong
 
-- You have included specific tools and certifications, which gives a clear picture of your technical abilities.
+- Including Microsoft 365, Avaloq, and your requirements engineering certificate shows your technical foundation.
 
 **CERTIFICATIONS** 🟢 Strong
 
-- You have included recognised certificates, which add credibility to your skills and language proficiency.
+- Listing your language and professional certificates adds credibility to your skills section.
 
 **INTERESTS** 🟢 Strong
 
-- You have listed a variety of interests, which helps to show your personality and balance outside of academics and work.
+- Mentioning specific sports, reading, travel, cooking, and technology shows a well-rounded set of interests.
 
 **Profile** ⚪ Missing
 
