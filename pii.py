@@ -189,10 +189,23 @@ MARITAL_WORDS_RE = re.compile(
 # character class still accepted. On a cover letter that took out the subject
 # line, the salutation and the opening sentence, and the model was then asked
 # to judge a letter it had not been shown.
+# The country prefix may be followed by a hyphen, a space, both, or neither:
+# "CH-9004", "CH- 9004", "CH 9004". The audit found "CH- 9004 St. Gallen"
+# surviving on Career Services' own letter template, on that one space.
 POSTCODE_CITY_RE = re.compile(
-    r"(?m)^[^\S\n]*(CH|DE|AT|FR|IT|LI)?[^\S\n\-]?[\s\-]?\d{4,5}[^\S\n]+[A-ZÄÖÜ][\w.\-äöüß]+"
+    r"(?m)^[^\S\n]*(?:(?:CH|DE|AT|FR|IT|LI|LU|BE|NL)[^\S\n\-]*-?[^\S\n]*)?"
+    r"\d{4,5}[^\S\n]+[A-ZÄÖÜ][\w.\-äöüß]+"
     r"([^\S\n]+[\w.\-äöüß]+)*[^\S\n]*$"
 )
+
+# Anglophone addresses. A Swiss university has students applying abroad and
+# students who have studied abroad, and "Pittsburgh, PA 15213" went through
+# every layer untouched because every address pattern here was continental.
+US_CITY_STATE_ZIP_RE = re.compile(
+    r"\b[A-Z][\w.\-]+(?:[^\S\n]+[A-Z][\w.\-]+){0,2},[^\S\n]*"
+    r"[A-Z]{2}[^\S\n]+\d{5}(?:-\d{4})?\b")
+UK_POSTCODE_RE = re.compile(
+    r"\b[A-Z]{1,2}\d[A-Z\d]?[^\S\n]*\d[A-Z]{2}\b")
 STREET_RE = re.compile(
     r"(?m)^[^\S\n]*([A-ZÄÖÜ][\w.\-äöüß]*[^\S\n]?)"
     r"(straße|strasse|str\.|gasse|weg|platz|allee|ring|steig|avenue|street|road|lane)"
@@ -294,6 +307,10 @@ def _sub_address(text: str) -> tuple[str, bool]:
     too, either inline on the same line or on its own line beneath.
     """
     working = INLINE_ADDRESS_RE.sub(_placeholder("address"), text)
+    # These two carry a postcode inside them, so unlike a bare street name they
+    # need no second signal: nothing but an address is shaped this way.
+    working = US_CITY_STATE_ZIP_RE.sub(_placeholder("address"), working)
+    working = UK_POSTCODE_RE.sub(_placeholder("address"), working)
     if POSTCODE_CITY_RE.search(working):
         working = POSTCODE_CITY_RE.sub(_placeholder("address"), working)
         working = STREET_RE.sub(_placeholder("address"), working)
@@ -710,6 +727,9 @@ RESIDUAL_CHECKS = (
     ("profile_url", re.compile(r"(?:linkedin|xing|github|gitlab)\.com/[\w\-./]+", re.I)),
     ("phone", re.compile(r"\+\d{1,3}[\s\-./]?\d[\d\s\-./]{7,}\d")),
     ("address", re.compile(r"\b\w*(?:strasse|straße|gasse|platz)\s*\d{1,4}\b", re.I)),
+    ("address", POSTCODE_CITY_RE),
+    ("address", US_CITY_STATE_ZIP_RE),
+    ("address", UK_POSTCODE_RE),
     ("date_of_birth", BARE_DATE_LINE_RE),
 )
 

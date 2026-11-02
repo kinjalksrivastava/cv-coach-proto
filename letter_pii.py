@@ -29,6 +29,9 @@ import pii
 import pii_local
 
 PLACEHOLDER = pii.CATEGORIES["recipient"][0]
+# Every marker the removal layers write, so the sweep below never redacts a
+# redaction.
+PLACEHOLDERS = [value[0] for value in pii.CATEGORIES.values()]
 
 # "z. Hd. Anna-Sophia Schmitz", "zu Handen von ...", "Attn: ...". The marker is
 # kept and only what follows it is removed, so the letter still reads as having
@@ -92,7 +95,8 @@ CLOSING_RE = re.compile(
 # "Ms [RECIPIENT REDACTED]" reads as a leak that was half-caught. The honorific
 # carries nothing once the name is gone, so it goes with it.
 LEFTOVER_HONORIFIC_RE = re.compile(
-    rf"\b(?:mr|mrs|ms|miss|dr|prof(?:essor)?|herr|frau)\b\.?\s+(?={re.escape(PLACEHOLDER)})",
+    r"\b(?:mr|mrs|ms|miss|dr|prof(?:essor)?|herr|frau)\b\.?\s+"
+    r"(?=" + "|".join(re.escape(p) for p in PLACEHOLDERS) + r")",
     re.IGNORECASE)
 
 
@@ -217,6 +221,54 @@ def _other_people(text: str, language: str) -> list[str]:
         if len(name.split()) > 1]
 
 
+def _address_block_sweep(text: str, language: str) -> tuple[str, bool]:
+    """
+    Positional, and the backstop for everything the name model does not see.
+
+    Above the salutation a letter carries exactly three kinds of line: the two
+    parties' addresses, the organisation, and a date or a reference. Anything
+    there that is a short run of capitalised words with no digits in it is a
+    person or a person's job title - "Ms Anika Muster", "HR Business Partner",
+    "Martina Master", none of which spaCy flagged on Career Services' own
+    template. The organisation is held back by its legal suffix and by the
+    model's own organisation list, because "why this organisation?" is one of
+    the nine checks.
+
+    This runs last, so the lines it looks at are what survived every other
+    layer.
+    """
+    lines = text.splitlines()
+    cut = len(_address_block(lines))
+    if not cut:
+        return text, False
+    orgs = (pii_local.place_and_org_strings(text, language)
+            | pii_local.place_and_org_strings(
+                text, "de" if language != "de" else "en")) if pii_local.available() else set()
+
+    out, hit = [], False
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        if index >= cut or not stripped:
+            out.append(line)
+            continue
+        if any(place in stripped for place in PLACEHOLDERS):
+            out.append(line)
+            continue
+        if COMPANY_SUFFIX_RE.search(stripped) or stripped.lower() in orgs:
+            out.append(line)
+            continue
+        words = stripped.replace(",", " ").split()
+        if (1 < len(words) <= 4
+                and not any(ch.isdigit() for ch in stripped)
+                and all(w[0].isupper() for w in words if w[:1].isalpha())
+                and not any(w.lower() in orgs for w in words)):
+            out.append(PLACEHOLDER)
+            hit = True
+            continue
+        out.append(line)
+    return "\n".join(out), hit
+
+
 def _redact(text: str, names: list[str], placeholder: str = PLACEHOLDER) -> tuple[str, bool]:
     """
     Every part of the name, everywhere in the letter. "Dear Ms Schmitz" three
@@ -247,8 +299,10 @@ def strip_letter_pii(text: str, language: str = "en") -> dict:
     working, names, marked = _tail_names(result["text"])
     names += [n for n in _address_names(working, language) if n not in names]
     working, redacted = _redact(working, names)
-    if marked or redacted:
-        working = LEFTOVER_HONORIFIC_RE.sub("", working)
+    working, swept = _address_block_sweep(working, language)
+    redacted = redacted or swept
+    # Unconditional: the CV layer may have taken the name and left the "Ms".
+    working = LEFTOVER_HONORIFIC_RE.sub("", working)
 
     author = _signoff_name(working)
     signed = False

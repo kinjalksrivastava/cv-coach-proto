@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import cover_letter  # noqa: E402
 import hsg_activities  # noqa: E402
 import letter_pii  # noqa: E402
+import pii  # noqa: E402
 import report  # noqa: E402
 
 FAILURES: list[str] = []
@@ -266,6 +267,46 @@ def pdf_sections_in_order() -> None:
     check("the letter PDF puts the table under section 2", problems)
 
 
+def addresses_in_every_format() -> None:
+    """
+    Found by tests/pii_audit.py, not by a reviewer. Every address pattern was
+    continental and anchored tightly, so "CH- 9004 St. Gallen" survived on the
+    one space after the hyphen, and "Pittsburgh, PA 15213" survived because
+    nothing here had ever seen a US address. A Swiss university has students
+    applying abroad.
+    """
+    cases = [
+        ("CH- 9004 St. Gallen", True), ("CH-9000 St. Gallen", True),
+        ("9000 St. Gallen", True), ("Pittsburgh, PA 15213", True),
+        ("New York, NY 10001-1234", True), ("London EC1A 1BB", True),
+        ("5th August 2024", False), ("Ref.: 22384739724", False),
+        ("Modern Technology AG", False),
+    ]
+    problems = []
+    for text, should_go in cases:
+        _, hit = pii._sub_address(text)
+        if hit != should_go:
+            problems.append(f"{text!r}: redacted={hit}, expected {should_go}")
+    check("an address is removed whatever country it is written for", problems)
+
+
+def recipient_job_title_and_honorific() -> None:
+    """
+    Round 5 named the recipient AND their job title. The name goes by name; the
+    title goes because of where it sits, directly under the person in the
+    address block, where nothing but the parties and the organisation belongs.
+    """
+    out = letter_pii.strip_letter_pii(ADDRESSED, "en")["text"]
+    problems = []
+    if "Deputy CHRO" in out:
+        problems.append("the recipient's job title survived")
+    if "Stadler Rail AG" not in out:
+        problems.append("the company went with it")
+    if re.search(r"\bMs\s+\[", out):
+        problems.append("an honorific was left in front of the redaction")
+    check("the recipient's title goes, the organisation stays", problems)
+
+
 def no_relevance_claim_without_an_advert() -> None:
     """
     MP, round 5. The prompt carries the rule and held for two of the three
@@ -318,6 +359,8 @@ def run() -> int:
     very_short_still_caught()
     both_languages_complete()
     no_relevance_claim_without_an_advert()
+    addresses_in_every_format()
+    recipient_job_title_and_honorific()
     pdf_sections_in_order()
     section_five_picks()
     print(f"\n{CHECKS - len(FAILURES)}/{CHECKS} passed")

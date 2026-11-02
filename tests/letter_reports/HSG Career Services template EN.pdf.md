@@ -10,10 +10,10 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | The letter does not read as a chronological retelling of a career and adds value by explaining personal motivation, interests, and relevant skills; however, without the CV, I cannot directly compare the two documents. |
-| Why this organisation? | There is a clear and specific reason for interest in Modern Technology AG, referencing a personal interaction and admiration for their innovative use of AI. |
-| Why this role? | The letter explains what interests the candidate about this specific position, particularly its focus on impactful AI projects and dynamic, diverse work. |
-| What you bring | It connects specific experiences (such as thesis work, leadership in student clubs, and personal interests like rock climbing) to the skills and mindset the candidate would bring to the role. |
+| Adds value beyond the CV | The letter does not read as a chronological retelling of a career and adds value by explaining personal motivation and relevant skills, though I could not compare it with the CV. |
+| Why this organisation? | There is a clear and specific reason for interest in Modern Technology AG, referencing a personal interaction and admiration for their AI initiatives. |
+| Why this role? | The letter explains what interests the candidate about this specific position, particularly its focus on impactful AI projects and dynamic work. |
+| What you bring | It connects specific experiences (such as thesis work, stakeholder engagement, and adaptability from rock climbing) to the desired role and its challenges. |
 | Conclusion | The letter closes appropriately with thanks, a statement of availability, interest in interviewing, and a brief recall of what the candidate would contribute. |
 | Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | The role and a reference number are both named. |
