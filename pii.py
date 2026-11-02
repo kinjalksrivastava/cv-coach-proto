@@ -56,6 +56,8 @@ CATEGORIES: dict[str, tuple[str, str]] = {
     "bank":           ("[BANK DETAILS REDACTED]",        "bank details"),
     "referee":        ("[REFEREE DETAILS REDACTED]",     "referee details"),
     "contact_block":  ("[CONTACT DETAILS REMOVED]",       "contact block (name, address, links)"),
+    # Cover letters only: the person the letter is addressed to. See letter_pii.
+    "recipient":      ("[RECIPIENT REDACTED]",           "name of the recipient"),
     "other":          ("[PERSONAL DETAIL REDACTED]",     "other personal detail"),
 }
 
@@ -181,14 +183,20 @@ MARITAL_WORDS_RE = re.compile(
 # A street line: number-then-name or name-then-number, plus a 4-5 digit postal
 # code line. Both are only treated as an address when they sit near a postcode,
 # so a project called "Bahnhofstrasse 12" in prose isn't nuked.
+# Every whitespace class here is [^\S\n], horizontal space only. With \s the
+# groups were free to run across line breaks even though (?m) anchors each end
+# to a line: one postcode line could swallow everything after it that the
+# character class still accepted. On a cover letter that took out the subject
+# line, the salutation and the opening sentence, and the model was then asked
+# to judge a letter it had not been shown.
 POSTCODE_CITY_RE = re.compile(
-    r"(?m)^\s*(CH|DE|AT|FR|IT|LI)?[\s\-]?\d{4,5}\s+[A-ZÄÖÜ][\w.\-äöüß]+"
-    r"(\s+[\w.\-äöüß]+)*\s*$"
+    r"(?m)^[^\S\n]*(CH|DE|AT|FR|IT|LI)?[^\S\n\-]?[\s\-]?\d{4,5}[^\S\n]+[A-ZÄÖÜ][\w.\-äöüß]+"
+    r"([^\S\n]+[\w.\-äöüß]+)*[^\S\n]*$"
 )
 STREET_RE = re.compile(
-    r"(?m)^\s*([A-ZÄÖÜ][\w.\-äöüß]*\s?)"
+    r"(?m)^[^\S\n]*([A-ZÄÖÜ][\w.\-äöüß]*[^\S\n]?)"
     r"(straße|strasse|str\.|gasse|weg|platz|allee|ring|steig|avenue|street|road|lane)"
-    r"[\w\s.\-]*\s+\d+[a-zA-Z]?\s*$",
+    r"[\w.\-]*(?:[^\S\n]+[\w.\-]+)*[^\S\n]+\d+[a-zA-Z]?[^\S\n]*$",
     re.IGNORECASE,
 )
 # The same address written inline on one contact line, which is at least as
@@ -477,9 +485,19 @@ ROLE_WORDS = {
 }
 
 
+# A cover letter can open on its salutation, and "Dear Hiring Team" is three
+# capitalised words with no digits: a name line by every test below. It was
+# being taken as the author's own name and removed as the contact block.
+SALUTATION_START_RE = re.compile(
+    r"^\s*(dear\b|sehr\s+geehrte|liebe[rs]?\s|guten\s+tag|to\s+whom\b)",
+    re.IGNORECASE)
+
+
 def _looks_like_a_name_line(line: str) -> bool:
     stripped = line.strip()
     if not (2 < len(stripped) <= 60) or any(ch.isdigit() for ch in stripped):
+        return False
+    if SALUTATION_START_RE.match(stripped):
         return False
     if "@" in stripped or _is_heading(stripped):
         return False

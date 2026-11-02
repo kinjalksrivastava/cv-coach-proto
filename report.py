@@ -644,10 +644,13 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
                   strings["hsg_intro"], ""]
         for name, what, where, url in hsg_picks:
             label = f"[{name}]({url})" if url else name
+            # The "Belongs in: ..." tail used to be printed here. Career
+            # Services asked for it out: it is written for the model, which
+            # needs to know which section to raise a suggestion in, and in
+            # markdown the indented italic collapsed onto the end of the
+            # description and read as part of it. The mapping still goes to the
+            # model in hsg_activities.RULES, where it was always meant to be.
             parts.append(f"- **{label}** — {what}")
-            # Career Services' own CV-Section column. Where a thing belongs is
-            # half the value of knowing it exists.
-            parts.append(f"  _{strings['hsg_where']}: {where}_")
         number += 1
 
     # Career Services' own guidance and templates, last, in code. Asked for
@@ -722,7 +725,6 @@ STRINGS = {
         "section_feedback": "Section-by-section feedback",
         "section": "Section",
         "hsg_heading": "Anything else from HSG worth adding?",
-        "hsg_where": "Belongs in",
         "guidance_heading": "Career Services' own guidance and templates",
         "guidance_intro": ("Written by Career Services, and the place to go for the full "
                            "picture rather than this one report."),
@@ -800,7 +802,6 @@ STRINGS = {
         "section_feedback": "Feedback Abschnitt für Abschnitt",
         "section": "Abschnitt",
         "hsg_heading": "Gibt es noch etwas von der HSG, das dazugehört?",
-        "hsg_where": "Gehört in",
         "guidance_heading": "Unterlagen und Vorlagen des Career Services",
         "guidance_intro": ("Vom Career Services selbst verfasst — dort findest du das ganze "
                            "Bild, nicht nur diesen einen Report."),
@@ -1005,12 +1006,11 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     if hsg_picks:
         story.append(Paragraph(f'{number}. {plain(strings["hsg_heading"])}', h2))
         story.append(Paragraph(plain(strings["hsg_intro"]), body))
-        for name, what, where, url in hsg_picks:
-            # Career Services' own CV-Section column, then the URL. The URL is
-            # printed rather than linked: this PDF gets emailed on and printed,
-            # and a link that only works on screen strands the reader.
-            tail = (f'<br/><font size="7.5" color="#55605A">'
-                    f'{plain(strings["hsg_where"])}: {plain(where)}</font>')
+        for name, what, _where, url in hsg_picks:
+            # The URL is printed rather than linked: this PDF gets emailed on
+            # and printed, and a link that only works on screen strands the
+            # reader. No "Belongs in" line here either - see the markdown above.
+            tail = ""
             if url:
                 tail += f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>'
             story.append(Paragraph(f"<b>{plain(name)}</b> — {plain(what)}{tail}",

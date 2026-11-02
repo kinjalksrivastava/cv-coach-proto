@@ -65,11 +65,17 @@ Description Alignment rules for the optional-JD / structure-only fallback.
 language is English, write BRITISH English throughout - organise, analyse, programme, \
 specialise, centre, CV not resume. Career Services are a Swiss university writing for a \
 European market and asked for this twice.
+- No em dashes, and no opening filler. Career Services asked for the interface to \
+sound like the university rather than like a chatbot, and the same goes for what you \
+write. Start with the answer: not "Great question", not "Absolutely", not a restatement \
+of what was asked.
 - Personal details are stripped out of the document before you ever see it: name, \
-address, date of birth, nationality, civil status, contact details. Never comment on \
-them, never ask about them, never suggest adding or removing them, and never treat a \
-[REDACTED] marker as something the student left out. If asked about them, say they were \
-removed before the document reached you and that you never saw them."""
+address, date of birth, nationality, civil status, contact details, and, in a cover \
+letter, the name of whoever it is addressed to. Never comment on them, never ask about \
+them, never suggest adding or removing them, and never treat a [REDACTED] marker as \
+something the student left out. If asked who the letter is addressed to, or about any \
+other personal detail, say it was removed before the document reached you and that you \
+never saw it. Do not guess at it from the company name or anything else in the text."""
 
 OPENING_REPORT_CONTEXT = """THE REPORT ALREADY SENT: the first assistant message in this \
 conversation is a written feedback report on this CV - overall impression, format check, \

@@ -30,18 +30,28 @@ ESSENTIALS = ["adds_value", "why_organisation", "why_role", "what_you_bring",
               "conclusion", "recipient", "job_title", "length", "availability"]
 MEASURED = {"recipient", "job_title", "length", "availability"}
 
-# Roughly one page of a letter. Career Services: "around two-thirds of a page of
-# substantive content is generally sufficient", and one page is the maximum.
-WORDS_PER_PAGE = 500
-COMFORTABLE_WORDS = 380
+# Round 5 caught this check wrong in both directions on the same week: 581 words
+# called "runs past one page" on a letter that fits one page, and 429 words
+# called "fits comfortably on one page" on a letter that ran onto a second. Both
+# came from dividing a word count by an assumed words-per-page. A page is not a
+# quantity of words; it is a quantity of layout, which the word count cannot
+# see. The real page count is already in the file for a PDF, so that is what is
+# used, and where there is no file to count (Word, pasted text) the report says
+# it could not be measured rather than guessing.
+#
+# Only one word-count judgement is left, and it makes no claim about pages: a
+# letter under this is thin whatever its layout.
+VERY_SHORT_WORDS = 150
 
 SALUTATION_RE = re.compile(
     r"\b(dear\b|sehr geehrte[rn]?\b|guten tag\b|liebe[rs]?\s+(?:frau|herr|team)\b|"
     r"to whom it may concern\b)", re.IGNORECASE)
 CLOSING_RE = re.compile(
     r"\b(yours sincerely|yours faithfully|kind regards|best regards|sincerely\b|"
-    r"mit freundlichen gr[üu]ssen|freundliche gr[üu]sse|herzliche gr[üu]sse|"
-    r"beste gr[üu]sse)", re.IGNORECASE)
+    # "ue" as well as "ü": some PDF extractions transliterate the umlaut away,
+    # and a sign-off that is there should not be reported as missing.
+    r"mit freundlichen gr[üu]e?ssen|freundliche gr[üu]e?sse|herzliche gr[üu]e?sse|"
+    r"beste gr[üu]e?sse)", re.IGNORECASE)
 REFERENCE_RE = re.compile(
     r"\b(ref(?:erence)?\.?\s*(?:no\.?|number|nr\.?)?\s*[:#]?\s*[A-Z0-9][A-Z0-9\-/]{2,}|"
     r"referenz(?:nummer)?\s*[:#]?\s*[A-Z0-9][A-Z0-9\-/]{2,}|"
@@ -131,7 +141,7 @@ def _echoes_the_cv(letter: str, cv_text: str) -> list[str]:
 
 
 def analyse(text: str, jd_text: str = "", target_role: str = "",
-            cv_text: str = "") -> dict:
+            cv_text: str = "", page_count: int | None = None) -> dict:
     """What can be counted about a cover letter. No judgement here."""
     body = text.strip()
     words = len(re.findall(r"\b[\w'’-]+\b", body))
@@ -154,10 +164,11 @@ def analyse(text: str, jd_text: str = "", target_role: str = "",
         "cv_echo_count": len(echoes),
         "word_count": words,
         "paragraph_count": len(paragraphs),
-        "page_estimate": round(words / WORDS_PER_PAGE, 2),
-        "too_long": words > WORDS_PER_PAGE,
-        "very_short": words < 150,
-        "comfortable_length": 150 <= words <= COMFORTABLE_WORDS,
+        # None when the document carries no pages to count: a .docx, or text
+        # pasted into the box. Never inferred.
+        "page_count": page_count,
+        "too_long": bool(page_count and page_count > 1),
+        "very_short": words < VERY_SHORT_WORDS,
         "has_salutation": bool(SALUTATION_RE.search(body)),
         "has_closing": bool(CLOSING_RE.search(body)),
         "has_recipient_block": bool(RECIPIENT_RE.search(body)),
@@ -247,9 +258,23 @@ def build_messages(letter_text, jd_text, target_role, facts, language_name):
             "retelling of a career, and say that you could not compare it with the CV.")
     if target_role:
         context.append(f"Target role as the student stated it: {target_role}")
+    if not jd_text:
+        # Round 5: the report told a student that her letter connected her
+        # experience to "the skills and mindset relevant for the trainee role"
+        # when no advert had been uploaded. Nothing in front of us said what
+        # that role wants, so that was invented. The replacement sentence is
+        # Career Services' own.
+        context.append(
+            "NO JOB ADVERT WAS PROVIDED, only the role the student named. You do "
+            "not know what this role requires, so never write that something is "
+            "relevant for the role, relevant to the position, matches its "
+            "requirements or fits what they are looking for. Describe the "
+            "connection the letter itself makes instead, in this shape: \"it "
+            "connects specific experiences (e.g. leadership, technical exposure, "
+            "project management) to the desired role\".")
     context.append(
         "Already measured, do not re-judge and do not repeat in your answer:\n"
-        f"- length: {facts['word_count']} words (about {facts['page_estimate']} of a page)\n"
+        f"- length: {_length_fact(facts)}\n"
         f"- salutation present: {facts['has_salutation']}\n"
         f"- sign-off present: {facts['has_closing']}\n"
         f"- recipient or company block present: {facts['has_recipient_block']}\n"
@@ -273,15 +298,29 @@ def generate(client, model, letter_text, jd_text, target_role, facts, language_n
     return data
 
 
+def _length_fact(facts: dict) -> str:
+    """What the model is allowed to know about length: pages where we counted
+    them, and plainly nothing where we did not."""
+    pages = facts.get("page_count")
+    if pages:
+        return (f"{pages} page(s), counted from the file. One page is the maximum."
+                + (" The letter is over the maximum." if pages > 1 else ""))
+    return ("not measurable from the uploaded file, so make no claim about how many "
+            "pages the letter runs to")
+
+
 def _measured_rows(facts: dict, strings: dict) -> dict:
     """The four rows that are counted rather than judged."""
     t = strings
-    if facts["too_long"]:
-        length = t["length_long"].format(n=facts["word_count"])
-    elif facts["very_short"]:
-        length = t["length_short"].format(n=facts["word_count"])
+    pages = facts.get("page_count")
+    if facts["very_short"]:
+        length = t["length_short"]
+    elif pages and pages > 1:
+        length = t["length_long"].format(n=pages)
+    elif pages == 1:
+        length = t["length_ok"]
     else:
-        length = t["length_ok"].format(n=facts["word_count"])
+        length = t["length_unknown"]
 
     if not facts["role_terms_checked"]:
         job_title = t["title_unknown"]
@@ -372,6 +411,11 @@ def to_pdf(data: dict, facts: dict, strings: dict) -> bytes | None:
         ("LEFTPADDING", (0, 0), (-1, -1), 5), ("RIGHTPADDING", (0, 0), (-1, -1), 5),
         ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ]))
+    # The table belongs under the heading it was built for. It used to be
+    # appended at the very end, which left section 2 empty and printed its
+    # table under section 3.
+    story += [grid, Spacer(1, 8)]
+
     guidance = hsg_activities.GUIDANCE["letter"][t.get("lang", "en")]
     story.append(Paragraph(f'3. {plain(t["guidance_heading"])}', h2))
     story.append(Paragraph(plain(t["guidance_intro"]), body))
@@ -380,7 +424,7 @@ def to_pdf(data: dict, facts: dict, strings: dict) -> bytes | None:
             f'{plain(label)}<br/><font size="7.5" color="#55605A">{plain(url)}</font>',
             body))
     story.append(Paragraph(plain(t["templates_note"]), small))
-    story += [grid, Spacer(1, 8), Paragraph(plain(t["closing"]), small)]
+    story.append(Paragraph(plain(t["closing"]), small))
 
     buffer = BytesIO()
     SimpleDocTemplate(buffer, pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm,
@@ -429,10 +473,14 @@ STRINGS = {
                         "add that too.",
         "title_missing": "The letter doesn't clearly name the role you're applying for.",
         "title_unknown": "No target role was given, so this wasn't checked.",
-        "length_ok": "About {n} words, which fits comfortably on one page.",
-        "length_long": "About {n} words, which runs past one page. One page is the "
-                       "maximum, and two-thirds of a page of substance is usually enough.",
-        "length_short": "About {n} words, which is very short for a cover letter.",
+        "length_ok": "Your letter is one page, which is the maximum. Around "
+                     "two-thirds of a page of substance is usually enough.",
+        "length_long": "Your letter runs to {n} pages. One page is the maximum, so "
+                       "some of this needs to come out.",
+        "length_short": "There is very little text here for a cover letter.",
+        "length_unknown": "The length could not be measured from what you uploaded, "
+                          "so please check it yourself. One page is the maximum, and "
+                          "around two-thirds of a page of substance is usually enough.",
         "availability_yes": "Your availability or start date is mentioned.",
         "availability_no": "No start date mentioned. Recruiters often find it helpful to "
                            "know when you could start — useful rather than required.",
@@ -480,10 +528,14 @@ STRINGS = {
         "title_missing": "Im Schreiben wird die Stelle, auf die du dich bewirbst, nicht "
                          "klar benannt.",
         "title_unknown": "Es wurde keine Zielposition angegeben, daher nicht geprüft.",
-        "length_ok": "Rund {n} Wörter, das passt bequem auf eine Seite.",
-        "length_long": "Rund {n} Wörter, das geht über eine Seite hinaus. Eine Seite ist "
-                       "das Maximum, zwei Drittel einer Seite Inhalt reichen meist.",
-        "length_short": "Rund {n} Wörter, das ist sehr kurz für ein Motivationsschreiben.",
+        "length_ok": "Dein Schreiben umfasst eine Seite, das ist das Maximum. Rund "
+                     "zwei Drittel einer Seite an Inhalt genügen in der Regel.",
+        "length_long": "Dein Schreiben umfasst {n} Seiten. Eine Seite ist das Maximum, "
+                       "einen Teil davon musst du also streichen.",
+        "length_short": "Das ist sehr wenig Text für ein Motivationsschreiben.",
+        "length_unknown": "Die Länge liess sich aus deinem Upload nicht messen, bitte "
+                          "prüfe sie selbst. Eine Seite ist das Maximum, und rund zwei "
+                          "Drittel einer Seite an Inhalt genügen in der Regel.",
         "availability_yes": "Verfügbarkeit oder Eintrittstermin sind genannt.",
         "availability_no": "Kein Eintrittstermin genannt. Recruiter finden es oft "
                            "hilfreich zu wissen, ab wann du könntest — hilfreich, nicht "

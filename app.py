@@ -21,6 +21,7 @@ import severity
 import hsg_activities
 from extraction import extract_text, MIN_CHARS
 from guardrails import confidentiality, global_rules, language, section_coverage
+import letter_pii
 from pii import select_cv_content, strip_pii
 from sections import jd_alignment
 
@@ -255,6 +256,8 @@ bei den Career Services wahrnehmen.
   Sprachmodell übermittelt wird. Bilder und Fotos werden nicht ausgelesen.
   Berufsbezeichnungen sowie Namen von Unternehmen und Hochschulen bleiben
   erhalten, weil sie für eine inhaltliche Rückmeldung notwendig sind.
+- Bei einem Motivationsschreiben wird auch der Name der Person entfernt, an die
+  das Schreiben gerichtet ist. Der Name des Unternehmens bleibt erhalten.
 - Ihr Dokument wird nicht dauerhaft gespeichert. Mit dem Schliessen des
   Browserfensters endet die Sitzung.
 - Laden Sie keine Unterlagen hoch, die vertrauliche Informationen Dritter
@@ -280,6 +283,8 @@ appointment.
   address and date of birth, are removed before the text is sent to the language
   model. Images and photos are not read. Job titles and the names of companies
   and universities are kept, because they are needed for feedback on content.
+- In a cover letter, the name of the person it is addressed to is removed as
+  well. The name of the organisation is kept.
 - Your document is not stored permanently. The session ends when you close the
   browser window.
 - Please do not upload documents that contain confidential information about
@@ -460,7 +465,8 @@ if st.session_state["mode"] is None:
     with right:
         with ui.card("mode_letter"):
             ui.card_head(copy["mode_letter_title"], copy["mode_letter_sub"])
-            if st.button(copy["mode_letter_button"], use_container_width=True):
+            if st.button(copy["mode_letter_button"], type="primary",
+                         use_container_width=True):
                 st.session_state["mode"] = "letter"
                 st.rerun()
     st.stop()
@@ -608,7 +614,11 @@ if st.session_state["cv_text"] is None:
             selected = select_cv_content(cv_raw) if not is_letter else {
                 "text": cv_raw, "applied": False, "dropped_lines": 0}
             st.session_state["pii_structure_applied"] = selected["applied"]
-            cv_clean = strip_pii(selected["text"], cv_language)
+            # A letter goes through the CV layer AND the recipient layer. It
+            # names a second person who never agreed to anything, and round 5
+            # caught the bot reading that name back out.
+            cv_clean = (letter_pii.strip_letter_pii(selected["text"], cv_language)
+                        if is_letter else strip_pii(selected["text"], cv_language))
             jd_clean = strip_pii(jd_raw, cv_language) if jd_raw.strip() else None
 
         cv_text = cv_clean["text"]
@@ -648,7 +658,10 @@ if st.session_state["cv_text"] is None:
                 reference_cv = strip_pii(ref_pasted, cv_language)["text"]
             with st.spinner(copy["spinner_letter"]):
                 letter_facts = cover_letter.analyse(
-                    cv_text, st.session_state["jd_text"] or "", target_role, reference_cv)
+                    cv_text, st.session_state["jd_text"] or "", target_role, reference_cv,
+                    # The real page count, from the file itself. Nothing about
+                    # length is inferred from a word count any more.
+                    page_count=cv_meta.get("page_count"))
                 letter_data = cover_letter.generate(
                     client, MODEL, cv_text, st.session_state["jd_text"] or "",
                     target_role, letter_facts, language.SUPPORTED[lang_code])

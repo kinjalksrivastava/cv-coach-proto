@@ -73,7 +73,7 @@ CERTIFICATES = [
      "the Master's-level sustainability/climate credential",
      "Education as a specialisation, or Courses and Certificates",
      "https://www.unisg.ch/en/university/engagement/responsibility-and-sustainability/"),
-    ("Other Additional Qualification Programmes",
+    ("Additional Qualification programmes",
      "Business Education I & II, Digital Communication and Journalism, Financial "
      "Technology, Real Estate - same competitive, transcript-visible format",
      "Education as a specialisation, or Courses and Certificates",
@@ -388,7 +388,7 @@ ROLE_AFFINITY = [
     (("data", "analyt", "tech", "software", "engineer", "digital", "quant",
       "machine learning", "artificial intelligence", "informatik"),
      ["Certificate in Data Science Fundamentals (DSF)",
-      "Other Additional Qualification Programmes", "Bloomberg Market Concepts (BMC)",
+      "Additional Qualification programmes", "Bloomberg Market Concepts (BMC)",
       "Startup@HSG / HSG Entrepreneurship"]),
     (("sustainab", "esg", "impact", "climate", "nachhaltig", "energy", "ngo"),
      ["Certificate in Integrative Sustainability Management (SuM-HSG)",
@@ -396,9 +396,9 @@ ROLE_AFFINITY = [
       "NextGen Impact Forum / SHSG Next Gen Impact Award",
       "180 Degrees Consulting - Global Case Competition"]),
     (("law", "legal", "recht", "jurist", "compliance", "regulat"),
-     ["Law Clinic", "LawDays", "Other Additional Qualification Programmes"]),
+     ["Law Clinic", "LawDays", "Additional Qualification programmes"]),
     (("marketing", "communicat", "brand", "media", "journalis", "pr ", "kommunikation"),
-     ["Other Additional Qualification Programmes", "START Summit",
+     ["Additional Qualification programmes", "START Summit",
       "Talents Conference (Career Services)", "HSG student clubs (~150 accredited, SHSG directory)"]),
     (("entrepreneur", "startup", "start-up", "founder", "venture", "innovation", "product"),
      ["Startup@HSG / HSG Entrepreneurship", "Entrepreneurial Talents Programme (ETP)",
@@ -412,11 +412,11 @@ ROLE_AFFINITY = [
 # Shown when the role matches nothing, or when no role was given at all. Broad on
 # purpose: these suit any student regardless of what they are aiming at.
 GENERAL_PICKS = [
-    "HSG Mentoring Programme",
     "HSG student clubs (~150 accredited, SHSG directory)",
+    "Additional Qualification programmes",
+    "HSG Mentoring Programme",
     "Certificate in Data Science Fundamentals (DSF)",
     "Bachelor's / Master's thesis",
-    "HSG University Sports",
 ]
 
 _BY_NAME = {name: (name, what, where, url)
@@ -428,15 +428,16 @@ _BY_NAME = {name: (name, what, where, url)
 # asked for the suggestions to be relevant SECTION BY SECTION rather than a
 # handful of role matches presented as though each had been chosen deliberately.
 SECTION_PICKS = {
-    "Education": ["HSG Mentoring Programme", "Bachelor's / Master's thesis",
-                  "Capstone Project (BWL)",
-                  "Company-linked practical projects (e.g. AWP projects, Student Impact)"],
-    "Experience": ["Talents Conference (Career Services)", "My HSG Career",
-                   "HSG University Sports"],
+    "Education": ["HSG Mentoring Programme", "Additional Qualification programmes",
+                  "Bachelor's / Master's thesis", "Capstone Project (BWL)",
+                  "Certificate in Data Science Fundamentals (DSF)"],
+    "Experience": ["Talents Conference (Career Services)",
+                   "Company-linked practical projects (e.g. AWP projects, Student Impact)"],
     "Extracurricular & Interests": [
         "HSG student clubs (~150 accredited, SHSG directory)",
-        "SHSG Student Union", "HSG University Sports",
-        "St. Gallen Symposium (International Students' Committee)"],
+        "SHSG Student Union",
+        "St. Gallen Symposium (International Students' Committee)",
+        "HSG University Sports"],
     "Volunteering & Community": [
         "HSG student clubs (~150 accredited, SHSG directory)",
         "NextGen Impact Forum / SHSG Next Gen Impact Award"],
@@ -444,7 +445,7 @@ SECTION_PICKS = {
                            "Bloomberg Market Concepts (BMC)"],
     "Certifications & Training": [
         "Certificate in Data Science Fundamentals (DSF)",
-        "Other Additional Qualification Programmes",
+        "Additional Qualification programmes",
         "Bloomberg Market Concepts (BMC)"],
     "Projects": ["Capstone Project (BWL)", "HSG Innovation Trophy",
                  "Company-linked practical projects (e.g. AWP projects, Student Impact)"],
