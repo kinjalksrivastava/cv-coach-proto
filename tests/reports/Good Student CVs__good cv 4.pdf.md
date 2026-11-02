@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well structured and concise, with clear section headings and a strong set of professional experiences that each include both a role title and a description. The feedback below focuses on structure and completeness, as no target role or job description was provided—if you add a specific target, I can give more tailored advice. There is currently no evidence of AI-specific experience or coursework beyond a course title; if you have hands-on AI experience, consider adding it where relevant.
+Your CV is well-structured and concise, with clear section headings and a strong set of professional experiences, each with a role title and description. The document is an appropriate length for your stage and free of spelling or formatting issues. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. There is currently no mention of AI experience in your coursework, projects, work, or skills—if you have relevant exposure, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something to share: relevant modules, thesis topic and what you actually did, exchange semester, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
-- 🟠 **Bullets describe duties rather than contribution**  
-  Rework the duty-focused bullets in your professional experience to highlight what you did, how you did it, and why it mattered—emphasising the transferable skills you developed.
-- 🟠 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify what you did, how you did it, and the impact or skill demonstrated. Add outcomes where you genuinely have them, but only if you can support them.
-- 🟡 **Bullet punctuation is inconsistent**  
-  Choose a consistent punctuation style for your bullets and apply it throughout the document.
-- 🟡 **Grades need clarifying**  
-  Where you list a grade, always include the maximum (e.g. 5.00 / 6.00) so international readers can interpret your results correctly.
+- 🔴 **Add detail under each degree in Education**  
+  Currently, your education entries list only the degree, date, and grade. Add a line or two under each degree with relevant modules, thesis topic and what you actually did, any exchange semester, certificates, scholarships, or mentoring programmes that are relevant to your future applications.
+- 🔴 **Rework duty-based bullets in Professional Experience**  
+  Some bullets describe only the task or duty. Revise these to show what you did, how you did it, and why it mattered, highlighting the transferable skills you developed.
+- 🔴 **Add outcomes and skills to experience bullets**  
+  Most experience bullets describe tasks without showing the skill behind them or the outcome. For each, clarify what you did, how you did it, and what changed as a result, focusing on the skills you want to demonstrate.
+- 🟠 **Make bullet punctuation consistent**  
+  Some bullets end with a full stop and others do not. Choose one style and apply it to every bullet for a professional finish.
+- 🟡 **Clarify grades for international readers**  
+  Your Bachelor's grade is listed as '5' without a maximum. Write it as 5.00 / 6.00 so recruiters outside Switzerland can understand your results.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,27 +44,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add a line or two under each degree with relevant modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or mentoring programmes such as the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if you participated.
-- Clarify your bachelor's grade by writing it as 5.00 / 6.00, so it is clear to readers outside Switzerland.
-- If you have completed additional qualifications such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or the Certificate in Integrative Sustainability Management (SuM-HSG) (https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them if relevant.
-- If you have participated in an exchange semester or received a scholarship, include a brief line about it under the relevant degree.
+- Clarify your Bachelor's grade as 5.00 / 6.00 so it is clear to international readers.
+- If you participated in the HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the Certificate in Data Science Fundamentals (DSF) (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), you could add these as bullets under the relevant degree, but only if they are genuinely relevant.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Review each bullet and expand on what you personally did, how you approached it, and what skill or outcome resulted—especially for bullets that currently only state a task or duty.
-- Where possible, add outcomes or results that you can support, but only if they are genuine.
-- Ensure all bullets use consistent punctuation (either all with or all without full stops).
+- Where possible, add outcomes or results to your bullets, but only if you can genuinely support them.
+- Make sure all bullets use consistent punctuation—either all with or all without a full stop.
 
 **EXTRACURRICULAR ACTIVITY** 🟢 Strong
 
-- You have shown concrete involvement and teamwork by co-organising an event and volunteering for university activities.
+- You show clear evidence of initiative and collaboration by describing your role in organising events and working with others.
 
 **SKILLS & INTERESTS** 🟠 Needs attention
 
-- Add a proficiency level (Basic, Intermediate, Advanced, or similar) next to each technical skill, so a reader knows your capability with each tool.
-- For each language, include a CEFR level (A1–C2) alongside your current label, as this is the standard recruiters recognise everywhere.
-- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), consider adding them here or in a Courses and Certificates section.
-- If you wish to expand your interests, you could add more detail about the context or frequency of your activities (e.g. 'Pilates – weekly classes').
+- Add a proficiency level (Basic, Intermediate, Advanced) to each technical skill so a reader knows your capability with each tool.
+- For each language, include a CEFR level (A1-C2) alongside your current label, as this is the standard recruiters recognise.
+- If you have completed a relevant course such as Bloomberg Market Concepts (BMC) (https://portal.bloombergforeducation.com/), you could add it here or in a Courses and Certificates section.
 
 **Profile** ⚪ Missing
 
@@ -72,22 +68,17 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), you could add them here to highlight additional qualifications.
+- If you have completed relevant certificates, online courses, or additional training, you could add them here to strengthen your application.
 
 ### 5. Anything else from HSG worth adding?
 
 Before your appointment, it is worth asking yourself whether there is anything else you have done at HSG that belongs on this CV: a club, a certificate, a mentoring programme, a competition, a project with a company. A few examples of what is on offer are below. They are examples, not recommendations, and only what is genuinely relevant to the role you are applying for is worth adding.
 
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Belongs in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
 - **[Bachelor's / Master's thesis](https://www.unisg.ch/)** — the academic capstone; several institutes welcome theses written with a company
-  _Belongs in: Education_
 - **[Capstone Project (BWL)](https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/)** — a semester acting as business consultants for a real practice partner
-  _Belongs in: Education_
-- **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Belongs in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
-- **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
-  _Belongs in: Reference, not a CV section_
+- **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
 
 ### 6. Career Services' own guidance and templates
 

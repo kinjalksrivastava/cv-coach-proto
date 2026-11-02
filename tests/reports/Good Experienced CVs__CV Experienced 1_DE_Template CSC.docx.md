@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Besonders positiv fällt auf, dass Sie für alle Berufsstationen sowohl die Rolle als auch eine Beschreibung angegeben haben und Ihre Noten mit Maximalwerten versehen sind, was die internationale Vergleichbarkeit erleichtert. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Position können Sie jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es fällt auf, dass aktuell keine KI-bezogenen Erfahrungen oder Tools explizit genannt werden; falls Sie relevante Kenntnisse oder Projekte in diesem Bereich haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist insgesamt gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation und Unternehmensentwicklung. Besonders positiv fällt auf, dass Sie für alle Berufsstationen sowohl die Rolle als auch eine Beschreibung angegeben haben und Ihre Noten mit Maximalwerten versehen sind, was die internationale Vergleichbarkeit erleichtert. Da kein konkretes Berufsziel oder Stellenprofil vorliegt, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit; für gezieltes, rollenbezogenes Feedback können Sie jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine explizite Erfahrung mit KI oder maschinellem Lernen im Lebenslauf genannt wird – falls Sie hier relevante Projekte, Tools oder Kenntnisse haben, könnten Sie diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,12 +18,12 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Ihre Studienabschlüsse enthalten außer Note und Datum keine weiteren Details**  
-  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Ihre Abschlussarbeit (inklusive Thema und Methodik), ein Auslandssemester, Zertifikate oder besondere Programme nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
-- 🔴 **Aufgabenbeschreibungen statt konkretem Beitrag in den Berufserfahrungen**  
-  Überarbeiten Sie die betroffenen Bullet Points so, dass klar wird, was Sie konkret getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder das Team einen Unterschied gemacht hat – mit Fokus auf übertragbare Kompetenzen.
+- 🔴 **Ihre Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
+  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, Ihre Abschlussarbeit (inklusive Thema, Methode und Ergebnis), ein Auslandssemester, Zertifikate oder besondere Programme nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
+- 🔴 **Aufgabenbeschreibungen statt konkretem Beitrag in Berufserfahrung**  
+  Überarbeiten Sie die betroffenen Bullet Points so, dass klar wird, was genau Sie getan haben, wie Sie es umgesetzt haben und warum es für das Unternehmen oder das Team einen Unterschied gemacht hat – mit Fokus auf übertragbare Kompetenzen.
 - 🟠 **Reihenfolge: Ausbildung folgt auf Berufserfahrung**  
-  Für einen klassischen Studierenden-Lebenslauf steht die Ausbildung normalerweise an erster Stelle, außer Sie haben bereits mehrere Jahre einschlägige Berufserfahrung. Prüfen Sie, ob eine Umstellung für Ihre Zielposition sinnvoll wäre.
+  Für einen klassischen Studierenden-Lebenslauf steht die Ausbildung normalerweise an erster Stelle, außer Sie verfügen bereits über viele Jahre einschlägiger Berufserfahrung.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
   Ergänzen Sie bei jeder Sprache ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, C1), idealerweise nach dem CEFR-Standard (A1–C2), damit Recruiter Ihre Kenntnisse eindeutig einschätzen können.
 - 🟡 **Interessen ohne Details**  
@@ -45,54 +45,46 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil hebt Ihre langjährige Erfahrung, Ihre methodische Stärke und Ihre Begeisterung für Innovation und neue Technologien prägnant hervor.
+- Ihr Profil hebt Ihre langjährige Erfahrung, Ihre methodische Stärke und Ihre Begeisterung für Innovation und neue Technologien überzeugend hervor.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
 - Überarbeiten Sie die Bullet Points, die nur Aufgaben beschreiben (z.B. 'Selbständiges Beraten, Begleiten und Führen von digitalen Transformationsvorhaben'), indem Sie Ihren konkreten Beitrag, die Vorgehensweise und das Ergebnis herausstellen – insbesondere, welche Kompetenzen Sie dabei gezeigt haben.
-- Falls Sie sich auf eine bestimmte Zielposition bewerben, prüfen Sie, welche Erfahrungen und Projekte besonders relevant sind und heben Sie diese gezielt hervor.
+- Falls Sie an der St. Gallen Symposium (International Students' Committee) ([https://shsg.ch/clubs](https://shsg.ch/clubs)) oder der Talents Conference teilgenommen oder mitgewirkt haben und dies für Ihre Zielposition relevant ist, könnten Sie dies als Berufserfahrung ergänzen – aber nur, wenn es sich um eine bezahlte Tätigkeit handelt.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Abschlussarbeiten (inklusive Thema und Methodik), Auslandssemestern oder besonderen Programmen hinzu, sofern vorhanden.
-- Falls Sie am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet unter dem jeweiligen Abschluss ergänzen.
-- Wenn Sie sich auf eine bestimmte Position bewerben, wählen Sie die Inhalte aus, die für diese Rolle besonders relevant sind.
+- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Kursen, Abschlussarbeiten (inklusive Thema, Methode und Ergebnis), Auslandssemestern oder besonderen Programmen hinzu, sofern vorhanden.
+- Falls Sie am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben, können Sie dies als Bullet Point unter dem jeweiligen Abschluss aufführen.
+- Wenn Sie ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben haben, können Sie dies ebenfalls unter Ausbildung oder im Abschnitt 'Kurse und Zertifikate' ergänzen.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei Ihren Interessen und Aktivitäten, wie oft und auf welchem Niveau Sie diese ausüben (z.B. Teilnahme an Wettbewerben, regelmäßige Engagements, besondere Leistungen).
-- Wenn Sie als Mentor tätig sind, beschreiben Sie kurz, wie Sie unterstützen und welche Kompetenzen Sie dabei einbringen.
-- Für eine gezielte Bewerbung: Heben Sie Aktivitäten hervor, die für die angestrebte Position besonders relevant sind.
+- Beschreiben Sie bei Ihren Interessen und Aktivitäten, wie oft und auf welchem Niveau Sie diese ausüben (z.B. wie häufig Sie als Mentor aktiv sind oder welche konkreten Aufgaben Sie übernommen haben).
+- Wenn Sie als Assessment Guide (SHSG) ([https://shsg.ch/services](https://shsg.ch/services)) tätig waren, können Sie dies als extracurricular activity aufführen.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie bei jeder Sprache und jedem IT-Tool ein Niveau hinzu (z.B. 'Python (Grundkenntnisse)', 'Englisch (C1)'), idealerweise nach dem CEFR-Standard für Sprachen.
-- Wenn Sie weitere relevante Zertifikate oder Onlinekurse abgeschlossen haben, können Sie diese mit Abschlussjahr und ggf. Niveau ergänzen.
-- Für eine Bewerbung im Bereich Datenanalyse oder Digitalisierung: Erwähnen Sie relevante Tools, Methoden oder Zertifikate, die im Zielbereich gefragt sind.
+- Für Onlinekurse wie 'Technology Innovation Management' oder 'Python für Datenwissenschaft, KI & Entwicklung' geben Sie bitte an, auf welchem Niveau Sie die jeweiligen Inhalte beherrschen.
+- Falls Sie das [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) Zertifikat absolviert haben, können Sie dies hier oder im Abschnitt 'Kurse und Zertifikate' aufführen.
 
 **INTERESSEN** 🟢 Stark
 
-- Sie beschreiben Ihre Interessen mit Beispielen und Aktivitäten, was Ihre Vielseitigkeit und Ihr Engagement unterstreicht.
+- Ihre Interessen sind konkret benannt und zeigen sowohl sportliches als auch kulturelles Engagement.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Zertifikate, Onlinekurse oder Weiterbildungen abgeschlossen haben, können Sie diese in einem eigenen Abschnitt aufführen – z.B. 'Certificate in Data Science Fundamentals (DSF)' oder 'Bloomberg Market Concepts (BMC)'.
-- Nennen Sie jeweils das Abschlussjahr und ggf. das Niveau oder die wichtigsten Inhalte, sofern für Ihre Zielposition relevant.
+- Falls Sie relevante Zertifikate, Weiterbildungen oder Onlinekurse abgeschlossen haben, können Sie diese in einem eigenen Abschnitt aufführen – insbesondere, wenn sie für Ihre Zielposition von Bedeutung sind.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Gehört in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
-- **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
-  _Gehört in: Reference, not a CV section_
-- **[HSG University Sports](https://www.unisg.ch/en/)** — around 250 training sessions a week across 70+ sports
-  _Gehört in: an active role or teaching a class: Extracurricular, or Work Experience if it was a paid contract_
+- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Gehört in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
 - **[Bachelor's / Master's thesis](https://www.unisg.ch/)** — the academic capstone; several institutes welcome theses written with a company
-  _Gehört in: Education_
 
 ### 6. Unterlagen und Vorlagen des Career Services
 

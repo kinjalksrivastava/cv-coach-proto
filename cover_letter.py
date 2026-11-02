@@ -58,9 +58,20 @@ REFERENCE_RE = re.compile(
     r"stellen(?:nummer|referenz)\s*[:#]?\s*[A-Z0-9][A-Z0-9\-/]{2,}|"
     r"job\s*id\s*[:#]?\s*[A-Z0-9][A-Z0-9\-/]{2,})", re.IGNORECASE)
 AVAILABILITY_RE = re.compile(
-    r"\b(available from|availability|can start|start date|starting date|earliest|"
+    # "I will be available for a full-time position from May 2025" is how
+    # Career Services' own template says it, and "available from" alone missed
+    # it: the report told the template it had not mentioned a start date.
+    r"\b(available (?:from|for|as of|starting)|will be available|"
+    r"availability|can start|start date|starting date|earliest|"
     r"notice period|verf[üu]gbar(?:keit)? ab|eintrittstermin|eintritt per|"
-    r"ab sofort|k[üo]ndigungsfrist|antrittsdatum)\b", re.IGNORECASE)
+    r"ab sofort|k[üo]ndigungsfrist|antrittsdatum|"
+    # "Ich stehe Ihnen ab dem 1. August zur Verfügung" is the German form, and
+    # it is the date after "ab" that makes it a start date rather than an offer
+    # to talk. "Ich stehe gerne zur Verfügung" is not one and must not match.
+    r"ab (?:Anfang |Mitte |Ende )?(?:Januar|Februar|M[äa]rz|April|Mai|Juni|Juli|"
+    r"August|September|Oktober|November|Dezember))\b"
+    # Outside the group: a date ends on "." and so has no word boundary after it.
+    r"|\bab (?:dem )?\d{1,2}\.", re.IGNORECASE)
 # A recipient block: a company line, a street, or a postcode-and-town.
 RECIPIENT_RE = re.compile(
     r"^\s*(?:[A-ZÄÖÜ][\w&.\- ]{2,40}\s(?:AG|GmbH|SA|Ltd|LLP|Inc|PLC|KG|SE)\b"
@@ -288,6 +299,47 @@ def build_messages(letter_text, jd_text, target_role, facts, language_name):
     ]
 
 
+# The same rule as the one in build_messages, enforced after the fact. The
+# prompt alone held for two of the three sample letters and then wrote "skills
+# relevant to the position" on Career Services' own template, with no advert
+# uploaded and nothing in front of it saying what that position wants. A rule
+# that lives only in the prompt holds most of the time, which is not the same
+# as holding. Saying that experience is CONNECTED to the role is fine, and is
+# the wording Career Services asked for; asserting that it is RELEVANT to a
+# role we were never told the requirements of is the claim being removed.
+NO_ADVERT_CLAIMS = (
+    (re.compile(r"\brelevan(?:t|ce)\s+(?:to|for)\s+the\s+"
+                r"(?:advertised\s+|target\s+|trainee\s+|specific\s+)?"
+                r"(?:position|role|job|programme|program)\b", re.IGNORECASE),
+     "connected to the role you are aiming for"),
+    (re.compile(r"\b(?:match(?:es|ing)?|fit(?:s|ting)?)\s+(?:the\s+)?"
+                r"(?:role'?s?\s+|position'?s?\s+)?requirements\b", re.IGNORECASE),
+     "connects to the role you are aiming for"),
+    (re.compile(r"\brelevant\s+für\s+die\s+(?:angestrebte\s+|ausgeschriebene\s+)?"
+                r"(?:Stelle|Position)\b", re.IGNORECASE),
+     "mit Bezug auf die angestrebte Stelle"),
+    (re.compile(r"\bpassend\s+(?:für|zu)\s+(?:die|der)\s+(?:Stelle|Position)\b",
+                re.IGNORECASE),
+     "mit Bezug auf die angestrebte Stelle"),
+    (re.compile(r"\bentspricht\s+den\s+Anforderungen\b", re.IGNORECASE),
+     "hat Bezug auf die angestrebte Stelle"),
+)
+
+
+def _without_role_claims(data: dict) -> dict:
+    def clean(value):
+        if not isinstance(value, str):
+            return value
+        for pattern, replacement in NO_ADVERT_CLAIMS:
+            value = pattern.sub(replacement, value)
+        return value
+
+    data["overall_assessment"] = clean(data.get("overall_assessment"))
+    data["essentials"] = {key: clean(value)
+                          for key, value in (data.get("essentials") or {}).items()}
+    return data
+
+
 def generate(client, model, letter_text, jd_text, target_role, facts, language_name):
     data = latency.json_call(
         client, model,
@@ -295,7 +347,7 @@ def generate(client, model, letter_text, jd_text, target_role, facts, language_n
         max_tokens=1200, timeout=45)
     if not isinstance(data, dict) or not data.get("overall_assessment"):
         return None
-    return data
+    return data if jd_text else _without_role_claims(data)
 
 
 def _length_fact(facts: dict) -> str:

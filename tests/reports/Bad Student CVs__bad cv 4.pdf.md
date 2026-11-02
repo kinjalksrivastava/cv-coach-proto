@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und enthält die wichtigsten Abschnitte für den Berufseinstieg. Die Angaben zu deinen bisherigen Tätigkeiten sind klar, aber es gibt noch viel Raum, um mehr über deine Studieninhalte, Engagements und konkrete Beiträge in deinen bisherigen Jobs zu zeigen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige ergänzen. Es ist zudem auffällig, dass bisher keine Erfahrung mit KI oder KI-Tools erwähnt wird; falls du hier Kenntnisse oder Erfahrungen hast, kannst du diese gerne ergänzen.
+Dein Lebenslauf ist übersichtlich und enthält die wichtigsten Abschnitte für eine Bewerbung im Studium oder am Berufseinstieg. Die Angaben zu deinen bisherigen Tätigkeiten sind klar strukturiert und zeigen, dass du bereits praktische Erfahrungen gesammelt hast. Es gibt jedoch noch viel Raum, um mehr über deine Studieninhalte, Engagements und konkrete Beiträge in deinen bisherigen Jobs zu erzählen – so kannst du deine Stärken und Interessen gezielter hervorheben. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle kannst du jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen. Es ist außerdem kein Bezug zu KI oder AI-Tools im Lebenslauf erkennbar – falls du hier relevante Erfahrungen hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,12 +18,12 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu Studieninhalten und relevanten Aktivitäten fehlen**  
-  Unter deinen Studienabschlüssen stehen bisher nur Abschluss und Zeitraum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Vorgehen), einem Austauschsemester, Zertifikaten oder besonderen Programmen, sofern vorhanden und für deine Zielrichtung relevant.
-- 🔴 **Der Lebenslauf ist zu kurz**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Engagements und Fähigkeiten zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt auf Lesende oft zu knapp.
-- 🟠 **Aufgabenbeschreibungen statt konkreter Beiträge**  
-  Formuliere die Stichpunkte unter Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du vorgegangen bist und welche übertragbaren Kompetenzen du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis kann ergänzt werden, wenn vorhanden.
+- 🔴 **Details zu Studieninhalten und Engagement im Bildungsbereich fehlen**  
+  Füge unter jedem Studienabschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, besondere Projekte, eine Abschlussarbeit, ein Austauschsemester, Zertifikate oder Stipendien aufführst – immer mit Blick darauf, was für deinen nächsten Karriereschritt wichtig ist.
+- 🔴 **Lebenslauf ist zu kurz**  
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Fähigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt oft zu knapp und lässt Potenzial ungenutzt.
+- 🟠 **Aufgabenbeschreibungen in Berufserfahrung sind zu allgemein**  
+  Überarbeite die Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, die Art der Umsetzung und die erlernten Kompetenzen zeigen. Wo möglich, beschreibe, welches Ergebnis du erzielt hast oder welche Fähigkeiten du dabei entwickelt hast.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,24 +41,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟠 Braucht Aufmerksamkeit
 
-- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du dies als Bullet ergänzen – aber nur, wenn es zutrifft und relevant ist.
+- Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Projekten, einer Abschlussarbeit, einem Austauschsemester, Zertifikaten oder Stipendien – immer mit Blick auf das, was für deinen nächsten Karriereschritt wichtig ist.
+- Falls du am HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals (https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilnimmst, kannst du dies als Bullet Point unter dem jeweiligen Abschluss aufführen – aber nur, wenn es für dein Ziel relevant ist.
 
 **Berufserfahrung** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die dabei genutzten Kompetenzen zeigen.
-- Falls du bei einer Tätigkeit ein besonderes Ergebnis erzielt hast (z.B. Verbesserung eines Ablaufs, positives Feedback, Übernahme zusätzlicher Verantwortung), kannst du dies ergänzen.
+- Nutze den Platz, um weitere relevante Erfahrungen oder Details zu ergänzen, falls vorhanden.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind übersichtlich und mit relevanten Modulen dargestellt.
+- Die Zertifikate sind übersichtlich dargestellt und zeigen Zusatzqualifikationen, die für viele Berufsfelder relevant sind.
 
 **Kenntnisse** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Kenntnissen sind präzise und geben einen guten Überblick über deine Kompetenzen.
+- Die Angaben zu Sprachkenntnissen und IT-Skills sind präzise und geben einen guten Überblick über deine Kompetenzen.
 
 **Engagement** 🟢 Stark
 
-- Die Teilnahme an verschiedenen Clubs und Events zeigt dein Interesse an Wirtschaft und Finanzen sowie deine Eigeninitiative.
+- Die Mitgliedschaften und Teilnahmen an Events zeigen, dass du dich über das Studium hinaus engagierst.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -66,22 +66,17 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, kannst du persönliche Interessen oder Hobbys ergänzen – etwa Sportarten, Musik, Reisen oder andere Aktivitäten, die dich ausmachen.
+- Wenn du möchtest, kannst du einen kurzen Abschnitt zu Interessen oder Hobbys ergänzen – zum Beispiel Sportarten, Musik, Reisen oder andere persönliche Aktivitäten.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Gehört in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
 - **[Bachelor's / Master's thesis](https://www.unisg.ch/)** — the academic capstone; several institutes welcome theses written with a company
-  _Gehört in: Education_
 - **[Capstone Project (BWL)](https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/)** — a semester acting as business consultants for a real practice partner
-  _Gehört in: Education_
-- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
-  _Gehört in: Education_
-- **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Gehört in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
+- **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
 
 ### 6. Unterlagen und Vorlagen des Career Services
 

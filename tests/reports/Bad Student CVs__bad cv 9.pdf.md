@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen deiner Ausbildung und bisherigen Erfahrungen. Allerdings fehlen durchgehend konkrete Beschreibungen und Bullet Points, sodass ein Leser kaum nachvollziehen kann, was du in den einzelnen Rollen und Studiengängen tatsächlich gemacht hast. Es gibt aktuell keine Hinweise auf Kenntnisse oder Erfahrungen im Bereich Künstliche Intelligenz – falls du hier relevante Erfahrungen hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen.
+Ihr Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen Ihrer Ausbildung und bisherigen Erfahrungen. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen. Es fällt auf, dass keine Angaben zu KI oder KI-bezogenen Tools, Projekten oder Kursen enthalten sind – falls Sie hier relevante Erfahrungen haben, könnten Sie diese ergänzen. Insgesamt ist die Basis solide, aber es fehlen an mehreren Stellen konkrete Beschreibungen und ein Abschnitt zu Skills & Languages.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende inhaltliche Angaben zu den Studiengängen**  
-  Füge unter jedem Studiengang ein bis zwei Zeilen hinzu, in denen du relevante Module, Schwerpunkte, Abschlussarbeiten, Austauschsemester oder Zusatzqualifikationen aufführst – immer mit Blick darauf, was für deine nächste Bewerbung wichtig ist.
+- 🔴 **Ihre Abschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
+  Fügen Sie unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen Sie relevante Module, eine Abschlussarbeit (inklusive Thema und Methode), ein Auslandssemester, Zertifikate oder besondere Programme wie das Mentoring-Programm nennen – jeweils nur, wenn es zutrifft und für Ihr Ziel relevant ist.
 - 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
-  Ergänze unter jeder Station (Studium, Berufserfahrung, Ehrenamt, Zusatzprogramme) einige Bullet Points, die konkret beschreiben, was du gemacht hast. Ohne diese Angaben bleibt unklar, welche Aufgaben, Verantwortungen und Ergebnisse du hattest.
-- 🔴 **Fehlende Beschreibungen bei Berufserfahrung**  
-  Beschreibe unter jeder Position in der Berufserfahrung, was du konkret gemacht hast, wie du vorgegangen bist und welche Ergebnisse oder Veränderungen daraus entstanden sind – mit Fokus auf übertragbare Kompetenzen.
-- 🟠 **Datumsangaben ohne Monat**  
-  Ergänze bei allen Zeiträumen, die aktuell nur das Jahr zeigen, auch den Monat. So wird der Umfang deiner Tätigkeiten und Programme für den Leser klarer.
-- 🟡 **Fehlende Skills & Languages Sektion**  
-  Falls du relevante Sprachkenntnisse oder IT-Kenntnisse hast, füge eine eigene Sektion hinzu. Das erleichtert es, deine Kompetenzen auf einen Blick zu erfassen.
+  Ergänzen Sie unter jeder Station und Aktivität einige Stichpunkte, die konkret beschreiben, was Sie dort gemacht haben. Ohne diese erfährt ein Leser nur Ihre Titel, aber nicht Ihre tatsächlichen Aufgaben oder Kompetenzen.
+- 🔴 **Einträge in "Praktische Erfahrungen" sind nicht beschrieben**  
+  Fügen Sie unter jeder Position einige Stichpunkte hinzu, die Ihre Aufgaben, die Herangehensweise und die erzielten Ergebnisse darstellen – mit Fokus auf übertragbare Fähigkeiten.
+- 🟠 **Datumsangaben enthalten nur das Jahr**  
+  Ergänzen Sie bei allen Zeiträumen den Monat, damit der Umfang der jeweiligen Station klar wird.
+- 🟡 **Abschnitt Skills & Languages fehlt**  
+  Falls Sie relevante Sprachkenntnisse oder IT-/Fachkenntnisse haben, fügen Sie einen entsprechenden Abschnitt hinzu.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,18 +46,17 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Studiengang ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, Abschlussarbeiten, Austauschsemestern oder Zusatzqualifikationen hinzu – zum Beispiel das HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/), falls es für deine Bewerbung relevant ist.
-- Ergänze Bullet Points, die deine wichtigsten Tätigkeiten, Projekte oder Lernerfolge im Studium beschreiben.
-- Die Note der Hochschulreife sollte als 2,20 / 1,00 angegeben werden, damit sie international verständlich ist.
+- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Auslandssemester, Zertifikaten oder besonderen Programmen wie dem HSG Mentoring Programme (https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) hinzu – jeweils nur, wenn es zutrifft.
+- Ergänzen Sie unter jedem Abschluss Stichpunkte, die Ihre Schwerpunkte, besondere Leistungen oder relevante Zusatzqualifikationen beschreiben.
+- Korrigieren Sie die Notenangabe zur Hochschulreife: Schreiben Sie sie als 2,20 / 1,00, damit sie international verständlich ist.
 
 **Praktische Erfahrungen** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jeder Position Bullet Points hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – insbesondere mit Blick auf Kompetenzen, die für zukünftige Bewerbungen relevant sind.
+- Falls Sie an Projekten, Prozessverbesserungen oder besonderen Aufgaben beteiligt waren, beschreiben Sie diese kurz.
 
 **Zusätzliche Teilnahmen** 🟠 Braucht Aufmerksamkeit
 
-- Beschreibe, was du im Rahmen des Mentoring-Programms konkret gemacht hast (z. B. Themen der Weiterbildungsseminare, persönliche Entwicklung, besondere Projekte).
-- Ergänze bei Interessen, welche Art von persönlicher Entwicklung du verfolgst, wie oft und auf welchem Niveau – so wird dein Engagement greifbarer.
+- Beschreiben Sie, welche Art von persönlicher Entwicklung Sie im Rahmen des Mentoring-Programms verfolgen, wie oft Sie daran teilnehmen und welche Schwerpunkte oder Ziele Sie dabei setzen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -65,30 +64,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Füge eine Sektion hinzu, in der du deine Sprachkenntnisse (mit Niveau, idealerweise nach GER/CEFR: A1–C2) und IT-Kenntnisse (mit Angabe des Kenntnisstands, z. B. 'Excel (fortgeschritten)') aufführst.
+- Erstellen Sie einen Abschnitt, in dem Sie Ihre Sprachkenntnisse (mit Niveau, idealerweise nach GER/CEFR: A1–C2) und Ihre IT-/Fachkenntnisse (jeweils mit Niveau, z.B. "Excel (fortgeschritten)") aufführen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate hast (z. B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), füge sie in einer eigenen Sektion hinzu.
+- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science Fundamentals, Integrative Sustainability Management) absolviert haben, können Sie diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, ergänze eine Sektion zu Interessen oder Hobbys. Nenne dabei konkret, was du machst, wie oft und auf welchem Niveau (z. B. 'Mitglied im Schachclub', 'regelmäßige Teilnahme an Laufveranstaltungen').
+- Fügen Sie, falls vorhanden, einen kurzen Abschnitt zu Ihren Interessen oder Hobbys hinzu. Nennen Sie dabei konkret, was Sie machen, wie oft und auf welchem Niveau.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Gehört in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
 - **[Bachelor's / Master's thesis](https://www.unisg.ch/)** — the academic capstone; several institutes welcome theses written with a company
-  _Gehört in: Education_
 - **[Capstone Project (BWL)](https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/)** — a semester acting as business consultants for a real practice partner
-  _Gehört in: Education_
-- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
-  _Gehört in: Education_
-- **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Gehört in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
+- **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
 
 ### 6. Unterlagen und Vorlagen des Career Services
 

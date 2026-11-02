@@ -67,14 +67,21 @@ COMPANY_SUFFIX_RE = re.compile(
 # salutation to stop at.
 MAX_ADDRESS_LINES = 18
 
+# A name immediately followed by one of these is part of an organisation's name.
+_COMPANY_FOLLOWS = (r"[\s\-]+(?:AG|GmbH|SA|SARL|Ltd|Limited|LLP|LLC|Inc|PLC|KG|SE|"
+                    r"OHG|GbR|Co|Corp|Holding|Group|Gruppe|Bank|Stiftung|Verein|"
+                    r"Institut|Institute|University|Universit[äa]t|Hochschule)\b")
+
 # The author's own name, at the bottom. A CV always opens with a contact block,
 # so pii.strip_pii learns the author's name from the top of the page and then
 # removes it everywhere. A letter need not have one: plenty open straight on
 # "Sehr geehrte Frau ...", and then the only place the author is named is under
 # the sign-off, which the CV layer has no reason to look at. Round 5 did not
 # catch this one; the test letters did.
+# "Your sincerely" with no s is in Career Services' own template, and a student
+# copying it should not have their name sent to the model as the price.
 CLOSING_RE = re.compile(
-    r"^(\s*(?:yours\s+(?:sincerely|faithfully|truly)|kind(?:est)?\s+regards"
+    r"^(\s*(?:yours?\s+(?:sincerely|faithfully|truly)|kind(?:est)?\s+regards"
     r"|best\s+(?:regards|wishes)|sincerely(?:\s+yours)?|warm\s+regards|regards"
     # "ue" as well as "ü": some PDF extractions transliterate the umlaut away.
     r"|mit\s+freundlichen\s+gr[üu]e?(?:ss|ß)en|freundliche\s+gr[üu]e?(?:ss|ß)e"
@@ -143,6 +150,25 @@ def _address_names(text: str, language: str) -> list[str]:
     return pii._filter_names(pii_local.detect_persons(block, language), veto, text)
 
 
+def _author_line(line: str) -> bool:
+    """
+    Name-shaped for the one position where position is the evidence: the line
+    under the sign-off. pii._looks_like_a_name_line is not used here because it
+    vetoes any line containing a role word, and "Martina Master" - the author
+    of Career Services' own template - is vetoed by her own surname. In a CV
+    that veto is right, because a job title sits where a name might. Under a
+    sign-off nothing else belongs.
+    """
+    stripped = line.strip()
+    if not (2 < len(stripped) <= 60) or any(ch.isdigit() for ch in stripped):
+        return False
+    if "@" in stripped or ":" in stripped:
+        return False
+    words = stripped.replace(",", " ").split()
+    return (1 < len(words) <= 4
+            and all(w[0].isupper() for w in words if w[:1].isalpha()))
+
+
 def _signoff_name(text: str) -> str | None:
     """
     The name under the sign-off, where a letter that never gave a contact block
@@ -156,7 +182,7 @@ def _signoff_name(text: str) -> str | None:
             continue
         # "Mit freundlichen Grüssen, Jonas Keller" puts both on one line.
         tail = match.group(2).strip(" ,.")
-        if tail and pii._looks_like_a_name_line(tail):
+        if tail and _author_line(tail):
             return tail
         for following in lines[index + 1:index + 4]:
             candidate = following.strip(" ,.")
@@ -165,8 +191,30 @@ def _signoff_name(text: str) -> str | None:
             if any(placeholder in candidate
                    for placeholder, _ in pii.CATEGORIES.values()):
                 return None
-            return candidate if pii._looks_like_a_name_line(candidate) else None
+            return candidate if _author_line(candidate) else None
     return None
+
+
+def _other_people(text: str, language: str) -> list[str]:
+    """
+    Anyone else the letter names in passing. Career Services' own template says
+    "It was a pleasure meeting you and Max Mustermann at HSG Talents" - a third
+    person, at a named company, who agreed to nothing.
+
+    A CV only trusts a body name with corroboration, because most body hits
+    there are institutions a small model misread. A letter is prose about one
+    organisation, so the same hits are much more likely to be people, and the
+    place-and-organisation veto already holds back the company names. What is
+    lost if this is wrong is one word of a sentence the model still reads.
+    """
+    if not pii_local.available():
+        return []
+    other = "de" if language != "de" else "en"
+    veto = (pii_local.place_and_org_strings(text, language)
+            | pii_local.place_and_org_strings(text, other))
+    return [name for name in pii._filter_names(
+        pii_local.detect_persons(text, language), veto, text)
+        if len(name.split()) > 1]
 
 
 def _redact(text: str, names: list[str], placeholder: str = PLACEHOLDER) -> tuple[str, bool]:
@@ -176,7 +224,12 @@ def _redact(text: str, names: list[str], placeholder: str = PLACEHOLDER) -> tupl
     """
     working, hit = text, False
     for part in pii._name_parts(names):
-        new = re.sub(r"\b" + re.escape(part) + r"\b", placeholder, working)
+        # Not where the same word is the start of the company's name. A letter
+        # to Frau Maria Muster at Muster GmbH would otherwise lose the company
+        # along with the person, and "why this organisation?" is one of the
+        # nine checks.
+        new = re.sub(r"\b" + re.escape(part) + r"\b(?!" + _COMPANY_FOLLOWS + r")",
+                     placeholder, working)
         if new != working:
             working, hit = new, True
     return working, hit
@@ -201,6 +254,10 @@ def strip_letter_pii(text: str, language: str = "en") -> dict:
     signed = False
     if author:
         working, signed = _redact(working, [author], pii.CATEGORIES["name"][0])
+
+    working, others = _redact(working, _other_people(working, language),
+                              pii.CATEGORIES["name"][0])
+    signed = signed or others
 
     if marked or redacted or signed:
         result["text"] = working

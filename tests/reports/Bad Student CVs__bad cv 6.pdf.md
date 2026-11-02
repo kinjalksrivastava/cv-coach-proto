@@ -20,14 +20,14 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 - 🔴 **Der Lebenslauf füllt keine Seite**  
   Nutze den vorhandenen Platz, um ausführlicher auf deine bisherigen Erfahrungen, Kompetenzen und deinen Bildungsweg einzugehen. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Recruiter oft zu knapp.
-- 🔴 **Aufgaben statt Beitrag in den Bullets**  
-  Formuliere die Stichpunkte in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein konkretes Ergebnis oder eine Veränderung macht deinen Beitrag greifbar.
+- 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte in der Berufserfahrung so um, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und warum es wichtig war – insbesondere, welches übertragbare Skill du dabei eingesetzt oder entwickelt hast.
 - 🟠 **Kein Abschnitt 'Ausbildung' vorhanden**  
   Falls du relevante Bildungsabschlüsse hast, füge einen Abschnitt 'Ausbildung' hinzu.
 - 🟠 **Kein Abschnitt 'Skills & Languages' vorhanden**  
-  Falls du relevante Fähigkeiten oder Sprachkenntnisse hast, ergänze einen eigenen Abschnitt dazu.
-- 🟡 **Interessen ohne Details**  
-  Beschreibe bei deinen Interessen, welche Art, wie häufig und auf welchem Niveau du sie ausübst, damit ein Leser ein klareres Bild bekommt.
+  Falls du relevante Fähigkeiten und Sprachkenntnisse hast, ergänze einen eigenen Abschnitt dazu.
+- 🟡 **Interessen sind ohne Details aufgeführt**  
+  Beschreibe bei deinen Interessen, um welche Art es sich handelt, wie oft du sie ausübst und auf welchem Niveau.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -44,18 +44,18 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Stichpunkte so, dass sie deinen persönlichen Beitrag, die eingesetzten Fähigkeiten und – wo möglich – ein Ergebnis oder eine Veränderung sichtbar machen.
-- Falls du weitere relevante Tätigkeiten oder Nebenjobs hattest, ergänze diese, um das Bild zu vervollständigen.
-- Wenn du bei HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium (https://shsg.ch/clubs) in einer bezahlten Rolle mitgewirkt hast, kannst du diese unter Berufserfahrung aufführen, sofern sie relevant sind.
+- Überarbeite die Stichpunkte so, dass sie deinen konkreten Beitrag, die Herangehensweise und das Ergebnis hervorheben – insbesondere, welches übertragbare Skill du dabei gezeigt hast.
+- Falls du weitere relevante Tätigkeiten, Praktika oder Nebenjobs hattest, ergänze diese, um ein vollständigeres Bild zu geben.
+- Wenn du an HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) teilgenommen hast und dies eine bezahlte Tätigkeit war, kannst du diese unter Berufserfahrung aufführen – aber nur, wenn sie wirklich relevant sind.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Beschreibe bei deinen Engagements, was du konkret gemacht hast, wie oft und in welchem Rahmen (z.B. Teamgröße, Aufgaben, besondere Projekte).
-- Wenn du in einem HSG-Club (https://shsg.ch/clubs) eine aktive Rolle übernommen hast, führe diese mit kurzen Stichpunkten auf, um deine Soft Skills und dein Engagement sichtbar zu machen.
+- Beschreibe bei deinen Engagements, was du konkret gemacht hast, wie oft und in welchem Umfang (z.B. Teamgröße, Aufgaben, besondere Projekte).
+- Wenn du in einem HSG-Club aktiv bist, z.B. als Vorstandsmitglied oder in einer Projektleitung, führe dies mit einer kurzen Beschreibung deiner Rolle und deines Beitrags auf. Eine Übersicht der HSG-Clubs findest du hier: https://shsg.ch/clubs.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen sind übersichtlich dargestellt und geben einen ersten Einblick in deine persönlichen Schwerpunkte.
+- Die Interessen sind klar benannt und geben einen ersten Einblick in deine persönlichen Schwerpunkte.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -63,26 +63,21 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausbildung** ⚪ Fehlt
 
-- Füge deine wichtigsten Bildungsstationen hinzu – Abschluss, Hochschule, Zeitraum und ggf. relevante Schwerpunkte oder Noten.
+- Füge einen Abschnitt 'Ausbildung' hinzu, in dem du deinen aktuellen oder letzten Bildungsabschluss, relevante Stationen und ggf. Schwerpunkte aufführst.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate hast, kannst du diese hier aufführen – insbesondere, wenn sie für dein Zielgebiet wichtig sind.
+- Falls du relevante Kurse oder Zertifikate abgeschlossen hast, kannst du diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Gehört in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
-- **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
-  _Gehört in: Reference, not a CV section_
-- **[HSG University Sports](https://www.unisg.ch/en/)** — around 250 training sessions a week across 70+ sports
-  _Gehört in: an active role or teaching a class: Extracurricular, or Work Experience if it was a paid contract_
+- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
-  _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
 - **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
-  _Gehört in: Extracurricular, if they held an active role_
+- **[St. Gallen Symposium (International Students' Committee)](https://shsg.ch/clubs)** — a globally recognised conference organised by a student committee
 
 ### 6. Unterlagen und Vorlagen des Career Services
 

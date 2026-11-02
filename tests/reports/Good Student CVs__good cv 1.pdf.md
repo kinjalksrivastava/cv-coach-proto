@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich, enthält alle wichtigen Stationen und ist für eine Bewerbung im Studium oder zum Berufseinstieg gut strukturiert. Die Rollen in deiner Berufserfahrung sind klar benannt und jeweils mit einer kurzen Beschreibung versehen, was einen guten ersten Eindruck vermittelt. Die einzelnen Bullet Points in der Arbeitserfahrung könnten jedoch noch stärker auf deine konkreten Beiträge und die dahinterliegenden Kompetenzen eingehen, um deine Stärken besser sichtbar zu machen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Außerdem fehlt aktuell ein Skills & Languages-Abschnitt; falls du relevante Kompetenzen oder Sprachkenntnisse hast, solltest du diese ergänzen.
+Ihr Lebenslauf ist übersichtlich, gut strukturiert und enthält alle wichtigen Stationen Ihrer Ausbildung und Berufserfahrung. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl mit Titel als auch mit einer kurzen Beschreibung versehen ist. Da Sie keine Zielposition oder Stellenanzeige angegeben haben, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback können Sie jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,11 +19,11 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die Bullet Points in deiner Arbeitserfahrung so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die dahinterliegenden übertragbaren Kompetenzen zeigen. Wo möglich, ergänze ein Ergebnis oder eine Veränderung, die du bewirkt hast.
-- 🔴 **Meiste Bullets zeigen Aufgabe, nicht die dahinterliegende Kompetenz**  
-  Gehe jede Bullet Point in deiner Arbeitserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Ergänze diese Aspekte, um deine Kompetenzen klarer herauszustellen.
+  Überarbeiten Sie die betreffenden Bullet Points so, dass klar wird, was genau Sie getan haben, wie Sie es umgesetzt haben und warum es für das Team oder das Unternehmen relevant war – und welches übertragbare Skill Sie damit zeigen. Ein konkretes Ergebnis kann ergänzt werden, wenn es passt.
+- 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
+  Gehen Sie jede Bullet Point durch und fragen Sie sich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welches Skill wird dadurch sichtbar? Wo ein echtes Ergebnis vorliegt, können Sie es ergänzen – aber nur, wenn Sie es belegen können.
 - 🟠 **Kein Skills & Languages-Abschnitt vorhanden**  
-  Füge einen eigenen Abschnitt für Skills & Languages hinzu, falls du relevante IT-Kenntnisse, Methodenkompetenzen oder Sprachkenntnisse hast. Das erleichtert es Recruitern, deine fachlichen Fähigkeiten auf einen Blick zu erkennen.
+  Fügen Sie einen eigenen Abschnitt für Skills & Languages hinzu, wenn Sie relevante Kompetenzen und Sprachkenntnisse haben, die Sie hervorheben möchten.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,20 +41,27 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Angaben zu Studiengang, Notenschnitt und besonderen Programmen geben einen guten Überblick über deinen akademischen Werdegang.
+- Jeder Eintrag enthält Abschluss, Institution, Zeitraum und relevante Zusatzinformationen wie Notenschnitt und besondere Aktivitäten.
+
+**ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
+
+- Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihre persönliche Herangehensweise und den Mehrwert für das Unternehmen oder das Team zeigen.
+- Ergänzen Sie, wo möglich, welche übertragbaren Kompetenzen Sie in den jeweiligen Rollen entwickelt oder eingesetzt haben.
+- Falls Sie für eine bestimmte Zielrolle bewerben, prüfen Sie, ob Sie in den Bullets gezielt die für diese Position geforderten Fähigkeiten und Erfahrungen sichtbar machen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Die Darstellung aktiver Rollen und Verantwortlichkeiten in Sport und Vereinswesen unterstreicht dein Engagement außerhalb des Studiums.
+- Sie zeigen Engagement und Verantwortung außerhalb des Studiums, was Ihre Vielseitigkeit unterstreicht.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Angabe von Interessen und Sprachkenntnissen gibt einen abgerundeten Eindruck deiner Persönlichkeit und Fähigkeiten.
+- Ihre Interessen und Sprachkenntnisse sind klar benannt und geben einen persönlichen Einblick.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Füge einen Abschnitt hinzu, in dem du IT-Kenntnisse, Methodenkompetenzen und Sprachkenntnisse jeweils mit einem Niveau (z.B. "Englisch (C1)", "MS Office (fortgeschritten)") aufführst.
+- Fügen Sie einen eigenen Abschnitt hinzu, in dem Sie Ihre IT-Kenntnisse und Sprachkenntnisse jeweils mit einem Niveau (z.B. "Englisch (C1)", "MS Office (fortgeschritten)") angeben.
 - Für Sprachen empfiehlt sich die Angabe des CEFR-Levels (A1–C2), da dies international eindeutig verstanden wird.
+- Technische und methodische Kompetenzen sollten ebenfalls mit einem Niveau versehen werden, um Ihre Fähigkeiten für den Leser klar einzuordnen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -62,22 +69,17 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zusatzqualifikationen, wie z.B. den [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder andere Zertifikate hast, kannst du diese hier aufführen.
+- Falls Sie relevante Zertifikate oder Zusatzqualifikationen (z.B. Data Science, Nachhaltigkeit, Sprachkurse) erworben haben, können Sie diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Gehört in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
-- **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
-  _Gehört in: Reference, not a CV section_
-- **[HSG University Sports](https://www.unisg.ch/en/)** — around 250 training sessions a week across 70+ sports
-  _Gehört in: an active role or teaching a class: Extracurricular, or Work Experience if it was a paid contract_
-- **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Gehört in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
-  _Gehört in: membership alone: a bullet under Education if relevant to the role. An active role: Extracurricular, explained with bullets_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
+- **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
 
 ### 6. Unterlagen und Vorlagen des Career Services
 

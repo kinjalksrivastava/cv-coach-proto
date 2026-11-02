@@ -217,6 +217,14 @@ PHONE_CANDIDATE_RE = re.compile(
     r"(?<![\w])(\+\d{1,3}[\s./\-]?)?(\(?\d{2,4}\)?[\s./\-]?){2,6}\d{2,4}(?![\w])"
 )
 YEAR_RANGE_RE = re.compile(r"^(19|20)\d{2}\s*[-–—/.]\s*(19|20)\d{2}$")
+# One written-out date, which is not a range and so got past every guard below.
+# "Nürnberg, 01.10.2020" is how a cover letter is dated, and it was coming back
+# as "Nürnberg, [PHONE REDACTED]" - a redaction of something that was never
+# personal, reported to the student as a phone number that was never there. A
+# date of birth in this shape is still removed, by the layer meant for it.
+SINGLE_DATE_RE = re.compile(
+    r"^(?:[0-3]?\d[./\-][01]?\d[./\-](?:19|20)?\d{2}"
+    r"|(?:19|20)\d{2}[./\-][01]?\d[./\-][0-3]?\d)$")
 
 
 def _is_phone(matched: str, line: str) -> bool:
@@ -230,7 +238,7 @@ def _is_phone(matched: str, line: str) -> bool:
     digits = re.sub(r"\D", "", text)
     if not (7 <= len(digits) <= 15):
         return False
-    if YEAR_RANGE_RE.match(text):
+    if YEAR_RANGE_RE.match(text) or SINGLE_DATE_RE.match(text):
         return False
     # Anything the project's own date parser reads as a range is a date, not a
     # phone number. The year-only guard above missed "07/2018-01/2019" - a

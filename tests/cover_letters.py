@@ -266,6 +266,26 @@ def pdf_sections_in_order() -> None:
     check("the letter PDF puts the table under section 2", problems)
 
 
+def no_relevance_claim_without_an_advert() -> None:
+    """
+    MP, round 5. The prompt carries the rule and held for two of the three
+    sample letters; on the third the model wrote "skills relevant to the
+    position" with no advert uploaded. This is the enforcement behind it.
+    """
+    data = {"overall_assessment": "It shows skills relevant to the position.",
+            "essentials": {"what_you_bring": "Experience relevant for the trainee role.",
+                           "why_role": "Das ist relevant für die Stelle.",
+                           "conclusion": "A polite close."}}
+    cleaned = cover_letter._without_role_claims(data)
+    written = " ".join([cleaned["overall_assessment"]] + list(cleaned["essentials"].values()))
+    problems = [f"survived: '{claim}'" for claim in
+                ("relevant to the position", "relevant for the trainee role",
+                 "relevant für die Stelle") if claim.lower() in written.lower()]
+    if "A polite close." not in written:
+        problems.append("a sentence with no claim in it was rewritten anyway")
+    check("no claim of relevance when no advert was uploaded", problems)
+
+
 def section_five_picks() -> None:
     """
     MP, round 5: section 5 should name the clubs and the Additional
@@ -297,6 +317,7 @@ def run() -> int:
     length_is_counted_not_guessed()
     very_short_still_caught()
     both_languages_complete()
+    no_relevance_claim_without_an_advert()
     pdf_sections_in_order()
     section_five_picks()
     print(f"\n{CHECKS - len(FAILURES)}/{CHECKS} passed")

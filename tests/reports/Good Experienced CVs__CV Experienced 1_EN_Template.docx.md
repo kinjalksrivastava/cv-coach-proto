@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a strong professional background with clear results and leadership experience, and your education section includes grades with their maximum, which helps international readers interpret your achievements. The structure and completeness feedback below is based on your current CV, as no target role or job description was provided. If you have experience with AI that is not yet visible in your coursework, projects, work, or skills, consider adding it. The CV is in good shape overall, but a few areas could be strengthened to give a fuller picture of your academic and extracurricular activities.
+Your CV presents a strong professional background with clear achievements and quantifiable results, especially in innovation and consulting roles. The structure and completeness feedback below is based on your current CV, as no specific target role or job description was provided—if you add a target, I can give more tailored advice. There are a few areas where you can strengthen your CV further, particularly by adding detail under your education entries and refining some experience bullets to focus on your personal contribution and skills. Consistency in bullet tense and section order will also help your CV read more smoothly. If you have any AI-related experience or coursework, consider highlighting it, as nothing currently signals this on your CV.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something relevant: modules, thesis topic and what you did, exchange semester, certificates, scholarships, or mentoring programmes. This helps a reader understand your academic focus and achievements beyond the qualification itself.
-- 🔴 **Bullets describe duties rather than contribution**  
-  Rework the duty-based bullets in your professional experience to focus on what you did, how you did it, and why it mattered, highlighting transferable skills and results where possible.
-- 🟠 **Bullet tense changes within PROFESSIONAL EXPERIENCE**  
-  Choose either past or present tense for each role and keep it consistent throughout the section—use present tense for your current job and past tense for previous roles.
-- 🟠 **Education comes after work experience**  
-  For a student CV, education usually comes first unless you have several years of directly relevant work experience. Consider whether your experience justifies the current order.
-- 🟡 **Interests are listed without any detail**  
-  Add detail to your interests—what kind, how often, and to what level—to give a clearer sense of your engagement and commitment.
+- 🔴 **Add detail under each degree in Education**  
+  Currently, your degrees list only the title, date, and grade. Add a line or two under each degree where you have relevant content: modules, thesis topic and what you did, exchange semesters, certificates, or mentoring programmes—only what is true and relevant to your future applications.
+- 🔴 **Refocus experience bullets on your contribution and skills**  
+  Some bullets in your professional experience section describe duties rather than your specific actions or the skills you demonstrated. Rework these to highlight what you did, how you did it, why it mattered, and which transferable skills you used or developed.
+- 🟠 **Ensure consistent bullet tense in Professional Experience**  
+  Bullet points in your professional experience section switch between present and past tense. Use present tense for your current role and past tense for previous roles, and keep this consistent throughout the section.
+- 🟠 **Consider section order: Education before Experience for student CVs**  
+  For most student CVs, education should come before work experience unless you have several years of directly relevant professional experience. Consider whether your background justifies the current order.
+- 🟡 **Add detail to interests and extracurricular activities**  
+  Some interests and extracurricular activities are listed as bare words. Add detail about what kind, how often, and to what level you participate to give a clearer picture of your engagement.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,51 +45,48 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively summarises your experience, skills, and motivation for innovation roles.
+- It clearly summarises your innovation and consulting background, highlighting your analytical skills and curiosity for new technologies.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework the duty-based bullets to focus on your specific contributions, how you achieved them, and the skills demonstrated.
-- If you are targeting a specific role in the future, tailor this section to highlight the experience and skills most relevant to that position.
+- Rework bullets that currently describe only duties (e.g., 'Managing the entire Swiss innovation product portfolio') to focus on your specific actions, how you achieved results, and the skills you used.
+- If you have experience from HSG-related activities such as the St. Gallen Symposium (https://shsg.ch/clubs) or Talents Conference, include these only if they were paid roles and relevant to your target.
+- 10 of your 18 experience bullets already state a concrete result or figure, which helps demonstrate your impact.
 
 **EDUCATION** 🟠 Needs attention
 
-- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these under the appropriate degree.
+- Add a line or two under each degree with relevant modules, thesis topic and what you did, exchange semesters, or additional qualifications such as the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
+- If you have completed a certificate such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding it here if relevant.
+- Grades are given with their maximum, which helps international readers interpret your results.
 
 **EXTRA-CURRICULAR ACTIVITIES** 🟠 Needs attention
 
-- For each activity, specify your level of involvement, frequency, and any outcomes or skills developed.
-- If you have held an active role in an [HSG student club](https://shsg.ch/clubs), add it here with a brief description of your responsibilities and achievements.
-- If you are tailoring your CV for a specific role, highlight extracurricular activities that demonstrate relevant skills or interests.
+- For each activity, specify what you did, how often, and the impact or skills gained (e.g., for 'Mentor', describe the mentoring format and outcomes).
+- If you have held an active role in an HSG student club (see the [SHSG directory](https://shsg.ch/clubs)), add it here with a brief description of your responsibilities and achievements.
 
 **ADDITIONAL SKILLS** 🟠 Needs attention
 
-- Remove trait words like 'analytical thinking' from this section; instead, demonstrate these qualities through your experience bullets.
-- For each technical skill, add a proficiency level (e.g., Python (Beginner), MS Office Suite (Advanced)).
-- For languages, you have already included CEFR levels, which is best practice.
+- Trait words like 'analytical thinking' should be demonstrated in your experience bullets rather than listed as adjectives.
+- For each technical skill, add a proficiency level (e.g., 'Python (beginner)').
+- For languages, you have already included CEFR levels, which is the preferred format.
 
 **INTERESTS** 🟢 Strong
 
-- You provide concrete examples, such as participating in the Lake Zurich Crossing and singing in a choir, which help bring your interests to life.
+- You provide concrete examples and context for your interests, such as participating in the Lake Zurich Crossing and singing in a choir.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) or other online qualifications, consider adding a dedicated section to highlight them.
+- If you have completed relevant courses or certificates (such as online courses, HSG certificates, or external qualifications), you could add them here to highlight additional expertise.
 
 ### 5. Anything else from HSG worth adding?
 
 Before your appointment, it is worth asking yourself whether there is anything else you have done at HSG that belongs on this CV: a club, a certificate, a mentoring programme, a competition, a project with a company. A few examples of what is on offer are below. They are examples, not recommendations, and only what is genuinely relevant to the role you are applying for is worth adding.
 
 - **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-  _Belongs in: a paid part-time role: Work Experience. Volunteering on the day: Volunteering or Interests_
-- **[My HSG Career](https://my.hsgcareer.ch)** — part-time jobs, internships and company events advertised for HSG students
-  _Belongs in: Reference, not a CV section_
-- **[HSG University Sports](https://www.unisg.ch/en/)** — around 250 training sessions a week across 70+ sports
-  _Belongs in: an active role or teaching a class: Extracurricular, or Work Experience if it was a paid contract_
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
-  _Belongs in: Education, as a bullet under the degree (name the mentor's industry if relevant)_
+- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate - same competitive, transcript-visible format
 - **[Bachelor's / Master's thesis](https://www.unisg.ch/)** — the academic capstone; several institutes welcome theses written with a company
-  _Belongs in: Education_
+- **[Capstone Project (BWL)](https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/)** — a semester acting as business consultants for a real practice partner
 
 ### 6. Career Services' own guidance and templates
 
