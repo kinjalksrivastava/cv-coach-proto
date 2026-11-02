@@ -225,6 +225,75 @@ COPY = {
 }
 
 
+# The notice every student sees before the tool will take a document. Career
+# Services own this wording - it is the one place in the app where the exact
+# sentences are a university decision and not a design one, so it sits in its
+# own constant rather than inside COPY, where it would be one key among eighty.
+#
+# PLACEHOLDER: this is a first draft, written to be true of what the code
+# actually does. Replace the strings with the text Career Services approve. The
+# notice is shown in both languages on the same screen, because it has to be
+# read before the language is chosen.
+DISCLAIMER = {
+    "de": {
+        "title": "Hinweis zur Nutzung",
+        "intro": ("Bitte lesen Sie diesen Hinweis, bevor Sie Ihren Lebenslauf "
+                  "hochladen."),
+        "body": """
+Der CV Coach ist ein Pilotprojekt der Career Services der Universität St.Gallen.
+Er gibt Ihnen eine erste Rückmeldung zu Ihrem Lebenslauf, bevor Sie einen Termin
+bei den Career Services wahrnehmen.
+
+- Die Rückmeldung wird von einem Sprachmodell erstellt. Sie kann unvollständig
+  oder im Einzelfall unzutreffend sein und ersetzt kein persönliches
+  Beratungsgespräch.
+- Der CV Coach bewertet Ihren Lebenslauf nicht mit einer Note und schreibt ihn
+  nicht für Sie um. Die Verantwortung für Ihre Bewerbungsunterlagen bleibt bei
+  Ihnen.
+- Ihre persönlichen Angaben, insbesondere Name, Adresse, Telefonnummer,
+  E-Mail-Adresse und Geburtsdatum, werden entfernt, bevor der Text an das
+  Sprachmodell übermittelt wird. Bilder und Fotos werden nicht ausgelesen.
+  Berufsbezeichnungen sowie Namen von Unternehmen und Hochschulen bleiben
+  erhalten, weil sie für eine inhaltliche Rückmeldung notwendig sind.
+- Ihr Dokument wird nicht dauerhaft gespeichert. Mit dem Schliessen des
+  Browserfensters endet die Sitzung.
+- Laden Sie keine Unterlagen hoch, die vertrauliche Informationen Dritter
+  enthalten.
+
+Mit «Ich stimme zu» bestätigen Sie, dass Sie diesen Hinweis gelesen haben.
+""",
+    },
+    "en": {
+        "title": "Before you start",
+        "intro": "Please read this notice before you upload your CV.",
+        "body": """
+CV Coach is a pilot project of Career Services at the University of St.Gallen.
+It gives you a first round of feedback on your CV, before your Career Services
+appointment.
+
+- The feedback is written by a language model. It can be incomplete or, in
+  individual cases, wrong, and it does not replace a personal advisory
+  appointment.
+- CV Coach never gives your CV a score and never rewrites it for you.
+  Responsibility for your application documents stays with you.
+- Your personal details, in particular name, address, phone number, email
+  address and date of birth, are removed before the text is sent to the language
+  model. Images and photos are not read. Job titles and the names of companies
+  and universities are kept, because they are needed for feedback on content.
+- Your document is not stored permanently. The session ends when you close the
+  browser window.
+- Please do not upload documents that contain confidential information about
+  other people.
+
+By choosing "I consent" you confirm that you have read this notice.
+""",
+    },
+}
+
+# One button for both languages, so neither version looks like the translation.
+CONSENT_LABEL = "Ich stimme zu  ·  I consent"
+
+
 def _configured_key() -> str | None:
     """
     The shared key, configured once so anyone with the app's link can use it with
@@ -247,6 +316,7 @@ def get_client() -> OpenAI | None:
 
 def init_state():
     defaults = {
+        "consented": False,    # the disclaimer gate, Step 0 below
         "cv_text": None,
         "cv_redactions": [],
         "mode": None,          # "cv" or "letter", chosen on the first screen
@@ -278,9 +348,14 @@ def init_state():
 
 
 def reset_session():
+    # Consent is carried over on purpose: it was given by the person sitting at
+    # this browser, and starting a second CV is not a second person. Closing the
+    # window ends the session and the notice is shown again.
+    consented = st.session_state.get("consented", False)
     for k in list(st.session_state.keys()):
         del st.session_state[k]
     init_state()
+    st.session_state["consented"] = consented
 
 
 init_state()
@@ -309,6 +384,24 @@ if client is None:
         "Streamlit Community Cloud. See README.md.",
         icon="⚙️",
     )
+    st.stop()
+
+
+# --- Step 0: the disclaimer ---------------------------------------------------
+# Nothing else is reachable until this is acknowledged, including the choice of
+# document and the upload field. It is shown after the key check so that a
+# misconfigured app says so instead of asking for consent it cannot act on.
+if not st.session_state["consented"]:
+    ui.title_block(copy["title"])
+    with ui.card("disclaimer"):
+        ui.card_head(DISCLAIMER["de"]["title"], DISCLAIMER["de"]["intro"])
+        st.markdown(DISCLAIMER["de"]["body"])
+        ui.rule()
+        ui.card_head(DISCLAIMER["en"]["title"], DISCLAIMER["en"]["intro"])
+        st.markdown(DISCLAIMER["en"]["body"])
+    if st.button(CONSENT_LABEL, type="primary", use_container_width=True):
+        st.session_state["consented"] = True
+        st.rerun()
     st.stop()
 
 
@@ -351,7 +444,7 @@ def document_panel():
             st.warning(copy["pii_degraded"], icon="⚠️")
 
 
-# --- Step 0: which document ---------------------------------------------------
+# --- Step 1: which document ---------------------------------------------------
 # Two separate jobs with two separate standards. A CV is judged on what it shows;
 # a cover letter is judged on whether it adds anything the CV does not. Career
 # Services asked for them to be chosen up front rather than inferred.
@@ -373,7 +466,7 @@ if st.session_state["mode"] is None:
     st.stop()
 
 
-# --- Step 1: document intake -------------------------------------------------
+# --- Step 2: document intake -------------------------------------------------
 if st.session_state["cv_text"] is None:
     is_letter = st.session_state["mode"] == "letter"
     ui.title_block(copy["title"],
@@ -634,7 +727,7 @@ if st.session_state["cv_text"] is None:
 
     st.stop()
 
-# --- Step 2: chat -------------------------------------------------------------
+# --- Step 3: chat -------------------------------------------------------------
 ui.title_block(copy["title"], compact=True)
 if st.session_state["mode"] != "letter":
     document_panel()
