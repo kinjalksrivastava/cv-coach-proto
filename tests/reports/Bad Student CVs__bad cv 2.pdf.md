@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is clear and easy to follow, but it is currently very brief and does not yet provide enough detail for a recruiter to understand your background or skills. There are no bullet points under your education or work experience entries, so a reader cannot see what you actually did in each role or degree. The CV does not yet fill a full page, which is expected even for early-stage students. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently mentions experience with AI—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is clear and concise, but it currently reads as very thin, with only basic information about your education and work experience. There are no bullet points or descriptions under your roles or degrees, so a reader cannot see what you actually did or achieved. This feedback focuses on structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -21,13 +21,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Your degrees have nothing under them but a grade and a date**  
   Add a line or two under each degree where you genuinely have something to share: relevant modules, a thesis and what it was about, an exchange semester, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
 - 🔴 **No bullet points anywhere in the CV**  
-  Every role and activity needs a few lines describing what you actually did. Without these, a recruiter only sees job titles and cannot assess your experience.
+  Every role and activity needs a few lines describing what you actually did. Without these, a reader only sees job titles and cannot assess your skills or contributions.
 - 🔴 **Entries in "Work experience" have no description**  
-  Add bullet points under each work experience entry explaining your responsibilities, how you carried them out, and what changed as a result—especially focusing on transferable skills.
+  Add a few bullet points under each work experience entry, covering what you did, how you did it, and what changed as a result—focus on transferable skills.
 - 🔴 **The CV does not fill a page**  
-  There is room to add more detail about your experiences, skills, and achievements. A student CV should fill at least one page to give a complete picture.
+  There is room to say much more about your experiences and achievements. A student CV that stops halfway down the first page appears incomplete.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024'). This helps a reader understand the duration of your roles and studies.
+  Add the month to each date range (e.g., "09/2023 – 06/2024"). This helps a reader understand the duration of your roles and studies.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -47,29 +47,27 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 **Educatiqn** 🟠 Needs attention
 
 - Add bullet points under each degree to describe relevant modules, thesis topics, exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme if applicable.
-- Reorder your education entries so that your most recent degree appears first.
-- Explain the gap between your Abitur (Jun 2022) and the start of your university studies (Sep 2023) with a short line about what you were doing during that time.
-- Clarify your grade: if '513' is meant to be '5.13', write it as '5.13 / 6.00' so international readers understand the scale.
+- Reorder your education entries so the most recent degree appears first.
+- Briefly explain the gap between June 2022 and September 2023—one line about what you were doing is enough.
+- Clarify your grade: if it is 5.13, write it as 5.13 / 6.00 so international readers understand the scale.
 
 **Work experience** 🟠 Needs attention
 
-- Add bullet points under each role describing what you did, how you did it, and what changed as a result. Focus on the skills and achievements that are transferable to future roles.
 - Include the month in each date range so the duration of each role is clear.
 
 **Core Competences** 🟠 Needs attention
 
 - Move personal traits like 'adaptability' and 'high self-initiative' into your experience bullets, where you can demonstrate them with concrete examples.
-- For technical skills, add a level for each (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)').
-- If you have completed relevant certifications such as Bloomberg Market Concepts, consider adding them here or in a Courses and Certificates section.
-- If you have experience with AI tools or coursework, add them here or in your experience bullets.
+- For technical skills, add a level for each tool or software (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)').
+- If you have completed relevant courses or certifications, such as Bloomberg Market Concepts, consider adding them here or in a Courses and Certificates section.
 
 **LANGUAGES** 🟠 Needs attention
 
-- Add a CEFR level (A1–C2) for each language. For example, 'English (C1)' gives recruiters a clear, standardised understanding of your proficiency.
+- Upgrade your language levels to CEFR (A1–C2) for clarity—recruiters understand these levels internationally. State the level you are genuinely at now, not just your last certificate.
 
 **Hobbies and Interests** 🟢 Strong
 
-- You have included a concise list of interests, which is perfectly acceptable for this section.
+- This section works well as a concise list of your personal interests.
 
 **Profile** ⚪ Missing
 
@@ -77,11 +75,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have participated in student clubs, committees, volunteering, or events like the St. Gallen Symposium, add them here with bullet points describing your role and impact.
+- If you have been involved in student clubs, volunteering, or committee roles, add them here with a few bullet points describing your responsibilities and achievements.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals or Bloomberg Market Concepts, add them here with the completion date.
+- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals or Bloomberg Market Concepts), add them here.
 
 ### 5. Dates worth a look
 

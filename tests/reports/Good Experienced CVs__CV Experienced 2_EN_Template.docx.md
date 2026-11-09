@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a substantial and varied professional background, especially in sales and purchasing within the Medtech sector. The structure covers all the main sections, and your experience is clearly extensive. Since you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring for a specific position. Nothing on your CV currently refers to AI experience—if you have worked with AI tools or projects, consider adding this where relevant.
+Your CV presents a substantial and varied professional background, especially in sales and purchasing within the Medtech sector. The structure covers all the main sections, and your experience is clearly laid out. Since you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring for a specific position. Nothing on your CV currently refers to AI experience—if you have worked with AI tools or methods, consider adding this where relevant.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -21,13 +21,13 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🔴 **Your degrees have nothing under them but a grade and a date**  
   A reader learns which certificate you hold and nothing about what you did. Add a line or two under each degree where you genuinely have something: the modules that matter for the role you want, a thesis and what it was actually about, an exchange semester, a certificate or additional qualification, a scholarship, or a mentoring programme. Only include what is true and relevant to where you are applying.
 - 🔴 **Entries in "PROFESSIONAL EXPERIENCE" have no description**  
-  Add a few bullets under each entry that currently lacks them, covering what was done, how, and what changed as a result—focused on the transferable skills that matter.
+  One entry in your professional experience section has no bullets or description. Add a few bullets under each one covering what was done, how, and what changed as a result—focused on the transferable skills that matter.
 - 🟠 **Bullets describe duties rather than contribution**  
-  Rework these around WHAT you did, HOW you did it, and WHY it mattered—highlighting the transferable skill each bullet is meant to show. Add a result where you genuinely have one.
+  Some bullets only state the task or duty. Rework these to show what you did, how you did it, and why it mattered—highlighting the transferable skill each bullet demonstrates. Add a result where you genuinely have one.
 - 🟠 **Most bullets describe the task, not the skill behind it**  
-  Take each bullet through WHAT you did, HOW you did it, and WHY it mattered, and ask what transferable skill it is meant to show. Where you genuinely have a result, add it—but only if that is appropriate and you can back it up.
+  Most experience bullets focus on tasks rather than the skills or outcomes. For each, clarify what you did, how you did it, and why it mattered, and add a result if appropriate and accurate.
 - 🟠 **Bullet tense changes within "PROFESSIONAL EXPERIENCE"**  
-  Pick one tense and hold it across the section—past tense for work that is finished, present for a role you are still in. Switching between them inside one section reads as carelessness.
+  Tenses switch between present and past within your professional experience section. Use past tense for completed roles and present tense for your current position, and keep this consistent throughout.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,28 +45,25 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively highlights your industry focus, key strengths, and a notable achievement, making your value proposition clear from the start.
+- It effectively highlights your experience, industry focus, and key strengths in sales and purchasing.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Add descriptive bullets under any entries that currently lack them, such as 'Medtech AG, St. Gallen, Switzerland 06/2008 – 06/2019', to clarify your responsibilities and achievements in each role.
-- Rework bullets that only state duties (e.g., 'Key Account Manager Medtech') to explain what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
-- For most bullets, go beyond listing tasks by adding outcomes or changes where you can genuinely support them, and make clear which skill each bullet is meant to show.
-- Ensure tense consistency throughout the section: use past tense for completed roles and present tense for your current position.
-- For a student CV, education typically comes before work experience unless you are a mature student with several years of directly relevant work, as is the case here.
+- Add descriptive bullets under any entry that currently has none, explaining what you did, how you did it, and what changed as a result.
+- Rework bullets that only state a duty to show your specific contribution, the skills you used, and the impact you made.
 
 **EDUCATION** 🟠 Needs attention
 
-- Add a line or two under each degree where you have relevant content, such as key modules, a thesis (with a brief description of your topic and what you did), an exchange semester, or any additional qualifications or scholarships.
-- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or completed a certificate like the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these as bullets under the relevant degree, if they are relevant to your future applications.
+- Add a line or two under each degree where you have relevant content, such as key modules, a thesis topic and what you did for it, an exchange semester, a certificate, a scholarship, or participation in a mentoring programme like the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/).
+- If you have completed any additional qualifications or relevant certificates, you could also mention them here or in a separate section.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- The section demonstrates your involvement and social commitment through specific actions and outcomes.
+- Your description of the Red Cross Visiting Service shows community engagement and interpersonal skills.
 
 **LANGUAGE AND IT SKILLS** 🟢 Strong
 
-- You provide both language proficiency (including CEFR levels) and IT skills with levels, making it easy for a recruiter to assess your capabilities.
+- You provide both language proficiency levels and specific IT tools with your level of expertise.
 
 **INTERESTS** 🟢 Strong
 
@@ -74,7 +71,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates—such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)—consider adding them here to showcase additional qualifications.
+- If you have completed any relevant courses or certificates, you could add them here to highlight additional qualifications, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or other industry-relevant training.
 
 ### 5. Anything else from HSG worth adding?
 

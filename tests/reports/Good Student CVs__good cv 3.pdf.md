@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and fits on a single page, which is ideal for early-career applications. Many of your experience bullets clearly show results and quantify your impact, which helps a recruiter quickly see your achievements. Your education section is particularly strong, as you provide both grades and their maximums for clarity. This review focuses on structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored feedback. If you have experience with AI or emerging technologies beyond what is mentioned in your hobbies, consider adding it to your skills or experience sections.
+Your CV is well-structured and concise, fitting neatly onto one page and providing clear, quantifiable results in your professional experience. The education section is transparent, with grades given alongside their maximum for international clarity. Your professional roles are clearly titled and described, which helps a recruiter quickly understand your responsibilities and achievements. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,10 +18,8 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Entries in "COMMUNITY EXPERIENCE" have no role title**  
-  For two entries in your Community Experience section, the organisation and dates are listed but your specific role is missing. Add the function or title you held for each, so a reader can understand your level of responsibility and contribution.
-- 🟠 **Bullets describe duties rather than contribution**  
-  A couple of your Professional Experience bullets focus on tasks rather than your personal contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, especially the transferable skills you used or developed.
+- 🔴 **Missing role titles in Community Experience**  
+  Two entries in your 'COMMUNITY EXPERIENCE' section list only the organisation and dates, without stating your specific role. Add the function you held for each entry, as a reader cannot infer your level of responsibility or contribution from the organisation name alone.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -30,7 +28,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 | Section | Status |
 | --- | --- |
 | EDUCATION | 🟢 Strong |
-| PROFESSIONAL EXPERIENCE | 🟠 Needs attention |
+| PROFESSIONAL EXPERIENCE | 🟢 Strong |
 | COMMUNITY EXPERIENCE | 🟠 Needs attention |
 | ADDITIONAL INFORMATION | 🟢 Strong |
 | Profile | ⚪ Missing |
@@ -38,19 +36,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- You provide concrete details for each degree, including relevant projects and results, which helps a recruiter understand your academic strengths.
+- Grades are provided with their maximum, making your academic performance easy to interpret for readers from different systems.
 
-**PROFESSIONAL EXPERIENCE** 🟠 Needs attention
+**PROFESSIONAL EXPERIENCE** 🟢 Strong
 
-- Review bullets that only describe tasks (such as 'Directly engaged on-site clients and actively supported 10 project deliverables') and revise them to show what you personally achieved, how you approached the work, and which skills you demonstrated.
+- Every entry includes a clear role title and description, and most bullets highlight concrete results or figures, which demonstrates your impact.
 
 **COMMUNITY EXPERIENCE** 🟠 Needs attention
 
-- Add your specific function or title for each entry, so it is clear what position you held and what your responsibilities were.
+- Add the specific function or title you held for each organisation listed, so a recruiter can understand your responsibilities and level of involvement.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- You provide a well-rounded view of your skills and interests, including language proficiency and relevant courses.
+- You provide language levels and detail your extracurricular courses and hobbies, which adds depth to your profile.
 
 **Profile** ⚪ Missing
 
@@ -58,17 +56,17 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant certifications or courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), consider adding them here to showcase specialised skills.
+- If you have completed relevant certifications or additional courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to highlight specialised skills.
 
 ### 5. Anything else from HSG worth adding?
 
 Before your appointment, it is worth asking yourself whether there is anything else you have done at HSG that belongs on this CV: a club, a certificate, a mentoring programme, a competition, a project with a company. A few examples of what is on offer are below. They are examples, not recommendations, and only what is genuinely relevant to the role you are applying for is worth adding.
 
-- **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
 - **NextGen Impact Forum / SHSG Next Gen Impact Award** — student-run conference showcasing HSG sustainability initiatives, with a prize
 - **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate
+- **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
+- **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
 
 ### 6. Career Services' own guidance and templates
 

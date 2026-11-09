@@ -2,7 +2,7 @@
 
 ### 1. Overall assessment
 
-Your letter gives a clear sense of your motivation for both the company and the specific role, and you provide concrete examples that go beyond a simple retelling of a CV. You connect your experiences and interests to the position and explain how they have shaped your direction and what you could contribute. Overall, your letter complements a CV by adding context and insight into your motivation and approach.
+Your letter does a good job of explaining your motivation for the Graduate Business Innovation position and why Modern Technology AG appeals to you, especially through your reference to your previous interaction and your interest in AI. You also provide specific examples that illustrate your adaptability and stakeholder engagement, which help to show what you would bring to the role. Overall, your letter complements a CV by adding context and personal motivation, rather than simply repeating past experiences.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and covers all the main sections expected for a student at your stage, with clear role titles and descriptions for each work experience entry. The document is in good shape overall, but there are a few areas where you can strengthen your application by focusing more on your personal contribution and the skills you developed in each role. Since you have not specified a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can provide more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured and covers all the main sections expected for a student at your stage, with clear role titles and descriptions for each work experience entry. The document is in good shape overall, but there are a few areas where you can strengthen your application by focusing more on your personal contribution and the skills you developed, rather than just listing tasks. Since you have not specified a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can provide more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your work experience bullets to highlight what you personally did, how you did it, and why it mattered—focus on the transferable skills you gained or demonstrated. Where possible, include a result or outcome, but only if you can genuinely support it.
+  Revise your work experience bullets to highlight what you personally did, how you did it, and why it mattered, focusing on the transferable skills you gained. This will help recruiters understand your impact and what you bring to future roles.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  For each experience bullet, clarify what skill you developed or demonstrated, and add outcomes where appropriate. This helps recruiters see the value you brought to each role.
+  For each experience bullet, clarify the skill you developed or demonstrated, and add a result where you genuinely have one. This makes your achievements and growth visible to the reader.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Choose either to end all bullets with a full stop or none, and make sure every bullet in your CV matches this choice.
+  Choose either to end all bullets with a full stop or none, and apply this consistently throughout your CV for a professional appearance.
 - 🟠 **Bullet tense changes within "WORK EXPERIENCE"**  
-  Use past tense for roles that are finished and present tense for roles you are still in, and keep this consistent within the section.
+  Use past tense for completed roles and present tense for current roles, and keep this consistent within the section to avoid confusion.
 - 🟡 **Grades need clarifying**  
-  When listing your GPA, always include the maximum (e.g., 5.04 / 6.00) so that recruiters from other countries can understand your results.
+  Add the maximum possible grade alongside your GPA (e.g., 5.04 / 6.00) so that recruiters from other countries can interpret your results correctly.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,26 +44,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Update your GPA to show the maximum (e.g., 5.04 / 6.00) so that it is clear to international readers.
-- If you have participated in the HSG Mentoring Programme or completed a certificate such as the Certificate in Data Science Fundamentals (DSF), consider adding these if relevant.
+- Add the maximum possible grade to your GPA (e.g., 5.04 / 6.00) so international recruiters can understand your academic performance.
+- If you have participated in the HSG Mentoring Programme or completed relevant certificates such as the Certificate in Data Science Fundamentals (DSF), consider adding them if they are relevant.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise each bullet to show what you personally did, how you did it, and what skill or outcome resulted—this will help recruiters see your impact and transferable skills.
-- Ensure that bullet points use consistent punctuation throughout the section.
-- If you have participated in paid part-time roles at events like the Talents Conference or the St. Gallen Symposium, consider adding these if relevant.
+- Revise each bullet to show what you personally contributed, how you approached the work, and what skills you developed or demonstrated.
+- Where possible, add a result or outcome to show the impact of your work, but only if you can genuinely support it.
+- Ensure bullet points use consistent punctuation throughout the section.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- This section works well because it provides clear language proficiency levels, making it easy for recruiters to assess your skills.
+- This section works well because it provides clear language proficiency levels, making it easy for recruiters to assess your communication skills.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- This section is effective as it provides specific certifications and their completion dates, giving a clear overview of your additional qualifications.
+- This section is effective as it clearly presents your certifications and their completion dates.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- This section stands out by highlighting your long-term commitment to judo and your involvement in other activities, which demonstrates dedication and a range of interests.
+- This section stands out by highlighting your long-term dedication and achievements in sports and club involvement.
 
 **Profile** ⚪ Missing
 
