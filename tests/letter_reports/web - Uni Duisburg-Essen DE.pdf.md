@@ -2,13 +2,13 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben gibt einen groben Überblick über deinen Werdegang und dein Interesse an logistischen Prozessen, bleibt aber sehr allgemein und ergänzt den Lebenslauf kaum um neue, spezifische Informationen oder persönliche Beweggründe. Es fehlt an konkreten Beispielen, wie deine bisherigen Erfahrungen dich auf das Praktikum vorbereiten oder warum du dich gerade für dieses Unternehmen und diese Position interessierst. Insgesamt wirkt das Schreiben eher wie eine formale Pflichtübung als eine gezielte Bewerbung.
+Dein Anschreiben gibt einen groben Überblick über deinen Werdegang und dein Interesse an logistischen Prozessen, bleibt aber sehr allgemein und ergänzt den Lebenslauf kaum um neue, spezifische Informationen oder persönliche Motivation. Es fehlt an konkreten Gründen, warum du dich gerade für dieses Unternehmen und diese Position interessierst, sowie an einer klaren Verbindung zwischen deinen bisherigen Erfahrungen und dem angestrebten Praktikum. Insgesamt wirkt das Schreiben eher wie eine formale Pflichtübung als eine gezielte Bewerbung.
 
 **Abschnitte, die sich als Aufzählung früherer Erfahrungen lesen**
 
 Du hast deinen Lebenslauf nicht hochgeladen, also wurde hier nichts damit verglichen. Jeder dieser Abschnitte liest sich als Aufzählung dessen, was du gemacht hast — und genau dafür ist ein Lebenslauf da.
 
-- “Nach meinem Bachelorstudium mit dem Abschluss …………. arbeitete ich von Februar 20…” — Dieser Abschnitt listet lediglich deinen bisherigen Studien- und Arbeitsweg auf, ohne zusätzliche Einblicke, Hintergründe oder Verbindungen zur angestrebten Position zu liefern.
+- “Nach meinem Bachelorstudium mit dem Abschluss …………. arbeitete ich von Februar 20…” — Dieser Abschnitt listet lediglich deinen bisherigen Werdegang und Studienverlauf auf, ohne neue Einblicke, Hintergründe oder persönliche Beweggründe zu liefern.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -16,10 +16,10 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Du solltest mehr Kontext oder Beispiele einbauen, die über die bloße Nennung deiner Stationen hinausgehen und zeigen, was dich an der Stelle und dem Unternehmen wirklich reizt. |
+| Mehrwert über den Lebenslauf hinaus | Du solltest mehr Kontext oder persönliche Motivation einbringen, die über die bloße Aufzählung deines Werdegangs hinausgeht. |
 | Warum dieses Unternehmen? | Es fehlt eine klare Begründung, warum du dich ausgerechnet bei diesem Unternehmen bewirbst. |
-| Warum diese Stelle? | Dein Interesse am Praktikum bleibt allgemein – was genau reizt dich an dieser Position und was möchtest du dort lernen oder einbringen? |
-| Was du mitbringst | Es fehlt die Verbindung zwischen deinen bisherigen Erfahrungen und dem, was du konkret im Praktikum beitragen könntest. |
+| Warum diese Stelle? | Du gehst nicht konkret darauf ein, was dich an der ausgeschriebenen Praktikumsstelle besonders interessiert. |
+| Was du mitbringst | Es fehlt eine Verbindung zwischen deinen bisherigen Erfahrungen und dem Nutzen, den du im Praktikum einbringen könntest. |
 | Schluss | Geprüft — nichts anzumerken. |
 | Unternehmen / Empfängerangaben | Kein Empfängerblock gefunden — ergänze, an wen das Schreiben geht. Ob die Angaben stimmen, prüfen wir nicht. |
 | Stellenbezeichnung / Referenznummer | Es wurde keine Zielposition angegeben, daher nicht geprüft. |

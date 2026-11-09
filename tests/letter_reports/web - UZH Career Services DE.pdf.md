@@ -2,7 +2,7 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben folgt einer klassischen Struktur, aber der Text selbst ist nicht enthalten, sondern nur Platzhalter für die einzelnen Abschnitte. Dadurch kann ich nicht beurteilen, ob du über das hinausgehst, was im Lebenslauf steht, oder ob du deine Motivation und deinen Beitrag für die Stelle ausreichend erklärst. Da der eigentliche Inhalt fehlt und die Abschnitte nur als Stichworte aufgeführt sind, kann ich keine Aussage über den Mehrwert oder die Zukunftsorientierung deines Schreibens treffen.
+Dein Anschreiben folgt einer klassischen Struktur, aber da der Text nur als Gliederung und nicht im Fließtext vorliegt, kann ich nicht beurteilen, ob du wirklich neue, über den Lebenslauf hinausgehende Informationen oder persönliche Motivation einbringst. Ohne den eigentlichen Inhalt und ohne sichtbare Absätze lässt sich nicht sagen, ob dein Schreiben die Anforderungen eines überzeugenden Motivationsschreibens erfüllt oder eher eine reine Wiederholung des Lebenslaufs ist.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -10,11 +10,11 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Das Anschreiben enthält nur Platzhalter und keine konkreten Inhalte – du solltest die Abschnitte mit deinen eigenen Erfahrungen, Beweggründen und Qualifikationen ausfüllen. |
-| Warum dieses Unternehmen? | Es fehlt eine Begründung, warum du dich gerade bei diesem Unternehmen bewirbst. |
-| Warum diese Stelle? | Es wird nicht deutlich, was dich an der konkreten Position interessiert. |
-| Was du mitbringst | Es fehlt eine Verbindung zwischen deinen bisherigen Erfahrungen und dem, was du in der angestrebten Rolle einbringen möchtest. |
-| Schluss | Ein kurzer Abschluss mit Dank und dem Wunsch nach einem Gespräch sollte ergänzt werden. |
+| Mehrwert über den Lebenslauf hinaus | Da nur die Struktur und keine konkreten Inhalte vorliegen, fehlt jeglicher Mehrwert über den Lebenslauf hinaus. |
+| Warum dieses Unternehmen? | Es ist nicht ersichtlich, warum du dich gerade für dieses Unternehmen interessierst. |
+| Warum diese Stelle? | Dein spezifisches Interesse an der Position wird nicht deutlich. |
+| Was du mitbringst | Es fehlt eine Verbindung zwischen deinen Erfahrungen und dem angestrebten Job. |
+| Schluss | Ein klarer Abschluss mit Dank oder Ausblick auf ein Gespräch ist nicht erkennbar. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Es wurde keine Zielposition angegeben, daher nicht geprüft. |
 | Länge: maximal eine Seite | Das ist sehr wenig Text für ein Motivationsschreiben. |

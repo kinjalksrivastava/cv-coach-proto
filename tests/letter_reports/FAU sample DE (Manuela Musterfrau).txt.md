@@ -2,7 +2,7 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum bei der Muster GmbH und hebt deine persönliche Verbindung zu Nachhaltigkeit sowie deine fachlichen Interessen hervor. Du gehst auf konkrete Erfahrungen und Einstellungen ein, die über eine reine Aufzählung deines Werdegangs hinausgehen. Insgesamt ergänzt dein Brief den Lebenslauf sinnvoll und zeigt, warum du dich für diese Stelle und dieses Unternehmen entschieden hast.
+Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum bei der Muster GmbH und hebt deine persönliche Verbindung zu Nachhaltigkeit und Ökologie hervor. Du erklärst, warum dich das Unternehmen und die Stelle interessieren, und bringst eigene Erfahrungen und Werte ein, die über eine reine Aufzählung deines Werdegangs hinausgehen. Insgesamt ergänzt dein Schreiben den Lebenslauf sinnvoll und ist klar zukunftsorientiert.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -12,7 +12,7 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 | --- | --- |
 | Mehrwert über den Lebenslauf hinaus | Geprüft — nichts anzumerken. |
 | Warum dieses Unternehmen? | Geprüft — nichts anzumerken. |
-| Warum diese Stelle? | Du könntest noch klarer herausstellen, was dich an der konkreten Tätigkeit im Bereich Logistik besonders interessiert und welche Aspekte des Praktikums dich besonders ansprechen. |
+| Warum diese Stelle? | Geprüft — nichts anzumerken. |
 | Was du mitbringst | Geprüft — nichts anzumerken. |
 | Schluss | Geprüft — nichts anzumerken. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |

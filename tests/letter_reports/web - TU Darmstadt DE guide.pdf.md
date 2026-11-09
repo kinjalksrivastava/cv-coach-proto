@@ -2,15 +2,15 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben besteht fast ausschließlich aus allgemeinen Hinweisen und Fragen zur Erstellung eines Anschreibens, nicht aus deinem eigenen Text. Es fehlt dadurch an persönlicher Motivation, Bezug zur Praktikumsschule und konkreten Beispielen aus deinem Werdegang. So kann dein Anschreiben aktuell keinen Mehrwert gegenüber dem Lebenslauf bieten und erfüllt die Anforderungen an ein individuelles Motivationsschreiben nicht.
+Dein Anschreiben besteht fast ausschließlich aus allgemeinen Hinweisen und Platzhaltern, die noch mit deinen eigenen Inhalten gefüllt werden müssen. Es ergänzt den Lebenslauf daher nicht und gibt keine Einblicke in deine Motivation, deinen Bezug zur Schule oder was du konkret einbringen möchtest. So erfüllt es die Aufgabe eines Anschreibens noch nicht.
 
 **Abschnitte, die sich als Aufzählung früherer Erfahrungen lesen**
 
 Du hast deinen Lebenslauf nicht hochgeladen, also wurde hier nichts damit verglichen. Jeder dieser Abschnitte liest sich als Aufzählung dessen, was du gemacht hast — und genau dafür ist ein Lebenslauf da.
 
-- “Welche Aufgaben sollen Sie im Praktikum übernehmen und welche Erwartungen haben …” — Dieser Abschnitt enthält allgemeine Fragen zum Praktikum, aber keine eigenen Inhalte oder Motivation von dir.
-- “Hierfür ist es notwendig, dass Sie bereits im Voraus Recherchen zu Ihrer Wunschs…” — Hier wird nur allgemein erklärt, dass man recherchieren soll, aber kein Bezug zu deiner Wunschschule oder deinen Beweggründen hergestellt.
-- “Pragmatische Gründe, wie die Wohnortnähe etc. sollten Sie nicht als Auswahlkrite…” — Es wird lediglich ein allgemeiner Hinweis gegeben, keine persönliche Information oder Motivation.
+- “Welche Aufgaben sollen Sie im Praktikum übernehmen und welche Erwartungen haben …” — Dieser Abschnitt ist ein Platzhalter und enthält keine eigenen Angaben zu den Aufgaben oder Erwartungen, die du im Praktikum hast.
+- “Hierfür ist es notwendig, dass Sie bereits im Voraus Recherchen zu Ihrer Wunschs…” — Hier fehlt der persönliche Bezug zur Praktikumsschule – es steht nur, dass du recherchieren sollst, aber keine eigenen Gründe oder Erkenntnisse.
+- “(8. Kurzdarstellung des eigenen Profils inklusive Stärken, Soft-Skills, besonder…” — Es werden keine eigenen Stärken, Kompetenzen oder ein Profil dargestellt, sondern nur die Aufforderung, dies zu tun.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -18,11 +18,11 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Dein Anschreiben enthält keine eigenen Inhalte, sondern nur allgemeine Hinweise und Fragen – es fehlt jeglicher Mehrwert gegenüber dem Lebenslauf. |
-| Warum dieses Unternehmen? | Du gehst nicht darauf ein, warum du dich gerade an dieser Schule bewirbst. |
-| Warum diese Stelle? | Es wird nicht deutlich, warum dich dieses Praktikum interessiert oder was du dir davon erhoffst. |
-| Was du mitbringst | Du stellst keinen Bezug zwischen deinen Erfahrungen und dem Praktikum her. |
-| Schluss | Ein persönlicher Abschluss mit Dank oder Ausblick auf ein Gespräch fehlt. |
+| Mehrwert über den Lebenslauf hinaus | Das Anschreiben enthält keine eigenen Inhalte, sondern nur allgemeine Hinweise und Platzhalter – es muss mit deinen persönlichen Erfahrungen, Motivationen und Kompetenzen ausgefüllt werden. |
+| Warum dieses Unternehmen? | Es fehlt ein klarer Grund, warum du dich gerade an dieser Schule bewirbst. |
+| Warum diese Stelle? | Dein Interesse am Praktikum und an den Aufgaben wird nicht deutlich. |
+| Was du mitbringst | Es gibt keinen Bezug zwischen deinen bisherigen Erfahrungen und dem, was du im Praktikum einbringen möchtest. |
+| Schluss | Ein persönlicher Abschluss mit Dank und ggf. Ausblick auf ein Gespräch fehlt. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Es wurde keine Zielposition angegeben, daher nicht geprüft. |
 | Länge: maximal eine Seite | Dein Schreiben umfasst 2 Seiten. Eine Seite ist das Maximum, einen Teil davon musst du also streichen. |
