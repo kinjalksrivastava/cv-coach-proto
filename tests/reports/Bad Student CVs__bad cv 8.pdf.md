@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist bereits sehr umfangreich und zeigt ein breites Spektrum an Erfahrungen, Engagements und Interessen. Die Struktur deckt alle wichtigen Bereiche ab, allerdings gibt es noch einige zentrale Punkte, die Sie verbessern können, um Ihre Wirkung zu steigern. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen. Besonders auffällig ist, dass die Rubrik "Interessen" fast leer ist – entweder sollten Sie diese ausbauen oder entfernen. Zudem sind viele Ihrer Tätigkeitsbeschreibungen noch sehr auf Aufgaben fokussiert und könnten stärker Ihre konkreten Beiträge und Kompetenzen hervorheben.
+Dein Lebenslauf ist bereits sehr umfangreich und zeigt ein breites Engagement in Studium, Berufserfahrung und außerschulischen Aktivitäten. Die Struktur deckt alle wichtigen Bereiche ab, allerdings gibt es noch einige zentrale Punkte, die du verbessern kannst, um einen stärkeren Eindruck zu hinterlassen. Besonders auffällig ist, dass einige Abschnitte (wie Interessen und Ausbildung) noch wenig inhaltliche Tiefe bieten oder Lücken aufweisen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Stellenanzeige oder einen Zielbereich nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Mehr Inhalt unter den Bildungsabschlüssen**  
-  Unter den einzelnen Bildungsstationen stehen bisher nur Abschluss, Note und Datum. Fügen Sie jeweils ein bis zwei Zeilen hinzu, in denen Sie relevante Module, besondere Projekte, ein Stipendium, einen Auslandsaufenthalt oder andere relevante Aktivitäten nennen – immer mit Blick darauf, was für Ihre nächste Bewerbung zählt.
-- 🔴 **Rubrik "Interessen" ist fast leer**  
-  Entweder ergänzen Sie diese Rubrik um einige persönliche Interessen oder Sie entfernen die Überschrift ganz – ein leerer Abschnitt fällt negativ auf.
-- 🟠 **Aufgaben statt Beitrag in den Tätigkeitsbeschreibungen**  
-  Viele Ihrer Bullet Points beschreiben nur die Aufgabe, nicht aber, wie Sie diese umgesetzt haben oder welchen Unterschied Sie gemacht haben. Überarbeiten Sie die Beschreibungen so, dass klar wird, was Sie konkret beigetragen haben, wie Sie vorgegangen sind und welche Kompetenzen Sie dabei gezeigt haben.
-- 🟠 **Fehlende Ergebnisse und Kompetenzen in den Bullets**  
-  Fast alle Bullet Points in Ihren Arbeitserfahrungen nennen nur die Tätigkeit, aber kein Ergebnis, keine Veränderung oder welche übertragbaren Fähigkeiten Sie dabei eingesetzt haben. Ergänzen Sie, wo möglich, den Nutzen oder das Ergebnis Ihrer Arbeit – aber nur, wenn Sie dies auch belegen können.
+  Unter den einzelnen Bildungsstationen stehen bisher nur Abschluss, Note und Datum. Füge jeweils ein bis zwei Zeilen hinzu, in denen du relevante Module, besondere Projekte, Stipendien, Austauschsemester oder Zusatzqualifikationen aufführst – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Interessen sind fast leer**  
+  Der Abschnitt Interessen enthält aktuell kaum Inhalt. Entweder entwickle diesen Bereich weiter, indem du ein bis zwei Interessen mit kurzen Details versiehst, oder entferne die Überschrift ganz – ein leerer Abschnitt fällt negativ auf.
+- 🟠 **Aufgaben statt Beitrag in den Berufserfahrungen**  
+  Viele deiner Bullet Points beschreiben nur Aufgaben, aber nicht, wie du sie umgesetzt hast oder welchen Beitrag du geleistet hast. Überarbeite diese, indem du jeweils erläuterst, was du konkret gemacht hast, wie du vorgegangen bist und welches übertragbare Skill du damit belegst.
+- 🟠 **Ergebnisse und Kompetenzen in den Berufserfahrungen fehlen**  
+  Die meisten Bullet Points in deinen Berufserfahrungen nennen nur Tätigkeiten, aber keine Ergebnisse, Veränderungen oder erworbenen Kompetenzen. Ergänze, wo möglich, den Outcome oder das erlernte Skill – aber nur, wenn du es wirklich belegen kannst.
 - 🟡 **Lebenslauf ist zu lang (3 Seiten)**  
-  Für Studierende werden ein bis maximal zwei Seiten erwartet. Überlegen Sie, welche Inhalte für Ihre nächste Bewerbung am wichtigsten sind, und kürzen Sie entsprechend.
+  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für deine nächste Bewerbung am wenigsten relevant sind, und kürze entsprechend.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,32 +45,30 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Projekten, Stipendien, Auslandsaufenthalten oder Zusatzqualifikationen hinzu, sofern vorhanden.
-- Prüfen Sie, ob Sie am HSG Mentoring Programme oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals teilnehmen – falls ja, können Sie dies als Bullet ergänzen.
-- Klären Sie die Abiturnote: Die Angabe "17" ist vermutlich ein Tippfehler und sollte als 1.70 / 1.00 (mit Skala) dargestellt werden, damit internationale Leser sie korrekt einordnen können.
-- Sie zeigen die Note nur beim Abitur, nicht aber bei anderen Abschlüssen. Das kann den Eindruck erwecken, dass Sie andere Noten bewusst weglassen. Entscheiden Sie, ob Sie überall Noten angeben oder sie ganz weglassen möchten.
+- Prüfe die Angabe deiner Abiturnote: Die Zahl '17' ist vermutlich ein Tippfehler und sollte als 1,70 / 1,00 (mit Skala) angegeben werden, damit internationale Leser sie korrekt einordnen können.
+- Du hast bei einem Abschluss eine Note angegeben, bei anderen nicht. Das ist erlaubt, aber sei dir bewusst, dass Recruiter fehlende Noten oft als schwächer interpretieren. Entscheide selbst, ob du weitere Noten ergänzen oder die vorhandene entfernen möchtest.
+- Falls du am HSG Mentoring Programme oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals teilnimmst, kannst du dies als Bullet ergänzen – aber nur, wenn es zutrifft.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihre konkrete Vorgehensweise, Ihren Beitrag und – wo möglich – das Ergebnis oder die erlernte Kompetenz hervorheben.
-- Fragen Sie sich bei jedem Punkt: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche übertragbare Fähigkeit habe ich dabei gezeigt?
-- Kürzen Sie, falls nötig, weniger relevante Tätigkeiten, um den Lebenslauf auf maximal zwei Seiten zu bringen.
+- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die Vorgehensweise und – wo möglich – das Ergebnis oder das erworbene Skill zeigen.
+- Frage dich bei jedem Punkt: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welches Skill belege ich damit?
+- Falls du an einer HSG-Veranstaltung wie der Talents Conference oder dem St. Gallen Symposium in einer bezahlten Rolle teilgenommen hast, kannst du dies als Berufserfahrung ergänzen – aber nur, wenn es zutrifft.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Kombination aus Sprachkenntnissen, Engagements und Interessen gibt einen guten Überblick über Ihre Vielseitigkeit.
+- Die Vielfalt an Sprachkenntnissen und Engagements ist klar und übersichtlich dargestellt.
 
 **Engagements** 🟠 Braucht Aufmerksamkeit
 
-- Ergänzen Sie bei Ihren Engagements, insbesondere bei Leitungsfunktionen, was Sie konkret organisiert, koordiniert oder erreicht haben (z.B. Teamgröße, Anzahl der Veranstaltungen, besondere Erfolge).
-- Falls Sie in weiteren HSG-Clubs aktiv sind, können Sie diese mit Bullet Points zu Ihrer Rolle und Ihrem Beitrag ergänzen.
+- Ergänze bei deinen Engagements, was du konkret organisiert, koordiniert oder erreicht hast – z.B. Teamgröße, Anzahl der Veranstaltungen, besondere Erfolge oder Herausforderungen.
+- Wenn du in weiteren HSG-Clubs aktiv bist oder eine Rolle im Consulting Club HSG übernommen hast, kannst du dies mit Bullet Points ergänzen – aber nur, wenn es zutrifft.
 
 **Interessen** 🟠 Braucht Aufmerksamkeit
 
-- Entscheiden Sie, ob Sie diese Rubrik mit einigen persönlichen Interessen (z.B. Sportarten, Musikinstrumente, besondere Hobbys) ausbauen oder die Überschrift entfernen.
-- Wenn eines Ihrer Interessen besonders aussagekräftig ist oder eine Fähigkeit zeigt, können Sie es mit ein bis zwei erläuternden Worten ergänzen – das ist aber optional.
+- Einzelne Stichworte sind akzeptabel, aber wenn ein Interesse besonders viel über dich aussagt oder eine Fähigkeit zeigt, lohnt sich eine kurze Erläuterung.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -78,8 +76,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. Data Science, Bloomberg Market Concepts, Sprachzertifikate) absolviert haben, können Sie diese hier aufführen.
-- Nur relevante und abgeschlossene Kurse sollten aufgenommen werden.
+- Falls du relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals oder Bloomberg Market Concepts) absolviert hast, kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 

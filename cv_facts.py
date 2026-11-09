@@ -122,7 +122,19 @@ REPORT_SECTIONS: list[tuple[str, str, set, set, set, tuple]] = [
      {"Profile / Summary"}, {"Profile"}, {"Profile / Summary"}, ()),
     ("Education", "Ausbildung",
      {"Education"}, {"Education"}, {"Education"},
-     ("education", "ausbildung", "studium")),
+     # Not just the word "education", because that is precisely the word that
+     # goes missing. On good cv 2 the heading came out of the PDF as "( A I >"
+     # and the student - GPA 5.0, exchange at Carlos III, Matura as class
+     # valedictorian - was told in two places that their CV has no Education
+     # section, while the report simultaneously commented on their Matura
+     # grade. These keywords are content a CV only carries when it HAS an
+     # education section. Deliberately generous, for the reason set out above:
+     # a missed suggestion is a small loss, telling a student a section is
+     # missing when it is right there is the complaint they made twice.
+     ("education", "ausbildung", "studium", "bachelor", "master of", "matura",
+      "abitur", "baccalaur", "gymnasium", "kantonsschule", "universit", "university",
+      "hochschule", "b\\.?sc", "m\\.?sc", "b\\.?a\\.", "m\\.?a\\.", "mba",
+      "exchange semester", "austauschsemester", "lic\\. oec", "diplom")),
     ("Work / Professional Experience", "Berufserfahrung",
      {"Experience"}, {"Work Experience"}, {"Experience"},
      ("work experience", "professional experience", "berufserfahrung", "praktika")),

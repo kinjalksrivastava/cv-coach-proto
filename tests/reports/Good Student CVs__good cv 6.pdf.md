@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, with clear section headings and a strong academic and extracurricular background. The grades are presented with their maximums, making them easy to interpret for readers from different education systems. However, there are currently no bullet points under your roles or degrees, which means a recruiter cannot see what you actually did in each position or activity. There is also no mention of AI experience anywhere in your CV—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; more tailored advice is available if you specify a target.
+Your CV is well-structured and concise, with clear section headings and a strong academic and extracurricular background. Grades are presented with their maximum, making them easy to interpret internationally. However, there are no bullet points under your roles or degrees, which means a reader cannot see what you actually did in each position or activity. Nothing on your CV currently refers to AI experience—if you have worked with AI tools or topics, consider adding this where relevant. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific target at any time.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,9 +19,9 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something to show—such as relevant modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes. This helps a reader understand what you focused on and what you achieved beyond the qualification itself.
+  Add a line or two under each degree where you genuinely have something to show—such as relevant modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes—so a reader can see what you focused on and achieved.
 - 🔴 **No bullet points anywhere in the CV**  
-  Every role and activity needs a few bullet points describing what you actually did, how you did it, and what changed as a result. Without these, a recruiter cannot assess your skills or contributions.
+  Every role and activity needs a few bullet points describing what you actually did, so a reader can understand your contributions and skills beyond just the job title.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -38,23 +38,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Add bullet points under each degree to describe relevant coursework, thesis topics (including what you actually did), scholarships, or any special programmes such as the HSG Mentoring Programme or the Certificate in Data Science Fundamentals (DSF) if you have completed them.
-- Include a brief explanation of your maturity thesis—what question you addressed, your method, and your findings.
-- Use bullet points to make these details easy to read and to highlight your most relevant academic experiences.
+- Add bullet points under each degree to highlight relevant coursework, thesis topics, academic projects, scholarships, or participation in programmes such as the HSG Mentoring Programme or the Certificate in Data Science Fundamentals (DSF) if applicable.
+- Describe what you actually did during your studies—such as key modules, research, or any special academic initiatives—to give context to your qualifications.
+- Include bullet points for any exchange semesters, additional certificates, or academic awards that are relevant to your future applications.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under each work experience entry to describe what you did, how you did it, who benefited, and what changed as a result.
+- Add bullet points under each work experience entry to describe your main tasks, how you approached them, who benefited, and what changed as a result.
 - Highlight any technical skills, tools, or methods you used in each role, and connect them to your achievements where possible.
 
 **EXTRACURRICULARS** 🟠 Needs attention
 
-- Add bullet points under each extracurricular activity to explain your responsibilities, the skills you developed, and any outcomes or impact.
-- If you have participated in other HSG student clubs or initiatives, consider adding them if they are relevant to your goals.
+- Add bullet points under each extracurricular activity to explain your responsibilities, the skills you developed, and the outcomes you achieved.
+- If you have participated in other HSG student clubs or initiatives, include them with a brief description of your role and impact.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Your language proficiency and certifications are clearly listed, making it easy for a recruiter to assess your additional qualifications.
+- You clearly present your language proficiency, programming skills, and certifications, making it easy for a reader to see your additional qualifications.
 
 **Profile** ⚪ Missing
 
@@ -62,7 +62,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), consider adding them here to showcase specialised skills.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)—consider adding them here to showcase specialised skills.
 
 ### 5. Anything else from HSG worth adding?
 

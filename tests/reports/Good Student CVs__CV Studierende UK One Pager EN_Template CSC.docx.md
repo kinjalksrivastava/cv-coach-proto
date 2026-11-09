@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and covers all the main sections expected at your stage, with clear entries for education, professional experience, extracurricular activities, skills, and interests. The roles in your professional experience are clearly titled and described, which helps a recruiter quickly understand your background. However, some sections could be strengthened by adding more detail about your contributions and outcomes, and by clarifying certain grades and skill levels for international readability. This review focuses on structure and completeness, as no target role or job description was provided. If you have any experience with AI tools or projects, consider adding it, as nothing currently on your CV refers to AI.
+Your CV is well-structured and covers all the main sections expected at your stage, with clear entries for education, professional experience, extracurricular activities, skills, and interests. Each professional experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, there are a few areas where you can add detail to make your achievements and skills stand out more clearly, especially by clarifying outcomes and the skills behind your tasks. This feedback focuses on structure and completeness, as no specific target role or job description was provided. If you have any experience with AI tools or coursework, consider adding it, as nothing currently on your CV refers to AI.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Add detail under each degree, not just grades and dates**  
-  For degrees that currently only list a grade and date, add a line or two about relevant modules, thesis topics, exchange semesters, or any additional qualifications or scholarships, focusing on what is most relevant to your future applications.
-- 🔴 **Describe outcomes and skills in experience bullets**  
-  Revise your experience bullets to go beyond tasks—explain what you did, how you did it, why it mattered, and what skills you demonstrated. Where possible, include outcomes or changes that resulted from your work.
-- 🟡 **Clarify grading scales for international readers**  
-  Make sure all grades are shown with their maximum (e.g., 80/100), and clarify any grading scales that may not be familiar to readers outside Switzerland.
-- 🟡 **Add levels to language and technical skills**  
-  Add a proficiency level for each language and technical skill, using plain labels (Basic, Intermediate, Advanced, Fluent) and consider adding CEFR levels (A1-C2) for languages for clarity.
-- 🟡 **Consider adding detail to interests if relevant**  
-  Single-word interests are fine, but if one or two could say something interesting about you or show a skill, consider adding a brief description.
+  For degrees that currently only list a grade and date, add a line or two about relevant modules, thesis topics, exchange semesters, scholarships, or other qualifications that are genuinely relevant to your future applications.
+- 🔴 **Describe the skill and outcome behind each experience bullet**  
+  For each experience bullet, go beyond the task by explaining what you did, how you did it, why it mattered, and what skill it demonstrates. Where you have a concrete result or outcome, include it if appropriate and accurate.
+- 🟡 **Clarify your grades for international readers**  
+  Make sure each grade is shown with its maximum (e.g., 80/100), and clarify any grading scale that may not be widely recognised, so recruiters from other countries can understand your academic results.
+- 🟡 **Add a level for each language**  
+  Add a proficiency level (such as Basic, Intermediate, Advanced, Fluent) next to each language, and consider using the CEFR scale (A1–C2) for greater clarity, as this is widely understood by recruiters.
+- 🟡 **Consider adding detail to one or two interests**  
+  Single-word interests are fine, but if one or two could say something interesting about you or show a skill, consider adding a short phrase to highlight this.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,19 +46,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 **EDUCATION** 🟠 Needs attention
 
 - Add a line or two under each degree where you have relevant content, such as key modules, thesis topics, exchange semesters, scholarships, or participation in programmes like the HSG Mentoring Programme if applicable.
-- Clarify all grades for international readers by including the maximum (e.g., 80/100) and explaining any grading scales that may not be widely recognised.
+- Clarify your grades for international readers by showing both the grade and its maximum (e.g., 80/100), and explain any grading scale that may not be widely recognised.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your extracurricular activities section stands out by detailing your leadership and organisational contributions, making your involvement and impact clear.
+- Your extracurricular activities are well described, showing leadership and initiative in student clubs.
 
 **OTHER SKILLS** 🟠 Needs attention
 
-- If you have completed the Bloomberg Market Concepts (BMC) course, you may also wish to mention it under Courses and Certificates for added visibility.
+- If you have completed certificates such as Bloomberg Market Concepts (BMC), you could also mention this in a dedicated Courses and Certificates section for added visibility.
 
 **INTERESTS** 🟢 Strong
 
-- Your interests section gives a well-rounded impression and highlights personal pursuits that can spark conversation.
+- Single-word interests are acceptable, but you might consider adding a short phrase to one or two to highlight a skill or unique aspect if you feel it adds value.
 
 **Profile** ⚪ Missing
 
@@ -66,7 +66,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Bloomberg Market Concepts (BMC), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certificates, such as Bloomberg Market Concepts (BMC), consider adding them in a dedicated section to make them more visible to recruiters.
 
 ### 5. Anything else from HSG worth adding?
 

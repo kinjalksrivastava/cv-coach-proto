@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a strong professional profile with clear evidence of leadership, innovation, and quantifiable results in your work experience. The structure is generally clear, and your education and extracurricular activities are well documented. Since you have not provided a specific target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. There is no visible mention of AI experience in your coursework, projects, or skills section—if you have relevant experience, consider adding it.
+Your CV presents a strong professional profile with clear evidence of leadership, innovation, and quantifiable results in your work experience. The structure is generally clear, and your education and extracurricular activities are well documented. Since you have not provided a specific target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. There is visible experience with AI and digital transformation in your experience section, which is a plus if you are considering roles in those areas.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Education**  
-  Currently, your degrees list only the qualification, date, and grade. Add a line or two under each degree where you have relevant content: modules that matter for your target field, a thesis and what it involved, an exchange semester, or any additional qualification or scholarship. Only include what is true and relevant.
-- 🔴 **Rework duty-based bullets in Professional Experience**  
-  Some bullets in your work experience section describe only the task or responsibility. Rework these to show what you did, how you did it, why it mattered, and which transferable skill it demonstrates. Include results where you genuinely have them.
-- 🟠 **Consistent bullet tense in Professional Experience**  
-  There are tense changes within your professional experience bullets. Use present tense for your current role and past tense for previous roles, and keep this consistent throughout the section.
-- 🟠 **Section order: Education before Experience for student CVs**  
-  For a student or recent graduate CV, education usually comes before work experience unless you have several years of directly relevant work. Consider whether your experience justifies the current order.
-- 🟡 **Consider adding detail to interests**  
-  Single-word interests are acceptable, but if one or two could say something interesting about you or show a skill, consider adding a few words of detail. This is optional and not required for every interest.
+- 🔴 **Your degrees have nothing under them but a grade and a date**  
+  Add a line or two under each degree where you genuinely have something relevant: modules, thesis topic and what you did, exchange semester, certificates, or mentoring programmes. This helps a reader understand your academic focus and any specialisations.
+- 🔴 **Bullets describe duties rather than contribution**  
+  Rework the duty-based bullets in your professional experience to focus on what you did, how you did it, and why it mattered, highlighting transferable skills and outcomes where possible.
+- 🟠 **Bullet tense changes within PROFESSIONAL EXPERIENCE**  
+  Choose either past or present tense for each role and keep it consistent throughout the section—use present tense for your current job and past tense for previous roles.
+- 🟠 **Education comes after work experience**  
+  For a student CV, education usually comes first unless you have several years of directly relevant work experience. Consider whether your experience justifies the current order.
+- 🟡 **Interests are listed as single words**  
+  Single-word interests are acceptable, but if one or two could say something interesting about you or show a skill, consider adding a brief detail.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,26 +45,24 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It clearly highlights your innovation expertise, leadership, and analytical skills, setting the tone for the rest of your CV.
+- It clearly communicates your expertise, leadership, and interest in innovation and technology.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Rework bullets that only describe duties to focus on your specific actions, how you achieved results, and the skills demonstrated.
-- If you later target a specific role, highlight projects or achievements that match the requirements of that position.
+- Rework the duty-based bullets to highlight your actions, methods, and the skills demonstrated, not just the tasks performed.
 
 **EDUCATION** 🟠 Needs attention
 
-- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or earned a certificate like the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these under the relevant degree if they are relevant to your future applications.
-- If you later target a specific role, highlight coursework or projects that align with the requirements.
+- Add a line or two under each degree with relevant modules, thesis topic and what you did, exchange semester details, or any additional qualifications such as the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
 
 **EXTRA-CURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your bullets describe your contributions and the skills developed, such as mentoring and communication.
+- Your bullets describe your activities and the skills developed, which adds depth to your profile.
 
 **ADDITIONAL SKILLS** 🟠 Needs attention
 
-- Move trait words like 'analytical thinking' into experience bullets where you can demonstrate them with concrete examples.
-- If you have completed relevant online courses or certifications, consider adding a separate 'Courses and Certificates' section to highlight them.
+- Move trait words like 'analytical thinking' into experience bullets where you can demonstrate them through your actions.
+- For each technical skill, consider adding a proficiency level if not already present, and keep the format consistent.
 
 **INTERESTS** 🟢 Strong
 
@@ -72,7 +70,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed significant online courses, certifications, or additional training (such as the MIT edX or IBM Coursera courses you mention), consider adding a 'Courses and Certificates' section to make these stand out.
+- If you have completed additional courses or certificates (such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), consider adding them here to highlight further expertise.
 
 ### 5. Anything else from HSG worth adding?
 

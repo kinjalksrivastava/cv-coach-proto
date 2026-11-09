@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Your degrees have nothing under them but a grade and a date**  
-  Add a line or two under each degree where you genuinely have something to share: relevant modules, a thesis and what it was about, an exchange semester, a certificate, a scholarship, or a mentoring programme. Only include what is true and relevant to your future applications.
-- 🔴 **Entries in "Work experience" have no description**  
-  Add a few bullets under each work experience entry describing what you did, how you did it, and what changed as a result—focus on transferable skills that will matter for your future roles.
-- 🔴 **The CV does not fill a page**  
-  There is ample space to provide more detail about your education, work experience, and skills. Expanding these sections will give a fuller picture of your background and abilities.
-- 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024'). This helps a reader understand the duration of your experiences more accurately.
-- 🟠 **Entries in "Educatiqn" are not newest-first**  
-  List your most recent education entry at the top of the section so a reader can quickly see your current status.
+- 🔴 **Add detail under each degree in Education**  
+  Currently, your education entries only list the institution, dates, and a grade. Add a line or two under each degree about relevant modules, a thesis or project, an exchange semester, scholarships, or any mentoring programme you participated in—only what is true and relevant to your future applications.
+- 🔴 **Describe your work experience entries**  
+  Your work experience entries have no description. Add bullets under each role explaining what you did, how you did it, and what changed as a result, focusing on transferable skills.
+- 🔴 **Expand your CV to fill a page**  
+  There is ample space to add more detail about your education, work experience, and other activities. A fuller CV gives a more complete picture of your background and skills.
+- 🟠 **Add months to all date ranges**  
+  List both the month and year for each entry (e.g., Sep 2023 – Jun 2024) so a reader can see the duration of each experience clearly.
+- 🟠 **List education entries newest-first**  
+  Within the Education section, put your most recent degree at the top so a reader immediately sees your current status.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,30 +46,28 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Educatiqn** 🟠 Needs attention
 
-- Add detail under each degree: relevant modules, thesis topic and what you actually did, exchange semester, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme if applicable.
 - Reorder your entries so your current studies at the University of St. Gallen appear first.
-- Clarify your grade: confirm if '513' should be '5.13', and write it as '5.13 / 6.00' so international readers understand the scale.
-- Address the gap between June 2022 and September 2023 with a short line about what you were doing during that time.
-- Add months to your date ranges for clarity (e.g., 'Sep 2023 – present').
+- Clarify your grade: if it is 5.13, write it as 5.13 / 6.00 so the scale is clear to international readers.
+- There is a gap between Jun 2022 and Sep 2023—add a short line explaining what you were doing during this period.
+- Add months to your date ranges (e.g., Sep 2023 – Jun 2024) for clarity.
 
 **Work experience** 🟠 Needs attention
 
-- Add bullets under each role describing your responsibilities, how you approached them, and what outcomes or changes resulted from your work.
-- Include the months as well as years in your date ranges (e.g., 'Sep 2024 – Jun 2025').
-- If your roles at the St. Gallen Symposium were paid, they belong here; if not, consider moving them to an extracurricular section.
+- Include the months as well as years for each position so the duration is clear.
+- If your roles at the St. Gallen Symposium involved specific projects, leadership, or technical skills, highlight these in your bullets.
 
 **Core Competences** 🟠 Needs attention
 
-- For technical skills, add a level for each (e.g., 'Microsoft Dynamics 365 Ecosystem (Intermediate)').
-- Move personal traits like 'adaptability' and 'high self-initiative' into experience bullets, where you can demonstrate them through concrete actions and results.
+- For technical skills, add a level for each (e.g., Microsoft Dynamics 365 Ecosystem – Intermediate).
+- Move personal traits like 'adaptability' and 'high self-initiative' into your experience bullets, where you can demonstrate them with concrete examples.
 
 **LANGUAGES** 🟠 Needs attention
 
-- Upgrade your language entries to include CEFR levels (A1–C2), e.g., 'English (C1)'. This makes your proficiency clear to recruiters everywhere.
+- Upgrade your language levels to CEFR (A1–C2) for clarity—e.g., English (B2 or C1). State the level you are genuinely at now, not just your last certificate.
 
 **Hobbies and Interests** 🟢 Strong
 
-- This section works well as a brief list; if you wish, you could add a detail about one or two interests to highlight a skill or achievement, but this is optional.
+- Single-word interests are perfectly acceptable; if you wish, you could add a few words about one or two to show a skill or interesting aspect, but this is optional.
 
 **Profile** ⚪ Missing
 
@@ -77,11 +75,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have held roles in student clubs, committees, volunteering, or other unpaid activities, add them here with a line or two about your responsibilities and achievements.
+- If you have been involved in student clubs, volunteering, or committee roles, add them here with a line or two about your responsibilities and achievements.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), add them here with the completion date and a brief note on their relevance.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), add them here with the completion date.
 
 ### 5. Dates worth a look
 

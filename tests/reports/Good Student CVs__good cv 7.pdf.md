@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, fitting neatly onto one page, which is ideal for a student or early-career applicant. The professional experience section is particularly strong in terms of clarity, with every entry carrying both a role title and a description, and your grades are presented with their maximums, making them easy to interpret internationally. However, the CV currently focuses on structure and completeness, as no target role or job description was provided—role-specific feedback is available any time you add a target. Nothing on your CV currently refers to AI experience, either in coursework, projects, jobs, or skills; if you have relevant exposure, consider adding it.
+Your CV is well-structured and concise, fitting neatly onto one page and providing clear role titles and descriptions for each professional experience. Grades are presented with their maximums, making them easy to interpret internationally. However, the feedback below focuses on structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored advice. Nothing on your CV currently refers to AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,11 +19,11 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Add detail under each degree in Academic Experience**  
-  Currently, your degrees list only the qualification, grade, and dates, which tells a reader little about your academic focus or achievements. Add a line or two under each degree where you have something relevant: key modules, thesis topic and what you actually did, exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme.
+  Currently, most of your degrees list only the qualification, grade, and dates. Add a line or two under each degree where you have something relevant: key modules, thesis details, exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme.
 - 🔴 **Strengthen experience bullets with outcomes and skills**  
-  Most of your experience bullets describe tasks rather than the skills you used or the results you achieved. For each, clarify what you did, how you did it, why it mattered, and what transferable skill it demonstrates. Add outcomes or figures where you genuinely have them.
+  Many of your professional experience bullets describe tasks but do not show the skill behind them or the outcome. For each, clarify what you did, how you did it, why it mattered, and what skill it demonstrates. Add results or changes where you can genuinely support them.
 - 🟠 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it to every bullet for a more professional appearance.
+  Some bullets end with a full stop and others do not. Choose one style and apply it to every bullet throughout your CV.
 - 🟡 **Grade display for Bachelor's degree is your choice**  
   Including your Bachelor's grade is optional. Grades are commonly shown from 5.00 upward; below that, it is worth discussing with a Career Services coach whether to keep it. The decision is yours.
 
@@ -42,21 +42,21 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟠 Needs attention
 
-- For your thesis, briefly describe what you actually did—such as the dataset, method, tools, and the result—rather than just the title.
+- For your thesis, briefly describe the research question, data, methods, and outcome, rather than just the title.
 
 **Professional Experience** 🟠 Needs attention
 
-- Review each bullet and clarify what you did, how you did it, why it mattered, and what transferable skill it demonstrates. Where you have a concrete result or figure, add it, but only if it is accurate and appropriate.
-- Make sure each bullet ends with the same punctuation style for consistency.
+- Review each bullet to clarify what you did, how you did it, why it mattered, and what skill it demonstrates. Where you have a measurable result or change, add it if appropriate and accurate.
+- Ensure bullet punctuation is consistent throughout this section.
 
 **Extracurriculars** 🟠 Needs attention
 
-- For each extracurricular activity where you played an active role, add a bullet describing what you did, who benefited, and what changed as a result. For example, if you organised an event or led a team, specify your responsibilities and the outcome.
-- If you have participated in any HSG student clubs or taken on roles in organisations such as the Consulting Club HSG or Helvetian Investment Club, consider adding them if relevant to your goals.
+- For each extracurricular activity where you played an active role, add a bullet or two describing what you did, who benefited, and what changed as a result.
+- If you have participated in HSG student clubs or similar activities, consider adding them here with a brief description of your involvement.
 
 **Skills & Interests** 🟢 Strong
 
-- Your section works well because it provides clear language levels (including CEFR for English and French) and specific IT skills with proficiency levels.
+- Your language skills are presented with clear levels, and your technical skills are listed with proficiency, which is helpful for recruiters.
 
 **Profile** ⚪ Missing
 
@@ -64,7 +64,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals or Bloomberg Market Concepts, consider adding them here.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC), consider adding them here.
 
 ### 5. Dates worth a look
 

@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist insgesamt gut strukturiert und deckt die wichtigsten Bereiche für eine Bewerbung im Studium oder am Berufseinstieg ab. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Funktionsbezeichnung als auch eine kurze Beschreibung enthält. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle können Sie jederzeit eine Zielposition oder Stellenanzeige nachreichen. Es ist aktuell kein Abschnitt zu Skills & Languages vorhanden; falls Sie relevante Kompetenzen oder Sprachkenntnisse haben, könnten Sie diese ergänzen.
+Ihr Lebenslauf ist übersichtlich, gut strukturiert und enthält alle wesentlichen Stationen Ihrer Ausbildung und Berufserfahrung. Besonders positiv fällt auf, dass jede Position in der Arbeits­erfahrung sowohl mit Titel als auch mit einer kurzen Beschreibung versehen ist. Die einzelnen Bullet Points konzentrieren sich jedoch überwiegend auf Aufgabenbeschreibungen und weniger auf Ihre konkreten Beiträge oder die dahinterstehenden Kompetenzen. Da kein Zielberuf angegeben wurde, bezieht sich dieses Feedback ausschließlich auf Struktur und Vollständigkeit; für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -11,19 +11,21 @@ _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau
 | Kriterium | Status | Kommentar |
 | --- | --- | --- |
 | Länge | 🟢 Gut | 1 Seite — passend für einen Lebenslauf zu Studienzeiten oder am Berufseinstieg. |
-| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Erkannt: Abschnittstitel, die manche Parser nicht erkennen ("AUSSERCURRICULARE AKTIVITÄTEN", "ZUSÄTZLICHE INFORMATIONEN") — gängige Bezeichnungen wie "Berufserfahrung" oder "Ausbildung" werden zuverlässiger gelesen. |
+| Geschätzte ATS-Kompatibilität | 🟢 Gut | Keine Parsing-Risiken erkannt — gängige Abschnittstitel. |
 | Rechtschreibung und Konsistenz | 🟠 Braucht Aufmerksamkeit | Tippfehler: "Dez 2022" kam an, wo "Dec 2022" erwartet wurde; "Dez 2021" kam an, wo "Dec 2021" erwartet wurde; "Dez 2018" kam an, wo "Dec 2018" erwartet wurde. |
 
 _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, keine Garantie — jedes System liest anders._
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Bullet Points beschreiben Aufgaben statt Beitrag**  
-  Überarbeiten Sie die betreffenden Bullet Points in Ihrer Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihren konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Kompetenzen sichtbar machen. Wo möglich, ergänzen Sie ein Ergebnis oder eine Veränderung.
-- 🔴 **Die meisten Bullet Points zeigen keine Ergebnisse oder Veränderungen**  
-  Gehen Sie jede Bullet Point in Ihrer Berufserfahrung durch und fragen Sie sich: Was habe ich konkret gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Ergänzen Sie, wo es passt, ein konkretes Ergebnis – aber nur, wenn Sie es belegen können.
-- 🟠 **Kein Abschnitt zu Skills & Languages vorhanden**  
-  Fügen Sie einen eigenen Abschnitt für Skills & Languages hinzu, falls Sie relevante Kompetenzen oder Sprachkenntnisse haben. Das erleichtert es Recruitern, Ihre Eignung auf einen Blick zu erkennen.
+- 🔴 **Bullet Points beschreiben Aufgaben statt Beiträge**  
+  Überarbeiten Sie die Bullet Points in Ihrer Arbeitserfahrung so, dass sie nicht nur Aufgaben, sondern auch Ihre konkrete Rolle, das Vorgehen und die dahinterstehenden Kompetenzen hervorheben. Zeigen Sie, welche übertragbaren Fähigkeiten Sie dabei eingesetzt oder entwickelt haben.
+- 🔴 **Kaum Ergebnisse oder Veränderungen in Bullet Points sichtbar**  
+  Ergänzen Sie, wo möglich, die Bullet Points um Ergebnisse, Veränderungen oder konkrete Beiträge. Fragen Sie sich bei jeder Station: Was habe ich bewirkt? Welche Fähigkeit habe ich dabei gezeigt? Zahlen oder Resultate sind hilfreich, wenn sie belegbar sind, aber nicht zwingend erforderlich.
+- 🟠 **Fehlender Abschnitt zu Skills & Languages**  
+  Fügen Sie einen eigenen Abschnitt für Ihre Hard Skills und Sprachkenntnisse hinzu, jeweils mit Niveauangabe. Das erleichtert es Recruitern, Ihre Kompetenzen schnell zu erfassen.
+- 🟡 **Interessen als Einzelwörter gelistet**  
+  Überlegen Sie, ob Sie ein oder zwei Interessen mit kurzen Details ergänzen möchten, um besondere Fähigkeiten oder Engagement hervorzuheben. Einzelwörter sind aber grundsätzlich akzeptabel.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -35,26 +37,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | ARBEITSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
 | AUSSERCURRICULARE AKTIVITÄTEN | 🟠 Braucht Aufmerksamkeit |
 | ZUSÄTZLICHE INFORMATIONEN | 🟢 Stark |
+| Skills & Languages | ⚪ Fehlt |
 | Kurzprofil | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Ausbildungseinträge sind vollständig und zeigen sowohl akademische Leistungen als auch Engagement neben dem Studium.
+- Die Angaben zu Studiengang, Notenschnitt und besonderen Aktivitäten sind vollständig und aussagekräftig.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeiten Sie die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch Ihr Vorgehen, Ihre Rolle und die daraus sichtbaren Fähigkeiten zeigen.
-- Ergänzen Sie, wo möglich, konkrete Ergebnisse oder Veränderungen, die Sie bewirkt haben.
+- Fügen Sie, wo möglich, Ergebnisse, Veränderungen oder konkrete Beiträge hinzu, um Ihre Wirkung und übertragbaren Fähigkeiten zu verdeutlichen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie zu Ihren außercurricularen Engagements kurze Bullet Points hinzu, die Ihre konkreten Aufgaben, Verantwortlichkeiten und den Nutzen für andere beschreiben.
-- Falls Sie in weiteren HSG-Studierendenclubs aktiv sind, können Sie diese mit Bullet Points ergänzen (siehe z.B. das Clubverzeichnis: https://shsg.ch/clubs).
+- Ergänzen Sie bei Ihren Engagements, welche konkreten Aufgaben, Verantwortlichkeiten oder Erfolge Sie hatten – z.B. Teamgröße, organisierte Veranstaltungen oder besondere Initiativen.
+- Falls Sie in weiteren HSG-Studierendenclubs aktiv sind, können Sie diese mit kurzen Bullet Points ergänzen (siehe das Verzeichnis der [HSG student clubs](https://shsg.ch/clubs)).
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Angaben zu Interessen und Sprachen geben einen guten Überblick über Ihre persönlichen Schwerpunkte.
+- Die Sektion gibt einen schnellen Überblick über Ihre Interessen und Sprachkenntnisse.
+
+**Skills & Languages** ⚪ Fehlt
+
+- Fügen Sie einen eigenen Abschnitt hinzu, in dem Sie Ihre IT-Kenntnisse und Sprachen jeweils mit Niveau (z.B. nach CEFR: A1–C2) angeben.
+- Für die Sprachen empfiehlt sich die Angabe des aktuellen Niveaus nach dem europäischen Referenzrahmen (CEFR), da dies für Recruiter eindeutig verständlich ist.
+- Bei den IT-Kompetenzen geben Sie bitte ebenfalls das Niveau an (z.B. MS Office – Fortgeschritten).
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -62,7 +70,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Kurse oder Zertifikate (z.B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) absolviert haben, können Sie diese hier aufführen.
+- Falls Sie relevante Zertifikate oder Zusatzqualifikationen (z.B. Data Science, Nachhaltigkeit) erworben haben, können Sie diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -125,6 +125,17 @@ VOCAB: list[tuple[str, str, tuple[str, ...]]] = [
       "engagements", "ausserschulische aktivität", "außerschulische aktivität",
       "student engagement", "involvement", "activities", "societies",
       "organisationen", "organizations", "organisations", "organisation",
+      # Career Services' OWN templates. Round 6 reports told a student that
+      # "EXTRAKURRIKULÄRE AKTIVITÄTEN" - the heading printed in the template
+      # HSG hands out - is one some parsers may not recognise. There is no
+      # worse false finding available to this tool than calling their own
+      # template ATS-unfriendly.
+      "extrakurrikuläre aktivitäten", "extrakurrikulare aktivitaeten",
+      "extrakurrikuläre aktivität", "extrakurrikuläres engagement",
+      "extrakurrikulares engagement", "extrakurrikulär", "extrakurrikular",
+      "ausscurriculare aktivitäten", "ausercurriculare aktivitäten",
+      "aussercurriculare aktivitäten", "außercurriculare aktivitäten",
+      "aussercurriculare aktivitaeten", "ausscurriculare aktivitaeten",
       "zusätzliche teilnahmen", "weitere aktivitäten", "sonstige aktivitäten",
       "weitere engagements", "teilnahmen",
       "clubs", "society", "leadership", "leadership experience", "leadership roles",
@@ -133,7 +144,11 @@ VOCAB: list[tuple[str, str, tuple[str, ...]]] = [
      ("interests", "hobbies", "interessen", "freizeit", "hobbies and interests",
       "interests and hobbies", "personal interests", "freizeitaktivitäten",
       "persönliche interessen", "hobbys", "sonstiges", "additional information",
-      "weitere informationen", "sonstige informationen")),
+      "weitere informationen", "sonstige informationen",
+      # Also from Career Services' own templates, reported in round 6 as a
+      # heading an ATS might not read.
+      "zusätzliche informationen", "zusaetzliche informationen",
+      "further information", "weiteres", "diverses")),
     ("Volunteering", "Volunteering & Community",
      ("volunteering", "volunteer experience", "voluntary work", "ehrenamt",
       "ehrenamtliches engagement", "freiwilligenarbeit", "community experience",

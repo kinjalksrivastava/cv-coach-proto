@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape structurally, with all key sections present and a clear record of both academic and professional experience. The experience section is especially strong in listing your roles and responsibilities, but could be improved by showing more about your personal contribution and the skills you developed. There is currently no mention of AI experience or tools; if you have any relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness—if you add a specific target, I can give more tailored advice.
+Your CV is in good shape structurally, with all key sections present and a clear record of both academic and professional experience. The experience section includes detailed role titles and descriptions, which is a solid foundation. However, there are some areas where adding more detail and context would help a recruiter understand your specific contributions and skills. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Your degrees have nothing under them but a grade and a date**  
-  A reader learns which certificate you hold and nothing about what you did. Add a line or two under each degree where you genuinely have something: the modules that matter for the role you want, a thesis and what it was actually about, an exchange semester, a certificate or additional qualification, a scholarship, a mentoring programme. Only what is true and only what is relevant to where you are applying.
-- 🟠 **Bullets describe duties rather than contribution**  
-  Rework these around WHAT you did, HOW you did it, and WHY it mattered — and above all which transferable skill it shows. A result helps where you genuinely have one, but the skill is the point.
-- 🟠 **Most bullets describe the task, not the skill behind it**  
-  Take each one through WHAT you did, HOW you did it, and WHY it mattered, and ask what transferable skill it is meant to show. Where you genuinely have a result, add it — but only if that is appropriate and you can back it up. Never invent a figure to fill the gap.
-- 🟠 **Dates give the year but not the month**  
-  Add the month to each — "09/2023 – 06/2024" or "Sep 2023 – Jun 2024". Without it a reader cannot tell a three-month internship from a twelve-month one, and tends to assume the shorter.
-- 🟠 **Bullet punctuation is inconsistent**  
-  Choose one and make every bullet match.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, your education entries list only the degree, institution, and dates. Add a line or two under each degree where you have relevant content: key modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
+- 🟠 **Rework experience bullets to show your contribution and skills**  
+  Many of your experience bullets describe tasks or duties without showing what you personally contributed, how you did it, or which transferable skills you demonstrated. Revise these to highlight your actions, methods, and the skills you used or developed.
+- 🟠 **Add outcomes or results to experience bullets where possible**  
+  Most of your experience bullets stop at describing the task. Where you can, add what changed as a result of your work—such as improvements, efficiencies, or positive feedback—without inventing figures. This helps show your impact.
+- 🟠 **Add months to all date ranges**  
+  Several entries show only years. Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can see the true duration of each role or activity.
+- 🟠 **Make bullet punctuation consistent**  
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,20 +46,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **AUSBILDUNG** 🟠 Needs attention
 
-- Add a line or two under each degree to highlight relevant modules, thesis topics, exchange semesters, scholarships, or additional qualifications if you have them.
-- If you participated in the HSG Mentoring Programme or completed a certificate such as the Certificate in Data Science Fundamentals, include these as bullets under the relevant degree.
+- If you have participated in the HSG Mentoring Programme or completed a certificate such as the Certificate in Data Science Fundamentals, include these under the relevant degree.
 
 **BERUFSERFAHRUNG** 🟠 Needs attention
 
-- For each bullet, clarify what you personally did, how you did it, and why it mattered—aim to show the transferable skills you gained.
-- Where you can, add a result or outcome to demonstrate your impact, but only if you have genuine evidence.
-- Make sure all bullet points use consistent punctuation throughout the section.
+- Revise each bullet to show what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
+- Where possible, add outcomes or results to show your impact, but only if you can genuinely support them.
+- Make sure all bullets use consistent punctuation.
 
 **ORGANISATIONEN** 🟠 Needs attention
 
-- Add a bullet or two under each active role to explain what you did, how you contributed, and any skills you developed or results you achieved.
-- Include the month as well as the year for each date range, so a reader can see the duration of your involvement.
-- If you have taken on a leadership or organisational responsibility in any HSG student club, describe your specific contributions.
+- Add a bullet or two under each active role describing what you did, how you contributed, and any skills you developed or demonstrated.
+- Include the month in each date range to clarify the duration of your involvement.
+- If you have taken on a leadership or organisational role in an HSG student club, describe your specific responsibilities and any outcomes.
 
 **SPRACHEN** 🟢 Strong
 
@@ -71,11 +70,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **CERTIFICATIONS** 🟢 Strong
 
-- This section is strong because it lists your certifications in a way that is easy for a recruiter to understand.
+- This section is strong because it lists your certifications and the awarding bodies, making your qualifications easy to verify.
 
 **INTERESTS** 🟢 Strong
 
-- This section works well by giving a quick insight into your hobbies and interests outside of your studies and work.
+- This section works well by showing your interests in sport, reading, travel, cooking, and technology.
 
 **Profile** ⚪ Missing
 

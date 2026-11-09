@@ -120,15 +120,26 @@ def assess(facts: dict, target_role: str = "") -> dict:
     # --- Tier 1: there is nothing for a reader to evaluate --------------------
     if facts.get("unlabelled_entries"):
         entries = facts["unlabelled_entries"]
+        # The cause is left open on purpose, the same way the spelling row does
+        # it. On good cv 2 the heading WAS there and came out of the PDF as
+        # "( A I >" - telling that student they forgot a heading blames them for
+        # their file. We cannot tell the two apart from extracted text, and an
+        # applicant tracking system would read the file exactly as this tool
+        # did, so either way it is worth their attention.
         issues.append(_issue(
             1, "unlabelled_entries",
-            "A block of entries at the top sits under no heading",
+            "A block of entries at the top sits under no heading we could read",
             f"{len(entries)} entries appear before any section heading: "
             + "; ".join(e[:50] for e in entries[:3]),
-            guidance="Give that block a heading - Education, Work Experience, whichever "
-                     "it is. Without one a reader has to work out what they are looking "
-                     "at, and an applicant tracking system cannot file the entries at "
-                     "all, so they may be read as belonging to the section below them.",
+            guidance="Either there is no heading over that block, or there is one and it "
+                     "did not survive being read out of your file - we cannot tell which "
+                     "from here, so it is worth opening the file and checking. If the "
+                     "heading is missing, add one: Education, Work Experience, whichever "
+                     "it is. If it is there but set as an image, an icon or an unusual "
+                     "font, write it as plain text, because an applicant tracking system "
+                     "reads the file the same way this tool did and cannot file the "
+                     "entries at all - they may be read as belonging to the section "
+                     "below them.",
         ))
 
     if facts.get("no_sections_found"):

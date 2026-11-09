@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and covers all the key sections expected for an early-career candidate. The experience sections are particularly strong, with clear role titles, descriptions, and many bullets that highlight concrete results and achievements. Grades are presented with their maximum, making them easy to interpret internationally. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer tailored advice on aligning your CV to it.
+Your CV is well-structured, concise, and covers all the key sections expected for an early-career candidate. The experience sections are particularly strong, with clear role titles, descriptions, and many bullets that highlight concrete results and achievements. Grades are presented with their maximum, making them easy to interpret internationally. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -39,12 +39,12 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFESSIONAL EXPERIENCE** 🟢 Strong
 
-- Every entry in this section carries both a role title and a description.
+- Every entry carries both a role title and a description.
 - 9 of 15 experience bullets state a concrete result or figure rather than stopping at the task.
 
 **COMMUNITY EXPERIENCE** 🟢 Strong
 
-- Every entry in this section carries both a role title and a description.
+- Every entry carries both a role title and a description.
 
 **Profile** ⚪ Missing
 
@@ -52,7 +52,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates beyond those already listed, you could add them here to highlight additional skills or specialisations.
+- If you have completed relevant certifications or additional courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to highlight technical or specialist skills.
 
 ### 5. Anything else from HSG worth adding?
 
