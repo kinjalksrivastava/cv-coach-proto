@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV contains relevant academic and extracurricular information, but it is currently missing clear section headings and bullet points, which makes it difficult for a recruiter to quickly understand your background and achievements. The document is also quite brief, leaving significant room to expand on your experiences and skills. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, more tailored advice can be given. There is no mention of AI experience or skills—if you have any relevant coursework, projects, or tools in this area, consider including them.
+Your CV contains a range of academic and extracurricular experiences, but it is currently missing clear section headings, bullet points, and enough detail to give a recruiter a full picture of your background. Without section headings and descriptive bullets, an applicant tracking system or recruiter cannot easily navigate your CV or understand your contributions. The document is also quite short, leaving significant room to expand on your achievements and skills. As no target role or job description was provided, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. Nothing on your CV currently mentions AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **No section headings could be read from this CV**  
-  Add clear section headings as ordinary text in the body of your document (e.g., 'Education', 'Experience', 'Skills & Languages') so that both recruiters and applicant tracking systems can easily identify and parse each part of your CV.
+  Add clear section headings as ordinary text (not in text boxes or tables) so both recruiters and applicant tracking systems can identify and navigate your CV easily.
 - 🔴 **No bullet points anywhere in the CV**  
-  For each role, activity, or achievement, add bullet points describing what you did, how you did it, and what changed as a result. This helps readers quickly see your contributions and skills.
+  For each role and activity, add bullet points describing what you did, how you did it, and what changed as a result, so a reader can understand your contributions.
 - 🔴 **The CV does not fill a page**  
-  Expand on your academic, work, and extracurricular experiences to provide a fuller picture of your background. Use the available space to highlight your skills, achievements, and responsibilities.
+  Expand on your experiences, skills, and achievements to provide a fuller picture of your background and make use of the available space.
 - 🟠 **Dates give the year but not the month**  
-  Add the month to each date range (e.g., '09/2023 – 06/2024') so that readers can accurately understand the duration of your experiences.
+  Add the month to each date range so a reader can accurately understand the duration of your experiences.
 - 🟡 **No Education section found**  
-  Create a dedicated Education section to clearly present your academic background, including degrees, institutions, dates, and any relevant coursework or distinctions.
+  Add an Education section to clearly present your academic background.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -48,26 +48,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Work / Professional Experience** ⚪ Missing
 
-- If you have any paid work experience, internships, or student jobs, add a section for these roles with bullet points describing your responsibilities and achievements.
+- Add a section for paid work experience, including internships, student jobs, or freelance work, with bullet points describing your responsibilities and achievements.
+- If you have experience relevant to your future goals, highlight it here with clear dates (including months) and descriptive bullets.
 
 **Extracurricular Experience** ⚪ Missing
 
-- If you have held active roles in student clubs, committees, volunteering, or other activities, add a section for these and describe your contributions with bullet points.
-- You can refer to the HSG student clubs directory for examples of activities that could be included if relevant.
+- Add a section for extracurricular roles, such as active participation in student clubs, volunteering, or committee work, and describe your contributions with bullet points.
+- If you have been involved in HSG student clubs or similar activities, you can find options in the SHSG directory and include those that are genuinely relevant.
 
 **Languages and IT Skills** ⚪ Missing
 
 - Add a section listing your language skills and IT or technical skills, each with a clear proficiency level.
-- For languages, use CEFR levels (A1–C2) for clarity and consistency.
-- For IT skills, specify your level (e.g., 'Excel – Advanced').
+- For languages, use CEFR levels (A1–C2) for clarity, and for technical skills, indicate your level (e.g., Intermediate, Advanced).
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses, certifications, or training (including those related to AI or digital tools), consider adding them in a dedicated section.
+- If you have completed relevant courses or earned certificates (such as the HSG Master certificate in Managing Climate Solutions), consider adding them in a dedicated section.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies you would like to share, you can add a short section for these. This is optional, but can help show your personality and interests outside of academics and work.
+- If you have personal interests or hobbies you wish to share, add a short section at the end of your CV. This can help show your personality and additional skills.
 
 ### 5. Anything else from HSG worth adding?
 

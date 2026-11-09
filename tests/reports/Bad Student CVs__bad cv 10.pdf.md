@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear structure and a solid range of experiences for your stage. Each work experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, several of your bullet points focus on listing tasks rather than highlighting your personal contribution or the skills you developed—reworking these will make your achievements stand out more. Your language skills are well presented, but your current GPA should be clarified for international readers. Nothing on your CV currently mentions AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness—role-specific advice is available if you add a target.
+Your CV is in good shape overall, with a clear structure and all main sections present. Each work experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, most of your experience bullets currently describe tasks rather than highlighting your personal contribution or the skills you developed—refining these will make your CV much more compelling. Your language skills are well presented, but your current GPA should be clarified for international readers. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Several bullets in your work experience section list tasks without showing your specific contribution or the skills you used. Rework these to focus on what you did, how you did it, and why it mattered, highlighting transferable skills.
+  Rework your work experience bullets to focus on what you did, how you did it, and why it mattered—especially the transferable skills you gained. Where possible, add a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many experience bullets stop at describing the activity, without showing the outcome or the skill demonstrated. For each, clarify what you did, how you did it, and what skill or result you want to highlight—add outcomes where you genuinely have them.
+  For each experience bullet, clarify what skill or competency it demonstrates. If you achieved a specific result, include it, but do not invent figures just to fill the space.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+  Choose either to end all bullets with a full stop or none, and make sure every bullet in your CV matches this choice.
 - 🟠 **Bullet tense changes within "WORK EXPERIENCE"**  
-  Tenses shift between present and past within your work experience section. Use past tense for completed roles and present tense for current positions, and keep this consistent within each entry.
+  Use past tense for roles that are finished and present tense for roles you are still in, and keep this consistent within the section.
 - 🟡 **Grades need clarifying**  
-  Your GPA is listed as 5.04, but without a maximum scale. Write it as 5.04 / 6.00 so international recruiters can interpret it correctly.
+  Write your GPA as 5.04 / 6.00 so that recruiters outside Switzerland can understand your result.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,28 +44,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Clarify your GPA by writing it as 5.04 / 6.00, so it is understandable to recruiters outside Switzerland.
-- You have shown a grade for your current degree but not for your earlier qualification. While grades are optional, showing some and omitting others can lead a recruiter to assume the missing grade was weaker. Decide whether to add the missing grade or remove the one shown, based on what best represents your academic record.
+- Clarify your GPA by writing it as 5.04 / 6.00 so international recruiters can interpret it correctly.
 - If you have participated in relevant HSG programmes such as the HSG Mentoring Programme or completed certificates like the Certificate in Data Science Fundamentals (DSF), consider adding them if they are relevant.
-
-> **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Rework bullets that currently list only duties or tasks—such as those for Student Impact, Schlagzeug Shop Glanzmann AG, and Arm Architekten AG—to show what you personally contributed, how you approached the work, and what skill or outcome resulted.
-- Ensure bullet punctuation is consistent—choose either full stops or no punctuation and apply it throughout.
+- Revise your bullets to highlight what you personally contributed, how you approached the work, and what skills you developed or demonstrated.
+- Where you have a concrete result or outcome, add it to the bullet, but only if it is accurate and you can support it.
+- Ensure bullet punctuation is consistent throughout the section—choose either to end all bullets with a full stop or none.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- Your language section is well presented, with clear proficiency levels that make your skills easy to interpret.
+- This section works well because it presents your language skills with clear levels, making it easy for recruiters to assess your proficiency.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- You have included your certifications with clear dates and context, making it easy for a recruiter to see your additional qualifications.
+- This section is effective because it provides specific certifications and dates, giving a clear picture of your additional qualifications.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- You have effectively highlighted your long-term commitment to judo and your achievements, as well as your involvement in skydiving and the Marketing Club at HSG.
+- This section stands out by highlighting your long-term involvement and achievements in sports and club activities, which demonstrate dedication and a range of interests.
 
 **Profile** ⚪ Missing
 

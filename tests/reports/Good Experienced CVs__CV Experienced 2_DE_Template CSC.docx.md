@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Ihr Lebenslauf ist sehr umfassend und zeigt eine langjährige, vielseitige Berufserfahrung im Vertriebs- und Einkaufsbereich, insbesondere in der Medtech-Branche. Die Struktur deckt alle wichtigen Bereiche ab, allerdings fehlen unter Ausbildung noch Details zu den Inhalten und Schwerpunkten Ihrer Abschlüsse. In der Berufserfahrung könnten die Beiträge und erzielten Ergebnisse noch klarer herausgestellt werden, um Ihre Kompetenzen und Erfolge besser sichtbar zu machen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für eine gezielte Ausrichtung auf eine bestimmte Stelle können Sie jederzeit eine Zielposition nachreichen. Es findet sich aktuell kein Hinweis auf Erfahrung mit KI oder KI-Tools; falls Sie hier Kenntnisse oder Projekte haben, könnten Sie diese ergänzen.
+Dein Lebenslauf ist strukturiert und deckt alle wichtigen Bereiche ab, wobei deine langjährige Erfahrung im Vertrieb und Einkauf in der Medtech-Branche klar hervorgeht. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – sobald du eine Zielposition hast, kann ich gezielter auf die Anforderungen eingehen. In der Ausbildung fehlen noch Details zu den einzelnen Stationen, und bei der Berufserfahrung gibt es einzelne Einträge ohne Beschreibung sowie viele Aufgaben, die noch stärker auf deinen Beitrag und die dahinterliegenden Kompetenzen eingehen könnten. Es findet sich aktuell kein Hinweis auf Erfahrung mit KI oder KI-Tools – falls du hier Kenntnisse hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu den Abschlüssen fehlen**  
-  Unter Ihren Ausbildungsstationen stehen bisher nur Abschluss und Datum. Ergänzen Sie jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Vorgehen), einem Austauschsemester, Zertifikaten oder besonderen Programmen, sofern vorhanden und für Ihre Zielposition relevant.
-- 🔴 **Fehlende Funktionsbezeichnung bei Sabbatical**  
-  Beim Sabbatical fehlt eine Funktionsbezeichnung. Geben Sie auch hier eine Rolle oder Funktion an, damit der Leser Ihre Verantwortung und den Kontext besser einordnen kann.
-- 🟠 **Aufgaben statt Beitrag in den Bullet Points**  
-  Mehrere Bullet Points beschreiben nur Aufgaben, nicht aber Ihren konkreten Beitrag oder die dahinterstehenden Kompetenzen. Überarbeiten Sie diese, indem Sie jeweils das Was, Wie und Warum sowie die gezeigte Fähigkeit herausstellen.
-- 🟠 **Ergebnisse und Veränderungen fehlen in den meisten Bullets**  
-  Die meisten Bullet Points in der Berufserfahrung nennen keine Ergebnisse oder Veränderungen. Ergänzen Sie, wo möglich, konkrete Resultate oder Veränderungen, die Sie bewirkt haben – aber nur, wenn diese belegbar und relevant sind.
+- 🔴 **Details zu den Ausbildungsstationen fehlen**  
+  Unter deinen Abschlüssen steht aktuell nur der Abschluss selbst und das Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was wirklich zutrifft und für dein Ziel relevant ist.
+- 🔴 **Einträge in "Berufserfahrung" ohne Beschreibung**  
+  Mindestens ein Eintrag in der Berufserfahrung (Medtech AG) hat keine Aufgaben oder Ergebnisse aufgeführt. Füge hier einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Mehrere Stichpunkte nennen nur die Aufgabe, aber nicht, wie du sie umgesetzt hast oder welchen Unterschied du gemacht hast. Überarbeite diese so, dass klar wird, was du konkret getan hast, wie du vorgegangen bist und welches Ergebnis oder welche Kompetenz dahintersteht.
+- 🟠 **Die meisten Stichpunkte zeigen keine Ergebnisse oder Veränderungen**  
+  Fast alle Stichpunkte in der Berufserfahrung beschreiben nur die Tätigkeit, aber nicht das Ergebnis, eine Zahl oder eine Veränderung. Gehe jeden Punkt durch und frage dich, was sich durch dein Handeln verändert hat und welche übertragbare Fähigkeit du damit belegst. Ergänze ein Ergebnis, wo es passt und belegbar ist.
 - 🟡 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Bei Studierenden steht die Ausbildung normalerweise vor der Berufserfahrung, es sei denn, Sie verfügen bereits über viele Jahre einschlägiger Berufspraxis. Prüfen Sie, ob eine Umstellung für Ihre Zielposition sinnvoll wäre.
+  Bei Studierenden steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, du bist bereits sehr erfahren und wechselst in ein verwandtes Feld. Überlege, ob eine Umstellung für deine Zielposition sinnvoll wäre.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,33 +45,35 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil hebt Ihre langjährige Erfahrung, Ihre Vertriebskompetenz und Ihre Erfolge in der Medtech-Branche prägnant hervor.
+- Das Profil hebt deine langjährige Erfahrung, Spezialisierung und Erfolge im Vertrieb und Einkauf in der Medtech-Branche prägnant hervor.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Fügen Sie beim Sabbatical eine Funktionsbezeichnung hinzu, damit der Kontext und Ihre Rolle klar werden.
-- Ergänzen Sie, wo möglich, konkrete Ergebnisse oder Veränderungen, die Sie bewirkt haben, um Ihre Wirkung und Kompetenzen sichtbar zu machen.
-- Falls Sie relevante Erfahrungen aus HSG-Programmen wie der Talents Conference oder dem St. Gallen Symposium haben, können Sie diese als bezahlte Tätigkeit unter Berufserfahrung ergänzen – aber nur, wenn sie für Ihre Zielposition relevant sind.
+- Füge bei Einträgen ohne Beschreibung (z.B. Medtech AG) einige Stichpunkte hinzu, die deine Aufgaben, dein Vorgehen und die Ergebnisse oder Veränderungen beschreiben.
+- Überarbeite Stichpunkte, die nur Aufgaben nennen, indem du erläuterst, wie du vorgegangen bist, warum das wichtig war und welche Kompetenz du damit belegst.
+- Ergänze, wo möglich, konkrete Ergebnisse oder Veränderungen, die durch dein Handeln entstanden sind – immer nur, wenn du diese auch belegen kannst.
+- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit unter Berufserfahrung ergänzen, sofern sie für dein Ziel relevant sind.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls Sie am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen haben oder ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben haben, können Sie dies als Bullet unter dem jeweiligen Abschluss ergänzen – aber nur, wenn es für Ihre Zielposition relevant ist.
+- Falls du am HSG Mentoring Programme teilgenommen hast oder ein Zertifikat wie das Certificate in Data Science Fundamentals erworben hast, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Die Beschreibung Ihrer Rolle beim Roten Kreuz zeigt Engagement und soziale Kompetenz durch konkrete Aufgaben und Beiträge.
+- Die Beschreibung deiner Tätigkeit beim Roten Kreuz zeigt klar, wie du dich engagiert hast und welchen Beitrag du geleistet hast.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angabe der Sprachkenntnisse mit CEFR-Niveau und der IT-Kenntnisse mit Level macht Ihre Kompetenzen für den Leser klar nachvollziehbar.
+- Die Angaben zu IT-Tools und Sprachen sind mit klaren Niveaus versehen und geben einen guten Überblick über deine Kompetenzen.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen geben einen Einblick in Ihre persönlichen Leidenschaften und können, falls gewünscht, durch kurze Erläuterungen zu einzelnen Aktivitäten ergänzt werden, um besondere Fähigkeiten oder Engagement hervorzuheben.
+- Die Interessen geben einen Einblick in deine persönlichen Leidenschaften und Aktivitäten außerhalb des Berufs.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls Sie relevante Weiterbildungen, Zertifikate oder Kurse absolviert haben (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), können Sie diese in einem eigenen Abschnitt aufführen.
+- Falls du relevante Zertifikate, Weiterbildungen oder Kurse absolviert hast (z.B. Data Science, Nachhaltigkeit, IT), kannst du diese in einem eigenen Abschnitt aufführen.
+- Hier könntest du auch HSG-Zertifikate wie das Certificate in Data Science Fundamentals oder das Certificate in Integrative Sustainability Management ergänzen, sofern vorhanden und relevant.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

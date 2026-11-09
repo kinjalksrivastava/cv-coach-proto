@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und klar strukturiert, enthält aber aktuell noch sehr wenig Inhalt und füllt die Seite nicht aus. Es gibt noch viel Raum, um mehr über deine Erfahrungen, Kompetenzen und deinen Werdegang zu berichten. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt zudem auf, dass keinerlei Erfahrung mit KI oder KI-Tools erwähnt wird; falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und enthält bereits einige relevante Berufserfahrungen mit klaren Rollenbezeichnungen. Allerdings ist er aktuell sehr kurz und bietet noch viel Raum, um mehr über deine Ausbildung, Fähigkeiten und Engagements zu zeigen. Die Rubrik 'Interessen' ist fast leer, was den Eindruck eines Lückenhaften Profils hinterlässt. Es gibt keine Hinweise auf Erfahrungen mit KI oder AI-Tools – falls du hier Kenntnisse hast, könntest du sie ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Der Lebenslauf füllt die Seite nicht aus**  
-  Nutze den vorhandenen Platz, um ausführlicher auf deine bisherigen Tätigkeiten, Kompetenzen und Erfahrungen einzugehen. Ein Lebenslauf, der nur halbseitig ist, wirkt auf Recruiter oft zu knapp.
-- 🔴 **Aufgaben statt Beitrag in den Bullets**  
-  Formuliere die Stichpunkte in der Berufserfahrung so um, dass sie deinen konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten zeigen. Überlege, welches Ergebnis oder welche übertragbare Kompetenz du jeweils belegen kannst.
-- 🟠 **Kein Abschnitt 'Ausbildung' vorhanden**  
-  Falls du relevante Ausbildungsstationen hast, solltest du einen Abschnitt dazu ergänzen.
-- 🟠 **Kein Abschnitt 'Skills & Languages' vorhanden**  
-  Falls du relevante Fähigkeiten und Sprachkenntnisse hast, solltest du diese in einem eigenen Abschnitt aufführen.
-- 🟡 **Interessen nur als Stichworte**  
-  Überlege, ob du ein oder zwei Interessen mit kurzen Details versiehst, wenn sie etwas Besonderes über dich aussagen oder eine Fähigkeit zeigen. Einzelne Stichworte sind aber grundsätzlich in Ordnung.
+- 🔴 **'INTERESSEN' ist fast leer**  
+  Entweder solltest du diese Rubrik mit konkreten Interessen oder Hobbys ausbauen oder sie ganz entfernen – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
+- 🔴 **Der Lebenslauf füllt keine Seite**  
+  Du hast noch viel Platz, um ausführlicher zu beschreiben, was du gemacht hast. Ein Lebenslauf, der nur halbseitig ist, wirkt dünn und lässt Potenzial ungenutzt.
+- 🟠 **Aufgaben statt Beitrag in den Bullets**  
+  Formuliere die Stichpunkte so um, dass klar wird, was genau du gemacht hast, wie du es gemacht hast und warum es wichtig war – und welches übertragbare Skill du damit zeigst.
+- 🟠 **Meistens werden nur Aufgaben, nicht Ergebnisse oder Skills beschrieben**  
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich konkret getan? Wie? Warum war das relevant? Welches Skill steckt dahinter? Wo du ein echtes Ergebnis hast, kannst du es ergänzen – aber nur, wenn es belegbar ist.
+- 🟡 **Kein Abschnitt 'Ausbildung' vorhanden**  
+  Falls du eine Ausbildung hast, die du zeigen möchtest, solltest du sie ergänzen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -35,26 +35,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 | Abschnitt | Status |
 | --- | --- |
-| BERUFSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
+| IT-KENNTNISSE | 🟠 Braucht Aufmerksamkeit |
 | ENGAGEMENT | 🟢 Stark |
-| INTERESSEN | 🟢 Stark |
+| INTERESSEN | 🟠 Braucht Aufmerksamkeit |
+| BERUFSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
 | Kurzprofil | ⚪ Fehlt |
 | Ausbildung | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 
-**BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
+**IT-KENNTNISSE** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Stichpunkte so, dass sie deinen konkreten Beitrag, das Vorgehen und die daraus gewonnenen Fähigkeiten zeigen – was hast du gemacht, wie bist du vorgegangen, und was war das Ergebnis?
-- Falls du weitere relevante Tätigkeiten oder Praktika hattest, ergänze diese, um das Bild abzurunden.
-- Wenn du an HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) teilgenommen hast und dies eine bezahlte Tätigkeit war, könntest du diese unter Berufserfahrung aufführen, sofern relevant.
+- Füge für jede Fähigkeit ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Experte), damit klar wird, wie sicher du dich mit den Tools fühlst.
+- Überlege, die Angaben zu Python und anderen Tools auf das CEFR-System (A1-C2) oder eine vergleichbare Skala zu erweitern, damit Recruiter deine Kenntnisse besser einschätzen können.
+- Falls du relevante Zertifikate wie z.B. den Bloomberg Market Concepts (BMC) Kurs hast, könntest du diese hier oder unter 'Kurse und Zertifikate' ergänzen.
 
 **ENGAGEMENT** 🟢 Stark
 
-- Die Darstellung deines Engagements als Jugendtrainer und aktiver Spieler ist nachvollziehbar und zeigt Eigeninitiative.
+- Die Angabe von Rolle und Engagement zeigt Eigeninitiative und Teamfähigkeit.
 
-**INTERESSEN** 🟢 Stark
+**INTERESSEN** 🟠 Braucht Aufmerksamkeit
 
-- Die Interessen sind klar und knapp dargestellt; du kannst sie so stehen lassen oder einzelne bei Bedarf mit kurzen Details ergänzen.
+- Entscheide, ob du diese Rubrik mit konkreten Interessen (z.B. Sportarten, Hobbys, besondere Leidenschaften) ausbauen möchtest oder sie ganz entfernst.
+
+**BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
+
+- Überarbeite die Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die Vorgehensweise und das Ergebnis (wo vorhanden) zeigen.
+- Überlege, welche übertragbaren Skills (z.B. Organisation, Kommunikation, Problemlösung) du in den jeweiligen Tätigkeiten bewiesen hast und mache diese sichtbar.
+- Falls du bei einer Tätigkeit ein besonderes Ergebnis erzielt hast (z.B. Prozess verbessert, Feedback erhalten), kannst du das ergänzen.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -62,23 +69,31 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausbildung** ⚪ Fehlt
 
-- Füge einen Abschnitt zu deiner Ausbildung hinzu, falls du relevante Studiengänge, Abschlüsse oder Weiterbildungen vorweisen kannst.
+- Füge einen Abschnitt 'Ausbildung' hinzu, falls du relevante Studienabschlüsse, Schulbildung oder Weiterbildungen hast.
+- Falls du Mitglied in einem HSG-Club bist, kannst du dies als Bullet unter Ausbildung ergänzen, wenn es für die Zielrolle relevant ist.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. Sprachzertifikate, IT-Kurse) hast, kannst du diese in einem eigenen Abschnitt aufführen.
+- Wenn du relevante Kurse oder Zertifikate (z.B. Bloomberg Market Concepts (BMC): https://portal.bloombergforeducation.com/) hast, kannst du sie hier aufführen.
 
-### 5. Gibt es noch etwas von der HSG, das dazugehört?
+### 5. Daten, die auffallen könnten
+
+Ein paar Stellen im zeitlichen Ablauf, bei denen ein Lesender stutzen könnte. Beides ist nicht zwingend ein Problem — ein Satz im CV oder ein Gespräch mit deinem Coach genügt.
+
+- Zwischen "Sommer 2021" und "03.2022 - 06.2022" liegt eine Lücke von rund 7 Monaten. Du musst das nicht ausführlich erklären — ein kurzer Satz dazu, was du in der Zeit gemacht hast, genügt meistens, und es lohnt sich, das mit deinem Coach zu besprechen.
+- Zwischen "03.2022 - 06.2022" und "01.2026 - heute" liegt eine Lücke von rund 43 Monaten. Du musst das nicht ausführlich erklären — ein kurzer Satz dazu, was du in der Zeit gemacht hast, genügt meistens, und es lohnt sich, das mit deinem Coach zu besprechen.
+
+### 6. Gibt es noch etwas von der HSG, das dazugehört?
 
 Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
-- **Talents Conference (Career Services)** — HSG's biggest careers fair, student-organised, with paid part-time roles and day volunteers
-- **[Company-linked practical projects (e.g. AWP projects, Student Impact)](https://www.unisg.ch/en/transfer/insights-and-advice-for-partners-from-the-world-of-work/)** — teams of 3-6 students working with a partner organisation, ~240 hours each
+- **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
+- **[Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)** — a 12-hour e-learning introduction to the financial markets, via the HSG library
 - **[HSG student clubs (~150 accredited, SHSG directory)](https://shsg.ch/clubs)** — the full filterable directory of accredited HSG clubs
-- **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate
-- **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
+- **[SHSG Student Union](https://shsg.ch/)** — the umbrella body for all clubs, with its own parliament and board
+- **[St. Gallen Symposium (International Students' Committee)](https://shsg.ch/clubs)** — a globally recognised conference organised by a student committee
 
-### 6. Unterlagen und Vorlagen des Career Services
+### 7. Unterlagen und Vorlagen des Career Services
 
 Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
 

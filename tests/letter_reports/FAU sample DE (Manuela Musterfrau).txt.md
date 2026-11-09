@@ -10,8 +10,8 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Du bringst neue, persönliche Einblicke und Beweggründe ein, die über eine bloße Nacherzählung des Lebenslaufs hinausgehen. |
-| Warum dieses Unternehmen? | Du erklärst klar, warum dich die nachhaltige Ausrichtung der Muster GmbH anspricht. |
+| Mehrwert über den Lebenslauf hinaus | Du bringst neue, persönliche Einblicke und Beweggründe ein, die im Lebenslauf so nicht ersichtlich wären. |
+| Warum dieses Unternehmen? | Du erklärst nachvollziehbar, warum dich die Muster GmbH mit ihrem Nachhaltigkeitsfokus besonders anspricht. |
 | Warum diese Stelle? | Du gehst darauf ein, warum dich ein Praktikum im Bereich Logistik interessiert und wie es zu deinen bisherigen Erfahrungen passt. |
 | Was du mitbringst | Du stellst einen Zusammenhang zwischen deinen bisherigen Erfahrungen (z.B. Projektarbeit, Durchsetzungsvermögen) und dem Praktikum her. |
 | Schluss | Du schließt mit einer Einladung zum Gespräch und einem freundlichen Abschluss. |

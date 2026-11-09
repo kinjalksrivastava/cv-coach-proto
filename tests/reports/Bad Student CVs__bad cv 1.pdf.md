@@ -1,88 +1,87 @@
-## Your CV feedback report
+## Dein CV-Feedback-Report
 
-### 1. Overall impression
+### 1. Gesamteindruck
 
-Your CV is in good shape structurally, with all key sections present and a clear record of both academic and professional experience. The experience section includes detailed role titles and descriptions, which is a solid foundation. However, there are some areas where adding more detail and context would help a recruiter understand your specific contributions and skills. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
+Dein Lebenslauf ist inhaltlich gut strukturiert und deckt die wichtigsten Bereiche ab, die für einen Berufseinstieg oder eine Bewerbung während des Studiums relevant sind. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Rollenbezeichnung als auch eine Beschreibung enthält. Es ist jedoch auffällig, dass keine Erfahrung mit KI oder KI-Tools erwähnt wird – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob oder Stelleninserat angegeben wurde, bezieht sich das Feedback auf die allgemeine Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
 
-_Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
+_Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
-### 2. CV format check
+### 2. Format-Check
 
-| Check | Status | Comment |
+| Kriterium | Status | Kommentar |
 | --- | --- | --- |
-| Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Conventional section headers, but icon or symbol characters beside your section headings that didn't survive the text extraction ("S BERUFSERFAHRUNG", "ö ORGANISATIONEN", "Q SPRACHEN") — the headings themselves are correct, but an ATS reads the file the same way this tool did, so it's worth removing the icons; unusual bullet or icon characters (£); 2 embedded images — any text inside them is invisible to a parser. |
-| Spelling and consistency | 🟢 Good | Typos: no obvious typos in headings or dates. Spelling: British/American spelling is used consistently. |
+| Länge | 🟢 Gut | 2 Seiten — passend für einen Lebenslauf zu Studienzeiten oder am Berufseinstieg. |
+| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Gängige Abschnittstitel, aber Icon- oder Symbolzeichen neben deinen Abschnittstiteln, die die Textextraktion nicht überstanden haben ("£ CERTIFICATIONS") — die Titel selbst sind korrekt, aber ein ATS liest die Datei genauso wie dieses Tool, deshalb lohnt es sich, die Icons zu entfernen; ungewöhnliche Aufzählungs- oder Icon-Zeichen (£); 2 eingebettete Bilder — Text darin ist für einen Parser unsichtbar. |
+| Rechtschreibung und Konsistenz | 🟢 Gut | Tippfehler: keine offensichtlichen Tippfehler in Titeln oder Daten. |
 
-_An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from three things this tool can actually observe: conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
+_Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, keine Garantie — jedes System liest anders._
 
-### 3. Key areas to improve
+### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Add detail under each degree in your education section**  
-  Currently, your education entries list only the degree, institution, and dates. Add a line or two under each degree where you have relevant content: key modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
-- 🟠 **Rework experience bullets to show your contribution and skills**  
-  Many of your experience bullets describe tasks or duties without showing what you personally contributed, how you did it, or which transferable skills you demonstrated. Revise these to highlight your actions, methods, and the skills you used or developed.
-- 🟠 **Add outcomes or results to experience bullets where possible**  
-  Most of your experience bullets stop at describing the task. Where you can, add what changed as a result of your work—such as improvements, efficiencies, or positive feedback—without inventing figures. This helps show your impact.
-- 🟠 **Add months to all date ranges**  
-  Several entries show only years. Add the month to each date range (e.g., '09/2023 – 06/2024') so a reader can see the true duration of each role or activity.
-- 🟠 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+- 🔴 **Details zu deinen Abschlüssen fehlen**  
+  Unter deinen Bildungsabschlüssen stehen aktuell nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Aufgaben statt Beitrag in den Berufserfahrungen**  
+  Viele deiner Bullet Points beschreiben nur die Aufgabe, nicht aber deinen konkreten Beitrag oder das dahinterliegende Skillset. Überarbeite sie so, dass klar wird, was du wie gemacht hast, warum das wichtig war und welches übertragbare Können du damit belegst.
+- 🔴 **Ergebnisse und Veränderungen fehlen in den Bullets**  
+  Fast alle Bullet Points nennen nur die Tätigkeit, aber kein Ergebnis, keine Veränderung oder keinen erkennbaren Skill. Überlege bei jedem Punkt: Was genau habe ich gemacht? Wie? Warum war das relevant? Wo du ein echtes Resultat oder eine Veränderung zeigen kannst, ergänze es – aber nur, wenn es belegbar ist.
+- 🟠 **Datumsangaben nur als Jahr**  
+  Mehrere Einträge zeigen nur das Jahr, nicht den Monat. Ergänze überall den Monat (z.B. 09/2023 – 06/2024), damit der Umfang und die Dauer deiner Stationen klar erkennbar sind.
+- 🟠 **Uneinheitliche Zeichensetzung bei Bullets**  
+  Einige Bullet Points enden mit Punkt, andere nicht. Entscheide dich für eine Variante und ziehe sie konsequent durch.
 
-_Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
+_Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
-### 4. Section-by-section feedback
+### 4. Feedback Abschnitt für Abschnitt
 
-| Section | Status |
+| Abschnitt | Status |
 | --- | --- |
-| AUSBILDUNG | 🟠 Needs attention |
-| BERUFSERFAHRUNG | 🟠 Needs attention |
-| ORGANISATIONEN | 🟠 Needs attention |
-| SPRACHEN | 🟢 Strong |
-| SKILLS | 🟢 Strong |
-| CERTIFICATIONS | 🟢 Strong |
-| INTERESTS | 🟢 Strong |
-| Profile | ⚪ Missing |
+| AUSBILDUNG | 🟠 Braucht Aufmerksamkeit |
+| BERUFSERFAHRUNG | 🟠 Braucht Aufmerksamkeit |
+| ORGANISATIONEN | 🟠 Braucht Aufmerksamkeit |
+| SPRACHEN | 🟢 Stark |
+| SKILLS | 🟢 Stark |
+| CERTIFICATIONS | 🟢 Stark |
+| INTERESTS | 🟢 Stark |
+| Kurzprofil | ⚪ Fehlt |
 
-**AUSBILDUNG** 🟠 Needs attention
+**AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- If you have participated in the HSG Mentoring Programme or completed a certificate such as the Certificate in Data Science Fundamentals, include these under the relevant degree.
+- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals erworben hast, kannst du dies als Bullet unter dem passenden Abschluss ergänzen.
 
-**BERUFSERFAHRUNG** 🟠 Needs attention
+**BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Revise each bullet to show what you did, how you did it, and why it mattered, focusing on the transferable skills you demonstrated.
-- Where possible, add outcomes or results to show your impact, but only if you can genuinely support them.
-- Make sure all bullets use consistent punctuation.
+- Wo du ein echtes Ergebnis, eine Veränderung oder einen messbaren Beitrag zeigen kannst, ergänze dies als Teil des Bullets – aber nur, wenn es belegbar ist.
+- Achte darauf, dass die Zeichensetzung am Ende der Bullets einheitlich ist (entweder alle mit Punkt oder alle ohne).
 
-**ORGANISATIONEN** 🟠 Needs attention
+**ORGANISATIONEN** 🟠 Braucht Aufmerksamkeit
 
-- Add a bullet or two under each active role describing what you did, how you contributed, and any skills you developed or demonstrated.
-- Include the month in each date range to clarify the duration of your involvement.
-- If you have taken on a leadership or organisational role in an HSG student club, describe your specific responsibilities and any outcomes.
+- Ergänze zu jeder Rolle Bullet Points, die deine konkreten Aufgaben, Verantwortlichkeiten und den Beitrag zur Organisation beschreiben – z.B. was du organisiert, koordiniert oder umgesetzt hast.
+- Falls du in einem HSG-Club eine aktive Rolle übernommen hast, beschreibe diese mit Bullet Points, damit dein Engagement und deine Soft Skills sichtbar werden.
+- Ergänze bei den Datumsangaben auch hier den Monat, nicht nur das Jahr.
 
-**SPRACHEN** 🟢 Strong
+**SPRACHEN** 🟢 Stark
 
-- This section works well because it provides both your native languages and internationally recognised qualifications for English and French.
+- Die Angabe von Sprachniveau und Zertifikaten macht deine Sprachkenntnisse für Leser transparent und vergleichbar.
 
-**SKILLS** 🟢 Strong
+**SKILLS** 🟢 Stark
 
-- This section is effective as it highlights your proficiency with Microsoft 365, Avaloq, and your certification in requirements engineering.
+- Die Auflistung von Tools und Zertifikaten zeigt deine fachlichen Kompetenzen auf einen Blick.
 
-**CERTIFICATIONS** 🟢 Strong
+**CERTIFICATIONS** 🟢 Stark
 
-- This section is strong because it lists your certifications and the awarding bodies, making your qualifications easy to verify.
+- Die Zertifikate sind klar benannt und machen Zusatzqualifikationen für den Leser direkt sichtbar.
 
-**INTERESTS** 🟢 Strong
+**INTERESTS** 🟢 Stark
 
-- This section works well by showing your interests in sport, reading, travel, cooking, and technology.
+- Die Auswahl an Interessen zeigt verschiedene Facetten deiner Persönlichkeit und ergänzt das Gesamtbild.
 
-**Profile** ⚪ Missing
+**Kurzprofil** ⚪ Fehlt
 
-- A profile is optional, and it is the one place on the CV that is yours rather than a record. If you add one, write what you would want a recruiter to know about you that might help you be chosen for the role you are applying to. Around three sentences, in your own words, and not a summary of the sections below it.
+- Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese Stelle ausgewählt zu werden. Etwa drei Sätze, in deinen eigenen Worten, und keine Zusammenfassung der Abschnitte darunter.
 
-### 5. Anything else from HSG worth adding?
+### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
-Before your appointment, it is worth asking yourself whether there is anything else you have done at HSG that belongs on this CV: a club, a certificate, a mentoring programme, a competition, a project with a company. A few examples of what is on offer are below. They are examples, not recommendations, and only what is genuinely relevant to the role you are applying for is worth adding.
+Überleg dir vor deinem Termin, ob es noch etwas gibt, das du an der HSG gemacht hast und das in diesen Lebenslauf gehört: ein Club, ein Zertifikat, ein Mentoring-Programm, ein Wettbewerb, ein Projekt mit einem Unternehmen. Unten stehen ein paar Beispiele aus dem Angebot. Das sind Beispiele, keine Empfehlungen, und ergänzen solltest du nur, was für die angestrebte Stelle wirklich relevant ist.
 
 - **[HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)** — two-year one-to-one mentoring, matched with an experienced professional
 - **[Additional Qualification programmes](https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/)** — Business Education I & II, Digital Communication and Journalism, Financial Technology, Real Estate
@@ -90,16 +89,16 @@ Before your appointment, it is worth asking yourself whether there is anything e
 - **[Capstone Project (BWL)](https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/)** — a semester acting as business consultants for a real practice partner
 - **[Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)** — Bachelor's-level coding, statistics and data science certificate
 
-### 6. Career Services' own guidance and templates
+### 6. Unterlagen und Vorlagen des Career Services
 
-Written by Career Services, and the place to go for the full picture rather than this one report.
+Vom Career Services selbst verfasst — dort findest du das ganze Bild, nicht nur diesen einen Report.
 
-- [How to write a stronger CV - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
-- [CV template, English (UK/US)](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
+- [Wie du deinen Lebenslauf stärker machst - Career Services](https://hsgcareer.ch/en/curriculum-vitae/)
 - [CV-Vorlage, Deutsch (DACH)](https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf)
+- [CV template, Englisch (UK/US)](https://hsgcareer.ch/media/4195/cv-template-english.pdf)
 
-_Both templates are there on purpose: pick the one that matches where you are applying, not the language you are reading in. They are good examples to compare your own against, never something to copy._
+_Beide Vorlagen stehen bewusst hier: Nimm die, die zum Markt passt, in dem du dich bewirbst, nicht zur Sprache, in der du gerade liest. Sie sind gute Vergleichsbeispiele, nichts zum Abschreiben._
 
 ---
 
-This is a starting point, not a verdict — nothing here is a score. Ask me about any line of it and we'll work through it together, one section at a time.
+Das ist ein Ausgangspunkt, kein Urteil — nichts davon ist eine Bewertung. Frag mich zu jeder einzelnen Zeile, und wir gehen sie gemeinsam durch, Abschnitt für Abschnitt.
