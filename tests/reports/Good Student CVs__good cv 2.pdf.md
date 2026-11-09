@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured in terms of length and covers a strong range of academic, professional, and extracurricular experiences. However, there are some structural issues with section headings that could cause problems for both human readers and applicant tracking systems, so it is important to clarify and standardise these. Several of your work experience bullets focus on duties rather than your personal contribution or the skills you developed—adding this detail will make your achievements stand out. No content on your CV currently refers to AI or AI tools; if you have relevant experience or coursework, consider including it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a specific target.
+Your CV is in good shape overall, with a clear structure and a strong set of experiences for a student at your stage. However, there are a few structural issues that could prevent your achievements from being recognised by recruiters or applicant tracking systems, such as missing section headings and an Education section that is not clearly marked. Several of your work experience bullets focus on tasks rather than the skills or impact you brought, so revising these will help you stand out. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please add a specific job or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Unheaded block of entries at the top**  
-  There is a block of entries at the top of your CV that sits under no heading. Open your file and check whether a heading is missing or unreadable—if so, add a clear, conventional heading (such as 'Education') in plain text so both readers and applicant tracking systems can recognise it.
+- 🔴 **Block of entries at the top sits under no heading**  
+  Check whether the entries at the top of your CV have a visible heading. If not, add one (such as 'Education') in plain text so both recruiters and applicant tracking systems can recognise and file your qualifications correctly.
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many of your work experience bullets describe tasks rather than your specific contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on transferable skills.
+  Revise your work experience bullets to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you developed. This will help recruiters see your impact, not just your responsibilities.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Several experience bullets stop at describing the task, without showing the outcome or the skill you used. For each, clarify what you did, how you did it, and what skill or result you want to highlight.
+  For each work experience bullet, clarify the skill or outcome you demonstrated, and add results where you genuinely have them. This shows recruiters the value you brought to each role.
 - 🟠 **Paragraph at the top with no heading**  
-  There is a paragraph at the top of your CV with no heading. If this is your profile, add a heading such as 'Profile' and use it to briefly summarise what you bring and where you are heading.
+  If the paragraph at the top is your profile or summary, add a clear heading so it is recognised as such. A profile should briefly state what you bring and where you are heading.
 - 🟡 **No Education section found**  
-  No 'Education' section was detected. If you have education to show, add a clearly labelled section so it is easy to find.
+  Add an 'Education' section with your academic background if you have not already. This helps recruiters quickly find your qualifications.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,20 +43,21 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Review each bullet to clarify what you personally did, how you did it, and what skill or result you want to highlight—this will help recruiters see your impact and transferable skills.
-- Where you can, add outcomes or results, but only if you have evidence to support them.
-- If you have participated in HSG options such as the Talents Conference (Career Services) or the St. Gallen Symposium (International Students' Committee), and these involved paid roles, consider adding them here if relevant.
+- Revise bullets such as 'Worked on benchmark transactions for numerous european banks like Erste Bank, Nordea and ABN Amro' and 'Assisted in market analysis and financial modelling for M&A Transactions with values up to €50mn' to show what you personally contributed, how you did it, and what skills you demonstrated.
+- Where possible, add outcomes or results that show the impact of your work, but only if you can genuinely support them.
+- If you have participated in HSG options like the Talents Conference or the St. Gallen Symposium in a paid or staff role, consider adding these under Work Experience if relevant to your target roles.
+- Ensure that all entries in this section are paid roles; if any are unpaid, move them to Extracurricular Activities.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your entries show concrete achievements and responsibilities, making your extracurricular impact clear.
+- Your bullets for Impulse Network and the University of St. Gallen Tennis Team show specific responsibilities and outcomes, making your contributions clear.
 
 **SKILES, ACTIVITIES & INTERESTS** 🟠 Needs attention
 
-- Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for clarity.
-- If you have technical skills or tools relevant to your field, list them here with a level (e.g., Python – Intermediate).
-- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC), you could add them here or in a separate section.
-- If you have AI-related skills or experience, consider including them here.
+- Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1-C2) for clarity.
+- If you have technical skills or tools relevant to your studies or target roles, list them here with a consistent level (e.g., 'Python (Intermediate)').
+- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC), you could add them here or in a separate Courses and Certificates section.
+- For your tennis coach certificate and TOEFL score, specify the date obtained and whether they are still valid if relevant.
 
 **Profile** ⚪ Missing
 
@@ -64,7 +65,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts), you could add them in a separate section to highlight your additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

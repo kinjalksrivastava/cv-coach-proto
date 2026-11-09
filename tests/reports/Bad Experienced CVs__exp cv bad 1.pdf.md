@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und auf einer Seite gehalten, was für Berufseinsteiger und Studierende ideal ist. Da kein Zieljob angegeben wurde, bezieht sich das Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass keine Erfahrung mit KI oder KI-Tools aufgeführt ist; falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Die wichtigsten Verbesserungsbereiche betreffen die inhaltliche Tiefe bei Ausbildung und Berufserfahrung sowie die Ausgestaltung einzelner Abschnitte.
+Dein Lebenslauf ist übersichtlich und auf einer Seite gehalten, was für Berufseinsteiger und Studierende ideal ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools aufgeführt ist; falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen. Die wichtigsten Verbesserungsbereiche betreffen die inhaltliche Tiefe bei Ausbildung und Berufserfahrung sowie die Ausgestaltung einzelner Abschnitte.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu deinen Abschlüssen fehlen**  
-  Unter deinen Ausbildungsstationen stehen aktuell nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, Abschlussarbeiten, Austauschsemestern oder Zusatzqualifikationen – immer mit Blick darauf, was für deine nächste Bewerbung zählt.
-- 🔴 **Berufliche Stationen ohne Beschreibung**  
-  Füge unter jeder Position einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und welche Fähigkeiten du dabei eingesetzt oder entwickelt hast – besonders solche, die für zukünftige Rollen wichtig sind.
-- 🔴 **"Freizeit" ist fast leer**  
-  Entweder gestalte diesen Abschnitt mit ein bis zwei Sätzen oder Beispielen aus, oder entferne ihn ganz – eine Überschrift ohne Inhalt lenkt den Blick auf die Lücke.
-- 🟠 **Stichpunkte beschreiben Aufgaben, nicht deinen Beitrag**  
-  Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret bewirkt hast, wie du vorgegangen bist und welche übertragbaren Kompetenzen du dabei genutzt hast. Ein Ergebnis ist hilfreich, wenn es belegbar ist.
-- 🟠 **Stichpunkte zeigen selten den dahinterstehenden Skill**  
-  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht, wie, warum war das wichtig und welche Fähigkeit steckt dahinter? Wo ein Ergebnis belegbar ist, ergänze es – aber nur, wenn es wirklich passt.
+- 🔴 **Deine Abschlüsse enthalten außer Abschluss und Datum keine weiteren Angaben**  
+  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, eine Abschlussarbeit (inklusive Thema und Vorgehen), ein Austauschsemester, Zertifikate oder besondere Programme aufführst – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Einträge in "BERUFLICHE ERFAHRUNG" sind nicht beschrieben**  
+  Ergänze zu jeder Station einige Stichpunkte, die beschreiben, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🔴 **"FREIZEIT" ist fast leer**  
+  Entweder gestalte diesen Abschnitt aus, indem du ein bis zwei Interessen mit kurzen Details versiehst, oder entferne ihn ganz – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret bewirkt hast, wie du vorgegangen bist und welche übertragbaren Fähigkeiten du dabei eingesetzt hast. Ein Ergebnis ist hilfreich, wenn es passt.
+- 🟠 **Die meisten Stichpunkte beschreiben nur die Aufgabe, nicht die dahinterliegende Fähigkeit**  
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht? Wie? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn es belegbar ist.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -47,7 +47,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **SKILLS** 🟢 Stark
 
-- Die Skills sind übersichtlich dargestellt und geben einen schnellen Eindruck deiner Eigenschaften.
+- Die aufgeführten Eigenschaften sind prägnant dargestellt.
 
 **SPRACHEN** 🟠 Braucht Aufmerksamkeit
 
@@ -55,26 +55,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **FREIZEIT** 🟠 Braucht Aufmerksamkeit
 
-- Überlege, ob du ein bis zwei Interessen mit kurzen Beispielen oder Details ausgestalten möchtest, die etwas über dich aussagen oder eine Fähigkeit zeigen – das ist optional, einzelne Stichworte sind aber auch akzeptabel.
-- Wenn du keine weiteren Angaben machen möchtest, entferne den Abschnitt lieber ganz, um keine Lücke zu hinterlassen.
+- Entscheide, ob du diesen Abschnitt mit kurzen Details zu "Natur" oder "Sport" ausgestalten möchtest (z.B. welche Sportart, auf welchem Niveau), oder ob du ihn ganz entfernst, falls du dazu nichts ergänzen möchtest.
 
 **REFERENZEN** 🟢 Stark
 
-- Die Angabe 'auf Anfrage' ist für den deutschen Sprachraum üblich und ausreichend.
+- Die Angabe "auf Anfrage" ist für den deutschen Sprachraum üblich und ausreichend.
 
 **BERUFLICHE ERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze unter jeder Position einige Stichpunkte, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – insbesondere, welche übertragbaren Kompetenzen du dabei gezeigt hast.
-- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag und das dahinterstehende Skillset sichtbar machen.
-- Achte darauf, bei den Zeitangaben auch den Monat zu nennen (z.B. 'Okt 2019 – Dez 2020'), damit der Umfang der Tätigkeit klar wird.
-- Korrigiere Tippfehler wie 'OKI 2019' zu 'Okt 2019'.
+- Ergänze zu den Positionen wie "LEAD BUYER INDIRECTS WANDER AG", "JUNIOR CONSULTANT ERP-SYSTEME ELVADATA AG" und "JUNIOR LEAD BUYER WANDER AG" jeweils einige Stichpunkte, die deine konkreten Tätigkeiten, dein Vorgehen und die Ergebnisse beschreiben.
+- Überarbeite die bestehenden Stichpunkte wie "VERANTWORTUCH EUR DIE WARENGRUPPEN INDIRECT SERVICES & IT" oder "Strategieentwicklung und Umsetzung" so, dass sie deinen Beitrag und die dahinterliegende Fähigkeit sichtbar machen.
+- Achte darauf, bei allen Zeitangaben den Monat mit anzugeben (z.B. "Okt 2019" statt "OKI 2019"), damit der Umfang der Tätigkeit klar wird.
+- Falls du an HSG-Angeboten wie der Talents Conference oder dem St. Gallen Symposium teilgenommen hast und dies eine bezahlte Tätigkeit war, könntest du dies als relevante Berufserfahrung ergänzen – aber nur, wenn es zutrifft.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Abschluss ein bis zwei Zeilen zu relevanten Inhalten hinzu: z.B. Schwerpunkte, Abschlussarbeit (mit Thema und Methode), Austauschsemester, Zusatzqualifikationen oder Stipendien – immer nur, was wirklich zutrifft.
-- Falls du am HSG Mentoring Programme teilgenommen hast, kannst du dies als Bullet unter dem passenden Abschluss ergänzen.
-- Ergänze bei den Zeitangaben auch den Monat (z.B. '09/2016 – 06/2019'), damit der Zeitraum klar erkennbar ist.
-- Für einen klassischen Studierenden-Lebenslauf empfiehlt es sich, die Ausbildung vor die Berufserfahrung zu stellen, es sei denn, du hast bereits mehrere Jahre relevante Berufserfahrung.
+- Füge unter jedem Abschluss (z.B. "Bachelor Business Administrations PHW Bern") ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inkl. Thema und Vorgehen), einem Austauschsemester oder besonderen Programmen hinzu, sofern vorhanden.
+- Ergänze bei allen Zeitangaben den Monat (z.B. "09/2016 – 06/2019"), damit der Zeitraum klar erkennbar ist.
+- Falls du an HSG-Programmen wie dem [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder Zertifikaten wie dem [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilgenommen hast, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen – aber nur, wenn es zutrifft.
+- Für einen studentischen Lebenslauf empfiehlt es sich, den Abschnitt "AUSBILDUNG" vor die Berufserfahrung zu setzen, außer du hast bereits mehrere Jahre einschlägige Berufserfahrung.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -82,11 +81,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausserschulisches Engagement** ⚪ Fehlt
 
-- Falls du dich in Vereinen, Initiativen oder Projekten engagierst, führe dies mit kurzer Beschreibung und ggf. Stichpunkten auf – das zeigt Eigeninitiative und soziale Kompetenzen.
+- Falls du dich in Vereinen, Initiativen, Komitees oder ehrenamtlich engagierst, kannst du dies mit kurzer Beschreibung (Rolle, Aufgabe, Ergebnis) ergänzen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Wenn du relevante Kurse oder Zertifikate hast (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), kannst du diese in einem eigenen Abschnitt aufführen.
+- Wenn du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

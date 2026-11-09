@@ -214,7 +214,15 @@ standard section is present and no "missing" entries belong in the report. Each:
 saying why it works, written as a plain sentence with no "Strong section:" prefix, and \
 containing no request to change anything - if it needed changing it would not be strong. \
 A "needs_attention" section gets points that each say what to do, and must cover every \
-lower-priority issue assigned to it. A "missing" section gets points saying what it would \
+lower-priority issue assigned to it. EVERY such section must have at least one point that \
+names something actually in it - the role, the employer, the degree, or the words of one \
+of its bullets - so the student can see which line you mean. A point that would read \
+exactly the same on somebody else's CV is not feedback on theirs: "revise bullets that \
+only describe tasks" says nothing that could not have been written without opening the \
+file, while "your Teaching Fellow bullets say what the course covered but not what you \
+did with the 80 students" points at a line they can find. Quote their own wording where \
+it helps; never supply replacement wording, and never name an experience the CV does \
+not contain. A "missing" section gets points saying what it would \
 add and what they could include if they have it. If TAILORING is flagged, every section \
 that carries content the advert asks about must also get one point naming what that section \
 could show for the target role - Career Services asked that a tailoring gap be visible at \
@@ -333,17 +341,74 @@ REPORT_MAX_TOKENS = 2800
 REPORT_TIMEOUT_SECONDS = 60
 
 
+# Sections where naming something is possible and wanted. A languages or
+# interests section is a list, and Serena asked us not to pick over it item by
+# item, so general feedback there is correct.
+_GROUNDED_CATEGORIES = {"Experience", "Education", "Projects",
+                        "Volunteering & Community", "Publications & Research"}
+
+GROUNDING_NOTE = (
+    "Some of your section feedback names nothing from the section it is about, "
+    "so it reads as advice that would fit any CV: {where}. Rewrite the points "
+    "for those sections only. Each must name something actually in that "
+    "section - the role, the employer, the degree, or the words of one of its "
+    "bullets - so the student can see which line you mean. Quote their own "
+    "wording; never supply replacement wording, and never name an experience "
+    "the CV does not contain. Change nothing else.")
+
+
+def _stems(text: str) -> set:
+    return {w.lower()[:6] for w in re.findall(r"[A-Za-zÄÖÜäöüß]{6,}", text)}
+
+
+def _ungrounded_sections(data: dict, facts: dict) -> list:
+    """needs_attention sections whose points name nothing from the section."""
+    category = {s["heading"].strip(): s.get("category")
+                for s in (facts.get("sections") or [])}
+    content = {s["heading"].strip(): s.get("text") or ""
+               for s in (facts.get("sections") or [])}
+    out = []
+    for entry in (data.get("sections") or []):
+        if not isinstance(entry, dict) or entry.get("status") != "needs_attention":
+            continue
+        heading = str(entry.get("name", "")).strip()
+        if category.get(heading) not in _GROUNDED_CATEGORIES:
+            continue
+        here = _stems(content.get(heading, ""))
+        said = _stems(" ".join(str(p) for p in (entry.get("points") or [])))
+        if here and not (here & said):
+            out.append(heading)
+    return out
+
+
 def generate(client, model, cv_text, jd_text, target_role, format_rows, facts,
              severity_result, language_name):
     """Returns the report dict, or None if the call failed or came back malformed."""
+    messages = build_messages(cv_text, jd_text, target_role, format_rows, facts,
+                              severity_result, language_name)
     data = latency.json_call(
-        client, model,
-        build_messages(cv_text, jd_text, target_role, format_rows, facts,
-                       severity_result, language_name),
+        client, model, messages,
         max_tokens=REPORT_MAX_TOKENS, timeout=REPORT_TIMEOUT_SECONDS,
     )
     if not isinstance(data, dict) or not data.get("overall_impression"):
         return None
+
+    # Asked for again where it came back generic. The prompt says every
+    # needs_attention section must name something from itself, and like every
+    # other rule in this file that lives only in the prompt, it holds most of
+    # the time and not always: across the 25 samples three sections still came
+    # back with advice that would fit anybody's CV. One retry naming the
+    # offending sections, and the first answer is kept if the second is worse.
+    adrift = _ungrounded_sections(data, facts)
+    if adrift:
+        again = latency.json_call(
+            client, model,
+            messages + [{"role": "system",
+                         "content": GROUNDING_NOTE.format(where=", ".join(adrift))}],
+            max_tokens=REPORT_MAX_TOKENS, timeout=REPORT_TIMEOUT_SECONDS)
+        if (isinstance(again, dict) and again.get("overall_impression")
+                and len(_ungrounded_sections(again, facts)) < len(adrift)):
+            data = again
     return data
 
 
@@ -471,6 +536,38 @@ _WRONG_HOME = re.compile(r"skill|kenntnis|kompetenz|interest|interessen|hobb", r
 # in code from hsg_activities rather than written by the model.
 _INLINE_URL = re.compile(r"(?<!\])[ \t]*\((?:see[ \t]+)?(?:https?://[^\s)]+)\)")
 _LEFTOVER_SPACE = re.compile(r"[ \t]{2,}")
+
+
+# A redaction marker quoted back at the student.
+#
+# Grounding the section feedback in their own wording works - "For entries like
+# 'Facilitated coursework on Robo Advisors and Systematic Trading under Prof.
+# NAME REDACTED'" points at a line they can find - right up to the point where
+# the line they can find contains something we removed. The student did not
+# write "NAME REDACTED"; we did, and showing it to them in a quotation of their
+# own CV is confusing at best.
+#
+# The quote is cut where the marker begins. The model drops our brackets about
+# half the time, so both forms are matched.
+_PLACEHOLDER = re.compile(
+    # an honorific left dangling in front of the marker goes with it
+    r"\s*(?:\b(?:Prof|Dr|Mr|Mrs|Ms|Herr|Frau)\.?\s*)?"
+    r"\[?\b(?:NAME|ADDRESS|PHONE|E-?MAIL|RECIPIENT|CONTACT DETAILS?|DATE OF BIRTH"
+    r"|NATIONALITY|CIVIL STATUS|PROFILE LINK|LINK)[A-Z ]*\b(?:REDACTED|REMOVED)\]?"
+    r"[\s.,;:]*", re.IGNORECASE)
+_TIDY = re.compile(r"…\s+(?=['\"’”,.;:)])")
+
+
+def _without_placeholders(value):
+    """Cut a quotation where a redaction marker starts."""
+    if isinstance(value, str):
+        out = _PLACEHOLDER.sub("… ", value)
+        return _TIDY.sub("…", out).replace("…  ", "… ").strip()
+    if isinstance(value, list):
+        return [_without_placeholders(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _without_placeholders(v) for k, v in value.items()}
+    return value
 
 
 def _drop_inline_urls(value):
@@ -601,7 +698,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     placed: dict = {}
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
-    data = _drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))
+    data = _without_placeholders(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip(), "",
              # Rendered here, never asked of the model, for the same reason as
@@ -645,7 +742,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
     data = _fix_profile_point(_drop_misplaced_activities(
-        _drop_duplicate_points(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))),
+        _drop_duplicate_points(_without_placeholders(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))))),
         strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
@@ -984,7 +1081,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
 
-    data = _drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))
+    data = _without_placeholders(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
               Paragraph(plain(data.get("overall_impression", "")), body),
@@ -1026,7 +1123,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
                                              strings["bullet_pointer"])), small))
 
     data = _fix_profile_point(_drop_misplaced_activities(
-        _drop_duplicate_points(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))),
+        _drop_duplicate_points(_without_placeholders(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))))),
         strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)

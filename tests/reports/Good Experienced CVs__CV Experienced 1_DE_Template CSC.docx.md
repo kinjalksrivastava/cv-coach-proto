@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine breite und tiefe Berufserfahrung sowie relevante akademische Leistungen. Besonders positiv fällt auf, dass du deine Noten mit Maximalwert angegeben hast, was die internationale Vergleichbarkeit erleichtert. Die Abschnitte sind vollständig und decken alle wichtigen Bereiche ab. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige ergänzen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools explizit genannt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
+Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation, Beratung und Unternehmensentwicklung. Besonders positiv fällt auf, dass du deine Noten mit Maximalwert angegeben hast, was die internationale Vergleichbarkeit erleichtert. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools explizit genannt wird; falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Einträge in "BERUFSERFAHRUNG" ohne Beschreibung**  
-  Füge unter jedem Eintrag, der noch keine Beschreibung hat, einige Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und erzielten Ergebnisse abdecken – mit Fokus auf die übertragbaren Fähigkeiten, die für zukünftige Rollen relevant sind.
-- 🔴 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Formuliere die betreffenden Stichpunkte so um, dass klar wird, was du konkret getan hast, wie du es umgesetzt hast und warum es für das Unternehmen oder das Team einen Unterschied gemacht hat – der Fokus sollte auf der gezeigten Fähigkeit liegen.
-- 🟠 **Ausbildung kommt nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt es sich, die Ausbildung vor die Berufserfahrung zu stellen – es sei denn, du bist bereits ein erfahrener Professional mit mehreren Jahren relevanter Berufspraxis.
-- 🟡 **Sprachen ohne Niveauangabe**  
-  Ergänze bei jeder Sprache ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, Muttersprachler) und erwäge zusätzlich die Angabe nach CEFR (A1–C2), da dies international eindeutig verstanden wird.
+- 🔴 **Fehlende Beschreibungen bei Einträgen in "BERUFSERFAHRUNG"**  
+  Mindestens ein Eintrag in deiner Berufserfahrung (Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021) enthält keine Aufgabenbeschreibung. Ergänze hier einige Stichpunkte, die deine Tätigkeiten, Methoden und erzielten Ergebnisse darstellen – besonders mit Blick auf übertragbare Kompetenzen.
+- 🔴 **Aufgabenorientierte statt beitragsorientierte Bullet Points**  
+  Einige Bullet Points beschreiben nur Aufgaben oder Rollenbezeichnungen, ohne deinen konkreten Beitrag oder die Wirkung zu zeigen. Überarbeite diese so, dass klar wird, was du wie erreicht hast und welche Kompetenzen du dabei eingesetzt hast.
+- 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
+  Bei Studierenden steht die Ausbildung normalerweise vor der Berufserfahrung, es sei denn, du hast bereits viele Jahre einschlägige Berufserfahrung. Prüfe, ob eine Umstellung für dich sinnvoll ist.
+- 🟡 **Sprachkenntnisse ohne Niveauangabe**  
+  Füge bei allen Sprachen ein Niveau hinzu (z.B. Basic, Intermediate, Advanced, Fluent oder idealerweise CEFR A1–C2), damit Recruiter deine Kenntnisse besser einschätzen können.
 - 🟡 **Interessen als Einzelwörter**  
-  Überlege, ob du bei ein oder zwei Interessen mit wenigen Worten konkretisierst, was dich daran besonders interessiert oder welches Niveau du hast – das kann zusätzliche Einblicke geben, ist aber kein Muss.
+  Einzelne Interessen als Stichworte sind völlig in Ordnung. Überlege nur, ob du bei ein oder zwei Interessen mit einer kurzen Ergänzung einen besonderen Aspekt oder ein relevantes Niveau hervorheben möchtest.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,34 +45,35 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil hebt deine langjährige Erfahrung, methodische Kompetenz und Innovationsfokus prägnant hervor.
+- Dein Profil hebt deine langjährige Erfahrung, methodische Kompetenz und Innovationsfokus prägnant hervor.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge beim Eintrag "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" unter der Überschrift eine kurze Beschreibung oder Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse zeigen.
-- Überarbeite die Stichpunkte, die aktuell nur Aufgaben nennen (z.B. "Lead Innovation Manager Schweiz"), sodass dein konkreter Beitrag, die Umsetzung und das Ergebnis bzw. die gezeigte Fähigkeit deutlich werden.
-- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit oder Vollzeitrolle ergänzen – aber nur, wenn sie wirklich passen.
+- Beim Eintrag "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" fehlen jegliche Bullet Points – ergänze hier, was du konkret gemacht hast, wie du vorgegangen bist und welche Ergebnisse erzielt wurden.
+- Bei den Bullets wie "Lead Innovation Manager Schweiz" oder "Mitarbeiter Business Development" wird nur die Rolle genannt – beschreibe stattdessen, was du in dieser Funktion bewirkt hast, wie du vorgegangen bist und welche Kompetenzen du dabei eingesetzt hast.
+- Wenn du Erfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium hast, die als bezahlte Tätigkeit relevant sind, könntest du diese hier ergänzen – aber nur, wenn sie wirklich passen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind mit Maximalwert angegeben, was die internationale Vergleichbarkeit erleichtert.
+- Du hast deine Abschlüsse mit Notendurchschnitt und Maximalwert angegeben, was die internationale Vergleichbarkeit erleichtert.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Die aufgeführten Rollen belegen soziales Engagement und Kommunikationsstärke durch konkrete Beispiele.
+- Du belegst mit konkreten Beispielen wie dem Mentoring-Programm und der Tätigkeit bei Die Dargebotene Hand deine Kommunikations- und Beratungskompetenz.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Falls du Zertifikate wie den [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) Kurs absolviert hast, kannst du diese hier oder im Abschnitt "Kurse und Zertifikate" aufführen.
+- Bei den Sprachen (Englisch, Französisch, Spanisch) fehlt eine klare Niveauangabe – ergänze mindestens ein einfaches Label (z.B. B2, C1), idealerweise nach CEFR.
+- Auch bei IT-Kenntnissen wie "MS Office Suite (fortgeschritten), C++ und Python (grundlegend)" ist eine einheitliche Angabe des Kenntnisstands hilfreich.
+- Falls du Zertifikate wie den [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) oder das HSG-Zertifikat in Data Science Fundamentals hast, könntest du diese hier oder in einem eigenen Abschnitt ergänzen – aber nur, wenn sie relevant sind.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen geben einen guten Einblick in deine persönlichen Aktivitäten und Engagements.
+- Du hast deine Interessen mit kurzen Beispielen wie Schwimmen (inkl. Teilnahme an der Seeüberquerung) und Chorsingen konkretisiert, was einen persönlichen Eindruck vermittelt.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Weiterbildungen hast (z.B. Data Science, Nachhaltigkeit, Finanzmärkte), kannst du diese hier aufführen.
-- HSG-Optionen wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) können hier ebenfalls genannt werden, sofern sie zutreffen.
+- Falls du relevante Zertifikate oder Onlinekurse abgeschlossen hast (z.B. Technology Innovation Management, Python für Datenwissenschaft), könntest du diese in einem eigenen Abschnitt aufführen, um deine Weiterbildungsbereitschaft und Zusatzqualifikationen sichtbar zu machen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

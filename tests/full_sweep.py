@@ -222,6 +222,73 @@ def audit(path: str) -> dict:
             if entry and entry["damage"] is None:
                 problems.append(f"ATS flags the standard heading {heading!r}")
 
+    # 10a. EVERY MEASURED KEY AREA REACHES THE STUDENT, AND NOTHING ELSE DOES.
+    # severity.py ranks against Career Services' tiers and caps at five; the
+    # prompt says to write one entry per key area, "no more, no fewer. Do not
+    # add an area that is not listed here." An issue that is measured, ranked
+    # and then silently dropped is worse than one never measured - the tool
+    # knew and did not say - and an extra entry is an invented finding, which
+    # is the complaint both reviewers have made in every round.
+    #
+    # Counted here rather than offline, because an offline ranking is built
+    # from a different section parse than the one the report came from and the
+    # numbers do not line up.
+    printed_areas = len(re.findall(r"^- [🔴🟠🟡]", md, re.M))
+    want_areas = len(ranked["key_areas"])
+    if printed_areas != want_areas:
+        problems.append(f"KEY AREAS {want_areas} measured but {printed_areas} printed")
+
+    # Any section an issue was assigned to must actually get feedback.
+    heading_block = re.search(r"^### 4\..*?$(.*)", md, re.S | re.M)
+    written_about = set(re.findall(r"^\*\*(.+?)\*\*", heading_block.group(1), re.M)) \
+        if heading_block else set()
+    orphaned = sorted({i["section"] for i in ranked["all_issues"]
+                       if i["section"] and i["section"] not in written_about})
+    if orphaned:
+        problems.append(f"ORPHANED issues assigned to sections with no feedback: "
+                        f"{orphaned[:3]}")
+
+    # 10b. SECTION FEEDBACK IS ABOUT THIS CV. A needs_attention section whose
+    # points contain not one distinctive word from its own content is generic
+    # advice wearing a heading: "revise bullets that only describe tasks"
+    # could have been written without opening the file. Measured as a word of
+    # five letters or more that appears in that section and in its feedback,
+    # which is crude but catches boilerplate, and the model is given a
+    # concrete example in the evidence for every issue anyway.
+    # Only where naming something is possible and wanted. A languages or
+    # interests section is a list, and Serena asked us NOT to pick over it item
+    # by item - "This is not a must and it should not be done for each
+    # activity" - so feedback there is general on purpose and must not be
+    # failed for it.
+    GROUNDED = {"Experience", "Education", "Projects", "Volunteering & Community",
+                "Publications & Research"}
+    by_heading = {s["heading"].strip(): s for s in sections}
+    sliced = {s["heading"].strip(): s["lines"]
+              for s in cv_facts._split_sections(cv_text, sections)}
+    generic = []
+    for entry in data.get("sections") or []:
+        if not isinstance(entry, dict) or entry.get("status") != "needs_attention":
+            continue
+        heading = str(entry.get("name", "")).strip()
+        if (by_heading.get(heading) or {}).get("category") not in GROUNDED:
+            continue
+        body = sliced.get(heading)
+        if not body:
+            continue
+        # Compared on a prefix, not on whole words. German compounds otherwise
+        # defeat it: feedback saying "deine Abiturnote" is plainly about the
+        # "Abitur" entry it names, and an exact-word test called that generic.
+        def stems(text):
+            return {w.lower()[:6] for w in re.findall(r"[A-Za-zÄÖÜäöüß]{6,}", text)}
+
+        content = stems("\n".join(body))
+        used = stems(" ".join(str(point) for point in (entry.get("points") or [])))
+        if content and not (content & used):
+            generic.append(heading)
+    if generic:
+        problems.append(f"GENERIC section feedback naming nothing from the section: "
+                        f"{generic[:3]}")
+
     # 11. BOTH LANGUAGES. A German report must not carry English furniture.
     if doc_lang == "de":
         hit = GERMAN_REPORT_ENGLISH.search(md)

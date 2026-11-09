@@ -1195,6 +1195,9 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
             "damage": section.get("damage"),
             "display": section.get("display"),
             "raw_heading": section.get("raw", section["heading"]),
+            # The section's own text. report.py compares its feedback against
+            # this to tell advice about THIS CV from advice that would fit any.
+            "text": "\n".join(content),
             "line_count": len(content),
             "char_count": sum(len(line) for line in content),
             "bullet_count": len(bullets),

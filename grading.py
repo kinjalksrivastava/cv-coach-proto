@@ -55,9 +55,13 @@ PLACE_COUNTRY = {
     "NL": ["netherlands", "amsterdam", "rotterdam", "maastricht", "erasmus"],
 }
 
+# German builds compounds, so "\bnote\b" never matches "Abschlussnote" - and
+# on bad cv 8 the real grade, "- Abschlussnote: 1,3", was invisible to this
+# whole module while a day of the month was read as the grade instead.
 GRADE_KEYWORDS = re.compile(
     r"\b(grade|grades|grade average|gpa|cgpa|note|notendurchschnitt|durchschnitt|"
-    r"abitur|matura|final grade|overall grade|classification|graded|mark|marks)\b",
+    r"abitur|matura|final grade|overall grade|classification|graded|mark|marks|"
+    r"\w*note|\w*schnitt|gesamtnote|abschlussnote|endnote|maturanote)\b",
     re.IGNORECASE,
 )
 
@@ -72,6 +76,21 @@ GRADE_NUMBER = re.compile(
 # Date ranges are stripped before grades are looked for, for the same reason.
 from guardrails.dates import RANGE_RE as DATE_RANGE_IN_LINE
 BARE_YEAR = re.compile(r"\b(19|20)\d{2}\b")
+
+# One written-out date, which is neither a range nor a bare year and so
+# survived both of the strips above. "Abitur ... 17. Juni 2023" matches the
+# grade keyword "abitur"; the year was removed, "17." was read as the grade,
+# judged implausible on the German scale, and the student was asked to confirm
+# an Abitur grade of 1,7 that appears nowhere on their CV. Their actual grade,
+# 1,3, sat two lines below on a bullet.
+_MONTH_WORD = (r"jan(?:uar|uary)?|feb(?:ruar|ruary)?|m[äa]r(?:z|ch)?|apr(?:il)?"
+               r"|mai|may|jun[ie]?|jul[iy]?|aug(?:ust)?|sep(?:t|tember)?"
+               r"|o[ck]t(?:ober)?|nov(?:ember)?|de[zc](?:ember)?")
+SINGLE_DATE_IN_LINE = re.compile(
+    r"\b[0-3]?\d\.\s*(?:" + _MONTH_WORD + r")\b"          # 17. Juni
+    r"|\b(?:" + _MONTH_WORD + r")\s+[0-3]?\d\b"            # June 17
+    r"|\b[0-3]?\d[./][01]?\d[./](?:19|20)?\d{2}\b",       # 17.06.2023
+    re.IGNORECASE)
 
 
 def _to_float(token: str) -> float:
@@ -173,7 +192,8 @@ def find_grades(text: str, section_lines: list[str] | None = None) -> list[dict]
         # "Sep 2013 - Jun 2022 Bismarck Gymnasium Karlsruhe - Abitur" matches the
         # grade keyword, and scanning it raw yields "201" and "202" sliced out of
         # the years - two grades that were never on the CV.
-        scannable = BARE_YEAR.sub(" ", DATE_RANGE_IN_LINE.sub(" ", line))
+        scannable = BARE_YEAR.sub(
+            " ", SINGLE_DATE_IN_LINE.sub(" ", DATE_RANGE_IN_LINE.sub(" ", line)))
         for match in GRADE_NUMBER.finditer(scannable):
             token, max_token = match.group(1), match.group(2)
             value = _to_float(token)

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a strong professional background with clear achievements and quantifiable results, especially in innovation and business development. The structure is generally solid, and your education section is well-detailed with grades and relevant coursework. For this review, feedback focuses on structure and completeness, as no specific target role or job description was provided—if you add a target, more tailored advice can be given. There are a few areas in your professional experience section that need attention to ensure every entry is fully described and consistently formatted. If you have experience or coursework related to AI, consider highlighting it, as nothing currently on your CV shows this.
+Your CV presents a strong professional background with clear achievements and quantifiable results, especially in innovation and business development. The structure is generally solid, and your education section is well-detailed with grades and relevant coursework. There are a few areas to address for clarity and completeness, particularly in your professional experience section, where one entry lacks a description and some bullets could better highlight your personal contribution. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Entries in "PROFESSIONAL EXPERIENCE" have no description**  
-  One entry in your professional experience section lacks any bullet points or description. Add a few bullets under each role, focusing on what you did, how you did it, and what changed as a result, especially highlighting transferable skills.
-- 🔴 **Bullets describe duties rather than contribution**  
-  Some bullets in your professional experience section only state the task or duty. Rework these to show your specific contribution, how you approached the task, and the skills demonstrated, with results where possible.
-- 🟠 **Bullet tense changes within "PROFESSIONAL EXPERIENCE"**  
-  There are inconsistencies in verb tense within your professional experience section. Use present tense for your current role and past tense for previous roles, and keep this consistent throughout.
-- 🟠 **Education comes after work experience**  
-  For a student CV, education usually comes before work experience unless you have several years of directly relevant work. Consider whether your experience justifies the current order or if switching would be clearer.
-- 🟡 **Interests are listed as single words**  
-  Single-word interests are acceptable, but if one or two could say something interesting about you or show a skill, consider adding a short description. This is optional and not needed for every interest.
+- 🔴 **Add missing descriptions to Professional Experience entries**  
+  One entry in your professional experience section (Swiss Consulting AG, Zurich, Switzerland 06/2017 – 01/2021) has no bullets or description. Add a few bullets covering what you did, how you did it, and what changed as a result, focusing on transferable skills.
+- 🔴 **Rework duty-only bullets to show your contribution**  
+  Some bullets in your professional experience section only state tasks or duties. Revise these to explain what you did, how you did it, and why it mattered, highlighting the transferable skills you demonstrated.
+- 🟠 **Ensure consistent tense in Professional Experience**  
+  There are tense changes within your professional experience section. Use present tense for your current role and past tense for previous roles, and keep this consistent throughout.
+- 🟠 **Section order: Education before Experience for student CVs**  
+  For most student CVs, education should come before work experience unless you have several years of directly relevant work. Consider whether your experience justifies the current order.
+- 🟡 **Consider adding detail to interests**  
+  Your interests are listed as single words, which is acceptable. If one or two could say something interesting about you or show a skill, consider adding a brief detail, but this is optional.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,34 +45,32 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- Your profile clearly communicates your experience, strengths, and interest in innovation, making it easy for a recruiter to understand your value.
+- The profile summarises your innovation expertise and analytical skills, setting the context for your CV.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under the 'Swiss Consulting AG, Zurich, Switzerland 06/2017 – 01/2021' entry to describe your responsibilities, actions, and results.
-- Rework bullets that only state a duty (such as 'Lead Innovation Manager Switzerland', 'Business Development Associate', 'Working Student, Business Development (40%)') to clarify what you did, how you did it, and what skills you demonstrated.
-- If you later target a specific role, highlight experience and skills in this section that match the requirements of the job description.
+- Add bullets under 'Swiss Consulting AG, Zurich, Switzerland 06/2017 – 01/2021' to describe your responsibilities, actions, and results in that role.
+- Revise bullets such as 'Lead Innovation Manager Switzerland', 'Business Development Associate', and 'Working Student, Business Development (40%)' to clarify what you personally did, how you did it, and what skills you demonstrated.
 
 **EDUCATION** 🟢 Strong
 
-- You have included your grades with their maximum, making them easy to interpret for readers from different countries.
+- Grades are given with their maximum, making them easy to interpret for readers from different countries.
 
 **EXTRA-CURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your extracurricular section demonstrates engagement and soft skills, with concrete examples of mentoring and volunteering.
+- Your extracurricular activities include specific roles and actions, such as mentoring and volunteering, with clear evidence of communication and support skills.
 
 **ADDITIONAL SKILLS** 🟠 Needs attention
 
-- Move trait words like 'analytical thinking' into experience bullets where you can show how you demonstrated this skill, rather than listing them as adjectives.
-- If you have completed relevant certifications, such as the [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) or the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding them here or in a dedicated section if relevant.
+- The term 'analytical thinking' appears as a trait without evidence; move such qualities into experience bullets where you can show how you demonstrated them.
 
 **INTERESTS** 🟢 Strong
 
-- You have included interests with brief descriptions, such as your participation in the Lake Zurich Crossing and choir membership, which add personality to your CV.
+- You include interests such as swimming and choir participation, which add a personal touch and show engagement outside of work.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or online courses from MIT or IBM, you could add a section to highlight these credentials.
+- If you have additional certificates or formal courses beyond those already listed under 'Additional Skills', consider adding a 'Courses and Certificates' section to highlight them, especially if they are relevant to your target roles.
 
 ### 5. Anything else from HSG worth adding?
 

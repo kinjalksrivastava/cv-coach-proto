@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen deiner Ausbildung und bisherigen Erfahrungen. Die Struktur ist klar, und die wichtigsten Abschnitte sind vorhanden. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die allgemeine Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass keinerlei Erfahrung mit KI oder KI-Tools erwähnt wird – falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen, da sie in vielen Bereichen zunehmend gefragt sind.
+Dein Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen deiner Ausbildung und bisherigen Erfahrungen. Die Struktur ist klar, und die wichtigsten Abschnitte sind vorhanden. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die allgemeine Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass keinerlei Erfahrung mit KI oder KI-Tools (z.B. im Studium, in Projekten, im Job oder als Skill) aufgeführt ist – falls du hier relevante Kenntnisse hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende inhaltliche Angaben unter den Abschlüssen**  
-  Unter deinen Studienabschlüssen stehen aktuell nur Abschluss, Note und Zeitraum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, einer Abschlussarbeit (inklusive Thema und Methode), einem Auslandssemester, Zertifikaten oder besonderen Programmen – immer mit Blick darauf, was für deine nächste Bewerbung relevant ist.
-- 🔴 **Ehrenamtliche Tätigkeiten ohne Beschreibung**  
-  Mindestens eine Position im Ehrenamt-Bereich enthält keinerlei Beschreibung. Füge zu jeder Rolle einige Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast, wie du vorgegangen bist und welches Ergebnis oder welche Wirkung erzielt wurde – mit Fokus auf übertragbare Kompetenzen.
-- 🟠 **Stichpunkte beschreiben Aufgaben, nicht deinen Beitrag**  
-  Viele Stichpunkte nennen nur die Aufgabe, aber nicht, wie du sie umgesetzt hast oder welchen Beitrag du geleistet hast. Überarbeite sie so, dass klar wird, was du gemacht hast, wie du vorgegangen bist und welche Fähigkeit du damit belegst.
-- 🟠 **Stichpunkte zeigen selten Ergebnis oder Veränderung**  
-  Die meisten Stichpunkte nennen keine Ergebnisse, Zahlen oder Veränderungen. Überlege bei jedem Punkt, ob du ein konkretes Resultat oder eine Veränderung nennen kannst – aber nur, wenn es wirklich passt und belegbar ist.
-- 🟡 **Datumsangaben ohne Monat**  
-  Bei einigen Zeiträumen fehlen die Monatsangaben. Ergänze diese, damit der Umfang der jeweiligen Station klar wird.
+- 🔴 **Deine Abschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
+  Ein Leser erfährt nur, welches Zertifikat du hast, aber nichts darüber, was du im Studium gemacht hast. Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Vorgehen), einem Auslandssemester, Zertifikaten oder besonderen Programmen – immer nur das, was wirklich zutrifft und für deine Wunschrolle relevant ist.
+- 🔴 **Einträge in "Ehrenamtliche Tätigkeiten" haben keine Beschreibung**  
+  Füge unter jedem Eintrag einige Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret gemacht hast, wie du es gemacht hast und warum es wichtig war – und vor allem, welche übertragbare Fähigkeit du damit belegst. Ein Ergebnis hilft, wenn es wirklich vorhanden ist.
+- 🟠 **Die meisten Stichpunkte beschreiben nur die Aufgabe, nicht die dahinterstehende Fähigkeit**  
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht, wie habe ich es gemacht und warum war das relevant? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es angemessen ist und du es belegen kannst.
+- 🟡 **Datumsangaben enthalten nur das Jahr, nicht den Monat**  
+  Ergänze bei allen Zeiträumen den Monat – z.B. "09/2023 – 06/2024". Ohne Monatsangabe kann ein Leser nicht erkennen, ob es sich um ein dreimonatiges oder ein zwölfmonatiges Engagement handelt.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,22 +46,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei der Note (z. B. 2,2) die Notenskala, damit auch internationale Leser sie einordnen können (z. B. 2,20 / 1,00).
-- Falls du am HSG Mentoring Programme teilnimmst, kannst du dies als Bullet unter dem passenden Abschluss aufführen.
+- Falls du am HSG Mentoring Programme teilnimmst, kannst du dies als Bullet unter dem passenden Abschluss ergänzen.
+- Die Note "2,2" bei der Allgemeinen Hochschulreife sollte als "2,20 / 1,00" angegeben werden, damit auch internationale Leser sie einordnen können.
+- Ergänze bei Zeiträumen wie "2015-2016" und "2023 - 2025" den Monat, damit der Umfang klar wird.
 
 **Praktische Erfahrungen** 🟢 Stark
 
-- Die Rollenbezeichnungen und Beschreibungen machen deine Aufgabenbereiche nachvollziehbar.
+- Jeder Eintrag enthält sowohl eine Positionsbezeichnung als auch eine Beschreibung, was einen schnellen Überblick über deine beruflichen Stationen ermöglicht.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, das Vorgehen und – wo möglich – ein Ergebnis oder eine Veränderung zeigen.
-- Ergänze bei Zeiträumen wie '2015-2016' die Monatsangaben.
-- Falls du in einem HSG-Club oder einer studentischen Initiative aktiv bist (z. B. https://shsg.ch/clubs), kannst du dies mit konkreten Aufgaben und Ergebnissen als Bullet aufführen – aber nur, wenn es wirklich zutrifft.
+- Beim Eintrag "Stellvertretendes sachkundiges Mitglied im kommunalen Schulausschuss der Stadt Kaarst" fehlt eine Beschreibung – ergänze hier einige Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und welche Wirkung das hatte.
+- Überarbeite die bestehenden Stichpunkte (z.B. "Organisation und Durchführung des Wahlprozesses, Prüfung der Wahlberechtigung, Auszählung der Stimmen"), indem du jeweils erläuterst, wie du vorgegangen bist, welche Fähigkeiten du eingesetzt hast und was das Ergebnis war.
+- Gehe alle Aufgabenbeschreibungen durch und frage dich, welche übertragbaren Kompetenzen du damit belegen möchtest – und ergänze diese gezielt.
+- Ergänze bei Zeiträumen wie "2015-2016" den Monat, damit der Umfang klar wird.
 
 **Zusätzliche Teilnahmen** 🟢 Stark
 
-- Die Teilnahme am Mentoring-Programm ist als Zusatzqualifikation gut sichtbar dargestellt.
+- Der Abschnitt zeigt ein studienbegleitendes Zusatzprogramm mit persönlichem Mentor und Weiterbildungsseminaren, was Engagement für persönliche und berufliche Entwicklung unterstreicht.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -69,17 +71,17 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Füge einen Abschnitt zu Sprachen und IT-Kenntnissen hinzu, wenn du relevante Kenntnisse hast.
-- Gib bei Sprachen das Niveau nach CEFR (A1–C2) an – das ist international verständlich und wird von Recruitern bevorzugt.
-- Bei IT-Tools oder Software solltest du jeweils ein Niveau angeben (z. B. Excel (Fortgeschritten), Python (Grundkenntnisse)).
+- Füge einen Abschnitt "Sprachen und IT-Kenntnisse" hinzu, wenn du relevante Sprachkenntnisse oder IT-Skills hast.
+- Gib bei Sprachen das Niveau nach CEFR (A1–C2) an, da dies international verständlich ist.
+- Bei IT-Kenntnissen solltest du für jedes Tool oder Programm ein Niveau angeben (z.B. "Excel (Fortgeschritten)").
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z. B. Data Science, Nachhaltigkeit, Sprachzertifikate) hast, kannst du diese in einem eigenen Abschnitt aufführen.
+- Falls du relevante Kurse oder Zertifikate hast (z.B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, ergänze einen kurzen Abschnitt zu persönlichen Interessen oder Hobbys – das ist optional, kann aber einen sympathischen Einblick geben.
+- Wenn du möchtest, füge einen kurzen Abschnitt zu Interessen oder Hobbys hinzu – das ist optional, kann aber einen persönlichen Akzent setzen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
