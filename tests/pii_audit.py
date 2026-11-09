@@ -182,6 +182,14 @@ def scan(text: str, lang: str) -> tuple[list[str], list[str]]:
     leaks = []
     for label, pattern in SCANS:
         for match in pattern.finditer(stripped):
+            # A four-digit year opening a CV line is a date, not a postcode.
+            # "2022 Co-Präsidentin Mittelschulverbindung Frauenfeld" is a
+            # leadership role; the redaction layer deliberately keeps it, and
+            # this audit has to agree or it reports its own fix as a leak.
+            # Same rule, one implementation - see pii.py.
+            if (label == "European postcode and town"
+                    and pii._looks_like_a_year_not_a_postcode(match.group(0).strip())):
+                continue
             leaks.append(f"{label}: {match.group(0).strip()[:70]!r}")
     review = []
     for name in person_names(stripped, lang):
@@ -213,6 +221,53 @@ def model_bound_text(path: str) -> tuple[str, str, list[str]]:
         selected = pii.select_cv_content(raw)
         cleaned = pii.strip_pii(selected["text"], lang)
     return cleaned["text"], lang, cleaned["redactions"]
+
+
+# --- the other direction: what redaction must NOT remove --------------------
+#
+# Every check above asks whether personal data got out. None of them asked
+# whether real content was destroyed on the way, and two CVs were losing
+# content to the redaction layer with nothing to catch it:
+#
+#   exp cv bad 1  "Chutzenstrasse 68, 3007 JUNIOR LEAD BUYER WANDER AG"
+#                 - one flattened two-column line. The address pattern matched
+#                   it all and the job title went with the address.
+#   bad cv 3      "2022 Co-Präsidentin Mittelschulverbindung Frauenfeld"
+#                 - a leadership role read as a postcode and a town, deleted
+#                   whole, after which the report called the section thin.
+#
+# Career Services were explicit that this is the worse failure of the two:
+# job titles are what the job-description alignment is built on. A leak is
+# caught by the scans above; this is the counterpart, and it is a fixed list
+# of things that must still be in the text the model receives.
+MUST_SURVIVE = [
+    ("exp cv bad 1.pdf", ["JUNIOR LEAD BUYER", "JUNIOR BUYER", "WANDER AG"]),
+    ("bad cv 3.pdf", ["Co-Präsidentin", "Mittelschulverbindung"]),
+    ("bad cv 6.pdf", ["Gemeindeverwaltung", "Dokumentrevision"]),
+    ("good cv 7.pdf", ["Consulting & Product"]),
+]
+
+
+def content_survives(files: list) -> int:
+    """Checks that redaction left the coachable content alone. Returns failures."""
+    by_name = {os.path.basename(p): p for p in files}
+    failures = 0
+    print()
+    for name, required in MUST_SURVIVE:
+        path = by_name.get(name)
+        if path is None:
+            continue
+        text, _lang, _r = model_bound_text(path)
+        missing = [phrase for phrase in required if phrase not in text]
+        if missing:
+            failures += 1
+            print(f"REMOVED {name}: redaction ate {missing}")
+        else:
+            print(f"intact  {name}: {', '.join(required)}")
+    if not failures:
+        print(f"{len(MUST_SURVIVE)} documents keep every job title and role "
+              f"the coaching depends on")
+    return failures
 
 
 def main() -> int:
@@ -257,7 +312,8 @@ def main() -> int:
               f"is\nreported here whichever side of the line it falls on:")
         for item in to_review:
             print(item)
-    return 1 if leaking else 0
+    eaten = content_survives(files)
+    return 1 if (leaking or eaten) else 0
 
 
 if __name__ == "__main__":

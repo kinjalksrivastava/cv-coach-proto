@@ -192,11 +192,57 @@ MARITAL_WORDS_RE = re.compile(
 # The country prefix may be followed by a hyphen, a space, both, or neither:
 # "CH-9004", "CH- 9004", "CH 9004". The audit found "CH- 9004 St. Gallen"
 # surviving on Career Services' own letter template, on that one space.
+# The start and end of a FIELD, not only of a line. A postcode sits alone on
+# its line in a flat text extraction, but a layout-aware reader keeps the row
+# together - "Praktikant, Muster AG   Bahnhofstrasse 14   8001 Zuerich" - and
+# an anchor that insists on the end of the line then matches nothing at all.
+# "8001 Zuerich" leaked on exactly that, redacted when alone and surviving
+# when joined. A run of two or more spaces is a field edge wherever it falls.
+FIELD_START = r"(?:^|(?<=\s\s))"
+FIELD_END = r"(?=$|\s\s)"
+
 POSTCODE_CITY_RE = re.compile(
-    r"(?m)^[^\S\n]*(?:(?:CH|DE|AT|FR|IT|LI|LU|BE|NL)[^\S\n\-]*-?[^\S\n]*)?"
+    r"(?m)" + FIELD_START + r"[^\S\n]*"
+    r"(?:(?:CH|DE|AT|FR|IT|LI|LU|BE|NL)[^\S\n\-]*-?[^\S\n]*)?"
     r"\d{4,5}[^\S\n]+[A-ZÄÖÜ][\w.\-äöüß]+"
-    r"([^\S\n]+[\w.\-äöüß]+)*[^\S\n]*$"
+    r"([^\S\n]+[\w.\-äöüß]+)*?[^\S\n]*" + FIELD_END
 )
+
+# A four-digit year at the start of a CV line is a date, not a postcode, and
+# "2022 Co-Präsidentin Mittelschulverbindung Frauenfeld" was being deleted as a
+# postal address - a leadership role erased from a student's CV, after which
+# the report went on to call the section thin. The digits cannot settle it:
+# 2022 really is the postcode of Bevaix. What settles it is what follows.
+#
+# A Swiss, German or Austrian postcode is followed by a PLACE: one or two words,
+# sometimes with a canton or a short connector ("8001 Zürich", "2022 Bevaix NE",
+# "9000 St. Gallen", "6300 Zug"). Three or more words after a year are a
+# sentence, not a town. The guard applies only when the number could be a year
+# AND no country prefix was given, so "CH-2022 Bevaix" is untouched, and a
+# postcode that cannot be a year - every 4-digit code below 1900 and every
+# 5-digit German one - never reaches it.
+_YEARLIKE = re.compile(r"^(?:19|20)\d{2}$")
+_PLACE_WORD = re.compile(r"^(?:[A-ZÄÖÜ][\w.\-äöüß]*|an|am|bei|der|des|ob|im|in|auf|sur|sous"
+                         r"|les|le|la|aux|près|pres|di|al|sul)$")
+_MAX_PLACE_WORDS = 2
+
+
+def _looks_like_a_year_not_a_postcode(matched: str) -> bool:
+    parts = matched.split()
+    if not parts:
+        return False
+    head = parts[0]
+    # A country prefix is positive evidence of an address; leave those alone.
+    if not _YEARLIKE.match(head):
+        return False
+    rest = parts[1:]
+    if len(rest) > _MAX_PLACE_WORDS:
+        return True
+    # "2022 Co-Präsidentin Mittelschulverbindung" - every word is capitalised,
+    # so capitalisation alone cannot tell a town from a job title. Length does:
+    # a place name that runs past three words is not a place name.
+    return not all(_PLACE_WORD.match(w) for w in rest)
+
 
 # Anglophone addresses. A Swiss university has students applying abroad and
 # students who have studied abroad, and "Pittsburgh, PA 15213" went through
@@ -207,9 +253,9 @@ US_CITY_STATE_ZIP_RE = re.compile(
 UK_POSTCODE_RE = re.compile(
     r"\b[A-Z]{1,2}\d[A-Z\d]?[^\S\n]*\d[A-Z]{2}\b")
 STREET_RE = re.compile(
-    r"(?m)^[^\S\n]*([A-ZÄÖÜ][\w.\-äöüß]*[^\S\n]?)"
+    r"(?m)" + FIELD_START + r"[^\S\n]*([A-ZÄÖÜ][\w.\-äöüß]*[^\S\n]?)"
     r"(straße|strasse|str\.|gasse|weg|platz|allee|ring|steig|avenue|street|road|lane)"
-    r"[\w.\-]*(?:[^\S\n]+[\w.\-]+)*[^\S\n]+\d+[a-zA-Z]?[^\S\n]*$",
+    r"[\w.\-]*(?:[^\S\n]+[\w.\-]+)*?[^\S\n]+\d+[a-zA-Z]?[^\S\n]*" + FIELD_END,
     re.IGNORECASE,
 )
 # The same address written inline on one contact line, which is at least as
@@ -300,19 +346,69 @@ def _sub_phones(text: str) -> tuple[str, bool]:
     return "".join(out), True
 
 
+# A flattened two-column CV welds the next column onto the end of an address.
+# On exp cv bad 1 the line arrived as
+#
+#     Chutzenstrasse 68, 3007 JUNIOR LEAD BUYER WANDER AG |JAN 2021 - JAN 2022
+#
+# because the address sits in the left column and the job title in the right.
+# The address pattern matched the whole of it and the job title was redacted
+# with it - losing exactly the information this tool exists to comment on, and
+# the one thing Career Services said must never be removed.
+#
+# The city is the giveaway. A Swiss or German town is written in title case
+# ("Zürich", "St. Gallen", "Bad Ragaz"); a welded job title arrives in the caps
+# the CV set it in. One or two trailing capitals could still be a city written
+# loudly - "8001 ZÜRICH", "9000 ST. GALLEN" - so only a run of three or more is
+# treated as another column, and the address itself is still redacted.
+_SHOUTY = re.compile(r"^[A-ZÄÖÜ][A-ZÄÖÜ0-9.\-&]*$")
+_MIN_WELDED_RUN = 3
+
+
+def _welded_tail(matched: str) -> str:
+    """The part of an address match that belongs to another column, or ''."""
+    tokens = matched.split()
+    cut = len(tokens)
+    while cut > 0 and _SHOUTY.match(tokens[cut - 1]) and len(tokens[cut - 1]) > 1:
+        cut -= 1
+    run = len(tokens) - cut
+    if run < _MIN_WELDED_RUN or cut == 0:
+        return ""
+    # Only when the address itself is NOT in caps: a contact block written
+    # entirely in capitals is one thing, two columns in different cases another.
+    if all(_SHOUTY.match(t) or not t[:1].isalpha() for t in tokens[:cut]):
+        return ""
+    return " ".join(tokens[cut:])
+
+
+def _redact_address(match) -> str:
+    """Redact an address match, handing back any welded-on column."""
+    whole = match.group(0)
+    tail = _welded_tail(whole.strip())
+    if not tail:
+        return _placeholder("address")
+    return _placeholder("address") + whole[len(whole.rstrip()):] + " " + tail
+
+
 def _sub_address(text: str) -> tuple[str, bool]:
     """
     A street name alone is not enough to act on - "Bahnhofstrasse 12" could be a
     client site in a bullet point. Only redacts when a postal code is present
     too, either inline on the same line or on its own line beneath.
     """
-    working = INLINE_ADDRESS_RE.sub(_placeholder("address"), text)
+    working = INLINE_ADDRESS_RE.sub(_redact_address, text)
     # These two carry a postcode inside them, so unlike a bare street name they
     # need no second signal: nothing but an address is shaped this way.
     working = US_CITY_STATE_ZIP_RE.sub(_placeholder("address"), working)
     working = UK_POSTCODE_RE.sub(_placeholder("address"), working)
-    if POSTCODE_CITY_RE.search(working):
-        working = POSTCODE_CITY_RE.sub(_placeholder("address"), working)
+    def _postcode_city(match):
+        if _looks_like_a_year_not_a_postcode(match.group(0).strip()):
+            return match.group(0)
+        return _redact_address(match)
+
+    if any(not _looks_like_a_year_not_a_postcode(m.group(0).strip())
+           for m in POSTCODE_CITY_RE.finditer(working)):
+        working = POSTCODE_CITY_RE.sub(_postcode_city, working)
         working = STREET_RE.sub(_placeholder("address"), working)
     return working, working != text
 
@@ -734,6 +830,17 @@ RESIDUAL_CHECKS = (
 )
 
 
+def _real_hit(pattern, text) -> bool:
+    """A match that survives the year guard. See
+    _looks_like_a_year_not_a_postcode: this sweep runs the same patterns, so
+    without the same guard it re-redacts what the address layer deliberately
+    kept."""
+    if pattern is POSTCODE_CITY_RE:
+        return any(not _looks_like_a_year_not_a_postcode(m.group(0).strip())
+                   for m in pattern.finditer(text))
+    return bool(pattern.search(text))
+
+
 def residual_pii(text: str) -> list[str]:
     """What is still PII-shaped after the removal passes. Empty is the goal."""
     hits = []
@@ -741,7 +848,7 @@ def residual_pii(text: str) -> list[str]:
         if pattern is BARE_DATE_LINE_RE:
             if _dob_lines(text):
                 hits.append(key)
-        elif pattern.search(text):
+        elif _real_hit(pattern, text):
             hits.append(key)
     return hits
 
@@ -758,6 +865,15 @@ def _sweep_residual(text: str) -> tuple[str, list[str]]:
                 lines.append(line)
             if hit:
                 text, _ = "\n".join(lines), hits.append(key)
+        elif pattern is POSTCODE_CITY_RE:
+            def _guarded(match, _key=key):
+                if _looks_like_a_year_not_a_postcode(match.group(0).strip()):
+                    return match.group(0)
+                return _placeholder(_key)
+            new = pattern.sub(_guarded, text)
+            if new != text:
+                text = new
+                hits.append(key)
         else:
             new = pattern.sub(_placeholder(key), text)
             if new != text:
