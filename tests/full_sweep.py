@@ -27,7 +27,7 @@ os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from openai import OpenAI                                            # noqa: E402
 import bullet_review, cv_facts, date_review, format_check            # noqa: E402
 import hsg_activities, report, severity                              # noqa: E402
-from extraction import extract_text                                  # noqa: E402
+from intake import read_cv                                           # noqa: E402
 from guardrails import language, section_coverage                    # noqa: E402
 from pii import select_cv_content, strip_pii                                        # noqa: E402
 
@@ -66,7 +66,7 @@ def audit(path: str) -> dict:
     problems = []
     client = OpenAI(api_key=tomllib.load(open(".streamlit/secrets.toml", "rb"))["OPENAI_API_KEY"])
 
-    res = extract_text(open(path, "rb").read(), os.path.basename(path))
+    res = read_cv(open(path, "rb").read(), os.path.basename(path))
     if not res.ok:
         return {"name": name, "problems": [f"extraction failed: {res.error[:60]}"]}
 
@@ -93,7 +93,7 @@ def audit(path: str) -> dict:
         cv_text, res.meta, sections, None, doc_lang,
         lambda items: bullet_review.review(client, MODEL, items, report.SECTION_RULES),
         lambda doc: date_review.read(client, MODEL, doc),
-        doc_lang)
+        doc_lang, parsed_entries=res.meta.get("parsed_entries"))
     ranked = severity.assess(facts)
     rows = format_check.run(cv_text, res.meta, facts, doc_lang)
 
@@ -227,6 +227,33 @@ def audit(path: str) -> dict:
         hit = GERMAN_REPORT_ENGLISH.search(md)
         if hit:
             problems.append(f"LANGUAGE English in a German report: {hit.group(0)!r}")
+
+    # Du, never Sie. The prompt says so, and a rule that lives only in the
+    # prompt holds most of the time and not always: before this check every
+    # one of the twelve German reports mixed the two, usually "Ihr Lebenslauf"
+    # a line above "die dir gehört". Career Services address students
+    # informally and every sentence the report renders itself does.
+    if doc_lang == "de":
+        # Formal ADDRESS, not every capitalised Sie. "Sie sind gute
+        # Vergleichsbeispiele" is Career Services' own line about the two CV
+        # templates, where Sie means "they" - a bare word match failed every
+        # German report on it. What gives formal address away is an imperative
+        # in front of Sie ("Überarbeiten Sie"), or a capitalised possessive
+        # somewhere other than the start of a sentence ("Ihr Lebenslauf").
+        formal = re.findall(
+            # an imperative in front of Sie: "Überarbeiten Sie", "Ergänzen Sie"
+            r"\b[A-ZÄÖÜ][a-zäöüß]{2,}en\s+Sie\b"
+            # a capitalised possessive anywhere but the start of a sentence
+            r"|(?<![.!?:]\s)(?<!^)(?<!\n)\bIhre?[nmrs]?\b"
+            # and at the start of a sentence too, when what follows is plainly
+            # the student's own document: "Ihr Lebenslauf ist gut strukturiert"
+            r"|\bIhre?[nmrs]?\s+(?:Lebenslauf|CV|Bewerbung|Profil|Abschnitt"
+            r"|Erfahrung|Kenntnis|Angabe|Note|Stärke|Fähigkeit|Bullet)",
+            md, re.M)
+        if formal:
+            problems.append(
+                f"ANREDE formal address in a German report: "
+                f"{sorted(set(formal))[:4]} - this report uses du")
 
     # 12b. THE PROSE ITSELF. Every complaint Career Services made came from
     #      reading a generated report, so the report text is read back for the

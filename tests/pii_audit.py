@@ -34,6 +34,7 @@ import letter_pii                                                   # noqa: E402
 import pii                                                          # noqa: E402
 import pii_local                                                    # noqa: E402
 from extraction import extract_text                                 # noqa: E402
+from intake import read_cv                                          # noqa: E402
 from guardrails import language                                     # noqa: E402
 
 CV_SAMPLES = os.path.expanduser("~/Downloads/CV Samples")
@@ -209,7 +210,11 @@ def model_bound_text(path: str) -> tuple[str, str, list[str]]:
             raw = handle.read()
     else:
         with open(path, "rb") as handle:
-            result = extract_text(handle.read(), name)
+            # Exactly as app.py does it, including the split: the tree for a
+            # CV, the flat reader for a letter. This audit is only worth
+            # anything if it runs over the same text the app would send.
+            raw = handle.read()
+            result = (extract_text(raw, name) if is_letter else read_cv(raw, name))
         if not result.ok:
             raise RuntimeError(result.error)
         raw = result.text

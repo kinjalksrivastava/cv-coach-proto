@@ -20,6 +20,7 @@ import format_check
 import severity
 import hsg_activities
 from extraction import extract_text, MIN_CHARS
+from intake import read_cv
 from guardrails import confidentiality, global_rules, language, section_coverage
 import letter_pii
 from pii import select_cv_content, strip_pii
@@ -573,7 +574,19 @@ if st.session_state["cv_text"] is None:
         st.info(cover_letter.STRINGS[st.session_state["language_pref"]]["needs_jd"], icon="📌")
     if st.button(copy["start"], type="primary", disabled=not ready):
         if cv_file is not None:
-            cv_result = extract_text(cv_file.getvalue(), cv_file.name)
+            # A CV is read in the order a person reads the page, so a
+            # two-column layout no longer arrives with its columns welded
+            # together; read_cv falls back to the flat text by itself if the
+            # column-aware reader returns less than the document contains.
+            #
+            # A cover letter is NOT read that way. It is single-column prose,
+            # so the tree buys it nothing - and it costs something: the
+            # recipient-name layer in letter_pii reads line shape, and on the
+            # tree's indented rendering "Ms Anika" survived the redaction that
+            # removes it from the flat text. A reader that gains nothing is not
+            # worth one person's name.
+            cv_result = (extract_text(cv_file.getvalue(), cv_file.name) if is_letter
+                         else read_cv(cv_file.getvalue(), cv_file.name))
             if not cv_result.ok:
                 st.error(cv_result.error, icon="📄")
                 st.stop()
@@ -651,7 +664,7 @@ if st.session_state["cv_text"] is None:
             # other document before anything sees it.
             reference_cv = ""
             if ref_file is not None:
-                parsed = extract_text(ref_file.getvalue(), ref_file.name)
+                parsed = read_cv(ref_file.getvalue(), ref_file.name)
                 if parsed.ok:
                     reference_cv = strip_pii(parsed.text, cv_language)["text"]
             elif ref_pasted.strip():
@@ -696,7 +709,8 @@ if st.session_state["cv_text"] is None:
 
             facts = cv_facts.analyse(cv_text, cv_meta, sections,
                                      st.session_state["jd_text"], lang_code,
-                                     review_bullets, read_dates, cv_language)
+                                     review_bullets, read_dates, cv_language,
+                                     parsed_entries=cv_meta.get("parsed_entries"))
             st.session_state["date_findings"] = facts["date_findings"]
             st.session_state["format_rows"] = format_check.run(
                 cv_text, cv_meta, facts, lang_code)

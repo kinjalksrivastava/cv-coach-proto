@@ -49,9 +49,23 @@ INLINE_BULLET = re.compile(rf"\s[{re.escape(INLINE_BULLET_CHARS)}]\s+\S")
 from guardrails.dates import RANGE_RE as DATE_RANGE
 from guardrails import headings as heading_lookup
 
+# The German abbreviations are here for a reason. Without "dez" and "okt" a
+# German CV reading "OKI 2019 - DEZ 2020" was told that DEZ came through where
+# "Dec" was expected - a correct German date reported to the student as a typo,
+# and the English month suggested back in a German report. The real typo on
+# that line is OKI, and it is still caught.
 MONTHS = ("jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec",
           "januar", "februar", "märz", "april", "mai", "juni", "juli", "august",
-          "september", "oktober", "november", "dezember", "sept")
+          "september", "oktober", "november", "dezember", "sept",
+          "dez", "okt", "mär", "maer", "mrz", "jän", "jaen", "janu", "febr",
+          "aug.", "sept.", "dezbr",
+          # The FULL English names too. Without them "July" is not a month
+          # this tool knows, so it was compared against every month that is -
+          # and "Juli" is one character away, so an English CV was told that
+          # "July 2024" came through where "Juli 2024" was expected. Adding
+          # German abbreviations without these turned one false finding into
+          # another.
+          "january", "february", "march", "june", "july", "october", "december")
 
 # Openers that describe a duty rather than a contribution. Career Services'
 # tier 2. Kept to an explicit list: inferring "weak phrasing" more generally
@@ -528,8 +542,14 @@ def _month_typos(text: str) -> list[tuple[str, str]]:
         token = match.group(1).lower()
         if token in MONTHS or token.isdigit():
             continue
-        for month in MONTHS[:12]:
-            if SequenceMatcher(None, token, month).ratio() >= 0.6 and len(token) == len(month):
+        # Compared against EVERY month this tool knows, not only the English
+        # twelve. "OKI 2019" on a German CV is one character from "Okt" and
+        # nowhere near "Oct", so checking English alone found nothing to say
+        # about a real typo while calling the correct "DEZ" a mistake.
+        for month in MONTHS:
+            if len(token) != len(month):
+                continue
+            if SequenceMatcher(None, token, month).ratio() >= 0.6:
                 found.append((match.group(0), f"{month.capitalize()} {match.group(2)}"))
                 break
     return found
@@ -1006,9 +1026,30 @@ def _jd_tailoring(cv_text: str, jd_text: str | None) -> dict:
     }
 
 
+def _tree_entries(parsed, heading: str):
+    """
+    The entries structure/ already found for this section, if it found any.
+
+    The tree reads a CV from the file - font sizes, column positions - so it
+    knows which row opens an entry and which line sits under it. Re-deriving
+    that from the rendered text throws the answer away and asks a date pattern
+    to guess it back: on good cv 6 the tree had 9 entries, exactly the hand
+    labelling, and the re-derivation found 8. On a CV with its dates in a left
+    column the re-derivation names the entry after the date.
+
+    So where the tree has an answer for a section, it is used. Where it has
+    none - pasted text, a file it could not read - nothing changes and the
+    patterns below run as before.
+    """
+    if not parsed:
+        return None
+    key = heading_lookup.normalise(heading or "")
+    return parsed.get(key)
+
+
 def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None = "",
             lang: str = "en", bullet_reviewer=None, date_reader=None,
-            doc_language: str = "en") -> dict:
+            doc_language: str = "en", parsed_entries: dict | None = None) -> dict:
     """
     Returns the facts. Every value is something measured, not inferred - the
     report prompt is told it may not assert anything this dict does not support.
@@ -1121,8 +1162,30 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
     section_facts, all_bullets = [], []
     for section in sliced:
         body = section["lines"]
-        bullets = [_bullet_text(line) for line in body if _is_bullet(line)]
-        entries = _entries(body, extra_dates)
+        from_tree = _tree_entries(parsed_entries, section["heading"])
+        entries = from_tree if from_tree is not None else _entries(body, extra_dates)
+        if from_tree is not None:
+            # The tree's bullets, not the text's. _is_bullet falls back to
+            # "indented and longer than 25 characters" because in flat text
+            # indentation is the only signal left - but the tree INDENTS
+            # STRUCTURALLY, two spaces for an entry and four for its content,
+            # so that fallback counted entry titles and description lines as
+            # bullets too. Across the 19 hand-labelled CVs it was wrong by 201
+            # where the tree is wrong by 13: bad cv 7 came out with 31 bullets
+            # against a truth of 12, bad cv 2 with 7 against a truth of none.
+            # total_bullets drives the punctuation and tense checks, "no
+            # bullets anywhere", and every section's Strong status.
+            bullets = [b for entry in from_tree for b in entry["bullets"]]
+        elif parsed_entries:
+            # Tree-rendered text, but this heading is not one the tree keyed -
+            # a sidebar section, or one the detector names differently. Fall
+            # back to the text, but WITHOUT the indentation rule: every line
+            # in this text is indented by construction, so that rule counts
+            # titles and descriptions as bullets. An explicit marker only.
+            bullets = [_bullet_text(line) for line in body
+                       if BULLET_LINE_match(line) or INLINE_BULLET.search(line)]
+        else:
+            bullets = [_bullet_text(line) for line in body if _is_bullet(line)]
         all_bullets.extend(bullets)
         content = [line for line in body if line.strip()]
         section_facts.append({
