@@ -2,7 +2,7 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum und hebt persönliche Werte hervor, die über eine reine Aufzählung von Stationen hinausgehen. Es ist klar erkennbar, warum du dich für die Muster GmbH und den Bereich Logistik interessierst, und du stellst einen Bezug zwischen deinen Erfahrungen und dem angestrebten Praktikum her. Da kein Lebenslauf vorliegt, kann ich nicht beurteilen, ob alle Informationen wirklich neu sind, aber das Schreiben wirkt nicht wie eine bloße Nacherzählung des Werdegangs.
+Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum und hebt persönliche Werte hervor, die über eine reine Aufzählung von Stationen hinausgehen. Es ist klar erkennbar, warum dich die Muster GmbH und das Thema Nachhaltigkeit interessieren, und du stellst einen Bezug zwischen deinen Erfahrungen und dem angestrebten Praktikum her. Insgesamt ergänzt das Schreiben den Lebenslauf sinnvoll und ist ausreichend zukunftsorientiert.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -10,11 +10,11 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Du bringst persönliche Beweggründe und konkrete Erfahrungen ein, die über eine reine Aufzählung hinausgehen. |
-| Warum dieses Unternehmen? | Du erklärst nachvollziehbar, warum dich die nachhaltige Ausrichtung der Muster GmbH anspricht. |
-| Warum diese Stelle? | Du gehst auf dein Interesse an Logistik und Nachhaltigkeit ein und stellst einen Bezug zum Praktikum her. |
-| Was du mitbringst | Du verbindest deine bisherigen Erfahrungen und Fähigkeiten mit den Anforderungen des Praktikums und erläuterst, wie du diese einbringen möchtest. |
-| Schluss | Du schließt mit einer Einladung zum Gespräch und betonst deine Motivation. |
+| Mehrwert über den Lebenslauf hinaus | Du bringst neue, persönliche Einblicke und Beweggründe ein, die über eine bloße Nacherzählung des Lebenslaufs hinausgehen. |
+| Warum dieses Unternehmen? | Du erklärst klar, warum dich die nachhaltige Ausrichtung der Muster GmbH anspricht. |
+| Warum diese Stelle? | Du gehst darauf ein, warum dich ein Praktikum im Bereich Logistik interessiert und wie es zu deinen bisherigen Erfahrungen passt. |
+| Was du mitbringst | Du stellst einen Zusammenhang zwischen deinen bisherigen Erfahrungen (z.B. Projektarbeit, Durchsetzungsvermögen) und dem Praktikum her. |
+| Schluss | Du schließt mit einer Einladung zum Gespräch und einem freundlichen Abschluss. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Die Stelle ist genannt. Falls die Anzeige eine Referenznummer hat, ergänze sie. |
 | Länge: maximal eine Seite | Die Länge liess sich aus deinem Upload nicht messen, bitte prüfe sie selbst. Eine Seite ist das Maximum, und rund zwei Drittel einer Seite an Inhalt genügen in der Regel. |
