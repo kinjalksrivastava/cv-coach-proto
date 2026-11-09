@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist strukturiert und deckt alle wichtigen Bereiche ab, wobei deine langjährige Erfahrung im Vertrieb und Einkauf in der Medtech-Branche klar hervorgeht. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – sobald du eine Zielposition hast, kann ich gezielter auf die Anforderungen eingehen. In der Ausbildung fehlen noch Details zu den einzelnen Stationen, und bei der Berufserfahrung gibt es einzelne Einträge ohne Beschreibung sowie viele Aufgaben, die noch stärker auf deinen Beitrag und die dahinterliegenden Kompetenzen eingehen könnten. Es findet sich aktuell kein Hinweis auf Erfahrung mit KI oder KI-Tools – falls du hier Kenntnisse hast, könntest du diese ergänzen.
+Dein Lebenslauf ist strukturiert und deckt alle wichtigen Bereiche ab, wobei deine langjährige Erfahrung im Vertrieb und Einkauf in der Medtech-Branche klar hervorgeht. Die Rückmeldung konzentriert sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools in deinem Lebenslauf erwähnt wird; falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu den Ausbildungsstationen fehlen**  
-  Unter deinen Abschlüssen steht aktuell nur der Abschluss selbst und das Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was wirklich zutrifft und für dein Ziel relevant ist.
+- 🔴 **Details zu den Abschlüssen fehlen**  
+  Unter deinen Ausbildungsabschlüssen stehen aktuell nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Vorgehen), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was tatsächlich zutrifft und für deine nächste Bewerbung relevant ist.
 - 🔴 **Einträge in "Berufserfahrung" ohne Beschreibung**  
-  Mindestens ein Eintrag in der Berufserfahrung (Medtech AG) hat keine Aufgaben oder Ergebnisse aufgeführt. Füge hier einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
-- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Mehrere Stichpunkte nennen nur die Aufgabe, aber nicht, wie du sie umgesetzt hast oder welchen Unterschied du gemacht hast. Überarbeite diese so, dass klar wird, was du konkret getan hast, wie du vorgegangen bist und welches Ergebnis oder welche Kompetenz dahintersteht.
+  Mindestens ein Eintrag in deiner Berufserfahrung (Medtech AG) hat keine Beschreibung. Füge hier einige Stichpunkte hinzu, die deine Aufgaben, dein Vorgehen und die Ergebnisse – besonders mit Blick auf übertragbare Kompetenzen – darstellen.
+- 🟠 **Stichpunkte beschreiben Aufgaben, nicht den eigenen Beitrag**  
+  Überarbeite die Stichpunkte so, dass sie nicht nur Aufgaben nennen, sondern auch zeigen, wie du vorgegangen bist und warum das wichtig war – insbesondere, welche übertragbaren Fähigkeiten du damit belegst. Ein konkretes Ergebnis hilft, wenn es belegbar ist.
 - 🟠 **Die meisten Stichpunkte zeigen keine Ergebnisse oder Veränderungen**  
-  Fast alle Stichpunkte in der Berufserfahrung beschreiben nur die Tätigkeit, aber nicht das Ergebnis, eine Zahl oder eine Veränderung. Gehe jeden Punkt durch und frage dich, was sich durch dein Handeln verändert hat und welche übertragbare Fähigkeit du damit belegst. Ergänze ein Ergebnis, wo es passt und belegbar ist.
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich konkret getan? Wie habe ich es gemacht? Warum war das relevant? Wo du ein echtes Ergebnis oder eine Veränderung nachweisen kannst, ergänze es – aber nur, wenn es angemessen und belegbar ist.
 - 🟡 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Bei Studierenden steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, du bist bereits sehr erfahren und wechselst in ein verwandtes Feld. Überlege, ob eine Umstellung für deine Zielposition sinnvoll wäre.
+  Für Studierende steht die Ausbildung normalerweise vor der Berufserfahrung – es sei denn, du bist bereits sehr erfahren und wechselst in ein verwandtes Feld. Überlege, ob eine Umstellung für deine nächste Bewerbung sinnvoll wäre.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -49,31 +49,30 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge bei Einträgen ohne Beschreibung (z.B. Medtech AG) einige Stichpunkte hinzu, die deine Aufgaben, dein Vorgehen und die Ergebnisse oder Veränderungen beschreiben.
-- Überarbeite Stichpunkte, die nur Aufgaben nennen, indem du erläuterst, wie du vorgegangen bist, warum das wichtig war und welche Kompetenz du damit belegst.
-- Ergänze, wo möglich, konkrete Ergebnisse oder Veränderungen, die durch dein Handeln entstanden sind – immer nur, wenn du diese auch belegen kannst.
-- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference (Career Services) oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit unter Berufserfahrung ergänzen, sofern sie für dein Ziel relevant sind.
+- Füge beim Eintrag "Medtech AG" Stichpunkte hinzu, die deine Aufgaben, dein Vorgehen und die Ergebnisse beschreiben – insbesondere, welche Kompetenzen du dabei eingesetzt hast.
+- Überarbeite die bestehenden Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, das Vorgehen und – wo möglich – konkrete Ergebnisse oder Veränderungen zeigen.
+- Falls du relevante Erfahrungen aus HSG-Angeboten wie der Talents Conference oder dem St. Gallen Symposium hast, kannst du diese als bezahlte Tätigkeit unter Berufserfahrung ergänzen – aber nur, wenn sie wirklich passen.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls du am HSG Mentoring Programme teilgenommen hast oder ein Zertifikat wie das Certificate in Data Science Fundamentals erworben hast, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen.
+- Falls du am HSG Mentoring Programme teilgenommen hast, kannst du dies als Bullet unter dem entsprechenden Abschluss ergänzen.
+- Wenn du ein Zertifikat wie das Certificate in Data Science Fundamentals (DSF) erworben hast, kannst du dies ebenfalls unter Ausbildung aufführen.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Die Beschreibung deiner Tätigkeit beim Roten Kreuz zeigt klar, wie du dich engagiert hast und welchen Beitrag du geleistet hast.
+- Die Beschreibung deiner Tätigkeit beim Roten Kreuz zeigt klar, wie du dich engagiert hast und welche Aufgaben du übernommen hast.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu IT-Tools und Sprachen sind mit klaren Niveaus versehen und geben einen guten Überblick über deine Kompetenzen.
+- Du hast deine Sprachkenntnisse mit Niveaustufen und deine IT-Kenntnisse mit klaren Angaben zu den Tools und dem Niveau aufgeführt.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen geben einen Einblick in deine persönlichen Leidenschaften und Aktivitäten außerhalb des Berufs.
+- Die Interessen zeigen persönliche Facetten und sind klar benannt; falls du möchtest, kannst du bei einzelnen Interessen noch ergänzen, was dich daran besonders reizt oder welche Fähigkeiten du dabei entwickelst.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate, Weiterbildungen oder Kurse absolviert hast (z.B. Data Science, Nachhaltigkeit, IT), kannst du diese in einem eigenen Abschnitt aufführen.
-- Hier könntest du auch HSG-Zertifikate wie das Certificate in Data Science Fundamentals oder das Certificate in Integrative Sustainability Management ergänzen, sofern vorhanden und relevant.
+- Falls du relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts) hast, kannst du einen eigenen Abschnitt ergänzen. Nenne dabei nur, was für deine nächste Bewerbung wirklich relevant ist.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

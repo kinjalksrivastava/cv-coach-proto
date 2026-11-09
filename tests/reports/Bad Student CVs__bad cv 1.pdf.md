@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist inhaltlich gut strukturiert und deckt die wichtigsten Bereiche ab, die für einen Berufseinstieg oder eine Bewerbung während des Studiums relevant sind. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Rollenbezeichnung als auch eine Beschreibung enthält. Es ist jedoch auffällig, dass keine Erfahrung mit KI oder KI-Tools erwähnt wird – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob oder Stelleninserat angegeben wurde, bezieht sich das Feedback auf die allgemeine Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
+Dein Lebenslauf ist bereits gut strukturiert und deckt die wichtigsten Bereiche ab, die für einen Berufseinstieg oder eine Bewerbung während des Studiums relevant sind. Die Berufserfahrung ist klar dargestellt und zeigt, dass du bereits praktische Einblicke im Bankwesen und in der Digitalisierung gesammelt hast. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools (z.B. im Studium, in Projekten, im Job oder als Skill) aufgeführt ist – falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen. Da kein konkretes Zielprofil oder Stelleninserat vorliegt, bezieht sich das Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -11,23 +11,23 @@ _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau
 | Kriterium | Status | Kommentar |
 | --- | --- | --- |
 | Länge | 🟢 Gut | 2 Seiten — passend für einen Lebenslauf zu Studienzeiten oder am Berufseinstieg. |
-| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Gängige Abschnittstitel, aber Icon- oder Symbolzeichen neben deinen Abschnittstiteln, die die Textextraktion nicht überstanden haben ("£ CERTIFICATIONS") — die Titel selbst sind korrekt, aber ein ATS liest die Datei genauso wie dieses Tool, deshalb lohnt es sich, die Icons zu entfernen; ungewöhnliche Aufzählungs- oder Icon-Zeichen (£); 2 eingebettete Bilder — Text darin ist für einen Parser unsichtbar. |
+| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Gängige Abschnittstitel, aber Icon- oder Symbolzeichen neben deinen Abschnittstiteln, die die Textextraktion nicht überstanden haben ("£ CERTIFICATIONS") — die Titel selbst sind korrekt, aber ein ATS liest die Datei genauso wie dieses Tool, deshalb lohnt es sich, die Icons zu entfernen; ungewöhnliche Aufzählungs- oder Icon-Zeichen (£). |
 | Rechtschreibung und Konsistenz | 🟢 Gut | Tippfehler: keine offensichtlichen Tippfehler in Titeln oder Daten. |
 
 _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, keine Garantie — jedes System liest anders._
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu deinen Abschlüssen fehlen**  
-  Unter deinen Bildungsabschlüssen stehen aktuell nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und Methode), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
-- 🔴 **Aufgaben statt Beitrag in den Berufserfahrungen**  
-  Viele deiner Bullet Points beschreiben nur die Aufgabe, nicht aber deinen konkreten Beitrag oder das dahinterliegende Skillset. Überarbeite sie so, dass klar wird, was du wie gemacht hast, warum das wichtig war und welches übertragbare Können du damit belegst.
-- 🔴 **Ergebnisse und Veränderungen fehlen in den Bullets**  
-  Fast alle Bullet Points nennen nur die Tätigkeit, aber kein Ergebnis, keine Veränderung oder keinen erkennbaren Skill. Überlege bei jedem Punkt: Was genau habe ich gemacht? Wie? Warum war das relevant? Wo du ein echtes Resultat oder eine Veränderung zeigen kannst, ergänze es – aber nur, wenn es belegbar ist.
+- 🔴 **Details zu den Abschlüssen fehlen**  
+  Unter deinen Bildungsabschlüssen stehen aktuell nur Abschluss und Zeitraum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema, Methode, Tools), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, was wirklich zutrifft und für dein Ziel relevant ist.
+- 🟠 **Aufgaben statt Beitrag in den Berufserfahrungen**  
+  Viele deiner Bullet Points beschreiben Aufgaben, aber nicht, wie du sie umgesetzt hast oder welchen Unterschied du gemacht hast. Überarbeite sie so, dass klar wird, was du konkret getan hast, wie du es gemacht hast und welches übertragbare Skill dabei sichtbar wird.
+- 🟠 **Ergebnisse und Skills in den Bullets fehlen**  
+  Die meisten Bullet Points nennen die Tätigkeit, aber nicht das Ergebnis oder die dahinterstehenden Fähigkeiten. Überlege bei jedem Punkt: Was genau habe ich gemacht? Wie? Warum war das wichtig? Welches Skill zeigt das? Wo du ein echtes Ergebnis hast, kannst du es ergänzen – aber nur, wenn es belegbar ist.
 - 🟠 **Datumsangaben nur als Jahr**  
-  Mehrere Einträge zeigen nur das Jahr, nicht den Monat. Ergänze überall den Monat (z.B. 09/2023 – 06/2024), damit der Umfang und die Dauer deiner Stationen klar erkennbar sind.
+  Mehrere Zeiträume sind nur mit Jahren angegeben. Ergänze jeweils den Monat, damit klar wird, wie lange du in einer Rolle oder Organisation aktiv warst.
 - 🟠 **Uneinheitliche Zeichensetzung bei Bullets**  
-  Einige Bullet Points enden mit Punkt, andere nicht. Entscheide dich für eine Variante und ziehe sie konsequent durch.
+  Einige Bullet Points enden mit Punkt, andere nicht. Entscheide dich für eine Variante und ziehe sie durch den gesamten Lebenslauf.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,34 +46,34 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals erworben hast, kannst du dies als Bullet unter dem passenden Abschluss ergänzen.
+- Falls du am HSG Mentoring Programme oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals teilgenommen hast, kannst du das als Bullet ergänzen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Wo du ein echtes Ergebnis, eine Veränderung oder einen messbaren Beitrag zeigen kannst, ergänze dies als Teil des Bullets – aber nur, wenn es belegbar ist.
-- Achte darauf, dass die Zeichensetzung am Ende der Bullets einheitlich ist (entweder alle mit Punkt oder alle ohne).
+- Überarbeite die Bullet Points so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, die Umsetzung und das dahinterstehende Skill zeigen.
+- Wo du ein echtes Ergebnis oder eine Veränderung erreicht hast, ergänze dies – aber nur, wenn es belegbar ist.
+- Achte darauf, dass die Zeichensetzung bei allen Bullets einheitlich ist (entweder alle mit Punkt oder alle ohne).
 
 **ORGANISATIONEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze zu jeder Rolle Bullet Points, die deine konkreten Aufgaben, Verantwortlichkeiten und den Beitrag zur Organisation beschreiben – z.B. was du organisiert, koordiniert oder umgesetzt hast.
-- Falls du in einem HSG-Club eine aktive Rolle übernommen hast, beschreibe diese mit Bullet Points, damit dein Engagement und deine Soft Skills sichtbar werden.
-- Ergänze bei den Datumsangaben auch hier den Monat, nicht nur das Jahr.
+- Füge zu jeder Rolle Bullet Points hinzu, die deine Aufgaben, Verantwortlichkeiten und den Beitrag zur Organisation beschreiben – z.B. was du organisiert, koordiniert oder umgesetzt hast.
+- Wenn du in einem HSG-Club eine aktive Rolle übernommen hast, beschreibe diese mit Bullet Points, damit dein Engagement sichtbar wird.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Angabe von Sprachniveau und Zertifikaten macht deine Sprachkenntnisse für Leser transparent und vergleichbar.
+- Die Angabe von Sprachkenntnissen mit Zertifikaten und Niveaus ist überzeugend und für Recruiter direkt verständlich.
 
 **SKILLS** 🟢 Stark
 
-- Die Auflistung von Tools und Zertifikaten zeigt deine fachlichen Kompetenzen auf einen Blick.
+- Die Auflistung von Tools und Zertifikaten gibt einen guten Überblick über deine Hard Skills.
 
 **CERTIFICATIONS** 🟢 Stark
 
-- Die Zertifikate sind klar benannt und machen Zusatzqualifikationen für den Leser direkt sichtbar.
+- Die Zertifikate sind mit Titel und Niveau angegeben, was deine Zusatzqualifikationen transparent macht.
 
 **INTERESTS** 🟢 Stark
 
-- Die Auswahl an Interessen zeigt verschiedene Facetten deiner Persönlichkeit und ergänzt das Gesamtbild.
+- Die Interessen geben einen guten Einblick in deine persönlichen Schwerpunkte und runden das Profil ab.
 
 **Kurzprofil** ⚪ Fehlt
 

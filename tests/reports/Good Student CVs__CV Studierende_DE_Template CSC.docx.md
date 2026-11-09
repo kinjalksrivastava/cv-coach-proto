@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist strukturiert, übersichtlich und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Station in der Berufserfahrung sowohl mit einer Positionsbezeichnung als auch mit einer Beschreibung versehen ist. Die Angaben zu deinen Sprach- und IT-Kenntnissen sind klar und nachvollziehbar. Es gibt aktuell keinen Bezug zu KI oder AI-Tools – falls du hier relevante Erfahrungen hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich das Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen.
+Dein Lebenslauf ist insgesamt gut strukturiert und deckt alle wichtigen Bereiche ab. Besonders positiv fällt auf, dass jede Station deiner Berufserfahrung sowohl eine Positionsbezeichnung als auch eine Beschreibung enthält. Die Angaben zu deinen Sprach- und IT-Kenntnissen sind klar und nachvollziehbar. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools (z.B. im Studium, in Projekten, im Job oder als Skill) aufgeführt ist – falls du hier relevante Kenntnisse hast, könntest du diese ergänzen. Da kein Zieljob oder Stellenanzeige angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Position kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern auch deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Kompetenzen zeigen. Ein Ergebnis oder eine Veränderung hilft, wenn du diese belegen kannst.
+  Überarbeite die betroffenen Bullet Points in der Berufserfahrung so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag, das Vorgehen und die dahinterstehenden übertragbaren Fähigkeiten zeigen. Ein Ergebnis ist hilfreich, wenn es belegbar ist, aber der Fokus sollte auf der Kompetenz liegen.
 - 🔴 **Die meisten Bullets beschreiben die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  Gehe jede Bullet Point in der Berufserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Wo ein echtes Ergebnis vorliegt, ergänze es – aber nur, wenn es belegbar ist.
+  Gehe jede Bullet Point in der Berufserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit wird dadurch sichtbar? Wo ein echtes Ergebnis vorliegt, ergänze es – aber erfinde keine Zahlen.
 - 🟡 **Notenskala der Matura klären**  
-  Die angegebene Note für die Matura (5.0/6.0) entspricht keiner international gängigen Skala. Bitte gib an, welches Bewertungssystem hier zugrunde liegt, damit Recruiter die Leistung richtig einordnen können.
+  Die angegebene Note für die Matura (5.0/6.0) entspricht keiner international gängigen Skala. Bitte gib an, auf welcher Skala diese Note basiert, damit Recruiter sie richtig einordnen können.
 - 🟡 **Noten sind nur teilweise angegeben**  
-  Noten sind grundsätzlich freiwillig, aber wenn du sie bei manchen Abschlüssen angibst und bei anderen nicht, gehen Recruiter meist davon aus, dass die fehlende Note schwächer war. Überlege, ob du die Noten entweder konsequent ergänzt oder ganz weglässt.
-- 🟡 **Interessen als Stichworte**  
-  Einzelne Interessen als Stichworte sind völlig in Ordnung. Überlege nur, ob du ein oder zwei davon mit kurzen Details versiehst, falls sie eine besondere Fähigkeit oder ein interessantes Niveau zeigen – das ist aber optional.
+  Du zeigst Noten für einige, aber nicht alle Abschlüsse. Recruiter nehmen bei fehlenden Noten oft an, dass diese schwächer waren. Überlege, ob du die fehlenden Noten ergänzen oder alle Noten weglassen möchtest – die Entscheidung liegt bei dir.
+- 🟡 **Interessen als Einzelwörter**  
+  Einzelne Interessen als Stichworte sind völlig in Ordnung. Überlege nur, ob du bei ein oder zwei davon mit wenigen Worten das Niveau oder eine Besonderheit hervorheben möchtest, wenn sie etwas Interessantes über dich oder eine Fähigkeit zeigen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -49,22 +49,21 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Bitte gib an, welches Notensystem bei der Matura verwendet wurde, damit die Note eingeordnet werden kann.
-- Überlege, ob du die Noten für alle Abschlüsse entweder ergänzt oder ganz weglässt, um ein einheitliches Bild zu vermitteln.
+- Überlege, ob du die fehlenden Noten für die anderen Abschlüsse ergänzen oder alle Noten weglassen möchtest, da Recruiter bei Lücken oft von schwächeren Leistungen ausgehen.
 
 > **Zu den Noten:** Sei dir bewusst, dass Recruiter bei fehlenden Noten für einzelne Ausbildungsstationen automatisch annehmen, dass diese Noten schlechter waren als die, die du angegeben hast.
 
 **EXTRAKURRIKULÄRES ENGAGEMENT** 🟢 Stark
 
-- Die Darstellung hebt Führungs- und Organisationskompetenzen durch konkrete Rollen und Aufgaben hervor.
+- Die Darstellung hebt Führungs- und Organisationskompetenzen durch konkrete Beispiele hervor.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu Sprachen und IT-Tools sind differenziert und nachvollziehbar dargestellt.
+- Die Angabe von Sprachleveln (inklusive CEFR) und IT-Kenntnissen mit Niveau macht deine Kompetenzen für Recruiter direkt einschätzbar.
 
 **ZERTIFIKATE & KURSE** 🟢 Stark
 
-- Die Zertifikate und Kurse ergänzen dein Profil sinnvoll und zeigen Zusatzqualifikationen.
+- Die Auswahl zeigt Zusatzqualifikationen, die dein Profil abrunden.
 
 **INTERESSEN** 🟢 Stark
 

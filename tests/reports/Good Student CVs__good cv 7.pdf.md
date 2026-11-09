@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, with clear section headings and a strong set of professional experiences, each with a role title and description. Grades are presented with their maximum value, making them easy to interpret internationally. However, this review covers structure and completeness only, as no target role or job description was provided—role-specific feedback is available if you add a target. Nothing on your CV currently refers to AI experience in coursework, projects, jobs, or skills; if you have relevant exposure, consider adding it.
+Your CV is well-structured and concise, fitting neatly onto one page and providing a clear overview of your academic and professional journey. The inclusion of both role titles and descriptions in your professional experience is a real strength, and your grades are presented in a way that is easy for international readers to interpret. However, since you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring your CV to a specific position. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Academic Experience**  
-  Currently, your degrees list only the qualification, grade, and dates, which tells a reader little about your academic focus or achievements. Add a line or two under each degree where you have relevant content—such as key modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes—focusing on what is most relevant to your future applications.
-- 🟠 **Strengthen experience bullets with outcomes and skills**  
-  Most of your experience bullets describe tasks rather than the skills you used or the results you achieved. For each, clarify what you did, how you did it, why it mattered, and what transferable skill it demonstrates. Where you have a measurable result, include it, but only if it is accurate and appropriate.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, your degrees list only the qualification, grade, and dates. Add a line or two under each degree where you have relevant content—such as key modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes—to give recruiters a fuller picture of your academic experience.
+- 🔴 **Strengthen experience bullets with outcomes and skills**  
+  Many of your professional experience bullets describe tasks but do not highlight the skills you used or the results achieved. For each, clarify what you did, how you did it, and why it mattered, focusing on transferable skills and measurable outcomes where possible.
 - 🟠 **Make bullet punctuation consistent**  
-  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
-- 🟡 **Consider whether to show your Bachelor's grade**  
-  Grades are optional on a CV and are commonly included from 5.00 upward. If your grade is below this, it is worth discussing with a Career Services coach whether to show it. The decision is yours.
-- 🟡 **Be consistent in showing grades across degrees**  
-  Showing grades for some degrees but not others can lead a recruiter to assume that omitted grades are weaker. Decide whether to show grades for all degrees or none, based on what best supports your application.
+  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+- 🟡 **Grade visibility for your bachelor's degree**  
+  Grades are optional on a CV and are commonly included from 5.00 upward. Since your bachelor's grade is below this, consider whether you want to keep it visible or discuss with a Career Services coach.
+- 🟡 **Grade consistency across degrees**  
+  Grades are shown for some degrees but not others. Recruiters may assume a missing grade was omitted for a reason. Decide whether to add missing grades or remove those shown, based on what best supports your application.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,25 +45,22 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 **Academic Experience** 🟠 Needs attention
 
 - Add a line or two under each degree where you have relevant content, such as key modules, thesis details (including what you actually did), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme or the Certificate in Data Science Fundamentals (DSF), if applicable.
-- For your Bachelor's grade (4.84 / 6.0), note that grades are commonly included from 5.00 upward. If you are unsure whether to keep it, discuss with a Career Services coach.
-- If you have AI-related coursework, projects, or certificates, consider adding them here to highlight relevant experience.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **Professional Experience** 🟠 Needs attention
 
+- Review each bullet to ensure it covers what you did, how you did it, and the impact or outcome, highlighting transferable skills and measurable results where possible.
 - Make sure bullet punctuation is consistent throughout this section.
-- If you have experience with AI tools or projects in any of these roles, consider adding a bullet to highlight this.
 
 **Extracurriculars** 🟠 Needs attention
 
-- Add a bullet or two under each activity where you played an active role, describing what you did, how you contributed, and any outcomes or skills developed.
-- If you participated in HSG student clubs or similar organisations, and your role was active, include these with a brief description of your involvement.
-- If you have AI-related extracurricular experience, such as participation in a tech club or relevant project, consider adding it here.
+- For each extracurricular role, add a bullet or two describing your specific responsibilities, what you organised or achieved, and any skills you developed.
+- If you have held active roles in HSG student clubs or participated in initiatives like the Consulting Club HSG, consider adding them with details about your involvement.
 
 **Skills & Interests** 🟢 Strong
 
-- Language levels are clearly stated, and technical skills are listed with proficiency, making this section easy for a recruiter to interpret.
+- Grades are given with their maximum, so a reader in another country can interpret them.
 
 **Profile** ⚪ Missing
 

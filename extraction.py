@@ -84,7 +84,7 @@ def _page_text(page) -> str:
 
 def _extract_pdf(file_bytes: bytes) -> tuple[str, dict]:
     text_parts, fonts = [], set()
-    image_count, table_count = 0, 0
+    image_count, table_count, scanned_pages = 0, 0, 0
     with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
         page_count = len(pdf.pages)
         for page in pdf.pages:
@@ -93,7 +93,21 @@ def _extract_pdf(file_bytes: bytes) -> tuple[str, dict]:
                 name = char.get("fontname") or ""
                 # PDF font names are usually subset-tagged, e.g. "ABCDEF+Arial-Bold".
                 fonts.add(name.split("+")[-1].split("-")[0].split(",")[0])
-            image_count += len(page.images or [])
+            # A full-page image is a SCAN, not an illustration. bad cv 10 is
+            # two of them - 596x842pt each, exactly the page, 1-bit greyscale
+            # - with an OCR text layer over the top, which is why its headings
+            # arrive as "EDUCAT10N" and its words as "matenals" and "advismg".
+            # Counting those as "2 embedded images" told the student something
+            # both wrong and useless while the fact that explains every other
+            # finding on their report went unsaid.
+            for image in (page.images or []):
+                covers = (abs((image["x1"] - image["x0"]) - page.width) < page.width * 0.1
+                          and abs((image["bottom"] - image["top"]) - page.height)
+                          < page.height * 0.1)
+                if covers:
+                    scanned_pages += 1
+                else:
+                    image_count += 1
             try:
                 table_count += len(page.find_tables())
             except Exception:
@@ -104,6 +118,7 @@ def _extract_pdf(file_bytes: bytes) -> tuple[str, dict]:
         "fonts": sorted(f for f in fonts if f),
         "image_count": image_count,
         "table_count": table_count,
+        "scanned_pages": scanned_pages,
     }
     return "\n".join(text_parts), meta
 

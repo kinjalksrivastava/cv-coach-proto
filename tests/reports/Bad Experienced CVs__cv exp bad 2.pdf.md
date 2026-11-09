@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a comprehensive and well-structured overview of your extensive actuarial and management experience, with clear role titles and descriptions for each position. The document is in good shape overall, but there are some areas where you can strengthen your impact by focusing more on your specific contributions and the skills you demonstrated, rather than just listing duties. Adding months to your date ranges will help clarify your timeline for readers. Nothing on your CV currently refers to AI or AI tools—if you have relevant experience or coursework, consider including it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; role-specific advice is available if you add a target.
+Your CV presents a substantial and well-structured professional history, with clear role titles and descriptions for each position. The document is in good shape overall, with all standard sections present and a logical flow for a mature professional. However, most of your experience bullets focus on duties rather than highlighting your specific contributions or the skills you demonstrated, so adding more detail about your impact and transferable skills would strengthen your application. No content currently refers to AI or AI tools—if you have relevant experience or skills in this area, consider including them. As no target role or job description was provided, this feedback focuses on structure and completeness; for tailored advice, please share your target position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -11,7 +11,7 @@ _Please note that this is a first feedback, mainly about the structure and conte
 | Check | Status | Comment |
 | --- | --- | --- |
 | Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Conventional section headers, but 2 embedded images — any text inside them is invisible to a parser. |
+| Estimated ATS compatibility | 🟢 Good | No parsing risks detected — conventional section headers. |
 | Spelling and consistency | 🟢 Good | Typos: no obvious typos in headings or dates. Spelling: British/American spelling is used consistently. |
 
 _An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from three things this tool can actually observe: conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many of your bullets in the Employment History section list responsibilities or tasks without showing what you personally achieved or which transferable skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the skills relevant to your next step.
+  Many of your experience bullets list responsibilities without showing what you personally achieved or which skills you demonstrated. Rework these to focus on what you did, how you did it, and why it mattered, highlighting transferable skills.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  The majority of your experience bullets state what was done but do not show the outcome, skill, or impact. For each, clarify what you accomplished, how you approached it, and what skill it demonstrates. Add results where you genuinely have them, but only if appropriate.
+  Nearly all experience bullets state tasks but do not show outcomes, changes, or the skills you used. For each, clarify your actions, the approach you took, and the skill or result, adding outcomes where appropriate and accurate.
 - 🟠 **Dates give the year but not the month**  
-  Your date ranges currently show only years. Add the month to each date range so readers can accurately understand the duration of your roles and studies.
+  Add the month to each date range (e.g., '09/2023 – 06/2024') so readers can distinguish between short and long experiences.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
-- 🟠 **Bullet tense changes within Employment History**  
-  There are tense inconsistencies in your Employment History section. Use past tense for completed roles and present tense for your current position, and keep this consistent within each section.
+  Standardise your bullet punctuation by choosing either to end all bullets with a full stop or none at all, and apply this consistently throughout.
+- 🟠 **Bullet tense changes within EMPLOYMENT HISTORY**  
+  Use past tense for completed roles and present tense for your current position, and keep this consistent within each section.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,21 +45,22 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EMPLOYMENT HISTORY** 🟠 Needs attention
 
-- Rework each bullet to show what you did, how you did it, and why it mattered, highlighting the transferable skills you used or developed.
-- Where possible, add outcomes or results to demonstrate your impact, but only if you can genuinely support them.
-- Choose a consistent punctuation style for all bullets in this section.
+- Revise your bullets to highlight what you did, how you did it, and the skills you demonstrated, rather than just listing responsibilities.
+- For each experience, clarify your actions and the impact or outcome where possible, focusing on transferable skills.
+- Add the month to each date range to provide a clearer timeline of your roles.
+- Choose a consistent approach to bullet punctuation and apply it throughout this section.
 
 **EDUCATION** 🟢 Strong
 
-- Your education section is comprehensive, listing degrees, certifications, and honours clearly.
+- Your education history is well-detailed, showing your academic achievements and ongoing studies.
 
 **ADDITIONAL EXPERIENCE / SKILLS** 🟢 Strong
 
-- This section effectively highlights your professional memberships and language skills.
+- You have clearly listed relevant professional memberships and committee roles, adding depth to your profile.
 
 **ADDITIONAL ACTIVITIES** 🟢 Strong
 
-- You have included a range of extracurricular and community roles, showing engagement beyond your core work.
+- Your extracurricular activities demonstrate community involvement and leadership outside your core employment.
 
 **Profile** ⚪ Missing
 
@@ -67,11 +68,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)), consider adding them here, especially if they are relevant to your target roles.
+- If you have completed relevant courses or certificates (such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)), consider adding them here, especially if they relate to your target field.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies you would like to share, you can add a short section listing them. This is a good place for sports, music, or other personal pursuits.
+- If you have personal interests or hobbies you would like to share, you can add a brief section at the end of your CV.
 
 ### 5. Anything else from HSG worth adding?
 

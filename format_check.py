@@ -51,7 +51,11 @@ TEXT = {
                          "this tool did, so it's worth removing the icons",
         "tables": "{n} table(s) — tables used for layout are a common cause of scrambled "
                   "ATS parsing",
-        "images": "{n} embedded images — any text inside them is invisible to a parser",
+        "scanned": "this file looks like a scan rather than a document exported from "
+                   "Word or Google Docs — that is why some words and headings came "
+                   "through damaged above. Exporting the original as a PDF fixes both "
+                   "at once, and an applicant tracking system reads it the same way "
+                   "this tool did",
         "no_risks": "No parsing risks detected",
         "no_risks_with": "No parsing risks detected — {notes}.",
         "lead_but": "{notes}, but ",
@@ -65,10 +69,14 @@ TEXT = {
         # through and leaves the cause open, which is also more useful: either it
         # is a typo worth fixing, or the file does not extract cleanly, and an
         # ATS will read it exactly the same way.
-        "typo_heading": ('"{written}" came through where "{correct}" was expected. '
-                         'If that is how it is written, it is a quick fix; if not, '
-                         'the file is not extracting cleanly, which an ATS would '
-                         'also struggle with'),
+        "typo_heading": '"{written}" came through where "{correct}" was expected',
+        # Said once, however many headings came through damaged. It used to be
+        # part of the sentence above, so a CV with two damaged headings read
+        # "...which an ATS would also struggle with; ...which an ATS would also
+        # struggle with."
+        "typo_cause": (' If that is how they are written, it is a quick fix; if not, '
+                       'the file is not extracting cleanly, which an ATS would also '
+                       'struggle with'),
         "typo_month": '"{written}" came through where "{correct}" was expected',
         "typos_none": "no obvious typos in headings or dates",
         "writing_comment": "Typos: {typos}. Spelling: {spelling}.",
@@ -106,7 +114,11 @@ TEXT = {
                          "dieses Tool, deshalb lohnt es sich, die Icons zu entfernen",
         "tables": "{n} Tabelle(n) — für das Layout genutzte Tabellen sind eine häufige "
                   "Ursache für fehlerhaftes ATS-Parsing",
-        "images": "{n} eingebettete Bilder — Text darin ist für einen Parser unsichtbar",
+        "scanned": "diese Datei sieht nach einem Scan aus und nicht nach einem aus Word "
+                   "oder Google Docs exportierten Dokument — daher sind oben einzelne "
+                   "Wörter und Titel beschädigt angekommen. Das Original als PDF zu "
+                   "exportieren behebt beides, und ein ATS liest die Datei genauso wie "
+                   "dieses Tool",
         "no_risks": "Keine Parsing-Risiken erkannt",
         "no_risks_with": "Keine Parsing-Risiken erkannt — {notes}.",
         "lead_but": "{notes}, aber ",
@@ -114,10 +126,10 @@ TEXT = {
         "spelling_mixed": "Britische und amerikanische Schreibweisen kommen beide vor "
                           "({items}) — entscheide dich für eine und bleib dabei",
         "spelling_ok": "Britische/amerikanische Schreibweise wird einheitlich verwendet",
-        "typo_heading": ('"{written}" kam an, wo "{correct}" erwartet wurde. Wenn es '
-                         'so geschrieben ist, ist das schnell korrigiert; wenn nicht, '
-                         'lässt sich die Datei nicht sauber auslesen, womit auch ein '
-                         'ATS Mühe hätte'),
+        "typo_heading": '"{written}" kam an, wo "{correct}" erwartet wurde',
+        "typo_cause": (' Wenn es so geschrieben ist, ist das schnell korrigiert; wenn '
+                       'nicht, lässt sich die Datei nicht sauber auslesen, womit auch '
+                       'ein ATS Mühe hätte'),
         "typo_month": '"{written}" kam an, wo "{correct}" erwartet wurde',
         "typos_none": "keine offensichtlichen Tippfehler in Titeln oder Daten",
         "writing_comment": "Tippfehler: {typos}. Schreibweise: {spelling}.",
@@ -299,11 +311,21 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     if meta.get("table_count"):
         problems.append(t["tables"].format(n=meta["table_count"]))
 
-    # One image on a CV in this market is almost always the portrait photo, which
-    # is conventional here and carries no text. Only a cluster of images suggests
-    # content has been baked into graphics where a parser cannot reach it.
-    if meta.get("image_count", 0) > 1:
-        problems.append(t["images"].format(n=meta["image_count"]))
+    # NOT a count of embedded images. Every one of the 19 sample PDFs is a scan -
+    # a full-page 1-bit bitmap per page with an OCR text layer over it - and not
+    # one carries a real illustration, so "2 embedded images, any text inside
+    # them is invisible to a parser" was wrong twice: there was no illustration,
+    # and the text was not invisible, it was OCR'd and mangled. Meanwhile the
+    # fact that explains every typo on the report went unsaid.
+    #
+    # Only said where the damage actually shows. A scan that came through clean
+    # costs the student nothing and is not worth a line of their report; a scan
+    # that mangled their headings is the reason, and the reason is the useful
+    # part.
+    damaged_text = bool((facts or {}).get("heading_typos")
+                        or (facts or {}).get("month_typos"))
+    if meta.get("scanned_pages") and damaged_text:
+        problems.append(t["scanned"])
 
     if not problems:
         comment = (t["no_risks_with"].format(notes=", ".join(notes)) if notes
@@ -339,6 +361,9 @@ def _writing_row(facts: dict, t: dict) -> dict:
     else:
         spelling_note = t["spelling_ok"]
     typo_note = "; ".join(str(p) for p in problems) if problems else t["typos_none"]
+    # The cause is left open once, after the list, rather than after each item.
+    if facts.get("heading_typos"):
+        typo_note += "." + t["typo_cause"]
     status = ATTENTION if (problems or facts.get("mixed_spelling")) else GOOD
     comment = (t["writing_comment"].format(typos=typo_note, spelling=spelling_note)
                if spelling_note else t["writing_typos_only"].format(typos=typo_note))

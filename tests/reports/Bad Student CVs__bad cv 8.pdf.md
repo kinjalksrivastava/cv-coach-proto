@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist bereits sehr umfangreich und zeigt ein breites Spektrum an Erfahrungen, insbesondere im Bereich AI-Governance und Digitalpolitik. Die Rollenbeschreibungen sind durchgehend vorhanden, was einen guten Überblick über deine bisherigen Tätigkeiten gibt. Allerdings gibt es noch Verbesserungspotenzial bei der Darstellung deiner konkreten Beiträge und Ergebnisse in den einzelnen Stationen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Die Rubrik "Interessen" ist aktuell fast leer; entweder solltest du sie mit Inhalt füllen oder entfernen, um keinen unnötigen Fokus auf eine Lücke zu lenken.
+Dein Lebenslauf zeigt bereits eine breite Palette an Erfahrungen in Studium, Praktika und Engagements. Besonders positiv fällt auf, dass du in jedem deiner beruflichen Stationen sowohl die Rolle als auch eine Beschreibung angegeben hast. Da kein Zieljob oder Stellenprofil vorliegt, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Die Rubrik "Interessen" ist aktuell fast leer; entweder solltest du sie mit Inhalt füllen oder entfernen, damit kein unnötiger Fokus auf eine Lücke entsteht. Insgesamt ist dein CV in guter Form, aber einige Punkte – insbesondere die Ausgestaltung der Bullet Points und die Länge – solltest du noch überarbeiten.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -11,7 +11,7 @@ _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau
 | Kriterium | Status | Kommentar |
 | --- | --- | --- |
 | Länge | 🟠 Braucht Aufmerksamkeit | 3 Seiten. Für einen studentischen Lebenslauf wird im Schweizer Markt eine Seite erwartet, höchstens zwei — es lohnt sich zu fragen, welche Inhalte ihren Platz wirklich verdienen. |
-| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Gängige Abschnittstitel, aber 3 eingebettete Bilder — Text darin ist für einen Parser unsichtbar. |
+| Geschätzte ATS-Kompatibilität | 🟢 Gut | Keine Parsing-Risiken erkannt — gängige Abschnittstitel. |
 | Rechtschreibung und Konsistenz | 🟢 Gut | Tippfehler: keine offensichtlichen Tippfehler in Titeln oder Daten. |
 
 _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, keine Garantie — jedes System liest anders._
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **"Interessen" ist fast leer**  
-  Entweder solltest du diese Rubrik mit ein bis zwei aussagekräftigen Interessen füllen oder sie ganz entfernen – eine Überschrift ohne Inhalt lenkt den Blick auf eine Lücke.
+  Entweder solltest du diese Rubrik mit konkreten Interessen füllen oder sie ganz entfernen – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf eine Lücke.
 - 🔴 **Bullets beschreiben Aufgaben, nicht deinen Beitrag**  
-  Überarbeite die Aufzählungspunkte so, dass klar wird, was genau du gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei gezeigt hast. Ein konkretes Ergebnis hilft, wenn es passt.
-- 🔴 **Die meisten Bullets zeigen keine Ergebnisse oder Veränderungen**  
-  Gehe jeden Punkt durch und frage dich: Was habe ich konkret getan? Wie habe ich es gemacht? Warum war das wichtig? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
+  Überarbeite die Bullet Points so, dass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei gezeigt hast. Ein Ergebnis ist hilfreich, wenn es passt, aber der Fokus liegt auf der Kompetenz.
+- 🔴 **Die meisten Bullets zeigen nur Aufgaben, nicht die dahinterstehenden Fähigkeiten**  
+  Gehe jede Bullet Point durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Welche Fähigkeit steckt dahinter? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
 - 🟠 **Punktuation der Bullets ist uneinheitlich**  
-  Entscheide dich für eine Variante (mit oder ohne Punkt am Ende) und ziehe diese durch alle Aufzählungspunkte konsequent durch.
-- 🟡 **Der Lebenslauf ist zu lang (3 Seiten)**  
-  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für dein Ziel am wichtigsten sind, und kürze den Rest.
+  Entscheide dich für eine Variante (mit oder ohne Punkt am Ende) und ziehe diese konsequent durch.
+- 🟡 **Der Lebenslauf ist 3 Seiten lang**  
+  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für dein Ziel am wichtigsten sind, und kürze entsprechend.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,28 +45,29 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Bestätige bitte, ob deine Abiturnote tatsächlich 1,3 ist oder ob es sich um einen Tippfehler handelt (im CV steht '17'). Schreibe sie als 1,30 / 1,00 und gib die Skala an, damit sie international verständlich ist.
-- Falls du am HSG Mentoring Programme oder am Certificate in Data Science Fundamentals teilnimmst, könntest du dies als Bullet ergänzen – aber nur, wenn es relevant ist.
+- Bestätige bitte, ob deine Abiturnote tatsächlich 1,7 ist, und gib sie als 1,70 / 1,00 an – die Skala sollte immer mit auf dem CV stehen, damit sie international verständlich ist.
+- Falls du relevante Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) hast, könntest du diese ergänzen.
+- Wenn du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilnimmst, kannst du dies als Bullet unter deinem Studium aufführen.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullets so, dass sie deinen konkreten Beitrag, die Herangehensweise und – wo möglich – das Ergebnis oder die erlernte Fähigkeit sichtbar machen.
-- Frage dich bei jedem Punkt: Was genau habe ich gemacht? Wie habe ich es umgesetzt? Was war das Ergebnis oder die Wirkung? Welche übertragbare Fähigkeit steckt dahinter?
-- Wähle eine einheitliche Punktuation für alle Bullets.
-- Überlege, welche Erfahrungen für dein Ziel am wichtigsten sind, und kürze weniger relevante Stationen, um auf maximal zwei Seiten zu kommen.
+- Überarbeite die Bullet Points so, dass sie deinen persönlichen Beitrag, die Vorgehensweise und – wo möglich – das Ergebnis oder die erlernte Fähigkeit hervorheben.
+- Frage dich bei jeder Bullet: Was genau habe ich gemacht? Wie bin ich vorgegangen? Warum war das wichtig? Welche Fähigkeit habe ich dabei gezeigt?
+- Achte darauf, die Punktuation der Bullets einheitlich zu gestalten (entweder alle mit Punkt oder alle ohne).
+- Da der Lebenslauf aktuell 3 Seiten umfasst, prüfe, welche Erfahrungen für dein Ziel am relevantesten sind, und kürze gegebenenfalls weniger relevante Stationen oder Aufgaben.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Angabe der Sprachlevel ist bereits vorhanden; für noch mehr Klarheit könntest du bei allen Sprachen das CEFR-Niveau (A1–C2) ergänzen, da dies international eindeutig verstanden wird.
+- Die klare Trennung zwischen Sprachkenntnissen und Engagements sorgt für Übersichtlichkeit.
 
 **Interessen** 🟠 Braucht Aufmerksamkeit
 
-- Entweder fügst du ein bis zwei Interessen hinzu, die dich wirklich auszeichnen oder für dein Ziel relevant sind, oder du entfernst die Rubrik ganz.
-- Wenn eines deiner Interessen eine besondere Fähigkeit oder ein Engagement zeigt, kannst du es mit einem kurzen Zusatz versehen (z.B. 'Klavier (seit 10 Jahren)' oder 'Angeln (Wettbewerbsteilnahmen)'). Das ist optional – Einzelwörter sind grundsätzlich akzeptabel.
+- Entweder solltest du hier konkrete Interessen (z.B. Sportarten, Instrumente, besondere Hobbys) aufführen oder die Rubrik ganz entfernen.
+- Einzelne Interessen als Stichworte sind völlig in Ordnung; falls eines davon besonders aussagekräftig ist oder eine Fähigkeit zeigt, kannst du es mit ein bis zwei Worten ergänzen.
 
 **Engagements** 🟢 Stark
 
-- Die Darstellung deiner aktiven Rollen und Verantwortlichkeiten in studentischen Initiativen ist überzeugend und hebt deine Eigeninitiative hervor.
+- Die Darstellung deiner aktiven Rollen und Erfolge (z.B. Auszeichnungen bei MUN-Konferenzen) zeigt Engagement und Verantwortungsbewusstsein.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -74,7 +75,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Zusatzkurse (z.B. das Certificate in Data Science Fundamentals oder Bloomberg Market Concepts) absolviert hast, kannst du sie hier aufführen.
+- Falls du Zertifikate wie das [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) oder andere relevante Kurse abgeschlossen hast, kannst du sie hier mit Abschlussdatum und ggf. kurzer Beschreibung ergänzen.
 
 ### 5. Daten, die auffallen könnten
 

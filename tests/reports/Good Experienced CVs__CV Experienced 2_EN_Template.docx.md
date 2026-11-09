@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a wealth of experience in sales and purchasing, particularly within the Medtech sector, and is well-structured with clear sections. Since you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring to a specific position. There is currently no mention of AI experience or skills—if you have relevant exposure, whether through coursework, projects, or tools, consider adding it. Overall, your CV is in good shape, but there are a few areas where adding detail and clarifying your contributions would make your achievements stand out even more.
+Your CV presents a wealth of experience in sales and purchasing, particularly within the Medtech sector, and is well-structured with clear sections. Since you have not provided a target role or job description, this feedback focuses on structure and completeness rather than tailoring to a specific position. If you have experience with AI tools or projects, consider adding this, as nothing currently on your CV refers to AI. The main areas to address are adding more detail under your education and ensuring every professional experience entry is supported by descriptive bullets that highlight your contributions and skills.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in your Education section**  
-  Currently, your education entries only list the qualification and dates. Add a line or two under each degree where you have something relevant: modules, thesis topic and what you actually did, exchange semesters, certificates, scholarships, or mentoring programmes. Only include what is true and relevant to your future applications.
-- 🔴 **Add descriptions to all Professional Experience entries**  
-  One of your roles in the Professional Experience section has no bullets or description. Add a few bullets under each entry, focusing on what you did, how you did it, and what changed as a result, especially highlighting transferable skills.
-- 🟠 **Rework duty-only bullets to show your contribution**  
-  Some bullets currently just state a task or duty. Revise these to explain what you did, how you did it, and why it mattered, making sure to highlight the transferable skill each bullet demonstrates.
-- 🟠 **Add outcomes or skills to task-focused bullets**  
-  Most of your experience bullets describe tasks without showing the outcome or the skill behind them. Where possible, add what changed as a result of your work, or clarify which transferable skill each bullet is meant to show.
-- 🟠 **Ensure consistent bullet tense in Professional Experience**  
-  Bullet tense changes within your Professional Experience section. Use past tense for completed roles and present tense for your current position, and keep this consistent throughout the section.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, your education entries only state the qualification and dates. Add a line or two under each degree where you have relevant content: modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes—only what is true and relevant to your future applications.
+- 🔴 **Ensure every professional experience entry has descriptive bullets**  
+  One of your roles in 'PROFESSIONAL EXPERIENCE' has no bullets or description. Add a few bullets under each entry, focusing on what you did, how you did it, and what changed as a result, especially highlighting transferable skills.
+- 🟠 **Rework duty-only bullets to show your contribution and skills**  
+  Some bullets only state a task or duty. Revise these to explain what you did, how you did it, why it mattered, and which transferable skill it demonstrates. Add results where you genuinely have them.
+- 🟠 **Add outcomes and skills to experience bullets**  
+  Most experience bullets describe tasks but not the outcome or the skill behind them. For each, clarify what you did, how, why it mattered, and what skill it shows. Add results where appropriate and accurate.
+- 🟠 **Use consistent tense in your experience section**  
+  Your experience section switches between present and past tense. Use past tense for completed roles and present tense for your current position, and keep this consistent throughout the section.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,33 +45,34 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively summarises your experience, sector focus, and key strengths in a way that would engage a recruiter.
+- Your profile clearly highlights your extensive experience and key strengths in sales and purchasing within the Medtech industry.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Add descriptive bullets under any entry that currently lacks them, especially for roles like "Medtech AG, St. Gallen, Switzerland 06/2008 – 06/2019" where there is no description.
-- Revise bullets that only state duties to clarify your specific contribution, how you achieved results, and which transferable skills you demonstrated.
-- Where possible, add outcomes or results to your bullets, or specify the skill each bullet is meant to highlight.
+- Add descriptive bullets under every role, especially for entries currently missing them, to show what you did, how, and the results achieved.
+- Revise bullets that only state duties to explain your specific contribution, the skills demonstrated, and the impact of your work.
+- For each bullet, clarify the outcome or skill behind the task where possible, focusing on what is most relevant for your future applications.
 
 **EDUCATION** 🟠 Needs attention
 
-- If you participated in the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) or earned a certificate such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding these under the relevant degree, if they are relevant to your future applications.
+- Add a line or two under each degree with relevant details such as key modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or participation in programmes like the [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) if applicable.
+- If you have completed any additional certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), consider adding them here or in a separate Courses and Certificates section.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- Your description of your Red Cross involvement shows concrete actions and social contribution.
+- Your extracurricular section demonstrates engagement and social responsibility through your work with the Red Cross.
 
 **LANGUAGE AND IT SKILLS** 🟢 Strong
 
-- You have provided both language proficiency (including CEFR levels) and IT skills with levels, making it easy for a recruiter to assess your capabilities.
+- You have provided both language proficiency and IT skill levels, making it easy for a reader to assess your capabilities.
 
 **INTERESTS** 🟢 Strong
 
-- Single-word or brief interests are perfectly acceptable; if you wish, you could expand on one or two to highlight a skill or unique aspect, but this is optional.
+- Your interests are clearly stated; if you wish, you could expand on one or two to show a skill or unique aspect, but this is optional.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed any relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), you could add them here to further demonstrate your skills.
+- If you have completed any relevant courses or certificates, such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

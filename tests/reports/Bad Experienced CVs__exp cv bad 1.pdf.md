@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und auf einer Seite gehalten, was für Studierende oder Berufseinsteiger ideal ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools in deinem CV erwähnt wird – falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und auf einer Seite gehalten, was für Berufseinsteiger und Studierende ideal ist. Die wichtigsten Stationen deines Werdegangs sind klar erkennbar, allerdings fehlen in mehreren Abschnitten die inhaltlichen Details, die deine Kompetenzen und Erfahrungen für Leser:innen greifbar machen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass keinerlei Erfahrung mit KI oder KI-Tools erwähnt wird – falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -11,23 +11,23 @@ _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau
 | Kriterium | Status | Kommentar |
 | --- | --- | --- |
 | Länge | 🟢 Gut | 1 Seite — passend für einen Lebenslauf zu Studienzeiten oder am Berufseinstieg. |
-| Geschätzte ATS-Kompatibilität | 🟢 Gut | Keine Parsing-Risiken erkannt — gängige Abschnittstitel. |
+| Geschätzte ATS-Kompatibilität | 🟠 Braucht Aufmerksamkeit | Gängige Abschnittstitel, aber diese Datei sieht nach einem Scan aus und nicht nach einem aus Word oder Google Docs exportierten Dokument — daher sind oben einzelne Wörter und Titel beschädigt angekommen. Das Original als PDF zu exportieren behebt beides, und ein ATS liest die Datei genauso wie dieses Tool. |
 | Rechtschreibung und Konsistenz | 🟠 Braucht Aufmerksamkeit | Tippfehler: "OKI 2019" kam an, wo "Okt 2019" erwartet wurde. |
 
 _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, keine Garantie — jedes System liest anders._
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu deinen Abschlüssen fehlen**  
-  Unter deinen Ausbildungsstationen stehen aktuell nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
-- 🔴 **Berufliche Stationen ohne Beschreibung**  
-  Bei den meisten Positionen im Bereich Berufserfahrung fehlen kurze Stichpunkte zu deinen Aufgaben und Erfolgen. Füge unter jeder Station einige Bullet Points hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und welches Ergebnis oder welche Fähigkeit daraus hervorgeht – mit Fokus auf übertragbare Kompetenzen.
-- 🔴 **Freizeit fast leer**  
-  Der Abschnitt Freizeit enthält nur zwei Stichworte. Entweder ergänzt du hier noch ein, zwei interessante Details oder du entfernst die Rubrik ganz – eine leere Überschrift lenkt den Blick auf die Lücke.
-- 🟠 **Stichpunkte beschreiben Aufgaben, nicht deinen Beitrag**  
-  Die vorhandenen Bullet Points nennen meist nur Tätigkeiten. Überarbeite sie so, dass klar wird, was genau du gemacht hast, wie du dabei vorgegangen bist und warum das für die nächste Stelle relevant ist. Ein konkretes Ergebnis hilft, wenn es belegbar ist.
-- 🟠 **Stichpunkte zeigen selten die dahinterliegende Fähigkeit**  
-  Fast alle Stichpunkte beschreiben nur Aufgaben, aber nicht, welche Fähigkeit du dabei eingesetzt oder entwickelt hast. Überlege bei jedem Punkt: Was habe ich konkret getan, wie, und welche Kompetenz zeigt das? Ein Ergebnis ergänzt den Punkt, wenn es passt.
+- 🔴 **Deine Abschlüsse enthalten außer Abschluss und Datum keine weiteren Angaben**  
+  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, Schwerpunkte, Abschlussarbeiten, Austauschsemester oder Zusatzqualifikationen aufführst – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Einträge in "BERUFLICHE ERFAHRUNG" sind nicht beschrieben**  
+  Ergänze unter jeder Position Stichpunkte, die beschreiben, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Fähigkeiten.
+- 🔴 **"FREIZEIT" ist fast leer**  
+  Entweder entwickle diesen Abschnitt weiter, indem du ein bis zwei Interessen mit kurzen Details versiehst, oder entferne ihn ganz – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte so um, dass sie deinen eigenen Beitrag, das Vorgehen und die dahinterstehenden Kompetenzen zeigen – ein konkretes Ergebnis hilft, wenn es belegbar ist.
+- 🟠 **Die meisten Stichpunkte beschreiben nur die Aufgabe, nicht die dahinterstehende Fähigkeit**  
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht, wie, warum war das wichtig und welche übertragbare Fähigkeit zeigt das? Ergänze ein Ergebnis, wenn es passt und belegbar ist.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -47,34 +47,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **SKILLS** 🟢 Stark
 
-- Die Skills sind als eigene Rubrik klar erkennbar.
+- Die Skills sind klar aufgeführt und geben einen schnellen Überblick über deine Eigenschaften.
 
 **SPRACHEN** 🟠 Braucht Aufmerksamkeit
 
-- Füge bei jeder Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, Muttersprachler) – idealerweise nach dem CEFR-Standard (A1–C2), da Recruiter diese Einordnung überall gleich verstehen.
+- Füge für jede Sprache ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fließend, Muttersprachler) und ergänze idealerweise das CEFR-Level (A1–C2), da dies für Recruiter:innen eindeutig ist.
 
 **FREIZEIT** 🟠 Braucht Aufmerksamkeit
 
-- Entscheide, ob du diesen Abschnitt mit ein, zwei interessanten Details zu deinen Hobbys ausbaust (z.B. welche Sportart, auf welchem Niveau), oder ob du ihn ganz entfernst – eine fast leere Rubrik wirkt wie eine Lücke.
-- Wenn du dich auf eine bestimmte Stelle bewirbst, kannst du überlegen, ob ein Hobby einen Bezug zur Zielrolle hat und dies gezielt hervorheben.
+- Überlege, ob du ein bis zwei Interessen mit kurzen Details versiehst, die etwas über dich aussagen oder eine Fähigkeit zeigen – das ist optional, aber kann den Abschnitt aufwerten.
+- Alternativ kannst du den Abschnitt entfernen, wenn du keine weiteren Angaben machen möchtest.
 
 **REFERENZEN** 🟢 Stark
 
-- Referenzen sind als Rubrik vorhanden und werden auf Anfrage angeboten.
+- Die Angabe 'auf Anfrage' ist für den deutschen Sprachraum üblich und ausreichend.
 
 **BERUFLICHE ERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag und die dahinterliegende Kompetenz zeigen.
-- Achte darauf, Tippfehler wie "OKI 2019" zu korrigieren.
-- Füge bei den Zeiträumen jeweils den Monat hinzu (z.B. "09/2019 – 12/2020"), damit der Umfang der Tätigkeit klar wird.
-- Wenn du dich auf eine bestimmte Stelle bewirbst, prüfe, welche Erfahrungen und Fähigkeiten aus diesem Abschnitt besonders relevant sind und hebe sie hervor.
+- Überarbeite bestehende Stichpunkte so, dass sie deinen eigenen Beitrag und die dahinterstehenden Kompetenzen zeigen, nicht nur die Aufgabe.
+- Füge bei den Zeitangaben die Monate hinzu, damit der Umfang der jeweiligen Stationen klar wird.
+- Korrigiere Tippfehler wie 'OKI 2019' zu 'Okt 2019'.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Abschluss ein bis zwei Zeilen zu relevanten Inhalten hinzu: z.B. wichtige Module, Abschlussarbeit (mit Thema und Vorgehen), Austauschsemester, Zertifikate oder besondere Programme wie das [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) – immer nur, was wirklich zutrifft.
-- Ergänze bei den Zeiträumen jeweils den Monat (z.B. "09/2016 – 06/2019").
-- Für eine studentische Bewerbung empfiehlt es sich, den Abschnitt Ausbildung vor die Berufserfahrung zu setzen, es sei denn, du hast bereits mehrere Jahre relevante Berufserfahrung.
-- Wenn du dich auf eine bestimmte Stelle bewirbst, kannst du gezielt die Inhalte hervorheben, die für die Zielrolle besonders relevant sind.
+- Füge unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, Abschlussarbeiten, Austauschsemestern oder Zusatzqualifikationen hinzu, sofern vorhanden.
+- Ergänze bei den Zeitangaben die Monate, damit der zeitliche Rahmen klar wird.
+- Falls du an HSG-spezifischen Programmen wie dem [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) oder Zertifikaten wie dem [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) teilgenommen hast, kannst du diese als Bullet unter dem jeweiligen Abschluss ergänzen – aber nur, wenn es zutrifft.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -82,11 +80,11 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Ausserschulisches Engagement** ⚪ Fehlt
 
-- Falls du dich in Vereinen, Initiativen, Komitees oder ehrenamtlich engagierst, kannst du diese Erfahrungen mit kurzen Stichpunkten zu Aufgaben und Kompetenzen ergänzen.
+- Falls du dich außerhalb von Studium und Beruf engagierst, ergänze diesen Abschnitt mit Rolle, Zeitraum und kurzen Stichpunkten zu deinen Aufgaben und Lernerfahrungen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Wenn du relevante Kurse oder Zertifikate hast (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), kannst du sie hier aufführen – immer nur, was für deine nächste Bewerbung wirklich zählt.
+- Wenn du zusätzliche Kurse oder Zertifikate wie z.B. das [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) absolviert hast, kannst du diese hier mit Abschlussdatum ergänzen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a strong professional background with clear achievements and quantifiable results, especially in innovation and consulting roles. The structure and completeness feedback below is based on your current CV, as no specific target role or job description was provided—if you add a target, more tailored advice can be given. Your education section is well-detailed, with grades and relevant coursework clearly stated. There are some areas in your professional experience section that would benefit from additional detail and consistency, and a few minor improvements could further strengthen your skills and interests sections. If you have experience with AI, either in coursework, projects, or professional roles, consider adding it, as nothing currently on your CV highlights this.
+Your CV presents a strong professional background with clear achievements and quantifiable results, especially in innovation and business development. The structure covers all key sections, and your education details are well explained, including grades with their maximum for clarity. Since you have not provided a specific target role or job description, this feedback focuses on structure and completeness; if you add a target, I can give more tailored advice. One area to address is that some experience entries lack descriptions, and a few bullets could better highlight your personal contribution and skills. If you have relevant AI experience, consider adding it, as nothing currently on your CV shows this in coursework, projects, jobs, or skills.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Add descriptions to all professional experience entries**  
-  One of your roles in the 'PROFESSIONAL EXPERIENCE' section is missing bullet points or a description. Add a few bullets under each position, focusing on what you did, how you did it, and what changed as a result, especially highlighting transferable skills.
-- 🔴 **Rework duty-based bullets to show your contribution**  
-  Some bullets in your professional experience section only state duties or titles. Rework these to clarify your specific actions, how you approached them, and the skills demonstrated, ideally with a result where possible.
-- 🟠 **Ensure consistent tense in professional experience**  
-  There are tense changes within your professional experience section. Use present tense for your current role and past tense for previous roles, and keep this consistent throughout.
-- 🟠 **Consider section order: education before experience for student CVs**  
-  For most student CVs, education typically comes before work experience unless you have several years of directly relevant professional experience. Consider whether reordering would better suit your situation.
-- 🟡 **Consider adding detail to interests**  
-  Single-word interests are acceptable, but if one or two could say something interesting about you or show a skill, consider adding a brief description. This is optional and only needed where it adds value.
+- 🔴 **Entries in "PROFESSIONAL EXPERIENCE" have no description**  
+  Add a few bullets under each experience entry that currently lacks them, focusing on what you did, how you did it, and what changed as a result—especially highlighting transferable skills.
+- 🔴 **Bullets describe duties rather than contribution**  
+  Rework bullets that only state a task or duty to show your specific actions, how you approached them, and the skills demonstrated. Where possible, include the impact or result.
+- 🟠 **Bullet tense changes within "PROFESSIONAL EXPERIENCE"**  
+  Choose either past or present tense for each role and keep it consistent throughout the section—use present tense for your current job and past tense for previous roles.
+- 🟠 **Education comes after work experience**  
+  For a student CV, education usually comes before work experience unless you have several years of directly relevant work. Consider moving your education section up if you want to emphasise your academic background.
+- 🟡 **Interests are listed as single words**  
+  Single-word interests are fine, but if one or two could say something interesting about you or show a skill, consider adding a short phrase for context. This is optional.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,35 +45,35 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **PROFILE** 🟢 Strong
 
-- It effectively summarises your experience, focus areas, and approach, setting the tone for the rest of your CV.
+- It effectively summarises your expertise, leadership, and interest in innovation, setting the tone for the rest of your CV.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Add bullet points under the 'Swiss Consulting AG, Zurich, Switzerland 06/2017 – 01/2021' entry to describe your responsibilities and achievements in that period.
-- Rework bullets that only state duties or titles (such as 'Lead Innovation Manager Switzerland', 'Business Development Associate', and 'Working Student, Business Development (40%)') to clarify what you did, how you did it, and the skills you demonstrated.
-- If you later target a specific role, highlight the experience and skills in this section that match the requirements of that position.
+- Add descriptive bullets under the 'Swiss Consulting AG, Zurich, Switzerland 06/2017 – 01/2021' entry, focusing on what you did, how, and the impact.
+- Rework bullets that only state a duty (such as 'Lead Innovation Manager Switzerland', 'Business Development Associate', 'Working Student, Business Development (40%)') to clarify your specific actions, methods, and the skills you used.
+- Ensure tense is consistent within each role—use present tense for your current position and past tense for previous ones.
+- If you want your CV to speak more directly to a specific role or advert in the future, highlight experience and skills that match the requirements in this section.
 
 **EDUCATION** 🟢 Strong
 
-- You have included grades with their maximum, making them easy to interpret for readers from different countries.
+- You provide grades with their maximum, making them easy to interpret for readers from different countries.
 
 **EXTRA-CURRICULAR ACTIVITIES** 🟢 Strong
 
-- You provide concrete examples of your mentoring and volunteering, showing communication and leadership skills.
+- Your bullets describe what you did and the skills developed, such as communication and mentoring.
 
 **ADDITIONAL SKILLS** 🟠 Needs attention
 
-- Trait words like 'analytical thinking' should be demonstrated in your experience bullets rather than listed as standalone skills.
-- For each technical skill and language, ensure you include a proficiency level (e.g., 'Python (beginner)', 'English (C1)').
-- If you have completed relevant certifications or online courses, you could add them here or in a separate 'Courses and Certificates' section.
+- Move trait words like 'analytical thinking' into experience bullets where you can show how you demonstrated them, rather than listing them as standalone skills.
+- If you have completed relevant certifications, such as the [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) or HSG's [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), consider adding them here or in a separate Courses and Certificates section.
 
 **INTERESTS** 🟢 Strong
 
-- You mention specific activities and achievements, such as participating in the Lake Zurich Crossing and singing in a choir, which add personality to your CV.
+- You include both personal and group pursuits, and mention specific achievements such as participating in the Lake Zurich Crossing.
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certifications (such as the MIT edX or IBM Coursera courses you mention), consider adding a dedicated section to make these stand out.
+- If you have completed additional courses or certificates (such as the [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) or online courses), you could add them here to highlight further expertise.
 
 ### 5. Anything else from HSG worth adding?
 

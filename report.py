@@ -888,6 +888,21 @@ FAILURE_TEXT = {
 
 # --- PDF export ---------------------------------------------------------------
 
+def _PDF_SAFE(ch: str) -> bool:
+    """Can the PDF's base font draw this character?"""
+    # WinAnsi (cp1252), which is what ReportLab's built-in fonts use - NOT
+    # Latin-1. The difference matters: the em dash, the smart quotes and the
+    # ellipsis are all in WinAnsi and all over these reports, and testing
+    # against Latin-1 would have stripped them out of every sentence.
+    if ch in "\n\t":
+        return True
+    try:
+        ch.encode("cp1252")
+    except UnicodeEncodeError:
+        return False
+    return True
+
+
 def to_pdf(data: dict, format_rows: list[dict], strings: dict,
            date_findings: list[dict] | None = None,
            notes: list[dict] | None = None,
@@ -943,7 +958,17 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
 
 
     def plain(value) -> str:
-        return (str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+        # The PDF's base font is WinAnsi, which has no glyph for the bullet
+        # marks we quote back as evidence: a CV marked with U+25A0 was told it
+        # uses "unusual bullet or icon characters (> n)" - and there is no "n"
+        # anywhere on that CV. Quoting a character that cannot be drawn proves
+        # nothing and invents a mark the student then looks for in vain. The
+        # markdown report shows them properly; here they are dropped, and the
+        # sentence stands without the example.
+        text = str(value)
+        text = "".join(ch for ch in text if _PDF_SAFE(ch))
+        text = re.sub(r"\(\s*[;,]*\s*\)", "", text)        # an emptied example
+        return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
     words = STATUS_WORDS.get(strings.get("lang", "en"), STATUS_WORDS["en"])
 

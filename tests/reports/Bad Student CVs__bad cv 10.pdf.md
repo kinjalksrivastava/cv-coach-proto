@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear structure and all main sections present. Each work experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, most of your experience bullets currently describe tasks rather than highlighting your personal contribution or the skills you developed—refining these will make your CV much more compelling. Your language skills are well presented, but your current GPA should be clarified for international readers. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is in good shape overall, with a clear structure and all main sections present. Each work experience entry includes both a role title and a description, which helps a recruiter quickly understand your background. However, most of your experience bullets currently describe tasks rather than highlighting your personal contribution or the skills you developed—refining these will make your CV much more compelling. Your language skills are clearly listed with levels, which is a real asset. Nothing on your CV currently mentions AI experience; if you have worked with AI tools or completed relevant coursework or projects, consider adding this. As you have not provided a target role or job description, this feedback focuses on structure and completeness—if you add a specific target, I can give more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -11,15 +11,15 @@ _Please note that this is a first feedback, mainly about the structure and conte
 | Check | Status | Comment |
 | --- | --- | --- |
 | Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Detected: unusual bullet or icon characters (> ►); 2 embedded images — any text inside them is invisible to a parser. |
-| Spelling and consistency | 🟠 Needs attention | Typos: "SKILES & LANGUAGES" came through where "Skills & Languages" was expected. If that is how it is written, it is a quick fix; if not, the file is not extracting cleanly, which an ATS would also struggle with. Spelling: British/American spelling is used consistently. |
+| Estimated ATS compatibility | 🟠 Needs attention | Detected: section headers some parsers may not recognise ("DIPLOMAS & CERTIFICATIONS", "EXTRACURRICULAR & OTHER") — conventional wording such as "Work Experience" or "Education" parses more reliably; unusual bullet or icon characters (> ►); this file looks like a scan rather than a document exported from Word or Google Docs — that is why some words and headings came through damaged above. Exporting the original as a PDF fixes both at once, and an applicant tracking system reads it the same way this tool did. |
+| Spelling and consistency | 🟠 Needs attention | Typos: "EDUCAT10N" came through where "Education" was expected; "SKILES & LANGUAGES" came through where "Skills & Languages" was expected. If that is how they are written, it is a quick fix; if not, the file is not extracting cleanly, which an ATS would also struggle with. Spelling: British/American spelling is used consistently. |
 
 _An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from three things this tool can actually observe: conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
 
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Rework your work experience bullets to focus on what you did, how you did it, and why it mattered—especially the transferable skills you gained. Where possible, add a result or outcome, but only if you can genuinely support it.
+  Revise your work experience bullets to focus on what you personally did, how you did it, and why it mattered—especially the transferable skills you gained. Where possible, add a result or outcome, but only if you can genuinely support it.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
   For each experience bullet, clarify what skill or competency it demonstrates. If you achieved a specific result, include it, but do not invent figures just to fill the space.
 - 🟠 **Bullet punctuation is inconsistent**  
@@ -27,7 +27,7 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 - 🟠 **Bullet tense changes within "WORK EXPERIENCE"**  
   Use past tense for roles that are finished and present tense for roles you are still in, and keep this consistent within the section.
 - 🟡 **Grades need clarifying**  
-  Write your GPA as 5.04 / 6.00 so that recruiters outside Switzerland can understand your result.
+  When listing your GPA, always include the maximum (e.g. 5.04 / 6.00) so that recruiters from other countries can understand your results.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,26 +44,25 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCAT10N** 🟠 Needs attention
 
-- Clarify your GPA by writing it as 5.04 / 6.00 so international recruiters can interpret it correctly.
-- If you have participated in relevant HSG programmes such as the HSG Mentoring Programme or completed certificates like the Certificate in Data Science Fundamentals (DSF), consider adding them if they are relevant.
+- Update your GPA to show the maximum (e.g. 5.04 / 6.00) so that recruiters outside Switzerland can interpret your results.
+- If you have participated in the HSG Mentoring Programme or completed a certificate such as the Certificate in Data Science Fundamentals (DSF), consider adding these if relevant.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Revise your bullets to highlight what you personally contributed, how you approached the work, and what skills you developed or demonstrated.
-- Where you have a concrete result or outcome, add it to the bullet, but only if it is accurate and you can support it.
-- Ensure bullet punctuation is consistent throughout the section—choose either to end all bullets with a full stop or none.
+- Rewrite your experience bullets to highlight what you did, how you did it, and what skill or competency you developed or demonstrated.
+- Make sure all bullets use consistent punctuation—either all with full stops or all without.
 
 **SKILES & LANGUAGES** 🟢 Strong
 
-- This section works well because it presents your language skills with clear levels, making it easy for recruiters to assess your proficiency.
+- Your section provides clear language levels, including a CEFR reference for English, which is helpful for international applications.
 
 **DIPLOMAS & CERTIFICATIONS** 🟢 Strong
 
-- This section is effective because it provides specific certifications and dates, giving a clear picture of your additional qualifications.
+- You have included relevant certifications with dates, which adds credibility to your profile.
 
 **EXTRACURRICULAR & OTHER** 🟢 Strong
 
-- This section stands out by highlighting your long-term involvement and achievements in sports and club activities, which demonstrate dedication and a range of interests.
+- Your section highlights significant extracurricular achievements and active involvement, which shows dedication and a well-rounded profile.
 
 **Profile** ⚪ Missing
 

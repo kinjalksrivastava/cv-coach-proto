@@ -33,6 +33,7 @@ told that something next to their headings did not survive the parse, because
 that is worth knowing before an ATS does the same thing to their application.
 """
 
+import itertools
 import re
 import unicodedata
 from difflib import SequenceMatcher
@@ -278,6 +279,29 @@ def _match_fuzzy(value: str) -> tuple[str, str] | None:
 _STRAY_PREFIX = re.compile(r"^(?P<stray>[^\s]{1,2})[\s\u00a0]+(?P<rest>\S.*)$")
 
 
+# One digit can stand for more than one letter: a "1" is an I in EDUCAT10N and
+# an l in SKI11S, so a single substitution table gets one of them wrong. Each
+# digit's candidates are tried together, which is cheap because a damaged
+# heading carries one or two digits, not ten.
+_DIGIT_LETTERS = {"0": "o", "1": "il", "5": "s", "7": "t", "4": "a", "8": "b"}
+_MAX_DIGITS_READ_BACK = 3
+
+
+def _match_digit_damage(value: str):
+    """A heading whose letters a scanner read as digits, read back."""
+    places = [i for i, ch in enumerate(value) if ch in _DIGIT_LETTERS]
+    if not places or len(places) > _MAX_DIGITS_READ_BACK:
+        return None
+    for letters in itertools.product(*(_DIGIT_LETTERS[value[i]] for i in places)):
+        candidate = list(value)
+        for where, letter in zip(places, letters):
+            candidate[where] = letter
+        entry = _match_exact("".join(candidate))
+        if entry:
+            return entry
+    return None
+
+
 def identify(line: str) -> dict | None:
     """
     Decide whether one line is a section heading, repairing it if it is damaged.
@@ -316,6 +340,23 @@ def identify(line: str) -> dict | None:
     if entry:
         return {"raw": raw, "clean": stripped.strip(" \t:"), "display": entry[0],
                 "category": entry[1], "damage": "typo"}
+
+    # Digits standing in for the letters they look like. A scanner reads O as
+    # 0, I and l as 1, S as 5, and does it to a whole word at once: bad cv 10
+    # arrives headed "EDUCAT10N". The fuzzy match above is deliberately tight
+    # enough for one damaged character - "Educatiqn", the case Career Services
+    # sent - and two is past it, so that section was printed to the student as
+    # "EDUCAT10N" with nothing saying why, and none of the Education rules ran
+    # on it.
+    #
+    # Tried only after everything else has failed, and only accepted on an
+    # EXACT match once the digits are read back as letters, so it cannot
+    # invent a heading out of a line that genuinely contains numbers.
+    if any(ch.isdigit() for ch in value):
+        entry = _match_digit_damage(value)
+        if entry:
+            return {"raw": raw, "clean": stripped.strip(" \t:"), "display": entry[0],
+                    "category": entry[1], "damage": "typo"}
 
     return None
 

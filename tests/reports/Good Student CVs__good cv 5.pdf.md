@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and covers a broad range of academic, professional, and extracurricular experiences. Each work experience entry includes both a clear role title and a description, which helps a recruiter quickly understand your responsibilities. However, several sections need further detail or clarification to give a full picture of your skills and achievements. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can give more tailored advice. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured and covers a broad range of academic, professional, and extracurricular experiences, which gives a recruiter a clear sense of your background. The work experience section is particularly strong in providing both role titles and descriptions for each position. However, there are several areas where more detail or clarification would help a reader understand your achievements and skills, especially in your education and extracurricular sections. The 'Interessen' section is currently almost empty, which draws attention to a gap. This feedback focuses on structure and completeness, as no specific target role or job description was provided. Additionally, there is currently no mention of AI experience or skills; if you have relevant exposure, consider adding it.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -11,23 +11,23 @@ _Please note that this is a first feedback, mainly about the structure and conte
 | Check | Status | Comment |
 | --- | --- | --- |
 | Length | 🟢 Good | 2 pages — appropriate for a student or early-career CV. |
-| Estimated ATS compatibility | 🟠 Needs attention | Conventional section headers, but unusual bullet or icon characters (>); 2 embedded images — any text inside them is invisible to a parser. |
+| Estimated ATS compatibility | 🟠 Needs attention | Conventional section headers, but unusual bullet or icon characters (>). |
 | Spelling and consistency | 🟢 Good | Typos: no obvious typos in headings or dates. Spelling: British/American spelling is used consistently. |
 
 _An Applicant Tracking System (ATS) is software employers use to collect, scan and process applications digitally — many CVs are read by one before a person sees them. ATS compatibility is estimated from three things this tool can actually observe: conventional section headings, ordinary bullet characters, and no table- or image-based layout. It is an indication, not a guarantee — every applicant tracking system parses differently._
 
 ### 3. Key areas to improve
 
-- 🔴 **Add detail under each degree in Education**  
-  Currently, some degrees only list the qualification and dates. Add a line or two under each degree where you have relevant content: modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes—only what is true and relevant to your future applications.
-- 🔴 **Clarify your role titles in Volunteering, Societies & Interests**  
-  Some entries list only the organisation or event without stating your function. Add your specific role (e.g., participant, organiser, delegate) so a reader can understand your level of responsibility.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, some degrees only list the qualification and dates. Add a line or two under each degree where you have relevant content, such as key modules, thesis topic and what you did, exchange semesters, certificates, or scholarships.
+- 🔴 **Clarify your role titles in 'Volunteering, Societies & Interests'**  
+  Some entries list only the organisation or event without stating your specific role. Add your function or position for each entry so a reader can understand your level of responsibility.
 - 🔴 **Develop or remove the nearly empty 'Interessen' section**  
-  A heading with almost nothing under it draws attention to the gap. Either add a few interests or hobbies, or remove the section entirely.
-- 🔴 **Add outcomes and skills to your experience bullets**  
-  Most experience bullets describe tasks but not the skills used or the results achieved. For each, explain what you did, how you did it, and why it mattered—highlighting any transferable skills or measurable outcomes where possible.
+  A section with only a heading and minimal content draws attention to a gap. Either add a few interests or hobbies, or remove the section if you prefer not to include them.
+- 🔴 **Strengthen experience bullets with outcomes and skills**  
+  Most experience bullets describe tasks but not the skills used or the results achieved. For each, clarify what you did, how you did it, and why it mattered, highlighting transferable skills and outcomes where possible.
 - 🟠 **Make bullet punctuation consistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it throughout your CV.
+  Some bullets end with a full stop and others do not. Choose one style and apply it throughout for a more professional appearance.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -46,15 +46,16 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- If you participated in the HSG Mentoring Programme or earned a certificate such as the Certificate in Data Science Fundamentals (DSF), consider adding these if relevant.
+- If you participated in the HSG Mentoring Programme or completed a certificate like the Certificate in Data Science Fundamentals (DSF), consider adding these if relevant.
 
 **WORK EXPERIENCES** 🟠 Needs attention
 
-- Make sure bullet punctuation is consistent throughout this section.
+- Review each bullet to clarify what you did, how you did it, and what changed as a result, focusing on the skills you developed and the impact you made.
+- Ensure bullet punctuation is consistent throughout this section.
 
 **LEADERSHIP** 🟢 Strong
 
-- Your leadership experience is well-explained, showing both scope and impact.
+- Your leadership experience is well-explained, showing both scope and outcomes.
 
 **VOLUNTEERING, SOCIETIES & INTERESTS** 🟠 Needs attention
 
@@ -62,13 +63,8 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **FOREIGN LANGUAGES, CERTIFICATES & PROGRAMMING** 🟠 Needs attention
 
-- Add a proficiency level (Basic, Intermediate, Advanced) for each technical skill and tool you list, so a reader knows your capability.
-- For languages, add a CEFR level (A1–C2) for each language—this is clearer for recruiters than terms like 'fluent' or 'professional proficiency'.
-- If you have completed the Bloomberg Market Concepts (BMC) course, consider adding it if relevant.
-
-**Interessen** 🟠 Needs attention
-
-- Either add a few interests or hobbies (such as sports, music, or reading), or remove the section if you do not wish to include them.
+- Add a proficiency level (e.g., Basic, Intermediate, Advanced) for each technical skill and programming language you list, so a reader knows your capability.
+- For languages, consider stating your level using the CEFR scale (A1–C2) for clarity and consistency.
 
 **Profile** ⚪ Missing
 
@@ -76,7 +72,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts), you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 
