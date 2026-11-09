@@ -10,7 +10,29 @@ there's nowhere sensible to switch to - it just keeps the current
 effective language.
 """
 
-from langdetect import detect, LangDetectException
+import threading
+
+from langdetect import DetectorFactory, LangDetectException, detect
+
+# langdetect seeds a shared, global, random detector. Two things follow, and
+# both of them bit us:
+#
+#   - the same CV can detect differently on two runs, because the seed moves;
+#   - the state is global and NOT thread-safe, so two detections running at
+#     once corrupt each other.
+#
+# tests/full_sweep.py reads five CVs in parallel, and a German CV that detects
+# "de" eight times out of eight on its own came back "en" inside the sweep -
+# producing an entirely English report for a German student. Streamlit serves
+# concurrent users, so this is not only a test artefact: two students uploading
+# at the same moment could be given each other's language. Both reviewers have
+# reported reports in the wrong language, and the string tables we translated
+# were only half the cause.
+#
+# A fixed seed makes one detection repeatable; the lock is what makes it
+# correct when more than one runs at a time.
+DetectorFactory.seed = 0
+_DETECT_LOCK = threading.Lock()
 
 SUPPORTED = {"en": "English", "de": "Deutsch"}
 
@@ -24,7 +46,8 @@ def detect_message_language(text: str) -> str | None:
     if len(text.strip()) < MIN_CHARS_FOR_DETECTION:
         return None
     try:
-        code = detect(text)
+        with _DETECT_LOCK:
+            code = detect(text)
     except LangDetectException:
         return None
     return code if code in SUPPORTED else None

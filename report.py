@@ -224,6 +224,12 @@ already fits the advert; it never invents experience, and it never supplies the 
 Write everything in {language_name}. If that is English, use BRITISH English \
 throughout: organise, analyse, programme, specialise, centre, CV rather than resume.
 
+If that is German, address the student with DU, not Sie - du, dein, deine, dir, dich. \
+Career Services address students informally and every sentence this report renders \
+itself does so ("Bitte beachte...", "die dir gehört"). Writing "Ihr Lebenslauf" or \
+"Überarbeiten Sie" puts both forms in one report, often in neighbouring lines. Never \
+use Sie, Ihr, Ihre, Ihren, Ihrem or Ihnen to address the student.
+
 Personal details were removed before this text reached you - name, address, date of \
 birth, nationality, civil status, contact details. Never comment on them, never say they \
 are missing, and never treat a [REDACTED] marker as something the student omitted.
