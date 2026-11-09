@@ -1,0 +1,57 @@
+bad cv 2
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Educatiqn
+Sep 2013 - Jun 2022 Bismarck Gymnasium Karlsruhe - Abitur
+Sep 2023 - present University of St. Gallen - Assessment and Bachelor in Business Administration
+Grade Average: 513
+Work experience
+Sep 2024 - 3un 2025 St Gallen Symposium, Responsible for Innovation and Technology
+Aug 2025 - Gun 2026 St. Gallen Symposium, Project Manager for Innovation and Technology
+Core Competences
+Technical skills • Microsoft Office Suite (Advanced]
+• Microsoft Dynamics 365 Ecosystem
+• Website Development
+Personal skills • Analytic thmking
+• Fast assimilation of new knowledge
+• Adaptability
+• High self-initiative
+LANGUAGES
+German: Native
+English: Proficient
+Hobbies and Interests
+Chess
+Shogi
+Learmng new languages
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Educatiqn
+  Sep 2013 - Jun 2022 Bismarck Gymnasium Karlsruhe - Abitur
+  Sep 2023 - present University of St. Gallen - Assessment and Bachelor in Business Administration
+    Grade Average: 513
+
+Work experience
+  Sep 2024 - 3un 2025 St Gallen Symposium, Responsible for Innovation and Technology
+  Aug 2025 - Gun 2026 St. Gallen Symposium, Project Manager for Innovation and Technology
+
+Core Competences
+  Technical skills   • Microsoft Office Suite (Advanced]
+  • Microsoft Dynamics 365 Ecosystem
+  • Website Development
+  Personal skills   • Analytic thmking
+  • Fast assimilation of new knowledge
+  • Adaptability
+  • High self-initiative
+  LANGUAGES
+  German: Native
+  English: Proficient
+
+Hobbies and Interests
+  Chess
+  Shogi
+  Learmng new languages

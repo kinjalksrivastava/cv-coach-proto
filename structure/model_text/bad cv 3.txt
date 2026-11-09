@@ -1,0 +1,38 @@
+bad cv 3
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: postal address | residual: clean
+------------------------------------------------------------------------------
+2025-heute Universität St. Gallen (HSG) Assessment-Jahr
+2019-2023 Kantonsschule Frauenfeld Matura
+BERUFSERFAHRUNG
+2023-heute Flugbegleiterin, SWISS International Airlines Ltd., Zürich
+SPRACHEN
+Deutsch Muttersprache
+Englisch CI (Cambridge Advanced)
+Spanisch B1-B2
+Französisch BI
+ENGAGEMENT
+2021-2025 Jugendrätin Frauenfeld
+[ADDRESS REDACTED]
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: postal address | residual: clean
+------------------------------------------------------------------------------
+(section with no readable heading)
+  2025-heute   Universität St. Gallen (HSG)   Assessment-Jahr
+  2019-2023   Kantonsschule Frauenfeld   Matura
+
+BERUFSERFAHRUNG
+  2023-heute   Flugbegleiterin, SWISS International Airlines Ltd., Zürich
+
+SPRACHEN
+  Deutsch   Muttersprache
+  Englisch   CI (Cambridge Advanced)
+  Spanisch   B1-B2
+  Französisch   BI
+
+ENGAGEMENT
+  2021-2025   Jugendrätin Frauenfeld
+[ADDRESS REDACTED]

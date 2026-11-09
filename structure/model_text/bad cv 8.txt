@@ -1,0 +1,152 @@
+bad cv 8
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+Hochschule St. Gallen St. Gallen, Schweiz
+Student im Assessmentjahr September 2024 - August 2025
+Bachelor of Arts in internationalen Beziehungen September 2025 - Erwartet: Juli 2025
+Collegium Josephinum Bonn Bonn, Deutschland
+Abitur 17. Juni 2023
+• Abschlussnote: 1,3
+• Auszeichnung: Online-Stipendium von e-fellows.net
+• Engagements: Teilnehmer beim Projekt Jugend und Wirtschaft der FAZ; Mitglied im
+Abiturzeitungskomitee
+Strathallan School Perth, Schottland
+Auslandsaufenthalt 17. August 2020 - 15. Dezember 2020
+• In einem dreimonatigen Aufenthalt konnte ich neben den, auf dem Weg in die Selbstständigkeit,
+wertvollen Erfahrungen des Intematslebens meinen sportlichen und akademischen Horizont
+erweitern und wurde mehrere Male für meine Leistungen mit sogenannten “Merits“ ausgezeichnet.
+ARBEITS- & FÜHRUNGSERFAHRUNGEN
+TRUSEQ GmbH München, Deutschland
+Junior Consultant, mit dem Fokus auf AI-Governance April 2024 — Mai 2024
+o Unterstützung bei der Ausarbeitung der Anforderungen des ISO-Standards 42001 und der
+Pflichten aus dem EU AI Act
+o Projektunterstützung durch die Dokumentation des Projektfortschritts in kundeninternen
+Anwendungen und das Anfertigen von Meetingprotokollen
+o Recherchetätigkeiten zur Unterstützung bei der Vorbereitung von Sales-Gesprächen
+o Unterstützung bei der Erstellung von Projektergebnispräsentationen für Kundentermine
+Europäisches Parlament Brüssel, Belgien
+Praktikant Februar 2024 - April 2024
+• Mitarbeit im Büro des MDEP Axel Voss mit dem Fokus auf Digitalpolitik, genaugenommen dem
+EU AI Act, der DSGVO und dem Lieferkettengesetz
+o Teil meiner Arbeit waren die Beantwortung von Bürgeranfragen und das Vorschreiben von
+Artikeln in enger Absprache mit Herrn Voss, sowie die Teilnahme an Terminen zusammen mit
+Herrn Voss oder seinen Assistenten.
+Deutsche Telekom Bonn, Deutschland
+Praktikant, in den Bereichen AI Competence Center & PMO November 2023 — Januar 2024
+• Im neu gegründeten AICC konnte ich Einblicke in die Rolle von KI für Großkonzerne und die
+ethische Nutzung dieser bekommen.
+o Teilnehmer eines Human Centered Technologie Offsites
+o Absolvent eines Workshop zur richtigen Bewertung von Kl-Systemen, sodass diese
+diskriminierungsfrei agieren
+o Standleiter bei einem zweitätigen Digital@School Event
+■ Ziel des Events war es Kindern komplexe Technologien näher zu bringen. Thema des
+“Marktstandes“, den ich betreut habe, war KI-Bilderkennung anhand eines Bienenstocks zu
+erklären.
+o Unterstützung der Kickoff 2024 Planung
+■ Als Teil des PMO-Teams unterstützte ich bei der Hotelplanung für einen Kickoff der AI
+Competence Centers mit über 200 internationalen Gästen und Partnern
+Kellner Bonn, Deutschland
+Servicekraft bei einem Gourmetkoch September 2022 - Januar 2024
+SKILLS, ENGAGEMENTS & INTERESSEN
+Fremdsprachenkenntnisse
+• Englisch: Verhandlungssicher in Wort und Schrift (CI)
+• Französisch: Grundkenntnisse (B2)
+• Mandarin: Erste Sprachkenntnisse (Al)
+• Latinum
+Engagements
+St. Gallen Model United Nations St. Gallen, Schweiz
+• Head of debates and delegations Mai 2025 - Jetzt
+o Ich bin dafür zuständig die wöchentlichen Debatten zu organisieren, neue Mitglieder
+durch qualitativ hochwertige Debatten zu gewinnen, sowie zu halten und koordiniere die
+Delegationen zu europaweiten Model United Nation Konferenzen.
+• Mitglied des St. Gallen Model United Nations Club September 2024 - Jetzt
+In diesem Kontext habe ich an drei Model United Nation Konferenzen teilgenommen:
+o MiniMUN: Vertretung Indiens in einem Krisenkomitee betreffend des Südchinesischen
+Meeres
+o EUROMUN: Vertretung Finnlands im NATO-Komitee zur Frage, wie konventionelle
+Kriegsführung angesichts der Lehren des Kriegs in der Ukraine neu bewertet werden
+sollte, wobei ich mit einer “Honorable Mention“ ausgezeichnet wurde
+o SGMUN: Vertretung Russlands im UNICEF-Komitee zum Thema Schutz von Kindern
+und Wahrung ihrer Rechte in Konfliktgebieten, wobei ich ebenfalls mit einer “Honorable
+Mention“ ausgezeichnet wurde
+Sicherheitspolitisches Forum St. Gallen St. Gallen, Schweiz
+• Mitglied des Event-Teams Februar 2025 — Jetzt
+Ehrenamtlicher Wahlhelfen bei den Europawahlen 2024 Bonn, Deutschland
+09.Juni 2024
+Interessen
+Sport, Klavier, Angeln, Reisen, Lesen
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+  Hochschule St. Gallen   St. Gallen, Schweiz   Student im Assessmentjahr   September 2024 - August 2025
+    Bachelor ofArts in internationalen Beziehungen   September 2025 - Erwartet: Juli 2025
+  Abitur   Collegium Josephinum Bonn   Bonn, Deutschland   17. Juni 2023
+    - Abschlussnote: 1,3
+    - Auszeichnung: Online-Stipendium von e-fellows.net
+    - Engagements: Teilnehmer beim Projekt Jugend und Wirtschaft der FAZ; Mitglied im
+    Abiturzeitungskomitee
+  Auslandsaufenthalt   Strathallan School   17. August 2020 - 15. Dezember 2020   Perth, Schottland
+    - In einem dreimonatigen Aufenthalt konnte ich neben den, auf dem Weg in die Selbstständigkeit, erweitern und wurde mehrere Male für meine Leistungen mit sogenannten “Merits“ ausgezeichnet.
+    wertvollen Erfahrungen des Intematslebens meinen sportlichen und akademischen Horizont
+
+ARBEITS- & FÜHRUNGSERFAHRUNGEN
+  TRUSEQ GmbH   München, Deutschland   Junior Consultant, mit dem Fokus aufAI-Governance   April 2024 — Mai 2024
+    - Unterstützung bei der Ausarbeitung der Anforderungen des ISO-Standards 42001 und der
+    Pflichten aus dem EU AI Act
+    - Projektunterstützung durch die Dokumentation des Projektfortschritts in kundeninternen
+    Anwendungen und das Anfertigen von Meetingprotokollen
+    - Recherchetätigkeiten zur Unterstützung bei der Vorbereitung von Sales-Gesprächen
+    - Unterstützung bei der Erstellung von Projektergebnispräsentationen für Kundentermine
+  Europäisches Parlament   Brüssel, Belgien   Praktikant   Februar 2024 - April 2024
+    - Mitarbeit im Büro des MDEP Axel Voss mit dem Fokus auf Digitalpolitik, genaugenommen dem
+    EU AI Act, der DSGVO und dem Lieferkettengesetz
+    - Teil meiner Arbeit waren die Beantwortung von Bürgeranfragen und das Vorschreiben von Herrn Voss oder seinen Assistenten.
+    Artikeln in enger Absprache mit Herrn Voss, sowie die Teilnahme an Terminen zusammen mit
+    Deutsche Telekom   Bonn, Deutschland
+  Praktikant, in den Bereichen AI Competence Center & PMO   November 2023 — Januar 2024
+    - Im neu gegründeten AICC konnte ich Einblicke in die Rolle von KI für Großkonzerne und die
+    ethische Nutzung dieser bekommen.
+    - Teilnehmer eines Human Centered Technologie Offsites
+    - Absolvent eines Workshop zur richtigen Bewertung von Kl-Systemen, sodass diese
+    diskriminierungsfrei agieren
+    - Standleiter bei einem zweitätigen Digital@School Event
+    - Ziel des Events war es Kindern komplexe Technologien näher zu bringen. Thema des erklären.
+    “Marktstandes“, den ich betreut habe, war KI-Bilderkennung anhand eines Bienenstocks zu
+    - Unterstützung der Kickoff 2024 Planung
+    - Als Teil des PMO-Teams unterstützte ich bei der Hotelplanung für einen Kickoff der AI
+    Competence Centers mit über 200 internationalen Gästen und Partnern
+  Kellner   Bonn, Deutschland   Servicekraft bei einem Gourmetkoch   September 2022 - Januar 2024
+
+SKILLS, ENGAGEMENTS & INTERESSEN
+  Fremdsprachenkenntnisse
+    • Englisch: Verhandlungssicher in Wort und Schrift (CI)
+    • Französisch: Grundkenntnisse (B2)
+    • Mandarin: Erste Sprachkenntnisse (Al)
+    • Latinum
+
+  Engagements
+    St. Gallen Model UnitedNations   St. Gallen, Schweiz
+      - Head of debates and delegations   Mai 2025 - Jetzt
+      - Ich bin dafür zuständig die wöchentlichen Debatten zu organisieren, neue Mitglieder Delegationen zu europaweiten Model United Nation Konferenzen.
+      durch qualitativ hochwertige Debatten zu gewinnen, sowie zu halten und koordiniere die
+      - Mitglied des St. Gallen Model United Nations Club   September 2024 - Jetzt
+      In diesem Kontext habe ich an drei Model United Nation Konferenzen teilgenommen:
+      - MiniMUN: Vertretung Indiens in einem Krisenkomitee betreffend des Südchinesischen
+      Meeres
+      - EUROMUN: Vertretung Finnlands im NATO-Komitee zur Frage, wie konventionelle sollte, wobei ich mit einer “Honorable Mention“ ausgezeichnet wurde
+      Kriegsführung angesichts der Lehren des Kriegs in der Ukraine neu bewertet werden
+      - SGMUN: Vertretung Russlands im UNICEF-Komitee zum Thema Schutz von Kindern Mention“ ausgezeichnet wurde
+      und Wahrung ihrer Rechte in Konfliktgebieten, wobei ich ebenfalls mit einer “Honorable
+      Sicherheitspolitisches Forum St. Gallen   St. Gallen, Schweiz
+      - Mitglied des Event-Teams   Februar 2025 — Jetzt
+      Ehrenamtlicher Wahlhelfen bei den Europawahlen 2024   Bonn, Deutschland
+      09.Juni 2024
+
+  Interessen
+    Sport, Klavier, Angeln, Reisen, Lesen

@@ -1,0 +1,120 @@
+bad cv 7
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Beruflicher Werdegang
+10.2021 - Heute Servicemitarbeitende
+EVZ Gastro AG, Zug
+• Springer und Kassenbedienung Verkaufsstände
+• Service bei Events in der Bosshard Arena
+06.2025- 11.2025 Projektmitarbeiterin Research
+Industrie- und Handelskammer St.Gallen-Appenzell, St.Gallen
+• Redaktionelle Aufbereitung von Forschungsergebnissen
+zum Thema Aussenhandel (hier die Publikation)
+• Daten auswerten und grafisch darstellen
+• Konjunkturanalyse
+• Auswertung von Umfragen
+09.2023-06.2024 Internship Research & Communication
+Volkswirtschaftsdirektion Kanton Zug, Zug
+• Recherche von statistischen Daten und Fachinformationen
+• Fertigstellung Microsite
+• Content Management: Inhalte für Factsheets,
+Präsentationen, Social Media und Newsletters
+08.2020- 12.2022 Unterstützende Tätigkeiten Buchhaltung
+Liberty Vorsorge AG, Schwyz
+• Sortierung und Ablage der Belege
+• Unterstützung bei der Bank- und Depotabstimmung
+• Unterstützung bei den Belegnachweisen der
+Verrechnungssteuer
+LEBENSLAUF
+Ausbildung
+2024 - 2026 Universität St. Gallen
+Master of Arts in Economics (in englischer Sprache)
+4. Semester
+Masterarbeit in Python
+Aktueller Notenschnitt: 5.26
+01.2026-06.2026 Norwegian School of Economics (NHH), Bergen
+Austauschsemester Master of Arts in Economics
+2021 -2023 Universität Luzern
+Bachelor of Arts in Wirtschaftswissenschaften
+Notendurchschnitt: 5.28
+2014-2020 Kantonsschule Zug
+Schwerpunktfach Wirtschaft und Recht, Ergänzungsfach
+Geografie
+Notendurchschnitt: 5.12
+Kompetenzen
+Programmieren R, Python, Matlab
+Microsoft Office Sehr gute Kenntnisse
+Soft Skills Zielorientiert, analytisch, lernbereit, belastbar, teamfähig,
+neugierig
+Sprachen
+Deutsch Muttersprache
+Englisch Verhandlungssicher, sehr gute Kenntnisse (C1)
+Französisch Gute Kenntnisse (B2)
+Norwegisch Anfängerin (A1)
+Hobbies
+Skifahren, Joggen, Fitness, Wandern
+Ballsportarten (Badminton, Tennis, etc.)
+Klavier und Querflöte spielen (10 Jahre im Orchester)
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Beruflicher Werdegang
+  10.2021 - Heute   Servicemitarbeitende
+    EVZ Gastro AG, Zug
+    - Springer und Kassenbedienung Verkaufsstände
+    - Service bei Events in der Bosshard Arena
+  06.2025- 11.2025   Projektmitarbeiterin Research
+    Industrie- und Handelskammer St.Gallen-Appenzell, St.Gallen
+    - Redaktionelle Aufbereitung von Forschungsergebnissen
+    zum Thema Aussenhandel (hier die Publikation)
+    - Daten auswerten und grafisch darstellen
+    - Konjunkturanalyse
+    - Auswertung von Umfragen
+  09.2023-06.2024   Internship Research & Communication
+    Volkswirtschaftsdirektion Kanton Zug, Zug
+    - Recherche von statistischen Daten und Fachinformationen
+    - Fertigstellung Microsite
+    - Content Management: Inhalte für Factsheets,
+    Präsentationen, Social Media und Newsletters
+  08.2020- 12.2022   Unterstützende Tätigkeiten Buchhaltung
+    Liberty Vorsorge AG, Schwyz
+    - Sortierung und Ablage der Belege
+    - Unterstützung bei der Bank- und Depotabstimmung
+    - Unterstützung bei den Belegnachweisen der
+    Verrechnungssteuer
+    LEBENSLAUF
+
+Ausbildung
+  2024 - 2026   Universität St. Gallen
+    Master of Arts in Economics (in englischer Sprache) 4. Semester
+    Masterarbeit in Python
+    Aktueller Notenschnitt: 5.26
+  01.2026-06.2026   Norwegian School of Economics (NHH), Bergen
+    Austauschsemester Master of Arts in Economics
+  2021 -2023   Universität Luzern
+    Bachelor of Arts in Wirtschaftswissenschaften
+    Notendurchschnitt: 5.28
+  2014-2020   Kantonsschule Zug
+    Schwerpunktfach Wirtschaft und Recht, Ergänzungsfach Geografie
+    Notendurchschnitt: 5.12
+
+Kompetenzen
+  Programmieren   R, Python, Matlab
+  Microsoft Office   Sehr gute Kenntnisse
+  Soft Skills   Zielorientiert, analytisch, lernbereit, belastbar, teamfähig,
+  neugierig
+
+Sprachen
+  Deutsch   Muttersprache
+  Englisch   Verhandlungssicher, sehr gute Kenntnisse (C1)
+  Französisch   Gute Kenntnisse (B2)
+  Norwegisch   Anfängerin (A1)
+
+Hobbies
+  Skifahren, Joggen, Fitness, Wandern
+  Ballsportarten (Badminton, Tennis, etc.)
+  Klavier und Querflöte spielen (10 Jahre im Orchester)

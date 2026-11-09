@@ -1,0 +1,110 @@
+good cv 7
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Academic Experience
+EM Lyon Lyon, France
+MiMGrand Ecole Programme (Exchange) | GPA: 4.0 / 4.0 Sept. 2025 — Dec. 2025
+University of St Gallen St. Gallen, Switzerland
+Master of Arts in Business Innovation (MBI-HSG) | GPA: 5.37 / 6.0 Feb. 2024 — Feb. 2026
+• Thesis: Strategie advantages in terms of circular economy of lignin-based anodes for the EU EV Industry | Grade: 5.5 / 6.0
+University of St Gallen St. Gallen, Switzerland
+Bachelor of Arts in Business Administration (BBA-HSG) | GPA: 4.84 / 6.0 Sept. 2018 — May. 2023
+Seycove Secondary School North Vancouver, Canada
+High School Exchange Semester Sept. 2015 - Jul. 2016
+Professional Experience
+Private Equity | Elvaston Capital Management Berlin, Germany
+Private Equity Intern - Value Creation Team (100%) Feb. 2025 - Apr. 2025
+• Analyzed pricing and operating models to support the shift of 5 B2B SaaS portfolio Companies to subscription-based revenue models
+• Built and presented the budget and value-creation narrative for a mid-market SaaS portfolio Company, supporting a successful exit process
+• Conducted valuation analysis and supported Strategie Integration planning for a new platform investment
+Controlling | GIATA GmbH Berlin, Germany
+Data Analyst & Customer Insight Intern (100%); Financial Controlling Associate (50%) Jul. 2024-Feb. 2025
+• Evaluated the profitability of 8 main products, quanti ly ing previously unknown profitability gaps
+• Analyzed chum drivers and customer Segmentation across 3 products, informing changes to GIATA’s retention and account strategy
+• Owned the monthly financial reporting process across all 12 products, providing senior stakeholders with timely performance insights
+Strategy Consulting | Accenture Strategy & Consulting Zurich, Switzerland
+Strategy New Associate (100%) Oct. 2023— Apr. 2024
+• Analyzed the order-to-cash process across 7 business units of a leading agribusiness as part of an SAP S/4HANA transformation project
+• Owned the development of a reusable O2C customer Service strategy to support Accenture’s dient acquisition and go-to-market eftbrts
+• Supported PMI for a leading agribusiness, mtegrating digital platforms and aligning customer-facing Standards across the combined Organization
+Consulting & Commercial Analytics | Amazon Berlin, Germany
+International Expansion Intern -Amazon Global Selling Team (100%) Jan. 2023 - Jun. 2023
+• Advised Selling Partners on international marketplace expansion, assessing market attractiveness and operational trade-offs
+• Implemented an activity tracking tool for 53 AMs across 3 countries, reducing manual effort by 28% and creating capacity for ~40MM GMS p.a.
+• Programmed a performance metric to identify out-of-stock revenue opportunities, identifying ~17MM GMS potential p.a. within AGS team
+• Conceptualized an SOP for a ~35% waste reduction within donatable delist items
+Consulting & Product | Nomoko Zurich, Switzerland
+Internal Strategy Consulting Intern (100%); Associate Product Analyst (100%) Sept. 2021 - Aug. 2022
+• Designed and implemented a regulatory data framework covering ~1.7 million Swiss buildings to support ESG-driven investment analysis
+• Analyzed EU Taxonomy implications on Swiss real estate and developed commercial use cases for ESG analytics within the Nomoko platfoim
+■ Led the development of an analytics tool assessing asset-level sustainability performance to inform investment decisions
+• Streamlined the partnership onboarding process, resulting in a 40% reduction in onboarding time
+Consulting | Student Impact St. Gallen, Switzerland
+Consultant (50%); Project Lead (50%) Jan. 2020 - Aug. 2021
+• Led a 14-week Consulting project, managing a 7-person team and delivering client-ready recommendations
+• Developed a business plan including a go-to-market strategy and a long-term road map for an early-stage energy storage start-up
+Extracurriculars
+Young Entrepreneur Exchange Project Bern, Switzerland
+Volunteer Jun. 2020-Jan. 2021
+• Built alumni network and organized Yeep Tech Week
+Symposium St Gallen St. Gallen, Switzerland
+Active Member of the support crew May 2019
+Staats- & Domchor zu Berlin Berlin, Germany
+Choir Aug. 2006 - Jun 2016
+• Performances in the Berlin Philharmonie under the Orchestration of Sir Simon Rattle and in the Berlin Cathedral
+Skills & Interests
+Languages German (native), English (C2, TOEFL 113/120), French (Bl), Swiss German (Proficient conversational comprehension)
+IT Skills Data Champion (Amazon SQL certificate), Excel & PowerPoint (proficient), Java & Python (intermediate), VBA (basic)
+Interests Skiing, Hiking, Cooking, Art & Architecture (James Turrell & Oscar Niemeyer), Travelling and foreign cultures
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Academic Experience
+  EM Lyon   Lyon, France   MiMGrand Ecole Programme (Exchange) | GPA: 4.0 / 4.0   Sept. 2025 — Dec. 2025
+  University ofSt Gallen   St. Gallen, Switzerland   Master ofArts in Business Innovation (MBI-HSG) | GPA: 5.37 / 6.0   Feb. 2024 — Feb. 2026
+    - Thesis: Strategie advantages in terms ofcircular economy oflignin-based anodes for the EU EV Industry | Grade: 5.5 / 6.0
+  University ofSt Gallen   St. Gallen, Switzerland   Bachelor ofArts in Business Administration (BBA-HSG) | GPA: 4.84 / 6.0   Sept. 2018 — May. 2023
+  Seycove Secondary School   North Vancouver, Canada   High School Exchange Semester   Sept. 2015 - Jul. 2016
+
+Professional Experience
+  Private Equity | Elvaston Capital Management   Berlin, Germany   Private Equity Intern - Value Creation Team (100%)   Feb. 2025 - Apr. 2025
+    - Analyzed pricing and operating models to support the shift of 5 B2B SaaS portfolio Companies to subscription-based revenue models
+    - Built and presented the budget and value-creation narrative for a mid-market SaaS portfolio Company, supporting a successful exit process
+    - Conducted valuation analysis and supported Strategie Integration planning for a new platform investment
+  Controlling | GIATA GmbH   Berlin, Germany   Data Analyst & Customer Insight Intern (100%); Financial Controlling Associate (50%)   Jul. 2024-Feb. 2025
+    - Evaluated the profitability of 8 main products, quanti lying previously unknown profitability gaps
+    - Analyzed chum drivers and customer Segmentation across 3 products, informing changes to GIATA’s retention and account strategy
+    - Owned the monthly financial reporting process across all 12 products, providing senior stakeholders with timely performance insights
+  Strategy Consulting | Accenture Strategy & Consulting   Zurich, Switzerland   Strategy New Associate (100%)   Oct. 2023— Apr. 2024
+    - Analyzed the order-to-cash process across 7 business units of a leading agribusiness as part ofan SAP S/4HANA transformation project
+    - Owned the development ofa reusable O2C customer Service strategy to support Accenture’s dient acquisition and go-to-market eftbrts
+    - Supported PMI for a leading agribusiness, mtegrating digital platforms and aligning customer-facing Standards across the combined Organization
+  Consulting & Commercial Analytics | Amazon   Berlin, Germany   International Expansion Intern -Amazon Global Selling Team (100%)   Jan. 2023 - Jun. 2023
+    - Advised Selling Partners on international marketplace expansion, assessing market attractiveness and operational trade-offs
+    - Implemented an activity tracking tool for 53 AMs across 3 countries, reducing manual effort by 28% and creating capacity for ~40MM GMS p.a.
+    - Programmed a performance metric to identify out-of-stock revenue opportunities, identifying ~17MM GMS potential p.a. within AGS team
+    - Conceptualized an SOP for a ~35% waste reduction within donatable delist items
+  Consulting & Product | Nomoko   Zurich, Switzerland   Internal Strategy Consulting Intern (100%); Associate ProductAnalyst (100%)   Sept. 2021 - Aug. 2022
+    - Designed and implemented a regulatory data framework covering ~1.7 million Swiss buildings to support ESG-driven investment analysis
+    - Analyzed EU Taxonomy implications on Swiss real estate and developed commercial use cases for ESG analytics within the Nomoko platfoim
+    - Led the development ofan analytics tool assessing asset-level sustainability performance to inform investment decisions
+    - Streamlined the partnership onboarding process, resulting in a 40% reduction in onboarding time
+  Consulting | Student Impact   St. Gallen, Switzerland   Consultant (50%); Project Lead (50%)   Jan. 2020 - Aug. 2021
+    - Led a 14-week Consulting project, managing a 7-person team and delivering client-ready recommendations
+    - Developed a business plan including a go-to-market strategy and a long-term road map for an early-stage energy storage start-up
+
+Extracurriculars
+  Young Entrepreneur Exchange Project   Bern, Switzerland   Volunteer   Jun. 2020-Jan. 2021
+    - Built alumni network and organized Yeep Tech Week
+  Active Member ofthe support crew   Symposium St Gallen   St. Gallen, Switzerland   May 2019   Choir   Aug. 2006 - Jun 2016
+    Staats- & Domchor zu Berlin   Berlin, Germany
+    - Performances in the Berlin Philharmonie under the Orchestration of Sir Simon Rattle and in the Berlin Cathedral
+
+Skills & Interests
+  Languages   German (native), English (C2, TOEFL 113/120), French (Bl), Swiss German (Proficient conversational comprehension)
+  IT Skills   Data Champion (Amazon SQL certificate), Excel & PowerPoint (proficient), Java & Python (intermediate), VBA (basic)
+  Interests   Skiing, Hiking, Cooking, Art & Architecture (James Turrell & Oscar Niemeyer), Travelling and foreign cultures

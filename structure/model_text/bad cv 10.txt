@@ -1,0 +1,84 @@
+bad cv 10
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCAT10N
+Bachelor in Business Administration (English) Sep 2024 - Present
+University of St. Gallen ► Current GPA. 5.04 — Assessment year completed St. Gallen, Switzerland
+Baccalaureat General Graduated 2024
+Lycee Notre-Dame de Boulogne Paris, France
+► Focus: Mathematics, Physics-Chemistry and Maths Expertes
+► Awarded with mention
+WORK EXPERIENCE
+Sales Assistant Sep 2025 - Present
+SKK (Skriptenkommission HSG) • 10% St. Gallen, Switzerland
+> Selling academic books and matenals, advismg students, Processing payments, and supporting the daily Operation of the
+campus shop.
+Consultant Sep 2025-Jan 2026
+Student Impact ■ 40% St. Gallen, Switzerland
+► Providing research-dnven sustamability Consulting to an SME; conducting market analyses, stakeholder Interviews and
+feasibility assessments to support impact-focused Strategie decisions.
+Accounting Intern Aug2025
+Swissmeca Kleinbösingen, Switzerland
+Redesigned and implemented the company’s accounting System, with a particular focus on improving the expense reportmg
+process.
+Sales Assistant July 2024
+Schlagzeug Shop Glanzmann AG Altishofen, Switzerland
+► Developed practical experience in selling musical Instruments and providing customer Service support in a retail environment.
+Intern July 2022
+Arm Architekten AG Lyss, Switzerland
+► Learned to use architectural design Software to create virtual house models and gained insight into the work of an architect
+SKILES & LANGUAGES
+Languages French (Native) German (Native) • English (CI — IELTS certified) Spamsh (B2)
+DIPLOMAS & CERTIFICATIONS
+► BIA- Brevet d'lnitiation ä l'Aeronautique (incl equivalent FWA in English) — 10 June 2022
+► Black Belt in Judo — 21 March 2022
+► IELTS Certificate - Level CI — 11 November 2023
+EXTRACURRICULAR & OTHER
+► Judo Practicing since 2010, competed at national and international level; integrated a sport high school to balance daily
+training with the French national team; received black beit at age 16.
+► Skydiving Completed Sphair course to qualify as Fallschirm Aufklärer in the Swiss Army; 30 Jumps completed to date.
+► Member of the Marketing Club at HSG
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCAT10N
+  Bachelor in Business Administration (English)   Sep 2024 - Present
+    University of St. Gallen ► Current GPA. 5.04 — Assessment year completed   St. Gallen, Switzerland Baccalaureat General   Graduated 2024
+    Lycee Notre-Dame de Boulogne   Paris, France
+    - Focus: Mathematics, Physics-Chemistry and Maths Expertes
+    - Awarded with mention
+
+WORK EXPERIENCE
+  Sales Assistant   Sep 2025 - Present
+    SKK (Skriptenkommission HSG) • 10%   St. Gallen, Switzerland
+    > Selling academic books and matenals, advismg students, Processing payments, and supporting the daily Operation of the campus shop.
+  Consultant   Sep 2025-Jan 2026
+    Student Impact ■ 40%   St. Gallen, Switzerland
+    - Providing research-dnven sustamability Consulting to an SME; conducting market analyses, stakeholder Interviews and feasibility assessments to support impact-focused Strategie decisions.
+    Accounting Intern   Aug2025
+    Swissmeca   Kleinbösingen, Switzerland
+    Redesigned and implemented the company’s accounting System, with a particular focus on improving the expense reportmg
+    process.
+    Sales Assistant   July 2024
+    Schlagzeug Shop Glanzmann AG   Altishofen, Switzerland
+    - Developed practical experience in selling musical Instruments and providing customer Service support in a retail environment.
+    Intern   July 2022
+    Arm Architekten AG   Lyss, Switzerland
+    - Learned to use architectural design Software to create virtual house models and gained insight into the work of an architect
+
+SKILES & LANGUAGES
+  Languages   French (Native) German (Native) • English (CI — IELTS certified) Spamsh (B2)
+
+DIPLOMAS & CERTIFICATIONS
+  ► BIA- Brevet d'lnitiation ä l'Aeronautique (incl equivalent FWA in English) — 10 June 2022
+  ► Black Belt in Judo — 21 March 2022
+  ► IELTS Certificate - Level CI — 11 November 2023
+
+EXTRACURRICULAR & OTHER
+  ► Judo Practicing since 2010, competed at national and international level; integrated a sport high school to balance daily training with the French national team; received black beit at age 16.
+    - Skydiving Completed Sphair course to qualify as Fallschirm Aufklärer in the Swiss Army; 30 Jumps completed to date.
+    - Member ofthe Marketing Club at HSG

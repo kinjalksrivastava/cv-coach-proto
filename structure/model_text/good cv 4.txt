@@ -1,0 +1,109 @@
+good cv 4
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+02/2025 - present University of St. Gallen (HSG), St. Gallen, Switzerland
+Master’s Student in Business Innovation | GPA 5.33/6.0
+Relevant Courses: “Business Innovation”, “Design and management of digital Channels and stakeholder
+relationships”, “Communication & AI”
+09/2020 - 05/2023 University of St. Gallen (HSG), St. Gallen, Switzerland
+Bachelor ofArts HSG in Business Administration | Speciahzation in Marketing | GPA 5 05/6.0
+Relevant Courses: “Corporate Fmance", “Strategie Management”, “Buyer Behavior”
+08/2016-07/2020 Kantonsschule Heerbrugg, St. Gallen, Switzerland
+High School Diploma, Major in Law and Economics
+PROFESSIONAL EXPERIENCE
+08/2024 - present UBS, Zurich, Switzerland
+Digital Engagement Speciahst (70%) | Team Digital Engagement | Digital Marketing & Sales
+• Conceptualized multichannel customer journeys across owned channels, mereasing lead generation
+and digital sales (e.g. CIC self-service journey, pension journey for pre-retirement clients)
+• Channel Owner for UBS Digital Banking withm the team, dnving high-quality campaign execution and
+improving knowledge shanng by establishmg a monthly best-practice forum.
+• Executed targeted ad-hoc direct marketing campaigns across UBS Digital Banking, email, push noti-
+fications, and TWINT, acceleratmg lead conversion and customer engagement across Segments.
+• Translated campaign analytics into Strategie optimization initiatives, deploying A/B testing and perso-
+nalization to drive improvements in marketing performance
+• Partnered with PCs, Data Analysts and Legal to align digital marketing initiatives with business objec-
+tives
+02/2024 - 08/2024 UBS, Zurich, Switzerland
+Internship (100%) | Team Digital Engagement | Digital Marketing & Sales
+• Supported a broad ränge of campaigns across Digital Banking, TWINT, push notifications and email
+for various dient segments
+• Contributed to the development of best practices, including creating TWINT guidehnes for the digital
+marketing team
+05/2023 - 02/2024 emonitor St. Gallen, Switzerland
+Internship (100%) | Growth Hacking | B2B Marketing
+• Executed SEO optimization, setup and distnbuted monthly newsletter, wrote blog posts to strengthen
+online presence and dient engagement
+• Organized the company's first online webcast, attracting over 100 participants from the real estate
+industry
+09/2022-05/2023. RhySearch, St. Gallen, Switzerland
+Internship (20%>) | Marketing & Event
+• Supported marketing activities, including newsletter setup and event management, and conducted
+post-event analyses by creating and evaluatmg surveys to implement improvements for subsequent
+events.
+EXTRACURRICULAR ACTIVITY
+09/2022 - 05/2023 Oikos, St. Gallen, Switzerland
+• Volunteer for sustainability-focused events at the University of St. Gallen.
+• Co-organized the Oikos Start-up Night with a team of five students, bringing together over 50 students
+and sustainable start-ups from various industries.
+SKILLS & INTERESTS
+Skills & Tools: Adobe Campaign, Adobe Analytics, Microsoft 365, Figma, Confluence, HCL Unica
+Languages: German (native), Bosnian (native), English (C1), French (B2)
+Interests: Cookmg, Hiking, Pilates, Restaurant Exploring (Brunch Spots)
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+  02/2025 - present   University of St. Gallen (HSG), St. Gallen, Switzerland
+    Master’s Student in Business Innovation | GPA 5.33/6.0
+    Relevant Courses: “Business Innovation”, “Design and management of digital Channels and stakeholder relationships”, “Communication & AI”
+  09/2020 - 05/2023 University of St. Gallen (HSG), St. Gallen, Switzerland
+    Bachelor ofArts HSG in Business Administration | Speciahzation in Marketing | GPA 5 05/6.0
+    Relevant Courses: “Corporate Fmance", “Strategie Management”, “Buyer Behavior”
+  08/2016-07/2020 Kantonsschule Heerbrugg, St. Gallen, Switzerland
+    High School Diploma, Major in Law and Economics
+
+PROFESSIONAL EXPERIENCE
+  08/2024 - present UBS, Zurich, Switzerland
+    Digital Engagement Speciahst (70%) | Team Digital Engagement | Digital Marketing & Sales
+    - Conceptualized multichannel customer journeys across owned channels, mereasing lead generation
+    and digital sales (e.g. CIC self-service journey, pension journey for pre-retirement clients)
+    - Channel Owner for UBS Digital Banking withm the team, dnving high-quality campaign execution and
+    improving knowledge shanng by establishmg a monthly best-practice forum.
+    - Executed targeted ad-hoc direct marketing campaigns across UBS Digital Banking, email, push noti-
+    fications, and TWINT, acceleratmg lead conversion and customer engagement across Segments.
+    - Translated campaign analytics into Strategie optimization initiatives, deploying A/B testing and perso-
+    nalization to drive improvements in marketing performance
+    - Partnered with PCs, Data Analysts and Legal to align digital marketing initiatives with business objec-
+    tives
+  02/2024 - 08/2024 UBS, Zurich, Switzerland
+    Internship (100%) | Team Digital Engagement | Digital Marketing & Sales
+    - Supported a broad ränge of campaigns across Digital Banking, TWINT, push notifications and email
+    for various dient segments
+    - Contributed to the development of best practices, including creating TWINT guidehnes for the digital
+    marketing team
+  05/2023 - 02/2024 emonitor St. Gallen, Switzerland
+    Internship (100%) | Growth Hacking | B2B Marketing
+    - Executed SEO optimization, setup and distnbuted monthly newsletter, wrote blog posts to strengthen
+    online presence and dient engagement
+    - Organized the company's first online webcast, attracting over 100 participants from the real estate
+    industry
+  09/2022-05/2023. RhySearch, St. Gallen, Switzerland
+    Internship (20%>) | Marketing & Event
+    - Supported marketing activities, including newsletter setup and event management, and conducted events.
+    post-event analyses by creating and evaluatmg surveys to implement improvements for subsequent
+
+EXTRACURRICULAR ACTIVITY
+  09/2022 - 05/2023 Oikos, St. Gallen, Switzerland
+    - Volunteer for sustainability-focused events at the University of St. Gallen.
+    - Co-organized the Oikos Start-up Night with a team offive students, bringing together over 50 students
+    and sustainable start-ups from various industries.
+
+SKILLS & INTERESTS
+  Skills & Tools:   Adobe Campaign, Adobe Analytics, Microsoft 365, Figma, Confluence, HCL Unica
+  Languages:   German (native), Bosnian (native), English (C1), French (B2)
+  Interests:   Cookmg, Hiking, Pilates, Restaurant Exploring (Brunch Spots)

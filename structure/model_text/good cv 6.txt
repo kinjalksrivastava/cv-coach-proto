@@ -1,0 +1,95 @@
+good cv 6
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+University of St. Gallen St. Gallen, Switzerland
+Bachelor of Arts in Economics, GPA: 5.01/6 September 2023 —April 2027
+College de Candolle Geneva, Switzerland
+German-French BilingualMaturity Certificate with honors August 2019 — June 2023
+Average GPA: 5.4/6.0, grade 6.0/6.0 in six subjects out of twelve; Python programming, higher mathematics
+Graduated with honors. Elected graduation Speaker; spoke beside the Cantonal Education Minister
+Won the University of Geneva prize for my Maturity Thesis on US foreign policy after the Cold War and the
+Rotaiy Club Prize at my graduation ceremony rewarding exceptional commitment through initiative
+WORK EXPERIENCE
+Cheyne Capital London, United Kingdom
+Hedge Fund Insight Week— Total Return Credit Fund August 2025 —August 2025
+Built an Excel-based cash flow model for a crossover credit name; modelled the time value of a zero-coupon
+bond with volatile interest rates in Python
+Shadowed CDS traders on the Total Return Credit Fund desk across execution and analysis
+Pictet Asset Management Geneva, Switzerland
+Summer Intern — Thematic Equities July 2024 — September 2024
+Built and presented an equity investment case as part of the CHF 4bn Premium Brands fund; performed
+competitor analysis, purity assessment and Trading Comps valuation
+Developed a Python-based workflow to automate the generation of ESG materiality matrices for the
+CHF 64bn thematic funds franchise; Solution integrated in unit-wide portfolio construction process
+Analyzed a 2.6x MOIC Private Equity Co-Investment opportunity in preliminary due diligence phase based
+on extemal waterfall, IRR models and PowerPoint pitch book
+Use of Bloomberg Terminal, AlphaSense, GitLab, Jupyter, Sustainalytics, MS Excel and PowerPoint
+De Pury Pictet Turrettini Geneva, Switzerland
+Intern July - July 2022
+Introduced to portfolio management and equity research fundamentals (asset allocation, multiples, RSI)
+EXTRACURRICULARS
+St. Gallen Markets Society (awaiting final approval) St Gallen, Switzerland
+Founder and President March 2025 — Present
+Led a team of 7 to start an initiative to present the diversity of fields in finance to University students,
+achieved 160+ memberships.
+Invited as panelist at “Next Gen, Next Era of Investing” Conference sponsored by LGT Private Banking
+Amsterdam Case Competition Amsterdam, Netherlands
+2nd Place Divisional March 2025 - March 2025
+Acted as strategy lead in a team of 4, achieved 2nd place in our division across 8h, 24h cases
+Provided recommendations to FAANG Company and Dutch NPO. Use of Pitchbook, MS PowerPoint
+Consulting Club at the University of St. Gallen St. Gallen, Switzerland
+Member of the Case Class September 2024 — June 2025
+Analyst in the Consulting Club Case Class, 12-member selective case-solving program with Bain & Company
+Students' Association of the College de Candolle Geneva, Switzerland
+President June 2022 —June 2023
+Organised all social events related to Student life, obtained funding towards social and academic projects
+Participated in an initiative to create a cantonal-wide students’ association (les GEunes)
+ADDITIONAL INFORMATION
+Languages: Native in French, English, Proficient in German, Intermediate skills in Italian and Hungarian
+Programming. Strong skills in Python, R.
+Certifications. Successfully passed Cambridge C2 Proficiency with grade A, Hedge Fund Fundamentals
+Interests Poetry, Visual Arts (drawing), History
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+  University of St. Gallen   St. Gallen, Switzerland   Bachelor ofArts in Economics, GPA: 5.01/6   September 2023 —April 2027
+  College de Candolle   Geneva, Switzerland   German-French BilingualMaturity Certificate with honors   August 2019 — June 2023
+    - Average GPA: 5.4/6.0, grade 6.0/6.0 in six subjects out oftwelve; Python programming, higher mathematics Graduated with honors. Elected graduation Speaker; spoke beside the Cantonal Education Minister
+    - Won the University of Geneva prize for my Maturity Thesis on US foreign policy after the Cold War and the Rotaiy Club Prize at my graduation ceremony rewarding exceptional commitment through initiative
+
+WORK EXPERIENCE
+  Cheyne Capital   London, United Kingdom   Hedge Fund Insight Week— Total Return Credit Fund   August 2025 —August 2025
+    - Built an Excel-based cash flow model for a crossover credit name; modelled the time value ofa zero-coupon bond with volatile interest rates in Python
+    - Shadowed CDS traders on the Total Return Credit Fund desk across execution and analysis
+  Pictet Asset Management   Geneva, Switzerland   Summer Intern — Thematic Equities   July 2024 — September 2024
+    - Built and presented an equity investment case as part ofthe CHF 4bn Premium Brands fund; performed competitor analysis, purity assessment and Trading Comps valuation
+    - Developed a Python-based workflow to automate the generation ofESG materiality matrices for the
+    - CHF 64bn thematic funds franchise; Solution integrated in unit-wide portfolio construction process
+    - Analyzed a 2.6x MOIC Private Equity Co-Investment opportunity in preliminary due diligence phase based on extemal waterfall, IRR models and PowerPoint pitch book
+    - Use of Bloomberg Terminal, AlphaSense, GitLab, Jupyter, Sustainalytics, MS Excel and PowerPoint
+  Intern   De Pury Pictet Turrettini   Geneva, Switzerland   July - July 2022
+    - Introduced to portfolio management and equity research fundamentals (asset allocation, multiples, RSI)
+
+EXTRACURRICULARS
+  St. Gallen Markets Society (awaiting final approval)   St Gallen, Switzerland   Founder and President   March 2025 — Present
+    - Led a team of 7 to start an initiative to present the diversity of fields in finance to University students, achieved 160+ memberships.
+    - Invited as panelist at “Next Gen, Next Era of Investing” Conference sponsored by LGT Private Banking
+  Amsterdam Case Competition   Amsterdam, Netherlands   2nd Place Divisional   March 2025 - March 2025
+    - Acted as strategy lead in a team of 4, achieved 2nd place in our division across 8h, 24h cases
+    - Provided recommendations to FAANG Company and Dutch NPO. Use ofPitchbook, MS PowerPoint
+  Consulting Club at the University of St. Gallen   St. Gallen, Switzerland   Member ofthe Case Class   September 2024 — June 2025
+    - Analyst in the Consulting Club Case Class, 12-member selective case-solving program with Bain & Company
+  Students' Association ofthe College de Candolle   Geneva, Switzerland   President   June 2022 —June 2023
+    - Organised all social events related to Student life, obtained funding towards social and academic projects Participated in an initiative to create a cantonal-wide students’ association (les GEunes)
+
+ADDITIONAL INFORMATION
+  Languages:   Native in French, English, Proficient in German, Intermediate skills in Italian and Hungarian
+  Programming. Strong skills in Python, R.
+  Certifications. Successfully passed Cambridge C2 Proficiency with grade A, Hedge FundFundamentals
+  Interests   Poetry, Visual Arts (drawing), History

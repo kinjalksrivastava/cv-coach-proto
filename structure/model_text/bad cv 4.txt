@@ -1,0 +1,59 @@
+bad cv 4
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Tujsbildung
+09/2025 - heute Universität St. Gallen HSG, Assessment, BWL
+08/2021 - 06/2025 Liechtensteinisches Gymnasium, Matura mit Wirtschaftsschwerpunkt
+Berufserfahrung
+08/2025 Kurzpraktikum, Werkhof Ruggell & Alp Gritsch (3 Wochen)
+01/2024-05/2024 Migros Partner Eschen (15%)
+- Eigenverantwortliche Führung einer Kasse
+07/2023 Kurzpraktikum, FIT AG (1 Woche)
+- Einblick in Buchhaltung und Unternehmensabläufe
+09/2022-12/2023 McDonald’s Restaurant Triesen & Vaduz, Crew (25%)
+- Kundenservice unterZeitdruck, Einhaltungvon Qualitats- und
+Hygienestandards, Einarbeitung neuer Mitarbeitenden
+Zertifikate
+Financial Edge (FELIX), The Accountant (2026)
+ECDL Standard Zertifikat, ECDL Switzerland
+-Module: Excel, Word, PowerPoint, Outlook, IT-Security
+Kenntnisse
+Deutsch Muttersprache
+Englisch sehr gute Kenntnisse
+MS Office sehr gute Kenntnisse
+Python Grundkenntnisse
+Engagement
+Business Student Club, Hedge Fund Club (HSG) und HSG Investment Club (HIC)
+Teilnahme an mehreren Wirtschafts- und Finanz-Events
+HSG-Schachklub, Teilnahme an Trainings und Turnieren
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Tujsbildung
+  09/2025 - heute   Universität St. Gallen HSG, Assessment, BWL
+  08/2021 - 06/2025 Liechtensteinisches Gymnasium, Matura mit Wirtschaftsschwerpunkt
+
+Berufserfahrung
+  08/2025   Kurzpraktikum, Werkhof Ruggell & Alp Gritsch (3 Wochen)
+  01/2024-05/2024 Migros Partner Eschen (15%)
+    - Eigenverantwortliche Führung einer Kasse
+  07/2023   Kurzpraktikum, FIT AG (1 Woche)
+    - Einblick in Buchhaltung und Unternehmensabläufe
+  09/2022-12/2023 McDonald’s Restaurant Triesen & Vaduz, Crew (25%)
+    - Kundenservice unterZeitdruck, Einhaltungvon Qualitats- und -Module: Excel, Word, PowerPoint, Outlook, IT-Security Teilnahme an mehreren Wirtschafts- und Finanz-Events
+    Hygienestandards, Einarbeitung neuer Mitarbeitenden
+    Zertifikate
+    Financial Edge (FELIX), The Accountant (2026)
+    ECDL Standard Zertifikat, ECDL Switzerland
+    Kenntnisse
+    Deutsch   Muttersprache
+    Englisch   sehr gute Kenntnisse
+    MS Office   sehr gute Kenntnisse
+    Python   Grundkenntnisse
+    Engagement
+    Business Student Club, Hedge Fund Club (HSG) und HSG Investment Club (HIC)
+    HSG-Schachklub, Teilnahme an Trainings und Turnieren

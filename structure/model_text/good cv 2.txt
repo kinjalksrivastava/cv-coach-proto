@@ -1,0 +1,86 @@
+good cv 2
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: contact block (name, address, links) | residual: clean
+------------------------------------------------------------------------------
+[CONTACT DETAILS REMOVED]
+University of St. Gallen (HSG), St. Gallen, Switzerland
+Bachelor of Arts in Business Administration, GPA: 5.0/6.0 09/2022 - exp. 01/2027
+Universidad Carlos 111 de Madrid, Madrid, Spain
+Exchange Semester, Macroeconomics, Corporate Finance and Economtc History 01/2026 — 06/2026
+Gymnasium Campus Muristalden, Bern, Switzerland
+Matura (High School)-, GPA: 5.3/6.0 (dass valedictorian) 05/2017 - 06/2021
+WORK EXPERIENCE
+UniCredit Group, Munich, Germany
+Debt Capital Markets Intern Financial Institutions & SSA 07/2025 - 12/2025
+• Worked on benchmark transactions for numerous european banks like Erste Bank, Nordea and ABN Amro
+• Supported 251 FI benchmark transactions across ATI, T2, Seniors, and Covered Bonds
+« Conducted Capital structure analysis and assisted in advising optimal bond issuance strategies
+Commerzbank AG, Stuttgart, Germany
+Financial Engineering & Corporate Finance Intern 09/2024 — 12/2024
+• Assisted in market analysis and financial modelling for M&A Transactions with values up to €50mn
+® Performed credit analysis and financial documentation for syndicated Ioans up to €250mn
+• Pitched numerous working Capital Solutions, securing fmancing for clients with needs ranging up to €100mn
+Vend Consulting GmbH, Nuremberg, Germany
+Consulting Intern, Digital Transformation Unit 07/2023 - 09/2023
+• Advised the execution of a digital transfonuation strategy for a leading global crane manufacturer
+• Counseled a multinational industrial Company on strategy and supply chain risks
+EXTRACURRICULAR ACTIVITIES
+Impulse Network, St. Gallen, Switzerland
+Academics Department Team & Board Member 02/2023 — 07/24
+• Organized the 6th and 7th Impulse Summit to connect 60 students with 200+ sports industry executives
+» Established exchange partnerships with over 8 Universities including the University of Michigan and London
+School of Economics
+• Recruited over 60 “global talents” and organized their schedule for the Summit
+University of St. Gallen Tennis Team
+Tennis Player & Coach 09/2022 - ongoing
+• Selected as one of the 30 best players of the University of St. Gallen
+• Participation in national and international university championships
+• Coaching on a weekly basis of over 20 students from the University of St. Gallen
+• Highest ranking Switzerland: 550 men’s
+SKILES, ACTIVITIES & INTERESTS
+Languages: Native in German & English, fluent in French
+Activities: Supporter for Start Global, member of the University’s Consulting Club and Tennis Team
+Interests: Tennis, Basketball, Fitness, Reading (geopolitics, economics and history)
+Certificatcs: Tennis coach certificate for teaching “advanced” players, TOEFL score of 103
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+(section with no readable heading)
+  ( A I >   Bachelor ofArts in Business Administration, GPA: 5.0/6.0   09/2022 - exp. 01/2027
+    University of St. Gallen (HSG), St. Gallen, Switzerland
+  Universidad Carlos 111 de Madrid, Madrid, Spain   Exchange Semester, Macroeconomics, Corporate Finance and Economtc History   01/2026 — 06/2026
+  Gymnasium Campus Muristalden, Bern, Switzerland   Matura (High School)-, GPA: 5.3/6.0 (dass valedictorian)   05/2017 - 06/2021
+
+WORK EXPERIENCE
+  UniCredit Group, Munich, Germany   Debt Capital Markets Intern Financial Institutions & SSA   07/2025 - 12/2025
+    - Worked on benchmark transactions for numerous european banks like Erste Bank, Nordea and ABN Amro
+    - Supported 251 FI benchmark transactions across ATI, T2, Seniors, and Covered Bonds
+    - Conducted Capital structure analysis and assisted in advising optimal bond issuance strategies
+  Commerzbank AG, Stuttgart, Germany   Financial Engineering & Corporate Finance Intern   09/2024 — 12/2024
+    - Assisted in market analysis and financial modelling for M&A Transactions with values up to €50mn
+    ® Performed credit analysis and financial documentation for syndicated Ioans up to €250mn
+    - Pitched numerous working Capital Solutions, securing fmancing for clients with needs ranging up to €100mn Vend Consulting GmbH, Nuremberg, Germany
+  Consulting Intern, Digital Transformation Unit   07/2023 - 09/2023
+    - Advised the execution of a digital transfonuation strategy for a leading global crane manufacturer
+    - Counseled a multinational industrial Company on strategy and supply chain risks
+
+EXTRACURRICULAR ACTIVITIES
+  Academics Department Team & Board Member   Impulse Network, St. Gallen, Switzerland   02/2023 — 07/24
+    - Organized the 6th and 7th Impulse Summit to connect 60 students with 200+ sports industry executives
+    - Established exchange partnerships with over 8 Universities including the University ofMichigan and London
+    School ofEconomics
+    - Recruited over 60 “global talents” and organized their schedule for the Summit
+  University of St. Gallen Tennis Team   Tennis Player & Coach   09/2022 - ongoing
+    - Selected as one ofthe 30 best players ofthe University of St. Gallen
+    - Participation in national and international university championships
+    - Coaching on a weekly basis of over 20 students from the University of St. Gallen
+    - Highest ranking Switzerland: 550 men’s
+
+SKILES, ACTIVITIES & INTERESTS
+  Languages: Native in German & English, fluent in French
+  Activities: Supporter for Start Global, member ofthe University’s Consulting Club and Tennis Team
+  Interests: Tennis, Basketball, Fitness, Reading (geopolitics, economics and history)
+  Certificatcs: Tennis coach certificate for teaching “advanced” players, TOEFL score of 103

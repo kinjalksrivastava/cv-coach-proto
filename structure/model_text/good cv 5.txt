@@ -1,0 +1,118 @@
+good cv 5
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+Universität St Gallen | Master in Accounting and Corpomte Finance St Gallen, CH | Sep 2024 - Present
+> Successfolly passed an eliminatory, foundational year (Sep 2024 — June 2025)
+> Relevant Topics: Management Accounting, Corporate Finance, Stochastic Modelling
+> Activities: SEED Workshops by the Social Business Club, Universa
+Universitä Bocconi | Bachelor in Economic and Social Sciences Milan, Italy | Sep 2021 — June 2024
+Interdisciplinary program taught in English with the following relevant topics:
+> Economic Policy, Mathematics, Statistics, Econometrics, Data Analysis
+> Exchange Semester: City University of London (Jan to Jun 2024)
+International School of Zug and Luzern | IB High School Diploma Zug, CH | Sep 2019 - June 2021
+> Completed a bilingual IB diploma with high level French and English classes.
+> Relevant Experiences: Debate Club, Choir, Volunteering with MUNTERwegs
+WORK EXPERIENCES
+JOSEPHA | Growth Intern. Zurich, CH | April 2025 — Sep 2025
+> Designed and implemented automated workflows to streamline content Publishing and reporting, saving the team over 110
+hours of manual work per month.
+> Built and maintained performance dashboards to monitor key metrics across 10+ social media accounts.
+> Analyzed large datasets of video performance to identify statistically significant patterns and optimize future campaigns.
+> Gained hands-on experience with APIs, data structuring, and workflow automation using Google Apps Script and n8n.
+EPIC Investment Partners | Intern — Capital & Advisory London, UK | July 2024 — Sep 2024
+> Assisted the placement team in the fundraising of a €250m Article 9 fiind. Notably prepared weekly dient presentations on
+PowerBi, conducted a benchmarking exercise using Pitchbook, and managed the CRM daily.
+> For the advisory team, identified M&A targets for a dient based on an assessment of their Strategie and financial criteria and
+created 2-pagers for internal and extemal uses.
+> For the Capital team, prepared and presented 2 IM reviews.
+LEADERSHIP
+Bocconi Students Opera Society | President Milan, Italy | Sep 2022 - June 2024
+> Introduced 3 divisions (HR, Media, Events) and a board of 9 members to successfully distribute tasks and take on projects.
+> Redesigned the recruitment strategy and saw a 200% increase in the number of members in 7 months.
+> Helped form the newly appointed heads to foster participation within their teams and manage projects effectively. Slowly
+increased the number of ongoing projects from 1 to 5+.
+> Successfully initiated and oversaw 5+ partnerships with other Student associations.
+> Represented Bocconi at the CI VIC A Student Association Forum in Warsaw, Poland, along with 9 Bocconi students.
+VOLUNTEERING, SOCIETIES & INTERESTS
+> Warwick Economic Forum 2024: 1 in a 15-student cohort representing Bocconi. Warwick, UK
+> 180DC: Consultant from Sep 2022 to Sep 2023. Won the Best Team Member Award. Milan, Italy
+V World@B: Board Member with a team of 4 students, focused on raising awareness for mental health. Milan, Italy
+> YFS 2021: Organised and supcrviscd an escape room on the UN's 17 SDGs for lO.groups of 12 students. Zug, CH
+> Himalayan Expedition: Installed solar panels and water heaters in rural villages in September 2019. Ladakh, India
+> AMIS Honor Choir: 1 in 200 students from around the world selected to sing in Beijing in March 2019. Beijing, China
+Other Interests: Piano (ABRSM Grade 5), reading classics
+FOREIGN LANGUAGES, CERTIFICATES & PROGRAMMING
+Foreign Languages: French (native), English (fall Professional proficiency), German (B2) and Italian (A2)
+Certificates (Forage): BCG Introduction to Strategy Consulting Job Simulation, JPMorgan Chase Investment Banking Job
+Simulation
+Coding and IT proficiency: R, Microsoft Office (Excel, Word, PowerPoint, PowerBi), Python, N8N, Apps Script
+Sicherheitspolitisches Forum St. Gallen St. Gallen, Schweiz
+• Mitglied des Event-Teams Februar 2025 - Jetzt
+Ehrenamtlicher Wahlhelfen bei den Europawahlen 2024 Bonn, Deutschland
+09. Juni 2024
+Interessen
+Sport, Klavier, Angeln, Reisen, Lesen
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+  Universität St Gallen | Master in Accounting and Corpomte Finance   St Gallen, CH | Sep 2024 - Present
+    - > Successfolly passed an eliminatory, foundational year (Sep 2024 — June 2025)
+    - > Relevant Topics: Management Accounting, Corporate Finance, Stochastic Modelling
+    - > Activities: SEED Workshops by the Social Business Club, Universa
+  Universitä Bocconi | Bachelor in Economic and Social Sciences   Milan, Italy | Sep 2021 — June 2024
+    Interdisciplinary program taught in English with the following relevant topics:
+    - > Economic Policy, Mathematics, Statistics, Econometrics, Data Analysis
+    - > Exchange Semester: City University ofLondon (Jan to Jun 2024)
+  International School of Zug and Luzern | IB High School Diploma   Zug, CH | Sep 2019 - June 2021
+    - > Completed a bilingual IB diploma with high level French and English classes.
+    - > Relevant Experiences: Debate Club, Choir, Volunteering with MUNTERwegs
+
+WORK EXPERIENCES
+  JOSEPHA | Growth Intern.   Zurich, CH | April 2025 — Sep 2025
+    - > Designed and implemented automated workflows to streamline content Publishing and reporting, saving the team over 110
+    hours ofmanual work per month.
+    - > Built and maintained performance dashboards to monitor key metrics across 10+ social media accounts.
+    - > Analyzed large datasets ofvideo performance to identify statistically significant patterns and optimize future campaigns.
+    - > Gained hands-on experience with APIs, data structuring, and workflow automation using Google Apps Script and n8n.
+  EPIC Investment Partners | Intern — Capital & Advisory   London, UK | July 2024 — Sep 2024
+    - > Assisted the placement team in the fundraising of a €250m Article 9 fiind. Notably prepared weekly dient presentations on
+    PowerBi, conducted a benchmarking exercise using Pitchbook, and managed the CRM daily.
+    - > For the advisory team, identified M&A targets for a dient based on an assessment oftheir Strategie and financial criteria and
+    created 2-pagers for internal and extemal uses.
+    - > For the Capital team, prepared and presented 2 IM reviews.
+
+LEADERSHIP
+  Bocconi Students Opera Society | President   Milan, Italy | Sep 2022 - June 2024
+    - > Introduced 3 divisions (HR, Media, Events) and a board of9 members to successfully distribute tasks and take on projects.
+    - > Redesigned the recruitment strategy and saw a 200% increase in the number ofmembers in 7 months.
+    - > Helped form the newly appointed heads to foster participation within their teams and manage projects effectively. Slowly
+    increased the number of ongoing projects from 1 to 5+.
+    - > Successfully initiated and oversaw 5+ partnerships with other Student associations.
+    - > Represented Bocconi at the CIVICA Student Association Forum in Warsaw, Poland, along with 9 Bocconi students.
+
+VOLUNTEERING, SOCIETIES & INTERESTS
+  > Warwick Economic Forum 2024: 1 in a 15-student cohort representing Bocconi.   Warwick, UK
+    - > 180DC: Consultant from Sep 2022 to Sep 2023. Won the Best Team Member Award.   Milan, Italy
+    World@B: Board Member with a team of4 students, focused on raising awareness for mental health.   Milan, Italy
+    - > YFS 2021: Organised and supcrviscd an escape room on the UN's 17 SDGs for lO.groups of 12 students.   Zug, CH
+    - > Himalayan Expedition: Installed solar panels and water heaters in rural villages in September 2019.   Ladakh, India
+    - > AMIS Honor Choir: 1 in 200 students from around the world selected to sing in Beijing in March 2019.   Beijing, China
+    Other Interests: Piano (ABRSM Grade 5), reading classics
+
+FOREIGN LANGUAGES, CERTIFICATES & PROGRAMMING
+  Foreign Languages: French (native), English (fall Professional proficiency), German (B2) and Italian (A2)
+    Certificates (Forage): BCG Introduction to Strategy Consulting Job Simulation, JPMorgan Chase Investment Banking Job   Simulation
+    Coding and IT proficiency: R, Microsoft Office (Excel, Word, PowerPoint, PowerBi), Python, N8N, Apps Script
+    Sicherheitspolitisches Forum St. Gallen   St. Gallen, Schweiz
+    - Mitglied des Event-Teams   Februar 2025 - Jetzt
+    Ehrenamtlicher Wahlhelfen bei den Europawahlen 2024   Bonn, Deutschland
+  09. Juni 2024
+    Interessen
+
+  Sport, Klavier, Angeln, Reisen, Lesen

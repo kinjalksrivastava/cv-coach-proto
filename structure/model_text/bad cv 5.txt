@@ -1,0 +1,47 @@
+bad cv 5
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+2025 - 2027 University of St. Gallen (HSG)
+Master’s degree in “Marketing Management”
+Master certificate “Managmg Climate Solutions”
+2027 Peking University HSBC Business School in Shenzhen, China
+Upcoming exchange semester in China as part of my Master’s Studies
+2019-2025 University of St. Gallen (HSG)
+Bachelor’s degree in “Business Administration”
+Specialisation in “Marketing”
+2024 Language Exchange for 1.5 months in Bordeaux, France
+2017 Language Exchange for 1.5 months in Santa Barbara, CA, USA
+2018- present Helper with counting workfor elections and votes forthe municipality of Schwyz.
+2021 - present Memberofthe Marketing Club atthe University of St. Gallen.
+German Native Speaker
+English Bilingual Matura (English / German), English C2 (Business English C2, TOEFL,
+Cambridge Advanced CI)
+French BI (Matura Level)
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+(section with no readable heading)
+  2025 - 2027   University of St. Gallen (HSG)
+    Master’s degree in “Marketing Management”
+    Master certificate “Managmg Climate Solutions”
+  2027   Peking University HSBC Business School in Shenzhen, China
+    Upcoming exchange semester in China as part of my Master’s Studies
+  2019-2025   University of St. Gallen (HSG)
+    Bachelor’s degree in “Business Administration”
+    Specialisation in “Marketing”
+  2024   Language Exchange for 1.5 months in Bordeaux, France
+  2017   Language Exchange for 1.5 months in Santa Barbara, CA, USA
+
+(section with no readable heading)
+  2018- present   Helper with counting workfor elections and votes forthe municipality of Schwyz.
+  2021 - present   Memberofthe Marketing Club atthe University of St. Gallen.
+
+(section with no readable heading)
+  German   Native Speaker
+  English   Bilingual Matura (English / German), English C2 (Business English C2, TOEFL,
+  Cambridge Advanced CI)
+  French   BI (Matura Level)

@@ -1,0 +1,132 @@
+bad cv 1
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+Assessment Jahr (Geplant: Bachelor in Betriebswirtschaftslehre, Universität St. 09/2024- Present
+Gallen), Universität St. Gallen St. Gallen, Schweiz
+Passerelle, erwachsenen Maturität, Maturitätsschule für Erwachsene Luzern (MSE) 10/2023 - 08/2024
+Reussbühl-Luzern,
+Schweiz
+Kauffrau EFZ, Berufsmatura, KV Luzern 08/2019 - 07/2022
+Luzern, Schweiz
+S BERUFSERFAHRUNG
+Junior Business Analyst, Digitalisierung, Luzerner Kantonalbank AG 09/2022 - 08/2023
+• Marktanalyse und systematische Bewirtschaftung relevanter Themen Luzern, Schweiz
+• Identifikation von Digitalisierungsbedarf durch Markt- und Wettbewerbsbeobachtung
+sowie Ableitung gezielter Massnahmen
+• Entwicklung fachlicher Konzepte und Lösungen unter strategischen und wirtschaftlichen
+Aspekten
+• Mitarbeit in Projekten als Requirements Engineer, Erstellung und Verwaltung von
+Anforderungen
+• Stakeholder-Management an der Schnittstelle zwischen Business, Vertrieb,
+Projektmanagement und IT
+• Mitverantwortlich für Wissenssicherung und Dokumentation
+Kauffrau EFZ, Luzerner Kantonalbank AG 08/2019 - 07/2022
+• Anwendung fundierter Kenntnisse im Bankwesen. Luzern, Schweiz
+• Durchführung grundlegender Bankdienstleistungen (Konten, Wertschriftendepots,
+Serviceleistungen)
+• Eröffnung und Betreuung von Geschäftsbeziehungen.
+• Bearbeitung telefonischer Kundenanfragen und allgemeiner Korrespondenz.
+• Selbstständige Kundenbetreuung in der Kundenhalle sowie Unterstützung bei
+Kampagnen.
+• Führung von Kundengesprächen, inklusive Vor- und Nachbereitung sowie Bedarfsanalyse.
+Betreuung von Spontankunden und Unterstützung im Vertrieb.
+• Durchführung und Überwachung von Kreditprüfungen sowie Marktwertermittlungen.
+ö ORGANISATIONEN
+UNIVERSA - The Women's Business Network, Active Member - Events Team 2024- present
+St. Gallen, Schweiz
+START Global, Volunteer 2025 - 2025
+St. Gallen, Schweiz
+Ministrantenscharr Sempach, Leiter einer Ministrantengruppe für Kinder 2013-2024
+Leiterin einer Ministrantengruppe für Kinder (2017-2024), nach einem Freiwilligendienst als Sempach, Switzerland
+Ministrantin (2013-2017), Organisation von Aktivitäten und Förderung der Teamarbeit
+Q SPRACHEN
+Deutsch Albanisch
+Muttersprache Muttersprache
+Englisch Französisch
+B2 First (FCE) B2 Delf
+Japanisch
+Al
+SKILLS
+• Microsoft 365
+• Grundkenntnisse in Avaloq (Kernbankensystem)
+• Certificate Professional for Requirements Engineering, Foundation Level
+£ CERTIFICATIONS
+Englisch, Cambridge English Certificate - B2 First (FCE)
+Französisch, DELF B2
+Certificate Professional for Requirements Engineering, Foundation Level
+INTERESTS
+• Sport (Volleyball, Wandern) • Lesen
+• Reisen • Kochen
+• Technologie & Innovation
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+  Assessment Jahr (Geplant: Bachelor in Betriebswirtschaftslehre, Universität St.   09/2024- Present Gallen), Universität St. Gallen   St. Gallen, Schweiz
+  Passerelle, erwachsenen Maturität, Maturitätsschule für Erwachsene Luzern (MSE)   10/2023 - 08/2024
+    Reussbühl-Luzern,
+    Schweiz
+  Kauffrau EFZ, Berufsmatura, KV Luzern   08/2019 - 07/2022
+    Luzern, Schweiz
+
+BERUFSERFAHRUNG
+  Junior Business Analyst, Digitalisierung, Luzerner Kantonalbank AG   09/2022 - 08/2023
+    - Marktanalyse und systematische Bewirtschaftung relevanter Themen   Luzern, Schweiz
+    - Identifikation von Digitalisierungsbedarf durch Markt- und Wettbewerbsbeobachtung
+    sowie Ableitung gezielter Massnahmen
+    - Entwicklung fachlicher Konzepte und Lösungen unter strategischen und wirtschaftlichen
+    Aspekten
+    - Mitarbeit in Projekten als Requirements Engineer, Erstellung und Verwaltung von
+    Anforderungen
+    - Stakeholder-Management an der Schnittstelle zwischen Business, Vertrieb,
+    Projektmanagement und IT
+    - Mitverantwortlich für Wissenssicherung und Dokumentation
+  Kauffrau EFZ, Luzerner Kantonalbank AG   08/2019 - 07/2022
+    - Anwendung fundierter Kenntnisse im Bankwesen.   Luzern, Schweiz
+    - Durchführung grundlegender Bankdienstleistungen (Konten, Wertschriftendepots,
+    Serviceleistungen)
+    - Eröffnung und Betreuung von Geschäftsbeziehungen.
+    - Bearbeitung telefonischer Kundenanfragen und allgemeiner Korrespondenz.
+    - Selbstständige Kundenbetreuung in der Kundenhalle sowie Unterstützung bei
+    Kampagnen.
+    - Führung von Kundengesprächen, inklusive Vor- und Nachbereitung sowie Bedarfsanalyse.
+    Betreuung von Spontankunden und Unterstützung im Vertrieb.
+    - Durchführung und Überwachung von Kreditprüfungen sowie Marktwertermittlungen.
+
+ORGANISATIONEN
+  UNIVERSA - The Women's Business Network, Active Member - Events Team   2024- present
+    St. Gallen, Schweiz
+  START Global, Volunteer   2025 - 2025
+    St. Gallen, Schweiz
+  Ministrantenscharr Sempach, Leiter einer Ministrantengruppe für Kinder   2013-2024
+    Leiterin einer Ministrantengruppe für Kinder (2017-2024), nach einem Freiwilligendienst als   Sempach, Switzerland Ministrantin (2013-2017), Organisation von Aktivitäten und Förderung der Teamarbeit
+
+SPRACHEN
+  Deutsch   Albanisch
+  Muttersprache   Muttersprache
+  Englisch   Französisch
+  B2 First (FCE)   B2 Delf
+  Japanisch
+  Al
+
+SKILLS
+  • Microsoft 365
+  • Grundkenntnisse in Avaloq (Kernbankensystem)
+  • Certificate Professional for Requirements Engineering, Foundation Level
+
+£ CERTIFICATIONS
+  Englisch, Cambridge English Certificate - B2 First (FCE)
+  Französisch, DELF B2
+
+  Certificate Professional for Requirements Engineering, Foundation Level
+
+
+INTERESTS
+  • Sport (Volleyball, Wandern)   • Lesen
+  • Reisen   • Kochen
+  • Technologie & Innovation

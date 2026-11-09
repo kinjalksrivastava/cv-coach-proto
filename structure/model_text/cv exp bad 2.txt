@@ -1,0 +1,109 @@
+cv exp bad 2
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EMPLOYMENT HISTORY:
+AXA XL, Zürich, Switzerland (2014 - 2026)
+• Currently Rcsponsible Actuary of Catlin Re Switzerland Ltd, a Swiss based reinsurance
+entity within the AXA XL Division of AXA Group, and member of the Executive
+Committee of Catlin Re Switzerland Ltd.
+• Activities since joining Catlin Re in May 2014 include:
+o Overseeing annual completion of Responsible Actuary Report and SST Report,
+o Member of the SST Model Committee and Risk Management Committee (Catlin Re),
+o Disentangling direct business from reinsurance business,
+o Integrating Catlin business into XL (2015 acquisition of Catlin by XL) and
+subsequently XL Catlin business into AXA (2018 acquisition of XL Catlin by AXA),
+o Leading the XL Catlin Reinsurance Segment reserving team for Asia Pacific, Latin
+America and Global Credit & Surety, and
+o Supporting reserving and account pricing
+XL Group, Zürich, Switzerland (2001 - 2014)
+• Served as Responsible Actuary for XL Insurance Switzerland Ltd, Vitodurum Reinsurance
+Company Ltd, and XL Re Latin America Ltd at time of departure from XL Group
+• Primary activities focused on reserving for direct business across multiple lines of business
+and supporting various market segments as a “Regional Actuary” and an “Operating
+Business Unit Actuary”
+• Provided support during the Net Reserve Seasoning that commenced a few years after XL
+purchased the international business unit from Winterthur Insurance
+Liberty Mutual Insurance Companies, Boston, Massachusetts (1993 -2001)
+• Obtained invaluable experience as an actuarial Student at Liberty Mutual, rotating through
+various units as pari: of their actuarial Student rotation program. Served as a Region Actuary
+within the large account unit, supported the Business Market Countrywide Planning and
+Monitoring Unit by managing a team that analyzed and monitored performance of the
+middle-market unit, managed a reserving team within the Financial Reporting Unit, stepped
+in for a seasoned actuary in the field during her extended maternity leave supporting two
+middle-market divisions out of the Atlanta office, conducted studies as part of the Workers’
+Compensation Research and Development Unit, and supported the Commercial Auto,
+General Liability and Property Lines Ratemaking Unit.
+EDUCATION:
+Casualty Actuarial Society Exams: Fellowship (FCAS) in 1999
+University of St. Gallen, Certificate of Advanced Studies in Management, in progress with
+anticipated completion in September 2026
+Union College, Schenectady, NY, Bachelor of Science in Mathematics, June 1992
+• Cum laude with departmental honors
+University of Rochester, Rochester, NY, Certificate of Management Studies, August 1992
+ADDITIONAL EXPERIENCE / SKILLS:
+Member, American Academy of Actuaries, since 2000
+Casualty Actuarial Society Committees
+• CAS Examination Committee Member 2003 - 2007
+• CAS Committee on Reserves Member 2005 - 2007
+English mother tongue, fluent in German
+English Teacher's Assistant (Fulbright Commission Program) in Graz, Austria from Sept 1992 to
+May 1993
+ADDITIONAL ACTIVITIES:
+Kassierin, Vorstand Musikverein Harmonie Erlenbach
+Member, Musikverein Harmonie Erlenbach
+Advancements Coordinator, Scouting America Zurich Troop
+Member, Global Leadership Council of the University of Rochester
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EMPLOYMENT HISTORY:
+  AXA XL, Zürich, Switzerland (2014 - 2026)
+    - Currently Rcsponsible Actuary of Catlin Re Switzerland Ltd, a Swiss based reinsurance
+    entity within the AXA XL Division ofAXA Group, and member of the Executive
+    Committee of Catlin Re Switzerland Ltd.
+    - Activities since joining Catlin Re in May 2014 include:
+    - Overseeing annual completion ofResponsible Actuary Report and SST Report,
+    - Member of the SST Model Committee and Risk Management Committee (Catlin Re),
+    - Disentangling direct business from reinsurance business,
+    - Integrating Catlin business into XL (2015 acquisition of Catlin by XL) and
+    subsequently XL Catlin business into AXA (2018 acquisition of XL Catlin by AXA),
+    - Leading the XL Catlin Reinsurance Segment reserving team for Asia Pacific, Latin
+    America and Global Credit & Surety, and
+    - Supporting reserving and account pricing
+  XL Group, Zürich, Switzerland (2001 - 2014)
+    - Served as Responsible Actuary for XL Insurance Switzerland Ltd, Vitodurum Reinsurance
+    Company Ltd, and XL Re Latin America Ltd at time of departure from XL Group
+    - Primary activities focused on reserving for direct business across multiple lines ofbusiness
+    and supporting various market segments as a “Regional Actuary” and an “Operating
+    Business Unit Actuary”
+    - Provided support during the Net Reserve Seasoning that commenced a few years after XL
+    purchased the international business unit from Winterthur Insurance
+  Liberty Mutual Insurance Companies, Boston, Massachusetts (1993 -2001)
+    - Obtained invaluable experience as an actuarial Student at Liberty Mutual, rotating through within the large account unit, supported the Business Market Countrywide Planning and Monitoring Unit by managing a team that analyzed and monitored performance of the middle-market unit, managed a reserving team within the Financial Reporting Unit, stepped in for a seasoned actuary in the field during her extended maternity leave supporting two middle-market divisions out of the Atlanta office, conducted studies as part of the Workers’ Compensation Research and Development Unit, and supported the Commercial Auto, General Liability and Property Lines Ratemaking Unit.
+    various units as pari: of their actuarial Student rotation program. Served as a Region Actuary
+
+EDUCATION:
+  Casualty Actuarial Society Exams: Fellowship (FCAS) in 1999
+  University of St. Gallen, Certificate of Advanced Studies in Management, in progress with
+  anticipated completion in September 2026
+  Union College, Schenectady, NY, Bachelor of Science in Mathematics, June 1992
+  • Cum laude with departmental honors
+  University of Rochester, Rochester, NY, Certificate of Management Studies, August 1992
+
+ADDITIONAL EXPERIENCE / SKILLS:
+  Member, American Academy of Actuaries, since 2000
+    Casualty Actuarial Society Committees
+    - CAS Examination Committee Member 2003 - 2007
+    - CAS Committee on Reserves Member 2005 - 2007 May 1993
+    English mother tongue, fluent in German
+    English Teacher's Assistant (Fulbright Commission Program) in Graz, Austria from Sept 1992 to
+
+ADDITIONAL ACTIVITIES:
+  Kassierin, Vorstand Musikverein Harmonie Erlenbach
+  Member, Musikverein Harmonie Erlenbach
+  Advancements Coordinator, Scouting America Zurich Troop
+  Member, Global Leadership Council of the University of Rochester

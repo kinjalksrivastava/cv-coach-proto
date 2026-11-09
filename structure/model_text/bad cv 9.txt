@@ -1,0 +1,113 @@
+bad cv 9
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Schul- und Berufsausbildung
+02/2026 - Heute Universität St. Gallen
+Master-Vorbereitungsstufe für den Master in Business Innovation
+Module aus den Bereichen BWL, Informatik, Statistik, Buchhaltung
+St. Gallen (Schweiz)
+09/2022 - 02/2026 Universität St. Gallen
+Bachelor, Rechtswissenschaften mit Wirtschaftswissenschaften
+Module aus den Bereichen BWL, VWL, Recht, Mathematik,
+Geschichte, Psychologie, Fremdsprachen sowie Querschnittsthemen
+St. Gallen (Schweiz)
+02/2019 - Heute (beurlaubt) Universität zu Köln
+1. Staatsexamen, Rechtswissenschaften
+Köln (Deutschland)
+07/2018-01/2019 Bundeswehr
+Einsatz in der Feldjägertruppe (Militärpolizei)
+Letzter Dienstgrad: Obergefreiter
+Diverse Standorte (Deutschland)
+02/2018-06/2018 Landesamt für Natur, Umwelt und Verbraucherschutz NRW
+Wiederaufnahme Bundesfreiwilligendienst im Bereich: Zentrale
+Umweltanalytik
+Düsseldorf (Deutschland)
+09/2017-01/2018 Auszeit aus privaten Gründen
+10/2016-08/2017 Landesamt für Natur, Umwelt und Verbraucherschutz NRW
+Bundesfreiwilligendienst im Bereich: Zentrale Umweltanalytik
+Düsseldorf (Deutschland)
+08/2013-06/2016 Albert-Einstein-Gymnasium Kaarst
+«Allgemeine Hochschulreife»
+Note: 2,2
+Kaarst (Deutschland)
+Praktische Erfahrungen
+03/2022 - 09/2022 ALDI SÜD Immobilienverwaltungs-GmbH & Co. oHG, Rastatt
+Specialist Real Estate
+09/2020 - 02/2022 ALDI SE & Co. KG, Dormagen
+Working Student - Finance & Accounting
+Ehrenamtliche Tätigkeiten
+09/2020 Mitglied des Wahlvorstands (Kommunalwahl NRW 2020)
+Organisation und Durchführung des Wahlprozesses, Prüfung der
+Wahlberechtigung, Auszählung der Stimmen
+01/2018-10/2020 Stellvertretendes sachkundiges Mitglied im kommunalen
+Schulausschuss der Stadt Kaarst
+Mitwirkung an schulpolitischen Entscheidungen auf kommunaler
+Ebene
+05/2017 Mitglied des Wahlvorstands (Landtagswahl NRW 2017)
+Organisation und Durchführung des Wahlprozesses, Prüfung der
+Wahlberechtigung, Auszählung der Stimmen
+2015-2016 Unterstützung geflüchteter Schülerinnen im schulischen Umfeld
+Lernunterstützung, sprachliche Hilfestellung und Begleitung im
+Schulalltag
+Ausgezeichnet mit dem «Socialaward» der Stadt Kaarst
+Zusätzliche Teilnahmen
+2023 - 2025 Teilnahme am «Mentoring-Programm» der Universität St. Gallen
+Studienbegleitendes Zusatzprogramm mit persönlichem Mentor und
+Weiterbildungsseminaren in den Bereichen beruflicher und
+persönlicher Entwicklung
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Schul- und Berufsausbildung
+  02/2026 - Heute   Universität St. Gallen
+    Master-Vorbereitungsstufe für den Master in Business Innovation Module aus den Bereichen BWL, Informatik, Statistik, Buchhaltung St. Gallen (Schweiz)
+  09/2022 - 02/2026   Universität St. Gallen
+    Bachelor, Rechtswissenschaften mit Wirtschaftswissenschaften
+    Module aus den Bereichen BWL, VWL, Recht, Mathematik, Geschichte, Psychologie, Fremdsprachen sowie Querschnittsthemen St. Gallen (Schweiz)
+  02/2019 - Heute (beurlaubt) Universität zu Köln
+    - 1. Staatsexamen, Rechtswissenschaften
+    - Köln (Deutschland)
+  07/2018-01/2019   Bundeswehr
+    Einsatz in der Feldjägertruppe (Militärpolizei)
+    Letzter Dienstgrad: Obergefreiter
+    Diverse Standorte (Deutschland)
+  02/2018-06/2018   Landesamt für Natur, Umwelt und Verbraucherschutz NRW
+    Wiederaufnahme Bundesfreiwilligendienst im Bereich: Zentrale Umweltanalytik
+    Düsseldorf (Deutschland)
+  09/2017-01/2018   Auszeit aus privaten Gründen
+  10/2016-08/2017   Landesamt für Natur, Umwelt und Verbraucherschutz NRW
+    Bundesfreiwilligendienst im Bereich: Zentrale Umweltanalytik
+    Düsseldorf (Deutschland)
+  08/2013-06/2016   Albert-Einstein-Gymnasium Kaarst
+    «Allgemeine Hochschulreife»
+    Note: 2,2
+    Kaarst (Deutschland)
+
+Praktische Erfahrungen
+  03/2022 - 09/2022   ALDI SÜD Immobilienverwaltungs-GmbH & Co. oHG, Rastatt
+    Specialist Real Estate
+  09/2020 - 02/2022   ALDI SE & Co. KG, Dormagen
+    Working Student - Finance & Accounting
+
+Ehrenamtliche Tätigkeiten
+  09/2020   Mitglied des Wahlvorstands (Kommunalwahl NRW 2020)
+    Organisation und Durchführung des Wahlprozesses, Prüfung der
+    Wahlberechtigung, Auszählung der Stimmen
+  01/2018-10/2020   Stellvertretendes sachkundiges Mitglied im kommunalen
+
+Schulausschuss der Stadt Kaarst
+  Mitwirkung an schulpolitischen Entscheidungen auf kommunaler Ebene
+  05/2017   Mitglied des Wahlvorstands (Landtagswahl NRW 2017)
+    Organisation und Durchführung des Wahlprozesses, Prüfung der Wahlberechtigung, Auszählung der Stimmen
+  2015-2016   Unterstützung geflüchteter Schülerinnen im schulischen Umfeld
+    Lernunterstützung, sprachliche Hilfestellung und Begleitung im
+    Schulalltag
+    Ausgezeichnet mit dem «Socialaward» der Stadt Kaarst
+
+Zusätzliche Teilnahmen
+  2023 - 2025   Teilnahme am «Mentoring-Programm» der Universität St. Gallen
+    Studienbegleitendes Zusatzprogramm mit persönlichem Mentor und Weiterbildungsseminaren in den Bereichen beruflicher und persönlicher Entwicklung

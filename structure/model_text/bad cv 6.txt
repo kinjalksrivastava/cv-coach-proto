@@ -1,0 +1,64 @@
+bad cv 6
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+Französisch (B2)
+Russisch (Al) BERUFSERFAHRUNG
+IT-KENNTNISSE Dokumentrevision (Word, Excel, PDF)
+Excel • MS Office Freelance - Zürich 01.2026 - heute
+Word / Corp. Templates
+• Überarbeitung und Neustrukturierung von Dokumenten gemäss Corporate
+Python - Grundkenntnisse Design Richtlinien
+• Vereinheitlichung inkonsistenter Vorlagen zu standardisierten
+ENGAGEMENT
+Unternehmensvorlagen
+FC Oberrieden
+Gemeindeverwaltung
+Jugendtrainer (Grundausb.)
+Aktiver Spieler, 3. Liga Gemeinde Hünenberg 03.2022 - 06.2022
+• Digitalisierung und Strukturierung von Bau- und Architekturplänen im
+INTERESSEN
+Gemeindedatenbanksystem
+Sport • Fussball
+• Mitwirkung an der Optimierung digitaler Archivierungs- und Ablageprozesse
+Kochen ■ Sustainability
+Temporäre Assistenzkraft
+Hans Hallenbarter GmbH, Naters Sommer 2021
+• Unterstützung bei administrativen Abläufen inkl. Dokumentation und
+interner Korrespondenz
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+IT-KENNTNISSE
+Excel • MS Office
+Word / Corp. Templates
+Python - Grundkenntnisse
+ENGAGEMENT
+FC Oberrieden
+Jugendtrainer (Grundausb.)
+Aktiver Spieler, 3. Liga
+INTERESSEN
+Sport • Fussball
+Kochen ■ Sustainability
+BERUFSERFAHRUNG
+
+Dokumentrevision (Word, Excel, PDF)
+  Freelance - Zürich   01.2026 - heute
+    - Überarbeitung und Neustrukturierung von Dokumenten gemäss Corporate
+    Design Richtlinien
+    - Vereinheitlichung inkonsistenter Vorlagen zu standardisierten
+    Unternehmensvorlagen
+
+Gemeindeverwaltung
+  Gemeinde Hünenberg   03.2022 - 06.2022
+    - Digitalisierung und Strukturierung von Bau- und Architekturplänen im
+    Gemeindedatenbanksystem
+    - Mitwirkung an der Optimierung digitaler Archivierungs- und Ablageprozesse
+
+Temporäre Assistenzkraft
+  Hans Hallenbarter GmbH, Naters   Sommer 2021
+  • Unterstützung bei administrativen Abläufen inkl. Dokumentation und
+  interner Korrespondenz

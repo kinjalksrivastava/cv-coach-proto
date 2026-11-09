@@ -1,0 +1,114 @@
+good cv 3
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+University of St. Gallen | MA Strategy and International Management (SIM)
+September 2021 - April 2024 St. Gallen, CH
+Currently finalizing my thesis on user behaviour within the Metaverse as part of a cross-university study with RSM
+Universidad Peruana de Ciencias Aplicadas | Speciahzed Program in Customer Experience Management
+September 2020 — March 2021 Lima, PE
+Delivered a customer joumey analysis for Pem's largest supermarket chain e-commerce, enhancing CX (graded 5.5/6)
+Universidad Peruana de Ciencias Aplicadas | BA International Business Management
+March 2013 — December 2019 Lima, PE
+Developed business plan and produced a nutritional bar using Peruvian ingredients for final project (graded 5.25/6)
+PROFESSIONAL EXPERIENCE
+Simon-Kucher & Partners | Pricing and marketing Consulting Luxembourg, LU
+Associate Considtant - Internship October 2023 — December 2023
+- Did benchmark research and interviewed 21 KOLs to support the digital transformation strategy of a MedTech project
+- Analysed market data for competitive drugs in 20 countries to optimize a US pharma firm's global pricing strategy
+- Directly engaged on-site clients and actively supported 10 project deliverables, simplifying tasks for the leadership team
+Prophet | Brand, marketing, and transformation Consulting Zürich, CH
+Strategy Associate - Internship July 2023 — September 2023
+- Conducted market research for a major swiss bank acquisition project, generating new ideas for the brand strategy
+- Collaborated with a global team in meetings and presentation decks, supporting a 1.5-year contract closure of CHF 2Mn+
+- Compiled a comprehensive fact pack on the bank acquisition, helping onboard a cross-fiinctional team of 20+ people
+Hilti Group | Global construction provider Schaan, LI
+Product Manager - Internship May 2022 — October 2022
+- Supported the launch of an innovative fire protection digital platform in Middle East, reducing delivery times by 50%
+- Led and delivered an instructional presentation in Dubai for 20 engineers, streamlining the adoption ofthe platform
+- Tested the pilot with 6 customers, collected feedback, and identified pain points to improve the Service blueprint
+Bizlinks | B2B SaaS focused on accounting Lima, PE
+Strategie Account Manager — Full Time January 2020 — July 2021
+- Served as primary contact for a portfolio of 60 Companies, which represented USD IMn in recurrent annual revenue
+- Negotiated and led a cross-fiinctional team of 4 people to close 10 new accounts, generating over USD 100K in revenue
+- Envisioned and implemented the deployment of an automated help desk, achieving a 30% reduction in response times
+Muscle Shop Peru | Nutritional Supplements startup Lima, PE
+COO (ls‘ employee) - Full Time June 2017-December 2018
+- Analyzed competitive landscape to support the launch of 20 new products, incl. Supplements, clothing, and merchandise
+- Managed a team of 70 brand ambassadors and 8 Wholesale distributors, which represented USD 250K in revenue
+- Performed operational, sales, and marketing tasks, contributing to the team's growth ffom 3 to 10 people
+COMMUNITY EXPERIENCE
+Consulting Club HSG | Vice President andHead of Operations
+May 2022 - June 2023 St Gallen, CH
+Organized 30+ interactive workshops and case classes, connecting 20+ Consulting Companies with 1800+ Student members
+TEDxHSG | Head of Logistics and Operations
+September 2021 — December 2022 St. Gallen, CH
+Supervised the logistics for two TEDx events focused on Sustainability and Technology, each attended by 200+ participants
+SIMilili | Head of Fundraising and Communications
+September 2021 — September 2022 Kilifi, KE
+Raised CHF 10K to help build an animal farm on the ground and generate a steady income stream for a community school
+ADDITIONAL INFORMATION
+Languages: Spanish (Native), English (Fluent), German (Intermediate — currently enrolled in a Bl course at Goethe Institute)
+Extracurricular Courses: Positive Phsychology: How to Enhance Human Talent? (UPC). Bloomberg Market Concepts,
+Finance Fundamentals, and ESG (Bloomberg). Currently following an “M&A for Management Consultants” course (Udemy)
+Hobbies: Competitive sport enthusiast; passionate about soccer (2x Champion of Lima Club League), running (Ix Paris
+Marathon Finisher), martial arts (amateur), and strength training. Curious reader interested in economics, philosophy, and
+psychology. I am particularly intrigued by the transformative potential of emerging technologies, such as GenAI, on both
+Business innovation and personal use.
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nothing | residual: clean
+------------------------------------------------------------------------------
+EDUCATION
+  University of St. Gallen | MA Strategy andInternational Management (SIM)   September 2021 - April 2024   St. Gallen, CH
+    Currently finalizing my thesis on user behaviour within the Metaverse as part of a cross-university study with RSM Universidad Peruana de Ciencias Aplicadas | Speciahzed Program in Customer Experience Management
+  September 2020 — March 2021   Lima, PE
+    Delivered a customerjoumey analysis for Pem's largest supermarket chain e-commerce, enhancing CX (graded 5.5/6) Universidad Peruana de Ciencias Aplicadas | BA International Business Management
+  March 2013 — December 2019   Lima, PE
+    Developed business plan and produced a nutritional bar using Peruvian ingredients for final project (graded 5.25/6)
+
+PROFESSIONAL EXPERIENCE
+  Simon-Kucher & Partners | Pricing and marketing Consulting   Luxembourg, LU   Associate Considtant - Internship   October 2023 — December 2023
+    - Did benchmark research and interviewed 21 KOLs to support the digital transformation strategy of a MedTech project
+    - Analysed market data for competitive drugs in 20 countries to optimize a US pharma firm's global pricing strategy
+    - Directly engaged on-site clients and actively supported 10 project deliverables, simplifying tasks for the leadership team
+    Prophet | Brand, marketing, and transformation Consulting   Zürich, CH
+  Strategy Associate - Internship   July 2023 — September 2023
+    - Conducted market research for a major swiss bank acquisition project, generating new ideas for the brand strategy
+    - Collaborated with a global team in meetings and presentation decks, supporting a 1.5-year contract closure ofCHF 2Mn+
+    - Compiled a comprehensive fact pack on the bank acquisition, helping onboard a cross-fiinctional team of20+ people
+    Hilti Group | Global construction provider   Schaan, LI
+  Product Manager - Internship   May 2022 — October 2022
+    - Supported the launch ofan innovative fire protection digital platform in Middle East, reducing delivery times by 50%
+    - Led and delivered an instructional presentation in Dubai for 20 engineers, streamlining the adoption ofthe platform
+    - Tested the pilot with 6 customers, collected feedback, and identified pain points to improve the Service blueprint
+    Bizlinks | B2B SaaS focused on accounting   Lima, PE
+  Strategie Account Manager — Full Time   January 2020 — July 2021
+    - Served as primary contact for a portfolio of60 Companies, which represented USD IMn in recurrent annual revenue
+    - Negotiated and led a cross-fiinctional team of4 people to close 10 new accounts, generating over USD 100K in revenue
+    - Envisioned and implemented the deployment of an automated help desk, achieving a 30% reduction in response times
+    Muscle Shop Peru | Nutritional Supplements startup   Lima, PE
+  COO (ls‘ employee) - Full Time   June 2017-December 2018
+    - Analyzed competitive landscape to support the launch of20 new products, incl. Supplements, clothing, and merchandise
+    - Managed a team of 70 brand ambassadors and 8 Wholesale distributors, which represented USD 250K in revenue
+    - Performed operational, sales, and marketing tasks, contributing to the team's growth ffom 3 to 10 people
+
+COMMUNITY EXPERIENCE
+  Consulting Club HSG | Vice President andHead ofOperations   May 2022 - June 2023   St Gallen, CH
+    Organized 30+ interactive workshops and case classes, connecting 20+ Consulting Companies with 1800+ Student members TEDxHSG | Head ofLogistics and Operations
+  September 2021 — December 2022   St. Gallen, CH
+    Supervised the logistics for two TEDx events focused on Sustainability and Technology, each attended by 200+ participants SIMilili | Head ofFundraising and Communications
+  September 2021 — September 2022   Kilifi, KE
+    Raised CHF 10K to help build an animal farm on the ground and generate a steady income stream for a community school
+
+ADDITIONAL INFORMATION
+  Languages: Spanish (Native), English (Fluent), German (Intermediate — currently enrolled in a Bl course at Goethe Institute)
+  Extracurricular Courses: Positive Phsychology: How to Enhance Human Talent? (UPC). Bloomberg Market Concepts,
+  Finance Fundamentals, and ESG (Bloomberg). Currently following an “M&A for Management Consultants” course (Udemy)
+  Hobbies: Competitive sport enthusiast; passionate about soccer (2x Champion of Lima Club League), running (Ix Paris
+  Marathon Finisher), martial arts (amateur), and strength training. Curious reader interested in economics, philosophy, and
+  psychology. I am particularly intrigued by the transformative potential of emerging technologies, such as GenAI, on both
+  Business innovation and personal use.

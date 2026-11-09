@@ -1,0 +1,107 @@
+good cv 1
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: nationality | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+Universität St.Gallen (HSG) St.Gallen, Schweiz
+Bachelor of Arts in Betriebswirtschaftslehre Sep 2022 - Aug 2026
+• Teilnehmer im Coaching-Programm 2022/23 der Universität
+• Aktueller Notenschnitt: 5.08
+Kantonsschule Wettingen Wettingen, Schweiz
+Matura mit Schwerpunkt Wirtschaft und Recht Aug2018-Jun 2022
+• Leistungssportler im Juniorenkader von Swiss Cycimg
+• Notenschnitt- 4.9 (Maturaarbeit "Digitales Gesundheitssystem Schweiz", 5.5)
+ARBEITSERFAHRUNG
+Schweizer Armee Wangen a.A., Schweiz
+12-wöchige Grundausbildung, 6-wöchiger Truppeneinsatz
+Rekrutenschule Apr 2025-Aug 2025
+• Ausbildung zum Motorfahrer, führen von Lastwagen zum Personen- und Materialtransport
+• Durchführung von Instandhaltungsarbeiten: Reifenwechsel, Überbrücken, Schneeketten
+Trust Square Zürich, Schweiz
+Werkstudent, direkt dem CEO unterstellt
+Projektmanager Jul 2024-Mär 2025
+• Planung und Leitung von Standortwechsel mit fristgerechter Übergabe an Partner
+• Unterstützung der Geschäftsleitung bei Präsentationen und strategischen Initiativen
+• Erstellung und Dokumentation von Workflows für Tools zur Steigerung der Produktivität
+START Global St.Gallen, Schweiz
+Teilzeit- bis Vollzeit, Europas führende Studenteninitiative für Tech und Entrepreneurship
+Head of Partner Success Sep 2023 - Mai 2024
+• Aufbau eines neuen 4-köpfigen Teams, Führung und Entwicklung von Teammitgliedern
+• Konzeption, Strukturierung und Ausführung interner und externer Prozesse
+• Erfolgreiche Implementierung automatisierter Pipelines für über 120 Partner
+Lead Gase Development Hack (Hackathon) Dez 2022 - Mai 2024
+• Partnerakquise und Leitung der Case-Entwicklung für den jährlichen START Hack
+• Zusammenarbeit mit rund 9Ö Fuhrungspersonen aus über neun Unternehmenspartnern
+Superchat Berlin, Deutschland
+Praktikum im Sales & Growth Team, direkt dem Chief of Staff unterstellt
+Business Development Intern Jul 2023-Sep 2023
+• Lancierung des Schweizer Marktstarts, Identifizierung und Pflege von Prospects
+• Erschliessung von Partnerschaftsmöglichkeiten inkl. Empfehlung durch Apothekerverband
+CARIFY Zürich, Schweiz
+Praktikum in der Unternehmensentwicklung, direkt dem Co-CEO unterstellt
+Business Development Intern Jun 2022-Sep 2022
+• Reaktivierung und Ausbau des B2B-Geschäfts, Verhandlungsgespräche mit KMUs
+• Identifizierung und Entwicklung zusätzlicher Umsatzkanäle durch Add-on-Services
+AUSSERCURRICULARE AKTIVITÄTEN
+Jugend+Sport | Swiss Cycling Magglingen, Schweiz
+• Absolvieren von Jugend+Sport-Ausbildungen im Rad- und Schneesport Dez 2021 - heute
+• Leitung von Bikecontrol-Kursen an Schulen, Unterstützung von Trainings und Lagern
+Radsport-Club Wettingen Wettingen, Schweiz
+• Verantwortlich für die Buchhaltung und Ausrichtung des Vereins als Vorstandsmitglied Dez 2018 - heute
+ZUSÄTZLICHE INFORMATIONEN
+Interessen: Radsport und Schneesport, Kochen, soziales Engagement (aktive Rolle in der Sportausbildung)
+[NATIONALITY REDACTED]
+Sprachen: Deutsch (Muttersprache), Englisch (CI), Französisch (B2), Italienisch & Spanisch (AI)
+IT-Kompetenzen: MS Office, Google Suite & Slack; HubSpot, Zapier, Asana & Process Street
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: nationality | residual: clean
+------------------------------------------------------------------------------
+AUSBILDUNG
+  Universität St.Gallen (HSG)   St.Gallen, Schweiz   Bachelor of Arts in Betriebswirtschaftslehre   Sep 2022 - Aug 2026
+    - Teilnehmer im Coaching-Programm 2022/23 der Universität
+    - Aktueller Notenschnitt: 5.08
+  Kantonsschule Wettingen   Wettingen, Schweiz   Matura mit Schwerpunkt Wirtschaft und Recht   Aug2018-Jun 2022
+    - Leistungssportler im Juniorenkader von Swiss Cycimg
+    - Notenschnitt- 4.9 (Maturaarbeit "Digitales Gesundheitssystem Schweiz", 5.5)
+
+ARBEITSERFAHRUNG
+  Schweizer Armee   Wangen a.A., Schweiz   Rekrutenschule   Apr 2025-Aug 2025
+    12-wöchige Grundausbildung, 6-wöchiger Truppeneinsatz
+    - Ausbildung zum Motorfahrer, führen von Lastwagen zum Personen- und Materialtransport
+    - Durchführung von Instandhaltungsarbeiten: Reifenwechsel, Überbrücken, Schneeketten
+  Trust Square   Zürich, Schweiz   Projektmanager   Jul 2024-Mär 2025
+    Werkstudent, direkt dem CEO unterstellt
+    - Planung und Leitung von Standortwechsel mit fristgerechter Übergabe an Partner
+    - Unterstützung der Geschäftsleitung bei Präsentationen und strategischen Initiativen
+    - Erstellung und Dokumentation von Workflows für Tools zur Steigerung der Produktivität
+  START Global   St.Gallen, Schweiz   Head of Partner Success   Sep 2023 - Mai 2024
+    Teilzeit- bis Vollzeit, Europas führende Studenteninitiative für Tech und Entrepreneurship
+    - Aufbau eines neuen 4-köpfigen Teams, Führung und Entwicklung von Teammitgliedern
+    - Konzeption, Strukturierung und Ausführung interner und externer Prozesse
+    - Erfolgreiche Implementierung automatisierter Pipelines für über 120 Partner
+  Lead Gase Development Hack (Hackathon)   Dez 2022 - Mai 2024
+    - Partnerakquise und Leitung der Case-Entwicklung für den jährlichen START Hack
+    - Zusammenarbeit mit rund 9Ö Fuhrungspersonen aus über neun Unternehmenspartnern
+  Superchat   Praktikum im Sales & Growth Team, direkt dem Chief of Staff unterstellt   Berlin, Deutschland   Business Development Intern   Jul 2023-Sep 2023
+    - Lancierung des Schweizer Marktstarts, Identifizierung und Pflege von Prospects
+    - Erschliessung von Partnerschaftsmöglichkeiten inkl. Empfehlung durch Apothekerverband
+  CARIFY   Zürich, Schweiz   Business Development Intern   Jun 2022-Sep 2022
+    Praktikum in der Unternehmensentwicklung, direkt dem Co-CEO unterstellt
+    - Reaktivierung und Ausbau des B2B-Geschäfts, Verhandlungsgespräche mit KMUs
+    - Identifizierung und Entwicklung zusätzlicher Umsatzkanäle durch Add-on-Services
+
+AUSSERCURRICULARE AKTIVITÄTEN
+  Jugend+Sport | Swiss Cycling   Magglingen, Schweiz
+    - Absolvieren von Jugend+Sport-Ausbildungen im Rad- und Schneesport   Dez 2021 - heute
+    - Leitung von Bikecontrol-Kursen an Schulen, Unterstützung von Trainings und Lagern
+  Radsport-Club Wettingen   Wettingen, Schweiz
+    - Verantwortlich für die Buchhaltung und Ausrichtung des Vereins als Vorstandsmitglied   Dez 2018 - heute
+
+ZUSÄTZLICHE INFORMATIONEN
+  Interessen: Radsport und Schneesport, Kochen, soziales Engagement (aktive Rolle in der Sportausbildung)
+[NATIONALITY REDACTED]
+  Sprachen: Deutsch (Muttersprache), Englisch (CI), Französisch (B2), Italienisch & Spanisch (AI)
+  IT-Kompetenzen: MS Office, Google Suite & Slack; HubSpot, Zapier, Asana & Process Street

@@ -1,0 +1,92 @@
+exp cv bad 1
+==============================================================================
+WHAT THE MODEL RECEIVES TODAY (old pipeline)
+PII removed: email, phone, postal address, date of birth, civil status | residual: clean
+------------------------------------------------------------------------------
+BERUFLICHE ERFAHRUNG
+BESONDERE
+SKILLS CATEGORY LEAD INDIRECT SERVICES & IT CENTRAL EUROPE WANDER AG /
+TWININGSOVO | MÄRZ 2023-
+Kreative Ideen
+Pflichtbewusst VERANTWORTUCH EUR DIE WARENGRUPPEN INDIRECT SERVICES & IT
+Einsatzfreudig Lieferanten- und Vertragsmanagement strategischer Lieferanten
+Ehrgeizig
+Strategieentwicklung und Umsetzung
+Key-User Scanmarket (E-Sourcing Plattform)
+PERSÖNLICHE
+DATEN
+LEAD BUYER INDIRECTS WANDER AG | AUG 2022 - FEB 2023
+[DATE OF BIRTH REDACTED]
+JUNIOR CONSULTANT ERP-SYSTEME ELVADATA AG | FEB 2022 - JULI 2022
+[CIVIL STATUS REDACTED]
+[ADDRESS REDACTED] |JAN 2021 - JAN 2022
+Bern
+[EMAIL REDACTED] JUNIOR BUYER WANDER AG | OKI 2019 - DEZ 2020
+[PHONE REDACTED]
+PRAKTIKANT EINKAUF WANDER AG | JUNI 2019 - SEPT 2019
+SPRACHEN
+HANDBALLSPIELER | JUNI 2007-MAI 2019
+Deutsch: Muttersprache Halbprofessionell
+Englisch: First (Matura) BSV Bern Muri
+FREIZEIT 15 Länderspiele A-Nationalmannschaft Schweiz
+Natur
+AUSBILDUNG
+Sport
+2021-Berufsbildner
+2020-2021-CAS in Supply Chain & Logistics Management
+REFERENZEN
+2016 - 2019 - Bachelor Business Administrations PHW Bern
+Auf Anfrage 2014 - 2015 - Sport / BWL Studium Uni Bern
+2006 - 2011-Sportgymnasium, Feusi Bildungszentrum Bern
+
+==============================================================================
+WHAT THE MODEL WOULD RECEIVE (new parser)
+PII removed: phone, postal address, date of birth, civil status | residual: clean
+------------------------------------------------------------------------------
+SKILLS
+  Kreative Ideen
+  Pflichtbewusst
+  Einsatzfreudig
+  Ehrgeizig
+
+PERSÖNLICHE
+
+DATEN
+[DATE OF BIRTH REDACTED]
+  [CIVIL STATUS REDACTED]
+  [ADDRESS REDACTED]   @   .
+  [PHONE REDACTED]
+
+SPRACHEN
+  D   eutsch uttersprache   : M
+  Englisch: First (Matura)
+
+FREIZEIT
+  Natur
+  Sport
+
+REFERENZEN
+  A A   uf nfrage
+
+BERUFLICHE ERFAHRUNG
+  CATEGORY LEAD INDIRECT SERVICES & IT CENTRAL EUROPE WANDER AG /
+  TWININGSOVO | MÄRZ 2023-
+    VERANTWORTUCH EUR DIE WARENGRUPPEN INDIRECT SERVICES & IT L   ieferanten und ertragsmanagement strategischer ieferanten   - V   L
+      - Strategieentwicklung und Umsetzung
+      - Key-User Scanmarket (E-Sourcing Plattform)
+    LEAD BUYER INDIRECTS WANDER AG | AUG 2022 - FEB 2023
+    JUNIOR CONSULTANT ERP-SYSTEME ELVADATA AG | FEB 2022 - JULI 2022
+    JUNIOR LEAD BUYER WANDER AG |JAN 2021 - JAN 2022
+    JUNIOR BUYER WANDER AG | OKI 2019 - DEZ 2020
+    PRAKTIKANT EINKAUF WANDER AG | JUNI 2019 - SEPT 2019
+    HANDBALLSPIELER | JUNI 2007-MAI 2019
+      - Halbprofessionell
+      - BSV Bern Muri
+      - 15 Länderspiele A-Nationalmannschaft Schweiz
+
+  AUSBILDUNG
+    2021-Berufsbildner
+    2020-2021-CAS in Supply Chain & Logistics Management
+    2016 - 2019 - Bachelor Business Administrations PHW Bern
+    2014 - 2015 - Sport / BWL Studium Uni Bern
+    2006 - 2011-Sportgymnasium, Feusi Bildungszentrum Bern
