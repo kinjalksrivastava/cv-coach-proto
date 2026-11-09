@@ -2,15 +2,15 @@
 
 ### 1. Overall assessment
 
-Your letter appears to be a template or set of instructions for writing a cover letter, rather than an actual application. It does not provide any personal information, motivation, or specific examples that would help a recruiter understand your interest in the role or what you would bring to the organisation. As it stands, it does not fulfil the purpose of a cover letter.
+Your letter appears to be a template or example rather than a personalised application. It does not provide any specific information about your motivation, experiences, or what you would bring to the role or organisation. As it stands, it does not complement a CV or fulfil the purpose of a cover letter.
 
 **Paragraphs that read like a list of past experiences**
 
 You did not upload your CV, so nothing here has been compared with one. Each of these reads as a list of things you have done, which is what a CV is for — so it may not add much beyond one.
 
-- “Creates interest in yourself and explains why you are writing. Use and opening s…” — This paragraph is generic and does not provide any personal context, motivation, or specific information about your interest in the role or organisation.
-- “If you are in school or a recent grad, explain how your academic background qual…” — This paragraph gives general advice rather than explaining your own academic background or how it qualifies you for the position.
-- “Assert yourself – tell them you will call them within a designated period of tim…” — This paragraph is instructional and does not assert your own availability or interest in an interview.
+- “Creates interest in yourself and explains why you are writing. Use and opening s…” — This paragraph is generic and does not provide any personal context, motivation, or detail about your interest in the role or organisation.
+- “If you are in school or a recent grad, explain how your academic background qual…” — This paragraph gives general advice rather than specific information about your academic background or how it qualifies you for the position.
+- “Assert yourself – tell them you will call them within a designated period of tim…” — This paragraph is instructional and does not contain any personal or substantive content about your application.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -18,12 +18,12 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | Your letter does not include any specific information about yourself, your motivation, or your experience, so it does not add value beyond what a CV would provide. |
-| Why this organisation? | You do not mention why you are interested in this particular employer. |
-| Why this role? | You do not explain what interests you about this specific position. |
-| What you bring | You do not connect your experience or skills to the position you are seeking. |
-| Conclusion | You do not include a proper closing or expression of interest in further discussion. |
-| Company / recipient details | No company or recipient block found — add who the letter is to and where. We don't check whether the details are correct. |
+| Adds value beyond the CV | Your letter does not provide any specific information or insight beyond what a CV would show, and does not add value as a cover letter. |
+| Why this organisation? | You do not explain why you are interested in this particular employer. |
+| Why this role? | You do not state what interests you about this specific position. |
+| What you bring | You do not connect your experience or skills to the position in any way. |
+| Conclusion | Your conclusion is generic and does not express genuine interest or a proper closing for a cover letter. |
+| Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | No target role was given, so this wasn't checked. |
 | Length: max. one page | Your letter is one page, which is the maximum. Around two-thirds of a page of substance is usually enough. |
 | Availability / start date | Your availability or start date is mentioned. |

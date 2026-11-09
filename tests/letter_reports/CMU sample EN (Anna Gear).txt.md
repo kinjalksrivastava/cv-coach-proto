@@ -2,7 +2,14 @@
 
 ### 1. Overall assessment
 
-Your letter provides a clear overview of your the skills you describe and draws connections between your past work, your current research, and the R & D Engineer role you are targeting. You explain how your background in product design and development, as well as your leadership in research projects, prepares you for the challenges of the position. The letter is forward-looking and generally complements what a CV would show.
+Your letter provides a clear overview of your background and experience, but it mainly focuses on describing your past roles and achievements without offering much new insight beyond what a CV would typically show. The letter could be strengthened by explaining more specifically why you are interested in this particular company and role, and by connecting your experiences more directly to what you hope to contribute in the future.
+
+**Paragraphs that read like a list of past experiences**
+
+You did not upload your CV, so nothing here has been compared with one. Each of these reads as a list of things you have done, which is what a CV is for — so it may not add much beyond one.
+
+- “Prior to CMU, I spent two years working on product research and development at N…” — This paragraph lists your previous responsibilities and achievements in detail, but does not provide additional context or explanation beyond what would likely appear on a CV.
+- “My past professional experience and master’s research project align with this po…” — This paragraph summarizes your experience and research project, but mainly repeats your background without offering new insight into your motivation or what you would bring to the role.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -11,11 +18,11 @@ _Please note that this is only a first feedback mainly about the structure and v
 | Check | Brief feedback |
 | --- | --- |
 | Adds value beyond the CV | Checked — nothing to flag. |
-| Why this organisation? | You do not explain why you are interested in working for Awesome Engineering Company specifically; adding a sentence or two about what attracts you to this employer would strengthen your letter. |
-| Why this role? | Checked — nothing to flag. |
-| What you bring | Checked — nothing to flag. |
+| Why this organisation? | You have not explained why you are interested in this specific company or what attracts you to work there. |
+| Why this role? | You have not clearly stated what interests you about the R & D Engineer position itself or how it fits your future goals. |
+| What you bring | You mention your skills and experience, but do not connect them specifically to how you would contribute to this role or the company's needs. |
 | Conclusion | Checked — nothing to flag. |
-| Company / recipient details | No company or recipient block found — add who the letter is to and where. We don't check whether the details are correct. |
+| Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | The role is named. If the advert carries a reference number, add that too. |
 | Length: max. one page | The length could not be measured from what you uploaded, so please check it yourself. One page is the maximum, and around two-thirds of a page of substance is usually enough. |
 | Availability / start date | No start date mentioned. Recruiters often find it helpful to know when you could start — useful rather than required. |

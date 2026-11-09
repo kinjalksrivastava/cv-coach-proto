@@ -113,10 +113,30 @@ AVAILABILITY_RE = re.compile(
     # Outside the group: a date ends on "." and so has no word boundary after it.
     r"|\bab (?:dem )?\d{1,2}\.", re.IGNORECASE)
 # A recipient block: a company line, a street, or a postcode-and-town.
+# A recipient block, OR our own proof that there was one.
+#
+# This check runs on the redacted text, so the evidence it is looking for has
+# usually just been removed by the layer above it. On the CMU sample the
+# student writes "Awesome Engineering Company / 5678 Main Street / Pittsburgh,
+# PA 15213 / Dear Recruiting Manager" and the report told them "No company or
+# recipient block found - add who the letter is to and where." We deleted it
+# and then said it was missing, which is the worst kind of false finding: the
+# student goes looking for something they already did.
+#
+# So the placeholders count as evidence. "[RECIPIENT REDACTED]" means a named
+# recipient was there; "[ADDRESS REDACTED]" means an address was. The sender's
+# own block collapses to "[CONTACT DETAILS REMOVED]" instead and is deliberately
+# NOT in this list, because it says nothing about who the letter is addressed to.
+#
+# The legal-form list also missed "Awesome Engineering Company" - "Company"
+# spelled out is not a suffix - but the placeholder settles it either way, and
+# guessing at company names from capitalisation is how this check would start
+# inventing recipients.
 RECIPIENT_RE = re.compile(
     r"^\s*(?:[A-ZÄÖÜ][\w&.\- ]{2,40}\s(?:AG|GmbH|SA|Ltd|LLP|Inc|PLC|KG|SE)\b"
     r"|.*\b(?:strasse|straße|str\.|gasse|weg|platz|avenue|street|road)\s*\d"
-    r"|\b(?:CH|DE|AT)?[\s-]?\d{4,5}\s+[A-ZÄÖÜ][a-zäöü]{2,})",
+    r"|\b(?:CH|DE|AT)?[\s-]?\d{4,5}\s+[A-ZÄÖÜ][a-zäöü]{2,})"
+    r"|\[(?:RECIPIENT REDACTED|ADDRESS REDACTED|EMPFÄNGER[^\]]*|ADRESSE[^\]]*)\]",
     re.MULTILINE)
 
 # Prior contact with the organisation. v2: "ALWAYS check whether contact is
@@ -954,6 +974,12 @@ NO_ADVERT_CLAIMS = (
                 r"(?:\s+und\s+\w+)?", re.IGNORECASE),
      "zur angestrebten Stelle"),
     # "relevant skills" on its own is the same claim in two words.
+    # The possessive is consumed with it. Without that, "your relevant skills"
+    # became "your the skills you describe" in the first sentence of a report.
+    (re.compile(r"\b(?:your|the|their)\s+relevant\s+"
+                r"(?:skills|experience|qualities|competenc(?:e|ies))\b",
+                re.IGNORECASE),
+     "the skills you describe"),
     (re.compile(r"\brelevant\s+(?:skills|experience|qualities|competenc(?:e|ies))\b",
                 re.IGNORECASE),
      "the skills you describe"),

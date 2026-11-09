@@ -2,7 +2,15 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben besteht fast ausschließlich aus allgemeinen Hinweisen und Platzhaltern, die noch mit deinen eigenen Inhalten gefüllt werden müssen. Es ergänzt den Lebenslauf daher nicht und gibt keine Einblicke in deine Motivation, deinen Bezug zur Schule oder was du konkret einbringen möchtest. So erfüllt es die Aufgabe eines Anschreibens noch nicht.
+Dein Anschreiben besteht fast ausschließlich aus allgemeinen Hinweisen und Platzhaltern, die noch mit deinen eigenen Inhalten gefüllt werden müssen. Es fehlen konkrete Informationen zu deiner Motivation, deinen Erfahrungen und deinem Bezug zur Praktikumsschule. So wie es aktuell vorliegt, ergänzt das Anschreiben einen Lebenslauf nicht und erfüllt die Anforderungen an ein individuelles Bewerbungsschreiben noch nicht.
+
+**Abschnitte, die sich als Aufzählung früherer Erfahrungen lesen**
+
+Du hast deinen Lebenslauf nicht hochgeladen, also wurde hier nichts damit verglichen. Jeder dieser Abschnitte liest sich als Aufzählung dessen, was du gemacht hast — und genau dafür ist ein Lebenslauf da.
+
+- “Welche Aufgaben sollen Sie im Praktikum übernehmen und welche Erwartungen haben …” — Dieser Abschnitt ist ein Platzhalter und enthält keine eigenen Angaben zu den Aufgaben oder Erwartungen, die du im Praktikum hast.
+- “Hierfür ist es notwendig, dass Sie bereits im Voraus Recherchen zu Ihrer Wunschs…” — Hier fehlt der persönliche Bezug zur Schule – es steht nur, dass du recherchieren sollst, aber keine eigenen Gründe oder Erkenntnisse.
+- “(8. Kurzdarstellung des eigenen Profils inklusive Stärken, Soft-Skills, besonder…” — Statt einer Darstellung deines Profils und deiner Stärken steht hier nur die Aufforderung, dies zu tun – eigene Inhalte fehlen.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -10,12 +18,12 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Dein Anschreiben enthält bisher keine eigenen Inhalte oder spezifische Informationen, die über das hinausgehen, was im Lebenslauf stehen könnte. |
-| Warum dieses Unternehmen? | Es fehlt ein klarer Bezug dazu, warum du dich gerade für diese Schule interessierst. |
-| Warum diese Stelle? | Du gehst nicht darauf ein, was dich an diesem Praktikum konkret reizt oder welche Aufgaben dich besonders interessieren. |
-| Was du mitbringst | Es wird nicht deutlich, wie deine bisherigen Erfahrungen oder Kompetenzen zur Praktikumsschule oder zum Praktikum passen. |
-| Schluss | Ein persönlicher Abschluss mit Dank und ggf. einer kurzen Bekräftigung deines Interesses fehlt noch. |
-| Unternehmen / Empfängerangaben | Kein Empfängerblock gefunden — ergänze, an wen das Schreiben geht. Ob die Angaben stimmen, prüfen wir nicht. |
+| Mehrwert über den Lebenslauf hinaus | Das Anschreiben enthält keine eigenen Inhalte, sondern nur allgemeine Hinweise und Platzhalter – es fehlt jeglicher Mehrwert über den Lebenslauf hinaus. |
+| Warum dieses Unternehmen? | Du nennst keinen Grund, warum du dich gerade an dieser Schule bewirbst. |
+| Warum diese Stelle? | Es wird nicht deutlich, warum dich dieses Praktikum oder die Aufgaben interessieren. |
+| Was du mitbringst | Es gibt keine Verbindung zwischen deinen Erfahrungen und dem Praktikum – eigene Kompetenzen oder Beiträge werden nicht genannt. |
+| Schluss | Ein persönlicher Abschluss mit Dank oder Ausblick auf ein Gespräch fehlt. |
+| Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Es wurde keine Zielposition angegeben, daher nicht geprüft. |
 | Länge: maximal eine Seite | Dein Schreiben umfasst 2 Seiten. Eine Seite ist das Maximum, einen Teil davon musst du also streichen. |
 | Verfügbarkeit / Eintrittstermin | Kein Eintrittstermin genannt. Recruiter finden es oft hilfreich zu wissen, ab wann du könntest — hilfreich, nicht zwingend. |
