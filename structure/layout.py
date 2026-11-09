@@ -168,10 +168,11 @@ def _text_of(chars: list[dict], space: float) -> str:
     """Join characters, inserting a space where the PDF left a visible gap."""
     out = []
     for previous, char in zip([None] + chars[:-1], chars):
-        if previous is not None and char["x0"] - previous["x1"] > space:
+        if previous is not None and (char.get("_space_before")
+                                     or char["x0"] - previous["x1"] > space):
             out.append(" ")
         out.append(char["text"])
-    return "".join(out).strip()
+    return " ".join("".join(out).split())
 
 
 def read_pdf(file_bytes: bytes) -> list[Page]:
@@ -179,7 +180,25 @@ def read_pdf(file_bytes: bytes) -> list[Page]:
     pages: list[Page] = []
     with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
         for number, raw in enumerate(pdf.pages, start=1):
-            chars = [c for c in raw.chars if c.get("text", "").strip()]
+            # The space characters are dropped for positioning - they have no
+            # ink and would skew the median width - but NOT before noting where
+            # they were. Re-deriving every space from the gap alone fails on a
+            # glyph whose box overhangs the one after it: an "f" swallows the
+            # gap, so "Master of Arts" came back as "Master ofArts", "in terms
+            # of circular economy" as "in terms ofcircular". The PDF said where
+            # the spaces are; there is no reason to guess.
+            chars = []
+            space_before = False
+            for char in raw.chars:
+                text = char.get("text", "")
+                if not text:
+                    continue
+                if not text.strip():
+                    space_before = True
+                    continue
+                char["_space_before"] = space_before
+                space_before = False
+                chars.append(char)
             page = Page(number=number, width=raw.width, height=raw.height)
             if not chars:
                 pages.append(page)
