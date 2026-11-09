@@ -2,7 +2,7 @@
 
 ### 1. Gesamteinschätzung
 
-Das Motivationsschreiben ist klar strukturiert und zeigt eine persönliche Verbindung zum Thema Nachhaltigkeit sowie ein echtes Interesse an der Muster GmbH. Es geht über eine reine Nacherzählung des Lebenslaufs hinaus und stellt einen Bezug zwischen eigenen Erfahrungen und dem angestrebten Praktikum her.
+Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum und hebt persönliche Werte hervor, die über eine reine Aufzählung von Stationen hinausgehen. Es ist klar erkennbar, warum du dich für die Muster GmbH und den Bereich Logistik interessierst, und du stellst einen Bezug zwischen deinen Erfahrungen und dem angestrebten Praktikum her. Da kein Lebenslauf vorliegt, kann ich nicht beurteilen, ob alle Informationen wirklich neu sind, aber das Schreiben wirkt nicht wie eine bloße Nacherzählung des Werdegangs.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -10,15 +10,16 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Das Schreiben enthält persönliche Beweggründe und Beispiele, die über eine bloße Aufzählung von Stationen hinausgehen; ein Vergleich mit dem CV war jedoch nicht möglich. |
-| Warum dieses Unternehmen? | Es wird deutlich, warum die Muster GmbH aufgrund ihres Engagements für Nachhaltigkeit und regionale Zulieferer besonders attraktiv ist. |
-| Warum diese Stelle? | Das Interesse am Praktikum im Bereich Logistik wird durch die Verbindung zu Studieninhalten und persönlichen Werten nachvollziehbar gemacht. |
-| Was du mitbringst | Es werden konkrete Fähigkeiten (Organisation, Kommunikation, Durchsetzungsvermögen) genannt und mit Erfahrungen aus Studium und Freiwilligendienst verbunden. |
-| Schluss | Das Schreiben endet mit einer Einladung zum Gespräch und betont die Motivation, das Unternehmen zu unterstützen. |
+| Mehrwert über den Lebenslauf hinaus | Du bringst persönliche Beweggründe und konkrete Erfahrungen ein, die über eine reine Aufzählung hinausgehen. |
+| Warum dieses Unternehmen? | Du erklärst nachvollziehbar, warum dich die nachhaltige Ausrichtung der Muster GmbH anspricht. |
+| Warum diese Stelle? | Du gehst auf dein Interesse an Logistik und Nachhaltigkeit ein und stellst einen Bezug zum Praktikum her. |
+| Was du mitbringst | Du verbindest deine bisherigen Erfahrungen und Fähigkeiten mit den Anforderungen des Praktikums und erläuterst, wie du diese einbringen möchtest. |
+| Schluss | Du schließt mit einer Einladung zum Gespräch und betonst deine Motivation. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Die Stelle ist genannt. Falls die Anzeige eine Referenznummer hat, ergänze sie. |
 | Länge: maximal eine Seite | Die Länge liess sich aus deinem Upload nicht messen, bitte prüfe sie selbst. Eine Seite ist das Maximum, und rund zwei Drittel einer Seite an Inhalt genügen in der Regel. |
 | Verfügbarkeit / Eintrittstermin | Verfügbarkeit oder Eintrittstermin sind genannt. |
+| Früherer Kontakt zum Unternehmen | Hast du schon mit jemandem aus dem Unternehmen gesprochen oder an einem ihrer Events teilgenommen? Falls ja, erwäge, das dort zu erwähnen, wo du erklärst, warum dich das Unternehmen interessiert. |
 
 ### 3. Unterlagen und Vorlage des Career Services
 

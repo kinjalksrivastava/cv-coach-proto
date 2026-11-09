@@ -2,7 +2,7 @@
 
 ### 1. Overall assessment
 
-The letter is future-focused and clearly articulates the candidate's motivation for the Graduate Business Innovation position, especially regarding AI and innovation. It goes beyond a simple retelling of past experiences by connecting personal interests and specific skills to the role and organisation. The letter broadly fulfills the purpose of a cover letter by explaining direction, motivation, and potential contribution.
+Your letter provides clear motivation for both the organisation and the specific role, and you include relevant context and personal insights that go beyond a simple retelling of a CV. You connect your experiences and interests to the position and explain how they have shaped your direction, which helps the recruiter understand your fit and enthusiasm for the role. Overall, your letter complements a CV and is sufficiently future-focused.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -10,15 +10,16 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | The letter does not read as a chronological retelling of a career and adds value by explaining personal motivation and relevant skills, though I could not compare it with the CV. |
-| Why this organisation? | There is a clear and specific reason for interest in Modern Technology AG, referencing a personal interaction and admiration for their AI initiatives. |
-| Why this role? | The letter explains what interests the candidate about this specific position, particularly its focus on impactful AI projects and dynamic work. |
-| What you bring | It connects specific experiences (such as thesis work, stakeholder engagement, and adaptability from rock climbing) to the desired role and its challenges. |
-| Conclusion | The letter closes appropriately with thanks, a statement of availability, interest in interviewing, and a brief recall of what the candidate would contribute. |
+| Adds value beyond the CV | You include specific new details and personal reflections that would not be obvious from a CV alone. |
+| Why this organisation? | You explain your interest in the company by referencing your interaction at HSG Talents and your impression of their AI initiatives. |
+| Why this role? | You clearly state what excites you about the Graduate Business Innovation position, especially its focus on impactful AI projects and dynamic work. |
+| What you bring | You connect your academic, extracurricular, and leadership experiences directly to the desired role. |
+| Conclusion | You close with a confident statement of your interest and availability, and thank the reader appropriately. |
 | Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | The role and a reference number are both named. |
 | Length: max. one page | Your letter is one page, which is the maximum. Around two-thirds of a page of substance is usually enough. |
 | Availability / start date | Your availability or start date is mentioned. |
+| Previous contact with the organisation | You mention contact you have already had with the organisation — that belongs in a cover letter, so keep it. |
 
 ### 3. Career Services' own guidance and template
 

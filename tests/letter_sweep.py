@@ -56,11 +56,25 @@ FORBIDDEN = {
 
 # Phrases that claim the letter fits the role, where no advert said what the
 # role wants. MP, round 5.
+# Anything that claims to know what the advert asked for, when no advert was
+# uploaded. Miriam, round 6: "When the person doesn't upload a job description
+# then the bot should not say: 'relevant for the role'." The sweep ran green on
+# the adjective "relevant" alone while the model wrote "the skills and mindset
+# NEEDED for the position" on Career Services' own template - the same claim,
+# one synonym away, which is why this list now covers the synonyms too.
 CLAIMS_RELEVANCE = (
     "relevant for the role", "relevant to the role", "relevant for the position",
     "relevant to the position", "relevant for the trainee", "matches the requirements",
     "fits the requirements", "relevant für die stelle", "passend für die stelle",
     "entspricht den anforderungen",
+    "needed for the role", "needed for the position", "required for the role",
+    "required for the position", "required for the job", "necessary for the role",
+    "expected for the role", "sought for the role", "relevant skills",
+    "what the role requires", "what the position requires", "what the job requires",
+    "what the role needs", "what the employer is looking for",
+    "the role is looking for", "the position is looking for",
+    "für die stelle benötigt", "für die position erforderlich",
+    "relevante fähigkeiten", "relevanten fähigkeiten", "relevante kompetenzen",
 )
 
 
@@ -117,13 +131,57 @@ def run_one(client, path: str) -> list[str]:
             and "nicht messen" not in length_row:
         problems.append(f"length claimed without a page count: {length_row}")
 
-    written = " ".join([str(data.get("overall_assessment", ""))]
-                       + [str(v) for v in (data.get("essentials") or {}).values()])
+    # Everything the model itself wrote, the field v2 added included. The
+    # checks below were passing on two thirds of the output once
+    # 'repetitive_paragraphs' existed and nothing gathered it up.
+    written = cover_letter._written_text(data)
     for claim in CLAIMS_RELEVANCE:
         if claim in written.lower():
             problems.append(f"relevance claimed with no advert: '{claim}'")
     if "—" in written:
         problems.append("an em dash in the model's own text")
+
+    # --- Cover Letter Feedback Rules v2 ---
+    #
+    # v2, section 5: the prior-contact question is asked ALWAYS, and the report
+    # renders Career Services' own sentence. Twice is as wrong as never: if the
+    # model asks as well, the student reads the same question in two places.
+    question = strings["contact_question"]
+    asked = markdown.count(question[:60])
+    if not facts["mentions_prior_contact"] and asked != 1:
+        problems.append(f"the prior-contact question appears {asked} times")
+    if facts["mentions_prior_contact"] and asked:
+        problems.append("asked about contact the letter already mentions")
+    for echo in ("coffee chat", "careers fair", "career fair", "kaffeegespräch",
+                 "karrieremesse", "firmenpräsentation"):
+        if echo in written.lower():
+            problems.append(f"the model asked about contact as well: '{echo}'")
+
+    # Serena, round 6: write to the student, not about them.
+    third = cover_letter.THIRD_PERSON_RE.search(written)
+    if third:
+        problems.append(f"the student is written about in the third person: "
+                        f"'{third.group(0)}'")
+
+    # An internal label, so a value outside the three is a sign the model has
+    # drifted from the brief rather than something the student would see.
+    if data.get("added_value") is None:
+        problems.append("no added-value category was returned")
+
+    # No CV is uploaded anywhere in this sweep, so every one of these would be a
+    # claim about a document the model has never seen. v2, section 2: "If no CV
+    # is available, do not claim to have verified overlap."
+    for claim in ("your cv already", "already on your cv", "repeats your cv",
+                  "steht schon in deinem lebenslauf", "wiederholt deinen lebenslauf",
+                  "bereits in deinem lebenslauf"):
+        if claim in written.lower() or claim in markdown.lower():
+            problems.append(f"claimed an overlap with a CV it never saw: '{claim}'")
+
+    # The words the report quotes come from the letter, never from the model.
+    for flagged in data.get("repetitive_paragraphs") or []:
+        if flagged["opening"] not in " ".join(sent.split()):
+            problems.append(f"quoted words that are not in the letter: "
+                            f"{flagged['opening'][:40]!r}")
 
     if not blob:
         problems.append("no PDF was produced")
