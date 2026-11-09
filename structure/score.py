@@ -64,12 +64,24 @@ def from_new(path: str) -> dict:
     sections = entries = bullets = bare = 0
 
     def walk(section) -> None:
+        """Count this section AND everything nested inside it.
+
+        The first version returned early when a section had subsections, so a
+        parent heading's own entries were never counted at all: exp cv bad 1
+        scored 0 entries against a truth of 12, and the tree was marked wrong
+        for nesting sub-headings under a parent that genuinely exists in the
+        document. That one bug made the parser look 10 errors worse than it is.
+        """
         nonlocal sections, entries, bullets, bare
-        if section.subsections:
-            for child in section.subsections:
-                walk(child)
-            return
-        sections += 1
+        for child in section.subsections:
+            walk(child)
+        # A heading that exists only to group sub-headings is not itself a
+        # section in the hand labelling, which flattens them - but its own
+        # entries are real and must be counted either way. Returning early,
+        # as the first version did, dropped them: exp cv bad 1 scored 0
+        # entries against a truth of 12.
+        if not section.subsections:
+            sections += 1
         for entry in section.entries:
             entries += 1
             bullets += len(entry.bullets)

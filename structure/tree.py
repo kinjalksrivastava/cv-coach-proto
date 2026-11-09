@@ -38,6 +38,8 @@ from guardrails.dates import RANGE_RE as DATE_RANGE
 
 from . import layout
 
+from guardrails import headings as heading_lookup
+
 # A single date, where a CV gives one rather than a range: "2027", "Sep 2023",
 # "09/2024". bad cv 5 anchors three of its education entries on a bare year,
 # and anchoring only on ranges lost them into the entry above.
@@ -45,7 +47,7 @@ SINGLE_DATE = re.compile(
     r"^(?:(?:19|20)\d{2}"
     r"|(?:0?[1-9]|1[0-2])[./](?:19|20)\d{2}"
     r"|(?:Jan|Feb|M[a\u00e4]r|Apr|Mai|May|Jun|Jul|Aug|Sep|O[ck]t|Nov|De[cz])"
-    r"[a-z]*\.?\s+(?:19|20)\d{2})$", re.IGNORECASE)
+    r"[a-z]*\.?\s*(?:19|20)\d{2})$", re.IGNORECASE)
 
 # A heading is set at least this much larger than the body text.
 LARGER_THAN_BODY = 0.4
@@ -84,6 +86,41 @@ BULLET_GLYPHS = "-–—•·*▪■●○◦‣→▸▹►⁃∙◆❖➢✓»
 MIN_MARKER_USES = 3
 
 
+# A place is not a description of what the student did - and it is recognised
+# by WHERE IT SITS, not by what it is called.
+#
+# A two-column CV prints the city hard against the right margin, so the row
+# under an entry title is often nothing but the location. Counted as
+# description it makes a bare entry look like a described one, and on Serena's
+# CV that is exactly what happened: UNIVERSA and START Global have no bullets
+# and nothing written under them - her complaint was "It shows Organisationen
+# as strong, even though the person has not added any details or bullets to
+# their experiences" - and reading "St. Gallen, Schweiz" as detail would have
+# put the section straight back to Strong.
+#
+# The first two attempts at this used word lists: capitalised-looking words,
+# then a list of countries. Both were wrong for the same reason every word
+# list in this codebase has been wrong. The first ate "Hygienestandards,
+# Einarbeitung neuer Mitarbeitenden" because German capitalises its nouns;
+# the second could never cover Mumbai, Lagos or Kleinbösingen.
+#
+# Position settles it and needs no vocabulary at all. On that CV the entry
+# titles start at x=43 and real description at x=43.9, while the location
+# lines start at x=472. A line that begins in the right-hand half of the
+# section is in the right-hand COLUMN: a place, a date, a city - whatever it
+# says, in whatever language, it is a field and not a sentence about the work.
+#
+# Such lines are still kept and still shown to the model, because where the
+# student worked is worth knowing. They simply do not count as detail.
+RIGHT_COLUMN_SHARE = 0.5
+
+
+def _in_the_right_column(row: layout.Row, left: float, right: float) -> bool:
+    if right <= left:
+        return False
+    return (row.x0 - left) / (right - left) > RIGHT_COLUMN_SHARE
+
+
 @dataclass
 class Entry:
     """One job, degree or activity, with whatever sits under it."""
@@ -91,8 +128,14 @@ class Entry:
     dates: str = ""
     bullets: list[str] = field(default_factory=list)
     description: list[str] = field(default_factory=list)
+
+    # Lines that sat in the right-hand column: a city, a place, a date field.
+    # Kept so the model still sees where the student worked, but they say
+    # nothing about the work, so they are not detail.
+    asides: list[str] = field(default_factory=list)
+
     # The same lines again, in the order they appear on the page, each
-    # tagged "bullet" or "line". The two lists above are what the rules
+    # tagged "bullet", "line" or "aside". The lists above are what the rules
     # count; this is what the model is shown, because printing every
     # description line before every bullet put the second half of a
     # sentence above the first half of it.
@@ -100,8 +143,18 @@ class Entry:
 
     @property
     def is_bare(self) -> bool:
-        """Nothing at all is said about what this was."""
+        """Nothing at all is said about what this was.
+
+        A right-hand-column line does not count, which is why asides are kept
+        out of `description`: "St. Gallen, Schweiz" under an entry title is
+        where, not what, and counting it as detail put Serena's ORGANISATIONEN
+        section back to Strong with two entries that say nothing.
+        """
         return not (self.bullets or self.description)
+
+    @property
+    def has_detail(self) -> bool:
+        return not self.is_bare
 
 
 @dataclass
@@ -240,7 +293,16 @@ def _anchors_entry(row: layout.Row) -> bool:
     if _dates_outside_brackets(row.text):
         return True
     pieces = sorted(row.pieces, key=lambda p: p.x0)
-    return len(pieces) > 1 and bool(SINGLE_DATE.match(pieces[0].text.strip()))
+    if len(pieces) < 2:
+        return False
+    # Either end of the row. A CV that puts its dates on the left - "2027 |
+    # Peking University" - was the case this was written for, but bad cv 10
+    # puts them on the right - "Accounting Intern        Aug2025" - and
+    # checking only the left-hand piece found a job title there and said no.
+    # Three of that CV's five jobs were swallowed into the description of the
+    # one above them, and a reader of the report would never learn they exist.
+    return bool(SINGLE_DATE.match(pieces[0].text.strip())
+                or SINGLE_DATE.match(pieces[-1].text.strip()))
 
 
 _LEARNED: set[str] = set()
@@ -480,6 +542,66 @@ def is_heading(row: layout.Row, gap: float, body: float) -> str:
     return ""
 
 
+# A heading that did not fit its column, put back together.
+#
+# A narrow sidebar wraps its headings: "PERSÖNLICHE DATEN" is printed as
+# "PERSÖNLICHE" on one line and "DATEN" on the next, and "BERUFLICHE
+# ERFAHRUNG" the same way. Read as two rows they are two headings, neither of
+# which means anything - and the cost is not only a bad section list. The
+# personal-details block is removed by MATCHING that heading, so a wrapped
+# "PERSÖNLICHE DATEN" stopped the block being dropped as a block and left the
+# date of birth, civil status and address to be caught one pattern at a time.
+# Career Services asked for the whole block to go precisely so that a field
+# nobody anticipated could not survive.
+#
+# The rule is deliberately narrow: join two adjacent rows only when the first
+# means nothing on its own AND the two together are a heading we know. Two
+# real headings sitting next to each other can never be merged, because the
+# first of them resolves.
+_WRAP_MAX_WORDS = 3
+
+
+def _wrapped_heading(first: layout.Row, second: layout.Row,
+                     gap: float, body: float) -> bool:
+    if first.bold != second.bold or abs(first.size - second.size) > 0.6:
+        return False
+    # Measured against the HEADING's own size, not the body's. On exp cv bad 1
+    # the body is 6pt and the sidebar headings are 10pt, so the ordinary
+    # leading between two lines of one heading is 8.6 - already more than the
+    # body size, and the first version of this test read it as a blank line and
+    # refused to join. A real blank line is nearer twice the leading.
+    if gap > max(first.size, second.size) * 1.3:
+        return False
+    one, two = first.text.strip(), second.text.strip()
+    if not one or not two:
+        return False
+    if len(one.split()) > _WRAP_MAX_WORDS or len(two.split()) > _WRAP_MAX_WORDS:
+        return False
+    if heading_lookup.identify(one) is not None:
+        return False                          # a heading in its own right
+    return heading_lookup.identify(f"{one} {two}") is not None
+
+
+def _rejoin_wrapped_headings(rows: list[layout.Row], gaps: list[float],
+                             body: float) -> tuple[list, list]:
+    out_rows: list[layout.Row] = []
+    out_gaps: list[float] = []
+    index = 0
+    while index < len(rows):
+        row = rows[index]
+        if (index + 1 < len(rows)
+                and _wrapped_heading(row, rows[index + 1], gaps[index + 1], body)):
+            merged = layout.Row(pieces=row.pieces + rows[index + 1].pieces)
+            out_rows.append(merged)
+            out_gaps.append(gaps[index])
+            index += 2
+            continue
+        out_rows.append(row)
+        out_gaps.append(gaps[index])
+        index += 1
+    return out_rows, out_gaps
+
+
 def _collect(pages: list[layout.Page]) -> tuple[list[layout.Row], list[float], float]:
     """Every row of the document in reading order, with the gap above each."""
     rows: list[layout.Row] = []
@@ -496,6 +618,7 @@ def _collect(pages: list[layout.Page]) -> tuple[list[layout.Row], list[float], f
         gaps += page_gaps
         sizes.append((page.body_size, len(page_rows)))
     body = max(sizes, key=lambda s: s[1])[0] if sizes else 10.0
+    rows, gaps = _rejoin_wrapped_headings(rows, gaps, body)
     return rows, gaps, body
 
 
@@ -596,7 +719,37 @@ def _assemble(rows, gaps, body, marks, document: Document) -> Document:
             buffer.append((row, gap))
     if current is not None:
         _fill(current, buffer, body, document.sub_style, document.marked_bullets)
+    _promote_real_sections(document)
     return document
+
+
+def _promote_real_sections(document: Document) -> None:
+    """
+    A sub-heading that is really a section of its own is lifted out.
+
+    Sub-headings are found by style: the second most distinctive way a CV sets
+    a short line. On exp cv bad 1 that style caught AUSBILDUNG, which was then
+    nested inside BERUFLICHE ERFAHRUNG - Education filed as a sub-heading of
+    Work Experience. Nothing downstream can recover from that: the report asks
+    for the entries under "BERUFLICHE ERFAHRUNG" and gets the seven that are
+    directly under it, while five sit in a child nobody looked in.
+
+    Style cannot tell the two apart, but the vocabulary can: Education, Work
+    Experience and the rest are sections wherever they appear. A sub-heading
+    the lookup does not recognise - an employer, a programme name - stays
+    where it is, which is what keeps "TWININGSOVO | MÄRZ 2023-" nested under
+    the job it belongs to.
+    """
+    for section in list(document.sections):
+        keep = []
+        for child in section.subsections:
+            entry = heading_lookup.identify((child.heading or "").strip())
+            if entry is None:
+                keep.append(child)
+                continue
+            where = document.sections.index(section)
+            document.sections.insert(where + 1, child)
+        section.subsections = keep
 
 
 def _blocks_from_gaps(rows, gaps, body, document: Document) -> Document:
@@ -636,6 +789,71 @@ def _fill(section: Section, buffer: list[tuple[layout.Row, float]], body: float,
     _fill_flat(section, buffer, body, marked)
 
 
+# Sections whose entries are titled and carry no dates by nature.
+TITLED_UNDATED_CATEGORIES = {"Publications & Research", "Projects"}
+
+
+def _titled_without_dates(buffer: list[tuple[layout.Row, float]],
+                          body: float, marked: bool,
+                          heading: str | None) -> list[int]:
+    """
+    Entry titles in a section that carries no dates at all.
+
+    A research paper, a publication and most student projects are titled and
+    undated, and the rule above - no dates, therefore a list - filed the title
+    and its own bullets side by side as items, so nothing was an entry and no
+    entry-level check ran on any of it.
+
+    The distinction a languages list cannot fake is DETAIL. "German: native"
+    has nothing underneath it; a paper has two bullets saying what was done.
+    So this only applies where the section actually contains bullets, and the
+    title is the row that introduces them - recognised by being set in a style
+    the bulleted rows do not share, which on one CV is bold at body size and
+    on another is a larger size. The style is read from the section itself,
+    never assumed.
+
+    Returns the buffer positions that start an entry, or [] to leave the
+    section as a flat list.
+    """
+    # Only where a titled, undated entry is what the section is FOR. The first
+    # version asked whether the section contained bullets, and bad cv 2 showed
+    # that is not enough: "Core Competences" lists "Technical skills" and
+    # "Personal skills" each with bulleted skills under them, which is a list
+    # with bullets, not two entries - and it invented two entries and five
+    # achievement bullets on a CV whose truth is four entries and none.
+    #
+    # A publication, a research paper and a project are titled and undated by
+    # nature. A skills list, a languages list and an interests list are not,
+    # however they are punctuated. The heading says which, so the heading
+    # decides.
+    if heading is None or heading not in TITLED_UNDATED_CATEGORIES:
+        return []
+    rows = [row for row, _ in buffer]
+    bullets = [i for i, row in enumerate(rows)
+               if _starts_with_glyph(row.text) or _word_bullet(row.text)]
+    if len(bullets) < 2:
+        return []                      # no detail: it is a list after all
+    plain = {i for i in range(len(rows))} - set(bullets)
+    if not plain:
+        return []
+    # The style the bulleted rows are set in is the section's ordinary style.
+    ordinary = {_style_of(rows[i], body) for i in bullets}
+    candidates = [i for i in sorted(plain)
+                  if _style_of(rows[i], body) not in ordinary]
+    if not candidates:
+        return []
+    # A title has to introduce something. One that leads nowhere is a stray
+    # line, and treating it as an entry would invent an entry with no content.
+    starts = [i for i in candidates if any(j > i for j in bullets)]
+    # Consecutive title rows are one wrapped title, not two entries.
+    merged: list[int] = []
+    for i in starts:
+        if merged and i == merged[-1] + 1:
+            continue
+        merged.append(i)
+    return merged if len(merged) >= 2 else []
+
+
 def _fill_flat(section: Section, buffer: list[tuple[layout.Row, float]],
                body: float, marked: bool = True) -> None:
     """
@@ -650,10 +868,45 @@ def _fill_flat(section: Section, buffer: list[tuple[layout.Row, float]],
     if not buffer:
         return
     base = min(row.indent for row, _ in buffer)
+    # The section's own right-hand edge, for telling a right-column field from
+    # a line of description. Measured here rather than from the page, because a
+    # sidebar section is narrow and its right column is nowhere near the page's.
+    right_edge = max((row.x1 for row, _ in buffer), default=base)
     dated = [row for row, _ in buffer if _anchors_entry(row)]
 
     if not dated:
-        section.items = [row.text for row, _ in buffer]
+        entry = heading_lookup.identify((section.heading or "").strip())
+        starts = _titled_without_dates(buffer, body, marked,
+                                       entry["category"] if entry else None)
+        if not starts:
+            section.items = [row.text for row, _ in buffer]
+            return
+        for position, start in enumerate(starts):
+            end = starts[position + 1] if position + 1 < len(starts) else len(buffer)
+            title_rows = [start]
+            while (title_rows[-1] + 1 < end
+                   and title_rows[-1] + 1 not in
+                   [i for i, (r, _) in enumerate(buffer)
+                    if _starts_with_glyph(r.text) or _word_bullet(r.text)]
+                   and _style_of(buffer[title_rows[-1] + 1][0], body)
+                   == _style_of(buffer[start][0], body)):
+                title_rows.append(title_rows[-1] + 1)
+            title = "   ".join(buffer[i][0].text for i in title_rows)
+            entry = Entry(title=title, dates="")
+            for index in range(title_rows[-1] + 1, end):
+                row = buffer[index][0]
+                if _starts_with_glyph(row.text) or _word_bullet(row.text):
+                    entry.bullets.append(_strip_glyph(row.text))
+                    entry.content.append(("bullet", _strip_glyph(row.text)))
+                elif _in_the_right_column(row, base, right_edge):
+                    entry.asides.append(row.text)
+                    entry.content.append(("aside", row.text))
+                else:
+                    entry.description.append(row.text)
+                    entry.content.append(("line", row.text))
+            section.entries.append(entry)
+        if starts[0] > 0:
+            section.items = [buffer[i][0].text for i in range(starts[0])]
         return
 
     current: Entry | None = None
@@ -719,7 +972,24 @@ def _fill_flat(section: Section, buffer: list[tuple[layout.Row, float]],
         # A row that states its own dates begins an entry, whatever the line
         # above it did. Without this, two bare jobs listed one after the
         # other were read as a single job with a very long title.
+        # A bold row is never the tail of a line that is not bold. bad cv 10
+        # sets its entry titles bold and its description plain, and the line
+        # above "Baccalaureat General   Graduated 2024" happened to reach the
+        # margin - so a whole degree was swallowed as the remainder of the
+        # sentence before it. "Graduated 2024" is not a date pattern, so
+        # nothing else was going to rescue it.
+        # Set bolder OR bigger than the line above it. On bad cv 10 the
+        # degree line "Baccalaureat General   Graduated 2024" is 8pt over a
+        # 7.5pt body while the line above it is 7.5pt, and its bold flag did
+        # not survive the font name - so weight alone would not have saved it,
+        # and a whole degree was swallowed as the remainder of the sentence
+        # before it. "Graduated 2024" matches no date pattern, so nothing else
+        # was going to rescue it either.
+        starts_fresh = previous_row is not None and (
+            (row.bold and not previous_row.bold)
+            or row.size > previous_row.size + MEASURE_SLACK)
         wrapped = (not printed and same_level and not _anchors_entry(row)
+                   and not starts_fresh
                    and (_continues(row.text, previous_text)
                         or _ran_to_the_margin(previous_row, measure)))
         if wrapped and (current is not None or held):
@@ -765,8 +1035,12 @@ def _fill_flat(section: Section, buffer: list[tuple[layout.Row, float]],
                 current.bullets.append(_strip_glyph(row.text))
                 current.content.append(("bullet", _strip_glyph(row.text)))
             else:
-                current.description.append(row.text)
-                current.content.append(("line", row.text))
+                if _in_the_right_column(row, base, right_edge):
+                    current.asides.append(row.text)
+                    current.content.append(("aside", row.text))
+                else:
+                    current.description.append(row.text)
+                    current.content.append(("line", row.text))
             continue
 
         # An un-dated row at the section's margin: either an employer whose
@@ -774,6 +1048,13 @@ def _fill_flat(section: Section, buffer: list[tuple[layout.Row, float]],
         # row decide.
         if held or row.bold or current is None:
             held.append(row)
+            continue
+        # A right-column field, wherever it falls: the city under an entry
+        # title, whether the CV prints the place above the date or below it.
+        # Position decides, so the order and the language do not matter.
+        if _in_the_right_column(row, base, right_edge):
+            current.asides.append(row.text)
+            current.content.append(("aside", row.text))
             continue
         current.description.append(row.text)
         current.content.append(("line", row.text))
@@ -827,8 +1108,16 @@ def _date_text(text: str) -> str:
 
 
 def _strip_glyph(text: str) -> str:
+    """The line without its bullet marker, whichever marker this CV uses.
+
+    Also strips a marker this document TAUGHT us (_LEARNED): good cv 5 marks
+    its bullets with ">", which is not in BULLET_GLYPHS, so the renderer was
+    printing "- > Designed and implemented..." - two markers, one of them the
+    student's. The model then read ">" as the start of a title and turned a
+    bulleted list into seven entries with no detail.
+    """
     stripped = text.lstrip()
-    if stripped[:1] in BULLET_GLYPHS:
+    if stripped[:1] in BULLET_GLYPHS or stripped[:1] in _LEARNED:
         return stripped[1:].strip()
     if _word_bullet(stripped):
         return stripped[2:].strip()
