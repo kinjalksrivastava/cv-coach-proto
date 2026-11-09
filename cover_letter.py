@@ -757,8 +757,13 @@ letter's job? Direct and plain. No score, and do not restate the measured facts.
 student saying what it repeats and what context is missing>"}. Use the numbers you were \
 given and no others. Empty list if there are none. Include a paragraph here even when the \
 letter is otherwise strong.
-- "essentials": one entry for each of these five keys, each a single short sentence \
-addressed to the student:
+- "essentials": an entry ONLY for an element that is MISSING or CLEARLY UNDERDEVELOPED. \
+Leave every other key out of the object entirely. Career Services, section 7B: "Check \
+every row internally, but keep the student report short: give concise feedback on the \
+most important issues... Do not fill the report with generic praise or observations that \
+add no actionable value." A row that is fine is filled in by the report itself; a \
+sentence from you saying it is fine is the generic praise they asked us to leave out. \
+The five keys, each a single short sentence addressed to the student when you include it:
     "adds_value"        - does it say anything the CV does not already say?
     "why_organisation"  - is there a clear reason this employer in particular?
     "why_role"          - does it say what interests them about this specific position?
@@ -766,18 +771,22 @@ addressed to the student:
     "conclusion"        - does it close properly? A brief thank-you or an expression of \
 interest in discussing it further is enough; a short recall of what they would contribute \
 is optional, not required.
-  Where an element is present and doing its job, say so in one short clause and stop. \
-Where it is missing or clearly underdeveloped, say what is missing - never what they \
-should claim instead. Do not fill these with generic praise.
+  Say what is missing - never what they should claim instead. If all five are doing \
+their job, return "essentials": {} and let the overall assessment carry it.
 - "retrospective": true only if the letter is overwhelmingly about what they have already \
 done, with little about motivation, direction or contribution. Judge this separately from \
 added value: a letter can have good motivation and still carry a repetitive paragraph.
 
-Write everything in {language_name}. Return only the JSON object:
+Write everything in {language_name}. In German, address the student with DU, not Sie - \
+du, dein, deine, dir, dich. Career Services address students informally and every \
+sentence this report renders itself does so. Never use Sie, Ihr, Ihre, Ihren, Ihrem or \
+Ihnen to address the student.
+
+Return only the JSON object:
 {"added_value": "adds_value", "overall_assessment": "...", \
 "repetitive_paragraphs": [{"paragraph": 1, "issue": "..."}], \
-"essentials": {"adds_value": "...", "why_organisation": "...", "why_role": "...", \
-"what_you_bring": "...", "conclusion": "..."}, "retrospective": false}"""
+"essentials": {"why_role": "...only the keys that need saying..."}, \
+"retrospective": false}"""
 
 
 def _paragraph_brief(facts: dict) -> str:
@@ -1215,7 +1224,12 @@ def _measured_rows(facts: dict, strings: dict) -> dict:
 
 def render_markdown(data: dict, facts: dict, strings: dict) -> str:
     t = strings
-    rows = {**(data.get("essentials") or {}), **_measured_rows(facts, t)}
+    # Only the elements that needed saying come back from the model; the rest
+    # are filled in here. Section 7B: "Do not fill the report with generic
+    # praise or observations that add no actionable value."
+    rows = {key: t["nothing_to_flag"] for key in ESSENTIALS}
+    rows.update(data.get("essentials") or {})
+    rows.update(_measured_rows(facts, t))
 
     parts = [f"## {t['title']}", "", f"### 1. {t['overall']}", "",
              str(data.get("overall_assessment", "")).strip(), ""]
@@ -1279,7 +1293,12 @@ def to_pdf(data: dict, facts: dict, strings: dict) -> bytes | None:
         return str(value).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
     t = strings
-    rows = {**(data.get("essentials") or {}), **_measured_rows(facts, t)}
+    # Only the elements that needed saying come back from the model; the rest
+    # are filled in here. Section 7B: "Do not fill the report with generic
+    # praise or observations that add no actionable value."
+    rows = {key: t["nothing_to_flag"] for key in ESSENTIALS}
+    rows.update(data.get("essentials") or {})
+    rows.update(_measured_rows(facts, t))
     story = [Paragraph(plain(t["title"]), h1), Spacer(1, 4),
              Paragraph(f'1. {plain(t["overall"])}', h2),
              Paragraph(plain(data.get("overall_assessment", "")), body)]
@@ -1392,6 +1411,11 @@ STRINGS = {
         ),
         "contact_yes": "You mention contact you have already had with the "
                        "organisation — that belongs in a cover letter, so keep it.",
+        # A row the model left out because the element is doing its job. Rendered
+        # here rather than asked for, so it cannot turn into the generic praise
+        # section 7B rules out - "Do not fill the report with generic praise or
+        # observations that add no actionable value."
+        "nothing_to_flag": "Checked — nothing to flag.",
         "repetitive_heading": "Paragraphs that mainly repeat your CV",
         "repetitive_intro": ("Each of these says something a recruiter would already "
                              "have read on your CV. A cover letter has one page, and "
@@ -1472,6 +1496,7 @@ STRINGS = {
         "contact_yes": "Du erwähnst einen Kontakt, den du schon zum Unternehmen "
                        "hattest — das gehört in ein Motivationsschreiben, also lass "
                        "es stehen.",
+        "nothing_to_flag": "Geprüft — nichts anzumerken.",
         "repetitive_heading": "Abschnitte, die vor allem deinen Lebenslauf wiederholen",
         "repetitive_intro": ("Jeder davon sagt etwas, das Recruiter bereits in deinem "
                              "Lebenslauf gelesen haben. Ein Motivationsschreiben hat "

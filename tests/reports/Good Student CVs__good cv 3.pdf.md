@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, fitting neatly onto one page and providing a clear overview of your academic and professional journey. Many of your experience bullets already highlight concrete results and figures, which helps a recruiter quickly see your impact. The education section is particularly strong, with grades given in a way that is easy for international readers to interpret. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
+Your CV is well-structured, concise, and fits on a single page, which is ideal for early-career applications. Many of your experience bullets clearly show results and quantify your impact, which helps a recruiter quickly see your achievements. Your education section is particularly strong, as you provide both grades and their maximums for clarity. This review focuses on structure and completeness, as no target role or job description was provided—if you add a target, I can give more tailored feedback. If you have experience with AI or emerging technologies beyond what is mentioned in your hobbies, consider adding it to your skills or experience sections.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,10 +18,10 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Missing role titles in Community Experience**  
-  Two entries in your 'Community Experience' section list only the organisation and dates, without stating your specific role. Add the function you held for each entry, as this helps a reader understand your level of responsibility and the skills you developed.
-- 🟠 **Bullets in Professional Experience describe duties rather than contribution**  
-  Some of your experience bullets focus on tasks rather than your personal contribution or the skills you demonstrated. Rework these to clarify what you did, how you did it, and why it mattered, highlighting transferable skills relevant to future roles.
+- 🔴 **Entries in "COMMUNITY EXPERIENCE" have no role title**  
+  For two entries in your Community Experience section, the organisation and dates are listed but your specific role is missing. Add the function or title you held for each, so a reader can understand your level of responsibility and contribution.
+- 🟠 **Bullets describe duties rather than contribution**  
+  A couple of your Professional Experience bullets focus on tasks rather than your personal contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, especially the transferable skills you used or developed.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -38,15 +38,15 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Grades are provided with their maximum, making your achievements easy to interpret for readers from different countries.
+- You provide concrete details for each degree, including relevant projects and results, which helps a recruiter understand your academic strengths.
 
 **PROFESSIONAL EXPERIENCE** 🟠 Needs attention
 
-- Review bullets that currently describe only duties (such as 'Directly engaged on-site clients and actively supported 10 project deliverables...') and revise them to show what you personally contributed, how you approached the task, and what skill or result you demonstrated.
+- Review bullets that only describe tasks (such as 'Directly engaged on-site clients and actively supported 10 project deliverables') and revise them to show what you personally achieved, how you approached the work, and which skills you demonstrated.
 
 **COMMUNITY EXPERIENCE** 🟠 Needs attention
 
-- For each entry, add your role title (e.g., 'Head of Logistics and Operations'), so a reader can quickly understand your responsibilities and the skills you developed.
+- Add your specific function or title for each entry, so it is clear what position you held and what your responsibilities were.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
@@ -58,7 +58,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant certifications or additional courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to further demonstrate your skills.
+- If you have completed relevant certifications or courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), consider adding them here to showcase specialised skills.
 
 ### 5. Anything else from HSG worth adding?
 

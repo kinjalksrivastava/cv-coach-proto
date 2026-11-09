@@ -20,6 +20,7 @@ there is no file and no page count to read.
 """
 
 import glob
+import re
 import os
 import sys
 import tomllib
@@ -95,9 +96,24 @@ def read(path: str) -> tuple[str, int | None]:
     return result.text, result.meta.get("page_count")
 
 
+class Unusable(Exception):
+    """The file cannot be read at all - which the app tells the student."""
+
+
 def run_one(client, path: str) -> list[str]:
     name = os.path.basename(path)
-    raw, pages = read(path)
+    try:
+        raw, pages = read(path)
+    except RuntimeError as refusal:
+        # An image-only PDF with no text layer. app.py shows this message and
+        # stops, which is the right answer and not a failure of the letter
+        # rules - so the sweep records it and moves on rather than dying on it.
+        # What matters is that the refusal names the cause and tells the
+        # student what to do.
+        message = str(refusal)
+        if not ("scanned" in message or "image" in message):
+            return [f"unreadable file refused without saying why: {message[:70]}"]
+        raise Unusable(message) from refusal
     lang = language.detect_message_language(raw) or "en"
     cleaned = letter_pii.strip_letter_pii(raw, lang)
     sent = cleaned["text"]
@@ -140,6 +156,22 @@ def run_one(client, path: str) -> list[str]:
             problems.append(f"relevance claimed with no advert: '{claim}'")
     if "—" in written:
         problems.append("an em dash in the model's own text")
+
+    # Du, never Sie - the same rule the CV report follows, and the same reason:
+    # Career Services address students informally, and every sentence this
+    # report renders itself does. The CV prompt was fixed first and the letter
+    # prompt was missed, so German letter reports read "warum Sie sich
+    # bewerben" one row above "ab wann du könntest".
+    if lang == "de":
+        formal = re.findall(
+            r"\b[A-ZÄÖÜ][a-zäöüß]{2,}en\s+Sie\b"
+            r"|(?<![.!?:]\s)(?<!^)(?<!\n)\bIhre?[nmrs]?\b"
+            r"|\bIhre?[nmrs]?\s+(?:Lebenslauf|CV|Bewerbung|Motivationsschreiben"
+            r"|Erfahrung|Qualifikation|Motivation|Schreiben|Anschreiben)",
+            written, re.M)
+        if formal:
+            problems.append(f"formal address in a German letter report: "
+                            f"{sorted(set(formal))[:3]} - this report uses du")
 
     # --- Cover Letter Feedback Rules v2 ---
     #
@@ -206,7 +238,12 @@ def main() -> int:
     client = OpenAI(api_key=key())
     failures = 0
     for path in files:
-        problems = run_one(client, path)
+        try:
+            problems = run_one(client, path)
+        except Unusable as refusal:
+            print(f"ok    {os.path.basename(path)[:44]:46} refused cleanly: "
+                  f"{str(refusal)[:52]}...")
+            continue
         failures += bool(problems)
         for problem in problems:
             print(f"        {problem}")

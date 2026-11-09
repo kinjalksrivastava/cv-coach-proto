@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und enthält die wichtigsten Abschnitte, bleibt aber inhaltlich sehr knapp und bietet viel Raum für mehr Details zu deinen Erfahrungen und Kompetenzen. Die Angaben zu deinen Studiengängen und Berufserfahrungen sind aktuell zu oberflächlich, sodass ein Leser wenig über deine tatsächlichen Fähigkeiten und Beiträge erfährt. Es gibt noch keine Hinweise auf Erfahrungen mit KI oder AI-Tools – falls du hier Kenntnisse oder Projekte hast, könntest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
+Dein Lebenslauf ist übersichtlich und enthält die wichtigsten Abschnitte, bleibt aber inhaltlich sehr knapp und bietet viel Raum für mehr Details zu deinen Erfahrungen und Kompetenzen. Die Angaben zu deinen Studiengängen und Berufserfahrungen sind aktuell zu oberflächlich, sodass ein Leser kaum erkennen kann, was du konkret gemacht oder gelernt hast. Es gibt keine Hinweise auf Erfahrungen mit KI oder AI-Tools – falls du hier Kenntnisse hast, könntest du sie ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Deine Studiengänge enthalten außer Abschluss und Datum keine weiteren Angaben**  
-  Füge unter jedem Studiengang ein bis zwei Zeilen hinzu, in denen du relevante Module, besondere Leistungen, ein Austauschsemester, Zertifikate oder Stipendien aufführst – immer mit Blick darauf, was für deine nächste Bewerbung wichtig ist.
+- 🔴 **Deine Studiengänge enthalten nur Abschluss und Datum**  
+  Füge unter jedem Studiengang ein bis zwei Zeilen hinzu, in denen du relevante Module, besondere Leistungen, ein mögliches Austauschsemester, Zertifikate oder Stipendien aufführst – immer mit Blick darauf, was für deine nächste Bewerbung wichtig ist.
 - 🔴 **Einträge in "Berufserfahrung" haben keine Beschreibung**  
-  Ergänze unter jedem Eintrag einige Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und welches Ergebnis oder welche Fähigkeit daraus hervorgeht – mit Fokus auf übertragbare Kompetenzen.
+  Ergänze zu jedem Eintrag einige Stichpunkte, die beschreiben, was du gemacht hast, wie du es gemacht hast und welches Ergebnis oder welche Fähigkeit daraus hervorgeht – besonders mit Blick auf übertragbare Kompetenzen.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Engagements und Fähigkeiten zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt dünn und lässt Potenzial ungenutzt.
+  Nutze den vorhandenen Platz, um mehr über deine Tätigkeiten, Engagements und Fähigkeiten zu berichten. Ein Lebenslauf, der nur eine halbe Seite füllt, wirkt auf Leser oft zu dünn.
 - 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
   Formuliere deine Stichpunkte so um, dass sie zeigen, was du konkret bewirkt hast, wie du vorgegangen bist und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast.
-- 🟠 **Die meisten Stichpunkte beschreiben die Aufgabe, nicht die dahinterliegende Fähigkeit**  
-  Überarbeite die Stichpunkte, indem du jeweils erklärst, was du gemacht hast, wie du es gemacht hast und warum das für den Arbeitgeber oder das Team relevant war. Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen.
+- 🟠 **Die meisten Stichpunkte zeigen nur Aufgaben, nicht die dahinterliegende Fähigkeit**  
+  Überarbeite die Stichpunkte, indem du jeweils erklärst, was du gemacht hast, wie du es gemacht hast und warum das wichtig war. Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn es belegbar ist.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,23 +45,24 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Tujsbildung** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Studiengang ein bis zwei Zeilen zu relevanten Modulen, besonderen Leistungen, Zertifikaten (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/)), einem Austauschsemester oder Stipendien hinzu – immer mit Blick darauf, was für deine nächste Bewerbung wichtig ist.
+- Falls du am HSG Mentoring Programme oder an einem Zertifikatsprogramm wie dem Certificate in Data Science Fundamentals teilgenommen hast, kannst du dies als Bullet ergänzen – aber nur, wenn es wirklich zutrifft.
 
 **Berufserfahrung** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag und die dahinterliegende Fähigkeit zeigen – zum Beispiel, wie du unter Zeitdruck Kundenservice geleistet oder neue Mitarbeitende eingearbeitet hast.
+- Überarbeite bestehende Stichpunkte so, dass sie nicht nur Aufgaben, sondern auch deinen Beitrag, das Vorgehen und die dahinterliegende Fähigkeit zeigen. Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen – aber nur, wenn es belegbar ist.
+- Falls du bei einer Tätigkeit relevante Fähigkeiten für dein Wunschfeld eingesetzt hast, stelle diese gezielt heraus.
 
 **Zertifikate** 🟢 Stark
 
-- Die Zertifikate sind übersichtlich und passend dargestellt.
+- Die Zertifikate sind übersichtlich und zeigen Zusatzqualifikationen, die für viele Bewerbungen relevant sein können.
 
 **Kenntnisse** 🟢 Stark
 
-- Die Sprachkenntnisse und IT-Skills sind verständlich und nachvollziehbar angegeben.
+- Die Angaben zu Sprachen und IT-Kenntnissen sind übersichtlich und geben einen schnellen Überblick über deine Kompetenzen.
 
 **Engagement** 🟢 Stark
 
-- Die Mitgliedschaften in relevanten Clubs sind klar aufgeführt.
+- Die Mitgliedschaften in verschiedenen Clubs zeigen dein Interesse an fachlichem und persönlichem Austausch.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -69,7 +70,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, füge einen Abschnitt zu persönlichen Interessen oder Hobbys hinzu – das ist optional, kann aber deine Persönlichkeit abrunden.
+- Falls du persönliche Interessen oder Hobbys hast, kannst du sie in einem eigenen Abschnitt aufführen – das ist optional, kann aber deine Persönlichkeit abrunden.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is in good shape overall, with a clear structure and a strong set of experiences for an early-career profile. However, there are a few structural issues to address: some sections are missing headings or are not clearly labelled, which can confuse both recruiters and applicant tracking systems. Several of your work experience bullets focus on tasks rather than highlighting your specific contributions or the skills you developed—adding this detail will make your impact clearer. No content currently refers to AI or AI tools; if you have relevant experience or coursework, consider including it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific target at any time.
+Your CV is in good shape overall, with a clear structure and a strong set of experiences for an early-career profile. However, there are a few structural issues to address: some sections are missing headings or are not clearly labelled, which can confuse both recruiters and applicant tracking systems. Several of your work experience bullets focus on tasks rather than highlighting your specific contributions or the skills you developed—adding this detail will make your impact clearer. No content on your CV currently mentions AI experience; if you have worked with AI tools or completed relevant coursework or projects, consider adding this. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, you can add a specific job or industry goal at any time.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Unlabelled block of entries at the top**  
-  There is a block of entries at the top of your CV that sits under no heading. Open your file and check whether a heading is missing or unreadable—if so, add a clear heading such as 'Education' to ensure both recruiters and applicant tracking systems can interpret your CV correctly.
+  There is a block of entries at the top of your CV with no visible heading. Open your file and check whether the heading is missing or unreadable—if so, add a clear section heading (such as 'Education') in plain text so both recruiters and applicant tracking systems can recognise it.
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many of your work experience bullets describe tasks rather than your specific contribution or the skills you demonstrated. Rework these to show what you did, how you did it, and why it mattered, focusing on transferable skills.
+  Many of your work experience bullets list tasks rather than your specific contributions or the skills you demonstrated. Rework these to show what you did, how you did it, and why it mattered, focusing on transferable skills.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
   Several experience bullets stop at describing the task, without showing the outcome or the skill you used. For each, clarify what you did, how you did it, and what skill or result you want to highlight.
 - 🟠 **Paragraph at the top with no heading**  
-  There is a paragraph at the top of your CV with no heading. If this is your profile, add a heading such as 'Profile' and use it to briefly summarise what you bring and where you are heading.
+  There is a paragraph at the top of your CV with no heading. If this is your profile or summary, add a heading so it is clearly identified and easy to find.
 - 🟡 **No Education section found**  
-  No section labelled 'Education' was found. If you have education to show, add this section with your degrees, institutions, dates, and relevant details.
+  No section labelled 'Education' was found. If you have education to show, add this section with a clear heading.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -43,19 +43,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Review each bullet to clarify what you personally did, how you did it, and what skill or outcome you want to highlight—this will help recruiters see your impact and transferable skills.
-- Where you have a concrete result or achievement, add it, but only if you can back it up.
-- If you have participated in HSG options such as the Talents Conference or the St. Gallen Symposium in a paid or staff role, you could add these here if relevant.
+- Rework your bullets to highlight what you personally did, how you did it, and the skills you developed or demonstrated in each role.
+- Where possible, add outcomes or results to show your impact, but only if you can genuinely support them.
+- If you have participated in HSG options such as the Talents Conference or the St. Gallen Symposium in a paid capacity, you could add these here if relevant to your experience.
 
 **EXTRACURRICULAR ACTIVITIES** 🟢 Strong
 
-- You provide concrete evidence of your involvement and achievements, making your extracurricular experience stand out.
+- Your entries provide concrete evidence of your involvement and impact, making your extracurricular experience stand out.
 
 **SKILES, ACTIVITIES & INTERESTS** 🟠 Needs attention
 
-- Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1-C2) for clarity.
-- If you have technical skills or tools relevant to your field, list them here with a level (e.g., Python – Intermediate).
-- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC), you could add them here or in a separate section.
+- Add a proficiency level for each language (e.g., Basic, Intermediate, Advanced, Fluent), and consider using the CEFR scale (A1–C2) for clarity.
+- If you have technical skills or tools relevant to your goals, list them here with a level (e.g., 'Python (Intermediate)').
+- If you have completed relevant certifications such as Bloomberg Market Concepts (BMC), you could add them here or in a separate Courses and Certificates section.
 
 **Profile** ⚪ Missing
 
@@ -63,7 +63,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates (such as Bloomberg Market Concepts), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certifications (such as Bloomberg Market Concepts), you could add them here to strengthen your technical profile.
 
 ### 5. Anything else from HSG worth adding?
 

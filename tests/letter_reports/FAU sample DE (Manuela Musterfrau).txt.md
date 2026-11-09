@@ -2,7 +2,7 @@
 
 ### 1. Gesamteinschätzung
 
-Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum und hebt persönliche Werte hervor, die über eine reine Aufzählung von Stationen hinausgehen. Es ist klar erkennbar, warum dich die Muster GmbH und das Thema Nachhaltigkeit interessieren, und du stellst einen Bezug zwischen deinen Erfahrungen und dem angestrebten Praktikum her. Insgesamt ergänzt das Schreiben den Lebenslauf sinnvoll und ist ausreichend zukunftsorientiert.
+Dein Anschreiben gibt einen guten Einblick in deine Motivation für das Praktikum bei der Muster GmbH und hebt deine persönliche Verbindung zu Nachhaltigkeit und Ökologie hervor. Du erklärst, warum dich das Unternehmen und die Stelle interessieren, und bringst eigene Erfahrungen und Werte ein, die über eine reine Aufzählung deines Werdegangs hinausgehen. Insgesamt ergänzt dein Brief den Lebenslauf sinnvoll und ist klar zukunftsorientiert.
 
 _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf den Aufbau und den Mehrwert deines Motivationsschreibens bezieht. Es bewertet weder den Inhalt im Detail noch, wie gut du das Schreiben auf die Stelle zugeschnitten hast. Das kannst du in deinem Einzelgespräch besprechen._
 
@@ -10,11 +10,11 @@ _Bitte beachte, dass dies nur ein erstes Feedback ist, das sich vor allem auf de
 
 | Kriterium | Kurzes Feedback |
 | --- | --- |
-| Mehrwert über den Lebenslauf hinaus | Du bringst neue, persönliche Einblicke und Beweggründe ein, die im Lebenslauf so nicht ersichtlich wären. |
-| Warum dieses Unternehmen? | Du erklärst nachvollziehbar, warum dich die Muster GmbH mit ihrem Nachhaltigkeitsfokus besonders anspricht. |
-| Warum diese Stelle? | Du gehst darauf ein, warum dich ein Praktikum im Bereich Logistik interessiert und wie es zu deinen bisherigen Erfahrungen passt. |
-| Was du mitbringst | Du stellst einen Zusammenhang zwischen deinen bisherigen Erfahrungen (z.B. Projektarbeit, Durchsetzungsvermögen) und dem Praktikum her. |
-| Schluss | Du schließt mit einer Einladung zum Gespräch und einem freundlichen Abschluss. |
+| Mehrwert über den Lebenslauf hinaus | Geprüft — nichts anzumerken. |
+| Warum dieses Unternehmen? | Geprüft — nichts anzumerken. |
+| Warum diese Stelle? | Geprüft — nichts anzumerken. |
+| Was du mitbringst | Geprüft — nichts anzumerken. |
+| Schluss | Geprüft — nichts anzumerken. |
 | Unternehmen / Empfängerangaben | Unternehmen und Empfängerangaben sind vorhanden. |
 | Stellenbezeichnung / Referenznummer | Die Stelle ist genannt. Falls die Anzeige eine Referenznummer hat, ergänze sie. |
 | Länge: maximal eine Seite | Die Länge liess sich aus deinem Upload nicht messen, bitte prüfe sie selbst. Eine Seite ist das Maximum, und rund zwei Drittel einer Seite an Inhalt genügen in der Regel. |

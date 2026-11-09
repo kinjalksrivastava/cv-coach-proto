@@ -322,10 +322,17 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     # costs the student nothing and is not worth a line of their report; a scan
     # that mangled their headings is the reason, and the reason is the useful
     # part.
-    damaged_text = bool((facts or {}).get("heading_typos")
-                        or (facts or {}).get("month_typos"))
-    if meta.get("scanned_pages") and damaged_text:
-        problems.append(t["scanned"])
+    # Nothing is said about images or scans at all. The old "N embedded images"
+    # line was removed because it was false - every sample PDF is a scan and
+    # none carries an illustration - and the scan note that briefly replaced it
+    # is not something Career Services asked for. Serena's only words on this
+    # check are "It is still picking up the font - we should remove that from
+    # the ATS check", and Miriam's are "There is still information about the
+    # font". The font is gone. Nothing else here is ours to add.
+    #
+    # The scan IS a real and useful fact - it is why EDUCAT10N and "matenals"
+    # arrive damaged - and the measurement stays in extraction.meta
+    # ["scanned_pages"] for whenever they ask for it.
 
     if not problems:
         comment = (t["no_risks_with"].format(notes=", ".join(notes)) if notes

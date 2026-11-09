@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und klar strukturiert, aber aktuell noch sehr kurz und enthält nur wenige Informationen zu deinen Tätigkeiten und Erfahrungen. Es fehlen wichtige Details zu deinen Aufgaben und Beiträgen in den einzelnen Rollen, sodass ein Leser kaum einschätzen kann, was du konkret gemacht hast. Die Abschnitte sind teilweise nicht klar als solche erkennbar, was dazu führen kann, dass relevante Informationen übersehen werden. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die generelle Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition oder Stellenanzeige nachreichen. Es ist zudem kein Hinweis auf Erfahrung mit KI oder KI-Tools enthalten; falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und klar strukturiert, aber aktuell noch sehr kurz und enthält nur wenige Informationen zu deinen Tätigkeiten und Erfahrungen. Es fehlen Beschreibungen zu deinen bisherigen Rollen, sodass ein Leser nicht erkennen kann, was du konkret gemacht hast oder welche Fähigkeiten du mitbringst. Die Angaben zu deinen Sprachkenntnissen sind gut dargestellt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die generelle Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es ist zudem kein Hinweis auf Erfahrung mit KI oder KI-Tools enthalten; falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Abschnitt ohne erkennbaren Titel am Anfang**  
-  Am Anfang deines Lebenslaufs steht ein Block mit Einträgen ohne klaren Abschnittstitel. Prüfe bitte, ob ein Titel fehlt oder ob er im Dokument nicht als Text, sondern als Bild oder ungewöhnliche Schriftart hinterlegt ist. Füge einen klaren, als Text geschriebenen Abschnittstitel hinzu (z.B. 'Ausbildung'), damit Bewerbungssoftware und Recruiter deine Angaben korrekt zuordnen können.
-- 🔴 **Keine Stichpunkte im gesamten Lebenslauf**  
-  Füge unter jeder Position und jedem Engagement kurze Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Informationen bleibt unklar, welche Aufgaben, Verantwortlichkeiten und Erfolge du hattest.
-- 🔴 **Keine Beschreibung der Einträge in 'BERUFSERFAHRUNG'**  
-  Ergänze unter deiner Berufserfahrung (z.B. als Flugbegleiterin) einige Stichpunkte, die deine Aufgaben, Vorgehensweise und erzielten Ergebnisse beschreiben – besonders mit Blick auf übertragbare Kompetenzen.
+- 🔴 **Fehlende Überschrift über dem ersten Block**  
+  Am Anfang deines Lebenslaufs steht ein Block ohne erkennbare Überschrift. Prüfe, ob die Überschrift fehlt oder ob sie im Dokument nicht als Text, sondern als Bild oder spezielles Format eingefügt wurde. Füge eine klare Überschrift wie 'Ausbildung' oder 'Education' hinzu, damit Bewerbungssoftware und Leser deine Einträge korrekt zuordnen können.
+- 🔴 **Keine Bullet Points im gesamten Lebenslauf**  
+  Füge unter jeder Position und jedem Engagement ein paar Stichpunkte hinzu, die beschreiben, was du konkret gemacht hast. Ohne diese Informationen bleibt unklar, welche Aufgaben und Verantwortlichkeiten du hattest.
+- 🔴 **Keine Beschreibung der Berufserfahrung**  
+  Ergänze unter deiner Tätigkeit als Flugbegleiterin einige Stichpunkte dazu, was du gemacht hast, wie du vorgegangen bist und welche Ergebnisse oder Veränderungen daraus entstanden sind – besonders mit Blick auf übertragbare Kompetenzen.
 - 🔴 **Der Lebenslauf füllt keine Seite**  
-  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt oft zu knapp und lässt Potenzial ungenutzt.
+  Nutze den vorhandenen Platz, um mehr über deine Erfahrungen, Tätigkeiten und Engagements zu berichten. Ein Lebenslauf, der nur halbseitig ist, wirkt oft zu knapp und lässt viele Fragen offen.
 - 🟠 **Datumsangaben nur mit Jahren**  
-  Ergänze bei allen Zeitangaben den Monat (z.B. '09/2023 – 06/2024'), damit klar wird, wie lange du in den jeweiligen Positionen oder Engagements aktiv warst.
+  Ergänze bei allen Zeitangaben den Monat, z.B. '09/2023 – 06/2024'. So kann ein Leser besser einschätzen, wie lange du eine Tätigkeit oder Ausbildung tatsächlich ausgeübt hast.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -41,24 +41,22 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 | Kurzprofil | ⚪ Fehlt |
 | Kurse und Zertifikate | ⚪ Fehlt |
 | Interessen / Hobbys | ⚪ Fehlt |
-| Ausbildung | ⚪ Fehlt |
+| Education | ⚪ Fehlt |
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter deiner Tätigkeit als Flugbegleiterin Stichpunkte hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und besondere Situationen oder Erfolge beschreiben.
-- Nutze den Platz, um auch auf übertragbare Fähigkeiten einzugehen, die für zukünftige Bewerbungen relevant sein könnten.
-- Ergänze bei den Zeitangaben den jeweiligen Monat, damit der Zeitraum deiner Beschäftigung klar erkennbar ist.
-- Falls du weitere relevante Berufserfahrungen hast (z.B. Praktika, Werkstudententätigkeiten, Nebenjobs), ergänze diese mit kurzen Beschreibungen.
+- Füge unter deiner Position als Flugbegleiterin Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – insbesondere solche, die für spätere Bewerbungen relevant sind.
+- Nutze den Platz, um weitere relevante Tätigkeiten, Praktika oder Nebenjobs zu ergänzen, falls vorhanden. Auch eine Teilnahme an der Talents Conference (Career Services) oder ein Engagement beim St. Gallen Symposium (International Students' Committee) könnten hier aufgeführt werden, sofern du dort bezahlt gearbeitet hast.
+- Ergänze bei den Zeitangaben jeweils den Monat, um die Dauer der Beschäftigung klarer zu machen.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Angabe der Sprachkenntnisse mit Niveaustufen (z.B. Cambridge, B1-B2) ist hilfreich und ermöglicht eine schnelle Einschätzung deiner Kompetenzen.
+- Die Angabe der Sprachkenntnisse mit Niveaustufen (z.B. Cambridge Advanced, B1-B2) ist hilfreich und entspricht den Erwartungen von Recruitern.
 
 **ENGAGEMENT** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Engagement (z.B. Jugendrätin, Co-Präsidentin) Stichpunkte hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben.
-- Falls du in weiteren HSG-Studentenclubs aktiv bist, kannst du diese mit kurzen Beschreibungen ergänzen – eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
-- Ergänze auch hier die Monatsangaben zu den Zeiträumen.
+- Füge unter jedem Engagement (z.B. Jugendrätin, Co-Präsidentin) Stichpunkte hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten und erzielten Ergebnisse beschreiben. So wird sichtbar, welche Kompetenzen du dort erworben hast.
+- Falls du dich in weiteren HSG-Studentenclubs engagierst, kannst du diese mit kurzen Beschreibungen ergänzen. Eine Übersicht findest du im [SHSG Clubverzeichnis](https://shsg.ch/clubs).
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -66,17 +64,15 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier ergänzen.
+- Falls du relevante Kurse oder Zertifikate (z.B. [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, kannst du diese hier aufführen.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, kannst du hier einige persönliche Interessen oder Hobbys ergänzen, um ein rundes Bild von dir zu vermitteln.
+- Wenn du möchtest, kannst du persönliche Interessen oder Hobbys ergänzen, um deinem Lebenslauf eine individuelle Note zu geben.
 
-**Ausbildung** ⚪ Fehlt
+**Education** ⚪ Fehlt
 
-- Füge einen eigenen Abschnitt 'Ausbildung' hinzu, in dem du deine Stationen wie das Assessment-Jahr an der HSG und die Matura aufführst.
-- Ergänze bei den Zeitangaben auch hier die Monate.
-- Falls du besondere Schwerpunkte, Noten oder relevante Projekte hattest, kannst du diese kurz erwähnen.
+- Füge einen Abschnitt 'Ausbildung' oder 'Education' hinzu, in dem du deine Studiengänge und Abschlüsse mit Zeitangaben aufführst. Das erleichtert die Orientierung für Leser und Bewerbungssoftware.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

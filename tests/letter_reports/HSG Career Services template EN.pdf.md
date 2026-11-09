@@ -2,7 +2,7 @@
 
 ### 1. Overall assessment
 
-Your letter provides clear motivation for applying to Modern Technology AG and the Graduate Business Innovation position, and you offer specific examples that go beyond a simple retelling of a CV. You connect your experiences and interests to the role and organisation, and you explain how your background and approach would contribute to the team. Overall, your letter complements a CV by adding context and direction.
+Your letter does a good job of explaining your motivation for the Graduate Business Innovation position and why you are interested in Modern Technology AG, especially by referencing your previous interaction and your interest in their AI initiatives. You provide specific examples, such as your thesis work and your leadership in the Fashion & Luxury Business Club, that add context beyond a simple list of experiences. Overall, your letter is future-focused and complements what a CV would typically show.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -10,11 +10,11 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | You include specific new details and explanations, such as your personal experience with the company's AI chatbot and how your thesis and extracurricular activities shaped your interest and skills. |
-| Why this organisation? | You clearly explain your interest in Modern Technology AG, referencing your interaction at HSG Talents and your impression of their AI initiatives. |
-| Why this role? | You state why the Graduate Business Innovation position appeals to you, especially its focus on impactful AI projects and dynamic work. |
-| What you bring | You connect your academic, extracurricular, and leadership experiences directly to the demands and nature of the position. |
-| Conclusion | You close with a confident statement of your potential contribution, your availability, and a polite thank you. |
+| Adds value beyond the CV | Checked — nothing to flag. |
+| Why this organisation? | Checked — nothing to flag. |
+| Why this role? | Checked — nothing to flag. |
+| What you bring | Checked — nothing to flag. |
+| Conclusion | Checked — nothing to flag. |
 | Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | The role and a reference number are both named. |
 | Length: max. one page | Your letter is one page, which is the maximum. Around two-thirds of a page of substance is usually enough. |

@@ -284,12 +284,22 @@ def main() -> int:
         print("No samples found.")
         return 1
 
-    leaking, to_review = 0, []
+    leaking, refused, to_review = 0, 0, []
     for path in files:
         label = os.path.relpath(path, os.path.expanduser("~/Downloads"))
         try:
             text, lang, redactions = model_bound_text(path)
         except Exception as error:                       # noqa: BLE001
+            # A file the app refuses to read is not a leak. An image-only PDF
+            # with no text layer gets a clear message and nothing is sent
+            # anywhere, which is the right answer - counting it as a document
+            # that carried personal data into the model is simply wrong.
+            message = str(error)
+            if "scanned" in message or "image" in message:
+                print(f"n/a   {label}: refused before anything was sent "
+                      f"({message[:48]}...)")
+                refused += 1
+                continue
             print(f"ERROR {label}: {error}")
             leaking += 1
             continue
@@ -308,8 +318,10 @@ def main() -> int:
             print(text)
             print("-" * 78)
 
-    print(f"\n{len(files) - leaking}/{len(files)} documents carry no personal data "
-          f"of any checked category into the model")
+    checked = len(files) - refused
+    print(f"\n{checked - leaking}/{checked} documents carry no personal data "
+          f"of any checked category into the model"
+          + (f"  ({refused} refused before anything was sent)" if refused else ""))
     print(f"{len(SCANS)} categories checked: "
           + ", ".join(dict.fromkeys(label for label, _ in SCANS)))
     if to_review:

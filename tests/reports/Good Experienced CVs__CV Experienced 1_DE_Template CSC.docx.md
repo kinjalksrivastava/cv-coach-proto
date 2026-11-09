@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation, Beratung und Unternehmensentwicklung. Besonders positiv fällt auf, dass du deine Noten mit Maximalwert angegeben hast – das erleichtert die internationale Vergleichbarkeit. Da kein Zieljob oder Stellenprofil hinterlegt wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools explizit genannt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
+Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation, Beratung und Unternehmensentwicklung. Besonders positiv fällt auf, dass du deine Noten mit Maximalwert angegeben hast, was die internationale Vergleichbarkeit erleichtert. Die Abschnitte sind klar gegliedert und deine akademischen Leistungen sind transparent dargestellt. Da kein konkretes Berufsziel oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine explizite Erfahrung mit KI oder KI-Tools im CV genannt wird; falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Fehlende Beschreibung bei einer Station in der Berufserfahrung**  
-  Füge unter jeder Position in der Berufserfahrung einige Stichpunkte hinzu, die beschreiben, was du gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🔴 **Fehlende Beschreibung bei einer Berufserfahrung**  
+  Bei "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" fehlt eine Beschreibung. Ergänze hier einige Stichpunkte, die deine Aufgaben, Vorgehensweise und erzielte Ergebnisse abdecken – besonders mit Blick auf übertragbare Kompetenzen.
 - 🔴 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Formuliere die betreffenden Stichpunkte so um, dass klar wird, was genau dein Beitrag war, wie du vorgegangen bist und warum das für das Unternehmen oder das Team relevant war. Besonders wichtig ist, welche übertragbaren Fähigkeiten du dabei gezeigt hast.
+  Einige Stichpunkte nennen nur Tätigkeiten, ohne deinen konkreten Beitrag oder das Ergebnis zu zeigen. Überarbeite diese so, dass klar wird, was du wie erreicht hast und welche Kompetenzen du dabei eingesetzt hast.
 - 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
-  Für einen studentischen Lebenslauf empfiehlt sich normalerweise, die Ausbildung vor der Berufserfahrung zu platzieren – es sei denn, du bist bereits ein erfahrener Professional mit mehreren Jahren relevanter Praxis.
-- 🟡 **Sprachen ohne Niveauangabe**  
-  Ergänze bei jeder Sprache ein Niveau (z.B. Grundkenntnisse, Fortgeschritten, Fliessend, C1, B2 etc.), damit Recruiter deine Sprachkenntnisse besser einschätzen können. Die Angabe nach CEFR (A1–C2) ist besonders präzise.
+  Für einen studentischen Lebenslauf wird normalerweise die Ausbildung vor der Berufserfahrung platziert – ausser du bist bereits ein erfahrener Professional mit mehreren Jahren relevanter Praxis.
+- 🟡 **Sprachkenntnisse ohne Niveauangabe**  
+  Füge bei allen Sprachen ein Niveau hinzu (z.B. Grundkenntnisse, Fortgeschritten, Fliessend oder CEFR A1–C2), damit Recruiter deine Sprachkompetenz eindeutig einschätzen können.
 - 🟡 **Interessen als Einzelwörter**  
-  Überlege, ob du bei ein oder zwei Interessen mit wenigen Worten konkretisierst, was dich daran besonders interessiert oder welches Niveau du erreicht hast – das kann zusätzliche Einblicke geben, ist aber kein Muss.
+  Überlege, ob du bei ein oder zwei Interessen mit wenigen Worten das Niveau oder eine Besonderheit hervorheben möchtest – das ist optional und kann helfen, ein interessantes Bild von dir zu vermitteln.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,34 +45,32 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Das Profil hebt deine Innovationskompetenz, Führungserfahrung und technologische Neugier prägnant hervor.
+- Das Profil vermittelt klar deine Expertise und deinen Fokus auf Innovation und neue Technologien.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Füge bei der Position "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" Stichpunkte hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben.
-- Überarbeite die Stichpunkte, die aktuell nur Aufgaben nennen (z.B. "Lead Innovation Manager Schweiz"), sodass dein persönlicher Beitrag, die Methode und das Ergebnis sichtbar werden – insbesondere im Hinblick auf übertragbare Kompetenzen.
-- Falls du relevante Erfahrungen aus HSG-Formaten wie der Talents Conference oder dem St. Gallen Symposium hast, könntest du diese ergänzen, sofern sie für deine Zielposition relevant sind.
+- Füge bei "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" einige Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse beschreiben – insbesondere, welche Kompetenzen du dabei eingesetzt hast.
+- Überarbeite die Stichpunkte, die nur Aufgaben nennen (z.B. "Lead Innovation Manager Schweiz"), sodass dein konkreter Beitrag, das Wie und das Ergebnis sichtbar werden – der Fokus sollte auf übertragbaren Fähigkeiten liegen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind mit Maximalwerten angegeben, was die internationale Vergleichbarkeit erleichtert.
+- Die Angabe der Noten mit Maximalwert macht deine Leistungen international vergleichbar.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Die Rollen und Aufgaben sind klar dargestellt und zeigen soziales Engagement sowie Kommunikationsstärke.
+- Die Beschreibung der Rollen und Aufgaben macht deine Soft Skills und dein Engagement nachvollziehbar.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Falls du Zertifikate wie den [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) Kurs absolviert hast, könntest du diese hier oder unter "Kurse und Zertifikate" aufführen.
+- Falls du weitere relevante technische Fähigkeiten oder Zertifikate hast, kannst du diese ebenfalls aufführen – beispielsweise den [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) Kurs, falls absolviert.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen zeigen persönliche Vielfalt und Engagement, z.B. durch sportliche und musikalische Aktivitäten.
+- Die Interessen geben einen guten Einblick in deine persönlichen Aktivitäten und runden das Profil ab.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Weiterbildungen hast (z.B. Data Science, Nachhaltigkeit, Bloomberg Market Concepts), könntest du diese in einem eigenen Abschnitt aufführen.
-- Hier könntest du auch HSG-spezifische Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) ergänzen, sofern vorhanden und relevant.
+- Falls du relevante Zertifikate oder Weiterbildungen hast (z.B. [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/)), könntest du diese in einem eigenen Abschnitt aufführen, um zusätzliche Kompetenzen sichtbar zu machen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
