@@ -73,7 +73,14 @@ VOCAB: list[tuple[str, str, tuple[str, ...]]] = [
       "praktische berufserfahrung", "relevante berufserfahrung",
       "professional experiences", "relevant work experience",
       "professional experiences", "practical experience", "practical experiences",
-      "berufserfahrungen", "praktische erfahrungen", "work & experience")),
+      "berufserfahrungen", "praktische erfahrungen", "work & experience",
+      # Round 6: "ARBEITS- & FÜHRUNGSERFAHRUNGEN" was reported to a student as a
+      # heading an ATS might not recognise. The hanging-hyphen rule above can
+      # complete "Arbeits-" from the tail, but only if the other half is known.
+      "führungserfahrung", "führungserfahrungen", "fuehrungserfahrung",
+      "fuehrungserfahrungen", "arbeitserfahrungen", "leadership experience",
+      "werkstudententätigkeiten", "werkstudententaetigkeiten", "werkstudent",
+      "anstellungen", "berufliche tätigkeiten", "berufliche taetigkeiten")),
     ("Publications & Research", "Publications & Research",
      ("publications", "publikationen", "research", "forschung", "research experience",
       "research papers", "working papers", "conference papers", "veröffentlichungen",
@@ -203,6 +210,29 @@ def _match_exact(value: str) -> tuple[str, str] | None:
     parts = [p for p in CONNECTIVES.split(trimmed) if p]
     if len(parts) > 1 and all(p in _LOOKUP for p in parts):
         return _LOOKUP[parts[0]]
+    # German shares the tail of a compound across a conjunction and leaves a
+    # hanging hyphen: "Arbeits- & Führungserfahrungen" means Arbeitserfahrungen
+    # AND Führungserfahrungen. Round 6 reported exactly that heading to a
+    # student as one an ATS might not recognise, which is the invented finding
+    # both reviewers keep objecting to. The tail is not guessed: the stub is
+    # completed from the last part and kept only if the result is a heading we
+    # already know. "Aus- und Weiterbildung" is the same construct and had been
+    # hand-listed as a synonym; this reads it rather than needing the list.
+    if len(parts) > 1 and any(p.endswith("-") for p in parts):
+        last = parts[-1]
+        filled = []
+        for part in parts:
+            if not part.endswith("-"):
+                filled.append(part)
+                continue
+            stub = part[:-1]
+            whole = next((stub + last[i:] for i in range(len(last))
+                          if stub + last[i:] in _LOOKUP), None)
+            if whole is None:
+                return None
+            filled.append(whole)
+        if all(p in _LOOKUP for p in filled):
+            return _LOOKUP[filled[0]]
     return None
 
 

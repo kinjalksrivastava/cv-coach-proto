@@ -44,7 +44,7 @@ CLUBS = [
      "role: Extracurricular, explained with bullets",
      "https://shsg.ch/clubs"),
     ("Law Clinic", "students give free legal advice to the public, with real client contact",
-     "as for any club - membership vs active role", "https://www.unisg.ch/"),
+     "as for any club - membership vs active role", ""),
     ("Consulting Club HSG", "case training and a year-long Case Class with Bain & Company",
      "as for any club", "https://consultingclub.ch/"),
     ("Helvetian Investment Club (HIC)",
@@ -75,7 +75,7 @@ CERTIFICATES = [
      "https://www.unisg.ch/en/university/engagement/responsibility-and-sustainability/"),
     ("Additional Qualification programmes",
      "Business Education I & II, Digital Communication and Journalism, Financial "
-     "Technology, Real Estate - same competitive, transcript-visible format",
+     "Technology, Real Estate",
      "Education as a specialisation, or Courses and Certificates",
      "https://www.unisg.ch/en/studying/admission/additional-qualification-programmes/"),
     ("Certificate in Wirtschaftspädagogik",
@@ -130,7 +130,7 @@ FLAGSHIP_EVENTS = [
     ("NextGen Impact Forum / SHSG Next Gen Impact Award",
      "student-run conference showcasing HSG sustainability initiatives, with a prize",
      "an active role: Extracurricular. Volunteering on the day: Volunteering or Interests",
-     "https://www.unisg.ch/"),
+     ""),
 ]
 
 SPORT_AND_DIVERSITY = [
@@ -153,13 +153,13 @@ SPORT_AND_DIVERSITY = [
      "https://www.unisg.ch/en/university/engagement/diversity-inclusion/"),
     ("Committee for Equality, Diversity and Inclusion - project funding",
      "grants of CHF 1,000-5,000 for student-proposed D&I projects",
-     "Extracurricular, if they ran a funded project", "https://www.unisg.ch/"),
+     "Extracurricular, if they ran a funded project", ""),
 ]
 
 ACADEMIC_PROJECTS = [
     ("Bachelor's / Master's thesis",
-     "the academic capstone; several institutes welcome theses written with a company",
-     "Education", "https://www.unisg.ch/"),
+     "several institutes welcome theses written with a company",
+     "Education", ""),
     ("Capstone Project (BWL)",
      "a semester acting as business consultants for a real practice partner",
      "Education", "https://www.unisg.ch/en/studying/programmes/bachelor/major-in-business-administration-bwl/curriculum/"),
@@ -212,7 +212,8 @@ GUIDANCE = {
             "how": ("How to write a stronger CV - Career Services",
                     "https://hsgcareer.ch/en/curriculum-vitae/"),
             "templates": [
-                ("CV template, English", "https://hsgcareer.ch/media/4195/cv-template-english.pdf"),
+                ("CV template, English (UK/US)",
+                 "https://hsgcareer.ch/media/4195/cv-template-english.pdf"),
                 ("CV-Vorlage, Deutsch (DACH)",
                  "https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf"),
             ],
@@ -223,7 +224,7 @@ GUIDANCE = {
             "templates": [
                 ("CV-Vorlage, Deutsch (DACH)",
                  "https://hsgcareer.ch/media/4049/curriculum-vitae_template_de.pdf"),
-                ("CV template, Englisch",
+                ("CV template, Englisch (UK/US)",
                  "https://hsgcareer.ch/media/4195/cv-template-english.pdf"),
             ],
         },

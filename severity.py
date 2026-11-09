@@ -29,6 +29,12 @@ MAX_KEY_AREAS = 5
 # Timeline findings live in their own report section and nowhere else.
 DATE_KEYS = {"date_gap", "date_overlap"}
 
+# Suggestions, not requirements: they appear in the key areas when they rank,
+# but they name no section and so never take one out of Strong. Career Services'
+# Strong rule is about tiers 1-3 being cleared, and an optional nicety is
+# neither. Kept as a named set so the status rule stays explicit about it.
+OPTIONAL_KEYS = {"bare_interests"}
+
 # Findings the format-check table already states in full, with the same evidence
 # and the same advice. Putting them in the key areas as well said the same thing
 # twice in one report, which Career Services flagged twice: "these two seem to
@@ -182,6 +188,12 @@ def assess(facts: dict, target_role: str = "") -> dict:
             no_bullet_sections.add(heading)
 
     for section in facts["sections"]:
+        # Not Strong if anything in it has nothing under it, whether or not a
+        # named finding was produced for it. "Strong" used to be the default
+        # that any section reached by saying nothing, which turned the absence
+        # of a rule into approval - see has_bare_entry in cv_facts.
+        if section.get("has_bare_entry"):
+            no_bullet_sections.add(section["heading"])
         if section["entries_without_detail"]:
             names = "; ".join(e[:60] for e in section["entries_without_detail"][:3])
             issues.append(_issue(
@@ -513,12 +525,27 @@ def assess(facts: dict, target_role: str = "") -> dict:
                      "guessing, and they tend to guess low.",
         ))
     if facts.get("single_word_interests"):
+        # Serena, round 6, on "Expand on each interest by describing what kind of
+        # activity it is, how often you pursue it, and at what level": "This is
+        # not a must and it should not be done for each activity. The bot should
+        # encourage them to think about it and say that they could expand on some
+        # of them, if they feel it would add something interesting or showcase
+        # skills." So: an invitation, about some of them, and it does not pull
+        # the section out of Strong - see OPTIONAL_KEYS.
         issues.append(_issue(
-            5, "bare_interests", "Interests are listed without any detail",
+            5, "bare_interests", "Interests are listed as single words",
             "Listed as bare words: " + ", ".join(facts["single_word_interests"][:5]),
-            section=facts.get("single_word_interests_section"),
-            guidance="Say what kind, how often, and to what level. \"Chess\" says nothing; "
-                     "a club, a rating or a regular commitment says something.",
+            # No section. Attaching it to one made the section "Needs attention"
+            # for something Serena says is optional; detaching it from the status
+            # alone left the section Strong while an issue still named it, which
+            # is the self-contradiction between sections 4 and 5 that Career
+            # Services reported in round 4. An optional suggestion is not a
+            # finding about a section, so it carries none.
+            section=None,
+            guidance="Worth a thought rather than a rewrite: if one or two of them would "
+                     "say something interesting about you or show a skill, a few words on "
+                     "what kind or at what level can earn their space. Bare words are "
+                     "perfectly acceptable, and there is no need to do this for every one.",
         ))
     if facts["buzzwords"]:
         issues.append(_issue(
@@ -538,7 +565,8 @@ def assess(facts: dict, target_role: str = "") -> dict:
     # contradicting itself between section 4 and section 5.
     status = {}
     flagged = {i["section"] for i in issues
-               if i["section"] and i["key"] not in DATE_KEYS} | no_bullet_sections
+               if i["section"] and i["key"] not in DATE_KEYS
+               and i["key"] not in OPTIONAL_KEYS} | no_bullet_sections
     for section in facts["sections"]:
         status[section["heading"]] = (
             "needs_attention" if section["heading"] in flagged else "strong"

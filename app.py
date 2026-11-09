@@ -28,7 +28,7 @@ from sections import jd_alignment
 MODEL = "gpt-4.1"
 
 st.set_page_config(
-    page_title="CV Coach | University of St.Gallen",
+    page_title="CV & Cover Letter Coach | University of St.Gallen",
     page_icon=ui.page_icon(),
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -45,7 +45,7 @@ ui.inject_styles()
 COPY = {
     "en": {
         "unit": "Career Services",
-        "title": "CV Coach",
+        "title": "CV & Cover Letter Coach",
         "subtitle": (
             "Feedback on your own CV, before your Career Services appointment. "
             "It shows you what a reader would stumble over and asks the questions "
@@ -133,7 +133,7 @@ COPY = {
     },
     "de": {
         "unit": "Career Services",
-        "title": "CV Coach",
+        "title": "CV & Cover Letter Coach",
         "subtitle": (
             "Feedback zu deinem Lebenslauf, vor deinem Termin beim Career Services. "
             "Es zeigt dir, worüber ein Lesender stolpern würde, und stellt dir die "

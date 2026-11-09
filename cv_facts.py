@@ -258,9 +258,56 @@ ENTRY_SECTIONS = {
     "Publications & Research", "Extracurricular & Interests",
 }
 
+# Hospitality and gastronomy jobs are exempt from the "every role needs bullets"
+# rule. Miriam, round 6: "This CV gets the information, that they should have
+# bullet points under each job description but the person has bullet points under
+# each job apart from the one in gastronomy. With gastronomy jobs it's ok to have
+# no bullet points." A reader knows what a waiter does; spelling it out earns the
+# line nothing, and demanding it is the manufactured finding they keep objecting
+# to.
+#
+# The exemption is for doing the work, never for running it: "Restaurant Manager"
+# and "Leiter Gastronomie" are real management roles with real things to say, so
+# a supervisory word anywhere in the title cancels it.
+_SERVICE_ROLE = re.compile(
+    r"\b(kellner(?:in)?|serviceangestellte[rn]?|servicekraft|servicemitarbeiter(?:in)?"
+    r"|service[\s-]?personal|barista|barkeeper|barmann|barfrau|bardame"
+    r"|küchenhilfe|kuechenhilfe|küchenaushilfe|kuechenaushilfe|tellerwäscher(?:in)?"
+    r"|tellerwaescher(?:in)?|koch|köchin|kochin|gastronomie|gastgewerbe|hotellerie"
+    r"|buffetkraft|buffethilfe|aushilfe\s+(?:im\s+)?(?:service|restaurant|café|cafe)"
+    r"|saisonarbeit|servierkraft|chef\s?de\s?rang|commis\s?de\s?(?:rang|cuisine)"
+    r"|waiter|waitress|waiting\s+staff|server|bartender|bar\s?staff|barkeep"
+    r"|busser|bus\s?boy|host(?:ess)?\b|kitchen\s+(?:assistant|help|hand|porter|staff)"
+    r"|dishwasher|line\s+cook|prep\s+cook|catering\s+(?:assistant|staff|crew)"
+    r"|food\s+service|wait\s?staff|runner)\b", re.IGNORECASE)
+
+# Running the place is not the same job as working in it.
+_SUPERVISORY = re.compile(
+    r"\b(manager|management|leiter(?:in)?|leitung|supervisor|supervising|head\b|chef(?:in)?\b"
+    r"|geschäftsführ|geschaeftsfuehr|inhaber(?:in)?|betriebsleit|direktor|director"
+    r"|owner|founder|gründer|gruender|teamlead|team\s?lead|shift\s?lead)\b",
+    re.IGNORECASE)
+
+
+def _is_routine_service_role(title: str) -> bool:
+    """A hospitality job whose duties a reader already knows. Not a manager."""
+    return bool(_SERVICE_ROLE.search(title or "")
+                and not _SUPERVISORY.search(title or ""))
+
+
 # Sections where an entry is expected to say what the student actually did.
 # Education is not one of them: a degree line with a thesis description under it
 # is complete, and demanding bullets there would invent a problem.
+# NOT "Extracurricular & Interests", though Serena asked for it in round 6: "It
+# shows Organisationen as strong, even though the person has not added any
+# details or bullets to their experiences." Adding the category was tried and
+# backed out the same day. It fires on the right CVs, but on a flattened
+# two-column layout the entry title comes out as the right-hand column, so the
+# finding reads "St. Gallen, Schweiz has no description"; and on three of
+# Career Services' OWN templates it produced a section marked Strong that an
+# issue then named - the self-contradiction they reported in round 4. The point
+# is valid and stays open: it needs the entry title to be read correctly first,
+# which is the column-aware parser in structure/, not another category here.
 DETAIL_CATEGORIES = {"Experience", "Volunteering & Community", "Projects"}
 
 # Anything that marks a line as naming a real, checkable skill rather than a
@@ -1079,12 +1126,37 @@ def analyse(document: str, meta: dict, sections: list[dict], jd_text: str | None
             "entry_count": len(entries),
             # "No detail" means no bullets AND no prose under the entry, and only
             # counts in sections where describing the work is the point.
-            "entries_without_detail": [
+            # Deduplicated: bad cv 8 listed the same entry twice, so the student
+            # read "2 of 3 entries have no bullets" with one entry named once for
+            # each half of a flattened two-column line. A role title is NOT
+            # required here - an entry with an employer and no role still needs
+            # to say what was done, and the missing role is reported separately
+            # by entries_without_title just below.
+            # Status only, and deliberately a COUNT rather than a list of names.
+            # Serena, round 6: "It shows Organisationen as strong, even though
+            # the person has not added any details or bullets to their
+            # experiences." Extracurricular roles are left out of
+            # DETAIL_CATEGORIES above because that category also carries
+            # interests, where bare words are correct - but that only means we
+            # must not NAME the entries, because on a flattened two-column CV
+            # the entry title can come out as the right-hand column. Whether a
+            # section contains an entry with nothing under it needs no title at
+            # all, and the answer stays right even when the boundary is wrong.
+            # So the verdict is measured here and the naming stays where it was.
+            "has_bare_entry": bool(
+                section["category"] in DETAIL_CATEGORIES | {"Extracurricular & Interests"}
+                and any(not e["bullets"] and not e["description"]
+                        and not e.get("stacked_with_next")
+                        and not _is_routine_service_role(e["title_line"] or e["line"])
+                        for e in entries)
+            ),
+            "entries_without_detail": list(dict.fromkeys(
                 (e["title_line"] or e["line"]) for e in entries
                 if section["category"] in DETAIL_CATEGORIES
                 and not e["bullets"] and not e["description"]
                 and not e.get("stacked_with_next")
-            ],
+                and not _is_routine_service_role(e["title_line"] or e["line"])
+            )),
             # A degree is not a job: "MA in Banking and Finance, HSG" is complete
             # as it stands. Career Services asked for this explicitly - "In the
             # education section there shouldn't be a 'role'. Only in professional

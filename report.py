@@ -179,10 +179,11 @@ options list offers one: an active role belongs under extracurricular experience
 reader skims hobbies and will miss it.
 - A PROFILE is where the student says, in their own words, what they would want a \
 recruiter to know about them that would help them BE CHOSEN for the role they are \
-applying to - what they are good at, what they care about, what they would bring - and \
-where they want to go next. Invite that; never describe it as a place to state their \
+applying to. Invite that; never describe it as a place to state their \
 "academic focus", which just restates the education section, and never suggest what they \
-should say about themselves.
+should say about themselves, including what they are good at, what they care about or \
+where they want to go next - Miriam, round 6: that is not a general rule and must not be \
+advised as one.
 - SKILLS are hard skills: tools, software, methods, languages, each with a level. Do not \
 ask the student to explain inside that section where they used a tool; that belongs in a \
 bullet under education, work experience or an extracurricular role.
@@ -284,8 +285,12 @@ def build_messages(cv_text, jd_text, target_role, format_rows, facts,
     # Both are measured in cv_facts; asking the model to notice them again would
     # produce a different answer on each run.
     if not facts.get("mentions_ai"):
-        context.append("AI IS NOT MENTIONED: nothing anywhere in this CV refers to AI, "
-                       "machine learning, or an AI tool.")
+        # "machine learning" is deliberately absent from this sentence. Serena,
+        # round 6: "I would remove the word machine learning, as that will worry
+        # most students as they do not have experience in it." The model echoes
+        # the vocabulary it is given, so the words cannot appear here either.
+        context.append("AI IS NOT MENTIONED: nothing anywhere in this CV refers to AI "
+                       "or to an AI tool. Never use the words \"machine learning\".")
     missing_terms = facts.get("jd_terms_missing") or []
     if facts.get("jd_untailored"):
         # Named, never counted. An earlier version passed the overlap as a
@@ -441,6 +446,38 @@ _HSG_ACTIVITY = re.compile(
 _WRONG_HOME = re.compile(r"skill|kenntnis|kompetenz|interest|interessen|hobb", re.I)
 
 
+# The model writes HSG links the way it was shown them, as a name followed by
+# the raw URL in brackets:
+#
+#   "...or the HSG Mentoring Programme (https://www.unisg.ch/en/studying/
+#    starting-your-studies/counselling-services/mentoring-programme/), ..."
+#
+# Serena, round 6, on exactly that screenshot: "Would it be possible to
+# hyperlink these links and make them clickable? Like this it looks messy."
+# Every one of the 25 sweep reports carried at least one.
+#
+# The URL is dropped and the name left standing, rather than being turned into
+# a markdown link around it. Guessing where the name begins means guessing how
+# many words in front of the bracket belong to it, and the first attempt
+# produced "[If you have participated in any HSG student clubs]" - a sentence
+# wearing a link. Nothing is lost by dropping it: section 6 lists the HSG
+# options with their links and section 7 the Career Services pages, both built
+# in code from hsg_activities rather than written by the model.
+_INLINE_URL = re.compile(r"(?<!\])[ \t]*\((?:see[ \t]+)?(?:https?://[^\s)]+)\)")
+_LEFTOVER_SPACE = re.compile(r"[ \t]{2,}")
+
+
+def _drop_inline_urls(value):
+    """Remove raw URLs the model wrote into its prose; keep the name in front."""
+    if isinstance(value, str):
+        return _LEFTOVER_SPACE.sub(" ", _INLINE_URL.sub("", value))
+    if isinstance(value, list):
+        return [_drop_inline_urls(v) for v in value]
+    if isinstance(value, dict):
+        return {k: _drop_inline_urls(v) for k, v in value.items()}
+    return value
+
+
 def _unwrap_bare_brackets(value):
     if isinstance(value, str):
         return _BARE_BRACKETS.sub(lambda m: m.group(1), value)
@@ -460,14 +497,12 @@ PROFILE_PROMPT = {
     "en": "A profile is optional, and it is the one place on the CV that is yours "
           "rather than a record. If you add one, write what you would want a recruiter "
           "to know about you that might help you be chosen for the role you are applying "
-          "to: what you are good at, what you care about, what you would bring, and where "
-          "you want to go next. Around three sentences, in your own words, and not a "
+          "to. Around three sentences, in your own words, and not a "
           "summary of the sections below it.",
     "de": "Ein Kurzprofil ist freiwillig und die einzige Stelle im Lebenslauf, die dir "
           "gehört und nicht bloss Chronik ist. Wenn du eines ergänzt, schreib, was ein "
           "Recruiter über dich wissen sollte, das dir helfen könnte, für genau diese "
-          "Stelle ausgewählt zu werden: worin du gut bist, was dir wichtig ist, was du "
-          "mitbringst und wohin du willst. Etwa drei Sätze, in deinen eigenen Worten, "
+          "Stelle ausgewählt zu werden. Etwa drei Sätze, in deinen eigenen Worten, "
           "und keine Zusammenfassung der Abschnitte darunter.",
 }
 _PROFILE_NAME = re.compile(r"profil|summary|kurzprofil", re.IGNORECASE)
@@ -560,7 +595,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     placed: dict = {}
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
-    data = _unwrap_bare_brackets(_strip_bullet_counts(data))
+    data = _drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))
     parts = [f"## {strings['report_title']}", "", f"### 1. {strings['overall']}", "",
              str(data.get("overall_impression", "")).strip(), "",
              # Rendered here, never asked of the model, for the same reason as
@@ -604,7 +639,7 @@ def render_markdown(data: dict, format_rows: list[dict], strings: dict,
     parts += ["", f"_{strings['bullet_pointer']}_"]
 
     data = _fix_profile_point(_drop_misplaced_activities(
-        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data)))),
+        _drop_duplicate_points(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))),
         strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
@@ -918,7 +953,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     for note in notes or []:
         placed.setdefault(note["section"], []).append(note["text"])
 
-    data = _unwrap_bare_brackets(_strip_bullet_counts(data))
+    data = _drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data)))
     story = [Paragraph(plain(strings["report_title"]), h1), Spacer(1, 4)]
     story += [Paragraph(f'1. {plain(strings["overall"])}', h2),
               Paragraph(plain(data.get("overall_impression", "")), body),
@@ -960,7 +995,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
                                              strings["bullet_pointer"])), small))
 
     data = _fix_profile_point(_drop_misplaced_activities(
-        _drop_duplicate_points(_unwrap_bare_brackets(_strip_bullet_counts(data)))),
+        _drop_duplicate_points(_drop_inline_urls(_unwrap_bare_brackets(_strip_bullet_counts(data))))),
         strings.get("lang", "en"))
     sections = _apply_status(
         [s for s in (data.get("sections") or []) if isinstance(s, dict)], section_status)
@@ -1007,13 +1042,15 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
         story.append(Paragraph(f'{number}. {plain(strings["hsg_heading"])}', h2))
         story.append(Paragraph(plain(strings["hsg_intro"]), body))
         for name, what, _where, url in hsg_picks:
-            # The URL is printed rather than linked: this PDF gets emailed on
-            # and printed, and a link that only works on screen strands the
-            # reader. No "Belongs in" line here either - see the markdown above.
-            tail = ""
-            if url:
-                tail += f'<br/><font size="7.5" color="#55605A">{plain(url)}</font>'
-            story.append(Paragraph(f"<b>{plain(name)}</b> — {plain(what)}{tail}",
+            # The name is the link. It used to be the name with the raw URL
+            # printed underneath, on the grounds that a printed PDF strands a
+            # reader who cannot click - but that was my reasoning, not theirs,
+            # and Serena overruled it in round 6: "Would it be possible to
+            # hyperlink these links and make them clickable? Like this it looks
+            # messy." No "Belongs in" line here either - see the markdown above.
+            head = (f'<a href="{plain(url)}" color="#00802F"><b>{plain(name)}</b></a>'
+                    if url else f"<b>{plain(name)}</b>")
+            story.append(Paragraph(f"{head} — {plain(what)}",
                                    bullet, bulletText="\u2022"))
         number += 1
 
@@ -1022,7 +1059,7 @@ def to_pdf(data: dict, format_rows: list[dict], strings: dict,
     story.append(Paragraph(plain(strings["guidance_intro"]), body))
     for label, url in [guidance["how"]] + list(guidance["templates"]):
         story.append(Paragraph(
-            f'<b>{plain(label)}</b><br/><font size="7.5" color="#55605A">{plain(url)}</font>',
+            f'<a href="{plain(url)}" color="#00802F"><b>{plain(label)}</b></a>',
             bullet, bulletText="\u2022"))
     story.append(Paragraph(plain(strings["templates_note"]), small))
 

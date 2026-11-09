@@ -1,10 +1,14 @@
 NAME = "Extracurricular & Interests"
 
 RULES = """EXTRACURRICULAR ACTIVITIES & INTERESTS section:
-- Single-word interests (e.g. "Reading", "Sports"): ask for detail - what kind, \
-how often, in what context - before commenting further. Never assume a specific \
-meaning (e.g. that "Sports" means a particular sport) and never suggest removing \
-an interest without asking about it first.
+- Single-word interests (e.g. "Reading", "Sports") are perfectly acceptable and need \
+no fixing. Detail is OPTIONAL and is never required for every interest. At most, \
+invite the student to consider whether one or two of them would say something \
+interesting about them or show a skill, and leave the decision with them. Never \
+write "expand on each interest", never list what they should describe as if it were \
+a checklist, and never mark the section as needing attention for this alone. Never \
+assume a specific meaning (e.g. that "Sports" means a particular sport) and never \
+suggest removing an interest without asking about it first.
 - Keep the two apart. An active role in a club, committee, student association or \
 volunteering belongs under EXTRACURRICULAR EXPERIENCE, with bullets. Interests and \
 hobbies are personal pursuits - sport, music, reading - and belong in their own short \

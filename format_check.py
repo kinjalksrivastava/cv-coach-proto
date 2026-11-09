@@ -1,7 +1,7 @@
 """
 The "CV Format Check" rows of the feedback report.
 
-Built from facts, not from a model's impression. Page count, fonts, embedded
+Built from facts, not from a model's impression. Page count, embedded
 images and table-based layout come from extraction.py's `meta` (the file itself);
 heading conventionality and bullet glyphs come from the text. A model reading
 extracted text cannot see any of this, so asking it would produce a confident
@@ -40,8 +40,6 @@ TEXT = {
                       "its space.",
         "pages_estimate": "Roughly {n} page{s} of text (estimated from the text — the real "
                           "page count isn't recoverable from this file type).",
-        "fonts": "non-standard font{s} ({items})",
-        "std_fonts": "standard fonts",
         "headings": "section headers some parsers may not recognise ({items}) — "
                     "conventional wording such as \"Work Experience\" or \"Education\" "
                     "parses more reliably",
@@ -78,9 +76,9 @@ TEXT = {
         "criteria": (
             "An Applicant Tracking System (ATS) is software employers use to collect, scan "
             "and process applications digitally — many CVs are read by one before a person "
-            "sees them. ATS compatibility is estimated from four things this tool can "
-            "actually observe: standard fonts, conventional section headings, ordinary "
-            "bullet characters, and no table- or image-based layout. It is an indication, "
+            "sees them. ATS compatibility is estimated from three things this tool can "
+            "actually observe: conventional section headings, ordinary bullet "
+            "characters, and no table- or image-based layout. It is an indication, "
             "not a guarantee — every applicant tracking system parses differently."
         ),
     },
@@ -97,8 +95,6 @@ TEXT = {
         "pages_estimate": "Rund {n} Seite{s} Text (aus dem Text geschätzt — die "
                           "tatsächliche Seitenzahl lässt sich aus diesem Dateiformat "
                           "nicht auslesen).",
-        "fonts": "ungewöhnliche Schriftart{s} ({items})",
-        "std_fonts": "gängige Schriftarten",
         "headings": "Abschnittstitel, die manche Parser nicht erkennen ({items}) — "
                     "gängige Bezeichnungen wie \"Berufserfahrung\" oder \"Ausbildung\" "
                     "werden zuverlässiger gelesen",
@@ -130,9 +126,9 @@ TEXT = {
             "Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber "
             "Bewerbungen digital sammeln, scannen und verarbeiten — viele Lebensläufe "
             "werden davon gelesen, bevor ein Mensch sie sieht. Die ATS-Kompatibilität "
-            "wird aus vier Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: "
-            "gängige Schriftarten, gängige Abschnittstitel, übliche Aufzählungszeichen "
-            "und kein auf Tabellen oder Bildern aufgebautes Layout. Das ist ein Hinweis, "
+            "wird aus drei Dingen geschätzt, die dieses Tool tatsächlich beobachten kann: "
+            "gängige Abschnittstitel, übliche Aufzählungszeichen und kein auf Tabellen "
+            "oder Bildern aufgebautes Layout. Das ist ein Hinweis, "
             "keine Garantie — jedes System liest anders."
         ),
     },
@@ -146,22 +142,6 @@ def strings(lang: str) -> dict:
 def criteria_note(lang: str = "en") -> str:
     return strings(lang)["criteria"]
 
-
-# Fonts that PDF/ATS parsers handle without complaint. Compared case- and
-# space-insensitively against whatever the file actually embeds.
-STANDARD_FONTS = {
-    "arial", "helvetica", "helveticaneue", "times", "timesnewroman",
-    "calibri", "cambria", "georgia", "garamond", "ebgaramond", "verdana", "tahoma",
-    "trebuchet", "trebuchetms", "bookantiqua", "palatino", "palatinolinotype",
-    "segoeui", "liberationsans", "liberationserif", "nimbusroman", "nimbussans",
-    "dejavusans", "couriernew", "courierprime", "lato", "opensans", "roboto",
-    "sourcesanspro", "sourcecodepro", "montserrat", "opensauce", "inter",
-}
-
-# PostScript names carry suffixes that have nothing to do with the typeface:
-# "TimesNewRomanPSMT" and "ArialMT" are Times New Roman and Arial. Not stripping
-# these is why a perfectly ordinary CV was told its fonts were non-standard.
-FONT_SUFFIXES = ("psmt", "ps", "mt", "std", "pro", "lt")
 
 # Bullet marks that are safe. Anything else at the start of a list line - an
 # emoji, an icon glyph, a private-use character from an icon font - is the kind
@@ -235,24 +215,6 @@ def unusual_bullets(text: str) -> list[str]:
     return sorted(marks)
 
 
-def _normalise_font(name: str) -> str:
-    value = re.sub(r"[^a-z]", "", name.lower())
-    changed = True
-    while changed:
-        changed = False
-        for suffix in FONT_SUFFIXES:
-            if value.endswith(suffix) and len(value) > len(suffix) + 3:
-                value, changed = value[: -len(suffix)], True
-                break
-    return value
-
-
-def nonstandard_fonts(meta: dict) -> list[str]:
-    return [
-        font for font in meta.get("fonts", [])
-        if _normalise_font(font) not in STANDARD_FONTS
-    ]
-
 
 def _page_row(meta: dict, char_count: int, t: dict) -> dict:
     pages = meta.get("page_count")
@@ -290,12 +252,14 @@ def _ats_row(meta: dict, text: str, facts: dict | None, t: dict) -> dict:
     heading_source = parsed
     problems, notes = [], []
 
-    fonts = nonstandard_fonts(meta)
-    if fonts:
-        problems.append(t["fonts"].format(s="s" if len(fonts) > 1 else "",
-                                          items=", ".join(fonts[:3])))
-    elif meta.get("fonts"):
-        notes.append(t["std_fonts"])
+    # The font is deliberately not judged here. Career Services asked for it
+    # to go twice: "we should remove that from the ATS check" (Serena, round
+    # 6) and "There is still information about the font" (Miriam, same
+    # round). The check produced a wrong verdict more often than a useful
+    # one - SourceSansPro and SymbolMT are perfectly ordinary, and a subset
+    # tag on an embedded font made familiar typefaces look exotic. The ATS
+    # verdict now rests on the three things that can be observed reliably:
+    # section headings, bullet characters, and table- or image-based layout.
 
     # Career Services asked for this specifically: tell the student the headings
     # are right and something beside them did not come through, rather than
