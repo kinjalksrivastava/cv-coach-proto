@@ -14,6 +14,7 @@ import report
 import ui
 import bullet_review
 import cover_letter
+import letter_cv_review
 import cv_facts
 import date_review
 import format_check
@@ -66,12 +67,14 @@ COPY = {
         "mode_cv_button": "Review my CV",
         "mode_letter_title": "Your cover letter",
         "mode_letter_sub": ("A short first check: does the letter add anything your CV "
-                            "does not already say? The job advert or title is needed."),
+                            "does not already say? Your CV and the job advert or title "
+                            "are both needed."),
         "mode_letter_button": "Review my cover letter",
         "ref_cv_title": "Your CV",
-        "ref_cv_sub": ("Add it and the single most important check can be made properly: "
-                       "does the letter say anything the CV does not already say? Without "
-                       "it that can only be guessed at."),
+        "ref_cv_sub": ("Needed for the single most important check: does the letter say "
+                       "anything the CV does not already say? Your CV is not reviewed "
+                       "here and you get no report on it. Personal details are removed "
+                       "from it before anything is analysed."),
         "letter_title": "Your cover letter",
         "letter_sub": "PDF or Word, up to 10 MB.",
         "role_sub_letter": ("A cover letter is written for one specific role, so this "
@@ -154,12 +157,14 @@ COPY = {
         "mode_cv_button": "Lebenslauf prüfen",
         "mode_letter_title": "Dein Motivationsschreiben",
         "mode_letter_sub": ("Ein kurzer erster Check: Sagt das Schreiben etwas, das dein "
-                            "Lebenslauf nicht schon sagt? Stellenanzeige oder Titel nötig."),
+                            "Lebenslauf nicht schon sagt? Lebenslauf und Stellenanzeige "
+                            "oder Titel sind beide nötig."),
         "mode_letter_button": "Motivationsschreiben prüfen",
         "ref_cv_title": "Dein Lebenslauf",
-        "ref_cv_sub": ("Mit dem Lebenslauf lässt sich die wichtigste Frage sauber prüfen: "
-                       "Sagt das Schreiben etwas, das der Lebenslauf nicht schon sagt? "
-                       "Ohne ihn bleibt das eine Vermutung."),
+        "ref_cv_sub": ("Nötig für die wichtigste Prüfung: Sagt das Schreiben etwas, das "
+                       "der Lebenslauf nicht schon sagt? Dein Lebenslauf wird hier nicht "
+                       "bewertet, du bekommst dazu keinen Report. Persönliche Angaben "
+                       "werden vorher entfernt."),
         "letter_title": "Dein Motivationsschreiben",
         "letter_sub": "PDF oder Word, bis 10 MB.",
         "role_sub_letter": ("Ein Motivationsschreiben richtet sich an eine konkrete "
@@ -324,6 +329,9 @@ def init_state():
     defaults = {
         "consented": False,    # the disclaimer gate, Step 0 below
         "cv_text": None,
+        # Letter mode only: the attached CV, parsed and redacted. The report and
+        # the conversation both read it.
+        "letter_cv_text": "",
         "cv_redactions": [],
         "mode": None,          # "cv" or "letter", chosen on the first screen
         "letter_report": None,
@@ -544,24 +552,28 @@ if st.session_state["cv_text"] is None:
                 copy["role_label"], placeholder=copy["role_placeholder"],
             )
 
-    # In cover-letter mode, the CV itself is worth having: Career Services' most
-    # important check is whether the letter adds value BEYOND the CV, and without
-    # the CV that can only be inferred from whether the letter reads like a
-    # chronology. Optional, because a student may not have it to hand.
+    # In cover-letter mode the CV is REQUIRED, not optional. Career Services'
+    # most important check is whether the letter adds value BEYOND the CV, and
+    # round 7 settled the question: "upon reflection, we also think the CV upload
+    # should actually be mandatory for the Cover Letter bot." Without it the
+    # check can only be inferred from whether the letter reads like a chronology,
+    # which is a different and much weaker question.
     ref_file, ref_pasted = None, ""
     if is_letter:
         with ui.card("refcv"):
-            ui.card_head(copy["ref_cv_title"], copy["ref_cv_sub"], copy["optional"], "opt")
-            ref_options = [copy["skip"], copy["upload"], copy["paste"]]
+            ui.card_head(copy["ref_cv_title"], copy["ref_cv_sub"], copy["required"], "req")
+            # No "Skip": a choice the form then refuses to accept is a dead end,
+            # the same reasoning as the target role above.
+            ref_options = [copy["upload"], copy["paste"]]
             ref_mode = ref_options.index(st.radio(
                 "Reference CV", ref_options, horizontal=True,
                 label_visibility="collapsed", key="ref_mode",
-            ))
+            )) + 1
             if ref_mode == 1:
                 ref_file = st.file_uploader(
                     "Reference CV", type=["pdf", "docx"], key="ref_upload",
                     label_visibility="collapsed")
-            elif ref_mode == 2:
+            else:
                 ref_pasted = st.text_area(
                     "Reference CV text", height=150, key="ref_paste",
                     label_visibility="collapsed", placeholder=copy["cv_placeholder"])
@@ -569,9 +581,12 @@ if st.session_state["cv_text"] is None:
     have_doc = cv_file is not None or bool(cv_pasted.strip())
     have_target = (jd_file is not None or bool(jd_pasted.strip())
                    or bool(target_hint.strip()))
-    ready = have_doc and (have_target or not is_letter)
+    have_ref = ref_file is not None or bool(ref_pasted.strip())
+    ready = have_doc and (not is_letter or (have_target and have_ref))
     if is_letter and have_doc and not have_target:
         st.info(cover_letter.STRINGS[st.session_state["language_pref"]]["needs_jd"], icon="📌")
+    if is_letter and have_doc and have_target and not have_ref:
+        st.info(cover_letter.STRINGS[st.session_state["language_pref"]]["needs_cv"], icon="📌")
     if st.button(copy["start"], type="primary", disabled=not ready):
         if cv_file is not None:
             # A CV is read in the order a person reads the page, so a
@@ -660,24 +675,63 @@ if st.session_state["cv_text"] is None:
         # the cover letter is doing its job, not replace a coaching appointment".
         if st.session_state["mode"] == "letter":
             letter_strings = cover_letter.STRINGS[lang_code]
-            # The reference CV goes through exactly the same redaction as every
-            # other document before anything sees it.
-            reference_cv = ""
+            # The attached CV goes through exactly the same reading and exactly
+            # the same redaction as a CV submitted for review: the column-aware
+            # reader, then content selection, then the removal layers. It is
+            # required now, so a CV that cannot be read is an error rather than
+            # something to carry on quietly without - carrying on quietly is
+            # what produced "it seems to not be able to read the CV".
             if ref_file is not None:
                 parsed = read_cv(ref_file.getvalue(), ref_file.name)
-                if parsed.ok:
-                    reference_cv = strip_pii(parsed.text, cv_language)["text"]
-            elif ref_pasted.strip():
-                reference_cv = strip_pii(ref_pasted, cv_language)["text"]
+                if not parsed.ok:
+                    st.error(parsed.error, icon="📄")
+                    st.stop()
+                reference_raw = parsed.text
+            else:
+                if len(ref_pasted.strip()) < MIN_CHARS:
+                    st.error(copy["too_little"], icon="📄")
+                    st.stop()
+                reference_raw = ref_pasted
+            # The removal layers are language-aware, and this document has its
+            # own language: a German CV attached to an English letter was being
+            # stripped under English rules because cv_language was detected
+            # from the letter. Falling back to the letter's language when the
+            # CV is too short to detect one.
+            ref_language = (language.detect_message_language(reference_raw)
+                            or cv_language)
+            with st.spinner(copy["pii_spinner"]):
+                ref_clean = strip_pii(
+                    select_cv_content(reference_raw)["text"], ref_language)
+            reference_cv = ref_clean["text"]
+            # The student is shown what came off this document too. It is their
+            # second upload and it is redacted on the same terms as the first.
+            st.session_state["cv_redactions"] = (
+                st.session_state["cv_redactions"] + ref_clean["redactions"])
+            st.session_state["pii_residual"] = (
+                st.session_state["pii_residual"] + (ref_clean.get("residual") or []))
+            # The chat needs it as much as the report does. Serena asked the bot
+            # about repetitions and it answered that it had no CV, which was
+            # true: the CV reached analyse() and stopped there.
+            st.session_state["letter_cv_text"] = reference_cv
+            # Whether a paragraph says anything the CV does not is the whole
+            # point of the letter report, and it is a reading, not a count - so
+            # the model does it, one claim at a time, in a call that does
+            # nothing else, and the code counts what it read. Same division of
+            # labour as the bullet and date readers on the CV side.
+            def compare_with_the_cv(paragraphs):
+                return letter_cv_review.read(client, MODEL, paragraphs, reference_cv)
+
             with st.spinner(copy["spinner_letter"]):
                 letter_facts = cover_letter.analyse(
                     cv_text, st.session_state["jd_text"] or "", target_role, reference_cv,
                     # The real page count, from the file itself. Nothing about
                     # length is inferred from a word count any more.
-                    page_count=cv_meta.get("page_count"))
+                    page_count=cv_meta.get("page_count"),
+                    compare=compare_with_the_cv)
                 letter_data = cover_letter.generate(
                     client, MODEL, cv_text, st.session_state["jd_text"] or "",
-                    target_role, letter_facts, language.SUPPORTED[lang_code])
+                    target_role, letter_facts, language.SUPPORTED[lang_code],
+                    cv_text=reference_cv)
             if letter_data:
                 st.session_state["letter_report"] = cover_letter.render_markdown(
                     letter_data, letter_facts, letter_strings)
@@ -758,6 +812,14 @@ if st.session_state["cv_text"] is None:
 ui.title_block(copy["title"], compact=True)
 if st.session_state["mode"] != "letter":
     document_panel()
+elif st.session_state["pii_residual"]:
+    # The letter screen has no document panel, so until now a residual hit on a
+    # letter - or on the CV now attached to it - was recorded and shown to
+    # nobody. It is redacted either way, but it means a removal layer did not
+    # catch something its own patterns were meant to catch, and the whole point
+    # of the residual sweep is that someone finds out.
+    st.warning(copy["pii_residual"].format(
+        items=", ".join(st.session_state["pii_residual"])), icon="⚠️")
 
 target_role_known = bool(st.session_state["jd_text"] or st.session_state["target_role_hint"])
 
@@ -935,6 +997,12 @@ if user_input:
         lang_name,
         [f["text"] for f in st.session_state["date_findings"]],
         st.session_state["sections_detected"],
+        # In letter mode the uploaded document is the LETTER, and the CV is the
+        # second document. Labelling the letter "CV", as this did until round 7,
+        # is how the chat ended up telling a student it could not read a CV it
+        # had been handed one of.
+        is_letter=st.session_state["mode"] == "letter",
+        letter_cv_text=st.session_state["letter_cv_text"],
     )
     # In cover-letter mode the conversation is held to Career Services' cover
     # letter rules, not the CV prioritisation list: a different document with a

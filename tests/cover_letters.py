@@ -14,7 +14,8 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import cover_letter  # noqa: E402
+import cover_letter
+import prompts  # noqa: E402
 import hsg_activities  # noqa: E402
 import letter_pii  # noqa: E402
 import pii  # noqa: E402
@@ -964,6 +965,313 @@ def unreadable_layout_says_so() -> None:
           else ["a two-line letter is called unreadable"])
 
 
+
+def the_claim_count_needs_every_claim() -> None:
+    """
+    A paragraph is only called repetitive when EVERY claim in it is known.
+
+    The conservative direction on purpose: one new claim means the model has
+    named something a recruiter would learn, and whether that is worth a
+    paragraph is a judgement no counter should be making. The three parts
+    checked here are the three ways the count can be wrong - too eager, blind
+    to an invented claim, and blind to a generic skill claim counted as new.
+    """
+    letter = ("Dear Ms X\n\n"
+              "I spent a month on the CSRD double-materiality assessment for my "
+              "seminar paper and found the reconciliation harder than the model. "
+              "This strengthened my analytical and communication skills.\n\n"
+              "Yours sincerely\n")
+    facts = cover_letter.analyse(letter, "", "Analyst", CV_SAYS_IT_ALL, page_count=1)
+    note = facts["paragraphs"][0]
+    number = note["paragraph"]
+
+    def count(claims):
+        copy = [dict(note)]
+        cover_letter._count_the_claims(copy, {number: claims})
+        return copy[0].get("claims"), copy[0].get("claims_already_on_the_cv")
+
+    problems = []
+    total, known = count([
+        {"claim": "spent a month on the CSRD double materiality assessment",
+         "already_on_the_cv": True},
+        {"claim": "found the reconciliation harder than the model",
+         "already_on_the_cv": False}])
+    if (total, known) != (2, 1):
+        problems.append(f"a paragraph with one new claim counted {known}/{total}")
+
+    # An invented claim cannot tip a paragraph: it is not in it.
+    total, known = count([
+        {"claim": "spent a month on the CSRD double materiality assessment",
+         "already_on_the_cv": True},
+        {"claim": "found the reconciliation harder than the model",
+         "already_on_the_cv": True},
+        {"claim": "managed forty people in a Zurich warehouse",
+         "already_on_the_cv": True}])
+    if total != 2:
+        problems.append(f"a claim that is not in the paragraph was counted: {total}")
+
+    # Career Services' skills-removal test, applied per claim: a generic skill
+    # claim is new to the CV and still carries nothing, so it is not counted as
+    # the one new thing that saves a paragraph.
+    total, known = count([
+        {"claim": "spent a month on the CSRD double materiality assessment",
+         "already_on_the_cv": True},
+        {"claim": "found the reconciliation harder than the model",
+         "already_on_the_cv": True},
+        {"claim": "this strengthened my analytical and communication skills",
+         "already_on_the_cv": False}])
+    if (total, known) != (2, 2):
+        problems.append(f"a generic skill claim counted as new information: "
+                        f"{known}/{total}")
+    # And the claim really is in the paragraph, so this sub-check is testing
+    # the skills-removal test and not the anchor a second time.
+    if "strengthened my analytical and communication skills" not in letter:
+        problems.append("the skill claim is not in the paragraph it is filed under")
+    check("a paragraph counts as repetitive only when every claim is known",
+          problems)
+
+
+def the_measured_repetition_is_reported() -> None:
+    """
+    A paragraph measured as asserting nothing new reaches the student.
+
+    Measuring it and printing nothing is the round-7 complaint over again, one
+    layer further in. The model is asked once more and, if it still leaves the
+    paragraph out, the sentence is rendered here - because the finding is a
+    measurement by then, not an opinion that can be declined.
+    """
+    facts = {"paragraphs": [{"paragraph": 2, "opening": "For almost a year I looked",
+                             "full_text": "For almost a year I looked after the money."}],
+             "nothing_new_paragraphs": [2]}
+    stubborn = {"overall_assessment": "A strong letter throughout.",
+                "essentials": {}, "repetitive_paragraphs": []}
+    asked = []
+
+    def refuse(*args, **kwargs):
+        asked.append(1)
+        return dict(stubborn)
+
+    original = cover_letter._ask
+    cover_letter._ask = refuse
+    try:
+        problems = []
+        for code in ("en", "de"):
+            out = cover_letter._enforce_the_comparison(
+                object(), "m", [], dict(stubborn), facts, code)
+            flagged = out.get("repetitive_paragraphs") or []
+            if [f["paragraph"] for f in flagged] != [2]:
+                problems.append(f"{code}: a measured repetition was not reported")
+            elif not str(flagged[0].get("issue") or "").strip():
+                problems.append(f"{code}: reported with no sentence to the student")
+        if not asked:
+            problems.append("the model was never asked to reconsider")
+
+        # And the model's own sentence is kept when it does reconsider.
+        cover_letter._ask = lambda *a, **k: {
+            "overall_assessment": "One paragraph repeats.",
+            "repetitive_paragraphs": [{"paragraph": 2, "issue": "The model's own."}]}
+        out = cover_letter._enforce_the_comparison(
+            object(), "m", [], dict(stubborn), facts, "en")
+        kept = out.get("repetitive_paragraphs") or []
+        if not kept:
+            problems.append("the retry's finding was dropped")
+        elif kept[0].get("issue") != "The model's own.":
+            problems.append("the retry's own sentence was overwritten")
+
+        # Nothing measured, nothing added, and no call made.
+        def boom(*a, **k):
+            raise AssertionError("asked with nothing measured")
+
+        cover_letter._ask = boom
+        out = cover_letter._enforce_the_comparison(
+            object(), "m", [], dict(stubborn),
+            {"paragraphs": [], "nothing_new_paragraphs": []}, "en")
+        if out["repetitive_paragraphs"]:
+            problems.append("a finding was invented with nothing measured")
+    finally:
+        cover_letter._ask = original
+    check("a paragraph measured as adding nothing reaches the student", problems)
+
+
+def adds_value_row_agrees_with_the_findings() -> None:
+    """
+    The row and the findings above it cannot contradict each other.
+
+    A report flagged a paragraph as repeating the CV and then said, four lines
+    below, that adding value beyond the CV was checked with nothing to flag.
+    Both came out of the same answer: the model omits a row it considers fine,
+    and the default filled it in without looking at what else it had said.
+    """
+    facts = cover_letter.analyse("Dear Ms X\n\nI did a thing.\n\nYours sincerely\n",
+                                 "", "Analyst", "", page_count=1)
+    problems = []
+    for code, strings in cover_letter.STRINGS.items():
+        flagged = cover_letter._essentials(
+            {"repetitive_paragraphs": [{"paragraph": 1, "issue": "Repeats."}]},
+            facts, strings)
+        if flagged["adds_value"] == strings["nothing_to_flag"]:
+            problems.append(f"{code}: all-clear printed above a repetition finding")
+        clean = cover_letter._essentials({}, facts, strings)
+        if clean["adds_value"] != strings["nothing_to_flag"]:
+            problems.append(f"{code}: a clean letter does not read as clean")
+        own = cover_letter._essentials(
+            {"repetitive_paragraphs": [{"paragraph": 1}],
+             "essentials": {"adds_value": "What the model said."}}, facts, strings)
+        if own["adds_value"] != "What the model said.":
+            problems.append(f"{code}: the model's own sentence was replaced")
+    check("the adds-value row never contradicts the paragraphs above it", problems)
+
+
+
+def the_conversation_is_given_both_documents() -> None:
+    """
+    In letter mode the chat is handed the letter AS a letter and the CV AS a CV.
+
+    Round 7, and the complaint that started it: challenged on repetition, the
+    bot answered that it did not have access to the CV and could not read it.
+    It was right. The CV reached the measurements and stopped there, and the
+    context block the conversation was given called the LETTER "CV (extracted,
+    PII-stripped)" - one document under the other's name, and no CV at all. So
+    the bot was asked about a document it had never been given, while holding a
+    letter it had been told was that document.
+    """
+    letter = "Dear Ms X\n\nI would like to apply.\n\nYours sincerely\n"
+    cv = "EDUCATION\n09/2023 - 06/2026 University of St. Gallen, BA Economics\n"
+    block = prompts.build_context_block(
+        letter, "", True, False, "en", "English", [], [],
+        is_letter=True, letter_cv_text=cv)
+    problems = []
+    # The label immediately above each document. "CV (extracted" appears in
+    # this block legitimately - it introduces the real CV - so what is checked
+    # is which text follows which heading, not whether a phrase is present.
+    if "Cover letter under review (extracted, PII-stripped):\n" + letter not in block:
+        problems.append("the letter is not introduced as a cover letter")
+    if "CV (extracted, PII-stripped):\n" + letter in block:
+        problems.append("the cover letter is introduced as the CV")
+    if cv not in block:
+        problems.append("the CV is not in the context at all")
+    if "You CAN read it" not in block:
+        problems.append("nothing tells the model it has the CV")
+    for forbidden in ("do not review it", "do not comment on its structure"):
+        if forbidden not in block:
+            problems.append(f"the CV is not marked reference-only: {forbidden!r}")
+
+    # And with no CV, it must not be able to pretend otherwise.
+    bare = prompts.build_context_block(
+        letter, "", True, False, "en", "English", [], [], is_letter=True)
+    if "not available" not in bare:
+        problems.append("a missing CV is not reported as missing")
+    if "Never claim or imply you have compared" not in bare:
+        problems.append("nothing stops a comparison being claimed without a CV")
+
+    # The CV path is untouched: there the uploaded document IS the CV.
+    cv_mode = prompts.build_context_block(
+        "EDUCATION\nHSG", "", True, False, "en", "English", [], [])
+    if "CV (extracted" not in cv_mode:
+        problems.append("CV mode no longer labels the CV as the CV")
+    if "Cover letter" in cv_mode:
+        problems.append("CV mode mentions a cover letter")
+    check("the conversation is given both documents, each under its own name",
+          problems)
+
+
+
+def the_model_writes_no_em_dashes() -> None:
+    """
+    Career Services read them as machine-written, so the model's prose has none.
+
+    The sweep has looked for this since round 5 and nothing enforced it: no
+    prompt said so and no layer removed one. It passed three runs and then
+    produced an em dash in two reports in a row, which is what a rule nobody
+    implemented looks like from the outside.
+
+    The report's OWN sentences keep theirs. "Checked — nothing to flag." is
+    Career Services' wording, and so is every other row rendered in this file.
+    """
+    problems = []
+    for before, after in (
+            ("Your letter is strong — but one paragraph repeats the CV.",
+             "Your letter is strong, but one paragraph repeats the CV."),
+            ("It says what you did, not why — and that is the gap.",
+             "It says what you did, not why, and that is the gap."),
+            ("This is useful, — though optional.",
+             "This is useful, though optional."),
+            ("A dash at the end of a clause —.",
+             "A dash at the end of a clause."),
+    ):
+        out = cover_letter._without_em_dashes(
+            {"overall_assessment": before,
+             "essentials": {"adds_value": before},
+             "repetitive_paragraphs": [{"paragraph": 1, "issue": before}]})
+        for where, got in (("overall", out["overall_assessment"]),
+                           ("essentials", out["essentials"]["adds_value"]),
+                           ("paragraph", out["repetitive_paragraphs"][0]["issue"])):
+            if got != after:
+                problems.append(f"{where}: {got!r} not {after!r}")
+
+    # The words quoted from the letter are the student's and are left alone.
+    quoted = {"repetitive_paragraphs": [
+        {"paragraph": 1, "opening": "I worked at UBS — in Zurich", "issue": "Repeats."}]}
+    if "—" not in cover_letter._without_em_dashes(quoted)[
+            "repetitive_paragraphs"][0]["opening"]:
+        problems.append("a dash the student wrote was edited out of the quotation")
+
+    # And Career Services' own rendered sentences keep theirs.
+    for code, strings in cover_letter.STRINGS.items():
+        if "—" not in strings["nothing_to_flag"]:
+            problems.append(f"{code}: the report's own wording lost its em dash")
+    check("the model's prose carries no em dashes, and ours keep theirs", problems)
+
+
+
+def a_paragraph_that_adds_something_is_not_called_repetition() -> None:
+    """
+    The measurement restrains the report in both directions, not just one.
+
+    Putting the CV in the prompt cost something as well as buying something.
+    Told to compare, the model began flagging paragraphs for overlapping with
+    the CV at all: on the letter written to be strong it called the hospital
+    paragraph a repetition, although that paragraph says the work was mostly
+    cleaning inconsistent records and what that taught the student about Swiss
+    hospital data, neither of which is on the CV. The measurement had it right,
+    2 of 4 claims new, and a measurement that is only consulted when it agrees
+    with the model is not being used.
+    """
+    def facts_for(known, total, singled_out=False):
+        return {"paragraphs": [{"paragraph": 3, "opening": "I spent last summer",
+                                "claims": total,
+                                "claims_already_on_the_cv": known}],
+                "repetition_candidates": ([{"paragraph": 3, "reason": "skill claims"}]
+                                          if singled_out else []),
+                "nothing_new_paragraphs": [3] if known == total else []}
+
+    def flagged_after(known, total, **kw):
+        data = {"repetitive_paragraphs": [{"paragraph": 3, "issue": "Repeats."}]}
+        out = cover_letter._drop_overreported(data, facts_for(known, total, **kw))
+        return [f["paragraph"] for f in out["repetitive_paragraphs"]]
+
+    problems = []
+    if flagged_after(2, 4):
+        problems.append("half the claims new and still called a repetition")
+    if flagged_after(1, 5):
+        problems.append("four claims of five new and still called a repetition")
+    if not flagged_after(3, 4):
+        problems.append("a paragraph that mainly restates the CV was let through")
+    if not flagged_after(4, 4):
+        problems.append("a paragraph with nothing new was let through")
+    # A paragraph the other measurements single out is a different fault, and
+    # this layer has no business taking that finding away.
+    if not flagged_after(1, 5, singled_out=True):
+        problems.append("a skills-removal finding was dropped by the claim count")
+    # And with nothing counted, nothing is second-guessed.
+    data = {"repetitive_paragraphs": [{"paragraph": 3, "issue": "Repeats."}]}
+    out = cover_letter._drop_overreported(
+        data, {"paragraphs": [{"paragraph": 3, "opening": "x"}]})
+    if not out["repetitive_paragraphs"]:
+        problems.append("an unmeasured paragraph had its finding dropped")
+    check("a paragraph with new claims in it is not called a repetition", problems)
+
+
 def run() -> int:
     recipient_cases()
     author_signoff()
@@ -993,6 +1301,13 @@ def run() -> int:
     prior_contact_means_this_organisation()
     german_signoff_with_an_eszett()
     unreadable_layout_says_so()
+    # Round 7: the CV is mandatory, and the comparison with it is measured.
+    the_claim_count_needs_every_claim()
+    the_measured_repetition_is_reported()
+    adds_value_row_agrees_with_the_findings()
+    the_conversation_is_given_both_documents()
+    the_model_writes_no_em_dashes()
+    a_paragraph_that_adds_something_is_not_called_repetition()
     print(f"\n{CHECKS - len(FAILURES)}/{CHECKS} passed")
     return 1 if FAILURES else 0
 

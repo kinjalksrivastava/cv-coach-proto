@@ -10,10 +10,20 @@ verbatim, so a build that does not flag it is broken, full stop.
 
 Each case gives:
     letter    - what the student uploads
+    cv        - the CV it is uploaded with. Required by the app since round 7,
+                so a case without one tests a path a student cannot reach.
     jd        - the job advert, or "" for none
     role      - the target role the student typed, or ""
     must      - things the report has to contain or do
     must_not  - things it must never say
+
+The CVs matter as much as the letters here, and two of them matter more. Case 5
+and case 6 are the false-positive guards: both letters talk about work that is
+ON the CV, and both add reasons, findings and what the student learned on top of
+it. Referring to a CV experience is explicitly fine; only repeating it without
+adding anything is the fault. A build that flags those two has learned to
+punish any mention of the CV, which is a worse report than the one round 7
+started with.
 """
 
 CASES = []
@@ -67,6 +77,20 @@ and I would welcome the chance to discuss it with you.
 Yours sincerely,
 Lena Hofmann
 """,
+    cv="""
+EDUCATION
+09/2023 - 06/2026   University of St. Gallen, BA in Economics
+  Seminar paper on CSRD double-materiality rules
+
+WORK EXPERIENCE
+07/2025 - 12/2025   Intern, Investment Banking, UBS, Zurich
+  Financial analysis
+  Prepared presentations for clients
+
+SKILLS
+Excel, Python, R
+German (native), English (C1), French (B2)
+""",
     must=["flags at least one repetitive paragraph"],
     must_not=["says the letter has no repetitive paragraphs"],
     why="their own NOT-sufficient example, surrounded by good motivation",
@@ -108,6 +132,21 @@ this further.
 Kind regards,
 Tobias Meier
 """,
+    cv="""
+EDUCATION
+09/2023 - 06/2026   University of St. Gallen, BSc in Business Administration
+
+PROJECTS
+01/2025 - 06/2025   Student project, component line rescheduling
+  Rescheduled a component line with three partner teams
+
+EXTRACURRICULAR
+2024 - present   HSG Talents Conference, day volunteer
+
+SKILLS
+Python, SQL, Excel
+German (native), English (C1)
+""",
     must=["says contact was already mentioned"],
     must_not=["asks whether the student has spoken to anyone",
               "asks about events or a careers fair"],
@@ -132,6 +171,14 @@ Thank you for your consideration.
 
 Best regards,
 Sarah Brunner
+""",
+    cv="""
+EDUCATION
+09/2024 - present   University of St. Gallen, BA in Business Administration
+
+SKILLS
+Microsoft Office
+German (native), English
 """,
     must=["says the recipient or company block is missing",
           "says the start date is missing"],
@@ -173,6 +220,24 @@ through the payments, lending and back-office departments over three years.
 
 Yours sincerely,
 Marc Baumgartner
+""",
+    cv="""
+EDUCATION
+09/2021 - 06/2024   University of Zurich, BA in Economics, grade average 5.2
+08/2017 - 07/2020   Commercial apprenticeship, Regionalbank Winterthur
+  Rotations in payments, lending and back office
+
+WORK EXPERIENCE
+07/2024 - 12/2025   Accounting assistant, accounting firm, Winterthur
+  Prepared monthly closings for four clients
+  Supported the year-end audit
+  Maintained the fixed-asset register and reconciled intercompany balances
+09/2021 - 06/2024   Working student, logistics company, Zurich
+  Invoice checking and supplier correspondence
+
+SKILLS
+Abacus, SAP, Excel
+German (native), English (B2)
 """,
     must=["notes the letter is mainly about the past"],
     must_not=["invents a motivation for the student"],
@@ -224,6 +289,20 @@ application, and I would be glad to discuss it with you.
 Yours sincerely,
 Nina Castelli
 """,
+    cv="""
+EDUCATION
+09/2023 - 06/2026   University of St. Gallen, BA in Economics
+  Bachelor thesis: cost-effectiveness model for point-of-care testing in Swiss
+  GP practices
+
+WORK EXPERIENCE
+07/2026 - 09/2026   Intern, Diagnostics Department, Kantonsspital St. Gallen
+  Collected and cleaned utilisation data for the diagnostics department
+
+SKILLS
+R, Stata, Excel
+Italian (native), German (C2), English (C1)
+""",
     must=["names the role or reference number as present",
           "says the recipient details are there",
           "says the start date is mentioned"],
@@ -269,9 +348,88 @@ Verfügung und danke Ihnen für die Prüfung meiner Unterlagen.
 Freundliche Grüsse
 Jonas Brunner
 """,
+    cv="""
+AUSBILDUNG
+09/2023 - 06/2026   Universität St. Gallen, BSc Betriebswirtschaft
+  Seminararbeit: Modell zur Vorhersage von Lastspitzen im Mobilfunknetz
+
+BERUFSERFAHRUNG
+07/2025 - 08/2025   Praktikant, IT-Abteilung, Kantonsverwaltung Thurgau
+  Unterstützung bei der Datenaufbereitung
+
+KENNTNISSE
+Python, SQL, R
+Deutsch (Muttersprache), Englisch (C1)
+""",
     must=["is written in German", "addresses the student with du"],
     must_not=["addresses the student with Sie or Ihr"],
     why="the du rule reached the CV prompt first and the letter prompt last",
+)
+
+
+# --------------------------------------------------------------------------
+# 7. Round 7, and the reason the comparison became its own model call. Every
+#    fact in the middle paragraph is on the CV, told in completely different
+#    words: forty thousand francs for CHF 40,000, going through the books for
+#    reconciling the accounts, the yearly statement the members signed off for
+#    the annual statement presented to the assembly. The word-overlap
+#    measurement scores that paragraph 0.1 and sees nothing. Read claim by
+#    claim it is 4 of 4.
+# --------------------------------------------------------------------------
+case(
+    "paraphrased_retelling_of_a_cv_entry",
+    """
+Raiffeisen Schweiz
+Human Resources
+Raiffeisenplatz 4
+9001 St. Gallen
+
+St. Gallen, 10 November 2026
+
+Application for the Corporate Finance internship
+
+Dear Ms Berger,
+
+I am applying for the Corporate Finance internship at Raiffeisen because your corporate
+clients are mostly mid-sized Swiss firms, and I want to understand how financing
+decisions are made for companies that cannot simply issue a bond.
+
+For almost a year I looked after the money of a small charity in my home town. I kept an
+eye on something close to forty thousand francs, went through the books every month
+against what the bank said, and put together the yearly statement that the members
+signed off at their general meeting.
+
+The reason I want to spend a summer on the corporate side is that my seminar paper on
+SME credit rationing left me with a question I could not answer from the literature: how
+a relationship manager decides, in practice, when a firm's numbers sit just outside the
+model. I would like to see that decision made.
+
+I could start on 1 July 2027 and would be available for three months.
+
+Yours sincerely,
+Elena Vogt
+""",
+    cv="""
+EDUCATION
+09/2023 - 06/2026   University of St. Gallen, BA in Economics
+  Focus on public finance and statistics
+  Seminar paper on SME credit rationing
+
+WORK EXPERIENCE
+09/2024 - 06/2025   Treasurer, Hilfswerk St. Gallen (voluntary association)
+  Managed the association budget of CHF 40,000 and reconciled the monthly accounts
+  Prepared the annual financial statement presented to the general assembly
+07/2024 - 08/2024   Intern, Raiffeisen Bank St. Gallen
+  Supported the client advisory team with portfolio documentation
+
+SKILLS
+Excel, Python
+German (native), English (C1)
+""",
+    role="Corporate Finance internship",
+    must=["flags at least one repetitive paragraph"],
+    must_not=["says the letter has no repetitive paragraphs"],
+    why="a CV entry retold in fresh words; word overlap scores it 0.1",
 )
 
 
@@ -285,8 +443,10 @@ import tomllib                                                      # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import cover_letter                                                 # noqa: E402
+import letter_cv_review                                             # noqa: E402
 import letter_pii                                                   # noqa: E402
 from guardrails import language                                     # noqa: E402
+from pii import strip_pii                                           # noqa: E402
 
 MODEL = "gpt-4.1"
 ASKS_CONTACT = re.compile(
@@ -298,6 +458,23 @@ FORMAL_DE = re.compile(
     r"|\bIhre?[nmrs]?\s+(?:Lebenslauf|Anschreiben|Motivationsschreiben|Erfahrung)", re.M)
 USP = re.compile(r"(unique selling|USP|Alleinstellungsmerkmal|what makes you unique"
                  r"|was dich einzigartig)", re.IGNORECASE)
+# The CV is in the prompt now, and the one thing it must never turn into is a
+# second report. A student who uploaded a letter for review did not ask what is
+# wrong with their CV, the letter report has no section to put it in, and
+# Career Services review CVs themselves.
+REVIEWS_THE_CV = re.compile(
+    # "your CV ... should/needs/is missing ..."
+    # The verb has to follow the CV directly. Reaching 80 characters ahead for
+    # it matched "repeats what is already on your CV, and does not add anything
+    # new", which is feedback on the LETTER and exactly what this report is for.
+    r"\b(?:your|dein(?:em|en|er)?)\s+(?:CV|résumé|resume|Lebenslauf)\s+"
+    r"(?:\w+\s+){0,2}?"
+    r"\b(?:should|could|needs?|lacks?|is\s+missing|expand|restructure|reorder|"
+    r"sollte[st]?|könntest|müsste[st]?|fehlt|fehlen)\b"
+    # "... add / adding / mention X to your CV"
+    r"|\b(?:add|adding|include|including|mention|mentioning|put|list|listing|"
+    r"ergänz\w*|aufnehmen|hinzufüg\w*)\b[^.!?]{0,60}?\b(?:to|in|into|auf|in)\s+"
+    r"(?:your|dein(?:en|em)?|the)\s+(?:CV|résumé|resume|Lebenslauf)\b", re.IGNORECASE)
 
 
 def key():
@@ -340,6 +517,13 @@ def check(case, data, facts, report, strings) -> list:
                 and not re.search(r"\b(du|dein|deine|dir|dich)\b", report):
             wrong.append("German report never addresses the student with du")
 
+    # Checked on every case, not only where it is listed: nothing in any case
+    # asks for CV feedback, so a report that gives it has drifted on its own.
+    if case["cv"].strip():
+        hit = REVIEWS_THE_CV.search(written)
+        if hit:
+            wrong.append(f"gave feedback on the CV: {hit.group(0)[:70]!r}")
+
     for never in case["must_not"]:
         if never == "says the letter has no repetitive paragraphs" and not flagged:
             pass                                  # covered by the must above
@@ -380,10 +564,15 @@ def main() -> int:
         raw = case["letter"]
         lang = language.detect_message_language(raw) or "en"
         sent = letter_pii.strip_letter_pii(raw, lang)["text"]
-        facts = cover_letter.analyse(sent, case["jd"], case["role"], case["cv"],
-                                     page_count=None)
+        # The CV goes through the same redaction as the letter before anything
+        # sees it, because that is what the app does with it.
+        cv = strip_pii(case["cv"], lang)["text"] if case["cv"].strip() else ""
+        facts = cover_letter.analyse(
+            sent, case["jd"], case["role"], cv, page_count=None,
+            compare=lambda paragraphs: letter_cv_review.read(
+                client, MODEL, paragraphs, cv))
         data = cover_letter.generate(client, MODEL, sent, case["jd"], case["role"],
-                                     facts, language.SUPPORTED[lang])
+                                     facts, language.SUPPORTED[lang], cv_text=cv)
         if not data:
             print(f"FAIL  {case['name']}: no report produced"); bad += 1; continue
         strings = cover_letter.STRINGS[lang]

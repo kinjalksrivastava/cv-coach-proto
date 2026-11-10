@@ -31,9 +31,23 @@ os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from openai import OpenAI                                           # noqa: E402
 
 import cover_letter                                                 # noqa: E402
+import letter_cv_review                                             # noqa: E402
 import letter_pii                                                   # noqa: E402
 from extraction import extract_text                                 # noqa: E402
 from guardrails import language                                     # noqa: E402
+from pii import strip_pii                                           # noqa: E402
+
+REVIEWS_THE_CV = re.compile(
+    # The verb has to follow the CV directly. Reaching 80 characters ahead for
+    # it matched "repeats what is already on your CV, and does not add anything
+    # new", which is feedback on the LETTER and exactly what this report is for.
+    r"\b(?:your|dein(?:em|en|er)?)\s+(?:CV|résumé|resume|Lebenslauf)\s+"
+    r"(?:\w+\s+){0,2}?"
+    r"\b(?:should|could|needs?|lacks?|is\s+missing|expand|restructure|reorder|"
+    r"sollte[st]?|könntest|müsste[st]?|fehlt|fehlen)\b"
+    r"|\b(?:add|adding|include|including|mention|mentioning|put|list|listing|"
+    r"ergänz\w*|aufnehmen|hinzufüg\w*)\b[^.!?]{0,60}?\b(?:to|in|into|auf|in)\s+"
+    r"(?:your|dein(?:en|em)?|the)\s+(?:CV|résumé|resume|Lebenslauf)\b", re.IGNORECASE)
 
 SAMPLES = os.path.expanduser("~/Downloads/Cover Letter Samples")
 MODEL = "gpt-4.1"
@@ -45,6 +59,71 @@ ROLES = {
     "HSG Career Services template EN.pdf": "Graduate Business Innovation",
     "CMU sample EN (Anna Gear).txt": "R & D Engineer",
     "FAU sample DE (Manuela Musterfrau).txt": "Praktikum Logistik",
+}
+
+# The CV each letter is uploaded with, since round 7 made it mandatory. Only
+# the three documents that are actually written letters get one: the other four
+# are templates and guides, and a CV for "Abschnitt 2: Ihre aktuelle Tätigkeit"
+# would be inventing a student to go with a form. Those four keep testing the
+# path where no CV is available, which the code still has to handle - a CV that
+# cannot be read stops the upload, but generate() is called from here too.
+#
+# Each one lists what its letter says the student did, in the form a CV uses:
+# entries and bullets, what they did and when, and nothing about why. That is
+# the point of the comparison. A letter whose paragraphs only retell those
+# bullets adds nothing; a letter that says why it chose them, what went wrong
+# or what it learned does, and both kinds are below on purpose.
+CVS = {
+    # Written strong, and the guard against the comparison learning to punish
+    # any mention of the CV: the thesis and the partnerships role are both on
+    # it, and the letter uses them to say something else.
+    "HSG Career Services template EN.pdf": """
+EDUCATION
+09/2022 - 06/2024   University of St. Gallen, MA in Business Innovation
+  Master thesis: an AI-powered recommendation system
+09/2018 - 06/2021   University of St. Gallen, BA in Business Administration
+
+EXTRACURRICULAR
+09/2022 - present   Head of Partnerships, Fashion Society HSG
+  Approached and signed partner companies for the society's events
+
+INTERESTS
+Rock climbing (10 years), technology, languages
+""",
+    # The opposite case, and a real one: the body paragraphs walk through the
+    # NEI work the CV already lists, role by role.
+    "CMU sample EN (Anna Gear).txt": """
+EDUCATION
+08/20XX - 05/20XX   Carnegie Mellon University, MS in Mechanical Engineering
+  Research project on design and development of mechanical systems
+
+WORK EXPERIENCE
+20XX - 20XX   Product Research and Development, National Engineering, Inc.
+  Designed and developed two new one-way clutch technologies for the
+  two-wheeler industry
+  Lead engineer for a new seal mechanism with zero grease leakage and longer
+  running life
+  Collaborated with the product design team on improving thrust load carrying
+  capacity for a ball bearing and on a large radial-axial load carrying bearing
+  design, both submitted for patents at the Indian Patent Office
+
+SKILLS
+CAD, FEA, project management
+""",
+    "FAU sample DE (Manuela Musterfrau).txt": """
+AUSBILDUNG
+10/2018 - heute   Universität Erlangen-Nürnberg, BSc Wirtschaftswissenschaften
+  Kurse in Logistik und Beschaffung
+  Mitarbeit in studentischen Projektgruppen
+
+BERUFSERFAHRUNG
+09/2017 - 08/2018   Freiwilliges Jahr, Stadtgärtnerei
+  Pflege der Grünanlage
+  Führungen in der Grünanlage
+
+KENNTNISSE
+MS Office, Deutsch (Muttersprache), Englisch (B2)
+""",
 }
 
 # Names that appear in these letters and must never reach the model: the
@@ -126,10 +205,15 @@ def run_one(client, path: str) -> list[str]:
         problems.append(f"residual personal data: {cleaned['residual']}")
 
     role = ROLES.get(name, "")
-    facts = cover_letter.analyse(sent, "", role, "", page_count=pages)
+    # The CV goes through the same redaction as the letter, as it does in the app.
+    cv = strip_pii(CVS[name], lang)["text"] if name in CVS else ""
+    facts = cover_letter.analyse(
+        sent, "", role, cv, page_count=pages,
+        compare=lambda paragraphs: letter_cv_review.read(client, MODEL,
+                                                         paragraphs, cv))
     strings = cover_letter.STRINGS[lang]
     data = cover_letter.generate(client, MODEL, sent, "", role, facts,
-                                 language.SUPPORTED[lang])
+                                 language.SUPPORTED[lang], cv_text=cv)
     if not data:
         return problems + ["the model returned nothing"]
 
@@ -200,14 +284,33 @@ def run_one(client, path: str) -> list[str]:
     if data.get("added_value") is None:
         problems.append("no added-value category was returned")
 
-    # No CV is uploaded anywhere in this sweep, so every one of these would be a
-    # claim about a document the model has never seen. v2, section 2: "If no CV
-    # is available, do not claim to have verified overlap."
-    for claim in ("your cv already", "already on your cv", "repeats your cv",
-                  "steht schon in deinem lebenslauf", "wiederholt deinen lebenslauf",
-                  "bereits in deinem lebenslauf"):
-        if claim in written.lower() or claim in markdown.lower():
-            problems.append(f"claimed an overlap with a CV it never saw: '{claim}'")
+    # Where no CV came with the letter - the templates and guides - every one of
+    # these would be a claim about a document the model has never seen. v2,
+    # section 2: "If no CV is available, do not claim to have verified overlap."
+    if not cv:
+        for claim in ("your cv already", "already on your cv", "repeats your cv",
+                      "steht schon in deinem lebenslauf", "wiederholt deinen lebenslauf",
+                      "bereits in deinem lebenslauf"):
+            if claim in written.lower() or claim in markdown.lower():
+                problems.append(f"claimed an overlap with a CV it never saw: '{claim}'")
+
+    # With a CV, the thing to check is the other way round: a paragraph measured
+    # as asserting nothing the CV does not already carry has to reach the
+    # student. That reading is the answer to Career Services' most important
+    # question, and a report that measures it and prints nothing is the round-7
+    # complaint over again.
+    printed = {f["paragraph"] for f in (data.get("repetitive_paragraphs") or [])}
+    unsaid = [n for n in (facts.get("nothing_new_paragraphs") or []) if n not in printed]
+    if unsaid:
+        problems.append(f"paragraphs {unsaid} assert nothing the CV lacks and are "
+                        "not reported")
+
+    # And it must stay a letter report. The CV is in the prompt to be compared
+    # against, not reviewed: nothing in this report has anywhere to put CV
+    # feedback, and the student did not ask for it.
+    cv_advice = REVIEWS_THE_CV.search(written)
+    if cv and cv_advice:
+        problems.append(f"gave feedback on the CV: {cv_advice.group(0)[:70]!r}")
 
     # The words the report quotes come from the letter, never from the model.
     for flagged in data.get("repetitive_paragraphs") or []:
