@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV presents a substantial and varied professional background, with clear role titles and descriptions for each position. The structure and completeness feedback below is based on your current content, as no specific target role or job description was provided. If you have experience with AI tools or projects, consider adding this, as nothing currently on your CV refers to AI. The CV is in good shape overall, but there are some areas where clarifying your personal contribution and standardising details will help recruiters better understand your impact.
+Your CV presents a substantial and varied professional background, with clear role titles and descriptions for each position. The structure is generally sound, and your education and additional experience are well documented. However, the employment history section would benefit from more detail about your personal contributions and the skills you demonstrated, rather than just listing duties. No content currently refers to AI or AI tools—if you have relevant experience or coursework, consider adding it. As you have not provided a target role or job description, this feedback focuses on structure and completeness; for tailored advice, please share your intended position or industry.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Bullets describe duties rather than contribution**  
-  Many bullets in your EMPLOYMENT HISTORY section list tasks or responsibilities without showing your personal contribution or the skills you demonstrated. Rework these to highlight what you did, how you did it, and why it mattered, focusing on transferable skills.
+  Many bullets in your employment history list tasks or responsibilities without showing what you personally achieved or which transferable skills you used. Rework these to highlight what you did, how you did it, and why it mattered, focusing on the skills relevant to your next step.
 - 🔴 **Most bullets describe the task, not the skill behind it**  
-  Nearly all experience bullets state what was done but not the outcome, skill, or change achieved. For each, clarify what you did, how you did it, and what skill it demonstrates. Add results where you genuinely have them, but only if appropriate.
+  Nearly all experience bullets state what was done but not the outcome, skill, or change. For each, clarify your approach, the impact, and the skill demonstrated. Add results where you genuinely have them, but only if appropriate and verifiable.
 - 🟠 **Dates give the year but not the month**  
-  Several date ranges show only years. Add the month to each date range so a reader can distinguish between short and long experiences.
+  Add the month to each date range (e.g., '09/2023 – 06/2024'). This helps readers understand the duration of each role or activity.
 - 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+  Standardise your bullet punctuation—choose either to end all bullets with a full stop or none, and apply this consistently throughout.
 - 🟠 **Bullet tense changes within EMPLOYMENT HISTORY**  
-  Tenses switch between present and past within the EMPLOYMENT HISTORY section. Use past tense for completed roles and present tense for your current position, and keep this consistent.
+  Use past tense for completed roles and present tense for your current position, and keep this consistent within the section.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -45,22 +45,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EMPLOYMENT HISTORY** 🟠 Needs attention
 
-- Your bullet points under AXA XL, XL Group, and Liberty Mutual Insurance Companies describe responsibilities and tasks, such as 'Currently Responsible Actuary of Catlin Re Switzerland Ltd' and 'Overseeing annual completion of Responsible Actuary Report and SST Report,' but do not clarify your personal contribution, the skills you used, or the impact you had. For each, specify what you did, how you did it, and why it mattered, highlighting transferable skills.
-- Most bullets in this section, such as 'Disentangling direct business from reinsurance business' and 'Integrating Catlin business into XL,' state what was done but not the outcome or skill demonstrated. For each, clarify your approach, the skill involved, and any results where appropriate.
-- Date ranges like '2014 - 2026' and '2001 - 2014' show only years. Add the month to each date range so a reader can see the duration of each role.
-- Tenses shift between present and past, for example, 'Currently Responsible Actuary...' versus 'Served as Responsible Actuary...'. Use present tense for your current role and past tense for previous roles, and keep this consistent.
+- Your bullets for roles at AXA XL, XL Group, and Liberty Mutual describe responsibilities (e.g., 'Currently Responsible Actuary of Catlin Re Switzerland Ltd') but do not show what you personally achieved, how you approached challenges, or which skills you applied—revise these to highlight your actions and their impact.
+- For each bullet, clarify what you did, how you did it, and why it mattered, and add outcomes or results where you can genuinely support them.
+- Date ranges such as '2014 - 2026' and '2001 - 2014' show only years; add months to each to clarify the duration of your roles.
+- Some bullets end with a full stop and others do not—choose one style and apply it throughout this section.
+- Tense shifts between present and past within this section; use present tense for your current role and past tense for previous positions, and keep this consistent.
 
 **EDUCATION** 🟢 Strong
 
-- Your education section is strong because it provides a clear overview of your academic background, including your ongoing studies and professional qualifications.
+- Your degrees, certifications, and ongoing studies are all clearly presented, including honours and anticipated completion dates.
 
 **ADDITIONAL EXPERIENCE / SKILLS** 🟢 Strong
 
-- This section works well by highlighting your professional affiliations and committee involvement, which add credibility and context to your actuarial experience.
+- You have included relevant professional memberships and committee roles, which add credibility to your profile.
 
 **ADDITIONAL ACTIVITIES** 🟢 Strong
 
-- This section is strong as it demonstrates your engagement in community and extracurricular activities, showing a well-rounded profile.
+- You have listed active roles in music, scouting, and alumni leadership, showing engagement beyond your professional work.
 
 **Profile** ⚪ Missing
 
@@ -68,11 +69,11 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates beyond those already listed, you could add them here to highlight additional expertise.
+- If you have completed relevant courses or certificates (such as the [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) or [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/)), consider adding them here, especially if they support your next career step.
 
 **Interests / Hobbies** ⚪ Missing
 
-- If you have personal interests or hobbies you would like to share, you can add a short section. This is optional, but it can give a recruiter a sense of your personality outside of work.
+- If you have personal interests or hobbies you would like to share, you can add a short section—this can give a sense of your personality and help you stand out.
 
 ### 5. Anything else from HSG worth adding?
 

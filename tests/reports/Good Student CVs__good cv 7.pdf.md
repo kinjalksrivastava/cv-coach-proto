@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, with clear section headings and a strong set of professional experiences, each with a role title and description. Grades are presented with their maximum value, making them easy to interpret internationally. However, this review covers structure and completeness only, as no target role or job description was provided—if you add a target, I can give more tailored feedback. Nothing on your CV currently refers to AI experience; if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured and concise, fitting comfortably on one page and covering your academic, professional, and extracurricular background. The section headings are conventional and ATS-friendly, and you have included both role titles and descriptions for each professional experience, which helps a recruiter quickly understand your responsibilities. Grades are shown with their maximum, making them easy to interpret internationally. However, your education section currently lists only degrees, dates, and grades, without any detail about what you actually did during your studies. Most of your experience bullets describe tasks rather than the skills you developed or the outcomes you achieved, so adding more context would help a recruiter see your impact. This feedback covers structure and completeness; if you have a specific target role or industry in mind, you can receive tailored advice at any time. Nothing in your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,16 +18,16 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Your degrees have nothing under them but a grade and a date**  
-  A reader learns only which certificate you hold, not what you did during your studies. Add a line or two under each degree where you have relevant content—such as key modules, thesis details, exchanges, certificates, scholarships, or mentoring programmes—focused on what matters for your future applications.
-- 🔴 **Most bullets describe the task, not the skill behind it**  
-  Many experience bullets state what you did but not how you did it, why it mattered, or what changed as a result. For each, clarify the action, method, and outcome, and highlight the transferable skill you want to demonstrate—adding results or figures only where you can genuinely support them.
-- 🟠 **Bullet punctuation is inconsistent**  
-  Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
-- 🟡 **Showing this grade is your call**  
-  Grades are optional on a CV and are commonly included from 5.00 upward. For grades below this, it is worth discussing with a Career Services coach whether to show them. The decision is yours.
-- 🟡 **Grades are shown for some degrees but not others**  
-  Grades are optional, but showing some and omitting others can raise questions. A recruiter may assume a missing grade was omitted for a reason, so consider whether to add or remove grades for consistency.
+- 🔴 **Add detail under each degree in your education section**  
+  Currently, your academic entries only show the degree, date, and grade, which tells a recruiter what you studied but not what you actually did. Add a line or two under each degree where you have something relevant—such as key modules, thesis details, exchange semesters, certificates, scholarships, or mentoring programmes—focused on what matters for your future applications.
+- 🔴 **Make experience bullets show skills and outcomes, not just tasks**  
+  Most of your professional experience bullets describe what you did, but not how you did it, what skills you used, or what changed as a result. For each bullet, clarify what you did, how you did it, and why it mattered, highlighting transferable skills and outcomes where possible.
+- 🟠 **Make bullet punctuation consistent**  
+  Some of your bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
+- 🟡 **Decide whether to show your Bachelor's grade**  
+  Grades are optional on a CV and are commonly included from 5.00 upward. If your grade is below this, it is worth discussing with a Career Services coach whether to show it. The decision is yours.
+- 🟡 **Be consistent in showing grades across all degrees**  
+  Grades are optional, but showing some and omitting others can raise questions. Recruiters may assume a missing grade was omitted for a reason. Decide whether to show grades for all degrees or none, based on what best supports your application.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,27 +44,26 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Academic Experience** 🟠 Needs attention
 
-- Your EM Lyon, University of St Gallen (Master), and University of St Gallen (Bachelor) entries show only the degree, location, dates, and (sometimes) a grade, without any detail about what you studied, your thesis work, or relevant academic projects.
-- Add a line or two under each degree where you have something relevant: for example, key modules, thesis details (including what you actually did—topic, data, method, tools, and outcome), exchange semesters, certificates, scholarships, or participation in a mentoring programme such as the HSG Mentoring Programme. Only include what is true and relevant to your future applications.
-- The grade 4.84 / 6.0 is shown for your Bachelor degree. Grades below 5.00 are less commonly included, so consider whether you want to keep it or discuss with a Career Services coach.
+- Add a line or two under each degree—such as your Master of Arts in Business Innovation and Bachelor of Arts in Business Administration—highlighting relevant modules, thesis details (including what you actually did for your thesis on lignin-based anodes), exchange semesters, certificates, scholarships, or participation in programmes like the HSG Mentoring Programme if applicable.
+- For your thesis, briefly describe the research question, data, methods, and outcome, rather than just the title.
+- Your Bachelor's grade (4.84 / 6.0) is below the common threshold for including grades (5.00 upward). Consider whether to keep it, and discuss with a Career Services coach if unsure.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **Professional Experience** 🟠 Needs attention
 
-- Every entry in this section carries both a role title and a description, which helps a reader quickly understand your responsibilities.
-- Many bullets, such as 'Analyzed pricing and operating models to support the shift of 5 B2B SaaS portfolio Companies to subscription-based revenue models', describe what you did but not how you did it, what skill you used, or what changed as a result. For each, clarify the action, method, and outcome, and highlight the transferable skill you want to demonstrate.
-- Where you have a concrete result or figure (e.g., 'reducing manual effort by 28%' or 'identifying ~17MM GMS potential p.a.'), keep these as they add value. For other bullets, consider what changed or improved due to your work.
-- Ensure bullet punctuation is consistent throughout this section—choose either to end all bullets with a full stop or none.
+- Review each bullet—such as 'Analyzed pricing and operating models to support the shift of 5 B2B SaaS portfolio Companies to subscription-based revenue models'—and clarify what you did, how you did it, and what changed as a result. Where you have a measurable outcome or impact, include it.
+- Make sure each bullet highlights the transferable skills you developed, not just the tasks performed.
+- Ensure bullet punctuation is consistent throughout this section.
 
 **Extracurriculars** 🟠 Needs attention
 
-- For your role as Volunteer at the Young Entrepreneur Exchange Project, you mention building an alumni network and organising Yeep Tech Week—this is a good start. For other entries, such as 'Active Member of the support crew' at Symposium St Gallen and 'Choir' at Staats- & Domchor zu Berlin, add a line where you can about your specific contributions, responsibilities, or skills developed.
-- If you have held an active role in any HSG student club (see the full directory at https://shsg.ch/clubs), consider adding it here with a brief description of your involvement and achievements, if relevant to your future applications.
+- For roles like 'Volunteer' at the Young Entrepreneur Exchange Project and 'Active Member of the support crew' at Symposium St Gallen, add a line describing what you actually did, who benefited, and any outcomes or skills gained.
+- If you have held active roles in HSG student clubs or participated in initiatives like the Consulting Club HSG, consider adding them here with a brief description of your contribution.
 
 **Skills & Interests** 🟢 Strong
 
-- Your language skills are presented with clear levels (including CEFR for English), and your IT skills are listed with proficiency levels, making it easy for a recruiter to assess your capabilities.
+- You have clearly stated your language abilities (including CEFR levels) and IT skills, making it easy for a recruiter to assess your technical and language competencies.
 
 **Profile** ⚪ Missing
 
@@ -72,7 +71,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals (DSF) or Bloomberg Market Concepts (BMC)—consider adding them here, especially if they are relevant to your future applications.
+- If you have completed relevant courses or certificates—such as the Certificate in Data Science Fundamentals or Bloomberg Market Concepts—consider adding them here.
 
 ### 5. Dates worth a look
 

@@ -2,14 +2,13 @@
 
 ### 1. Overall assessment
 
-Your letter provides a clear overview of your background and experience, but it mainly describes your past roles and achievements in a way that may closely mirror a CV. There is limited explanation of your specific motivation for this company or this R&D Engineer role, and the connection between your experience and what you would bring to this position could be made more explicit.
+Your letter gives a clear overview of your background and highlights your experience in mechanical engineering and product design. However, much of the content closely repeats what is already on your CV, with only some new context about your approach to problem-solving and your enjoyment of research. The letter could be strengthened by providing more detail about why you are interested in this specific R & D Engineer role and why you want to work at this company in particular.
 
-**Paragraphs that read like a list of past experiences**
+**Paragraphs that mainly repeat your CV**
 
-You did not upload your CV, so nothing here has been compared with one. Each of these reads as a list of things you have done, which is what a CV is for — so it may not add much beyond one.
+Each of these says something a recruiter would already have read on your CV. A cover letter has one page, and this is the one thing it cannot afford to spend it on.
 
-- “Prior to CMU, I spent two years working on product research and development at N…” — This paragraph lists your previous responsibilities and achievements at National Engineering, Inc. in a way that may closely follow a CV, without adding much new context or explanation about your approach or decisions.
-- “My past professional experience and master’s research project align with this po…” — This paragraph summarizes your experience and research project, but mainly repeats what you have done rather than explaining how these experiences specifically prepare you for or motivate you towards this role.
+- “Prior to CMU, I spent two years working on product research and development at N…” — This paragraph mainly repeats your CV by listing your previous roles and technical contributions without adding much new context or explanation.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -17,10 +16,10 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | Checked — nothing to flag. |
-| Why this organisation? | You do not explain why you are interested in Awesome Engineering Company in particular. |
-| Why this role? | You do not clearly state what attracts you to the R&D Engineer position itself or what you hope to achieve in this role. |
-| What you bring | You mention your experience but do not explicitly connect how your skills or insights would contribute to this specific position. |
+| Adds value beyond the CV | See the paragraph(s) named above: those say what your CV already says. |
+| Why this organisation? | You do not explain why you are interested in this specific company or what attracts you to work there. |
+| Why this role? | You mention your skills and experience but do not clearly state what draws you to this particular R & D Engineer position or what excites you about the role. |
+| What you bring | Checked — nothing to flag. |
 | Conclusion | Checked — nothing to flag. |
 | Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | The role is named. If the advert carries a reference number, add that too. |

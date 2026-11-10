@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured and concise, fitting neatly onto one page, which is ideal for early-career applications. The professional experience section is particularly strong, with clear role titles and results-focused bullets that quantify your impact. Your education section is also effective, as it provides both grades and their maximums for international clarity. The only area needing attention is in your community experience section, where two entries are missing clear role titles—adding these will help readers understand your responsibilities and achievements. As you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
+Your CV is well-structured and concise, fitting neatly onto one page and providing clear, quantifiable results in your professional experience. The education section is transparent, with grades given alongside their maximum for international clarity. Your professional roles are clearly titled and described, making it easy for a recruiter to understand your responsibilities and achievements. Since you have not provided a target role or job description, this feedback focuses on structure and completeness; if you add a specific target, I can offer more tailored advice.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -18,8 +18,8 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 
 ### 3. Key areas to improve
 
-- 🔴 **Missing role titles in Community Experience**  
-  Two entries in your community experience section list organisations and dates but do not state your specific role. Add the function you held for each to clarify your level of responsibility and the nature of your contribution.
+- 🔴 **Missing role titles in COMMUNITY EXPERIENCE**  
+  Two entries in your COMMUNITY EXPERIENCE section list only the organisation and dates, without stating your specific role. Add the function or position you held for each entry, as a reader cannot infer your level of responsibility or contribution from the organisation name alone.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -36,19 +36,19 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟢 Strong
 
-- Grades are given with their maximum, making your academic performance easy to interpret for readers from different countries.
+- Grades are provided with their maximum, making your academic performance easy to interpret for readers from different countries.
 
 **PROFESSIONAL EXPERIENCE** 🟢 Strong
 
-- Every entry includes a role title and description, and most bullets state a concrete result or figure, showing your impact.
+- Every entry includes a clear role title and description, and most bullets highlight concrete results or figures, demonstrating your impact.
 
 **COMMUNITY EXPERIENCE** 🟠 Needs attention
 
-- For the entries dated September 2021 — December 2022 (St. Gallen, CH) and September 2021 — September 2022 (Kilifi, KE), add the specific function or title you held (e.g., Head of Logistics and Operations, Head of Fundraising and Communications) so a reader can understand your level of responsibility and what you contributed.
+- For the entries dated 'September 2021 — December 2022 St. Gallen, CH' and 'September 2021 — September 2022 Kilifi, KE', add the specific function or position you held (e.g., Head of Logistics and Operations, Head of Fundraising and Communications) so a reader can understand your responsibilities and seniority.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- You provide a clear overview of your language skills, extracurricular courses, and personal interests, giving a well-rounded view of your profile.
+- You provide a clear overview of your language abilities, extracurricular courses, and personal interests, which helps present you as a well-rounded candidate.
 
 **Profile** ⚪ Missing
 
@@ -56,7 +56,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant certifications or additional courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to highlight further qualifications.
+- If you have completed relevant certifications or courses (such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG)), you could add them here to showcase additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

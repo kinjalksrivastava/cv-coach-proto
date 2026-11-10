@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist bereits gut strukturiert und deckt die wichtigsten Bereiche ab, die für einen Berufseinstieg oder eine Bewerbung während des Studiums relevant sind. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Rollenbezeichnung als auch eine Beschreibung enthält. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools (z.B. im Studium, in Projekten, im Job oder als Skill) aufgeführt ist – falls du hier relevante Kenntnisse hast, könntest du diese ergänzen.
+Dein Lebenslauf ist gut strukturiert und deckt die wichtigsten Bereiche ab, die für einen Berufseinstieg oder ein Studium relevant sind. Besonders positiv fällt auf, dass jede Position in der Berufserfahrung sowohl eine klare Rollenbezeichnung als auch eine Beschreibung enthält. Da kein Zieljob oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf die allgemeine Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools in deinem Lebenslauf sichtbar ist – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Details zu den Studienabschlüssen fehlen**  
-  Unter deinen Bildungsabschlüssen stehen bisher nur Abschluss und Zeitraum. Ergänze unter jedem Abschluss ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
-- 🟠 **Aufgaben statt Beitrag in den Berufserfahrungs-Bullets**  
-  Viele deiner Bullet Points beschreiben nur Aufgaben, aber nicht, was du konkret beigetragen hast. Überarbeite sie so, dass klar wird, was du gemacht hast, wie du es gemacht hast und warum es wichtig war – und welches übertragbare Skill du damit belegst.
-- 🟠 **Ergebnisse und Veränderungen fehlen in den Bullets**  
-  Fast alle Bullet Points in deiner Berufserfahrung nennen nur die Tätigkeit, aber kein Ergebnis, keine Veränderung oder keinen konkreten Skill. Überlege bei jedem Punkt: Was genau habe ich gemacht? Wie? Warum war das wichtig? Welches Skill steckt dahinter? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
-- 🟡 **Datumsangaben nur als Jahr**  
-  Mehrere Zeiträume zeigen nur das Jahr. Ergänze überall den Monat dazu (z.B. 09/2023 – 06/2024), damit klar wird, wie lange du wirklich in einer Rolle oder Ausbildung warst.
-- 🟡 **Uneinheitliche Zeichensetzung bei Bullets**  
-  Einige Bullet Points enden mit Punkt, andere nicht. Entscheide dich für eine Variante und ziehe sie durch den gesamten Lebenslauf.
+- 🔴 **Details zu deinen Abschlüssen fehlen**  
+  Unter deinen Bildungsabschlüssen stehen bisher nur Abschluss und Datum. Ergänze jeweils ein bis zwei Zeilen zu relevanten Modulen, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur das, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+- 🔴 **Aufgaben statt Beitrag in den Berufserfahrungen**  
+  Viele deiner Aufzählungspunkte beschreiben nur die Aufgabe, nicht aber deinen konkreten Beitrag oder das dahinterliegende Können. Überarbeite diese so, dass klar wird, was du gemacht hast, wie du es umgesetzt hast und warum es wichtig war – und welches übertragbare Skill du damit belegst.
+- 🔴 **Ergebnisse und Veränderungen fehlen in den Berufserfahrungen**  
+  Fast alle Aufzählungspunkte in deiner Berufserfahrung nennen keine Ergebnisse, Zahlen oder Veränderungen. Überlege bei jedem Punkt: Was habe ich konkret erreicht? Wo gibt es ein messbares Resultat oder eine sichtbare Verbesserung? Füge dies hinzu, wenn es passt und belegbar ist.
+- 🟠 **Datumsangaben sind zu ungenau**  
+  Mehrere Zeiträume zeigen nur das Jahr, nicht den Monat. Ergänze bei allen Stationen den Monat, damit klar wird, wie lange du tatsächlich dort warst – das hilft, Missverständnisse zu vermeiden.
+- 🟠 **Uneinheitliche Zeichensetzung bei Aufzählungen**  
+  Manche Aufzählungspunkte enden mit Punkt, andere nicht. Entscheide dich für eine Variante und ziehe sie konsequent durch.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,34 +46,34 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals erworben hast, kannst du dies als Bullet unter dem passenden Abschluss ergänzen.
+- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals absolvierst, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullets so, dass sie nicht nur Aufgaben, sondern deinen konkreten Beitrag, das Vorgehen und – wo möglich – ein Ergebnis oder eine Veränderung zeigen. Zum Beispiel: Bei 'Marktanalyse und systematische Bewirtschaftung relevanter Themen' könntest du ergänzen, wie du vorgegangen bist, was sich dadurch verbessert hat oder welches Skill du dabei eingesetzt hast.
-- Überlege bei jedem Bullet, welches übertragbare Skill du damit belegst und mache dies sichtbar.
-- Achte darauf, dass die Zeichensetzung am Ende der Bullets einheitlich ist (entweder alle mit Punkt oder alle ohne).
+- Überarbeite die Aufzählungspunkte, z.B. bei 'Marktanalyse und systematische Bewirtschaftung relevanter Themen', sodass klar wird, was du konkret gemacht hast, wie du vorgegangen bist und welches Skill du damit belegst.
+- Ergänze, wo möglich, Ergebnisse oder Veränderungen – etwa, welche Maßnahmen aus deiner Analyse abgeleitet wurden oder wie dein Beitrag das Team oder die Prozesse verbessert hat.
+- Achte darauf, dass die Zeichensetzung bei allen Aufzählungspunkten einheitlich ist.
 
 **ORGANISATIONEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze unter jeder Organisation Bullets, die deine konkrete Rolle, Aufgaben und – falls zutreffend – Ergebnisse oder besondere Erfahrungen beschreiben. Zum Beispiel: Bei deiner Leitungsfunktion bei der Ministrantenscharr Sempach könntest du angeben, wie viele Kinder du betreut hast, welche Aktivitäten du organisiert hast oder wie du Teamarbeit gefördert hast.
-- Falls du in einem HSG-Club eine aktive Rolle übernommen hast, beschreibe diese mit Bullets, damit dein Engagement und deine Skills sichtbar werden.
+- Füge zu deinen Rollen, z.B. bei UNIVERSA oder als Leiterin der Ministrantengruppe, jeweils Stichpunkte hinzu, die deine konkreten Aufgaben, Verantwortlichkeiten oder besondere Projekte beschreiben.
+- Wenn du in einem HSG-Club aktiv bist, beschreibe kurz, was du dort gemacht hast – das zeigt Engagement und relevante Soft Skills.
 
 **SPRACHEN** 🟢 Stark
 
-- Die Sprachkenntnisse sind mit Niveau oder Zertifikat (z.B. B2 First, DELF B2) transparent dargestellt, was eine schnelle Einschätzung ermöglicht.
+- Die Sprachkenntnisse sind mit anerkannten Zertifikaten und klaren Angaben zum Niveau versehen, was die Vergleichbarkeit für Leser erleichtert.
 
 **SKILLS** 🟢 Stark
 
-- Die aufgeführten Skills (z.B. Microsoft 365, Avaloq, Requirements Engineering) sind für den Berufseinstieg relevant und nachvollziehbar dargestellt.
+- Die aufgeführten Skills und Zertifikate sind klar benannt und zeigen relevante Kenntnisse für viele wirtschaftsnahe Positionen.
 
 **CERTIFICATIONS** 🟢 Stark
 
-- Die Zertifikate sind mit Titel und Bezug zur Sprache oder Methode klar aufgeführt, was einen schnellen Überblick ermöglicht.
+- Die Zertifikate sind mit Titel und Bezug zur Sprache oder zum Fachgebiet klar dargestellt.
 
 **INTERESTS** 🟢 Stark
 
-- Die Interessen sind klar und abwechslungsreich genannt, was einen persönlichen Eindruck vermittelt.
+- Die Interessen geben einen guten Einblick in deine persönlichen Schwerpunkte und runden das Profil ab.
 
 **Kurzprofil** ⚪ Fehlt
 

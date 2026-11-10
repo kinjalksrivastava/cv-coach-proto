@@ -2,15 +2,7 @@
 
 ### 1. Overall assessment
 
-Your letter appears to be a template or example rather than a personalised application. It does not provide any specific information about your motivation, experiences, or what you would bring to a particular role or organisation. As it stands, it does not fulfil the purpose of a cover letter, which is to add value beyond a CV and explain your interest and fit for the position.
-
-**Paragraphs that read like a list of past experiences**
-
-You did not upload your CV, so nothing here has been compared with one. Each of these reads as a list of things you have done, which is what a CV is for — so it may not add much beyond one.
-
-- “Creates interest in yourself and explains why you are writing. Use and opening s…” — This paragraph gives generic instructions rather than sharing your own motivation or interest in the role or organisation.
-- “If you are in school or a recent grad, explain how your academic background qual…” — This paragraph suggests what to include about your academic background but does not actually provide any personal detail or context.
-- “Assert yourself – tell them you will call them within a designated period of tim…” — This paragraph instructs on how to assert yourself in follow-up but does not contain any substantive content about your own application.
+Your letter is structured as a template or set of instructions rather than a personalised application. It does not provide any specific information about your motivation, experiences, or what you would bring to the role or organisation. As it stands, it does not complement a CV or fulfil the purpose of a cover letter.
 
 _Please note that this is only a first feedback mainly about the structure and value-add of your Cover Letter. It does not evaluate the content in detail or how well you tailored the Cover Letter to the role. This you can discuss in your one-on-one session._
 
@@ -18,11 +10,11 @@ _Please note that this is only a first feedback mainly about the structure and v
 
 | Check | Brief feedback |
 | --- | --- |
-| Adds value beyond the CV | Your letter needs to include specific details about your motivation, relevant experiences, and what you would contribute to the role and organisation. |
-| Why this organisation? | You have not explained why you are interested in this particular employer. |
-| Why this role? | You have not stated what interests you about this specific position. |
-| What you bring | You have not connected your experiences or skills to the position you are seeking. |
-| Conclusion | You need a brief, personalised closing that expresses your interest in discussing your application further. |
+| Adds value beyond the CV | Your letter does not include any personal details, examples, or insights beyond generic instructions, so it does not add value beyond a CV. |
+| Why this organisation? | You do not explain why you are interested in this particular employer. |
+| Why this role? | You do not state what interests you about this specific position. |
+| What you bring | You do not connect your experience or skills to the position or organisation. |
+| Conclusion | You do not include a proper closing or expression of interest in discussing your application further. |
 | Company / recipient details | The company and recipient details are there. |
 | Job title / reference number | No target role was given, so this wasn't checked. |
 | Length: max. one page | Your letter is one page, which is the maximum. Around two-thirds of a page of substance is usually enough. |

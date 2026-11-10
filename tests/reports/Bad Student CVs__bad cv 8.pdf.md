@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist bereits sehr umfangreich und zeigt ein breites Spektrum an Erfahrungen, insbesondere im Bereich AI-Governance und Digitalpolitik. Die Rollen in der Arbeits- & Führungserfahrungen sind klar benannt und jeweils mit einer Beschreibung versehen, was einen guten Überblick über deine bisherigen Tätigkeiten gibt. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Die Rubrik "Interessen" ist aktuell fast leer, was den Eindruck einer Lücke hinterlässt – hier solltest du entweder mehr Inhalt ergänzen oder die Überschrift entfernen.
+Dein Lebenslauf deckt viele relevante Bereiche ab und zeigt bereits eine breite Palette an Erfahrungen, sowohl im Studium als auch in der Praxis. Besonders positiv fällt auf, dass jede Position in "ARBEITS- & FÜHRUNGSERFAHRUNGEN" mit einer klaren Rollenbeschreibung versehen ist. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Branche oder Position kannst du jederzeit eine Zielrolle nachreichen. Beachte, dass der Lebenslauf aktuell drei Seiten umfasst; für den Schweizer Markt sind ein bis zwei Seiten üblich.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **"Interessen" ist fast leer**  
-  Entweder solltest du diese Rubrik mit konkreten Interessen ausbauen oder sie ganz entfernen – eine Überschrift ohne Inhalt fällt negativ auf.
-- 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betreffenden Bullets so, dass klar wird, was genau du gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei gezeigt hast. Ein konkretes Ergebnis hilft, wenn es passt, aber der Fokus sollte auf der Kompetenz liegen.
-- 🔴 **Die meisten Bullets beschreiben nur die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  Gehe jede Bullet durch und frage dich: Was habe ich konkret gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo möglich, ergänze ein Ergebnis – aber nur, wenn es belegbar ist. Erfinde keine Zahlen, nur um die Lücke zu füllen.
-- 🟠 **Punktuation der Bullets ist uneinheitlich**  
-  Entscheide dich für eine einheitliche Schreibweise (mit oder ohne Punkt am Ende) und ziehe das konsequent durch alle Bullets.
+  Entweder solltest du diesen Abschnitt mit Inhalten füllen oder ganz entfernen – eine Überschrift ohne Inhalt lenkt die Aufmerksamkeit auf die Lücke.
+- 🟠 **Bullets beschreiben Aufgaben statt Beitrag**  
+  Überarbeite die betreffenden Bullets so, dass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei gezeigt hast. Ein Ergebnis hilft, wenn es passt, aber der Fokus liegt auf der Kompetenz.
+- 🟠 **Die meisten Bullets beschreiben die Aufgabe, nicht die dahinterstehende Fähigkeit**  
+  Gehe jede Bullet durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo ein echtes Ergebnis vorliegt, ergänze es – aber nur, wenn es belegbar ist.
+- 🟡 **Punktuation der Bullets ist uneinheitlich**  
+  Wähle eine Variante (mit oder ohne Punkt am Ende) und ziehe sie konsequent durch alle Bullets.
 - 🟡 **Der Lebenslauf ist 3 Seiten lang**  
-  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für dein Ziel am wichtigsten sind, und kürze entsprechend.
+  Für einen studentischen Lebenslauf werden ein bis maximal zwei Seiten erwartet. Überlege, welche Inhalte für deine Zielrolle am wichtigsten sind, und kürze entsprechend.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,27 +45,28 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei der Abiturnote ("Abschlussnote: 1,3") die Maximalnote, z.B. "1,30 / 1,00", damit auch internationale Recruiter sie einordnen können.
-- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals absolvierst, kannst du dies als Bullet ergänzen – aber nur, wenn es wirklich zutrifft.
+- Deine Abschlussnote "1,3" beim Abitur ist ohne Maximalwert für internationale Leser schwer einzuordnen – ergänze sie als 1,30 / 1,00.
+- Falls du am HSG Mentoring Programme teilnimmst oder ein Zertifikat wie das Certificate in Data Science Fundamentals absolvierst, kannst du dies als Bullet ergänzen, sofern es relevant ist.
 
 **ARBEITS- & FÜHRUNGSERFAHRUNGEN** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Bullets, die nur Aufgaben nennen (z.B. "Unterstützung bei der Ausarbeitung der Anforderungen des ISO-Standards 42001 und der"), indem du erläuterst, was genau dein Beitrag war, wie du vorgegangen bist und welche Fähigkeit du dabei gezeigt hast.
-- Achte darauf, dass alle Bullets einheitlich mit oder ohne Punkt enden.
-- Überlege, welche Erfahrungen für dein Ziel am wichtigsten sind, und kürze ggf. weniger relevante Stationen, um auf maximal zwei Seiten zu kommen.
+- Viele Bullets, wie z.B. "Unterstützung bei der Ausarbeitung der Anforderungen des ISO-Standards 42001 und der", beschreiben nur die Aufgabe. Ergänze, wie du konkret vorgegangen bist, welche Methoden oder Tools du genutzt hast und welches Ergebnis oder welche Fähigkeit du damit gezeigt hast.
+- Frage dich bei jeder Bullet: Was genau habe ich gemacht? Wie habe ich es umgesetzt? Warum war das für das Team oder das Projekt wichtig? Wo ein echtes Ergebnis vorliegt, kannst du es ergänzen.
+- Achte darauf, die Punktuation am Ende der Bullets einheitlich zu gestalten (entweder alle mit Punkt oder alle ohne).
+- Überlege, welche Erfahrungen für deine Zielrolle am wichtigsten sind, und kürze ggf. weniger relevante Stationen, um auf maximal zwei Seiten zu kommen.
 
 **SKILLS, ENGAGEMENTS & INTERESSEN** 🟢 Stark
 
-- Die Angabe der Sprachkenntnisse ist übersichtlich und deckt mehrere Sprachen ab.
+- Die Angabe von Sprachkenntnissen mit Level (z.B. "Englisch: Verhandlungssicher in Wort und Schrift (CI)", "Französisch: Grundkenntnisse (B2)") ist hilfreich für internationale Bewerbungen.
 
 **Interessen** 🟠 Braucht Aufmerksamkeit
 
-- Entweder solltest du diese Rubrik mit konkreten Interessen (z.B. Sportarten, Instrumente, besondere Hobbys) ausbauen oder die Überschrift entfernen.
-- Wenn du möchtest, kannst du bei ein oder zwei Interessen kurz ergänzen, was dich daran besonders interessiert oder auf welchem Niveau du sie betreibst – das ist aber optional.
+- Entweder entwickle diesen Abschnitt weiter, indem du bei ein oder zwei Interessen kurz erläuterst, was dich daran besonders interessiert oder auf welchem Niveau du sie betreibst (z.B. "Klavier – seit 10 Jahren, Auftritte bei Schulkonzerten"), oder entferne die Überschrift ganz, wenn du dazu nichts ergänzen möchtest.
+- Einzelne Stichworte wie "Sport" oder "Lesen" sind akzeptabel, aber überlege, ob du bei einem Hobby einen Bezug zu einer Fähigkeit oder einer interessanten Erfahrung herstellen möchtest.
 
 **Engagements** 🟢 Stark
 
-- Die Beschreibung deiner Rollen und Aufgaben im St. Gallen Model United Nations und anderen Engagements macht deine Initiative und Teamfähigkeit sichtbar.
+- Die Beschreibung deiner Rolle als Head of debates and delegations bei St. Gallen Model United Nations und die Teilnahme an verschiedenen Konferenzen machen dein Engagement und deine Verantwortungsübernahme sichtbar.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -73,7 +74,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Zusatzkurse (z.B. das Certificate in Data Science Fundamentals oder Bloomberg Market Concepts) absolviert hast, kannst du sie hier aufführen.
+- Falls du relevante Zertifikate (z.B. das Certificate in Data Science Fundamentals oder Bloomberg Market Concepts) erworben hast, kannst du diese hier aufführen.
 
 ### 5. Daten, die auffallen könnten
 
