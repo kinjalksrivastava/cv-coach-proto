@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist strukturiert und deckt alle wichtigen Bereiche ab. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die Struktur und Vollständigkeit deines CVs – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools in deinem CV erwähnt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
+Dein Lebenslauf ist strukturiert und deckt alle wichtigen Bereiche ab. Da kein Zieljob oder Stelleninserat angegeben wurde, konzentriert sich dieses Feedback auf die Struktur und Vollständigkeit deines CVs. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools in deinem Lebenslauf erwähnt wird – falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Deine Abschlüsse enthalten außer Abschluss und Datum keine weiteren Angaben**  
-  Unter Einträgen wie 'Dipl. Betriebswirtschafter FH' und 'Passerelle (Vorbereitungskurs für die Aufnahmeprüfung an Fachhochschulen)' steht nur der Abschluss und das Datum. Füge jeweils ein bis zwei Zeilen hinzu, in denen du relevante Module, eine Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), ein Austauschsemester, ein Zertifikat oder eine Auszeichnung aufführst – immer nur, was wirklich zutrifft und für deine nächste Bewerbung relevant ist.
+  Unter den einzelnen Abschlüssen in 'AUSBILDUNG' steht aktuell nur der Abschluss und das Datum. Ergänze jeweils ein bis zwei Zeilen zu Modulen, Schwerpunkten, einer Abschlussarbeit (inklusive Thema und was du konkret gemacht hast), einem Austauschsemester, Zertifikaten oder besonderen Programmen – immer nur, wenn es zutrifft und für deine Zielposition relevant ist.
 - 🔴 **Einträge in 'BERUFSERFAHRUNG' haben keine Beschreibung**  
-  Mindestens ein Eintrag in 'BERUFSERFAHRUNG', nämlich 'Medtech AG, St. Gallen, Schweiz 06/2008 – 06/2019', enthält keine Stichpunkte oder Beschreibung. Ergänze hier einige Stichpunkte dazu, was du gemacht hast, wie du es umgesetzt hast und was sich dadurch verändert hat – mit Fokus auf die übertragbaren Kompetenzen, die für deine nächste Position wichtig sind.
+  Mindestens ein Eintrag in 'BERUFSERFAHRUNG' (z.B. 'Medtech AG, St. Gallen, Schweiz 06/2008 – 06/2019') enthält keine Stichpunkte oder Beschreibung. Füge darunter einige Stichpunkte hinzu, die deine Aufgaben, Vorgehensweise und Ergebnisse abdecken – mit Fokus auf die übertragbaren Kompetenzen, die für deine nächste Position wichtig sind.
 - 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
-  Einige Stichpunkte, wie z.B. 'Key Account Manager Medizintechnik', nennen nur die Aufgabe. Überarbeite diese so, dass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und warum das wichtig war – und vor allem, welche übertragbare Fähigkeit du damit belegst.
-- 🟠 **Die meisten Stichpunkte beschreiben die Aufgabe, nicht die dahinterstehende Fähigkeit**  
-  23 von Stichpunkten in deiner Berufserfahrung enthalten kein Ergebnis, keine Zahl oder Veränderung, z.B. 'Key Account Manager Medizintechnik'. Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht, wie habe ich es gemacht, warum war das wichtig und welche Fähigkeit belege ich damit? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
+  Einige Stichpunkte, wie z.B. bei 'Key Account Manager Medizintechnik', nennen nur die Aufgabe. Überarbeite diese so, dass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und warum das für das Unternehmen oder Team wichtig war – insbesondere, welches Skill du damit belegst.
+- 🟠 **Die meisten Stichpunkte beschreiben die Aufgabe, nicht die dahinterstehende Kompetenz**  
+  Die Mehrheit der Stichpunkte in 'BERUFSERFAHRUNG' (z.B. bei 'Key Account Manager Medizintechnik') enthält kein Ergebnis, keine Zahl oder Veränderung. Gehe jeden Stichpunkt durch und ergänze, wo möglich, das Ergebnis oder die Wirkung deiner Tätigkeit – aber nur, wenn du es belegen kannst.
 - 🟡 **Ausbildung steht nach Berufserfahrung**  
-  Bei einem klassischen Studierenden-CV steht die Ausbildung normalerweise vor der Berufserfahrung – außer du bist bereits langjährig im Beruf und wechselst gezielt in ein neues Feld.
+  Bei einem klassischen Studierenden-CV steht die Ausbildung normalerweise vor der Berufserfahrung – außer du bist bereits sehr erfahren und wechselst in ein direkt verwandtes Feld.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -49,31 +49,31 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Beim Eintrag 'Medtech AG, St. Gallen, Schweiz 06/2008 – 06/2019' fehlen jegliche Stichpunkte oder eine Beschreibung – ergänze hier, was du in dieser Zeit gemacht hast, wie du vorgegangen bist und welche Ergebnisse du erzielt hast.
-- Mehrere Stichpunkte, wie z.B. 'Key Account Manager Medizintechnik', beschreiben nur die Aufgabe. Überarbeite diese so, dass dein konkreter Beitrag, die Vorgehensweise und das Ergebnis sichtbar werden.
-- Die meisten Stichpunkte, etwa bei 'Selbstständiger Unternehmer / Verkäufer Gartenbauprodukte' oder 'Kundenbetreuung / Customer Service', nennen Aufgaben, aber keine Ergebnisse oder Fähigkeiten. Ergänze, welche Kompetenzen du dabei eingesetzt oder entwickelt hast und welche Veränderungen du bewirkt hast.
+- Beim Eintrag 'Medtech AG, St. Gallen, Schweiz 06/2008 – 06/2019' fehlt eine Beschreibung – füge hier Stichpunkte hinzu, die deine Aufgaben und Erfolge in dieser Zeit sichtbar machen.
+- Mehrere Stichpunkte, wie bei 'Key Account Manager Medizintechnik', beschreiben nur die Aufgabe (z.B. 'Betreuen und entwickeln von Key Accounts...') – ergänze, wie du dabei vorgegangen bist und welches Ergebnis oder welche Kompetenz du damit belegst.
+- Die meisten Stichpunkte, etwa bei 'Sales Manager Medizinische Versorgung und Krankenhausmanagement', nennen keine konkreten Ergebnisse oder Veränderungen – prüfe, wo du Resultate oder Auswirkungen deiner Arbeit ergänzen kannst, sofern belegbar.
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Beim Eintrag 'Dipl. Betriebswirtschafter FH' steht nur der Abschluss und das Datum – ergänze relevante Module, eine Abschlussarbeit (inklusive Thema und Vorgehen), ein Austauschsemester oder besondere Qualifikationen, falls vorhanden.
-- Auch bei 'Passerelle (Vorbereitungskurs für die Aufnahmeprüfung an Fachhochschulen)' und 'Berufs- und Weiterbildungszentrum St. Gallen (BZBSG)' fehlen Angaben zu Inhalten oder besonderen Leistungen – füge hier, sofern relevant, Schwerpunkte, Zertifikate oder Auszeichnungen hinzu.
-- Falls du am [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen hast oder ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du dies als Bullet unter dem jeweiligen Abschluss ergänzen – immer nur, wenn es zutrifft und relevant ist.
+- Beim Abschluss 'Dipl. Betriebswirtschafter FH' an der Fachhochschule St. Gallen (FHS St. Gallen), St. Gallen, Schweiz 09/1990 – 06/1993, fehlen Angaben zu Studienschwerpunkten, relevanten Modulen oder einer Abschlussarbeit – ergänze hier, was für deine Zielposition relevant ist.
+- Beim Eintrag 'Passerelle (Vorbereitungskurs für die Aufnahmeprüfung an Fachhochschulen)' an der Kantonsschule am Burggraben, St. Gallen, Schweiz 09/1989 – 08/1990, steht aktuell nur der Abschluss – falls du hier besondere Leistungen, ein Stipendium oder ein relevantes Projekt hattest, kannst du dies ergänzen.
+- Falls du an der Fachhochschule St. Gallen oder am Berufs- und Weiterbildungszentrum St. Gallen (BZBSG) an einem Mentoring-Programm wie dem [HSG Mentoring Programme](https://www.unisg.ch/en/studying/starting-your-studies/counselling-services/mentoring-programme/) teilgenommen hast oder ein Zertifikat wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) erworben hast, kannst du dies als Bullet ergänzen – aber nur, wenn es zutrifft.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Die Tätigkeit beim Roten Kreuz ist mit konkreten Aufgaben und dem Nutzen für die betreuten Personen dargestellt.
+- Die Tätigkeit beim Roten Kreuz St. Gallen ist mit konkreten Aufgaben und dem Nutzen für die betreuten Personen dargestellt.
 
 **SPRACH- UND IT-KENNTNISSE** 🟢 Stark
 
-- Die Angaben zu MS Office, ERP-Systemen und CRM sowie zu Deutsch, Englisch (B2) und Französisch (B1) sind klar und nachvollziehbar.
+- Die Angaben zu MS Office Suite, ERP-Systemen und CRM Salesforce sowie die Sprachkenntnisse (inklusive CEFR-Level) sind klar und nachvollziehbar dargestellt.
 
 **INTERESSEN** 🟢 Stark
 
-- Die Interessen wie Gartenbau, Bergsteigen und kreatives Schreiben sind individuell und geben einen Einblick in deine persönlichen Schwerpunkte.
+- Die Interessen wie Gartenbau, Bergsteigen und kreatives Schreiben sind genannt und teilweise mit kurzen Beschreibungen versehen.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Kurse oder Zertifikate (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)) absolviert hast, könntest du diese in einem eigenen Abschnitt aufführen – immer nur, wenn sie für deine nächste Bewerbung relevant sind.
+- Falls du relevante Weiterbildungen, Zertifikate oder Kurse absolviert hast (z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/)), kannst du diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

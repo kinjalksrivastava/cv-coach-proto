@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen deiner Ausbildung und bisherigen Erfahrungen. Die Struktur ist klar, allerdings fehlen an mehreren Stellen Details, die deine konkreten Beiträge und Kompetenzen sichtbar machen. Besonders bei den Bildungsabschlüssen und ehrenamtlichen Tätigkeiten solltest du nachbessern, damit ein Leser erkennt, was du tatsächlich gemacht und gelernt hast. Es gibt aktuell keinen Abschnitt zu Skills & Languages – falls du relevante Sprachkenntnisse oder IT-Skills hast, solltest du diese ergänzen. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Dein CV enthält zudem keine Hinweise auf Erfahrungen mit KI oder KI-Tools – falls du hier Kenntnisse hast, könntest du diese ergänzen.
+Dein Lebenslauf ist übersichtlich und enthält alle wichtigen Stationen deiner Ausbildung und bisherigen Erfahrungen. Die Struktur ist klar, und die wichtigsten Abschnitte sind vorhanden. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf die allgemeine Struktur und Vollständigkeit – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle nachreichen. Es fällt auf, dass keinerlei Erfahrung mit KI oder KI-Tools erwähnt wird – falls du hier Kenntnisse oder Erfahrungen hast, könntest du diese ergänzen, da sie in vielen Bereichen zunehmend gefragt sind.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -18,16 +18,16 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 
 ### 3. Wichtigste Verbesserungsfelder
 
-- 🔴 **Deine Abschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
-  Füge unter jedem Abschluss, wo es passt, ein bis zwei Zeilen hinzu: relevante Module, ein Thema der Abschlussarbeit, ein Austauschsemester, Zertifikate oder besondere Programme wie das Mentoring. So wird sichtbar, was du inhaltlich gemacht hast und was für die nächste Rolle zählt.
-- 🔴 **Ehrenamtliche Tätigkeiten sind nicht beschrieben**  
-  Ergänze unter jedem Ehrenamt Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
-- 🟠 **Stichpunkte beschreiben Aufgaben, aber nicht deinen Beitrag**  
-  Formuliere die Stichpunkte so um, dass klar wird, was genau du gemacht hast, wie du es umgesetzt hast und welche Fähigkeit du damit zeigst. Ein Ergebnis ist hilfreich, wenn es passt, aber der Fokus liegt auf der Kompetenz.
-- 🟠 **Die meisten Stichpunkte nennen nur die Aufgabe, nicht das Ergebnis oder die Kompetenz dahinter**  
-  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht? Wie? Warum war das wichtig? Welche Fähigkeit steckt dahinter? Wo du ein Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist.
-- 🟡 **Datumsangaben enthalten nur das Jahr**  
-  Ergänze bei allen Zeiträumen den Monat – zum Beispiel "09/2023 – 06/2024". So wird der Umfang einer Station klarer.
+- 🔴 **Deine Studienabschlüsse enthalten außer Note und Datum keine weiteren Angaben**  
+  Füge unter jedem Abschluss ein bis zwei Zeilen hinzu, in denen du relevante Module, Schwerpunkte, Abschlussarbeiten, Austauschsemester, Zertifikate oder Zusatzprogramme aufführst – immer mit Blick auf das, was für deine angestrebte Position relevant ist.
+- 🔴 **Einträge im Bereich "Ehrenamtliche Tätigkeiten" haben keine Beschreibung**  
+  Ergänze unter jedem Eintrag einige Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat – mit Fokus auf übertragbare Kompetenzen.
+- 🟠 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
+  Formuliere die Stichpunkte so um, dass sie zeigen, was du konkret getan hast, wie du es umgesetzt hast und warum es wichtig war – und vor allem, welche übertragbare Fähigkeit du damit belegst.
+- 🟠 **Die meisten Stichpunkte beschreiben nur die Aufgabe, nicht die dahinterstehende Fähigkeit**  
+  Gehe jeden Stichpunkt durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das relevant? Wo möglich, ergänze ein echtes Ergebnis – aber nur, wenn es angemessen und belegbar ist.
+- 🟡 **Datumsangaben enthalten nur das Jahr, nicht den Monat**  
+  Ergänze bei allen Zeiträumen den Monat – so kann ein Leser die Dauer deiner Stationen besser einschätzen.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -46,25 +46,25 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Schul- und Berufsausbildung** 🟠 Braucht Aufmerksamkeit
 
-- Füge unter jedem Abschluss, wie dem Bachelor in Rechtswissenschaften mit Wirtschaftswissenschaften, ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten oder besonderen Leistungen hinzu – etwa das Mentoring-Programm der Universität St. Gallen, falls es für die angestrebte Rolle relevant ist.
-- Ergänze bei der Note "2,2" die Skala, zum Beispiel "2,20 / 1,00", damit internationale Leser sie einordnen können.
-- Falls du Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben hast, kannst du diese als Bullet unter dem passenden Abschluss ergänzen.
-- Prüfe, ob du bei Zeiträumen wie "2015-2016" den Monat ergänzen kannst, um die Dauer klarer zu machen.
+- Füge unter jedem Abschluss, z.B. dem Bachelor in Rechtswissenschaften mit Wirtschaftswissenschaften, ein bis zwei Zeilen zu relevanten Modulen, Schwerpunkten, Abschlussarbeiten oder Zusatzqualifikationen hinzu – etwa das Mentoring-Programm der Universität St. Gallen, das du bereits unter 'Zusätzliche Teilnahmen' aufführst, könntest du auch hier als Bullet unter dem entsprechenden Abschluss nennen.
+- Ergänze bei der Note '2,2' die Notenskala, z.B. '2,20 / 1,00', damit internationale Leser sie einordnen können.
+- Falls du relevante Zertifikate wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/) erworben hast, kannst du diese als Bullet ergänzen – aber nur, wenn sie wirklich zutreffen.
+- Ergänze bei Zeiträumen wie '2015-2016' den Monat, z.B. '09/2015 – 06/2016'.
 
 **Praktische Erfahrungen** 🟢 Stark
 
-- Die Rollenbezeichnungen und Beschreibungen machen deine Positionen und Aufgaben nachvollziehbar.
+- Jeder Eintrag enthält sowohl eine Positionsbezeichnung als auch eine Beschreibung, was einen schnellen Überblick über deine beruflichen Stationen ermöglicht.
 
 **Ehrenamtliche Tätigkeiten** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei "Stellvertretendes sachkundiges Mitglied im kommunalen Schulausschuss der Stadt Kaarst" und anderen Ehrenämtern Stichpunkte dazu, was du konkret gemacht hast, wie du vorgegangen bist und was sich dadurch verändert hat.
-- Überarbeite bestehende Stichpunkte wie "Organisation und Durchführung des Wahlprozesses, Prüfung der Wahlberechtigung, Auszählung der Stimmen" so, dass dein Beitrag, die Vorgehensweise und die dahinterstehende Kompetenz sichtbar werden.
-- Falls du bei HSG-Formaten wie dem [St. Gallen Symposium (International Students' Committee)](https://shsg.ch/clubs) oder [HSG University Sports](https://www.unisg.ch/en/) aktiv warst, kannst du diese als Bullet mit kurzer Beschreibung ergänzen – aber nur, wenn es wirklich zutrifft.
-- Prüfe, ob du bei Zeiträumen wie "2015-2016" den Monat ergänzen kannst.
+- Füge unter dem Eintrag 'Stellvertretendes sachkundiges Mitglied im kommunalen Schulausschuss der Stadt Kaarst' einige Stichpunkte hinzu, die deine konkreten Aufgaben, Vorgehensweisen und Ergebnisse beschreiben – z.B. welche schulpolitischen Entscheidungen du mitgestaltet hast oder wie du mit anderen Gremien zusammengearbeitet hast.
+- Überarbeite die bestehenden Stichpunkte, z.B. bei 'Mitglied des Wahlvorstands', so dass sie nicht nur Aufgaben (Organisation, Auszählung) nennen, sondern auch deinen Beitrag und die dahinterstehenden Kompetenzen (z.B. Verantwortungsbewusstsein, Genauigkeit, Teamarbeit) sichtbar machen.
+- Gehe alle Stichpunkte durch und ergänze, wo möglich, ein konkretes Ergebnis oder eine Veränderung, die durch dein Engagement bewirkt wurde.
+- Ergänze bei Zeiträumen wie '2015-2016' den Monat, z.B. '09/2015 – 06/2016'.
 
 **Zusätzliche Teilnahmen** 🟢 Stark
 
-- Das Mentoring-Programm ist als relevante Zusatzaktivität mit Zeitraum und Inhalt aufgeführt.
+- Der Abschnitt zeigt, dass du dich über das Studium hinaus engagierst und an Weiterbildungsangeboten wie dem Mentoring-Programm teilnimmst.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -72,18 +72,16 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Sprachen und IT-Kenntnisse** ⚪ Fehlt
 
-- Füge einen Abschnitt "Sprachen und IT-Kenntnisse" hinzu, wenn du relevante Sprachkenntnisse oder IT-Skills hast.
-- Gib bei jeder Sprache das Niveau nach CEFR (A1–C2) an – das ist international verständlich und hilft Recruitern bei der Einordnung.
-- Bei IT-Tools oder Software solltest du jeweils ein Niveau ergänzen, z.B. "Excel (fortgeschritten)", "Python (Grundkenntnisse)".
-- Falls du Erfahrung mit KI-Tools hast, kannst du diese hier aufführen.
+- Füge einen Abschnitt 'Sprachen und IT-Kenntnisse' hinzu, in dem du deine Sprachkenntnisse jeweils mit einem Niveau nach dem GER (A1–C2) angibst – z.B. 'Englisch (C1)'.
+- Ergänze deine IT-Kenntnisse (z.B. MS Office, Excel, PowerPoint, ggf. Programmiersprachen oder Statistiktools) jeweils mit einem Niveau (z.B. 'Excel (fortgeschritten)').
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Wenn du relevante Kurse oder Zertifikate hast (z.B. Data Science, Nachhaltigkeit, Sprachen), kannst du diese in einem eigenen Abschnitt aufführen.
+- Falls du relevante Kurse oder Zertifikate absolviert hast, kannst du diese in einem eigenen Abschnitt aufführen – z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), sofern zutreffend.
 
 **Interessen / Hobbys** ⚪ Fehlt
 
-- Wenn du möchtest, ergänze ein bis zwei Interessen oder Hobbys – das ist optional, kann aber einen persönlichen Akzent setzen.
+- Wenn du möchtest, kannst du einen kurzen Abschnitt zu Interessen oder Hobbys ergänzen – das gibt einen persönlichen Einblick und kann Gemeinsamkeiten mit dem Gegenüber schaffen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

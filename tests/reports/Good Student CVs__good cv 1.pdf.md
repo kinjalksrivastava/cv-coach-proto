@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist übersichtlich, enthält alle wichtigen Stationen und bleibt auf einer Seite – das ist für den Berufseinstieg ideal. Die Rollen in deiner Arbeitserfahrung sind klar benannt und jeweils mit einer kurzen Beschreibung versehen, was einen guten ersten Eindruck macht. Da kein Zieljob angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit; für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Wenn du Erfahrung mit KI (z.B. in Projekten, Kursen oder Tools) hast, könntest du diese ergänzen – aktuell ist dazu nichts aufgeführt.
+Dein Lebenslauf ist übersichtlich, enthält alle wichtigen Stationen und bleibt auf einer Seite – das ist für den Berufseinstieg ideal. Die Rollen in deiner Arbeitserfahrung sind klar benannt und jeweils mit einer kurzen Beschreibung versehen, was einen guten ersten Eindruck hinterlässt. Die Rückmeldung bezieht sich auf Struktur und Vollständigkeit, da kein Zieljob angegeben wurde – für gezieltes Feedback zu einer bestimmten Stelle kannst du jederzeit eine Zielrolle oder Stellenanzeige nachreichen. Wenn du Erfahrung mit KI (z.B. in Projekten, Kursen oder Tools) hast, könntest du diese ergänzen, da aktuell nichts dazu im Lebenslauf erscheint.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -19,15 +19,15 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
 ### 3. Wichtigste Verbesserungsfelder
 
 - 🔴 **Bullets beschreiben Aufgaben statt Beitrag**  
-  Überarbeite die betroffenen Stichpunkte in deiner Arbeitserfahrung so, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein Ergebnis ist hilfreich, wenn es passt, aber der Fokus sollte auf dem Skill liegen.
+  Überarbeite die betroffenen Stichpunkte in deiner Arbeitserfahrung so, dass sie zeigen, was du konkret gemacht hast, wie du es umgesetzt hast und welche übertragbaren Fähigkeiten du dabei eingesetzt oder entwickelt hast. Ein Ergebnis ist hilfreich, wenn es passt, aber der Fokus sollte auf der Kompetenz liegen.
 - 🔴 **Die meisten Bullets zeigen die Aufgabe, nicht die dahinterliegende Fähigkeit**  
-  Gehe jeden Stichpunkt in deiner Arbeitserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist. Ziel ist, die übertragbaren Kompetenzen sichtbar zu machen.
-- 🟠 **Kein Abschnitt 'Skills & Languages' vorhanden**  
-  Falls du relevante Hard Skills oder Sprachkenntnisse hast, füge einen eigenen Abschnitt 'Skills & Languages' hinzu.
+  Gehe jeden Stichpunkt in deiner Arbeitserfahrung durch und frage dich: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo du ein echtes Ergebnis hast, ergänze es – aber nur, wenn es belegbar ist. So wird klar, welche Fähigkeiten du mitbringst.
+- 🟠 **Kein Abschnitt "Skills & Languages" vorhanden**  
+  Falls du relevante Fähigkeiten und Sprachkenntnisse hast, füge einen eigenen Abschnitt hinzu. Das hilft, deine technischen Kompetenzen und Sprachlevel für Lesende schnell sichtbar zu machen.
 - 🟡 **Noten müssen verständlicher gemacht werden**  
-  Führe bei allen Noten den Maximalwert mit auf (z.B. 5.08 / 6.00), damit auch internationale Leser sie einordnen können.
-- 🟡 **Ob du die Note zeigen möchtest, ist deine Entscheidung**  
-  Noten sind auf dem Lebenslauf optional und werden meist ab 5.00 aufwärts angegeben. Bei niedrigeren Werten lohnt sich ein Gespräch mit Career Services, ob du sie aufführen möchtest.
+  Gib bei allen Noten das Maximum an (z.B. 5.08 / 6.00), damit auch internationale Lesende deine Leistungen richtig einordnen können.
+- 🟡 **Ob du die Note zeigst, ist deine Entscheidung**  
+  Noten sind auf dem Lebenslauf freiwillig und werden meist ab 5.00 aufwärts angegeben. Bei niedrigeren Werten lohnt sich ein Gespräch mit Career Services, ob du sie aufführen möchtest.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,29 +45,26 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **AUSBILDUNG** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei allen Noten den Maximalwert (z.B. 5.08 / 6.00), damit sie auch außerhalb der Schweiz verständlich sind.
-- Überlege, ob du die Maturanote (4.9) aufführen möchtest – Noten sind freiwillig und werden meist ab 5.00 gezeigt. Bei Unsicherheit kannst du dies mit Career Services besprechen.
-- Falls du am HSG Mentoring Programme teilgenommen hast, könntest du dies als Bullet unter deinem Studium ergänzen, sofern es relevant ist.
+- Überlege, ob du die Maturanote (4.9) aufführen möchtest – Noten sind freiwillig und werden meist ab 5.00 gezeigt. Bei Unsicherheit kannst du Career Services dazu befragen.
+- Falls du zusätzliche relevante Zertifikate hast, wie das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), könntest du diese ergänzen.
 
 **ARBEITSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Überarbeite die Stichpunkte, die nur Aufgaben nennen (z.B. '12-wöchige Grundausbildung, 6-wöchiger Truppeneinsatz'), indem du erläuterst, was du konkret gemacht hast, wie du es umgesetzt hast und welche Kompetenzen du dabei gezeigt hast.
-- Frage dich bei jedem Bullet: Was habe ich gemacht? Wie habe ich es gemacht? Warum war das wichtig? Wo möglich, ergänze ein konkretes Ergebnis oder eine Veränderung.
-- Wenn du an der Organisation des St. Gallen Symposiums oder der Talents Conference beteiligt warst, könntest du dies als relevante Erfahrung ergänzen, falls es passt.
+- Überarbeite Stichpunkte wie "12-wöchige Grundausbildung, 6-wöchiger Truppeneinsatz" oder "Werkstudent, direkt dem CEO unterstellt", sodass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und welche Fähigkeit du dabei gezeigt hast.
+- Wenn du an einer Rolle wie der Organisation des St. Gallen Symposiums oder der Talents Conference teilgenommen hast, könntest du diese als relevante Erfahrung ergänzen, falls sie für deine Zielrichtung passen.
 
 **AUSSERCURRICULARE AKTIVITÄTEN** 🟢 Stark
 
-- Die aufgeführten Aktivitäten machen dein Engagement und deine Verantwortungsübernahme außerhalb des Studiums sichtbar.
+- Die Leitung von Bikecontrol-Kursen und die Vorstandsarbeit im Radsport-Club zeigen konkrete Verantwortung und Engagement.
 
 **ZUSÄTZLICHE INFORMATIONEN** 🟢 Stark
 
-- Die Interessen sind als Stichworte genannt – das ist völlig in Ordnung. Falls du bei einzelnen Interessen (z.B. Radsport) ein besonderes Niveau oder Engagement zeigen möchtest, kannst du das ergänzen, musst es aber nicht.
+- Die Interessen sind als Stichworte genannt – das ist völlig in Ordnung. Falls du bei einem oder zwei Interessen einen besonderen Bezug oder ein Niveau zeigen möchtest, kannst du das ergänzen, musst es aber nicht.
 
 **Skills & Languages** ⚪ Fehlt
 
-- Lege einen Abschnitt 'Skills & Languages' an, in dem du deine IT-Kenntnisse und Sprachen jeweils mit einem Niveau aufführst (z.B. Englisch (C1), Französisch (B2)).
-- Für Sprachen empfiehlt sich die Angabe des CEFR-Levels (A1–C2), da dies international eindeutig verstanden wird.
-- Bei IT-Tools gib jeweils ein Niveau an (z.B. MS Office (fortgeschritten), HubSpot (Grundkenntnisse)).
+- Füge einen Abschnitt "Skills & Languages" hinzu, um technische Kompetenzen (z.B. MS Office, HubSpot, Zapier) und Sprachkenntnisse mit Level (am besten nach CEFR, z.B. Englisch C1, Französisch B2) übersichtlich darzustellen.
+- Für Sprachen: Gib das Niveau nach CEFR (A1–C2) an, da dies international eindeutig verstanden wird. Du brauchst kein Zertifikat, sondern solltest das Niveau angeben, das du aktuell wirklich beherrschst.
 
 **Kurzprofil** ⚪ Fehlt
 
@@ -75,7 +72,7 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Zusatzqualifikationen hast (z.B. das Certificate in Data Science Fundamentals (DSF): https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/), kannst du diese hier aufführen.
+- Wenn du relevante Kurse oder Zertifikate (z.B. Data Science, Nachhaltigkeit, Sprachen) hast, kannst du diese in einem eigenen Abschnitt aufführen.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 

@@ -2,7 +2,7 @@
 
 ### 1. Overall impression
 
-Your CV is well-structured, concise, and covers all the main sections expected for a student or early-career applicant. The work experience section clearly lists your roles and responsibilities, and your grades are presented with their maximums, making them easy to interpret internationally. However, the education section could be strengthened by adding more detail about your university studies, and some experience bullets would benefit from focusing more on your personal contribution and the skills you developed. Since you have not provided a target role or job description, this feedback focuses on structure and completeness. Nothing on your CV currently refers to AI experience—if you have relevant coursework, projects, or skills in this area, consider adding them.
+Your CV is well-structured and concise, with clear section headings and a strong range of experiences for your stage. The work experience section includes both role titles and descriptions, and your grades are presented with their maximum, making them easy to interpret internationally. However, the education section could be strengthened by adding more detail about your activities, achievements, or relevant coursework under each degree. Some work experience bullets focus on tasks rather than your specific contributions or the skills you developed—adding this context will help recruiters see your impact. This review covers structure and completeness; if you have a specific target role or industry, more tailored feedback is available. No AI experience is currently mentioned—if you have worked with AI tools or projects, consider adding this where relevant.
 
 _Please note that this is a first feedback, mainly about the structure and content of your CV. It does not evaluate in detail how well you have tailored it to a particular role, and it is not a judgement about you as a candidate. That is what your one-on-one session with Career Services is for._
 
@@ -19,15 +19,15 @@ _An Applicant Tracking System (ATS) is software employers use to collect, scan a
 ### 3. Key areas to improve
 
 - 🔴 **Add detail under each degree in Education**  
-  Currently, your university degree lists only the qualification, date, and GPA. Add a line or two under each degree where you genuinely have something relevant: key modules, thesis topic and what you did, an exchange semester, a certificate, a scholarship, or participation in a mentoring programme.
+  Currently, your university degree lists only the qualification, date, and GPA. Add a line or two under each degree where you have relevant content: modules, thesis topic and what you did, exchange semesters, certificates, scholarships, or mentoring programmes. Focus on what is true and relevant to your future applications.
 - 🟠 **Rework duty-only bullets in Work Experience**  
   Some bullets in your work experience section describe only the tasks you performed. Revise these to highlight what you did, how you did it, and why it mattered, focusing on the transferable skills you developed.
 - 🟠 **Add outcomes or skills to experience bullets**  
-  Most of your experience bullets describe the task but not the outcome or the skill demonstrated. Where possible, add what changed as a result of your work or which skill you developed, but only if you can genuinely support it.
+  Most of your experience bullets describe tasks without showing the outcome, change, or skill demonstrated. Where possible, add what changed as a result of your work or which transferable skill each bullet is meant to show.
 - 🟡 **Make bullet punctuation consistent**  
   Some bullets end with a full stop and others do not. Choose one style and apply it consistently throughout your CV.
-- 🟡 **Grade consistency across degrees**  
-  You show a grade for one degree but not the other. Recruiters may assume an omitted grade was weaker. Decide whether to add the missing grade or remove the one you have shown, based on what you are comfortable sharing.
+- 🟡 **Grade consistency in Education**  
+  You show a grade for one degree but not the other. Grades are always optional, but showing some and omitting others can lead a recruiter to assume the missing grade is weaker. Decide whether to add the missing grade or remove the one shown, based on what you are comfortable sharing.
 
 _Worked examples of weaker and stronger bullet points — Career Services' own, not rewrites of your CV — can be opened underneath this report._
 
@@ -44,23 +44,23 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **EDUCATION** 🟠 Needs attention
 
-- Consider including any additional qualifications, such as the Certificate in Data Science Fundamentals (DSF) if you have completed it.
+- Your University of St. Gallen entry lists only the degree, dates, and GPA; add a line or two about relevant modules, thesis work, exchange semesters, or additional qualifications if you have them.
+- If you have participated in the HSG Mentoring Programme or earned a certificate such as the Certificate in Data Science Fundamentals, consider adding these under your degree.
 
 > **On grades:** be aware that if you leave out grades for certain education experiences but not for others, recruiters will automatically assume that the missing grades were worse than the ones you have listed.
 
 **WORK EXPERIENCE** 🟠 Needs attention
 
-- Bullets such as 'Shadowed CDS traders on the Total Return Credit Fund desk across execution and analysis' and 'Use of Bloomberg Terminal, AlphaSense, GitLab, Jupyter, Sustainalytics, MS Excel and PowerPoint' describe tasks but not your specific contribution or the skills you developed—revise these to show what you did, how you did it, and why it mattered.
-- Most experience bullets describe the task but not the outcome or skill; for example, 'Built an Excel-based cash flow model for a crossover credit name; modelled the time value...' could be expanded to show what changed as a result or which skill you developed, if appropriate.
-- Ensure all bullets use consistent punctuation—either all with full stops or all without.
+- Bullets such as 'Shadowed CDS traders on the Total Return Credit Fund desk across execution and analysis' and 'Use of Bloomberg Terminal, AlphaSense, GitLab, Jupyter, Sustainalytics, MS Excel and PowerPoint' describe duties but not your specific actions or the skills you developed—revise these to show what you did, how you did it, and why it mattered.
+- Most bullets, for example 'Built an Excel-based cash flow model for a crossover credit name; modelled the time value of a zero-coupon bond with volatile interest rates in Python,' describe tasks but not the outcome or skill demonstrated; add what changed as a result of your work or which transferable skill each bullet is meant to show.
 
 **EXTRACURRICULARS** 🟢 Strong
 
-- You show concrete leadership and teamwork through roles such as Founder and President of the St. Gallen Markets Society and strategy lead in the Amsterdam Case Competition.
+- You show clear leadership and impact, such as founding the St. Gallen Markets Society and achieving 2nd place in the Amsterdam Case Competition.
 
 **ADDITIONAL INFORMATION** 🟢 Strong
 
-- Grades are given with their maximum, making them easy to interpret for international readers.
+- You provide language proficiency, programming skills, and certifications in a clear and concise manner.
 
 **Profile** ⚪ Missing
 
@@ -68,7 +68,7 @@ _Worked examples of weaker and stronger bullet points — Career Services' own, 
 
 **Courses and Certificates** ⚪ Missing
 
-- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals (DSF) or the Certificate in Integrative Sustainability Management (SuM-HSG), you could add them here to highlight additional qualifications.
+- If you have completed relevant courses or certificates, such as the Certificate in Data Science Fundamentals, you could add them here to highlight additional qualifications.
 
 ### 5. Anything else from HSG worth adding?
 

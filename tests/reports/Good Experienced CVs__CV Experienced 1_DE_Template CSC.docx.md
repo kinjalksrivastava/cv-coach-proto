@@ -2,7 +2,7 @@
 
 ### 1. Gesamteindruck
 
-Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation, Beratung und Führung. Besonders positiv fällt auf, dass du deine Noten mit Maximalwerten angegeben hast, was die internationale Vergleichbarkeit erleichtert. Die Abschnitte sind klar gegliedert und deine Stationen sind nachvollziehbar dargestellt. Da kein Zieljob oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools explizit genannt wird; falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
+Dein Lebenslauf ist insgesamt sehr gut strukturiert und zeigt eine beeindruckende Bandbreite an Erfahrungen in Innovation, Beratung und Business Development. Besonders positiv fällt auf, dass du deine Noten mit Maximalwerten angegeben hast, was die internationale Vergleichbarkeit erleichtert. Die Abschnitte sind klar gegliedert und deine Stationen sind nachvollziehbar dargestellt. Da kein Zieljob oder Stellenprofil angegeben wurde, bezieht sich dieses Feedback auf Struktur und Vollständigkeit – für gezieltes, rollenbezogenes Feedback kannst du jederzeit eine Zielposition nachreichen. Es fällt auf, dass aktuell keine Erfahrung mit KI oder KI-Tools explizit genannt wird; falls du hier relevante Kenntnisse oder Projekte hast, könntest du diese ergänzen.
 
 _Bitte beachte, dass dies ein erstes Feedback ist, das sich vor allem auf Aufbau und Inhalt deines Lebenslaufs bezieht. Es bewertet nicht im Detail, wie gut du ihn auf eine bestimmte Stelle zugeschnitten hast, und es ist kein Urteil über dich als Kandidat:in. Dafür ist dein Einzelgespräch beim Career Services da._
 
@@ -22,12 +22,12 @@ _Ein Applicant Tracking System (ATS) ist Software, mit der Arbeitgeber Bewerbung
   Bei "Swiss Consulting AG, Zürich, Schweiz 06/2017 – 01/2021" fehlt eine Beschreibung. Ergänze hier einige Stichpunkte zu deinen Aufgaben, Methoden und Ergebnissen – besonders mit Blick auf übertragbare Kompetenzen.
 - 🔴 **Stichpunkte beschreiben Aufgaben statt Beitrag**  
   Einige Stichpunkte, wie z.B. "Lead Innovation Manager Schweiz", nennen nur die Funktion oder Aufgabe. Überarbeite diese so, dass klar wird, was du konkret gemacht hast, wie du es umgesetzt hast und welchen Unterschied dein Beitrag gemacht hat – der Fokus liegt auf den übertragbaren Fähigkeiten.
-- 🟠 **Reihenfolge: Ausbildung kommt nach Berufserfahrung**  
-  Für Studierende steht die Ausbildung normalerweise vor der Berufserfahrung, außer du hast bereits viele Jahre einschlägige Berufspraxis. Überlege, ob eine Umstellung für dich sinnvoll ist.
+- 🟠 **Reihenfolge: Ausbildung nach Berufserfahrung**  
+  Für einen studentischen Lebenslauf steht normalerweise die Ausbildung an erster Stelle, außer du hast bereits viele Jahre einschlägige Berufserfahrung. Überlege, ob eine Umstellung sinnvoll wäre.
 - 🟡 **Sprachkenntnisse ohne Niveauangabe**  
-  Füge bei deinen Sprachkenntnissen ein Niveau hinzu (z.B. B2, C1), damit Recruiter deine Kenntnisse besser einschätzen können. Die Angabe nach CEFR (A1–C2) ist besonders präzise.
+  Bei den Onlinekursen fehlt eine Angabe zum Kenntnisstand. Ergänze bei jedem Kurs ein Niveau (z.B. Grundkenntnisse, Fortgeschritten), damit ein Leser deine Kenntnisse besser einschätzen kann – idealerweise nach CEFR (A1–C2).
 - 🟡 **Interessen als Einzelwörter**  
-  Einzelne Interessen als Stichworte sind völlig in Ordnung. Überlege aber, ob du bei ein oder zwei Interessen mit einem kurzen Zusatz zeigen möchtest, was dich daran besonders macht oder welche Fähigkeit sichtbar wird.
+  Einzelne Interessen als Stichworte sind völlig in Ordnung. Überlege aber, ob du bei ein oder zwei Interessen mit einer kurzen Ergänzung zeigen möchtest, was dich daran besonders interessiert oder welches Niveau du hast.
 
 _Beispiele für schwächere und stärkere Bullet Points — vom Career Services, keine Umformulierungen deines Lebenslaufs — kannst du unterhalb dieses Reports öffnen._
 
@@ -45,33 +45,33 @@ _Beispiele für schwächere und stärkere Bullet Points — vom Career Services,
 
 **PROFIL** 🟢 Stark
 
-- Du stellst deine Innovations- und Führungserfahrung sowie deine methodischen Stärken prägnant heraus.
+- Du stellst deine langjährige Erfahrung, methodische Kompetenz und deinen Innovationsfokus prägnant heraus.
 
 **BERUFSERFAHRUNG** 🟠 Braucht Aufmerksamkeit
 
-- Wenn du Erfahrungen mit KI, Automatisierung oder digitalen Tools hast, könntest du diese gezielt in den passenden Rollen hervorheben, da dies für viele Innovations- und Beratungsrollen relevant ist.
+- Überarbeite Stichpunkte wie "Lead Innovation Manager Schweiz", damit dein konkreter Beitrag, die Umsetzung und das Ergebnis sichtbar werden – z.B. welche Methoden du eingesetzt hast oder wie du das Team geführt hast.
+- Falls du relevante Erfahrungen aus der Talents Conference (Career Services) oder dem St. Gallen Symposium (International Students' Committee) hast, könntest du diese ergänzen – aber nur, wenn sie wirklich passen.
 
 **AUSBILDUNG** 🟢 Stark
 
-- Die Noten sind mit Maximalwert angegeben, was internationale Vergleichbarkeit ermöglicht.
+- Die Angabe der Noten mit Maximalwert erleichtert die internationale Vergleichbarkeit.
 
 **EXTRAKURRIKULÄRE AKTIVITÄTEN** 🟢 Stark
 
-- Du belegst mit konkreten Beispielen, wie Mentoring und ehrenamtliche Arbeit, deine Kommunikations- und Beratungskompetenz.
+- Du belegst mit konkreten Beispielen, wie du andere unterstützt und Verantwortung übernimmst.
 
 **WEITERE FÄHIGKEITEN** 🟠 Braucht Aufmerksamkeit
 
-- Ergänze bei deinen Sprachkenntnissen (z.B. Englisch, Französisch, Spanisch) das jeweilige Niveau nach CEFR (z.B. B2, C1), damit Recruiter deine Fähigkeiten besser einschätzen können.
-- Bei den IT-Kenntnissen (z.B. Python, C++) könntest du ebenfalls ein Niveau angeben (z.B. grundlegend, fortgeschritten), um Klarheit zu schaffen.
-- Falls du relevante Zertifikate wie den [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) Kurs absolviert hast, könntest du diese hier oder in einem eigenen Abschnitt ergänzen.
+- Ergänze bei den Onlinekursen (z.B. "Technology Innovation Management, MIT, edX (2022)", "Python für Datenwissenschaft, KI & Entwicklung, IBM, Coursera (2023)") jeweils dein aktuelles Kenntnisniveau (z.B. Grundkenntnisse, Fortgeschritten, nach CEFR für Sprachen).
+- Falls du Zertifikate wie das [Bloomberg Market Concepts (BMC)](https://portal.bloombergforeducation.com/) absolviert hast, könntest du diese hier oder im Abschnitt "Kurse und Zertifikate" ergänzen.
 
 **INTERESSEN** 🟢 Stark
 
-- Du gibst bei einzelnen Interessen wie Schwimmen und Singen bereits Details an, die dein Engagement und deine Vielseitigkeit unterstreichen.
+- Du nennst konkrete Aktivitäten wie Schwimmen und Chorsingen, was deine Vielseitigkeit unterstreicht.
 
 **Kurse und Zertifikate** ⚪ Fehlt
 
-- Falls du relevante Zertifikate oder Weiterbildungen hast, könntest du diese in einem eigenen Abschnitt aufführen – zum Beispiel den [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder andere Onlinekurse, die für deine Zielrolle relevant sind.
+- Falls du relevante Zertifikate oder Weiterbildungen hast, könntest du diese in einem eigenen Abschnitt aufführen – z.B. das [Certificate in Data Science Fundamentals (DSF)](https://www.unisg.ch/en/studying/programmes/bachelor/additional-qualifications/certificate-in-data-science-fundamentals/) oder das [Certificate in Integrative Sustainability Management (SuM-HSG)](https://sustainability.unisg.ch/news/new-bachelor-certificate/), sofern vorhanden.
 
 ### 5. Gibt es noch etwas von der HSG, das dazugehört?
 
