@@ -690,7 +690,80 @@ Intern, Example AG, Zurich        09/2023 - 03/2024
     else:
         print("ok    body_name_corroboration")
 
-    print(f"\n{len(CASES) + 8 - failures}/{len(CASES) + 8} passed")
+    # --- a profile above the first recognised heading survives ------------
+    #
+    # Asked whether the pipeline generalises past the sample set, the honest
+    # way in was to ask what happens to a CV whose headings are not in the
+    # vocabulary. The section rebuild keeps everything from the first
+    # recognised heading onward, so an unknown heading in the middle of a CV
+    # costs nothing - and a section ABOVE the first recognised heading was
+    # being dropped whole. It was already happening to two of our own samples:
+    # bad cv 7 opens with five lines of German profile under a heading the
+    # lookup does not know, cv exp bad 2 with a seven-line summary, and both
+    # reports then told the student their CV had no profile and they should
+    # consider writing one.
+    #
+    # Falling back is the safe direction and the thresholds lean that way: it
+    # costs the structural pre-filter, every removal layer still runs on the
+    # whole document, and this selection was always defence in depth.
+    # Long enough that the dropped header is a small share of the document.
+    # The first version of this test used a ten-line body, which made the
+    # header 47% of it - so MIN_SHARE_TO_TRUST refused the structure and the
+    # profile survived for a reason that had nothing to do with the guard being
+    # tested. Removing the guard entirely still passed.
+    BODY = ["EDUCATION",
+            "09/2023 - 06/2026   University of St. Gallen, BA Economics",
+            "  Focus on corporate finance and statistics",
+            "  Seminar paper on SME credit rationing",
+            "09/2019 - 06/2023   Kantonsschule Wil, Matura",
+            "  Specialised in economics and law",
+            "WORK EXPERIENCE",
+            "07/2025 - 09/2025   Intern, Corporate Finance, Raiffeisen",
+            "  Supported the deal team on three mid-market mandates",
+            "  Built the comparable-company screen used in two pitches",
+            "07/2024 - 08/2024   Intern, Treasury, Buehler AG",
+            "  Reconciled the daily cash position across four currencies",
+            "  Prepared the weekly liquidity report",
+            "VOLUNTEERING",
+            "2024 - 2025   Treasurer, Studentenverein HSG",
+            "  Managed a budget of CHF 40,000",
+            "  Prepared the annual accounts for the general assembly",
+            "SKILLS", "Excel, Python, Bloomberg",
+            "German (native), English (C1), French (B2)",
+            "INTERESTS", "Rock climbing, chess, cooking"]
+    PROFILE = ["WAS MICH AUSMACHT",
+               "Ich interessiere mich fuer die Frage, wie Finanzierungsentscheide bei",
+               "mittelgrossen Firmen getroffen werden, und moechte das Handwerk von",
+               "Grund auf lernen."]
+    CONTACT = ["Lena Meier", "Rosenbergstrasse 12", "9000 St. Gallen",
+               "+41 79 123 45 67", "lena.meier@student.unisg.ch"]
+    ENTRY = ["Universidad Carlos III de Madrid, Madrid, Spain",
+             "09/2024 - 01/2025   Exchange semester"]
+
+    selection = [
+        ("a profile under an unrecognised heading is kept",
+         CONTACT + PROFILE, "Finanzierungsentscheide", True),
+        ("an entry above the first heading is kept",
+         CONTACT + ENTRY, "Universidad Carlos III", True),
+        ("a plain contact header is still dropped",
+         CONTACT, "Rosenbergstrasse 12", False),
+    ]
+    wrong = []
+    for name, header, needle, must_survive in selection:
+        out = pii.select_cv_content("\n".join(header + BODY))
+        survived = needle in out["text"]
+        if survived != must_survive:
+            wrong.append(f"{name}: {'lost' if must_survive else 'kept'} {needle!r} "
+                         f"(structure trusted={out['applied']})")
+    if wrong:
+        failures += 1
+        print("FAIL  header_block_is_not_always_a_header")
+        for line in wrong:
+            print(f"        {line}")
+    else:
+        print("ok    header_block_is_not_always_a_header")
+
+    print(f"\n{len(CASES) + 9 - failures}/{len(CASES) + 9} passed")
     return 1 if failures else 0
 
 

@@ -999,6 +999,13 @@ def strip_pii(text: str, language: str = "en") -> dict:
 # would silently delete most of the document, which is worse than relying on the
 # removal layers. In that case the whole text goes through unchanged and the
 # caller is told, so the fallback is visible rather than assumed.
+# Measured on the sample set rather than picked: the contact headers run to 9
+# words on their longest line and 17 below the name, the three blocks that are
+# really content run to 11, 13 and 18 words on a line and 33, 57 and 67 below
+# the name. The thresholds sit in that gap, on the generous side.
+HEADER_PROSE_LINE_WORDS = 10
+HEADER_PROSE_WORDS = 25
+
 MIN_SECTIONS_TO_TRUST = 2
 MIN_SHARE_TO_TRUST = 0.55
 
@@ -1017,11 +1024,37 @@ def select_cv_content(text: str) -> dict:
                 "sections": len(found)}
 
     # Everything above the first recognised heading is the candidate for
-    # dropping. If it carries a date range it is not a header - it is a section
-    # whose heading the local lookup did not recognise, and dropping it would
-    # take real entries out of the document. Fall back rather than guess.
+    # dropping. A contact header is fragments: a name, a street, a postcode, a
+    # phone number, an email. Three things mean the block is not a header at
+    # all but a section whose heading the lookup did not recognise, and
+    # dropping it takes the student's own writing out of the document before
+    # anything reads it:
+    #
+    #   - a date range in it, so it holds entries;
+    #   - a line of prose, because a profile is sentences;
+    #   - enough words below the name to be a paragraph rather than an address.
+    #
+    # The last two were found by asking what happens to a CV whose headings are
+    # not in the vocabulary, and they were already happening to two of our own
+    # samples. bad cv 7 opens with five lines of German profile under no
+    # heading we know, cv exp bad 2 with a seven-line professional summary;
+    # both were dropped here, and both reports then told the student their CV
+    # had no profile section and they should consider writing one. That is the
+    # same fault as redacting the recipient and then reporting it missing.
+    #
+    # The thresholds are deliberately generous towards keeping content, because
+    # the two outcomes are not symmetrical. Falling back costs the structural
+    # pre-filter and nothing else: every removal layer still runs on the whole
+    # document, and this selection is defence in depth rather than the defence.
+    # Dropping a profile costs the student a section of their CV and earns them
+    # advice to write the thing they wrote.
+    header_lines = [line for line in lines[:found[0]["index"]] if line.strip()]
     header = "\n".join(lines[:found[0]["index"]])
-    if date_parser.RANGE_RE.search(header):
+    looks_like_content = (
+        bool(date_parser.RANGE_RE.search(header))
+        or any(len(line.split()) >= HEADER_PROSE_LINE_WORDS for line in header_lines)
+        or sum(len(line.split()) for line in header_lines[1:]) >= HEADER_PROSE_WORDS)
+    if looks_like_content:
         return {"text": text, "applied": False, "dropped_lines": 0,
                 "sections": len(found)}
 
